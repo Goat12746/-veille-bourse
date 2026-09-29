@@ -18,6 +18,8 @@ SENS = ["positif", "negatif", "neutre", "incertain"]
 AMPLEURS = ["faible", "moyenne", "forte", "inconnue"]
 SOURCES = ["amf", "assemblee", "senat", "presse", "journal_officiel", "autre"]
 TYPES_CALENDRIER = ["budget", "examen_texte", "resultats", "dividende", "indice", "autre"]
+# Champs d'une alerte deja publiee que l'analyse peut mettre a jour.
+CHAMPS_MISE_A_JOUR = {"etape", "probabilite", "texte", "article", "resume", "titre"}
 
 
 def tickers_connus():
@@ -46,6 +48,14 @@ def _entreprises(alerte, lieu, tickers, erreurs):
             erreurs.append(f"{l} : justification manquante")
 
 
+def _texte(alerte, lieu, erreurs):
+    """Champs facultatifs : texte porteur de la mesure et article."""
+    for champ in ("texte", "article"):
+        v = alerte.get(champ)
+        if v is not None and not isinstance(v, str):
+            erreurs.append(f"{lieu} : '{champ}' doit etre une chaine")
+
+
 def _commun(alerte, lieu, erreurs):
     if alerte.get("etape") not in ETAPES:
         erreurs.append(f"{lieu} : etape invalide ({alerte.get('etape')!r}), attendu {ETAPES}")
@@ -71,8 +81,9 @@ def _calendrier(evts, lieu, tickers, erreurs):
                 erreurs.append(f"{l} : ticker inconnu ({t!r})")
 
 
-def valider_analyse(doc, ids_candidats, tickers=None):
-    """sortie/analyse.json : alertes rattachees aux candidats par leur id."""
+def valider_analyse(doc, ids_candidats, tickers=None, ids_publies=None):
+    """sortie/analyse.json : alertes rattachees aux candidats par leur id,
+    mises a jour d'alertes deja publiees (par leur id)."""
     tickers = tickers or tickers_connus()
     erreurs = []
     if not isinstance(doc.get("alertes"), list):
@@ -83,7 +94,20 @@ def valider_analyse(doc, ids_candidats, tickers=None):
             if cid not in ids_candidats:
                 erreurs.append(f"{lieu} : id de candidat inconnu ({cid!r})")
         _commun(a, lieu, erreurs)
+        _texte(a, lieu, erreurs)
         _entreprises(a, lieu, tickers, erreurs)
+    for i, m in enumerate(doc.get("mises_a_jour") or []):
+        lieu = f"mises_a_jour[{i}] ({m.get('id')})"
+        if ids_publies is not None and m.get("id") not in ids_publies:
+            erreurs.append(f"{lieu} : aucune alerte publiee avec cet id")
+        inconnus = set(m) - CHAMPS_MISE_A_JOUR - {"id"}
+        if inconnus:
+            erreurs.append(f"{lieu} : champs non modifiables {sorted(inconnus)}, autorises {sorted(CHAMPS_MISE_A_JOUR)}")
+        if "etape" in m and m["etape"] not in ETAPES:
+            erreurs.append(f"{lieu} : etape invalide ({m['etape']!r})")
+        if "probabilite" in m and not (isinstance(m["probabilite"], (int, float)) and 0 <= m["probabilite"] <= 1):
+            erreurs.append(f"{lieu} : probabilite doit etre un nombre entre 0 et 1")
+        _texte(m, lieu, erreurs)
     for cid in doc.get("ecartes") or []:
         if cid not in ids_candidats:
             erreurs.append(f"ecartes : id de candidat inconnu ({cid!r})")
@@ -110,6 +134,7 @@ def valider_alertes(doc, tickers=None):
         if a.get("analyse") not in ("claude", "mots_cles"):
             erreurs.append(f"{lieu} : analyse doit valoir 'claude' ou 'mots_cles'")
         _commun(a, lieu, erreurs)
+        _texte(a, lieu, erreurs)
         _entreprises(a, lieu, tickers, erreurs)
     _calendrier(doc.get("calendrier"), "calendrier", tickers, erreurs)
     return erreurs
@@ -122,7 +147,12 @@ def main():
     if os.path.basename(chemin) == "analyse.json":
         with open(os.path.join(ICI, "sortie", "candidats.json"), encoding="utf-8") as f:
             ids = {c["id"] for c in json.load(f)["candidats"]}
-        erreurs = valider_analyse(doc, ids)
+        publie = os.path.join(ICI, "alertes.json")
+        ids_publies = None
+        if os.path.exists(publie):
+            with open(publie, encoding="utf-8") as f:
+                ids_publies = {a["id"] for a in json.load(f).get("alertes", [])}
+        erreurs = valider_analyse(doc, ids, ids_publies=ids_publies)
     else:
         erreurs = valider_alertes(doc)
     if erreurs:

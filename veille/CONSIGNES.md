@@ -70,6 +70,32 @@ autres dans `ids_lies`.
 - Ne recopie pas `date`, `source` ni `url` : `fusionner.py` les reprend de la
   collecte.
 
+**Texte porteur** (champs facultatifs `texte` et `article`) : quand la mesure
+figure (ou doit figurer) dans un texte en discussion, renseigne `texte` avec la
+même clé que l'agenda : `"PLF 2027"`, `"PLFR 2026"`, `"PLFSS 2027"`, ou
+`"n° 2892"` pour une proposition ou un projet de loi numéroté (numéro du texte à
+l'Assemblée). Ajoute `article` (ex. `"Article 12"`) dès qu'il est connu. Les
+entreprises de l'alerte sont alors rattachées automatiquement aux dates
+d'examen de ce texte dans le calendrier.
+
+**Mises à jour des alertes publiées** (champ `mises_a_jour`) : pour faire
+évoluer une alerte déjà dans `alertes.json`, sans en créer une nouvelle.
+Champs modifiables : `etape`, `probabilite`, `texte`, `article`, `resume`,
+`titre`. Cas typiques :
+- un amendement relatif à la mesure est adopté ou rejeté : nouvelle `etape`,
+  `probabilite` ajustée, `resume` complété ;
+- **vérification après dépôt d'un texte budgétaire** : dès que le projet de loi
+  de finances ou de financement de la Sécurité sociale est déposé (texte
+  publié sur assemblee-nationale.fr et budget.gouv.fr), reprends chaque alerte
+  publiée dont `texte` vaut ce texte et dont l'`etape` est `rumeur` ou
+  `annonce`. Cherche la mesure dans le texte déposé :
+  - trouvée : `etape` → `depot`, `article` → son numéro, `probabilite`
+    ajustée, et dans `resume` ce que dit exactement l'article (taux, montant) ;
+  - absente : `probabilite` fortement réduite (≤ 0,2) et `resume` qui le
+    précise (elle pourra revenir par amendement).
+  Fais cette vérification une seule fois par alerte (une alerte à l'étape
+  `depot` avec un `article` est déjà vérifiée).
+
 **Calendrier** (facultatif, champ `calendrier` de `analyse.json`) : ajoute les
 dates importantes que tu apprends en lisant les textes (date d'examen d'un
 article, date de résultats confirmée par l'entreprise…). Même format que le
@@ -101,6 +127,7 @@ qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
       "etape": "annonce",
       "probabilite": 0.75,
       "themes": ["concessions_autoroutes", "aerien_aeroports"],
+      "texte": "PLF 2027",
       "entreprises": [
         {
           "ticker": "DG.PA",
@@ -113,6 +140,10 @@ qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
     }
   ],
   "ecartes": ["presse-aaaaaaaaaaaaaaaa", "an-AMANR5L17PO59051B2990P0D1N000077"],
+  "mises_a_jour": [
+    {"id": "presse-e4359fea6c50b69e", "etape": "depot", "article": "Article 8",
+     "probabilite": 0.7, "resume": "..."}
+  ],
   "calendrier": []
 }
 ```

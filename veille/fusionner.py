@@ -80,6 +80,7 @@ def main():
     if collecte is None:
         sys.exit("sortie/candidats.json introuvable : lancer d'abord collecte.py")
     candidats = {c["id"]: c for c in collecte["candidats"]}
+    publie = charger(os.path.join(ICI, "alertes.json"), {"alertes": []})
 
     if args.sans_ia:
         analyse = {"alertes": [alerte_brute(c, noms) for c in candidats.values()
@@ -90,7 +91,8 @@ def main():
         analyse = charger(os.path.join(ICI, "sortie", "analyse.json"))
         if analyse is None:
             sys.exit("sortie/analyse.json introuvable (ou utiliser --sans-ia)")
-        erreurs = valider_analyse(analyse, set(candidats), tickers)
+        erreurs = valider_analyse(analyse, set(candidats), tickers,
+                                  ids_publies={a["id"] for a in publie.get("alertes", [])})
         if erreurs:
             print("analyse.json invalide :")
             for e in erreurs:
@@ -119,12 +121,19 @@ def main():
                          "media": x["meta"].get("media", x["source"])} for x in [c] + lies],
             "analyse": mode,
             "ajoute_le": today.isoformat(),
+            # Texte porteur de la mesure (PLF 2027, n° 2892...) et article.
+            **{k: a[k] for k in ("texte", "article") if a.get(k)},
         })
 
-    # Fusion avec les alertes deja publiees.
-    publie = charger(os.path.join(ICI, "alertes.json"), {"alertes": []})
+    # Fusion avec les alertes deja publiees, apres application des mises a
+    # jour de l'analyse (ex. mesure retrouvee dans le texte depose : etape,
+    # article, probabilite).
     limite = (today - dt.timedelta(days=CONSERVATION_ALERTES)).isoformat()
     par_id = {a["id"]: a for a in publie.get("alertes", []) if a["date"] >= limite}
+    for m in analyse.get("mises_a_jour") or []:
+        if m["id"] in par_id:
+            par_id[m["id"]].update({k: v for k, v in m.items() if k != "id"})
+            par_id[m["id"]]["maj_le"] = today.isoformat()
     for a in nouvelles:
         par_id[a["id"]] = a
 
@@ -150,14 +159,31 @@ def main():
             evenements += [ev for ev in precedents if origine(ev) == nom]
     # Dates ajoutees par Claude lors des analyses precedentes.
     evenements += [ev for ev in precedents if origine(ev) == "claude"]
+    # Mesures en jeu par texte : alertes (non rejetees) portant sur ce texte.
+    par_texte = {}
+    for a in par_id.values():
+        if a.get("texte") and a["etape"] != "rejete":
+            par_texte.setdefault(a["texte"], []).append(a)
+
     evts = {}
     for ev in evenements:
-        if ev["date"] >= hier:
-            evts[(ev["date"], ev["type"], ev["titre"])] = {
-                "date": ev["date"], "heure": ev.get("heure", ""), "type": ev["type"],
-                "titre": ev["titre"], "tickers": [t for t in ev.get("tickers") or [] if t in tickers],
-                "themes": ev.get("themes") or [], "source": ev.get("source", ""),
-                "url": ev.get("url", ""), "fiable": bool(ev.get("fiable", True))}
+        if ev["date"] < hier:
+            continue
+        # Entreprises trouvees par mots-cles ; celles des alertes sont
+        # recalculees a chaque publication (une mesure abandonnee disparait).
+        base = [t for t in ev.get("tickers_mots_cles", ev.get("tickers")) or [] if t in tickers]
+        mesures = par_texte.get(ev.get("texte") or "", [])
+        lies = [e["ticker"] for a in mesures for e in a["entreprises"]]
+        evts[(ev["date"], ev["type"], ev["titre"])] = {
+            "date": ev["date"], "heure": ev.get("heure", ""), "type": ev["type"],
+            "titre": ev["titre"],
+            "tickers": list(dict.fromkeys(base + [t for t in lies if t in tickers])),
+            "tickers_mots_cles": base,
+            "themes": ev.get("themes") or [], "texte": ev.get("texte") or "",
+            "mesures": [{"alerte_id": a["id"], "titre": a["titre"], "etape": a["etape"],
+                         "article": a.get("article", "")} for a in mesures],
+            "source": ev.get("source", ""),
+            "url": ev.get("url", ""), "fiable": bool(ev.get("fiable", True))}
 
     sortie = {
         "version": 1,

@@ -1,15 +1,15 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T17:04:32+02:00",
+ "genere_le": "2026-09-29T17:18:35+02:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 6,
-   "nouveaux": 0
+   "trouves": 8,
+   "nouveaux": 2
   },
   "presse": {
    "ok": true,
-   "trouves": 69,
+   "trouves": 70,
    "nouveaux": 0
   },
   "assemblee": {
@@ -132,7 +132,9 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "texte": "PLF 2027",
+   "maj_le": "2026-09-29"
   },
   {
    "id": "presse-e4359fea6c50b69e",
@@ -173,7 +175,9 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "texte": "PLFSS 2027",
+   "maj_le": "2026-09-29"
   },
   {
    "id": "amf-135012_20260928",
@@ -721,7 +725,9 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "texte": "PLF 2027",
+   "maj_le": "2026-09-29"
   },
   {
    "id": "presse-48e3a90f692a8e29",
@@ -754,7 +760,9 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "texte": "PLF 2027",
+   "maj_le": "2026-09-29"
   },
   {
    "id": "amf-169532_20260928",
@@ -826,7 +834,9 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "texte": "n° 2970",
+   "maj_le": "2026-09-29"
   },
   {
    "id": "presse-f9b8ed503a993421",
@@ -993,7 +1003,12 @@
    "tickers": [
     "TTE.PA"
    ],
+   "tickers_mots_cles": [
+    "TTE.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/TTE.PA",
    "fiable": false
@@ -1009,8 +1024,23 @@
     "RNO.PA",
     "STLAP.PA"
    ],
+   "tickers_mots_cles": [
+    "FRVIA.PA",
+    "ML.PA",
+    "RNO.PA",
+    "STLAP.PA"
+   ],
    "themes": [
     "automobile"
+   ],
+   "texte": "n° 2970",
+   "mesures": [
+    {
+     "alerte_id": "presse-8158ac12ab6fdb24",
+     "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
+     "etape": "depot",
+     "article": ""
+    }
    ],
    "source": "Assemblée nationale — Commission du développement durable et de l'aménagement du territoire",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-09-30#odj-OMC_RUANR5L17S2026IDC461121",
@@ -1028,11 +1058,20 @@
     "CS.PA",
     "BN.PA"
    ],
+   "tickers_mots_cles": [
+    "DG.PA",
+    "FGR.PA",
+    "ADP.PA",
+    "CS.PA",
+    "BN.PA"
+   ],
    "themes": [
     "concessions_autoroutes",
     "assurances",
     "fiscalite_grandes_entreprises"
    ],
+   "texte": "",
+   "mesures": [],
    "source": "NosParlementaires (calendrier du PLFSS 2027)",
    "url": "https://nosparlementaires.fr/actualites/plfss-2027-calendrier-examen-date-par-date",
    "fiable": false
@@ -1045,7 +1084,12 @@
    "tickers": [
     "GLE.PA"
    ],
+   "tickers_mots_cles": [
+    "GLE.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GLE.PA",
    "fiable": false
@@ -1055,8 +1099,74 @@
    "heure": "09:00",
    "type": "budget",
    "titre": "Examen de la première partie du projet de loi de finances pour 2027",
-   "tickers": [],
+   "tickers": [
+    "DG.PA",
+    "FGR.PA",
+    "ADP.PA",
+    "ALO.PA",
+    "AC.PA",
+    "AI.PA",
+    "AIR.PA",
+    "MT.AS",
+    "CS.PA",
+    "BNP.PA",
+    "EN.PA",
+    "BVI.PA",
+    "CAP.PA",
+    "CA.PA",
+    "ACA.PA",
+    "BN.PA",
+    "DSY.PA",
+    "ENGI.PA",
+    "EDEN.PA",
+    "EL.PA",
+    "ERF.PA",
+    "RMS.PA",
+    "KER.PA",
+    "OR.PA",
+    "LR.PA",
+    "MC.PA",
+    "ML.PA",
+    "ORA.PA",
+    "RI.PA",
+    "PUB.PA",
+    "RNO.PA",
+    "SAF.PA",
+    "SGO.PA",
+    "SAN.PA",
+    "SU.PA",
+    "GLE.PA",
+    "STLAP.PA",
+    "STMPA.PA",
+    "TEP.PA",
+    "HO.PA",
+    "TTE.PA",
+    "URW.PA",
+    "VIE.PA"
+   ],
+   "tickers_mots_cles": [],
    "themes": [],
+   "texte": "PLF 2027",
+   "mesures": [
+    {
+     "alerte_id": "presse-181a5dc8f47983e9",
+     "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
+     "etape": "annonce",
+     "article": ""
+    },
+    {
+     "alerte_id": "presse-ddc4c15adc3d7a4f",
+     "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
+     "etape": "annonce",
+     "article": ""
+    },
+    {
+     "alerte_id": "presse-48e3a90f692a8e29",
+     "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
+     "etape": "annonce",
+     "article": ""
+    }
+   ],
    "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461249",
    "fiable": true
@@ -1069,9 +1179,14 @@
    "tickers": [
     "EDEN.PA"
    ],
+   "tickers_mots_cles": [
+    "EDEN.PA"
+   ],
    "themes": [
     "tickets_restaurant"
    ],
+   "texte": "n° 2892",
+   "mesures": [],
    "source": "Assemblée nationale — Commission des affaires sociales",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461169",
    "fiable": true
@@ -1087,8 +1202,23 @@
     "RNO.PA",
     "STLAP.PA"
    ],
+   "tickers_mots_cles": [
+    "FRVIA.PA",
+    "ML.PA",
+    "RNO.PA",
+    "STLAP.PA"
+   ],
    "themes": [
     "automobile"
+   ],
+   "texte": "n° 2970",
+   "mesures": [
+    {
+     "alerte_id": "presse-8158ac12ab6fdb24",
+     "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
+     "etape": "depot",
+     "article": ""
+    }
    ],
    "source": "Assemblée nationale — Séance publique",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDS30930",
@@ -1102,9 +1232,14 @@
    "tickers": [
     "EDEN.PA"
    ],
+   "tickers_mots_cles": [
+    "EDEN.PA"
+   ],
    "themes": [
     "tickets_restaurant"
    ],
+   "texte": "n° 2892",
+   "mesures": [],
    "source": "Assemblée nationale — Séance publique",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDS30938",
    "fiable": true
@@ -1114,8 +1249,21 @@
    "heure": "21:00",
    "type": "budget",
    "titre": "Examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
-   "tickers": [],
+   "tickers": [
+    "BN.PA",
+    "CA.PA"
+   ],
+   "tickers_mots_cles": [],
    "themes": [],
+   "texte": "PLFSS 2027",
+   "mesures": [
+    {
+     "alerte_id": "presse-e4359fea6c50b69e",
+     "titre": "PLFSS 2027 : projet de taxe sur les produits sucrés transformés",
+     "etape": "rumeur",
+     "article": ""
+    }
+   ],
    "source": "Assemblée nationale — Commission des affaires sociales",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDC461270",
    "fiable": true
@@ -1128,7 +1276,12 @@
    "tickers": [
     "ACA.PA"
    ],
+   "tickers_mots_cles": [
+    "ACA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ACA.PA",
    "fiable": false
@@ -1141,7 +1294,12 @@
    "tickers": [
     "DG.PA"
    ],
+   "tickers_mots_cles": [
+    "DG.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/DG.PA",
    "fiable": false
@@ -1151,8 +1309,74 @@
    "heure": "15:00",
    "type": "budget",
    "titre": "Sous réserve de son dépôt, discussion du projet de loi de finances pour 2027 (première partie)",
-   "tickers": [],
+   "tickers": [
+    "DG.PA",
+    "FGR.PA",
+    "ADP.PA",
+    "ALO.PA",
+    "AC.PA",
+    "AI.PA",
+    "AIR.PA",
+    "MT.AS",
+    "CS.PA",
+    "BNP.PA",
+    "EN.PA",
+    "BVI.PA",
+    "CAP.PA",
+    "CA.PA",
+    "ACA.PA",
+    "BN.PA",
+    "DSY.PA",
+    "ENGI.PA",
+    "EDEN.PA",
+    "EL.PA",
+    "ERF.PA",
+    "RMS.PA",
+    "KER.PA",
+    "OR.PA",
+    "LR.PA",
+    "MC.PA",
+    "ML.PA",
+    "ORA.PA",
+    "RI.PA",
+    "PUB.PA",
+    "RNO.PA",
+    "SAF.PA",
+    "SGO.PA",
+    "SAN.PA",
+    "SU.PA",
+    "GLE.PA",
+    "STLAP.PA",
+    "STMPA.PA",
+    "TEP.PA",
+    "HO.PA",
+    "TTE.PA",
+    "URW.PA",
+    "VIE.PA"
+   ],
+   "tickers_mots_cles": [],
    "themes": [],
+   "texte": "PLF 2027",
+   "mesures": [
+    {
+     "alerte_id": "presse-181a5dc8f47983e9",
+     "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
+     "etape": "annonce",
+     "article": ""
+    },
+    {
+     "alerte_id": "presse-ddc4c15adc3d7a4f",
+     "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
+     "etape": "annonce",
+     "article": ""
+    },
+    {
+     "alerte_id": "presse-48e3a90f692a8e29",
+     "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
+     "etape": "annonce",
+     "article": ""
+    }
+   ],
    "source": "Assemblée nationale — Séance publique",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-13#odj-OMC_RUANR5L17S2027IDS30940",
    "fiable": true
@@ -1165,7 +1389,12 @@
    "tickers": [
     "ORA.PA"
    ],
+   "tickers_mots_cles": [
+    "ORA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ORA.PA",
    "fiable": false
@@ -1178,7 +1407,12 @@
    "tickers": [
     "AIR.PA"
    ],
+   "tickers_mots_cles": [
+    "AIR.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/AIR.PA",
    "fiable": false
@@ -1191,7 +1425,12 @@
    "tickers": [
     "BNP.PA"
    ],
+   "tickers_mots_cles": [
+    "BNP.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BNP.PA",
    "fiable": false
@@ -1204,7 +1443,12 @@
    "tickers": [
     "DSY.PA"
    ],
+   "tickers_mots_cles": [
+    "DSY.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/DSY.PA",
    "fiable": false
@@ -1217,7 +1461,12 @@
    "tickers": [
     "STLAP.PA"
    ],
+   "tickers_mots_cles": [
+    "STLAP.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/STLAP.PA",
    "fiable": false
@@ -1230,7 +1479,12 @@
    "tickers": [
     "GLE.PA"
    ],
+   "tickers_mots_cles": [
+    "GLE.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GLE.PA",
    "fiable": false
@@ -1243,7 +1497,12 @@
    "tickers": [
     "STMPA.PA"
    ],
+   "tickers_mots_cles": [
+    "STMPA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/STMPA.PA",
    "fiable": false
@@ -1256,7 +1515,12 @@
    "tickers": [
     "TTE.PA"
    ],
+   "tickers_mots_cles": [
+    "TTE.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/TTE.PA",
    "fiable": false
@@ -1269,7 +1533,12 @@
    "tickers": [
     "AMUN.PA"
    ],
+   "tickers_mots_cles": [
+    "AMUN.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/AMUN.PA",
    "fiable": false
@@ -1282,7 +1551,12 @@
    "tickers": [
     "ACA.PA"
    ],
+   "tickers_mots_cles": [
+    "ACA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ACA.PA",
    "fiable": false
@@ -1295,7 +1569,12 @@
    "tickers": [
     "SAN.PA"
    ],
+   "tickers_mots_cles": [
+    "SAN.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SAN.PA",
    "fiable": false
@@ -1308,7 +1587,12 @@
    "tickers": [
     "SCR.PA"
    ],
+   "tickers_mots_cles": [
+    "SCR.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SCR.PA",
    "fiable": false
@@ -1321,7 +1605,12 @@
    "tickers": [
     "COFA.PA"
    ],
+   "tickers_mots_cles": [
+    "COFA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COFA.PA",
    "fiable": false
@@ -1334,7 +1623,12 @@
    "tickers": [
     "MT.AS"
    ],
+   "tickers_mots_cles": [
+    "MT.AS"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/MT.AS",
    "fiable": false
@@ -1347,7 +1641,12 @@
    "tickers": [
     "EN.PA"
    ],
+   "tickers_mots_cles": [
+    "EN.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/EN.PA",
    "fiable": false
@@ -1360,7 +1659,12 @@
    "tickers": [
     "ENGI.PA"
    ],
+   "tickers_mots_cles": [
+    "ENGI.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ENGI.PA",
    "fiable": false
@@ -1373,7 +1677,12 @@
    "tickers": [
     "ENX.PA"
    ],
+   "tickers_mots_cles": [
+    "ENX.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ENX.PA",
    "fiable": false
@@ -1386,7 +1695,12 @@
    "tickers": [
     "LR.PA"
    ],
+   "tickers_mots_cles": [
+    "LR.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/LR.PA",
    "fiable": false
@@ -1399,7 +1713,12 @@
    "tickers": [
     "AF.PA"
    ],
+   "tickers_mots_cles": [
+    "AF.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/AF.PA",
    "fiable": false
@@ -1412,7 +1731,12 @@
    "tickers": [
     "MT.AS"
    ],
+   "tickers_mots_cles": [
+    "MT.AS"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/MT.AS",
    "fiable": false
@@ -1425,7 +1749,12 @@
    "tickers": [
     "FGR.PA"
    ],
+   "tickers_mots_cles": [
+    "FGR.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/FGR.PA",
    "fiable": false
@@ -1438,7 +1767,12 @@
    "tickers": [
     "ALO.PA"
    ],
+   "tickers_mots_cles": [
+    "ALO.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ALO.PA",
    "fiable": false
@@ -1451,7 +1785,12 @@
    "tickers": [
     "RI.PA"
    ],
+   "tickers_mots_cles": [
+    "RI.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/RI.PA",
    "fiable": false
@@ -1464,7 +1803,12 @@
    "tickers": [
     "RCO.PA"
    ],
+   "tickers_mots_cles": [
+    "RCO.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/RCO.PA",
    "fiable": false
@@ -1477,7 +1821,12 @@
    "tickers": [
     "MC.PA"
    ],
+   "tickers_mots_cles": [
+    "MC.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/MC.PA",
    "fiable": false
@@ -1490,7 +1839,12 @@
    "tickers": [
     "ORA.PA"
    ],
+   "tickers_mots_cles": [
+    "ORA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ORA.PA",
    "fiable": false
@@ -1503,7 +1857,12 @@
    "tickers": [
     "STMPA.PA"
    ],
+   "tickers_mots_cles": [
+    "STMPA.PA"
+   ],
    "themes": [],
+   "texte": "",
+   "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/STMPA.PA",
    "fiable": false

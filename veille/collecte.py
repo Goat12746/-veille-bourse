@@ -333,6 +333,19 @@ def _points_odj(odj):
     return gardees
 
 
+def texte_examine(norm):
+    """Cle du texte examine, partagee avec les alertes (champ "texte") :
+    "PLF 2027", "PLFR 2026", "PLFSS 2027", ou "n° 2892" pour un autre texte."""
+    m = re.search(r"projet de loi de finances (rectificative )?pour (\d{4})", norm)
+    if m:
+        return ("PLFR " if m.group(1) else "PLF ") + m.group(2)
+    m = re.search(r"financement de la securite sociale pour (\d{4})", norm)
+    if m:
+        return "PLFSS " + m.group(1)
+    m = re.search(r"n° ?(\d{3,5})", norm)
+    return f"n° {m.group(1)}" if m else ""
+
+
 def _noms_organes():
     """Identifiant d'organe de l'Assemblee (PO420120...) -> nom lisible."""
     chemin = telecharger_cache(
@@ -388,6 +401,7 @@ def source_agenda(a, jours_avant=21):
             if not retenus:
                 continue
             titre = " • ".join(retenus)
+            texte = texte_examine(normaliser(titre))
             evenements.append({
                 "date": debut[:10],
                 "heure": debut[11:16],
@@ -395,12 +409,24 @@ def source_agenda(a, jours_avant=21):
                 "titre": titre if len(titre) <= 400 else titre[:397] + "…",
                 "tickers": a.entreprises_de(themes, normaliser(titre)) if themes else [],
                 "themes": [th["id"] for th in themes],
+                # Texte examine : les alertes sur ce texte y rattachent leurs
+                # entreprises lors de la publication (fusionner.py).
+                "texte": texte,
                 "source": "Assemblée nationale" + (
                     f" — {organes[r.get('organeReuniRef')]}" if r.get("organeReuniRef") in organes else ""),
                 # Page de l'agenda du jour, ancre sur la reunion.
                 "url": f"https://www2.assemblee-nationale.fr/agendas/les-agendas/{debut[:10]}#odj-OMC_{r['uid']}",
                 "fiable": True,
             })
+    # La seance ne repete pas toujours le numero du texte : on le reprend
+    # d'une autre reunion sur le meme texte (meme intitule "visant a ...").
+    def intitule(e):
+        m = re.search(r"visant a (.{20,})", normaliser(e["titre"]))
+        return m.group(1)[:35] if m else None
+    connus = {intitule(e): e["texte"] for e in evenements if e["texte"] and intitule(e)}
+    for e in evenements:
+        if not e["texte"]:
+            e["texte"] = connus.get(intitule(e), "")
     evenements.sort(key=lambda e: (e["date"], e["heure"]))
     return evenements
 
