@@ -1,29 +1,27 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T14:45:32+02:00",
+ "genere_le": "2026-09-29T13:25:54+00:00",
  "sources": {
   "amf": {
-   "ok": true,
-   "trouves": 6,
-   "nouveaux": 6
+   "ok": false,
+   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
   },
   "presse": {
    "ok": true,
-   "trouves": 69,
-   "nouveaux": 69
+   "trouves": 0,
+   "nouveaux": 0
   },
   "assemblee": {
-   "ok": true,
-   "trouves": 1,
-   "nouveaux": 1
+   "ok": false,
+   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
   },
   "agenda": {
-   "ok": true,
-   "trouves": 40
+   "ok": false,
+   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
   },
   "calendrier": {
-   "ok": true,
-   "trouves": 31
+   "ok": false,
+   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
   }
  },
  "alertes": [
