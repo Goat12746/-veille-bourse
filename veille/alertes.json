@@ -1,27 +1,29 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T13:25:54+00:00",
+ "genere_le": "2026-09-29T13:44:53+00:00",
  "sources": {
   "amf": {
-   "ok": false,
-   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "trouves": 6,
+   "nouveaux": 0
   },
   "presse": {
    "ok": true,
-   "trouves": 0,
-   "nouveaux": 0
+   "trouves": 72,
+   "nouveaux": 4
   },
   "assemblee": {
-   "ok": false,
-   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "trouves": 1,
+   "nouveaux": 0
   },
   "agenda": {
-   "ok": false,
-   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "ok": true,
+   "trouves": 40
   },
   "calendrier": {
    "ok": false,
-   "erreur": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "erreur": "HTTP Error 429: Too Many Requests"
   }
  },
  "alertes": [
@@ -330,6 +332,47 @@
      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPWmtQZWExY0ZqZnRZT28yYmg1Si15Zldldy1idnJnRUhoQ0hXQ1hkb01pelRQTTktMHk0UDUyNlpTZlNFQmhyLTBNaW0wX2pISkF5TENXZFh5Qkg3SVROVWZfdDZ2NXlUVXFraDhMSmxhTC1zWUNNMHVwMUxfWGVSQ0tvODNHTTB3RC04ejhFRUxDd256NEd1bjd6Nmh6MVFfRE0tNnkxLXJCdm5vZXlVRnlvV2d0eXRBZWJYWU5fTS1LV0ZKVDBMaW80TkREM0VQTGlTZXRSSzVoUms0QlV0VHlDSEI1djZraVNZR19iNWs4eW44SnU3ME11QUF0RlBtaHB5Y2UyR2EwcjdKLTFxUGllQm9mbWVYcmRWaEhR?oc=5",
      "date": "2026-09-29",
      "media": "France 3 Régions"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-909e8b97a351aad4",
+   "date": "2026-09-29",
+   "source": "presse",
+   "titre": "Stellantis : chômage partiel dans trois usines françaises en octobre",
+   "resume": "Stellantis a annoncé aux syndicats le 29 septembre du chômage partiel à Mulhouse (arrêt du 15 au 30 octobre), Rennes (sept jours) et Sochaux. Causes : ventes en fin de cycle (308, 408, DS7) et tensions chez des fournisseurs sur certains modèles électriques.",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOLTc1WEtCZkliY2U3TlEzZVgwVXhfMjl0Y05pMk10QnlCVmFTY1lDclRpclJvWS1vRXJrM1pOcWpTb3R3NmRBX2RVSlRNQmdVSXlVaHJlb1otQjBlVkh3UC1IMXI4cXJDbGc1djNnRERjU0s2OVZmOEhia1l4OXZ5WjF1Yk5PT29mb2Q4b3kxc1FVaWZ2X2MtMmEyRDRxcEpzSmdfZWNxZTZ1a3RvUkJoeUJlcWRwN3ZCUkFpOWxVY1hQY2QwbnIzbUY0bzduOGhuc19GY25n?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [
+    "automobile"
+   ],
+   "entreprises": [
+    {
+     "ticker": "STLAP.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Arrêts de production de quelques jours à deux semaines sur trois sites, soit un manque de volumes limité à l'échelle du groupe.",
+     "extrait": "EXCLUSIF - Automobile : Stellantis met trois usines françaises au chômage partiel",
+     "nom": "Stellantis"
+    },
+    {
+     "ticker": "FRVIA.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Équipementier automobile potentiellement exposé à la baisse des cadences de production en France, impact non chiffré.",
+     "extrait": "",
+     "nom": "Forvia"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "EXCLUSIF - Automobile : Stellantis met trois usines françaises au chômage partiel - Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOLTc1WEtCZkliY2U3TlEzZVgwVXhfMjl0Y05pMk10QnlCVmFTY1lDclRpclJvWS1vRXJrM1pOcWpTb3R3NmRBX2RVSlRNQmdVSXlVaHJlb1otQjBlVkh3UC1IMXI4cXJDbGc1djNnRERjU0s2OVZmOEhia1l4OXZ5WjF1Yk5PT29mb2Q4b3kxc1FVaWZ2X2MtMmEyRDRxcEpzSmdfZWNxZTZ1a3RvUkJoeUJlcWRwN3ZCUkFpOWxVY1hQY2QwbnIzbUY0bzduOGhuc19GY25n?oc=5",
+     "date": "2026-09-29",
+     "media": "Les Echos"
     }
    ],
    "analyse": "claude",
