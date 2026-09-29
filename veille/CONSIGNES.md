@@ -75,6 +75,9 @@ dates importantes que tu apprends en lisant les textes (date d'examen d'un
 article, date de résultats confirmée par l'entreprise…). Même format que le
 calendrier de `candidats.json` ; mets `"fiable": true` seulement si la date
 vient d'une source officielle.
+Chaque date ajoutée doit avoir une `url` vers la page qui l'annonce (article,
+communiqué, agenda officiel) et une `source` lisible : sans lien, l'utilisateur
+ne peut pas la vérifier.
 
 **En cas de doute** sur le sens ou l'ampleur : `incertain` / `inconnue` plutôt
 qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
