@@ -1,0 +1,1314 @@
+{
+ "version": 1,
+ "genere_le": "2026-09-29T23:52:29+02:00",
+ "derniere_seance": "2026-09-29",
+ "methode": {
+  "indice": "CAC 40",
+  "estimation": 250,
+  "seuil_net": 1.0,
+  "seuil_fort": 2.0,
+  "cloture": "17:35",
+  "macro": 10,
+  "seances_apres": 5
+ },
+ "cours_indisponibles": [],
+ "alertes": {
+  "n_alertes": 14,
+  "n_observations": 67,
+  "statuts": {
+   "note": 14,
+   "confondu": 5,
+   "non_directionnel": 7,
+   "attente": 1,
+   "macro": 40
+  },
+  "synthese": {
+   "n": 14,
+   "points": {
+    "total": 1,
+    "moyenne": 0.07,
+    "repartition": {
+     "2": 1,
+     "1": 2,
+     "0": 8,
+     "-1": 3,
+     "-2": 0
+    }
+   },
+   "sens": {
+    "justes": 3,
+    "faux": 1,
+    "bruit": 10,
+    "taux": 0.75,
+    "p": 0.625
+   },
+   "ecart_moyen_pct": 0.19,
+   "z_moyen": 0.24,
+   "t": 0.59,
+   "p_t": 0.5649,
+   "signe": {
+    "positifs": 6,
+    "p": 0.7905
+   },
+   "rang": {
+    "moyen": 0.479,
+    "p": 0.7826
+   },
+   "ampleur": {
+    "n": 14,
+    "matrice": {
+     "faible": {
+      "contraire": 1,
+      "bruit": 8,
+      "net": 0,
+      "fort": 0
+     },
+     "moyenne": {
+      "contraire": 0,
+      "bruit": 1,
+      "net": 0,
+      "fort": 1
+     },
+     "forte": {
+      "contraire": 0,
+      "bruit": 1,
+      "net": 1,
+      "fort": 1
+     }
+    },
+    "z_abs_moyen": {
+     "faible": 0.64,
+     "moyenne": 2.34,
+     "forte": 1.25
+    },
+    "spearman": 0.258,
+    "p": 0.3725
+   },
+   "apres_publication": {
+    "n": 0,
+    "ecart_moyen_pct": null,
+    "z_moyen": null,
+    "p": null
+   }
+  },
+  "avant_reaction": {
+   "n": 0
+  },
+  "par_source": [
+   {
+    "n": 13,
+    "points_moyen": 0.0,
+    "justes": 2,
+    "faux": 1,
+    "z_moyen": -0.07,
+    "cle": "presse"
+   },
+   {
+    "n": 1,
+    "points_moyen": 1.0,
+    "justes": 1,
+    "faux": 0,
+    "z_moyen": 4.2,
+    "cle": "amf"
+   }
+  ],
+  "par_etape": [
+   {
+    "n": 5,
+    "points_moyen": -0.4,
+    "justes": 0,
+    "faux": 1,
+    "z_moyen": -0.72,
+    "cle": "information"
+   },
+   {
+    "n": 4,
+    "points_moyen": 0.5,
+    "justes": 2,
+    "faux": 0,
+    "z_moyen": 0.96,
+    "cle": "annonce"
+   },
+   {
+    "n": 4,
+    "points_moyen": 0.0,
+    "justes": 0,
+    "faux": 0,
+    "z_moyen": -0.29,
+    "cle": "rumeur"
+   },
+   {
+    "n": 1,
+    "points_moyen": 1.0,
+    "justes": 1,
+    "faux": 0,
+    "z_moyen": 4.2,
+    "cle": "publie"
+   }
+  ],
+  "par_ampleur": [
+   {
+    "n": 9,
+    "points_moyen": -0.11,
+    "justes": 0,
+    "faux": 1,
+    "z_moyen": -0.46,
+    "cle": "faible"
+   },
+   {
+    "n": 3,
+    "points_moyen": 0.67,
+    "justes": 2,
+    "faux": 0,
+    "z_moyen": 1.25,
+    "cle": "forte"
+   },
+   {
+    "n": 2,
+    "points_moyen": 0.0,
+    "justes": 1,
+    "faux": 0,
+    "z_moyen": 1.86,
+    "cle": "moyenne"
+   }
+  ],
+  "probabilites": {
+   "n_tranchees": 0,
+   "n_en_cours": 8,
+   "brier": null
+  },
+  "detail": [
+   {
+    "id": "presse-909e8b97a351aad4",
+    "titre": "Stellantis : chômage partiel dans trois usines françaises en octobre",
+    "date": "2026-09-29",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-29T15:01",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 2,
+    "observations": [
+     {
+      "ticker": "STLAP.PA",
+      "nom": "Stellantis",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "rendement_pct": -3.5,
+      "indice_pct": -0.53,
+      "beta": 1.51,
+      "sigma_pct": 2.89,
+      "ecart_pct": -2.48,
+      "z": -0.86,
+      "rang": 0.127,
+      "avant_pct": -2.13,
+      "statut": "confondu",
+      "confondu_avec": [
+       "presse-8158ac12ab6fdb24"
+      ],
+      "niveau": "bruit"
+     },
+     {
+      "ticker": "FRVIA.PA",
+      "nom": "Forvia",
+      "sens": "incertain",
+      "ampleur": "inconnue",
+      "rendement_pct": -2.27,
+      "indice_pct": -0.53,
+      "beta": 1.75,
+      "sigma_pct": 2.52,
+      "ecart_pct": -1.27,
+      "z": -0.5,
+      "rang": 0.258,
+      "avant_pct": -1.85,
+      "statut": "non_directionnel",
+      "niveau": "bruit"
+     }
+    ]
+   },
+   {
+    "id": "presse-e4359fea6c50b69e",
+    "titre": "PLFSS 2027 : projet de taxe sur les produits sucrés transformés",
+    "date": "2026-09-29",
+    "source": "presse",
+    "etape": "rumeur",
+    "probabilite": 0.5,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-29T13:30",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 2,
+    "observations": [
+     {
+      "ticker": "BN.PA",
+      "nom": "Danone",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "rendement_pct": -1.24,
+      "indice_pct": -0.53,
+      "beta": 0.36,
+      "sigma_pct": 1.43,
+      "ecart_pct": -1.0,
+      "z": -0.7,
+      "rang": 0.194,
+      "avant_pct": -0.74,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     },
+     {
+      "ticker": "CA.PA",
+      "nom": "Carrefour",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "rendement_pct": -1.36,
+      "indice_pct": -0.53,
+      "beta": 0.3,
+      "sigma_pct": 1.37,
+      "ecart_pct": -1.37,
+      "z": -0.99,
+      "rang": 0.107,
+      "avant_pct": -0.21,
+      "statut": "non_directionnel",
+      "niveau": "bruit"
+     }
+    ]
+   },
+   {
+    "id": "presse-7f5e154f8dc53a8e",
+    "titre": "Airbus : premier vol de l'A350F, la version cargo",
+    "date": "2026-09-29",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 0.9,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-29T00:00",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "retrait": {
+     "le": "2026-09-29",
+     "motif": "Pas une information nouvelle : premier vol prévu de longue date, sans incident ni surprise."
+    },
+    "observations": [
+     {
+      "ticker": "AIR.PA",
+      "nom": "Airbus",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-181a5dc8f47983e9",
+    "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
+    "date": "2026-09-29",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 0.75,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T18:00",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 4,
+    "observations": [
+     {
+      "ticker": "DG.PA",
+      "nom": "Vinci",
+      "sens": "negatif",
+      "ampleur": "forte",
+      "rendement_pct": -2.38,
+      "indice_pct": -0.53,
+      "beta": 1.06,
+      "sigma_pct": 1.16,
+      "ecart_pct": -1.81,
+      "z": -1.56,
+      "rang": 0.052,
+      "avant_pct": 0.17,
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 0,
+       "total": 1
+      }
+     },
+     {
+      "ticker": "FGR.PA",
+      "nom": "Eiffage",
+      "sens": "negatif",
+      "ampleur": "forte",
+      "rendement_pct": -3.07,
+      "indice_pct": -0.53,
+      "beta": 1.05,
+      "sigma_pct": 1.19,
+      "ecart_pct": -2.5,
+      "z": -2.1,
+      "rang": 0.02,
+      "avant_pct": -0.08,
+      "statut": "note",
+      "niveau": "fort",
+      "points": {
+       "sens": 1,
+       "ampleur": 1,
+       "total": 2
+      }
+     },
+     {
+      "ticker": "ADP.PA",
+      "nom": "Aéroports de Paris (Groupe ADP)",
+      "sens": "negatif",
+      "ampleur": "forte",
+      "rendement_pct": -0.72,
+      "indice_pct": -0.53,
+      "beta": 1.11,
+      "sigma_pct": 1.79,
+      "ecart_pct": -0.15,
+      "z": -0.08,
+      "rang": 0.472,
+      "avant_pct": 3.93,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": -1,
+       "total": -1
+      }
+     },
+     {
+      "ticker": "ALO.PA",
+      "nom": "Alstom",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": 0.92,
+      "indice_pct": -0.53,
+      "beta": 0.7,
+      "sigma_pct": 2.59,
+      "ecart_pct": 1.37,
+      "z": 0.53,
+      "rang": 0.81,
+      "avant_pct": -0.51,
+      "statut": "confondu",
+      "confondu_avec": [
+       "amf-135005_20260929"
+      ],
+      "niveau": "bruit"
+     }
+    ]
+   },
+   {
+    "id": "amf-135012_20260928",
+    "titre": "Rexel : augmentation de capital d'environ 500 M€ pour financer l'acquisition de GCG",
+    "date": "2026-09-29",
+    "source": "amf",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T18:00",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "RXL.PA",
+      "nom": "Rexel",
+      "sens": "incertain",
+      "ampleur": "moyenne",
+      "rendement_pct": 3.62,
+      "indice_pct": -0.53,
+      "beta": 1.25,
+      "sigma_pct": 1.4,
+      "ecart_pct": 4.18,
+      "z": 2.99,
+      "rang": 0.996,
+      "avant_pct": -3.57,
+      "statut": "non_directionnel",
+      "niveau": "fort"
+     }
+    ]
+   },
+   {
+    "id": "amf-135005_20260929",
+    "titre": "Alstom : nouvelles commandes en Suède et à Riyad",
+    "date": "2026-09-29",
+    "source": "amf",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T18:00",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "ALO.PA",
+      "nom": "Alstom",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": 0.92,
+      "indice_pct": -0.53,
+      "beta": 0.7,
+      "sigma_pct": 2.59,
+      "ecart_pct": 1.37,
+      "z": 0.53,
+      "rang": 0.81,
+      "avant_pct": -0.51,
+      "statut": "confondu",
+      "confondu_avec": [
+       "presse-181a5dc8f47983e9"
+      ],
+      "niveau": "bruit"
+     }
+    ]
+   },
+   {
+    "id": "presse-78f559fd4559a36e",
+    "titre": "Voiture électrique : leasing social et aides à l'achat en question dans le budget 2027",
+    "date": "2026-09-29",
+    "source": "presse",
+    "etape": "rumeur",
+    "probabilite": 0.4,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-27T00:00",
+    "reaction": {
+     "debut": "2026-09-28",
+     "fin": "2026-09-28",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 2,
+    "observations": [
+     {
+      "ticker": "RNO.PA",
+      "nom": "Renault",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "rendement_pct": 0.11,
+      "indice_pct": 0.01,
+      "beta": 0.99,
+      "sigma_pct": 1.8,
+      "ecart_pct": 0.15,
+      "z": 0.08,
+      "rang": 0.595,
+      "avant_pct": -4.04,
+      "statut": "non_directionnel",
+      "niveau": "bruit"
+     },
+     {
+      "ticker": "STLAP.PA",
+      "nom": "Stellantis",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "rendement_pct": 0.45,
+      "indice_pct": 0.01,
+      "beta": 1.5,
+      "sigma_pct": 2.89,
+      "ecart_pct": 0.65,
+      "z": 0.22,
+      "rang": 0.599,
+      "avant_pct": -3.25,
+      "statut": "non_directionnel",
+      "niveau": "bruit"
+     }
+    ]
+   },
+   {
+    "id": "presse-f9b8ed503a993421",
+    "titre": "Cognac : les ventes chutent sous l'effet des droits de douane",
+    "date": "2026-09-28",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 0.9,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-29T00:34",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 3,
+    "retrait": {
+     "le": "2026-09-29",
+     "motif": "Pas une information nouvelle : les droits de douane s'appliquent depuis des mois, l'article en commente les effets."
+    },
+    "observations": [
+     {
+      "ticker": "RCO.PA",
+      "nom": "Rémy Cointreau",
+      "sens": "negatif",
+      "ampleur": "moyenne",
+      "rendement_pct": 0.42,
+      "indice_pct": -0.53,
+      "beta": 1.08,
+      "sigma_pct": 2.12,
+      "ecart_pct": 1.01,
+      "z": 0.48,
+      "rang": 0.71,
+      "avant_pct": 1.9,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": -1,
+       "total": -1
+      }
+     },
+     {
+      "ticker": "RI.PA",
+      "nom": "Pernod Ricard",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "rendement_pct": 2.18,
+      "indice_pct": -0.53,
+      "beta": 0.64,
+      "sigma_pct": 1.79,
+      "ecart_pct": 2.64,
+      "z": 1.47,
+      "rang": 0.921,
+      "avant_pct": -0.46,
+      "statut": "note",
+      "niveau": "contraire",
+      "points": {
+       "sens": -1,
+       "ampleur": 0,
+       "total": -1
+      }
+     },
+     {
+      "ticker": "MC.PA",
+      "nom": "LVMH",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "rendement_pct": -1.05,
+      "indice_pct": -0.53,
+      "beta": 1.52,
+      "sigma_pct": 1.4,
+      "ecart_pct": -0.17,
+      "z": -0.12,
+      "rang": 0.421,
+      "avant_pct": -0.13,
+      "statut": "confondu",
+      "confondu_avec": [
+       "presse-7ee8137bfefbf4de"
+      ],
+      "niveau": "bruit"
+     }
+    ]
+   },
+   {
+    "id": "amf-169532_20260928",
+    "titre": "Legrand relève ses objectifs 2027-2030 grâce aux centres de données",
+    "date": "2026-09-28",
+    "source": "amf",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T18:00",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "LR.PA",
+      "nom": "Legrand",
+      "sens": "positif",
+      "ampleur": "moyenne",
+      "rendement_pct": 6.08,
+      "indice_pct": -0.53,
+      "beta": 1.28,
+      "sigma_pct": 1.62,
+      "ecart_pct": 6.78,
+      "z": 4.2,
+      "rang": 0.996,
+      "avant_pct": -1.82,
+      "statut": "note",
+      "niveau": "fort",
+      "points": {
+       "sens": 1,
+       "ampleur": 0,
+       "total": 1
+      }
+     }
+    ]
+   },
+   {
+    "id": "presse-7ee8137bfefbf4de",
+    "titre": "Chine–États-Unis : la visite de Xi Jinping prolonge la détente commerciale",
+    "date": "2026-09-28",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 0.6,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T18:00",
+    "reaction": {
+     "debut": "2026-09-29",
+     "fin": "2026-09-29",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 4,
+    "retrait": {
+     "le": "2026-09-29",
+     "motif": "Pas une information nouvelle : commentaire géopolitique, sans décision concrète touchant les entreprises citées."
+    },
+    "observations": [
+     {
+      "ticker": "MC.PA",
+      "nom": "LVMH",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -1.05,
+      "indice_pct": -0.53,
+      "beta": 1.52,
+      "sigma_pct": 1.4,
+      "ecart_pct": -0.17,
+      "z": -0.12,
+      "rang": 0.421,
+      "avant_pct": -0.13,
+      "statut": "confondu",
+      "confondu_avec": [
+       "presse-f9b8ed503a993421"
+      ],
+      "niveau": "bruit"
+     },
+     {
+      "ticker": "KER.PA",
+      "nom": "Kering",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -2.04,
+      "indice_pct": -0.53,
+      "beta": 1.6,
+      "sigma_pct": 2.34,
+      "ecart_pct": -1.16,
+      "z": -0.5,
+      "rang": 0.29,
+      "avant_pct": 1.22,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     },
+     {
+      "ticker": "RMS.PA",
+      "nom": "Hermès",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -2.1,
+      "indice_pct": -0.53,
+      "beta": 1.61,
+      "sigma_pct": 1.53,
+      "ecart_pct": -1.08,
+      "z": -0.71,
+      "rang": 0.202,
+      "avant_pct": 4.82,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     },
+     {
+      "ticker": "AIR.PA",
+      "nom": "Airbus",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -1.36,
+      "indice_pct": -0.53,
+      "beta": 1.34,
+      "sigma_pct": 1.42,
+      "ecart_pct": -0.66,
+      "z": -0.46,
+      "rang": 0.29,
+      "avant_pct": 0.12,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     }
+    ]
+   },
+   {
+    "id": "presse-ff79c0193462f61e",
+    "titre": "Portugal : le Rafale candidat au remplacement des F-16",
+    "date": "2026-09-28",
+    "source": "presse",
+    "etape": "rumeur",
+    "probabilite": 0.2,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T17:06",
+    "reaction": {
+     "debut": "2026-09-28",
+     "fin": "2026-09-28",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 3,
+    "observations": [
+     {
+      "ticker": "AM.PA",
+      "nom": "Dassault Aviation",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -0.62,
+      "indice_pct": 0.01,
+      "beta": 0.66,
+      "sigma_pct": 1.82,
+      "ecart_pct": -0.61,
+      "z": -0.34,
+      "rang": 0.349,
+      "avant_pct": 1.82,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     },
+     {
+      "ticker": "SAF.PA",
+      "nom": "Safran",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -0.98,
+      "indice_pct": 0.01,
+      "beta": 1.67,
+      "sigma_pct": 1.47,
+      "ecart_pct": -1.05,
+      "z": -0.71,
+      "rang": 0.198,
+      "avant_pct": 3.54,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     },
+     {
+      "ticker": "HO.PA",
+      "nom": "Thales",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -1.48,
+      "indice_pct": 0.01,
+      "beta": 0.64,
+      "sigma_pct": 1.84,
+      "ecart_pct": -1.46,
+      "z": -0.79,
+      "rang": 0.183,
+      "avant_pct": -3.66,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     }
+    ]
+   },
+   {
+    "id": "presse-48e3a90f692a8e29",
+    "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
+    "date": "2026-09-28",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 0.6,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T16:00",
+    "reaction": {
+     "debut": "2026-09-28",
+     "fin": "2026-09-28",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "CS.PA",
+      "nom": "AXA",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "rendement_pct": -0.05,
+      "indice_pct": 0.01,
+      "beta": 0.68,
+      "sigma_pct": 0.92,
+      "ecart_pct": -0.1,
+      "z": -0.11,
+      "rang": 0.437,
+      "avant_pct": -1.96,
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
+     }
+    ]
+   },
+   {
+    "id": "presse-ddc4c15adc3d7a4f",
+    "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
+    "date": "2026-09-28",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 0.7,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T04:00",
+    "reaction": {
+     "debut": "2026-09-28",
+     "fin": "2026-09-28",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": true,
+    "nb_entreprises": 40,
+    "observations": [],
+    "indice": {
+     "sens": "positif",
+     "statut": "mesure",
+     "rendement_pct": 0.01,
+     "z": 0.01,
+     "niveau": "bruit"
+    }
+   },
+   {
+    "id": "presse-8158ac12ab6fdb24",
+    "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
+    "date": "2026-09-28",
+    "source": "presse",
+    "etape": "depot",
+    "probabilite": 0.3,
+    "publie_a": "2026-09-29T23:59",
+    "information": "2026-09-28T00:00",
+    "reaction": {
+     "debut": "2026-09-28",
+     "fin": "2026-09-29",
+     "seances": 2
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 2,
+    "observations": [
+     {
+      "ticker": "RNO.PA",
+      "nom": "Renault",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "rendement_pct": -0.91,
+      "indice_pct": -0.52,
+      "beta": 0.99,
+      "sigma_pct": 1.8,
+      "ecart_pct": -0.31,
+      "z": -0.12,
+      "rang": 0.458,
+      "avant_pct": -4.04,
+      "statut": "non_directionnel",
+      "niveau": "bruit"
+     },
+     {
+      "ticker": "STLAP.PA",
+      "nom": "Stellantis",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "rendement_pct": -3.07,
+      "indice_pct": -0.52,
+      "beta": 1.5,
+      "sigma_pct": 2.89,
+      "ecart_pct": -1.85,
+      "z": -0.45,
+      "rang": 0.291,
+      "avant_pct": -3.25,
+      "statut": "non_directionnel",
+      "niveau": "bruit"
+     }
+    ]
+   }
+  ]
+ },
+ "historique_amf": {
+  "depuis": "2019-01-01",
+  "jusqu_a": "2026-09-29",
+  "n_communiques": 9529,
+  "n_evenements": 7964,
+  "jour_ordinaire": {
+   "n": 102986,
+   "z_abs_moyen": 0.68,
+   "part_net": 0.224,
+   "part_fort": 0.04
+  },
+  "tous": {
+   "n": 7964,
+   "z_abs_moyen": 1.12,
+   "part_net": 0.366,
+   "part_fort": 0.144,
+   "ecart_moyen_pct": 0.06,
+   "ecart_abs_median_pct": 0.93
+  },
+  "categories": [
+   {
+    "n": 48,
+    "z_abs_moyen": 3.14,
+    "part_net": 0.729,
+    "part_fort": 0.521,
+    "ecart_moyen_pct": -1.04,
+    "ecart_abs_median_pct": 2.87,
+    "id": "revision",
+    "libelle": "Révision des objectifs, pré-annonces"
+   },
+   {
+    "n": 2104,
+    "z_abs_moyen": 1.82,
+    "part_net": 0.565,
+    "part_fort": 0.324,
+    "ecart_moyen_pct": 0.16,
+    "ecart_abs_median_pct": 1.63,
+    "id": "resultats",
+    "libelle": "Résultats et chiffre d'affaires"
+   },
+   {
+    "n": 135,
+    "z_abs_moyen": 1.36,
+    "part_net": 0.407,
+    "part_fort": 0.185,
+    "ecart_moyen_pct": 0.19,
+    "ecart_abs_median_pct": 1.14,
+    "id": "strategie",
+    "libelle": "Stratégie et restructuration"
+   },
+   {
+    "n": 106,
+    "z_abs_moyen": 0.92,
+    "part_net": 0.349,
+    "part_fort": 0.123,
+    "ecart_moyen_pct": 0.06,
+    "ecart_abs_median_pct": 0.92,
+    "id": "actionnaires",
+    "libelle": "Dividendes et rachats d'actions"
+   },
+   {
+    "n": 58,
+    "z_abs_moyen": 0.89,
+    "part_net": 0.31,
+    "part_fort": 0.103,
+    "ecart_moyen_pct": -0.16,
+    "ecart_abs_median_pct": 0.7,
+    "id": "juridique",
+    "libelle": "Juridique et réglementaire"
+   },
+   {
+    "n": 2639,
+    "z_abs_moyen": 0.87,
+    "part_net": 0.298,
+    "part_fort": 0.082,
+    "ecart_moyen_pct": 0.03,
+    "ecart_abs_median_pct": 0.81,
+    "id": "autre",
+    "libelle": "Autres communiqués"
+   },
+   {
+    "n": 925,
+    "z_abs_moyen": 0.85,
+    "part_net": 0.31,
+    "part_fort": 0.077,
+    "ecart_moyen_pct": 0.09,
+    "ecart_abs_median_pct": 0.79,
+    "id": "operation",
+    "libelle": "Acquisitions, cessions, fusions"
+   },
+   {
+    "n": 330,
+    "z_abs_moyen": 0.86,
+    "part_net": 0.288,
+    "part_fort": 0.076,
+    "ecart_moyen_pct": -0.12,
+    "ecart_abs_median_pct": 0.86,
+    "id": "gouvernance",
+    "libelle": "Gouvernance et dirigeants"
+   },
+   {
+    "n": 822,
+    "z_abs_moyen": 0.76,
+    "part_net": 0.254,
+    "part_fort": 0.064,
+    "ecart_moyen_pct": 0.11,
+    "ecart_abs_median_pct": 0.74,
+    "id": "commercial",
+    "libelle": "Contrats, produits et essais cliniques"
+   },
+   {
+    "n": 153,
+    "z_abs_moyen": 0.71,
+    "part_net": 0.268,
+    "part_fort": 0.046,
+    "ecart_moyen_pct": 0.07,
+    "ecart_abs_median_pct": 0.69,
+    "id": "trafic",
+    "libelle": "Trafic et activité mensuelle"
+   },
+   {
+    "n": 644,
+    "z_abs_moyen": 0.74,
+    "part_net": 0.258,
+    "part_fort": 0.04,
+    "ecart_moyen_pct": -0.06,
+    "ecart_abs_median_pct": 0.7,
+    "id": "financement",
+    "libelle": "Financement et capital"
+   }
+  ],
+  "sens_mots_cles": {
+   "n": 1079,
+   "justes": 288,
+   "faux": 202,
+   "taux": 0.588,
+   "p": 0.0001,
+   "ecart_moyen_pct": 0.3,
+   "z_moyen": 0.22,
+   "p_t": 0.0023,
+   "rang_p": 0.0,
+   "par_sens": {
+    "positif": {
+     "n": 1058,
+     "ecart_moyen_pct": 0.31
+    },
+    "negatif": {
+     "n": 21,
+     "ecart_moyen_pct": 0.42
+    }
+   }
+  },
+  "apres_cloture": {
+   "n": 3369,
+   "z_abs_jour_publication": 0.79,
+   "z_abs_lendemain": 1.03
+  },
+  "plus_fortes_reactions": [
+   {
+    "jour": "2022-11-10",
+    "ticker": "TEP.PA",
+    "nom": "Teleperformance",
+    "categorie": "autre",
+    "titre": "Informations privilégiées / Autres communiqués",
+    "rendement_pct": -33.9,
+    "indice_pct": 1.96,
+    "ecart_pct": -35.44,
+    "z": -23.16
+   },
+   {
+    "jour": "2023-10-05",
+    "ticker": "ALO.PA",
+    "nom": "Alstom",
+    "categorie": "revision",
+    "titre": "ALSTOM SA: Alstom publie des informations financières préliminaires sur le premier semestre de l’exercice fiscal 2023/24, clos le 30 septembre 2023",
+    "rendement_pct": -37.58,
+    "indice_pct": 0.02,
+    "ecart_pct": -37.65,
+    "z": -22.51
+   },
+   {
+    "jour": "2023-10-27",
+    "ticker": "SAN.PA",
+    "nom": "Sanofi",
+    "categorie": "resultats",
+    "titre": "Communiqué de presse : Un troisième trimestre solide, marqué par la performance de la Médecine de Spécialités et le fort démarrage des lancements de Beyfortus® et ALTUVIIIO®",
+    "rendement_pct": -18.93,
+    "indice_pct": -1.36,
+    "ecart_pct": -18.61,
+    "z": -15.34
+   },
+   {
+    "jour": "2026-04-23",
+    "ticker": "BIM.PA",
+    "nom": "bioMérieux",
+    "categorie": "resultats",
+    "titre": "bioMérieux – Information financière du 1er trimestre 2026",
+    "rendement_pct": -17.46,
+    "indice_pct": 0.87,
+    "ecart_pct": -17.76,
+    "z": -14.83
+   },
+   {
+    "jour": "2024-07-16",
+    "ticker": "SCR.PA",
+    "nom": "SCOR",
+    "categorie": "resultats",
+    "titre": "SCOR informe sur ses résultats du deuxième trimestre 2024 et de l’année 2024",
+    "rendement_pct": -24.56,
+    "indice_pct": -0.69,
+    "ecart_pct": -24.07,
+    "z": -14.55
+   },
+   {
+    "jour": "2025-03-06",
+    "ticker": "AF.PA",
+    "nom": "Air France-KLM",
+    "categorie": "resultats",
+    "titre": "Communiqué de presse - Résultats annuels 2024",
+    "rendement_pct": 32.95,
+    "indice_pct": 0.29,
+    "ecart_pct": 32.8,
+    "z": 14.08
+   },
+   {
+    "jour": "2026-04-17",
+    "ticker": "ALO.PA",
+    "nom": "Alstom",
+    "categorie": "revision",
+    "titre": "ALSTOM S.A : Résultats préliminaires d’Alstom pour l’exercice fiscal 2025/26 : Commandes record, Cash-flow libre conforme aux prévisions, Marge d’exploitation ajustée ~6 %, Perspectives préliminaires révisées pour l’exercice 2026/27",
+    "rendement_pct": -27.15,
+    "indice_pct": 1.97,
+    "ecart_pct": -29.7,
+    "z": -13.91
+   },
+   {
+    "jour": "2026-02-11",
+    "ticker": "DSY.PA",
+    "nom": "Dassault Systèmes",
+    "categorie": "resultats",
+    "titre": "Dassault Systèmes : Chiffre d’affaires T4 en hausse de 1%, marge opérationnelle solide et progression du BNPA ;  Pour 2026, objectif de croissance de 3% à 5% du chiffre d’affaires",
+    "rendement_pct": -20.81,
+    "indice_pct": -0.18,
+    "ecart_pct": -20.47,
+    "z": -13.12
+   },
+   {
+    "jour": "2021-11-25",
+    "ticker": "RCO.PA",
+    "nom": "Rémy Cointreau",
+    "categorie": "resultats",
+    "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
+    "rendement_pct": 13.43,
+    "indice_pct": 0.48,
+    "ecart_pct": 13.18,
+    "z": 11.06
+   },
+   {
+    "jour": "2025-07-16",
+    "ticker": "RNO.PA",
+    "nom": "Renault",
+    "categorie": "resultats",
+    "titre": "Renault Group annonce la nomination de Duncan Minto en tant que Directeur général par intérim",
+    "rendement_pct": -18.47,
+    "indice_pct": -0.57,
+    "ecart_pct": -17.88,
+    "z": -10.95
+   },
+   {
+    "jour": "2020-01-24",
+    "ticker": "IPN.PA",
+    "nom": "Ipsen",
+    "categorie": "autre",
+    "titre": "Informations privilégiées / Autres communiqués",
+    "rendement_pct": -23.39,
+    "indice_pct": 0.88,
+    "ecart_pct": -23.81,
+    "z": -10.79
+   },
+   {
+    "jour": "2022-07-28",
+    "ticker": "SCR.PA",
+    "nom": "SCOR",
+    "categorie": "resultats",
+    "titre": "Résultats du premier semestre 2022 - Les impacts de la guerre en Ukraine, des catastrophes naturelles et de la grave sécheresse au Brésil pèsent sur la rentabilité de SCOR au premier semestre 2022",
+    "rendement_pct": -18.57,
+    "indice_pct": 1.3,
+    "ecart_pct": -19.62,
+    "z": -10.79
+   },
+   {
+    "jour": "2024-02-20",
+    "ticker": "AI.PA",
+    "nom": "Air Liquide",
+    "categorie": "resultats",
+    "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
+    "rendement_pct": 8.26,
+    "indice_pct": 0.34,
+    "ecart_pct": 7.93,
+    "z": 10.61
+   },
+   {
+    "jour": "2025-10-17",
+    "ticker": "EL.PA",
+    "nom": "EssilorLuxottica",
+    "categorie": "resultats",
+    "titre": "EssilorLuxottica: Chiffre d'affaires T3/9M 2025 - Chiffre d'affaires en hausse de 11,7 % au T3, meilleure performance trimestrielle du Groupe depuis sa création",
+    "rendement_pct": 12.98,
+    "indice_pct": -0.18,
+    "ecart_pct": 13.05,
+    "z": 10.57
+   },
+   {
+    "jour": "2019-10-11",
+    "ticker": "PUB.PA",
+    "nom": "Publicis",
+    "categorie": "resultats",
+    "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
+    "rendement_pct": -14.51,
+    "indice_pct": 1.73,
+    "ecart_pct": -15.8,
+    "z": -10.31
+   }
+  ]
+ }
+}

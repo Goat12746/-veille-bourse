@@ -18,23 +18,55 @@ Tout se passe dans le dossier `veille/` du dépôt.
    (format ci-dessous). **Chaque candidat doit être soit publié (dans
    `alertes`, comme `id` ou dans `ids_lies`), soit écarté (`ecartes`).**
 3. **Publication** : `python fusionner.py`
-   - Il valide ton analyse, met à jour `alertes.json` et `etat.json`.
+   - Il valide ton analyse, met à jour `alertes.json`, `etat.json` et
+     l'archive `historique.json`.
    - En cas d'erreur de validation, corrige `sortie/analyse.json` et relance.
-4. **Commit et push** de `alertes.json` et `etat.json` uniquement, message :
-   `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
-5. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
-   importantes, sources en erreur.
+4. **Statistiques** : `python statistiques.py`
+   - Mesure la réaction des cours aux alertes (clôtures de la veille comprises)
+     et écrit `statistiques.json` (onglet Statistiques de l'application).
+   - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
+5. **Commit et push** de `alertes.json`, `etat.json`, `historique.json` et
+   `statistiques.json` uniquement, message : `veille : AAAA-MM-JJ, N alertes`
+   (rien d'autre dans le commit).
+6. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
+   importantes, sources en erreur, et la ligne de résultat de
+   `statistiques.py` (points, sens juste).
 
 ## Règles d'analyse
+
+**Test de nouveauté, avant tout** : une alerte doit apprendre au marché
+quelque chose qu'il ignorait la veille (une mesure, une décision, un chiffre,
+une surprise par rapport aux attentes). Pour chaque candidat, demande-toi :
+« qu'est-ce qui est nouveau aujourd'hui ? ». Si la réponse est « rien » ou
+« le texte commente une chose déjà connue », écarte-le. Chaque alerte publiée
+porte cette réponse dans le champ `nouveaute`.
 
 **Écarter** (liste `ecartes`) :
 - les faux positifs des mots-clés (ex. « clause de sauvegarde » hors
   médicaments, « droits de douane » entre pays tiers sans effet sur une
   entreprise du référentiel, article sans rapport avec la France ou l'UE) ;
 - les articles anciens republiés, les doublons d'une information déjà publiée
-  dans `alertes.json` ;
+  dans `alertes.json` ou `historique.json` ;
+- les suites d'une information déjà connue : conséquences d'une mesure déjà
+  en vigueur ou d'une tendance connue (ex. « Cognac : les ventes chutent sous
+  l'effet des droits de douane » alors que les droits s'appliquent depuis des
+  mois), sauf chiffre officiel nouveau et nettement différent de ce qui était
+  attendu (résultats d'une entreprise, statistique d'un organisme officiel) ;
+- les articles qui rapportent seulement la réaction de la Bourse (« l'action
+  chute de 5 % ») : la nouvelle est l'information qui a fait bouger le cours ;
+  publie-la elle-même si elle ne l'est pas déjà, sinon écarte l'article ;
+- les analyses, tribunes, récapitulatifs et prévisions générales (conjoncture,
+  secteur) sans fait nouveau propre à une entreprise du référentiel ;
+- les événements prévus de longue date qui se déroulent comme prévu (premier
+  vol d'un avion, inauguration, salon), sauf incident ou surprise ;
+- les commentaires géopolitiques ou macroéconomiques (visite officielle,
+  sommet, déclaration) sans décision concrète qui touche une entreprise du
+  référentiel (droit de douane fixé, contrat signé, interdiction levée…) ;
 - les communiqués AMF sans enjeu pour le cours (nomination mineure, document
   mis à disposition…).
+
+En cas de doute sur la nouveauté, écarte : une alerte en moins vaut mieux
+qu'une alerte sans information, qui fausse aussi les statistiques.
 
 **Regrouper** : plusieurs articles sur le même événement donnent **une seule
 alerte**. Mets le candidat le plus officiel ou le plus complet en `id` et les
@@ -44,10 +76,14 @@ autres dans `ids_lies`.
 - `titre` : court, factuel, en français (≤ 100 caractères).
 - `resume` : 1 à 3 phrases. Quoi, qui, combien, et quelle est la suite
   (date d'examen, vote…).
+- `nouveaute` : une phrase, ce que le marché apprend aujourd'hui et ignorait
+  la veille. Si tu ne peux pas l'écrire, écarte le candidat.
 - `etape` : `rumeur` (presse sans confirmation), `annonce` (gouvernement ou
   entreprise l'annonce), `depot` (amendement ou texte déposé),
   `adopte_commission`, `adopte_seance`, `adopte_definitif`, `rejete`,
-  `publie` (Journal officiel, communiqué AMF), `information` (contexte).
+  `publie` (Journal officiel, communiqué AMF), `information` (fait nouveau de
+  contexte qui touche nommément l'entreprise, comme un chiffre officiel ou la
+  décision d'un tiers ; jamais un simple commentaire).
 - `probabilite` (0 à 1) que la mesure s'applique telle quelle. Repères :
   amendement de l'opposition déposé 0,05-0,15 ; amendement du rapporteur ou du
   gouvernement 0,5-0,7 ; mesure inscrite au projet de loi de finances 0,7-0,8 ;
@@ -69,6 +105,12 @@ autres dans `ids_lies`.
   ou un article équivalent sur le web avant d'évaluer le sens et l'ampleur.
 - Ne recopie pas `date`, `source` ni `url` : `fusionner.py` les reprend de la
   collecte.
+- **Juge le sens et l'ampleur d'après le contenu de l'information** (mécanisme,
+  montants, part du résultat), **jamais d'après la réaction du cours** : si un
+  article rapporte que l'action a chuté ou bondi, ne t'en sers pas pour noter
+  l'alerte et ne le cite pas en justification. L'onglet Statistiques compare
+  justement tes alertes à la réaction du marché : s'appuyer sur elle fausserait
+  la mesure.
 
 **Texte porteur** (champs facultatifs `texte` et `article`) : quand la mesure
 figure (ou doit figurer) dans un texte en discussion, renseigne `texte` avec la
@@ -80,10 +122,18 @@ d'examen de ce texte dans le calendrier.
 
 **Mises à jour des alertes publiées** (champ `mises_a_jour`) : pour faire
 évoluer une alerte déjà dans `alertes.json`, sans en créer une nouvelle.
+Les alertes de plus de 60 jours, sorties de `alertes.json`, restent dans
+`historique.json` et peuvent aussi être mises à jour : quand une mesure est
+adoptée définitivement ou rejetée, donne-lui son `etape` finale même si
+l'alerte est ancienne (son sort sert à juger les probabilités annoncées).
 Champs modifiables : `etape`, `probabilite`, `texte`, `article`, `resume`,
 `titre`. Cas typiques :
 - un amendement relatif à la mesure est adopté ou rejeté : nouvelle `etape`,
   `probabilite` ajustée, `resume` complété ;
+- une alerte publiée ne passe pas le test de nouveauté ou s'avère erronée :
+  `{"id": "...", "retirer": true, "motif": "..."}`. Elle disparaît des
+  actualités mais reste comptée dans les statistiques (l'en retirer après
+  avoir vu le cours fausserait la mesure) ;
 - **vérification après dépôt d'un texte budgétaire** : dès que le projet de loi
   de finances ou de financement de la Sécurité sociale est déposé (texte
   publié sur assemblee-nationale.fr et budget.gouv.fr), reprends chaque alerte
@@ -124,6 +174,7 @@ qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
       "ids_lies": ["presse-0123456789abcdef"],
       "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
       "resume": "Le gouvernement propose un barème progressif de la TEITLD (4,6 % aujourd'hui) pour 800 M€ de recettes en plus. Présentation du PLF le 30 septembre, examen à l'Assemblée à partir du 7 octobre.",
+      "nouveaute": "Première annonce chiffrée de la hausse : barème jusqu'à 12,2 % et 800 M€ de recettes en plus.",
       "etape": "annonce",
       "probabilite": 0.75,
       "themes": ["concessions_autoroutes", "aerien_aeroports"],

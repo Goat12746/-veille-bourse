@@ -15,10 +15,14 @@ Claude Code (abonnement)    lit les candidats, écarte les faux positifs,
       |                     regroupe, évalue sens / ampleur / probabilité
       |                     -> sortie/analyse.json   (voir CONSIGNES.md)
       v
-fusionner.py                valide et publie alertes.json (+ etat.json)
-      |
+fusionner.py                valide et publie alertes.json (+ etat.json),
+      |                     archive toutes les alertes dans historique.json
       v
-Application (onglet Veille) lit alertes.json à l'adresse configurée
+statistiques.py (sans IA)   réaction des cours aux alertes, référence AMF
+      |                     -> statistiques.json
+      v
+Application (onglets Actualités et Statistiques) lit alertes.json et
+statistiques.json à l'adresse configurée
 ```
 
 | Fichier | Rôle |
@@ -30,6 +34,38 @@ Application (onglet Veille) lit alertes.json à l'adresse configurée
 | `valider.py` | Contrôle du format de `sortie/analyse.json` et de `alertes.json`. |
 | `fusionner.py` | Publication de `alertes.json`, mémoire des candidats traités (`etat.json`). |
 | `alertes.json` | Fichier lu par l'application (aussi intégré à l'APK comme copie de secours). |
+| `historique.json` | Archive de toutes les alertes publiées, sans limite de durée (étape et probabilité initiales comprises). |
+| `statistiques.py` | Étude d'événements : réaction des cours aux alertes (écart au CAC 40 corrigé du bêta, en σ), points, tests ; référence sur l'historique des communiqués AMF depuis 2019. Sans IA. |
+| `statistiques.json` | Résultats lus par l'onglet Statistiques (aussi intégré à l'APK). |
+
+## Statistiques
+
+`python statistiques.py` (environ 30 s la première fois, cours et communiqués
+mis en cache dans `.cache/`). Pour chaque entreprise d'une alerte :
+
+- **jour de la réaction** : première séance qui clôture (17 h 35) après la
+  publication de l'information ; sans heure connue, le jour même et le
+  lendemain. `collecte.py` conserve donc l'heure de publication (`publie_le`)
+  des communiqués AMF et des articles ;
+- **écart au CAC 40** : rendement de l'action moins celui attendu d'après le
+  CAC 40 et son bêta (modèle de marché sur les 250 séances précédentes),
+  exprimé en σ (écart habituel d'une séance) : bruit sous 1 σ, net de 1 à 2 σ,
+  fort au-delà ;
+- **points** : sens +1 / 0 / −1, ampleur +1 / 0 / −1 (détail dans l'onglet) ;
+- **tests** : t de Student sur les écarts standardisés, test du signe, test de
+  rang, corrélation de Spearman ; score de Brier des probabilités une fois les
+  mesures tranchées.
+
+Ne sont pas notées : les entreprises visées par une autre alerte aux mêmes
+séances, les sens neutres ou incertains, et les alertes générales (10
+entreprises ou plus, comparées au CAC 40). Une alerte publiée après la
+réaction du marché est signalée : seules celles publiées avant (tâche du
+matin) testent une vraie prévision.
+
+Les clôtures sont prises en compte après 17 h 45 : lancée à 7 h, la tâche
+quotidienne mesure les réactions de la veille. Pour un calcul dès le soir,
+planifier aussi `python statistiques.py --sans-historique` vers 18 h (sans IA,
+il ne consomme pas de quota) puis publier `statistiques.json`.
 
 ## Lancer à la main
 

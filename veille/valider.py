@@ -20,6 +20,8 @@ SOURCES = ["amf", "assemblee", "senat", "presse", "journal_officiel", "autre"]
 TYPES_CALENDRIER = ["budget", "examen_texte", "resultats", "dividende", "indice", "autre"]
 # Champs d'une alerte deja publiee que l'analyse peut mettre a jour.
 CHAMPS_MISE_A_JOUR = {"etape", "probabilite", "texte", "article", "resume", "titre"}
+# Retrait d'une alerte publiee des actualites : {"id", "retirer": true, "motif"}.
+CHAMPS_RETRAIT = {"retirer", "motif"}
 
 
 def tickers_connus():
@@ -96,10 +98,19 @@ def valider_analyse(doc, ids_candidats, tickers=None, ids_publies=None):
         _commun(a, lieu, erreurs)
         _texte(a, lieu, erreurs)
         _entreprises(a, lieu, tickers, erreurs)
+        if not isinstance(a.get("nouveaute"), str) or not a["nouveaute"].strip():
+            erreurs.append(f"{lieu} : 'nouveaute' manquant (ce que le marche ignorait la veille ; "
+                           "sans nouveaute, ecarter le candidat)")
     for i, m in enumerate(doc.get("mises_a_jour") or []):
         lieu = f"mises_a_jour[{i}] ({m.get('id')})"
         if ids_publies is not None and m.get("id") not in ids_publies:
             erreurs.append(f"{lieu} : aucune alerte publiee avec cet id")
+        if "retirer" in m:
+            if m["retirer"] is not True or not isinstance(m.get("motif"), str) or not m["motif"].strip():
+                erreurs.append(f"{lieu} : retrait = {{\"id\", \"retirer\": true, \"motif\": \"...\"}}")
+            if set(m) - CHAMPS_RETRAIT - {"id"}:
+                erreurs.append(f"{lieu} : un retrait ne modifie pas d'autre champ")
+            continue
         inconnus = set(m) - CHAMPS_MISE_A_JOUR - {"id"}
         if inconnus:
             erreurs.append(f"{lieu} : champs non modifiables {sorted(inconnus)}, autorises {sorted(CHAMPS_MISE_A_JOUR)}")
@@ -147,11 +158,14 @@ def main():
     if os.path.basename(chemin) == "analyse.json":
         with open(os.path.join(ICI, "sortie", "candidats.json"), encoding="utf-8") as f:
             ids = {c["id"] for c in json.load(f)["candidats"]}
-        publie = os.path.join(ICI, "alertes.json")
+        # Alertes publiees (60 derniers jours) et archivees : toutes peuvent
+        # etre mises a jour.
         ids_publies = None
-        if os.path.exists(publie):
-            with open(publie, encoding="utf-8") as f:
-                ids_publies = {a["id"] for a in json.load(f).get("alertes", [])}
+        for nom in ("alertes.json", "historique.json"):
+            chemin_publie = os.path.join(ICI, nom)
+            if os.path.exists(chemin_publie):
+                with open(chemin_publie, encoding="utf-8") as f:
+                    ids_publies = (ids_publies or set()) | {a["id"] for a in json.load(f).get("alertes", [])}
         erreurs = valider_analyse(doc, ids, ids_publies=ids_publies)
     else:
         erreurs = valider_alertes(doc)

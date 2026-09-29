@@ -7,7 +7,9 @@
 
 Les alertes deja publiees sont conservees 60 jours ; les candidats traites
 (publies ou ecartes) sont memorises dans etat.json pour ne pas etre
-proposes de nouveau a l'analyse.
+proposes de nouveau a l'analyse. Toutes les alertes sont aussi archivees,
+sans limite de duree, dans historique.json (avec leur etape et leur
+probabilite initiales) : c'est la base des statistiques (statistiques.py).
 """
 
 import argparse
@@ -34,6 +36,20 @@ def ecrire(chemin, doc):
     with open(chemin, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)
         f.write("\n")
+
+
+def charger_historique():
+    """Archive de toutes les alertes publiees : id -> alerte."""
+    doc = charger(os.path.join(ICI, "historique.json"), {"alertes": []})
+    return {a["id"]: a for a in doc.get("alertes", [])}
+
+
+def archiver(archive, alerte):
+    """Derniere version de l'alerte, avec l'etape et la probabilite de sa
+    premiere publication (seules comptent pour juger la prevision)."""
+    initial = (archive.get(alerte["id"]) or {}).get("initial") or {
+        "etape": alerte["etape"], "probabilite": alerte["probabilite"]}
+    archive[alerte["id"]] = dict(alerte, initial=initial)
 
 
 def etape_brute(c):
@@ -81,6 +97,11 @@ def main():
         sys.exit("sortie/candidats.json introuvable : lancer d'abord collecte.py")
     candidats = {c["id"]: c for c in collecte["candidats"]}
     publie = charger(os.path.join(ICI, "alertes.json"), {"alertes": []})
+    # Archive : les alertes publiees avant sa creation y entrent telles quelles.
+    archive = charger_historique()
+    for a in publie.get("alertes", []):
+        if a["id"] not in archive:
+            archiver(archive, a)
 
     if args.sans_ia:
         analyse = {"alertes": [alerte_brute(c, noms) for c in candidats.values()
@@ -92,7 +113,7 @@ def main():
         if analyse is None:
             sys.exit("sortie/analyse.json introuvable (ou utiliser --sans-ia)")
         erreurs = valider_analyse(analyse, set(candidats), tickers,
-                                  ids_publies={a["id"] for a in publie.get("alertes", [])})
+                                  ids_publies={a["id"] for a in publie.get("alertes", [])} | set(archive))
         if erreurs:
             print("analyse.json invalide :")
             for e in erreurs:
@@ -101,7 +122,9 @@ def main():
         mode = "claude"
 
     # Nouvelles alertes : metadonnees reprises de la collecte (date, source,
-    # liens), contenu repris de l'analyse.
+    # liens), contenu repris de l'analyse. `publie_a` : moment ou l'alerte
+    # devient disponible (les statistiques mesurent le cours apres).
+    maintenant = dt.datetime.now().astimezone().isoformat(timespec="seconds")
     nouvelles = []
     for a in analyse["alertes"]:
         c = candidats[a["id"]]
@@ -112,15 +135,19 @@ def main():
             "source": c["source"],
             "titre": a["titre"],
             "resume": a["resume"],
+            # Ce que le marche ignorait la veille (test de nouveaute).
+            **({"nouveaute": a["nouveaute"]} if a.get("nouveaute") else {}),
             "url": c["url"],
             "etape": a["etape"],
             "probabilite": a["probabilite"],
             "themes": a.get("themes") or c["themes"],
             "entreprises": [dict(e, nom=noms[e["ticker"]]) for e in a["entreprises"]],
             "sources": [{"titre": x["titre"], "url": x["url"], "date": x["date"],
+                         **({"publie_le": x["publie_le"]} if x.get("publie_le") else {}),
                          "media": x["meta"].get("media", x["source"])} for x in [c] + lies],
             "analyse": mode,
             "ajoute_le": today.isoformat(),
+            "publie_a": maintenant,
             # Texte porteur de la mesure (PLF 2027, n° 2892...) et article.
             **{k: a[k] for k in ("texte", "article") if a.get(k)},
         })
@@ -131,9 +158,22 @@ def main():
     limite = (today - dt.timedelta(days=CONSERVATION_ALERTES)).isoformat()
     par_id = {a["id"]: a for a in publie.get("alertes", []) if a["date"] >= limite}
     for m in analyse.get("mises_a_jour") or []:
+        if m.get("retirer"):
+            # Retiree des actualites mais gardee dans l'archive et les
+            # statistiques : l'enlever apres avoir vu le cours fausserait la
+            # mesure (on n'efface pas les erreurs apres coup).
+            par_id.pop(m["id"], None)
+            if m["id"] in archive:
+                archive[m["id"]].update(retiree_le=today.isoformat(), motif_retrait=m["motif"])
+            continue
+        champs = {k: v for k, v in m.items() if k != "id"}
         if m["id"] in par_id:
-            par_id[m["id"]].update({k: v for k, v in m.items() if k != "id"})
+            par_id[m["id"]].update(champs)
             par_id[m["id"]]["maj_le"] = today.isoformat()
+        elif m["id"] in archive:
+            # Alerte sortie de alertes.json (plus de 60 jours) : son sort
+            # final (adoption, rejet) reste utile aux statistiques.
+            archive[m["id"]].update(champs, maj_le=today.isoformat())
     for a in nouvelles:
         par_id[a["id"]] = a
 
@@ -199,6 +239,13 @@ def main():
             print(" -", e)
         sys.exit(1)
     ecrire(os.path.join(ICI, "alertes.json"), sortie)
+    for a in sortie["alertes"]:
+        archiver(archive, a)
+    ecrire(os.path.join(ICI, "historique.json"), {
+        "version": 1,
+        "maj_le": sortie["genere_le"],
+        "alertes": sorted(archive.values(), key=lambda a: (a["date"], a["ajoute_le"]), reverse=True),
+    })
 
     # Candidats traites : ne plus les proposer a l'analyse.
     etat = charger(os.path.join(ICI, "etat.json"), {"ids_traites": {}})

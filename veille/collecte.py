@@ -169,7 +169,8 @@ class Analyseur:
             return "positif"
         return "incertain"
 
-    def candidat(self, cid, source, date, titre, texte, url, meta, themes=None, tickers=None):
+    def candidat(self, cid, source, date, titre, texte, url, meta, themes=None, tickers=None,
+                 publie_le=None):
         norm = normaliser(titre + " " + texte)
         themes = themes if themes is not None else self.themes_de(norm)
         mots = [m[0] for th in themes for m in th["mots_norm"]]
@@ -177,6 +178,10 @@ class Analyseur:
             "id": cid,
             "source": source,
             "date": date,
+            # Date et heure de publication (ISO 8601 avec fuseau) quand la
+            # source les donne : situe la reaction du cours (avant ou apres la
+            # cloture) pour les statistiques.
+            "publie_le": publie_le,
             "titre": titre,
             "texte": texte[:TEXTE_MAX],
             "extrait": extrait(texte, mots) if mots else "",
@@ -224,7 +229,7 @@ def source_amf(a, depuis):
                 "amf-" + r["uin_idt_uin"], "amf", r["informationdeposee_inf_dat_emt"][:10],
                 f"{e['nom']} : {titre}", f"{sous_type}. {titre}", r.get("url_de_recuperation") or "",
                 {"type": r.get("type_d_information"), "sous_type": sous_type, "heure": r["informationdeposee_inf_dat_emt"]},
-                themes=[], tickers=[e["ticker"]]))
+                themes=[], tickers=[e["ticker"]], publie_le=r["informationdeposee_inf_dat_emt"]))
         offset += len(res)
         if not res or offset >= d.get("total_count", 0):
             break
@@ -452,9 +457,10 @@ def source_presse(a, jours):
             lien = item.findtext("link") or ""
             source = item.findtext("source") or ""
             try:
-                date = email.utils.parsedate_to_datetime(item.findtext("pubDate")).date().isoformat()
+                publie = email.utils.parsedate_to_datetime(item.findtext("pubDate"))
+                date, publie_le = publie.date().isoformat(), publie.isoformat()
             except Exception:
-                date = dt.date.today().isoformat()
+                date, publie_le = dt.date.today().isoformat(), None
             cid = "presse-" + hashlib.sha1(lien.encode()).hexdigest()[:16]
             if cid in candidats:
                 candidats[cid]["themes"] = sorted(set(candidats[cid]["themes"] + [th["id"]]))
@@ -462,7 +468,7 @@ def source_presse(a, jours):
             norm = normaliser(titre)
             themes = [th] + [t for t in a.themes_de(norm) if t is not th]
             candidats[cid] = a.candidat(cid, "presse", date, titre, titre, lien,
-                                        {"media": source}, themes=themes)
+                                        {"media": source}, themes=themes, publie_le=publie_le)
     if echecs and len(echecs) == len(a.themes):
         raise RuntimeError(f"toutes les requetes ont echoue : {echecs[0]}")
     return list(candidats.values())

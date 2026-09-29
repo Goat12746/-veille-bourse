@@ -1,31 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T17:18:35+02:00",
- "sources": {
-  "amf": {
-   "ok": true,
-   "trouves": 8,
-   "nouveaux": 2
-  },
-  "presse": {
-   "ok": true,
-   "trouves": 70,
-   "nouveaux": 0
-  },
-  "assemblee": {
-   "ok": true,
-   "trouves": 1,
-   "nouveaux": 0
-  },
-  "agenda": {
-   "ok": true,
-   "trouves": 7
-  },
-  "calendrier": {
-   "ok": true,
-   "trouves": 31
-  }
- },
+ "maj_le": "2026-09-29T17:18:35+02:00",
  "alertes": [
   {
    "id": "presse-181a5dc8f47983e9",
@@ -143,7 +118,11 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "PLF 2027",
-   "maj_le": "2026-09-29"
+   "maj_le": "2026-09-29",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.75
+   }
   },
   {
    "id": "presse-e4359fea6c50b69e",
@@ -187,7 +166,11 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "PLFSS 2027",
-   "maj_le": "2026-09-29"
+   "maj_le": "2026-09-29",
+   "initial": {
+    "etape": "rumeur",
+    "probabilite": 0.5
+   }
   },
   {
    "id": "amf-135012_20260928",
@@ -226,7 +209,11 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
   },
   {
    "id": "amf-135005_20260929",
@@ -267,7 +254,11 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
   },
   {
    "id": "presse-78f559fd4559a36e",
@@ -322,7 +313,50 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "rumeur",
+    "probabilite": 0.4
+   }
+  },
+  {
+   "id": "presse-7f5e154f8dc53a8e",
+   "date": "2026-09-29",
+   "source": "presse",
+   "titre": "Airbus : premier vol de l'A350F, la version cargo",
+   "resume": "L'A350F, version cargo de l'A350, a réalisé son premier vol d'essai de 4 heures, une étape vers sa certification et ses premières livraisons.",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPWmtQZWExY0ZqZnRZT28yYmg1Si15Zldldy1idnJnRUhoQ0hXQ1hkb01pelRQTTktMHk0UDUyNlpTZlNFQmhyLTBNaW0wX2pISkF5TENXZFh5Qkg3SVROVWZfdDZ2NXlUVXFraDhMSmxhTC1zWUNNMHVwMUxfWGVSQ0tvODNHTTB3RC04ejhFRUxDd256NEd1bjd6Nmh6MVFfRE0tNnkxLXJCdm5vZXlVRnlvV2d0eXRBZWJYWU5fTS1LV0ZKVDBMaW80TkREM0VQTGlTZXRSSzVoUms0QlV0VHlDSEI1djZraVNZR19iNWs4eW44SnU3ME11QUF0RlBtaHB5Y2UyR2EwcjdKLTFxUGllQm9mbWVYcmRWaEhR?oc=5",
+   "etape": "information",
+   "probabilite": 0.9,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Étape attendue du programme, qui limite le risque de retard.",
+     "extrait": "",
+     "nom": "Airbus"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "VIDÉO. Premier vol pour l'A350F : l'avion cargo de la famille des gros-porteurs d'Airbus décolle pour 4 heures d'essai - France 3 Régions",
+     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPWmtQZWExY0ZqZnRZT28yYmg1Si15Zldldy1idnJnRUhoQ0hXQ1hkb01pelRQTTktMHk0UDUyNlpTZlNFQmhyLTBNaW0wX2pISkF5TENXZFh5Qkg3SVROVWZfdDZ2NXlUVXFraDhMSmxhTC1zWUNNMHVwMUxfWGVSQ0tvODNHTTB3RC04ejhFRUxDd256NEd1bjd6Nmh6MVFfRE0tNnkxLXJCdm5vZXlVRnlvV2d0eXRBZWJYWU5fTS1LV0ZKVDBMaW80TkREM0VQTGlTZXRSSzVoUms0QlV0VHlDSEI1djZraVNZR19iNWs4eW44SnU3ME11QUF0RlBtaHB5Y2UyR2EwcjdKLTFxUGllQm9mbWVYcmRWaEhR?oc=5",
+     "date": "2026-09-29",
+     "media": "France 3 Régions"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "information",
+    "probabilite": 0.9
+   },
+   "retiree_le": "2026-09-29",
+   "motif_retrait": "Pas une information nouvelle : premier vol prévu de longue date, sans incident ni surprise."
   },
   {
    "id": "presse-909e8b97a351aad4",
@@ -364,7 +398,11 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1
+   }
   },
   {
    "id": "presse-ddc4c15adc3d7a4f",
@@ -712,7 +750,11 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "PLF 2027",
-   "maj_le": "2026-09-29"
+   "maj_le": "2026-09-29",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.7
+   }
   },
   {
    "id": "presse-48e3a90f692a8e29",
@@ -748,7 +790,11 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "PLF 2027",
-   "maj_le": "2026-09-29"
+   "maj_le": "2026-09-29",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.6
+   }
   },
   {
    "id": "amf-169532_20260928",
@@ -780,7 +826,11 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
   },
   {
    "id": "presse-8158ac12ab6fdb24",
@@ -823,7 +873,131 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "n° 2970",
-   "maj_le": "2026-09-29"
+   "maj_le": "2026-09-29",
+   "initial": {
+    "etape": "depot",
+    "probabilite": 0.3
+   }
+  },
+  {
+   "id": "presse-f9b8ed503a993421",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Cognac : les ventes chutent sous l'effet des droits de douane",
+   "resume": "Les ventes de cognac ont reculé d'environ 90 millions de bouteilles, pénalisées par les droits de douane imposés aux producteurs français (Chine, États-Unis).",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaGVISzJSc0F0cy16OGFwQmc1dnQtbHhaSVFUOWZhbF8zaHI4eE10MWRCRVpoaTFkTjdQSWYySUZORkMtMktlWEtEWEVuUUM3Ml9JckxMY1h5ak1MdXBvSHM5MkV4eFZWYXdrdHRMQ1RzQnpLanV3ZDlVSXRySEtxNzNGRVpJR2RyVjdnUE5SdDdoX244amxhNUExZTdmNzRWbzF4N2tJM084QWVGanR2RklNZ3NxSGJWMmRfejd2YXlteG5nVkHSAcsBQVVfeXFMT0ZkN1NqOGlnNm9RMHl2T2h2QTRLYURCTDVMamEyblhMdHhabGFJVllDeHdXZU14MWZ4SGpualJXTTRNVlMwbDhZSU1RNDdHMl9YTDFtcVNLRmF5ZkdSaFE4QXNWcFN3R0lhV3VGMzQ2LVc0N09HNGlyNEhYR1RPVXVJTTlTcXJ4eWtibXdyNFVCUDFpdENVZkgzMHFJNG9SWlp5YkNtcWdJc2huRWdrXy1EblBqZHZGaHIycEt5V2xpdlM5Y3RYNzY1Vm8?oc=5",
+   "etape": "information",
+   "probabilite": 0.9,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RCO.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Le cognac représente l'essentiel des bénéfices de Rémy Cointreau.",
+     "extrait": "",
+     "nom": "Rémy Cointreau"
+    },
+    {
+     "ticker": "RI.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Martell (cognac) ne pèse qu'une partie du portefeuille de Pernod Ricard.",
+     "extrait": "",
+     "nom": "Pernod Ricard"
+    },
+    {
+     "ticker": "MC.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Hennessy est exposé, mais les vins et spiritueux sont une petite part de LVMH.",
+     "extrait": "",
+     "nom": "LVMH"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Les ventes de cognac chutent de 90 millions de bouteilles sous l’effet des droits de douane sur les producteurs français - Vinetur",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaGVISzJSc0F0cy16OGFwQmc1dnQtbHhaSVFUOWZhbF8zaHI4eE10MWRCRVpoaTFkTjdQSWYySUZORkMtMktlWEtEWEVuUUM3Ml9JckxMY1h5ak1MdXBvSHM5MkV4eFZWYXdrdHRMQ1RzQnpLanV3ZDlVSXRySEtxNzNGRVpJR2RyVjdnUE5SdDdoX244amxhNUExZTdmNzRWbzF4N2tJM084QWVGanR2RklNZ3NxSGJWMmRfejd2YXlteG5nVkHSAcsBQVVfeXFMT0ZkN1NqOGlnNm9RMHl2T2h2QTRLYURCTDVMamEyblhMdHhabGFJVllDeHdXZU14MWZ4SGpualJXTTRNVlMwbDhZSU1RNDdHMl9YTDFtcVNLRmF5ZkdSaFE4QXNWcFN3R0lhV3VGMzQ2LVc0N09HNGlyNEhYR1RPVXVJTTlTcXJ4eWtibXdyNFVCUDFpdENVZkgzMHFJNG9SWlp5YkNtcWdJc2huRWdrXy1EblBqZHZGaHIycEt5V2xpdlM5Y3RYNzY1Vm8?oc=5",
+     "date": "2026-09-28",
+     "publie_le": "2026-09-28T22:34:56+00:00",
+     "media": "Vinetur"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "information",
+    "probabilite": 0.9
+   },
+   "retiree_le": "2026-09-29",
+   "motif_retrait": "Pas une information nouvelle : les droits de douane s'appliquent depuis des mois, l'article en commente les effets."
+  },
+  {
+   "id": "presse-7ee8137bfefbf4de",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Chine–États-Unis : la visite de Xi Jinping prolonge la détente commerciale",
+   "resume": "La visite de Xi Jinping aux États-Unis prolonge la trêve commerciale sino-américaine, réduisant le risque d'une nouvelle escalade des droits de douane.",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZXFuOGhjT053bk1MS2JCdzBoLXdhdk9zSFZJeE1lejVrY1hxN1NqQUdjVjR3VmNHYnZGd29fNVVQZkVnR2NiS01abTc3Z2h4NmZ4N3dabm5fV2hmMk9RaDJzS3hLQ3ctLUR6UmtqUHhsVU5qRWxTV0ZlYWEweVhQZ25seWpDaFpCR1RtV2pCek9OSzRKb2x1TGFCY0FoaUlWZ09IVlhqYTVKYmUtQm5XUF9ONlZVbUgzeVJKZWM2YWVTMmxkUklhbA?oc=5",
+   "etape": "information",
+   "probabilite": 0.6,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "MC.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Moins de risque sur la demande chinoise, clé pour le luxe.",
+     "extrait": "",
+     "nom": "LVMH"
+    },
+    {
+     "ticker": "KER.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Groupe de luxe très exposé à la clientèle chinoise.",
+     "extrait": "",
+     "nom": "Kering"
+    },
+    {
+     "ticker": "RMS.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Exposition à la Chine, avec une demande plus résistante.",
+     "extrait": "",
+     "nom": "Hermès"
+    },
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Détente favorable aux livraisons d'avions vers la Chine.",
+     "extrait": "",
+     "nom": "Airbus"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "La visite de Xi Jinping aux États-Unis prolonge la détente commerciale avec la Chine - Le Figaro",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZXFuOGhjT053bk1MS2JCdzBoLXdhdk9zSFZJeE1lejVrY1hxN1NqQUdjVjR3VmNHYnZGd29fNVVQZkVnR2NiS01abTc3Z2h4NmZ4N3dabm5fV2hmMk9RaDJzS3hLQ3ctLUR6UmtqUHhsVU5qRWxTV0ZlYWEweVhQZ25seWpDaFpCR1RtV2pCek9OSzRKb2x1TGFCY0FoaUlWZ09IVlhqYTVKYmUtQm5XUF9ONlZVbUgzeVJKZWM2YWVTMmxkUklhbA?oc=5",
+     "date": "2026-09-28",
+     "publie_le": "2026-09-28T16:00:00+00:00",
+     "media": "Le Figaro"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "information",
+    "probabilite": 0.6
+   },
+   "retiree_le": "2026-09-29",
+   "motif_retrait": "Pas une information nouvelle : commentaire géopolitique, sans décision concrète touchant les entreprises citées."
   },
   {
    "id": "presse-ff79c0193462f61e",
@@ -873,881 +1047,11 @@
     }
    ],
    "analyse": "claude",
-   "ajoute_le": "2026-09-29"
-  }
- ],
- "calendrier": [
-  {
-   "date": "2026-09-30",
-   "heure": "",
-   "type": "dividende",
-   "titre": "TotalEnergies : détachement du dividende",
-   "tickers": [
-    "TTE.PA"
-   ],
-   "tickers_mots_cles": [
-    "TTE.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/TTE.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-09-30",
-   "heure": "09:30",
-   "type": "examen_texte",
-   "titre": "Examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour) (rapport).",
-   "tickers": [
-    "FRVIA.PA",
-    "ML.PA",
-    "RNO.PA",
-    "STLAP.PA"
-   ],
-   "tickers_mots_cles": [
-    "FRVIA.PA",
-    "ML.PA",
-    "RNO.PA",
-    "STLAP.PA"
-   ],
-   "themes": [
-    "automobile"
-   ],
-   "texte": "n° 2970",
-   "mesures": [
-    {
-     "alerte_id": "presse-8158ac12ab6fdb24",
-     "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
-     "etape": "depot",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Commission du développement durable et de l'aménagement du territoire",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-09-30#odj-OMC_RUANR5L17S2026IDC461121",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-01",
-   "heure": "",
-   "type": "budget",
-   "titre": "Présentation du projet de loi de finances et du PLFSS 2027 en Conseil des ministres",
-   "tickers": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "CS.PA",
-    "BN.PA"
-   ],
-   "tickers_mots_cles": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "CS.PA",
-    "BN.PA"
-   ],
-   "themes": [
-    "concessions_autoroutes",
-    "assurances",
-    "fiscalite_grandes_entreprises"
-   ],
-   "texte": "",
-   "mesures": [],
-   "source": "NosParlementaires (calendrier du PLFSS 2027)",
-   "url": "https://nosparlementaires.fr/actualites/plfss-2027-calendrier-examen-date-par-date",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-05",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Société Générale : détachement du dividende",
-   "tickers": [
-    "GLE.PA"
-   ],
-   "tickers_mots_cles": [
-    "GLE.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/GLE.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-07",
-   "heure": "09:00",
-   "type": "budget",
-   "titre": "Examen de la première partie du projet de loi de finances pour 2027",
-   "tickers": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "ALO.PA",
-    "AC.PA",
-    "AI.PA",
-    "AIR.PA",
-    "MT.AS",
-    "CS.PA",
-    "BNP.PA",
-    "EN.PA",
-    "BVI.PA",
-    "CAP.PA",
-    "CA.PA",
-    "ACA.PA",
-    "BN.PA",
-    "DSY.PA",
-    "ENGI.PA",
-    "EDEN.PA",
-    "EL.PA",
-    "ERF.PA",
-    "RMS.PA",
-    "KER.PA",
-    "OR.PA",
-    "LR.PA",
-    "MC.PA",
-    "ML.PA",
-    "ORA.PA",
-    "RI.PA",
-    "PUB.PA",
-    "RNO.PA",
-    "SAF.PA",
-    "SGO.PA",
-    "SAN.PA",
-    "SU.PA",
-    "GLE.PA",
-    "STLAP.PA",
-    "STMPA.PA",
-    "TEP.PA",
-    "HO.PA",
-    "TTE.PA",
-    "URW.PA",
-    "VIE.PA"
-   ],
-   "tickers_mots_cles": [],
-   "themes": [],
-   "texte": "PLF 2027",
-   "mesures": [
-    {
-     "alerte_id": "presse-181a5dc8f47983e9",
-     "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-ddc4c15adc3d7a4f",
-     "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-48e3a90f692a8e29",
-     "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
-     "etape": "annonce",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461249",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-07",
-   "heure": "09:30",
-   "type": "examen_texte",
-   "titre": "Examen de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant (n° 2892).",
-   "tickers": [
-    "EDEN.PA"
-   ],
-   "tickers_mots_cles": [
-    "EDEN.PA"
-   ],
-   "themes": [
-    "tickets_restaurant"
-   ],
-   "texte": "n° 2892",
-   "mesures": [],
-   "source": "Assemblée nationale — Commission des affaires sociales",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461169",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-08",
-   "heure": "09:00",
-   "type": "examen_texte",
-   "titre": "Discussion de la proposition de loi visant à abroger les zones à faibles émissions-mobilités",
-   "tickers": [
-    "FRVIA.PA",
-    "ML.PA",
-    "RNO.PA",
-    "STLAP.PA"
-   ],
-   "tickers_mots_cles": [
-    "FRVIA.PA",
-    "ML.PA",
-    "RNO.PA",
-    "STLAP.PA"
-   ],
-   "themes": [
-    "automobile"
-   ],
-   "texte": "n° 2970",
-   "mesures": [
-    {
-     "alerte_id": "presse-8158ac12ab6fdb24",
-     "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
-     "etape": "depot",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Séance publique",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDS30930",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-12",
-   "heure": "16:00",
-   "type": "examen_texte",
-   "titre": "Discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant",
-   "tickers": [
-    "EDEN.PA"
-   ],
-   "tickers_mots_cles": [
-    "EDEN.PA"
-   ],
-   "themes": [
-    "tickets_restaurant"
-   ],
-   "texte": "n° 2892",
-   "mesures": [],
-   "source": "Assemblée nationale — Séance publique",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDS30938",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-12",
-   "heure": "21:00",
-   "type": "budget",
-   "titre": "Examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
-   "tickers": [
-    "BN.PA",
-    "CA.PA"
-   ],
-   "tickers_mots_cles": [],
-   "themes": [],
-   "texte": "PLFSS 2027",
-   "mesures": [
-    {
-     "alerte_id": "presse-e4359fea6c50b69e",
-     "titre": "PLFSS 2027 : projet de taxe sur les produits sucrés transformés",
-     "etape": "rumeur",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Commission des affaires sociales",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDC461270",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Crédit Agricole : détachement du dividende",
-   "tickers": [
-    "ACA.PA"
-   ],
-   "tickers_mots_cles": [
-    "ACA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ACA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Vinci : détachement du dividende",
-   "tickers": [
-    "DG.PA"
-   ],
-   "tickers_mots_cles": [
-    "DG.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/DG.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "15:00",
-   "type": "budget",
-   "titre": "Sous réserve de son dépôt, discussion du projet de loi de finances pour 2027 (première partie)",
-   "tickers": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "ALO.PA",
-    "AC.PA",
-    "AI.PA",
-    "AIR.PA",
-    "MT.AS",
-    "CS.PA",
-    "BNP.PA",
-    "EN.PA",
-    "BVI.PA",
-    "CAP.PA",
-    "CA.PA",
-    "ACA.PA",
-    "BN.PA",
-    "DSY.PA",
-    "ENGI.PA",
-    "EDEN.PA",
-    "EL.PA",
-    "ERF.PA",
-    "RMS.PA",
-    "KER.PA",
-    "OR.PA",
-    "LR.PA",
-    "MC.PA",
-    "ML.PA",
-    "ORA.PA",
-    "RI.PA",
-    "PUB.PA",
-    "RNO.PA",
-    "SAF.PA",
-    "SGO.PA",
-    "SAN.PA",
-    "SU.PA",
-    "GLE.PA",
-    "STLAP.PA",
-    "STMPA.PA",
-    "TEP.PA",
-    "HO.PA",
-    "TTE.PA",
-    "URW.PA",
-    "VIE.PA"
-   ],
-   "tickers_mots_cles": [],
-   "themes": [],
-   "texte": "PLF 2027",
-   "mesures": [
-    {
-     "alerte_id": "presse-181a5dc8f47983e9",
-     "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-ddc4c15adc3d7a4f",
-     "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-48e3a90f692a8e29",
-     "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
-     "etape": "annonce",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Séance publique",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-13#odj-OMC_RUANR5L17S2027IDS30940",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-27",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Orange : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "ORA.PA"
-   ],
-   "tickers_mots_cles": [
-    "ORA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ORA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-28",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Airbus : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "AIR.PA"
-   ],
-   "tickers_mots_cles": [
-    "AIR.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/AIR.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-28",
-   "heure": "",
-   "type": "resultats",
-   "titre": "BNP Paribas : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "BNP.PA"
-   ],
-   "tickers_mots_cles": [
-    "BNP.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/BNP.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-28",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Dassault Systèmes : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "DSY.PA"
-   ],
-   "tickers_mots_cles": [
-    "DSY.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/DSY.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-28",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Stellantis : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "STLAP.PA"
-   ],
-   "tickers_mots_cles": [
-    "STLAP.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/STLAP.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-29",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Société Générale : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "GLE.PA"
-   ],
-   "tickers_mots_cles": [
-    "GLE.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/GLE.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-29",
-   "heure": "",
-   "type": "resultats",
-   "titre": "STMicroelectronics : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "STMPA.PA"
-   ],
-   "tickers_mots_cles": [
-    "STMPA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/STMPA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-29",
-   "heure": "",
-   "type": "resultats",
-   "titre": "TotalEnergies : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "TTE.PA"
-   ],
-   "tickers_mots_cles": [
-    "TTE.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/TTE.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-29",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Amundi : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "AMUN.PA"
-   ],
-   "tickers_mots_cles": [
-    "AMUN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/AMUN.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-30",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Crédit Agricole : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "ACA.PA"
-   ],
-   "tickers_mots_cles": [
-    "ACA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ACA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-30",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Sanofi : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "SAN.PA"
-   ],
-   "tickers_mots_cles": [
-    "SAN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/SAN.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-30",
-   "heure": "",
-   "type": "resultats",
-   "titre": "SCOR : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "SCR.PA"
-   ],
-   "tickers_mots_cles": [
-    "SCR.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/SCR.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-02",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Coface : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "COFA.PA"
-   ],
-   "tickers_mots_cles": [
-    "COFA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/COFA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-05",
-   "heure": "",
-   "type": "resultats",
-   "titre": "ArcelorMittal : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "MT.AS"
-   ],
-   "tickers_mots_cles": [
-    "MT.AS"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/MT.AS",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-05",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Bouygues : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "EN.PA"
-   ],
-   "tickers_mots_cles": [
-    "EN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/EN.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-05",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Engie : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "ENGI.PA"
-   ],
-   "tickers_mots_cles": [
-    "ENGI.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ENGI.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-05",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Euronext : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "ENX.PA"
-   ],
-   "tickers_mots_cles": [
-    "ENX.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ENX.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-05",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Legrand : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "LR.PA"
-   ],
-   "tickers_mots_cles": [
-    "LR.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/LR.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-05",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Air France-KLM : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "AF.PA"
-   ],
-   "tickers_mots_cles": [
-    "AF.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/AF.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-12",
-   "heure": "",
-   "type": "dividende",
-   "titre": "ArcelorMittal : détachement du dividende",
-   "tickers": [
-    "MT.AS"
-   ],
-   "tickers_mots_cles": [
-    "MT.AS"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/MT.AS",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-12",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Eiffage : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "FGR.PA"
-   ],
-   "tickers_mots_cles": [
-    "FGR.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/FGR.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-17",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Alstom : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "ALO.PA"
-   ],
-   "tickers_mots_cles": [
-    "ALO.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ALO.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-25",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Pernod Ricard : détachement du dividende",
-   "tickers": [
-    "RI.PA"
-   ],
-   "tickers_mots_cles": [
-    "RI.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/RI.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-11-25",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Rémy Cointreau : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "RCO.PA"
-   ],
-   "tickers_mots_cles": [
-    "RCO.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/RCO.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-12-01",
-   "heure": "",
-   "type": "dividende",
-   "titre": "LVMH : détachement du dividende",
-   "tickers": [
-    "MC.PA"
-   ],
-   "tickers_mots_cles": [
-    "MC.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/MC.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-12-01",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Orange : détachement du dividende",
-   "tickers": [
-    "ORA.PA"
-   ],
-   "tickers_mots_cles": [
-    "ORA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ORA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-12-14",
-   "heure": "",
-   "type": "dividende",
-   "titre": "STMicroelectronics : détachement du dividende",
-   "tickers": [
-    "STMPA.PA"
-   ],
-   "tickers_mots_cles": [
-    "STMPA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/STMPA.PA",
-   "fiable": false
+   "ajoute_le": "2026-09-29",
+   "initial": {
+    "etape": "rumeur",
+    "probabilite": 0.2
+   }
   }
  ]
 }
