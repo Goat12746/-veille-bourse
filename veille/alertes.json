@@ -1,0 +1,1680 @@
+{
+ "version": 1,
+ "genere_le": "2026-09-29T14:45:32+02:00",
+ "sources": {
+  "amf": {
+   "ok": true,
+   "trouves": 6,
+   "nouveaux": 6
+  },
+  "presse": {
+   "ok": true,
+   "trouves": 69,
+   "nouveaux": 69
+  },
+  "assemblee": {
+   "ok": true,
+   "trouves": 1,
+   "nouveaux": 1
+  },
+  "agenda": {
+   "ok": true,
+   "trouves": 40
+  },
+  "calendrier": {
+   "ok": true,
+   "trouves": 31
+  }
+ },
+ "alertes": [
+  {
+   "id": "presse-181a5dc8f47983e9",
+   "date": "2026-09-29",
+   "source": "presse",
+   "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
+   "resume": "Le gouvernement propose de rendre progressive la TEITLD (4,6 % aujourd'hui), jusqu'à 12,2 % pour les exploitants les plus rentables : 800 M€ de recettes en plus par an (600 M€ → 1,4 Md€), affectées à l'Afit à partir de 2028. Présentation du projet de loi de finances le 1er octobre, examen en commission des finances à partir du 7 octobre. Le gouvernement promet que les péages n'augmenteront pas en conséquence.",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOQk93d0c2c0dMS05zZkR4V2dVSGg1eTN4N3pFVGh6TW5QQnIyWXc2M09YWFVKVGpxQS11QnZHUmp4X2VRTzVOUERWMWlnTkRuVlRrQzlwQXIzWVJZUDA5RmRoQ0tDTmxlZ0EwTUlxbjh3MUphdmZkV1BKUFhSZ3JNOS1CLW5PRWozRl9xUjBfNWk4Q3RKd0FjZ1NCRW9CVWhkbW9qU3dsWkNsUHhqVGdpTmR3bnJBYXdMS1FSRWMzNU0xNFJVdzJNajhfVUp1Y2RCVFBfLTBfUngyUkh2MlNIdWFUM1diZkJzUEhVUmZaandfQUdZMDBiVlFONENBcFJNQkE?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.75,
+   "themes": [
+    "concessions_autoroutes",
+    "aerien_aeroports",
+    "ferroviaire"
+   ],
+   "entreprises": [
+    {
+     "ticker": "DG.PA",
+     "sens": "negatif",
+     "ampleur": "forte",
+     "justification": "Vinci payait environ 47 % de la taxe (284 M€ en 2024) : environ 380 M€ de plus par an selon une estimation proportionnelle, soit plus de 5 % de son résultat net annuel.",
+     "extrait": "Une taxe presque triplée: le gouvernement veut récupérer 800 millions d'euros supplémentaires auprès des sociétés d'autoroutes et des aéroports",
+     "nom": "Vinci"
+    },
+    {
+     "ticker": "FGR.PA",
+     "sens": "negatif",
+     "ampleur": "forte",
+     "justification": "Eiffage (APRR) payait 123 M€ en 2024 : environ 160 M€ de plus par an estimés, une part importante de son résultat, les concessions portant l'essentiel de ses bénéfices.",
+     "extrait": "",
+     "nom": "Eiffage"
+    },
+    {
+     "ticker": "ADP.PA",
+     "sens": "negatif",
+     "ampleur": "forte",
+     "justification": "ADP payait 131 M€ en 2024 : environ 170 M€ de plus par an estimés. Une partie pourrait être répercutée sur les redevances aéroportuaires, régulées.",
+     "extrait": "",
+     "nom": "Aéroports de Paris (Groupe ADP)"
+    },
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Recettes affectées à l'Afit (infrastructures de transport) à partir de 2028 : davantage de commandes ferroviaires possibles, effet lointain et indirect.",
+     "extrait": "affectés à l'Afit seulement à partir de 2028",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Budget 2027 : le gouvernement veut augmenter une taxe sur les concessions autoroutières et aéroportuaires - Le Monde.fr",
+     "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOQk93d0c2c0dMS05zZkR4V2dVSGg1eTN4N3pFVGh6TW5QQnIyWXc2M09YWFVKVGpxQS11QnZHUmp4X2VRTzVOUERWMWlnTkRuVlRrQzlwQXIzWVJZUDA5RmRoQ0tDTmxlZ0EwTUlxbjh3MUphdmZkV1BKUFhSZ3JNOS1CLW5PRWozRl9xUjBfNWk4Q3RKd0FjZ1NCRW9CVWhkbW9qU3dsWkNsUHhqVGdpTmR3bnJBYXdMS1FSRWMzNU0xNFJVdzJNajhfVUp1Y2RCVFBfLTBfUngyUkh2MlNIdWFUM1diZkJzUEhVUmZaandfQUdZMDBiVlFONENBcFJNQkE?oc=5",
+     "date": "2026-09-28",
+     "media": "Le Monde.fr"
+    },
+    {
+     "titre": "Une taxe presque triplée: le gouvernement veut récupérer 800 millions d'euros supplémentaires auprès des sociétés d'autoroutes et des aéroports - BFM",
+     "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPTG9kZDEzTExaX2t3VWU2MV95aXFmVEk3eGdaRjBYQzBJQ2xNdm1INTZDWXFtQkVwX1laTlpOZ2xOdlhvWjdLSGdLTVdTQnVmOTU5VVMyOElBM0t4RGRWb3djZ3ZEWGhvWEFud0VmY1RzZzVGX2R2akh0VkF2Z1kycWEtbW5fbUJXbk9GNWQzQXh2clJWOHQ1YjE2NE9MbTZfTUItZGIxY0RMRWRkWWl1SWZhTzhXVVYtZllraTFvVDZCd1R1UUpDQXFaVGxpSVhSQzJ5ZThPS3h0bnd6eUI1YVlUOFNPa1VDQmpvZllOdzdvNlozNW9GMmtwYk9xc1luOERodS1xWHZySUE0Q2Jla25nZnYxVXpIc1I5ZEVsQ0lqY2IzSExZYnpmTHBxWjRyT1BWUUpCVTVTRkNGZkE?oc=5",
+     "date": "2026-09-28",
+     "media": "BFM"
+    },
+    {
+     "titre": "Le gouvernement veut relever la taxe sur les concessions autoroutières et aéroportuaires dans le budget 2027 - Traders Union",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPT0JVTDJxV3duTlUxajNOUG0yeHlWR2d2N29zQUF1Yk8zbHRwZTZjLTJXYUpZZnFVYXEtNGxPZjlHUUt0WHRHejk1bWNiWEhqOGRYclRsZXpCbjhMWFNxdTZVdXpJLVJDNC1ZWmZiNlVQYjVmdUJ5WkxYRmZmWUJ0UXp3dUVoNEhjZWZUY2cyYzlCd203a2czd1dCNXREeERa?oc=5",
+     "date": "2026-09-28",
+     "media": "Traders Union"
+    },
+    {
+     "titre": "Budget 2027 : l’État veut taxer les autoroutes sans augmenter les péages - stephanelarue.com",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrUjV6MW5WbFNZYjc1UUdkV0xhXzlCYkxsZTRKdzJNcGVqY3BNZXJjcTdCdmF6WWZXSDdYb1FiaE9UOG1KXzI3aS1ER3JkRUF4OGljdV81X3pGeEtzZG43bTdkSkdXR0FldFJPWTFqemwxNXR5VDQ4UGVzSlBZdw?oc=5",
+     "date": "2026-09-28",
+     "media": "stephanelarue.com"
+    },
+    {
+     "titre": "Le gouvernement prévoit d'augmenter la taxe sur les sociétés d'autoroutes et les aéroports pour récupérer 800 millions d'euros supplémentaires - franceinfo.fr",
+     "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxON19XajliTnNuQ2pfbU5FbmhDU3RTUnZUVVExeE9hTU54ZHppby1YX3pJa3FCejJFdVdLMldYbEk3T3A0NzYxckNmSjJnN3d6MUFibDNFbFRCQk51M0tVUG1lRFRneEtDcG1oZ2ptWTlNcU9kZ3I5TWY3dWRkMHdUVnkyNWpMbUd5bnJIVFdlNlpLRU9LemhQdzJlTEU1S3BMTXRLbWR4UWdQdXpWN09jSURNSTB0Y2hoM3JpdU40V0V6dG1NLU9yd2Q5SFVtQVNWRFdrUnhNQkh6cW1xZU15dmJWdmdIbFJxWXVZdVdoM1Rub3dmN2VuaFdOYVVlRmF0VXB4N3hyUUFwMlowVHc?oc=5",
+     "date": "2026-09-29",
+     "media": "franceinfo.fr"
+    },
+    {
+     "titre": "[Budget 2027] Le gouvernement compte rehausser la taxe autoroutes/aéroports pour gagner 800 millions d’euros (affectés à l’Afit seulement à partir de 2028) - Contexte",
+     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQTGxLVnVKbnV6NFVoaEhxbW0xNVNNaG1RT2Zyb0M3NVFGMV9oTFNSd2hjZklQQ3hqNkpfUEdFbnlCUGNra3JwcW1uNWhEMFkxdklrQnZBMzJaVnllaXZCbnhGdXFMdFE4ZXNaekVrTW1ad0dsRG16MXJMVnQ2cEtDc2k5cHBKZktnQkVreUJnekd2eDd1RUxMQzczdnd5T212WUJTN0R4T1NhV24yQkxRLU55a2lXWkVXeW41OUx1UzNjbjJZaVN5aW1NYnpzaWZ4bFQ0X2xYVWYtRGNVZl82LVdNblRLNlg0RTliM2JINDZCbG50S1hnUHRnbnE5NVE0aDJ5MjQ1R3c0RlJkMWNkbTlJMktCbnFJNzIzSA?oc=5",
+     "date": "2026-09-29",
+     "media": "Contexte"
+    },
+    {
+     "titre": "Taxe due par les concessionnaires d'autoroutes et budget 2027 : l'entreprise qui paie le péage peut-elle récupérer la TVA et augmenter ses prix - Kohen Avocats",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYWczYXNLOUVSVGxSdEp1dndhMU9xeDFRYjBacF9DVUxUYjBxaGQzWDBabVdqdlpTQXpER285Zl9FaEtJby01YmFzbnZBeWtvRUFSMUZoa3FJXzhFMHh2SlBudTBvRzBZc1N6RjI0eFk0QWoxV21LcDhpZVJuZ1RiOTlUOU54dDFOdmVLY2EtUU1PWllqODJkNHVXN2hpZG9TWlNETV85eFhqRVFPUjM0?oc=5",
+     "date": "2026-09-29",
+     "media": "Kohen Avocats"
+    },
+    {
+     "titre": "PLF 2027 : la TEITLD pourrait fortement augmenter pour les exploitants les plus rentables - TRM24",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQmVsb2FlMWd0ME9ZZ0xFS1M0MS1hSDF0VVdZWWpKajM2VUxaSW9ja0tLSGdlUWoyWGpnWTFDd3VLa2VfYzFORmU2bVlyOThGUHhfUWlJWkc5aFlod1pnS2JFRmx4RHVFVnRIenJTckFHX2JFdnpQYWhQSGppd1c5X1lnM3RETlAxSDFzNmkteXVIYzc4RWZ6WmZzdThiSzNnVkZuZjlyYVNqdG1pSkE?oc=5",
+     "date": "2026-09-29",
+     "media": "TRM24"
+    },
+    {
+     "titre": "Les actions Eiffage et Vinci chutent face à une hausse fiscale prévue - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUEI0RDRJNW1zSU9KSGRiUUNvX3RkLWpjVmtfSk1ORkhkQzByNGZfVzYyc1pSdVBNMkFabDIzQzhyRUw4eWxSOFBIOHNJYWktZTd4YXZTeXIyc0xaUktCZW4yU3p2ZHpUMDFVNVY4YTFUOHRzdDJwYnVKSmlNYi1MdWNGTnhGZVotTUJFLWxYdC1nelZ1SEFDaVEtc3QtbktzUVdHWGNEU3BwOFlKN2xWa2l3M0ZmWGdQTjZqZXNpRUR6TU0?oc=5",
+     "date": "2026-09-29",
+     "media": "Investing.com France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-e4359fea6c50b69e",
+   "date": "2026-09-29",
+   "source": "presse",
+   "titre": "PLFSS 2027 : projet de taxe sur les produits sucrés transformés",
+   "resume": "Le projet de loi de financement de la Sécurité sociale 2027 pourrait créer une contribution sur les produits transformés contenant des sucres ajoutés (biscuits, céréales, pâtes à tartiner). L'Ania s'y oppose ; le gouvernement n'a pas confirmé. Présentation le 1er octobre.",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNT01DNmFOS2pYVDlZOTVpZ2g4cUpBbEZoNkNNSF9wSmxqWDJENWpldWZKTHRkY0FsVWFWeGVIQUVDYjlLcC1yOU1tQTlNYUo1Uk45b1AweFFOTnhmdXM1Q2xKR3hURDVQQ2hzMXpQZjBydnFvc0E2bnRfNTdqUUtNTTFGOFkzbFh0MmFha0pNaTZrTlJjdUVSVjdnc000Zmo0MjBCYWZwUEJjb3NSVnFLTUEtSjJFX0RTQU41RlVScWJkTGFWWUYydkh6R3ZfWFQxcVd4SldaaVNEVVhmZTFmempKYkJrTUx1TUdrc0NB?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.5,
+   "themes": [
+    "distribution_alimentaire"
+   ],
+   "entreprises": [
+    {
+     "ticker": "BN.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Danone vend en France des produits laitiers sucrés potentiellement concernés ; la France ne pèse qu'une petite part de son chiffre d'affaires.",
+     "extrait": "",
+     "nom": "Danone"
+    },
+    {
+     "ticker": "CA.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Taxe prélevée chez les industriels mais susceptible de peser sur les prix en rayon et les volumes de Carrefour.",
+     "extrait": "",
+     "nom": "Carrefour"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Taxe sur les produits sucrés : l’agroalimentaire sonne la charge contre le gouvernement - LSA conso",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNT01DNmFOS2pYVDlZOTVpZ2g4cUpBbEZoNkNNSF9wSmxqWDJENWpldWZKTHRkY0FsVWFWeGVIQUVDYjlLcC1yOU1tQTlNYUo1Uk45b1AweFFOTnhmdXM1Q2xKR3hURDVQQ2hzMXpQZjBydnFvc0E2bnRfNTdqUUtNTTFGOFkzbFh0MmFha0pNaTZrTlJjdUVSVjdnc000Zmo0MjBCYWZwUEJjb3NSVnFLTUEtSjJFX0RTQU41RlVScWJkTGFWWUYydkh6R3ZfWFQxcVd4SldaaVNEVVhmZTFmempKYkJrTUx1TUdrc0NB?oc=5",
+     "date": "2026-09-29",
+     "media": "LSA conso"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "amf-135012_20260928",
+   "date": "2026-09-29",
+   "source": "amf",
+   "titre": "Rexel : augmentation de capital d'environ 500 M€ pour financer l'acquisition de GCG",
+   "resume": "Rexel a lancé le 28 septembre, et réussi le 29, une augmentation de capital d'environ 500 M€ sans droit préférentiel de souscription, pour financer en partie l'acquisition de GCG.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135012_20260928.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "RXL.PA",
+     "sens": "incertain",
+     "ampleur": "moyenne",
+     "justification": "Dilution des actionnaires existants, en contrepartie d'une acquisition qui doit accroître la taille du groupe : effet net dépendant du prix payé pour GCG.",
+     "extrait": "Lancement d'une augmentation de capital d'environ 500 millions d'euros, avec suppression du droit préférentiel de souscription des actionnaires, afin de financer en partie l'acquisition de GCG",
+     "nom": "Rexel"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Rexel : Rexel: Lancement d'une augmentation de capital d’environ 500 millions d’euros, avec suppression du droit préférentiel de souscription des actionnaires, afin de financer en partie l’acquisition de GCG",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135012_20260928.pdf",
+     "date": "2026-09-28",
+     "media": "amf"
+    },
+    {
+     "titre": "Rexel : Rexel annonce le succès de son augmentation de capital d’environ 500 millions d’euros, avec suppression du droit préférentiel de souscription des actionnaires, afin de financer en partie l’acquisition de GCG",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135088_20260929.pdf",
+     "date": "2026-09-29",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "amf-135005_20260929",
+   "date": "2026-09-29",
+   "source": "amf",
+   "titre": "Alstom : nouvelles commandes en Suède et à Riyad",
+   "resume": "Västtrafik commande 35 trains Avelia Stream Nordic supplémentaires (flotte portée à 80) et Alstom fournira de nouvelles rames de métro sans conducteur à Riyad.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135005_20260929.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [
+    "ferroviaire"
+   ],
+   "entreprises": [
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Commandes qui alimentent le carnet d'Alstom, sans changer ses perspectives à elles seules.",
+     "extrait": "",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Alstom : ALSTOM S.A : Västtrafik réaffirme sa confiance en Alstom et commande 35 Avelia Stream Nordic supplémentaires, portant ainsi sa flotte à 80 trains",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135005_20260929.pdf",
+     "date": "2026-09-29",
+     "media": "amf"
+    },
+    {
+     "titre": "Alstom : ALSTOM S.A : Alstom va accompagner la nouvelle ère de la mobilité à Riyad grâce à de nouvelles rames de métro sans conducteur",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW134807_20260928.pdf",
+     "date": "2026-09-28",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-78f559fd4559a36e",
+   "date": "2026-09-29",
+   "source": "presse",
+   "titre": "Voiture électrique : leasing social et aides à l'achat en question dans le budget 2027",
+   "resume": "Avant le budget 2027, le gouvernement hésite entre étendre et arrêter le leasing social, et une réforme de l'éco-score pourrait réduire les aides à l'achat de voitures électriques.",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc2hpejlGWkJqZm54amtmanI4NnVsSFFvYm5kRXkzeFI2cHZvTmhOSGp0eE5iZFlDblphRFpFSXZ1RXA5b2ZaRW5JandwTThiLU9mS3lFM2dCdGFqRkZlNDhDRHVtcC1sM3ktb056UnZxdkdKd2VTaHZpTGdMcmNVc0NkYmYzSy1HZENWdlJwaXc2ajJoeDJsNnFNMzRYWmxxY2xvdXpOV2VVZmpvOXFKVGJqTk5TOTNpNS1EOVM0T0hETDdBeXRSc3MtOXp5Ylgw?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.4,
+   "themes": [
+    "automobile"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RNO.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Renault est l'un des principaux bénéficiaires du leasing social et des aides à l'électrique en France : une réduction pèserait sur ses ventes, une extension les soutiendrait.",
+     "extrait": "",
+     "nom": "Renault"
+    },
+    {
+     "ticker": "STLAP.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Plusieurs modèles de Stellantis (ë-C3, Frontera) sont éligibles au leasing social.",
+     "extrait": "",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "« Massifier » ou « débrancher » : avant la présidentielle, le leasing social joue sa survie - Contexte",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc2hpejlGWkJqZm54amtmanI4NnVsSFFvYm5kRXkzeFI2cHZvTmhOSGp0eE5iZFlDblphRFpFSXZ1RXA5b2ZaRW5JandwTThiLU9mS3lFM2dCdGFqRkZlNDhDRHVtcC1sM3ktb056UnZxdkdKd2VTaHZpTGdMcmNVc0NkYmYzSy1HZENWdlJwaXc2ajJoeDJsNnFNMzRYWmxxY2xvdXpOV2VVZmpvOXFKVGJqTk5TOTNpNS1EOVM0T0hETDdBeXRSc3MtOXp5Ylgw?oc=5",
+     "date": "2026-09-29",
+     "media": "Contexte"
+    },
+    {
+     "titre": "Réforme de l’éco-score : les aides à l’achat de voitures électriques revues à la baisse ? - Rouleur Électrique",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQemZVZWtSZVM1RmNXYll0Ym1iWkZyREppQjhaTXQyZl9sVGdhcHRJd2RkX1hmRFc3ZTNsOHJfOGh5X201dUlsd044TEZXbTREZkpLTlA5bE1fb3QwSFdKMXJ0ZVlnSzh0X0p6alg3U2dSOW9hTDIwUGQxSEpKaXJRTThGX3dvT2dtWjFXVmVLMnAxeW9vMkMwd2QzN3JjRVVpcTdqRGxYMTN2dE9JWlFuVXVqMFBkUXJkYndGZVFPdw?oc=5",
+     "date": "2026-09-27",
+     "media": "Rouleur Électrique"
+    },
+    {
+     "titre": "Voiture électrique : la fiscalité avant le budget 2027 - Electra",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOENzeXJpUE1FaTB6V1RvR0FKdnhDRWxWQ1BVYlctaWgwSFRJU2dvMW8teWlGTUUtemk2QXV3bzZYZUVKdVMyMF96S2dNWHc0ZHBJTjhtMjZNRFR5LXFmS1FzZGVkclA4TUlaV3R5TXRKQXpVeVhwTzZhYnZHNTdIX1JkWURLN0FEZHJNWQ?oc=5",
+     "date": "2026-09-28",
+     "media": "Electra"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-7f5e154f8dc53a8e",
+   "date": "2026-09-29",
+   "source": "presse",
+   "titre": "Airbus : premier vol de l'A350F, la version cargo",
+   "resume": "L'A350F, version cargo de l'A350, a réalisé son premier vol d'essai de 4 heures, une étape vers sa certification et ses premières livraisons.",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPWmtQZWExY0ZqZnRZT28yYmg1Si15Zldldy1idnJnRUhoQ0hXQ1hkb01pelRQTTktMHk0UDUyNlpTZlNFQmhyLTBNaW0wX2pISkF5TENXZFh5Qkg3SVROVWZfdDZ2NXlUVXFraDhMSmxhTC1zWUNNMHVwMUxfWGVSQ0tvODNHTTB3RC04ejhFRUxDd256NEd1bjd6Nmh6MVFfRE0tNnkxLXJCdm5vZXlVRnlvV2d0eXRBZWJYWU5fTS1LV0ZKVDBMaW80TkREM0VQTGlTZXRSSzVoUms0QlV0VHlDSEI1djZraVNZR19iNWs4eW44SnU3ME11QUF0RlBtaHB5Y2UyR2EwcjdKLTFxUGllQm9mbWVYcmRWaEhR?oc=5",
+   "etape": "information",
+   "probabilite": 0.9,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Étape attendue du programme, qui limite le risque de retard.",
+     "extrait": "",
+     "nom": "Airbus"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "VIDÉO. Premier vol pour l'A350F : l'avion cargo de la famille des gros-porteurs d'Airbus décolle pour 4 heures d'essai - France 3 Régions",
+     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPWmtQZWExY0ZqZnRZT28yYmg1Si15Zldldy1idnJnRUhoQ0hXQ1hkb01pelRQTTktMHk0UDUyNlpTZlNFQmhyLTBNaW0wX2pISkF5TENXZFh5Qkg3SVROVWZfdDZ2NXlUVXFraDhMSmxhTC1zWUNNMHVwMUxfWGVSQ0tvODNHTTB3RC04ejhFRUxDd256NEd1bjd6Nmh6MVFfRE0tNnkxLXJCdm5vZXlVRnlvV2d0eXRBZWJYWU5fTS1LV0ZKVDBMaW80TkREM0VQTGlTZXRSSzVoUms0QlV0VHlDSEI1djZraVNZR19iNWs4eW44SnU3ME11QUF0RlBtaHB5Y2UyR2EwcjdKLTFxUGllQm9mbWVYcmRWaEhR?oc=5",
+     "date": "2026-09-29",
+     "media": "France 3 Régions"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-ddc4c15adc3d7a4f",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
+   "resume": "Selon les informations de presse avant la présentation du 1er octobre, le budget 2027 prévoit un effort d'environ 54 Md€, surtout sur les dépenses, et une baisse de la contribution exceptionnelle sur les bénéfices des grandes entreprises instaurée en 2025.",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5uaDRHZjVib1c4T1JabEJtUzJVZmFCOGxWRklMVXZWLUFkVExRQUgySGlORlV1UkJQc1V6U205T0lqRW9IOWdaQVc2XzJpSkU1cTNHRzAzalI0anlXX243anl3?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.7,
+   "themes": [
+    "fiscalite_grandes_entreprises"
+   ],
+   "entreprises": [
+    {
+     "ticker": "AC.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Accor"
+    },
+    {
+     "ticker": "AI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Air Liquide"
+    },
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Airbus"
+    },
+    {
+     "ticker": "MT.AS",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "ArcelorMittal"
+    },
+    {
+     "ticker": "CS.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "AXA"
+    },
+    {
+     "ticker": "BNP.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "BNP Paribas"
+    },
+    {
+     "ticker": "EN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Bouygues"
+    },
+    {
+     "ticker": "BVI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Bureau Veritas"
+    },
+    {
+     "ticker": "CAP.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Capgemini"
+    },
+    {
+     "ticker": "CA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Carrefour"
+    },
+    {
+     "ticker": "ACA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Crédit Agricole"
+    },
+    {
+     "ticker": "BN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Danone"
+    },
+    {
+     "ticker": "DSY.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Dassault Systèmes"
+    },
+    {
+     "ticker": "ENGI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Engie"
+    },
+    {
+     "ticker": "EDEN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Edenred"
+    },
+    {
+     "ticker": "EL.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "EssilorLuxottica"
+    },
+    {
+     "ticker": "ERF.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Eurofins Scientific"
+    },
+    {
+     "ticker": "RMS.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Hermès"
+    },
+    {
+     "ticker": "KER.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Kering"
+    },
+    {
+     "ticker": "OR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "L'Oréal"
+    },
+    {
+     "ticker": "LR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Legrand"
+    },
+    {
+     "ticker": "MC.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "LVMH"
+    },
+    {
+     "ticker": "ML.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Michelin"
+    },
+    {
+     "ticker": "ORA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Orange"
+    },
+    {
+     "ticker": "RI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Pernod Ricard"
+    },
+    {
+     "ticker": "PUB.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Publicis"
+    },
+    {
+     "ticker": "RNO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Renault"
+    },
+    {
+     "ticker": "SAF.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Safran"
+    },
+    {
+     "ticker": "SGO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Saint-Gobain"
+    },
+    {
+     "ticker": "SAN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Sanofi"
+    },
+    {
+     "ticker": "SU.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Schneider Electric"
+    },
+    {
+     "ticker": "GLE.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Société Générale"
+    },
+    {
+     "ticker": "STLAP.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Stellantis"
+    },
+    {
+     "ticker": "STMPA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "STMicroelectronics"
+    },
+    {
+     "ticker": "TEP.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Teleperformance"
+    },
+    {
+     "ticker": "HO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Thales"
+    },
+    {
+     "ticker": "TTE.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "TotalEnergies"
+    },
+    {
+     "ticker": "URW.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Unibail-Rodamco-Westfield"
+    },
+    {
+     "ticker": "VIE.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Veolia"
+    },
+    {
+     "ticker": "DG.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Baisse de la surtaxe d'impôt sur les sociétés payée en France par les plus grands groupes : effet limité aux bénéfices réalisés en France.",
+     "extrait": "",
+     "nom": "Vinci"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Ce que l'on sait du projet de budget qui sera présenté jeudi - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5uaDRHZjVib1c4T1JabEJtUzJVZmFCOGxWRklMVXZWLUFkVExRQUgySGlORlV1UkJQc1V6U205T0lqRW9IOWdaQVc2XzJpSkU1cTNHRzAzalI0anlXX243anl3?oc=5",
+     "date": "2026-09-28",
+     "media": "TradingView"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-48e3a90f692a8e29",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
+   "resume": "La taxe attentat passerait de 6,50 € à 8,50 € par contrat au 1er janvier 2027, la taxe sur l'assurance automobile de 18 % à 18,9 %, une nouvelle contribution sur l'assurance dommages serait créée et la taxe exceptionnelle de 2,05 % sur les complémentaires santé reconduite.",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa0xIUG8xQ3NmbDZXa2V5UEJpX0dhTGVidlowXzY1MWhQQWlnaDBkdHlnQ09wcVJWM0NkQmQ3ZE5BRVk2aFRFV09XdDJjMExRQnNUMkRxdmhIZkd1MGczMk16WGdMMkloMFpadEI2SFBCaV9VOFNVaW5OT0l2cEV3NVo4dDlfeUZHYnctbG1BWDcxNHJfZGdDOEFheFdmZzBWS2NSX2hB?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.6,
+   "themes": [
+    "assurances"
+   ],
+   "entreprises": [
+    {
+     "ticker": "CS.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Taxes répercutées sur les assurés : pression sur les volumes et les marges en assurance dommages et santé en France, marché qui ne représente qu'une partie de l'activité d'AXA.",
+     "extrait": "",
+     "nom": "AXA"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Vers une hausse de la taxe sur les assurances en France d’ici 2027 - atlas-mag.net",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa0xIUG8xQ3NmbDZXa2V5UEJpX0dhTGVidlowXzY1MWhQQWlnaDBkdHlnQ09wcVJWM0NkQmQ3ZE5BRVk2aFRFV09XdDJjMExRQnNUMkRxdmhIZkd1MGczMk16WGdMMkloMFpadEI2SFBCaV9VOFNVaW5OT0l2cEV3NVo4dDlfeUZHYnctbG1BWDcxNHJfZGdDOEFheFdmZzBWS2NSX2hB?oc=5",
+     "date": "2026-09-28",
+     "media": "atlas-mag.net"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "amf-169532_20260928",
+   "date": "2026-09-28",
+   "source": "amf",
+   "titre": "Legrand relève ses objectifs 2027-2030 grâce aux centres de données",
+   "resume": "Avant sa journée investisseurs du 29 septembre, Legrand vise une croissance organique de 6 à 8 % par an entre 2027 et 2030 (contre 3 à 5 % auparavant) et une marge opérationnelle ajustée de 21 à 22 % en moyenne (environ 20 % auparavant).",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/09/FCBWR169532_20260928.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "LR.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Objectifs moyen terme nettement relevés, portés par la demande des centres de données.",
+     "extrait": "",
+     "nom": "Legrand"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Legrand : Informations privilégiées / Autres communiqués",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/09/FCBWR169532_20260928.pdf",
+     "date": "2026-09-28",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-8158ac12ab6fdb24",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
+   "resume": "L'Assemblée examine le 30 septembre une proposition de loi visant à abroger les zones à faibles émissions. Proposition de loi à l'issue incertaine.",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ2dQcWdaUURLT3N6am5ucHhjRXY0WmRKeDBLcWFHVy1ncVNHYmhYOHJ0UFBhZ3JxZk1MNDlsa1U5bzVXWTBYNUtMTnVMSUo2WVJVcnlXOVhGdjl1ZlRUaDRTd2pzRG84OFdrWGVNSlBGZGZCVENXYzFSaHVOZjBVX2ZPSVJpMUo0SmhqQ3FXcUNlRkE1NlQ1ZFltWDhnUnh5RlV4WFNqNFZRblZaMlRzazZWZEs?oc=5",
+   "etape": "depot",
+   "probabilite": 0.3,
+   "themes": [
+    "automobile"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RNO.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "La fin des ZFE réduirait l'incitation à renouveler les véhicules anciens, au profit des modèles thermiques d'occasion plutôt que des ventes de véhicules neufs.",
+     "extrait": "",
+     "nom": "Renault"
+    },
+    {
+     "ticker": "STLAP.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Même mécanisme que pour Renault.",
+     "extrait": "",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "La séance est ouverte ! - Abrogation des ZFE : examen d'une proposition de loi - 30/09/2026 - LCP-Assemblée nationale",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ2dQcWdaUURLT3N6am5ucHhjRXY0WmRKeDBLcWFHVy1ncVNHYmhYOHJ0UFBhZ3JxZk1MNDlsa1U5bzVXWTBYNUtMTnVMSUo2WVJVcnlXOVhGdjl1ZlRUaDRTd2pzRG84OFdrWGVNSlBGZGZCVENXYzFSaHVOZjBVX2ZPSVJpMUo0SmhqQ3FXcUNlRkE1NlQ1ZFltWDhnUnh5RlV4WFNqNFZRblZaMlRzazZWZEs?oc=5",
+     "date": "2026-09-28",
+     "media": "LCP-Assemblée nationale"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-f9b8ed503a993421",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Cognac : les ventes chutent sous l'effet des droits de douane",
+   "resume": "Les ventes de cognac ont reculé d'environ 90 millions de bouteilles, pénalisées par les droits de douane imposés aux producteurs français (Chine, États-Unis).",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaGVISzJSc0F0cy16OGFwQmc1dnQtbHhaSVFUOWZhbF8zaHI4eE10MWRCRVpoaTFkTjdQSWYySUZORkMtMktlWEtEWEVuUUM3Ml9JckxMY1h5ak1MdXBvSHM5MkV4eFZWYXdrdHRMQ1RzQnpLanV3ZDlVSXRySEtxNzNGRVpJR2RyVjdnUE5SdDdoX244amxhNUExZTdmNzRWbzF4N2tJM084QWVGanR2RklNZ3NxSGJWMmRfejd2YXlteG5nVkHSAcsBQVVfeXFMT0ZkN1NqOGlnNm9RMHl2T2h2QTRLYURCTDVMamEyblhMdHhabGFJVllDeHdXZU14MWZ4SGpualJXTTRNVlMwbDhZSU1RNDdHMl9YTDFtcVNLRmF5ZkdSaFE4QXNWcFN3R0lhV3VGMzQ2LVc0N09HNGlyNEhYR1RPVXVJTTlTcXJ4eWtibXdyNFVCUDFpdENVZkgzMHFJNG9SWlp5YkNtcWdJc2huRWdrXy1EblBqZHZGaHIycEt5V2xpdlM5Y3RYNzY1Vm8?oc=5",
+   "etape": "information",
+   "probabilite": 0.9,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RCO.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Le cognac représente l'essentiel des bénéfices de Rémy Cointreau.",
+     "extrait": "",
+     "nom": "Rémy Cointreau"
+    },
+    {
+     "ticker": "RI.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Martell (cognac) ne pèse qu'une partie du portefeuille de Pernod Ricard.",
+     "extrait": "",
+     "nom": "Pernod Ricard"
+    },
+    {
+     "ticker": "MC.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Hennessy est exposé, mais les vins et spiritueux sont une petite part de LVMH.",
+     "extrait": "",
+     "nom": "LVMH"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Les ventes de cognac chutent de 90 millions de bouteilles sous l’effet des droits de douane sur les producteurs français - Vinetur",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaGVISzJSc0F0cy16OGFwQmc1dnQtbHhaSVFUOWZhbF8zaHI4eE10MWRCRVpoaTFkTjdQSWYySUZORkMtMktlWEtEWEVuUUM3Ml9JckxMY1h5ak1MdXBvSHM5MkV4eFZWYXdrdHRMQ1RzQnpLanV3ZDlVSXRySEtxNzNGRVpJR2RyVjdnUE5SdDdoX244amxhNUExZTdmNzRWbzF4N2tJM084QWVGanR2RklNZ3NxSGJWMmRfejd2YXlteG5nVkHSAcsBQVVfeXFMT0ZkN1NqOGlnNm9RMHl2T2h2QTRLYURCTDVMamEyblhMdHhabGFJVllDeHdXZU14MWZ4SGpualJXTTRNVlMwbDhZSU1RNDdHMl9YTDFtcVNLRmF5ZkdSaFE4QXNWcFN3R0lhV3VGMzQ2LVc0N09HNGlyNEhYR1RPVXVJTTlTcXJ4eWtibXdyNFVCUDFpdENVZkgzMHFJNG9SWlp5YkNtcWdJc2huRWdrXy1EblBqZHZGaHIycEt5V2xpdlM5Y3RYNzY1Vm8?oc=5",
+     "date": "2026-09-28",
+     "media": "Vinetur"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-7ee8137bfefbf4de",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Chine–États-Unis : la visite de Xi Jinping prolonge la détente commerciale",
+   "resume": "La visite de Xi Jinping aux États-Unis prolonge la trêve commerciale sino-américaine, réduisant le risque d'une nouvelle escalade des droits de douane.",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZXFuOGhjT053bk1MS2JCdzBoLXdhdk9zSFZJeE1lejVrY1hxN1NqQUdjVjR3VmNHYnZGd29fNVVQZkVnR2NiS01abTc3Z2h4NmZ4N3dabm5fV2hmMk9RaDJzS3hLQ3ctLUR6UmtqUHhsVU5qRWxTV0ZlYWEweVhQZ25seWpDaFpCR1RtV2pCek9OSzRKb2x1TGFCY0FoaUlWZ09IVlhqYTVKYmUtQm5XUF9ONlZVbUgzeVJKZWM2YWVTMmxkUklhbA?oc=5",
+   "etape": "information",
+   "probabilite": 0.6,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "MC.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Moins de risque sur la demande chinoise, clé pour le luxe.",
+     "extrait": "",
+     "nom": "LVMH"
+    },
+    {
+     "ticker": "KER.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Groupe de luxe très exposé à la clientèle chinoise.",
+     "extrait": "",
+     "nom": "Kering"
+    },
+    {
+     "ticker": "RMS.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Exposition à la Chine, avec une demande plus résistante.",
+     "extrait": "",
+     "nom": "Hermès"
+    },
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Détente favorable aux livraisons d'avions vers la Chine.",
+     "extrait": "",
+     "nom": "Airbus"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "La visite de Xi Jinping aux États-Unis prolonge la détente commerciale avec la Chine - Le Figaro",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZXFuOGhjT053bk1MS2JCdzBoLXdhdk9zSFZJeE1lejVrY1hxN1NqQUdjVjR3VmNHYnZGd29fNVVQZkVnR2NiS01abTc3Z2h4NmZ4N3dabm5fV2hmMk9RaDJzS3hLQ3ctLUR6UmtqUHhsVU5qRWxTV0ZlYWEweVhQZ25seWpDaFpCR1RtV2pCek9OSzRKb2x1TGFCY0FoaUlWZ09IVlhqYTVKYmUtQm5XUF9ONlZVbUgzeVJKZWM2YWVTMmxkUklhbA?oc=5",
+     "date": "2026-09-28",
+     "media": "Le Figaro"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  },
+  {
+   "id": "presse-ff79c0193462f61e",
+   "date": "2026-09-28",
+   "source": "presse",
+   "titre": "Portugal : le Rafale candidat au remplacement des F-16",
+   "resume": "La France propose le Rafale au Portugal, qui doit remplacer ses F-16. Compétition ouverte, sans décision à ce stade.",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQTRWLXhaLTBxTW5ZS0NmN1VlU0hCT1Q5SnpyUjlKeEtJdGYwYXBfR2JPcjVhMXUtX3J6MUZQVktjUWsxdTQydUtIOUMxZHNCM1ZvWms5OC0wN0RSM0d6dXliNDBwLW16YVVsT0hZYlB1OWx5TzRFQ1gxMlZTQWxCWUxWTWZzdUptcHMyRE4wZTRHYjNZcktKeGlDSUFiazNXSWgtNmVhS0VUNms?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.2,
+   "themes": [
+    "defense"
+   ],
+   "entreprises": [
+    {
+     "ticker": "AM.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Commande potentielle de Rafale, incertaine et lointaine.",
+     "extrait": "",
+     "nom": "Dassault Aviation"
+    },
+    {
+     "ticker": "SAF.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Safran fournit les moteurs M88 du Rafale.",
+     "extrait": "",
+     "nom": "Safran"
+    },
+    {
+     "ticker": "HO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Thales fournit radar et électronique du Rafale.",
+     "extrait": "",
+     "nom": "Thales"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Le Portugal doit remplacer ses avions F-16 : la France entre dans la course avec le Rafale - Portugal.fr",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQTRWLXhaLTBxTW5ZS0NmN1VlU0hCT1Q5SnpyUjlKeEtJdGYwYXBfR2JPcjVhMXUtX3J6MUZQVktjUWsxdTQydUtIOUMxZHNCM1ZvWms5OC0wN0RSM0d6dXliNDBwLW16YVVsT0hZYlB1OWx5TzRFQ1gxMlZTQWxCWUxWTWZzdUptcHMyRE4wZTRHYjNZcktKeGlDSUFiazNXSWgtNmVhS0VUNms?oc=5",
+     "date": "2026-09-28",
+     "media": "Portugal.fr"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-29"
+  }
+ ],
+ "calendrier": [
+  {
+   "date": "2026-09-29",
+   "heure": "16:00",
+   "type": "examen_texte",
+   "titre": "- Nomination d’un rapporteur sur la proposition de loi, adoptée par le Sénat après engagement de la procédure accélérée, visant à assouplir la procédure d’autorisation des établissements et services sociaux et médico-sociaux à caractère expérimental (n° 2851) - Nomination d’un rapporteur sur la prop",
+   "tickers": [
+    "EDEN.PA"
+   ],
+   "themes": [
+    "tickets_restaurant"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-09-30",
+   "heure": "",
+   "type": "dividende",
+   "titre": "TotalEnergies : détachement du dividende",
+   "tickers": [
+    "TTE.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/TTE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-09-30",
+   "heure": "09:30",
+   "type": "examen_texte",
+   "titre": "Examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour) examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour",
+   "tickers": [
+    "FRVIA.PA",
+    "ML.PA",
+    "RNO.PA",
+    "STLAP.PA"
+   ],
+   "themes": [
+    "automobile"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-01",
+   "heure": "",
+   "type": "budget",
+   "titre": "Présentation du projet de loi de finances et du PLFSS 2027 en Conseil des ministres",
+   "tickers": [
+    "DG.PA",
+    "FGR.PA",
+    "ADP.PA",
+    "CS.PA",
+    "BN.PA"
+   ],
+   "themes": [
+    "concessions_autoroutes",
+    "assurances",
+    "fiscalite_grandes_entreprises"
+   ],
+   "source": "Presse (calendrier gouvernemental)",
+   "url": "",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-05",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Société Générale : détachement du dividende",
+   "tickers": [
+    "GLE.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/GLE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-07",
+   "heure": "09:00",
+   "type": "budget",
+   "titre": "– Examen de la première partie du projet de loi de finances pour 2027 examen de la première partie du projet de loi de finances pour 2027",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-07",
+   "heure": "09:30",
+   "type": "examen_texte",
+   "titre": "- Examen du rapport d’information sur l’exposition des jeunes aux boissons énergisantes et aux boissons alcoolisées prêtes à boire (Mme Sandrine Runel et M. Yannick Neuder, rapporteurs) - Examen de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant (n° 28",
+   "tickers": [
+    "EDEN.PA"
+   ],
+   "themes": [
+    "tickets_restaurant"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-07",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "– Suite de l’examen de la première partie du projet de loi de finances pour 2027 suite de l’examen de la première partie du projet de loi de finances pour 2027",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-08",
+   "heure": "08:45",
+   "type": "examen_texte",
+   "titre": "Éventuellement, examen, en application de l’article 88 du Règlement, des amendements restant en discussion sur la proposition de loi visant à abroger les zones à faibles émissions mobilité (n° 2970) (M. Pierre Meurin, rapporteur). éventuellement, examen, en application de l’article 88 du Règlement, ",
+   "tickers": [
+    "FRVIA.PA",
+    "ML.PA",
+    "RNO.PA",
+    "STLAP.PA"
+   ],
+   "themes": [
+    "automobile"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-08",
+   "heure": "09:00",
+   "type": "examen_texte",
+   "titre": "Discussion de la proposition de résolution, déposée en application de l’article 34-1 de la Constitution, visant à garantir un accès continu à l’eau potable dans les territoires ultramarins Discussion de la proposition de résolution, déposée en application de l’article 34-1 de la Constitution, visant",
+   "tickers": [
+    "FRVIA.PA",
+    "ML.PA",
+    "RNO.PA",
+    "STLAP.PA"
+   ],
+   "themes": [
+    "automobile"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-08",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "– Suite de l’examen de la première partie du projet de loi de finances pour 2027 suite de l’examen de la première partie du projet de loi de finances pour 2027",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-08",
+   "heure": "21:30",
+   "type": "examen_texte",
+   "titre": "Suite de la discussion de la proposition de résolution, déposée en application de l’article 34-1 de la Constitution, visant à garantir un accès continu à l’eau potable dans les territoires ultramarins Suite de la discussion de la proposition de résolution, déposée en application de l’article 34-1 de",
+   "tickers": [
+    "FRVIA.PA",
+    "ML.PA",
+    "RNO.PA",
+    "STLAP.PA"
+   ],
+   "themes": [
+    "automobile"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-09",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "– Suite de l’examen de la première partie du projet de loi de finances pour 2027 suite de l’examen de la première partie du projet de loi de finances pour 2027",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-12",
+   "heure": "16:00",
+   "type": "examen_texte",
+   "titre": "Discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant Discussion de la proposition de loi, adoptée par le Sénat, visant à assouplir la procédure d’autorisation des établissements et services sociaux et médico-sociaux à caractère expérimental Di",
+   "tickers": [
+    "EDEN.PA"
+   ],
+   "themes": [
+    "tickets_restaurant"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-12",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "- Examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) examen du projet de loi de financement de la sécurité sociale p",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-12",
+   "heure": "21:30",
+   "type": "examen_texte",
+   "titre": "Suite de la discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant Suite de la discussion de la proposition de loi, adoptée par le Sénat, visant à assouplir la procédure d’autorisation des établissements et services sociaux et médico-sociaux à c",
+   "tickers": [
+    "EDEN.PA"
+   ],
+   "themes": [
+    "tickets_restaurant"
+   ],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-13",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Crédit Agricole : détachement du dividende",
+   "tickers": [
+    "ACA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ACA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-13",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Vinci : détachement du dividende",
+   "tickers": [
+    "DG.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/DG.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-13",
+   "heure": "15:00",
+   "type": "budget",
+   "titre": "Questions au Gouvernement Vote solennel sur la proposition de loi apportant une réponse intégrale au phénomène de violences sexuelles et sexistes contre les femmes et les enfants Vote solennel sur la proposition de loi organique visant à adapter l'autorité judiciaire à la lutte contre les violences ",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-13",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "- Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) suite de l’examen du projet de loi de financement de",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-13",
+   "heure": "21:30",
+   "type": "budget",
+   "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-14",
+   "heure": "09:00",
+   "type": "budget",
+   "titre": "Suite de l’examen, ouvert à la presse, des avis budgétaires sur le projet de loi de finances pour 2027 (sous réserve de son dépôt). suite de l’examen, ouvert à la presse, des avis budgétaires sur le projet de loi de finances pour 2027 (sous réserve de son dépôt).",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-14",
+   "heure": "14:00",
+   "type": "budget",
+   "titre": "Questions au Gouvernement Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-14",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "- Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) suite de l’examen du projet de loi de financement de",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-14",
+   "heure": "21:30",
+   "type": "budget",
+   "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-15",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "- Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) suite de l’examen du projet de loi de financement de",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-15",
+   "heure": "21:30",
+   "type": "budget",
+   "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-16",
+   "heure": "21:00",
+   "type": "budget",
+   "titre": "- Éventuellement, suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) éventuellement, suite de l’examen du",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-16",
+   "heure": "21:30",
+   "type": "budget",
+   "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
+   "tickers": [],
+   "themes": [],
+   "source": "Assemblée nationale (agenda)",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "fiable": true
+  },
+  {
+   "date": "2026-10-27",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Orange : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "ORA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ORA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-28",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Airbus : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "AIR.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/AIR.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-28",
+   "heure": "",
+   "type": "resultats",
+   "titre": "BNP Paribas : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "BNP.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/BNP.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-28",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Dassault Systèmes : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "DSY.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/DSY.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-28",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Stellantis : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "STLAP.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/STLAP.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Société Générale : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "GLE.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/GLE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "STMicroelectronics : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "STMPA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/STMPA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "TotalEnergies : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "TTE.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/TTE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Amundi : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "AMUN.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/AMUN.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-30",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Crédit Agricole : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "ACA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ACA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-30",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Sanofi : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "SAN.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SAN.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-30",
+   "heure": "",
+   "type": "resultats",
+   "titre": "SCOR : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "SCR.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SCR.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-02",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Coface : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "COFA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/COFA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "ArcelorMittal : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "MT.AS"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/MT.AS",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Bouygues : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "EN.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/EN.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Engie : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "ENGI.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ENGI.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Euronext : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "ENX.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ENX.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Legrand : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "LR.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/LR.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Air France-KLM : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "AF.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/AF.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-12",
+   "heure": "",
+   "type": "dividende",
+   "titre": "ArcelorMittal : détachement du dividende",
+   "tickers": [
+    "MT.AS"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/MT.AS",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-12",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Eiffage : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "FGR.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/FGR.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-17",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Alstom : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "ALO.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ALO.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-25",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Pernod Ricard : détachement du dividende",
+   "tickers": [
+    "RI.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/RI.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-25",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Rémy Cointreau : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "RCO.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/RCO.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-01",
+   "heure": "",
+   "type": "dividende",
+   "titre": "LVMH : détachement du dividende",
+   "tickers": [
+    "MC.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/MC.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-01",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Orange : détachement du dividende",
+   "tickers": [
+    "ORA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ORA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-14",
+   "heure": "",
+   "type": "dividende",
+   "titre": "STMicroelectronics : détachement du dividende",
+   "tickers": [
+    "STMPA.PA"
+   ],
+   "themes": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/STMPA.PA",
+   "fiable": false
+  }
+ ]
+}

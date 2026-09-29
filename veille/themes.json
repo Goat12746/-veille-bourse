@@ -1,0 +1,433 @@
+{
+  "_commentaire": "Theme = mots-cles -> entreprises potentiellement concernees. Recherche sans accents ni majuscules, par sous-chaine ; 'a+b' exige a ET b dans le meme texte. 'presse' = requete Google Actualites du theme. Le sens (positif/negatif) n'est qu'indicatif : c'est l'analyse Claude qui tranche.",
+  "themes": [
+    {
+      "id": "concessions_autoroutes",
+      "libelle": "Autoroutes concédées, taxe sur les infrastructures de transport",
+      "mots_cles": [
+        "concession autoroutiere",
+        "concessions autoroutieres",
+        "societes d'autoroutes",
+        "societes concessionnaires d'autoroutes",
+        "infrastructures de transport de longue distance",
+        "infrastructures de transports de longue distance",
+        "peages autoroutiers",
+        "tarifs des peages"
+      ],
+      "entreprises": [
+        "DG.PA",
+        "FGR.PA"
+      ],
+      "presse": "\"concessions autoroutières\" OR \"sociétés d'autoroutes\" OR \"taxe autoroutes\""
+    },
+    {
+      "id": "aerien_aeroports",
+      "libelle": "Aéroports et transport aérien",
+      "mots_cles": [
+        "redevances aeroportuaires",
+        "aeroports de paris",
+        "billets d'avion",
+        "taxe de solidarite sur les billets",
+        "exploitants d'aeroports",
+        "transport aerien+taxe",
+        "kerosene+taxe"
+      ],
+      "entreprises": [
+        "ADP.PA",
+        "AF.PA",
+        "DG.PA"
+      ],
+      "presse": "\"taxe billets d'avion\" OR \"redevances aéroportuaires\" OR \"taxe aéroports\""
+    },
+    {
+      "id": "ferroviaire",
+      "libelle": "Investissements ferroviaires et transports publics",
+      "mots_cles": [
+        "reseau ferroviaire",
+        "infrastructures ferroviaires",
+        "materiel roulant",
+        "regeneration du reseau",
+        "afit",
+        "agence de financement des infrastructures de transport",
+        "lignes a grande vitesse"
+      ],
+      "entreprises": [
+        "ALO.PA",
+        "GET.PA",
+        "SPIE.PA"
+      ],
+      "presse": "\"investissements ferroviaires\" OR \"financement du rail\" budget"
+    },
+    {
+      "id": "banques",
+      "libelle": "Fiscalité et réglementation bancaire",
+      "mots_cles": [
+        "etablissements de credit+taxe",
+        "etablissements de credit+contribution",
+        "taxe sur les banques",
+        "contribution des banques",
+        "taxe sur les transactions financieres",
+        "livret a",
+        "taxe systemique",
+        "surtaxe bancaire",
+        "fonds de resolution"
+      ],
+      "entreprises": [
+        "BNP.PA",
+        "GLE.PA",
+        "ACA.PA",
+        "AMUN.PA"
+      ],
+      "presse": "\"taxe sur les banques\" OR \"taxe sur les transactions financières\" OR \"taux du livret A\""
+    },
+    {
+      "id": "assurances",
+      "libelle": "Assurances et complémentaires santé",
+      "mots_cles": [
+        "entreprises d'assurance",
+        "contrats d'assurance+taxe",
+        "contrats d'assurance+contribution",
+        "complementaires sante",
+        "organismes complementaires",
+        "taxe de solidarite additionnelle",
+        "reassurance+taxe",
+        "catastrophes naturelles+surprime"
+      ],
+      "entreprises": [
+        "CS.PA",
+        "SCR.PA",
+        "COFA.PA"
+      ],
+      "presse": "\"taxe sur les assurances\" OR \"contribution des complémentaires santé\""
+    },
+    {
+      "id": "energie",
+      "libelle": "Énergie : taxation, prix et tarifs réglementés",
+      "mots_cles": [
+        "rente inframarginale",
+        "tarifs reglementes de vente",
+        "accise sur l'electricite",
+        "prix de l'electricite",
+        "production d'electricite",
+        "energeticiens",
+        "superprofits",
+        "raffinage+taxe",
+        "produits petroliers+taxe",
+        "produits petroliers+accise",
+        "taxe sur le gaz",
+        "accise sur les energies"
+      ],
+      "entreprises": [
+        "ENGI.PA",
+        "TTE.PA",
+        "VIE.PA"
+      ],
+      "presse": "\"taxe énergéticiens\" OR \"rente inframarginale\" OR \"superprofits énergie\""
+    },
+    {
+      "id": "rachats_actions",
+      "libelle": "Taxation des rachats d'actions et des dividendes",
+      "mots_cles": [
+        "rachat d'actions",
+        "rachats d'actions",
+        "rachat de ses propres actions",
+        "actions propres",
+        "reduction de capital",
+        "taxe sur les dividendes",
+        "distributions de dividendes"
+      ],
+      "entreprises": [
+        "TTE.PA",
+        "BNP.PA",
+        "GLE.PA",
+        "ACA.PA",
+        "CS.PA",
+        "STLAP.PA",
+        "MC.PA",
+        "SAN.PA",
+        "OR.PA"
+      ],
+      "presse": "\"taxe rachats d'actions\" OR \"taxe sur les rachats d'actions\""
+    },
+    {
+      "id": "fiscalite_grandes_entreprises",
+      "libelle": "Surtaxe d'impôt sur les sociétés des grandes entreprises",
+      "mots_cles": [
+        "contribution exceptionnelle sur les benefices",
+        "contribution exceptionnelle sur l'impot sur les societes",
+        "surtaxe d'impot sur les societes",
+        "surtaxe d'is",
+        "taux de l'impot sur les societes",
+        "grandes entreprises+impot sur les societes"
+      ],
+      "entreprises": [
+        "*"
+      ],
+      "presse": "\"surtaxe impôt sur les sociétés\" OR \"contribution exceptionnelle grandes entreprises\""
+    },
+    {
+      "id": "medicaments",
+      "libelle": "Prix et remboursement des médicaments, diagnostic",
+      "mots_cles": [
+        "clause de sauvegarde+medicament",
+        "prix des medicaments",
+        "baisse de prix+medicament",
+        "remboursement des medicaments",
+        "industrie pharmaceutique",
+        "entreprises pharmaceutiques",
+        "dispositifs medicaux+prix",
+        "dispositifs medicaux+remboursement",
+        "biologie medicale",
+        "laboratoires de biologie"
+      ],
+      "entreprises": [
+        "SAN.PA",
+        "IPN.PA",
+        "BIM.PA",
+        "ERF.PA",
+        "EL.PA"
+      ],
+      "presse": "\"clause de sauvegarde\" médicaments OR \"prix des médicaments\" France"
+    },
+    {
+      "id": "defense",
+      "libelle": "Budget de la défense",
+      "mots_cles": [
+        "loi de programmation militaire",
+        "credits de la defense",
+        "depenses de defense",
+        "industrie de defense",
+        "base industrielle et technologique de defense",
+        "munitions",
+        "rafale"
+      ],
+      "entreprises": [
+        "HO.PA",
+        "SAF.PA",
+        "AM.PA",
+        "AIR.PA"
+      ],
+      "presse": "\"loi de programmation militaire\" OR \"budget des armées\" OR \"crédits de la défense\""
+    },
+    {
+      "id": "douanes_commerce",
+      "libelle": "Droits de douane et guerres commerciales",
+      "mots_cles": [
+        "droits de douane+france",
+        "droits de douane+europe",
+        "droits de douane+union europeenne",
+        "droits de douane additionnels",
+        "tarifs douaniers",
+        "anti-dumping",
+        "antidumping",
+        "cognac",
+        "spiritueux+droits",
+        "produits de luxe+droits"
+      ],
+      "entreprises": [
+        "MC.PA",
+        "RMS.PA",
+        "KER.PA",
+        "RI.PA",
+        "RCO.PA",
+        "AIR.PA",
+        "STLAP.PA",
+        "RNO.PA",
+        "OR.PA"
+      ],
+      "presse": "\"droits de douane\" (cognac OR luxe OR spiritueux OR Airbus OR \"constructeurs automobiles\") France"
+    },
+    {
+      "id": "automobile",
+      "libelle": "Automobile : bonus, malus, électrification",
+      "mots_cles": [
+        "bonus ecologique",
+        "malus+vehicule",
+        "malus au poids",
+        "vehicules electriques",
+        "vehicules thermiques+interdiction",
+        "zones a faibles emissions",
+        "leasing social",
+        "prime a la conversion",
+        "flottes d'entreprise"
+      ],
+      "entreprises": [
+        "RNO.PA",
+        "STLAP.PA",
+        "ML.PA",
+        "FRVIA.PA"
+      ],
+      "presse": "\"malus automobile\" OR \"bonus écologique\" OR \"leasing social\" OR \"zones à faibles émissions\""
+    },
+    {
+      "id": "logement_renovation",
+      "libelle": "Logement et rénovation énergétique",
+      "mots_cles": [
+        "maprimerenov",
+        "renovation energetique",
+        "pret a taux zero",
+        "logement neuf",
+        "construction de logements",
+        "certificats d'economies d'energie"
+      ],
+      "entreprises": [
+        "SGO.PA",
+        "FGR.PA",
+        "DG.PA",
+        "EN.PA",
+        "LR.PA",
+        "RXL.PA"
+      ],
+      "presse": "MaPrimeRénov OR \"prêt à taux zéro\" OR \"rénovation énergétique\" gouvernement"
+    },
+    {
+      "id": "telecoms",
+      "libelle": "Télécoms : fréquences et taxes sur les opérateurs",
+      "mots_cles": [
+        "operateurs de communications electroniques",
+        "taxe sur les operateurs",
+        "frequences+operateurs",
+        "tres haut debit",
+        "fibre optique",
+        "toce"
+      ],
+      "entreprises": [
+        "ORA.PA",
+        "EN.PA"
+      ],
+      "presse": "\"taxe opérateurs télécoms\" OR \"fréquences\" Arcep"
+    },
+    {
+      "id": "jeux",
+      "libelle": "Jeux d'argent",
+      "mots_cles": [
+        "jeux d'argent",
+        "paris sportifs",
+        "prelevements sur les jeux",
+        "francaise des jeux",
+        "jeux en ligne",
+        "casinos en ligne"
+      ],
+      "entreprises": [
+        "FDJU.PA"
+      ],
+      "presse": "\"jeux d'argent\" taxe OR \"paris sportifs\" fiscalité"
+    },
+    {
+      "id": "innovation_numerique",
+      "libelle": "Crédit d'impôt recherche et fiscalité du numérique",
+      "mots_cles": [
+        "credit d'impot recherche",
+        "credit d'impot innovation",
+        "credit d'impot en faveur de la recherche",
+        "taxe sur les services numeriques",
+        "semi-conducteurs+aide",
+        "intelligence artificielle+credit d'impot"
+      ],
+      "entreprises": [
+        "DSY.PA",
+        "CAP.PA",
+        "STMPA.PA",
+        "SAN.PA",
+        "SAF.PA",
+        "HO.PA",
+        "AIR.PA",
+        "PUB.PA"
+      ],
+      "presse": "\"crédit d'impôt recherche\" OR \"taxe sur les services numériques\""
+    },
+    {
+      "id": "distribution_alimentaire",
+      "libelle": "Grande distribution et agroalimentaire",
+      "mots_cles": [
+        "egalim",
+        "negociations commerciales",
+        "grande distribution",
+        "marges de la distribution",
+        "prix alimentaires",
+        "taxe sur les sodas",
+        "boissons sucrees"
+      ],
+      "entreprises": [
+        "CA.PA",
+        "BN.PA",
+        "RI.PA"
+      ],
+      "presse": "Egalim OR \"négociations commerciales\" distributeurs OR \"taxe soda\""
+    },
+    {
+      "id": "environnement_dechets",
+      "libelle": "Eau, déchets et fiscalité environnementale",
+      "mots_cles": [
+        "taxe generale sur les activites polluantes",
+        "tgap",
+        "gestion des dechets",
+        "redevances de l'eau",
+        "agences de l'eau",
+        "quotas carbone",
+        "ets2"
+      ],
+      "entreprises": [
+        "VIE.PA",
+        "AI.PA",
+        "MT.AS",
+        "SGO.PA"
+      ],
+      "presse": "TGAP OR \"quotas carbone\" OR \"agences de l'eau\" taxe"
+    },
+    {
+      "id": "tickets_restaurant",
+      "libelle": "Titres-restaurant et avantages salariés",
+      "mots_cles": [
+        "titres-restaurant",
+        "titre-restaurant",
+        "tickets restaurant",
+        "commission des emetteurs",
+        "cheques vacances"
+      ],
+      "entreprises": [
+        "EDEN.PA"
+      ],
+      "presse": "\"titres-restaurant\" réforme OR plafond"
+    }
+  ],
+  "polarite": {
+    "negatif": [
+      "hausse du taux",
+      "relevement du taux",
+      "releve le taux",
+      "porte le taux",
+      "augmentation du taux",
+      "majoration",
+      "surtaxe",
+      "contribution exceptionnelle",
+      "taxe additionnelle",
+      "nouvelle taxe",
+      "suppression de l'exoneration",
+      "supprime l'exoneration",
+      "reduction du credit d'impot",
+      "plafonnement",
+      "amende",
+      "sanction",
+      "baisse des prix",
+      "gel des tarifs",
+      "droits de douane additionnels"
+    ],
+    "positif": [
+      "exoneration",
+      "baisse du taux",
+      "reduction du taux",
+      "abaisse le taux",
+      "suppression de la taxe",
+      "supprime la taxe",
+      "credit d'impot",
+      "subvention",
+      "aide a",
+      "prorogation",
+      "allongement de la duree",
+      "hausse des credits",
+      "augmentation des credits",
+      "investissements supplementaires"
+    ]
+  }
+}
