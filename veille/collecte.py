@@ -343,8 +343,11 @@ def source_agenda(a, jours_avant=21):
 
 
 def source_presse(a, jours):
-    """Google Actualites, une requete par theme."""
+    """Google Actualites, une requete par theme. Erreur si aucune requete
+    n'aboutit (acces reseau bloque), pour ne pas confondre avec "rien de
+    nouveau"."""
     candidats = {}
+    echecs = []
     for th in a.themes:
         q = f"{th['presse']} when:{max(jours, 1)}d"
         url = ("https://news.google.com/rss/search?" +
@@ -353,6 +356,7 @@ def source_presse(a, jours):
             racine = ET.fromstring(http_get(url))
         except Exception as e:  # une requete en echec n'arrete pas la collecte
             print(f"  presse {th['id']} : {e}", file=sys.stderr)
+            echecs.append(str(e))
             continue
         for item in racine.iter("item"):
             titre = item.findtext("title") or ""
@@ -370,6 +374,8 @@ def source_presse(a, jours):
             themes = [th] + [t for t in a.themes_de(norm) if t is not th]
             candidats[cid] = a.candidat(cid, "presse", date, titre, titre, lien,
                                         {"media": source}, themes=themes)
+    if echecs and len(echecs) == len(a.themes):
+        raise RuntimeError(f"toutes les requetes ont echoue : {echecs[0]}")
     return list(candidats.values())
 
 
