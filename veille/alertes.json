@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T13:44:53+00:00",
+ "genere_le": "2026-09-29T13:58:35+00:00",
  "sources": {
   "amf": {
    "ok": true,
@@ -10,7 +10,7 @@
   "presse": {
    "ok": true,
    "trouves": 72,
-   "nouveaux": 4
+   "nouveaux": 2
   },
   "assemblee": {
    "ok": true,
@@ -22,8 +22,8 @@
    "trouves": 40
   },
   "calendrier": {
-   "ok": false,
-   "erreur": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "trouves": 31
   }
  },
  "alertes": [
