@@ -60,6 +60,16 @@ AGENDA_BUDGET = ["projet de loi de finances", "financement de la securite social
 AGENDA_EXAMEN = ["examen de la premiere partie", "examen des articles", "examen du projet",
                  "suite de l'examen", "discussion du projet", "vote solennel", "explications de vote",
                  "commission mixte paritaire", "lecture definitive", "nouvelle lecture"]
+# Points de l'ordre du jour susceptibles de peser sur un cours : ceux ou des
+# votes ont lieu (examen en commission, discussion en seance, vote final).
+AGENDA_DECISION = ["examen", "discussion", "vote", "commission mixte paritaire",
+                   "lecture definitive", "nouvelle lecture"]
+# Exclus : procedure sans decision (nomination, audition...), suites d'un
+# debat deja signale, textes sans portee juridique (resolutions) et reunions
+# de l'article 88 (tri des amendements juste avant la seance).
+AGENDA_EXCLUS = ["nomination", "audition", "table ronde", "communication", "rapport d'information",
+                 "echange de vues", "proposition de resolution", "article 88", "mission d'information",
+                 "questions au gouvernement"]
 TEXTE_MAX = 2500  # caracteres de texte transmis a l'analyse par candidat
 
 
@@ -341,8 +351,9 @@ def _noms_organes():
 
 
 def source_agenda(a, jours_avant=21):
-    """Reunions a venir de l'Assemblee dont l'ordre du jour touche un theme
-    ou un texte budgetaire. Seuls les points concernes sont repris dans le
+    """Reunions a venir de l'Assemblee ou un texte lie a un theme, ou le
+    budget, est examine ou vote (pas les nominations, auditions, suites de
+    debat...). Seuls les points concernes sont repris dans le
     titre ; la source indique la commission (ou la seance publique) et le
     lien ouvre l'agenda du jour, ou la reunion figure a son heure."""
     chemin = telecharger_cache(f"{AN_OPENDATA}/vp/reunions/Agenda.json.zip", "agenda_an.zip")
@@ -364,6 +375,9 @@ def source_agenda(a, jours_avant=21):
             themes, budget, retenus = [], False, []
             for point in _points_odj(r.get("ODJ") or {}):
                 norm = normaliser(point)
+                if ("suite de l" in norm or any(m in norm for m in AGENDA_EXCLUS)
+                        or not any(m in norm for m in AGENDA_DECISION)):
+                    continue
                 th = a.themes_de(norm)
                 bu = (any(m in norm for m in AGENDA_BUDGET)
                       and any(m in norm for m in AGENDA_EXAMEN))

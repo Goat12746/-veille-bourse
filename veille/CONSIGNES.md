@@ -75,6 +75,12 @@ dates importantes que tu apprends en lisant les textes (date d'examen d'un
 article, date de résultats confirmée par l'entreprise…). Même format que le
 calendrier de `candidats.json` ; mets `"fiable": true` seulement si la date
 vient d'une source officielle.
+N'ajoute que des dates **susceptibles de faire bouger un cours** : présentation
+d'un texte qui dévoile des mesures, examen ou vote d'un article ou d'un
+amendement qui touche une entreprise, vote solennel, commission mixte paritaire,
+adoption définitive, décision du Conseil constitutionnel, publication de
+résultats confirmée par l'entreprise. Pas de nomination de rapporteur,
+d'audition, de suite de débat ni de proposition de résolution.
 Chaque date ajoutée doit avoir une `url` vers la page qui l'annonce (article,
 communiqué, agenda officiel) et une `source` lisible : sans lien, l'utilisateur
 ne peut pas la vérifier.
