@@ -29,6 +29,7 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -388,15 +389,17 @@ def source_calendrier_yahoo(a):
         http_get("https://fc.yahoo.com", opener)
     except Exception:
         pass  # la reponse est une erreur, mais le cookie est pose
-    crumb = http_get("https://query1.finance.yahoo.com/v1/test/getcrumb", opener).decode()
+    crumb = _yahoo_get("https://query1.finance.yahoo.com/v1/test/getcrumb", opener).decode()
     aujourd_hui = dt.date.today()
+    echecs = []
 
     def un(e):
         url = (f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{e['ticker']}"
                f"?modules=calendarEvents&crumb={urllib.parse.quote(crumb)}")
         try:
-            cal = json.loads(http_get(url, opener))["quoteSummary"]["result"][0]["calendarEvents"]
-        except Exception:
+            cal = json.loads(_yahoo_get(url, opener))["quoteSummary"]["result"][0]["calendarEvents"]
+        except Exception as err:
+            echecs.append(str(err))
             return []
         evts = []
         for d in (cal.get("earnings") or {}).get("earningsDate") or []:
@@ -417,8 +420,24 @@ def source_calendrier_yahoo(a):
                              "url": f"https://finance.yahoo.com/quote/{e['ticker']}", "fiable": False})
         return evts
 
-    with cf.ThreadPoolExecutor(6) as ex:
-        return sorted((ev for evs in ex.map(un, a.entreprises) for ev in evs), key=lambda e: e["date"])
+    # Peu de requetes en parallele : Yahoo limite vite les serveurs cloud.
+    with cf.ThreadPoolExecutor(2) as ex:
+        evts = sorted((ev for evs in ex.map(un, a.entreprises) for ev in evs), key=lambda e: e["date"])
+    if len(echecs) == len(a.entreprises):
+        raise RuntimeError(f"aucune action lue sur Yahoo : {echecs[0]}")
+    return evts
+
+
+def _yahoo_get(url, opener, essais=4):
+    """Requete Yahoo avec nouvelles tentatives espacees quand Yahoo repond
+    429 (trop de requetes) ou 5xx."""
+    for i in range(essais):
+        try:
+            return http_get(url, opener)
+        except urllib.error.HTTPError as e:
+            if (e.code != 429 and e.code < 500) or i == essais - 1:
+                raise
+            time.sleep(5 * (i + 1))
 
 
 # ---------------------------------------------------------------------------
