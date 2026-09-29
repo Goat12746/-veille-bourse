@@ -128,10 +128,24 @@ def main():
     for a in nouvelles:
         par_id[a["id"]] = a
 
-    # Calendrier : agenda et dates de la collecte, dates ajoutees par Claude.
+    # Calendrier : agenda et dates Yahoo de la collecte, dates ajoutees par
+    # Claude. Une source en erreur lors de cette collecte (reseau) ne doit pas
+    # effacer ce qu'elle avait publie : on garde alors ses evenements deja
+    # publies, a venir.
     hier = (today - dt.timedelta(days=1)).isoformat()
+    ok = lambda nom: (collecte.get("sources", {}).get(nom) or {}).get("ok", False)
+    origines = {"agenda": "Assemblée nationale (agenda)", "calendrier": "Yahoo Finance"}
+    precedents = [ev for ev in publie.get("calendrier", []) if ev["date"] >= hier]
+    evenements = list(analyse.get("calendrier") or [])
+    for nom, origine in origines.items():
+        if ok(nom):
+            evenements += collecte.get(nom, [])
+        else:
+            evenements += [ev for ev in precedents if ev.get("source") == origine]
+    # Dates ajoutees par Claude lors des analyses precedentes.
+    evenements += [ev for ev in precedents if ev.get("source") not in origines.values()]
     evts = {}
-    for ev in collecte.get("agenda", []) + collecte.get("calendrier", []) + (analyse.get("calendrier") or []):
+    for ev in evenements:
         if ev["date"] >= hier:
             evts[(ev["date"], ev["type"], ev["titre"])] = {
                 "date": ev["date"], "heure": ev.get("heure", ""), "type": ev["type"],
