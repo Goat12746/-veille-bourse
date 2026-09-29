@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T13:58:35+00:00",
+ "genere_le": "2026-09-29T16:44:17+02:00",
  "sources": {
   "amf": {
    "ok": true,
@@ -10,7 +10,7 @@
   "presse": {
    "ok": true,
    "trouves": 72,
-   "nouveaux": 2
+   "nouveaux": 0
   },
   "assemblee": {
    "ok": true,
@@ -989,15 +989,15 @@
    "date": "2026-09-29",
    "heure": "16:00",
    "type": "examen_texte",
-   "titre": "- Nomination d’un rapporteur sur la proposition de loi, adoptée par le Sénat après engagement de la procédure accélérée, visant à assouplir la procédure d’autorisation des établissements et services sociaux et médico-sociaux à caractère expérimental (n° 2851) - Nomination d’un rapporteur sur la prop",
+   "titre": "Nomination d’un rapporteur sur la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant (n° 2892)",
    "tickers": [
     "EDEN.PA"
    ],
    "themes": [
     "tickets_restaurant"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-09-29#odj-OMC_RUANR5L17S2026IDC461052",
    "fiable": true
   },
   {
@@ -1017,7 +1017,7 @@
    "date": "2026-09-30",
    "heure": "09:30",
    "type": "examen_texte",
-   "titre": "Examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour) examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour",
+   "titre": "Examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour) (rapport).",
    "tickers": [
     "FRVIA.PA",
     "ML.PA",
@@ -1027,8 +1027,8 @@
    "themes": [
     "automobile"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission du développement durable et de l'aménagement du territoire",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-09-30#odj-OMC_RUANR5L17S2026IDC461121",
    "fiable": true
   },
   {
@@ -1069,44 +1069,44 @@
    "date": "2026-10-07",
    "heure": "09:00",
    "type": "budget",
-   "titre": "– Examen de la première partie du projet de loi de finances pour 2027 examen de la première partie du projet de loi de finances pour 2027",
+   "titre": "Examen de la première partie du projet de loi de finances pour 2027",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461249",
    "fiable": true
   },
   {
    "date": "2026-10-07",
    "heure": "09:30",
    "type": "examen_texte",
-   "titre": "- Examen du rapport d’information sur l’exposition des jeunes aux boissons énergisantes et aux boissons alcoolisées prêtes à boire (Mme Sandrine Runel et M. Yannick Neuder, rapporteurs) - Examen de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant (n° 28",
+   "titre": "Examen de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant (n° 2892).",
    "tickers": [
     "EDEN.PA"
    ],
    "themes": [
     "tickets_restaurant"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461169",
    "fiable": true
   },
   {
    "date": "2026-10-07",
    "heure": "21:00",
    "type": "budget",
-   "titre": "– Suite de l’examen de la première partie du projet de loi de finances pour 2027 suite de l’examen de la première partie du projet de loi de finances pour 2027",
+   "titre": "Suite de l’examen de la première partie du projet de loi de finances pour 2027",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461251",
    "fiable": true
   },
   {
    "date": "2026-10-08",
    "heure": "08:45",
    "type": "examen_texte",
-   "titre": "Éventuellement, examen, en application de l’article 88 du Règlement, des amendements restant en discussion sur la proposition de loi visant à abroger les zones à faibles émissions mobilité (n° 2970) (M. Pierre Meurin, rapporteur). éventuellement, examen, en application de l’article 88 du Règlement, ",
+   "titre": "Éventuellement, examen, en application de l’article 88 du Règlement, des amendements restant en discussion sur la proposition de loi visant à abroger les zones à faibles émissions mobilité (n° 2970) (M. Pierre Meurin, rapporteur).",
    "tickers": [
     "FRVIA.PA",
     "ML.PA",
@@ -1116,15 +1116,15 @@
    "themes": [
     "automobile"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission du développement durable et de l'aménagement du territoire",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDC461289",
    "fiable": true
   },
   {
    "date": "2026-10-08",
    "heure": "09:00",
    "type": "examen_texte",
-   "titre": "Discussion de la proposition de résolution, déposée en application de l’article 34-1 de la Constitution, visant à garantir un accès continu à l’eau potable dans les territoires ultramarins Discussion de la proposition de résolution, déposée en application de l’article 34-1 de la Constitution, visant",
+   "titre": "Discussion de la proposition de loi visant à abroger les zones à faibles émissions-mobilités",
    "tickers": [
     "FRVIA.PA",
     "ML.PA",
@@ -1134,26 +1134,26 @@
    "themes": [
     "automobile"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDS30930",
    "fiable": true
   },
   {
    "date": "2026-10-08",
    "heure": "21:00",
    "type": "budget",
-   "titre": "– Suite de l’examen de la première partie du projet de loi de finances pour 2027 suite de l’examen de la première partie du projet de loi de finances pour 2027",
+   "titre": "Suite de l’examen de la première partie du projet de loi de finances pour 2027",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDC461252",
    "fiable": true
   },
   {
    "date": "2026-10-08",
    "heure": "21:30",
    "type": "examen_texte",
-   "titre": "Suite de la discussion de la proposition de résolution, déposée en application de l’article 34-1 de la Constitution, visant à garantir un accès continu à l’eau potable dans les territoires ultramarins Suite de la discussion de la proposition de résolution, déposée en application de l’article 34-1 de",
+   "titre": "Suite de la discussion de la proposition de loi visant à abroger les zones à faibles émissions-mobilités",
    "tickers": [
     "FRVIA.PA",
     "ML.PA",
@@ -1163,60 +1163,60 @@
    "themes": [
     "automobile"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDS30932",
    "fiable": true
   },
   {
    "date": "2026-10-09",
    "heure": "21:00",
    "type": "budget",
-   "titre": "– Suite de l’examen de la première partie du projet de loi de finances pour 2027 suite de l’examen de la première partie du projet de loi de finances pour 2027",
+   "titre": "Suite de l’examen de la première partie du projet de loi de finances pour 2027",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-09#odj-OMC_RUANR5L17S2027IDC461257",
    "fiable": true
   },
   {
    "date": "2026-10-12",
    "heure": "16:00",
    "type": "examen_texte",
-   "titre": "Discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant Discussion de la proposition de loi, adoptée par le Sénat, visant à assouplir la procédure d’autorisation des établissements et services sociaux et médico-sociaux à caractère expérimental Di",
+   "titre": "Discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant",
    "tickers": [
     "EDEN.PA"
    ],
    "themes": [
     "tickets_restaurant"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDS30938",
    "fiable": true
   },
   {
    "date": "2026-10-12",
    "heure": "21:00",
    "type": "budget",
-   "titre": "- Examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) examen du projet de loi de financement de la sécurité sociale p",
+   "titre": "Examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDC461270",
    "fiable": true
   },
   {
    "date": "2026-10-12",
    "heure": "21:30",
    "type": "examen_texte",
-   "titre": "Suite de la discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant Suite de la discussion de la proposition de loi, adoptée par le Sénat, visant à assouplir la procédure d’autorisation des établissements et services sociaux et médico-sociaux à c",
+   "titre": "Suite de la discussion de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant",
    "tickers": [
     "EDEN.PA"
    ],
    "themes": [
     "tickets_restaurant"
    ],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDS30939",
    "fiable": true
   },
   {
@@ -1249,22 +1249,22 @@
    "date": "2026-10-13",
    "heure": "15:00",
    "type": "budget",
-   "titre": "Questions au Gouvernement Vote solennel sur la proposition de loi apportant une réponse intégrale au phénomène de violences sexuelles et sexistes contre les femmes et les enfants Vote solennel sur la proposition de loi organique visant à adapter l'autorité judiciaire à la lutte contre les violences ",
+   "titre": "Sous réserve de son dépôt, discussion du projet de loi de finances pour 2027 (première partie)",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-13#odj-OMC_RUANR5L17S2027IDS30940",
    "fiable": true
   },
   {
    "date": "2026-10-13",
    "heure": "21:00",
    "type": "budget",
-   "titre": "- Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) suite de l’examen du projet de loi de financement de",
+   "titre": "Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-13#odj-OMC_RUANR5L17S2027IDC461271",
    "fiable": true
   },
   {
@@ -1274,41 +1274,30 @@
    "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-13#odj-OMC_RUANR5L17S2027IDS30941",
    "fiable": true
   },
   {
    "date": "2026-10-14",
    "heure": "09:00",
    "type": "budget",
-   "titre": "Suite de l’examen, ouvert à la presse, des avis budgétaires sur le projet de loi de finances pour 2027 (sous réserve de son dépôt). suite de l’examen, ouvert à la presse, des avis budgétaires sur le projet de loi de finances pour 2027 (sous réserve de son dépôt).",
+   "titre": "Suite de l’examen, ouvert à la presse, des avis budgétaires sur le projet de loi de finances pour 2027 (sous réserve de son dépôt).",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
-   "fiable": true
-  },
-  {
-   "date": "2026-10-14",
-   "heure": "14:00",
-   "type": "budget",
-   "titre": "Questions au Gouvernement Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
-   "tickers": [],
-   "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires étrangères",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-14#odj-OMC_RUANR5L17S2027IDC461283",
    "fiable": true
   },
   {
    "date": "2026-10-14",
    "heure": "21:00",
    "type": "budget",
-   "titre": "- Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) suite de l’examen du projet de loi de financement de",
+   "titre": "Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-14#odj-OMC_RUANR5L17S2027IDC461275",
    "fiable": true
   },
   {
@@ -1318,19 +1307,19 @@
    "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-14#odj-OMC_RUANR5L17S2027IDS30943",
    "fiable": true
   },
   {
    "date": "2026-10-15",
    "heure": "21:00",
    "type": "budget",
-   "titre": "- Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) suite de l’examen du projet de loi de financement de",
+   "titre": "Suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-15#odj-OMC_RUANR5L17S2027IDC461278",
    "fiable": true
   },
   {
@@ -1340,19 +1329,19 @@
    "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-15#odj-OMC_RUANR5L17S2027IDS30946",
    "fiable": true
   },
   {
    "date": "2026-10-16",
    "heure": "21:00",
    "type": "budget",
-   "titre": "- Éventuellement, suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs) éventuellement, suite de l’examen du",
+   "titre": "Éventuellement, suite de l’examen du projet de loi de financement de la sécurité sociale pour 2027 (sous réserve de son dépôt) (M. Thibault Bazin, rapporteur général ; Mme Christine Loir, M. Louis Boyard, Mme Sandrine Runel et Mme Danièle Simonnet, rapporteurs).",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Commission des affaires sociales",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-16#odj-OMC_RUANR5L17S2027IDC461281",
    "fiable": true
   },
   {
@@ -1362,8 +1351,8 @@
    "titre": "Suite de la discussion du projet de loi de finances pour 2027 (première partie)",
    "tickers": [],
    "themes": [],
-   "source": "Assemblée nationale (agenda)",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-16#odj-OMC_RUANR5L17S2027IDS30949",
    "fiable": true
   },
   {

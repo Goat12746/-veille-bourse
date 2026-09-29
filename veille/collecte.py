@@ -300,10 +300,56 @@ def _items(v):
     return [v]
 
 
+def _points_odj(odj):
+    """Points de l'ordre du jour d'une reunion, sans doublons : la
+    convocation et le resume repetent souvent les memes lignes."""
+    points = (odj.get("pointsODJ") or {}).get("pointODJ") if isinstance(odj.get("pointsODJ"), dict) else None
+    if isinstance(points, dict):
+        points = [points]
+    brutes = [chaine(x) for x in _items(odj.get("convocationODJ")) + _items(odj.get("resumeODJ"))]
+    brutes += [chaine(p.get("objet")) for p in points or [] if isinstance(p, dict)]
+    gardees = []
+    for ligne in brutes:
+        ligne = re.sub(r"^[\s\-–••*]+", "", ligne).strip()
+        ligne = ligne.rstrip(" ;,")
+        if not ligne:
+            continue
+        ligne = ligne[0].upper() + ligne[1:]
+        n = normaliser(ligne)
+        # Doublon, ou ligne contenue dans une autre (resume plus court).
+        if any(n in normaliser(g) for g in gardees):
+            continue
+        gardees = [g for g in gardees if normaliser(g) not in n] + [ligne]
+    return gardees
+
+
+def _noms_organes():
+    """Identifiant d'organe de l'Assemblee (PO420120...) -> nom lisible."""
+    chemin = telecharger_cache(
+        f"{AN_OPENDATA}/amo/deputes_actifs_mandats_actifs_organes/"
+        "AMO10_deputes_actifs_mandats_actifs_organes.json.zip", "organes_an.zip")
+    noms = {}
+    with zipfile.ZipFile(chemin) as z:
+        for n in z.namelist():
+            if "/organe/" not in n:
+                continue
+            o = json.loads(z.read(n))["organe"]
+            libelle = chaine(o.get("libelle"))
+            noms[o["uid"]] = "Séance publique" if o.get("codeType") == "ASSEMBLEE" else (
+                libelle if len(libelle) <= 90 else chaine(o.get("libelleAbrege")) or libelle)
+    return noms
+
+
 def source_agenda(a, jours_avant=21):
     """Reunions a venir de l'Assemblee dont l'ordre du jour touche un theme
-    ou un texte budgetaire."""
+    ou un texte budgetaire. Seuls les points concernes sont repris dans le
+    titre ; la source indique la commission (ou la seance publique) et le
+    lien ouvre l'agenda du jour, ou la reunion figure a son heure."""
     chemin = telecharger_cache(f"{AN_OPENDATA}/vp/reunions/Agenda.json.zip", "agenda_an.zip")
+    try:
+        organes = _noms_organes()
+    except Exception:
+        organes = {}  # noms indisponibles : source generique
     aujourd_hui = dt.date.today().isoformat()
     limite = (dt.date.today() + dt.timedelta(days=jours_avant)).isoformat()
     evenements = []
@@ -315,28 +361,30 @@ def source_agenda(a, jours_avant=21):
             debut = chaine(r.get("timeStampDebut"))
             if not (aujourd_hui <= debut[:10] <= limite):
                 continue
-            odj = r.get("ODJ") or {}
-            points = (odj.get("pointsODJ") or {}).get("pointODJ") if isinstance(odj.get("pointsODJ"), dict) else None
-            if isinstance(points, dict):
-                points = [points]
-            lignes = [chaine(x) for x in _items(odj.get("convocationODJ")) + _items(odj.get("resumeODJ"))]
-            lignes += [chaine(p.get("objet")) for p in points or [] if isinstance(p, dict)]
-            texte = " ".join(l for l in lignes if l)
-            norm = normaliser(texte)
-            themes = a.themes_de(norm)
-            budget = (any(m in norm for m in AGENDA_BUDGET)
+            themes, budget, retenus = [], False, []
+            for point in _points_odj(r.get("ODJ") or {}):
+                norm = normaliser(point)
+                th = a.themes_de(norm)
+                bu = (any(m in norm for m in AGENDA_BUDGET)
                       and any(m in norm for m in AGENDA_EXAMEN))
-            if not themes and not budget:
+                if th or bu:
+                    retenus.append(point)
+                    themes += [t for t in th if t not in themes]
+                    budget = budget or bu
+            if not retenus:
                 continue
+            titre = " • ".join(retenus)
             evenements.append({
                 "date": debut[:10],
                 "heure": debut[11:16],
                 "type": "budget" if budget else "examen_texte",
-                "titre": texte[:300],
-                "tickers": a.entreprises_de(themes, norm) if themes else [],
+                "titre": titre if len(titre) <= 400 else titre[:397] + "…",
+                "tickers": a.entreprises_de(themes, normaliser(titre)) if themes else [],
                 "themes": [th["id"] for th in themes],
-                "source": "Assemblée nationale (agenda)",
-                "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+                "source": "Assemblée nationale" + (
+                    f" — {organes[r.get('organeReuniRef')]}" if r.get("organeReuniRef") in organes else ""),
+                # Page de l'agenda du jour, ancre sur la reunion.
+                "url": f"https://www2.assemblee-nationale.fr/agendas/les-agendas/{debut[:10]}#odj-OMC_{r['uid']}",
                 "fiable": True,
             })
     evenements.sort(key=lambda e: (e["date"], e["heure"]))

@@ -134,16 +134,22 @@ def main():
     # publies, a venir.
     hier = (today - dt.timedelta(days=1)).isoformat()
     ok = lambda nom: (collecte.get("sources", {}).get(nom) or {}).get("ok", False)
-    origines = {"agenda": "Assemblée nationale (agenda)", "calendrier": "Yahoo Finance"}
+    # Origine d'un evenement deja publie, d'apres sa source.
+    def origine(ev):
+        src = ev.get("source") or ""
+        if src.startswith("Assemblée nationale"):
+            return "agenda"
+        return "calendrier" if src == "Yahoo Finance" else "claude"
+
     precedents = [ev for ev in publie.get("calendrier", []) if ev["date"] >= hier]
     evenements = list(analyse.get("calendrier") or [])
-    for nom, origine in origines.items():
+    for nom in ("agenda", "calendrier"):
         if ok(nom):
             evenements += collecte.get(nom, [])
         else:
-            evenements += [ev for ev in precedents if ev.get("source") == origine]
+            evenements += [ev for ev in precedents if origine(ev) == nom]
     # Dates ajoutees par Claude lors des analyses precedentes.
-    evenements += [ev for ev in precedents if ev.get("source") not in origines.values()]
+    evenements += [ev for ev in precedents if origine(ev) == "claude"]
     evts = {}
     for ev in evenements:
         if ev["date"] >= hier:
