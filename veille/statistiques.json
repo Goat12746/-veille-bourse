@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-09-29T23:52:29+02:00",
+ "genere_le": "2026-09-30T05:09:36+00:00",
  "derniere_seance": "2026-09-29",
  "methode": {
   "indice": "CAC 40",
@@ -16,73 +16,73 @@
   "n_alertes": 14,
   "n_observations": 67,
   "statuts": {
-   "note": 14,
-   "confondu": 5,
-   "non_directionnel": 7,
+   "donnees": 20,
+   "non_directionnel": 2,
    "attente": 1,
+   "note": 4,
    "macro": 40
   },
   "synthese": {
-   "n": 14,
+   "n": 4,
    "points": {
-    "total": 1,
-    "moyenne": 0.07,
+    "total": 0,
+    "moyenne": 0.0,
     "repartition": {
-     "2": 1,
-     "1": 2,
-     "0": 8,
-     "-1": 3,
+     "2": 0,
+     "1": 0,
+     "0": 4,
+     "-1": 0,
      "-2": 0
     }
    },
    "sens": {
-    "justes": 3,
-    "faux": 1,
-    "bruit": 10,
-    "taux": 0.75,
+    "justes": 0,
+    "faux": 0,
+    "bruit": 4,
+    "taux": null,
+    "p": null
+   },
+   "ecart_moyen_pct": -0.76,
+   "z_moyen": -0.43,
+   "t": -2.1,
+   "p_t": 0.1262,
+   "signe": {
+    "positifs": 1,
     "p": 0.625
    },
-   "ecart_moyen_pct": 0.19,
-   "z_moyen": 0.24,
-   "t": 0.59,
-   "p_t": 0.5649,
-   "signe": {
-    "positifs": 6,
-    "p": 0.7905
-   },
    "rang": {
-    "moyen": 0.479,
-    "p": 0.7826
+    "moyen": 0.323,
+    "p": 0.2207
    },
    "ampleur": {
-    "n": 14,
+    "n": 4,
     "matrice": {
      "faible": {
-      "contraire": 1,
-      "bruit": 8,
+      "contraire": 0,
+      "bruit": 4,
       "net": 0,
       "fort": 0
      },
      "moyenne": {
       "contraire": 0,
-      "bruit": 1,
+      "bruit": 0,
       "net": 0,
-      "fort": 1
+      "fort": 0
      },
      "forte": {
       "contraire": 0,
-      "bruit": 1,
-      "net": 1,
-      "fort": 1
+      "bruit": 0,
+      "net": 0,
+      "fort": 0
      }
     },
     "z_abs_moyen": {
-     "faible": 0.64,
-     "moyenne": 2.34,
-     "forte": 1.25
+     "faible": 0.49,
+     "moyenne": null,
+     "forte": null
     },
-    "spearman": 0.258,
-    "p": 0.3725
+    "spearman": null,
+    "p": null
    },
    "apres_publication": {
     "n": 0,
@@ -96,80 +96,40 @@
   },
   "par_source": [
    {
-    "n": 13,
+    "n": 4,
     "points_moyen": 0.0,
-    "justes": 2,
-    "faux": 1,
-    "z_moyen": -0.07,
-    "cle": "presse"
-   },
-   {
-    "n": 1,
-    "points_moyen": 1.0,
-    "justes": 1,
+    "justes": 0,
     "faux": 0,
-    "z_moyen": 4.2,
-    "cle": "amf"
+    "z_moyen": -0.43,
+    "cle": "presse"
    }
   ],
   "par_etape": [
    {
-    "n": 5,
-    "points_moyen": -0.4,
-    "justes": 0,
-    "faux": 1,
-    "z_moyen": -0.72,
-    "cle": "information"
-   },
-   {
-    "n": 4,
-    "points_moyen": 0.5,
-    "justes": 2,
-    "faux": 0,
-    "z_moyen": 0.96,
-    "cle": "annonce"
-   },
-   {
-    "n": 4,
+    "n": 3,
     "points_moyen": 0.0,
     "justes": 0,
     "faux": 0,
-    "z_moyen": -0.29,
+    "z_moyen": -0.61,
     "cle": "rumeur"
    },
    {
     "n": 1,
-    "points_moyen": 1.0,
-    "justes": 1,
+    "points_moyen": 0.0,
+    "justes": 0,
     "faux": 0,
-    "z_moyen": 4.2,
-    "cle": "publie"
+    "z_moyen": 0.11,
+    "cle": "annonce"
    }
   ],
   "par_ampleur": [
    {
-    "n": 9,
-    "points_moyen": -0.11,
-    "justes": 0,
-    "faux": 1,
-    "z_moyen": -0.46,
-    "cle": "faible"
-   },
-   {
-    "n": 3,
-    "points_moyen": 0.67,
-    "justes": 2,
-    "faux": 0,
-    "z_moyen": 1.25,
-    "cle": "forte"
-   },
-   {
-    "n": 2,
+    "n": 4,
     "points_moyen": 0.0,
-    "justes": 1,
+    "justes": 0,
     "faux": 0,
-    "z_moyen": 1.86,
-    "cle": "moyenne"
+    "z_moyen": -0.43,
+    "cle": "faible"
    }
   ],
   "probabilites": {
@@ -201,35 +161,14 @@
       "nom": "Stellantis",
       "sens": "negatif",
       "ampleur": "faible",
-      "rendement_pct": -3.5,
-      "indice_pct": -0.53,
-      "beta": 1.51,
-      "sigma_pct": 2.89,
-      "ecart_pct": -2.48,
-      "z": -0.86,
-      "rang": 0.127,
-      "avant_pct": -2.13,
-      "statut": "confondu",
-      "confondu_avec": [
-       "presse-8158ac12ab6fdb24"
-      ],
-      "niveau": "bruit"
+      "statut": "donnees"
      },
      {
       "ticker": "FRVIA.PA",
       "nom": "Forvia",
       "sens": "incertain",
       "ampleur": "inconnue",
-      "rendement_pct": -2.27,
-      "indice_pct": -0.53,
-      "beta": 1.75,
-      "sigma_pct": 2.52,
-      "ecart_pct": -1.27,
-      "z": -0.5,
-      "rang": 0.258,
-      "avant_pct": -1.85,
-      "statut": "non_directionnel",
-      "niveau": "bruit"
+      "statut": "donnees"
      }
     ]
    },
@@ -256,37 +195,14 @@
       "nom": "Danone",
       "sens": "negatif",
       "ampleur": "faible",
-      "rendement_pct": -1.24,
-      "indice_pct": -0.53,
-      "beta": 0.36,
-      "sigma_pct": 1.43,
-      "ecart_pct": -1.0,
-      "z": -0.7,
-      "rang": 0.194,
-      "avant_pct": -0.74,
-      "statut": "note",
-      "niveau": "bruit",
-      "points": {
-       "sens": 0,
-       "ampleur": 0,
-       "total": 0
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "CA.PA",
       "nom": "Carrefour",
       "sens": "incertain",
       "ampleur": "faible",
-      "rendement_pct": -1.36,
-      "indice_pct": -0.53,
-      "beta": 0.3,
-      "sigma_pct": 1.37,
-      "ecart_pct": -1.37,
-      "z": -0.99,
-      "rang": 0.107,
-      "avant_pct": -0.21,
-      "statut": "non_directionnel",
-      "niveau": "bruit"
+      "statut": "donnees"
      }
     ]
    },
@@ -344,82 +260,28 @@
       "nom": "Vinci",
       "sens": "negatif",
       "ampleur": "forte",
-      "rendement_pct": -2.38,
-      "indice_pct": -0.53,
-      "beta": 1.06,
-      "sigma_pct": 1.16,
-      "ecart_pct": -1.81,
-      "z": -1.56,
-      "rang": 0.052,
-      "avant_pct": 0.17,
-      "statut": "note",
-      "niveau": "net",
-      "points": {
-       "sens": 1,
-       "ampleur": 0,
-       "total": 1
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "FGR.PA",
       "nom": "Eiffage",
       "sens": "negatif",
       "ampleur": "forte",
-      "rendement_pct": -3.07,
-      "indice_pct": -0.53,
-      "beta": 1.05,
-      "sigma_pct": 1.19,
-      "ecart_pct": -2.5,
-      "z": -2.1,
-      "rang": 0.02,
-      "avant_pct": -0.08,
-      "statut": "note",
-      "niveau": "fort",
-      "points": {
-       "sens": 1,
-       "ampleur": 1,
-       "total": 2
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "ADP.PA",
       "nom": "Aéroports de Paris (Groupe ADP)",
       "sens": "negatif",
       "ampleur": "forte",
-      "rendement_pct": -0.72,
-      "indice_pct": -0.53,
-      "beta": 1.11,
-      "sigma_pct": 1.79,
-      "ecart_pct": -0.15,
-      "z": -0.08,
-      "rang": 0.472,
-      "avant_pct": 3.93,
-      "statut": "note",
-      "niveau": "bruit",
-      "points": {
-       "sens": 0,
-       "ampleur": -1,
-       "total": -1
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "ALO.PA",
       "nom": "Alstom",
       "sens": "positif",
       "ampleur": "faible",
-      "rendement_pct": 0.92,
-      "indice_pct": -0.53,
-      "beta": 0.7,
-      "sigma_pct": 2.59,
-      "ecart_pct": 1.37,
-      "z": 0.53,
-      "rang": 0.81,
-      "avant_pct": -0.51,
-      "statut": "confondu",
-      "confondu_avec": [
-       "amf-135005_20260929"
-      ],
-      "niveau": "bruit"
+      "statut": "donnees"
      }
     ]
    },
@@ -446,16 +308,7 @@
       "nom": "Rexel",
       "sens": "incertain",
       "ampleur": "moyenne",
-      "rendement_pct": 3.62,
-      "indice_pct": -0.53,
-      "beta": 1.25,
-      "sigma_pct": 1.4,
-      "ecart_pct": 4.18,
-      "z": 2.99,
-      "rang": 0.996,
-      "avant_pct": -3.57,
-      "statut": "non_directionnel",
-      "niveau": "fort"
+      "statut": "donnees"
      }
     ]
    },
@@ -482,19 +335,7 @@
       "nom": "Alstom",
       "sens": "positif",
       "ampleur": "faible",
-      "rendement_pct": 0.92,
-      "indice_pct": -0.53,
-      "beta": 0.7,
-      "sigma_pct": 2.59,
-      "ecart_pct": 1.37,
-      "z": 0.53,
-      "rang": 0.81,
-      "avant_pct": -0.51,
-      "statut": "confondu",
-      "confondu_avec": [
-       "presse-181a5dc8f47983e9"
-      ],
-      "niveau": "bruit"
+      "statut": "donnees"
      }
     ]
    },
@@ -577,61 +418,21 @@
       "nom": "Rémy Cointreau",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "rendement_pct": 0.42,
-      "indice_pct": -0.53,
-      "beta": 1.08,
-      "sigma_pct": 2.12,
-      "ecart_pct": 1.01,
-      "z": 0.48,
-      "rang": 0.71,
-      "avant_pct": 1.9,
-      "statut": "note",
-      "niveau": "bruit",
-      "points": {
-       "sens": 0,
-       "ampleur": -1,
-       "total": -1
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "RI.PA",
       "nom": "Pernod Ricard",
       "sens": "negatif",
       "ampleur": "faible",
-      "rendement_pct": 2.18,
-      "indice_pct": -0.53,
-      "beta": 0.64,
-      "sigma_pct": 1.79,
-      "ecart_pct": 2.64,
-      "z": 1.47,
-      "rang": 0.921,
-      "avant_pct": -0.46,
-      "statut": "note",
-      "niveau": "contraire",
-      "points": {
-       "sens": -1,
-       "ampleur": 0,
-       "total": -1
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "MC.PA",
       "nom": "LVMH",
       "sens": "negatif",
       "ampleur": "faible",
-      "rendement_pct": -1.05,
-      "indice_pct": -0.53,
-      "beta": 1.52,
-      "sigma_pct": 1.4,
-      "ecart_pct": -0.17,
-      "z": -0.12,
-      "rang": 0.421,
-      "avant_pct": -0.13,
-      "statut": "confondu",
-      "confondu_avec": [
-       "presse-7ee8137bfefbf4de"
-      ],
-      "niveau": "bruit"
+      "statut": "donnees"
      }
     ]
    },
@@ -658,21 +459,7 @@
       "nom": "Legrand",
       "sens": "positif",
       "ampleur": "moyenne",
-      "rendement_pct": 6.08,
-      "indice_pct": -0.53,
-      "beta": 1.28,
-      "sigma_pct": 1.62,
-      "ecart_pct": 6.78,
-      "z": 4.2,
-      "rang": 0.996,
-      "avant_pct": -1.82,
-      "statut": "note",
-      "niveau": "fort",
-      "points": {
-       "sens": 1,
-       "ampleur": 0,
-       "total": 1
-      }
+      "statut": "donnees"
      }
     ]
    },
@@ -703,82 +490,28 @@
       "nom": "LVMH",
       "sens": "positif",
       "ampleur": "faible",
-      "rendement_pct": -1.05,
-      "indice_pct": -0.53,
-      "beta": 1.52,
-      "sigma_pct": 1.4,
-      "ecart_pct": -0.17,
-      "z": -0.12,
-      "rang": 0.421,
-      "avant_pct": -0.13,
-      "statut": "confondu",
-      "confondu_avec": [
-       "presse-f9b8ed503a993421"
-      ],
-      "niveau": "bruit"
+      "statut": "donnees"
      },
      {
       "ticker": "KER.PA",
       "nom": "Kering",
       "sens": "positif",
       "ampleur": "faible",
-      "rendement_pct": -2.04,
-      "indice_pct": -0.53,
-      "beta": 1.6,
-      "sigma_pct": 2.34,
-      "ecart_pct": -1.16,
-      "z": -0.5,
-      "rang": 0.29,
-      "avant_pct": 1.22,
-      "statut": "note",
-      "niveau": "bruit",
-      "points": {
-       "sens": 0,
-       "ampleur": 0,
-       "total": 0
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "RMS.PA",
       "nom": "Hermès",
       "sens": "positif",
       "ampleur": "faible",
-      "rendement_pct": -2.1,
-      "indice_pct": -0.53,
-      "beta": 1.61,
-      "sigma_pct": 1.53,
-      "ecart_pct": -1.08,
-      "z": -0.71,
-      "rang": 0.202,
-      "avant_pct": 4.82,
-      "statut": "note",
-      "niveau": "bruit",
-      "points": {
-       "sens": 0,
-       "ampleur": 0,
-       "total": 0
-      }
+      "statut": "donnees"
      },
      {
       "ticker": "AIR.PA",
       "nom": "Airbus",
       "sens": "positif",
       "ampleur": "faible",
-      "rendement_pct": -1.36,
-      "indice_pct": -0.53,
-      "beta": 1.34,
-      "sigma_pct": 1.42,
-      "ecart_pct": -0.66,
-      "z": -0.46,
-      "rang": 0.29,
-      "avant_pct": 0.12,
-      "statut": "note",
-      "niveau": "bruit",
-      "points": {
-       "sens": 0,
-       "ampleur": 0,
-       "total": 0
-      }
+      "statut": "donnees"
      }
     ]
    },
@@ -955,32 +688,14 @@
       "nom": "Renault",
       "sens": "incertain",
       "ampleur": "faible",
-      "rendement_pct": -0.91,
-      "indice_pct": -0.52,
-      "beta": 0.99,
-      "sigma_pct": 1.8,
-      "ecart_pct": -0.31,
-      "z": -0.12,
-      "rang": 0.458,
-      "avant_pct": -4.04,
-      "statut": "non_directionnel",
-      "niveau": "bruit"
+      "statut": "donnees"
      },
      {
       "ticker": "STLAP.PA",
       "nom": "Stellantis",
       "sens": "incertain",
       "ampleur": "faible",
-      "rendement_pct": -3.07,
-      "indice_pct": -0.52,
-      "beta": 1.5,
-      "sigma_pct": 2.89,
-      "ecart_pct": -1.85,
-      "z": -0.45,
-      "rang": 0.291,
-      "avant_pct": -3.25,
-      "statut": "non_directionnel",
-      "niveau": "bruit"
+      "statut": "donnees"
      }
     ]
    }
@@ -989,159 +704,159 @@
  "historique_amf": {
   "depuis": "2019-01-01",
   "jusqu_a": "2026-09-29",
-  "n_communiques": 9529,
-  "n_evenements": 7964,
+  "n_communiques": 8524,
+  "n_evenements": 7125,
   "jour_ordinaire": {
-   "n": 102986,
-   "z_abs_moyen": 0.68,
-   "part_net": 0.224,
-   "part_fort": 0.04
+   "n": 99258,
+   "z_abs_moyen": 0.69,
+   "part_net": 0.227,
+   "part_fort": 0.041
   },
   "tous": {
-   "n": 7964,
+   "n": 7125,
    "z_abs_moyen": 1.12,
-   "part_net": 0.366,
-   "part_fort": 0.144,
+   "part_net": 0.367,
+   "part_fort": 0.145,
    "ecart_moyen_pct": 0.06,
-   "ecart_abs_median_pct": 0.93
+   "ecart_abs_median_pct": 0.96
   },
   "categories": [
    {
-    "n": 48,
-    "z_abs_moyen": 3.14,
-    "part_net": 0.729,
-    "part_fort": 0.521,
-    "ecart_moyen_pct": -1.04,
+    "n": 46,
+    "z_abs_moyen": 3.13,
+    "part_net": 0.739,
+    "part_fort": 0.522,
+    "ecart_moyen_pct": -0.84,
     "ecart_abs_median_pct": 2.87,
     "id": "revision",
     "libelle": "Révision des objectifs, pré-annonces"
    },
    {
-    "n": 2104,
-    "z_abs_moyen": 1.82,
-    "part_net": 0.565,
-    "part_fort": 0.324,
-    "ecart_moyen_pct": 0.16,
-    "ecart_abs_median_pct": 1.63,
+    "n": 1898,
+    "z_abs_moyen": 1.83,
+    "part_net": 0.566,
+    "part_fort": 0.322,
+    "ecart_moyen_pct": 0.15,
+    "ecart_abs_median_pct": 1.65,
     "id": "resultats",
     "libelle": "Résultats et chiffre d'affaires"
    },
    {
-    "n": 135,
-    "z_abs_moyen": 1.36,
-    "part_net": 0.407,
-    "part_fort": 0.185,
-    "ecart_moyen_pct": 0.19,
-    "ecart_abs_median_pct": 1.14,
+    "n": 121,
+    "z_abs_moyen": 1.3,
+    "part_net": 0.38,
+    "part_fort": 0.174,
+    "ecart_moyen_pct": 0.1,
+    "ecart_abs_median_pct": 1.11,
     "id": "strategie",
     "libelle": "Stratégie et restructuration"
    },
    {
-    "n": 106,
-    "z_abs_moyen": 0.92,
-    "part_net": 0.349,
-    "part_fort": 0.123,
-    "ecart_moyen_pct": 0.06,
-    "ecart_abs_median_pct": 0.92,
+    "n": 97,
+    "z_abs_moyen": 0.93,
+    "part_net": 0.34,
+    "part_fort": 0.134,
+    "ecart_moyen_pct": 0.04,
+    "ecart_abs_median_pct": 0.93,
     "id": "actionnaires",
     "libelle": "Dividendes et rachats d'actions"
    },
    {
-    "n": 58,
-    "z_abs_moyen": 0.89,
-    "part_net": 0.31,
-    "part_fort": 0.103,
-    "ecart_moyen_pct": -0.16,
-    "ecart_abs_median_pct": 0.7,
+    "n": 56,
+    "z_abs_moyen": 0.91,
+    "part_net": 0.321,
+    "part_fort": 0.107,
+    "ecart_moyen_pct": -0.17,
+    "ecart_abs_median_pct": 0.75,
     "id": "juridique",
     "libelle": "Juridique et réglementaire"
    },
    {
-    "n": 2639,
-    "z_abs_moyen": 0.87,
+    "n": 2309,
+    "z_abs_moyen": 0.86,
     "part_net": 0.298,
     "part_fort": 0.082,
-    "ecart_moyen_pct": 0.03,
-    "ecart_abs_median_pct": 0.81,
+    "ecart_moyen_pct": 0.04,
+    "ecart_abs_median_pct": 0.84,
     "id": "autre",
     "libelle": "Autres communiqués"
    },
    {
-    "n": 925,
-    "z_abs_moyen": 0.85,
-    "part_net": 0.31,
+    "n": 826,
+    "z_abs_moyen": 0.86,
+    "part_net": 0.315,
     "part_fort": 0.077,
     "ecart_moyen_pct": 0.09,
-    "ecart_abs_median_pct": 0.79,
+    "ecart_abs_median_pct": 0.82,
     "id": "operation",
     "libelle": "Acquisitions, cessions, fusions"
    },
    {
-    "n": 330,
-    "z_abs_moyen": 0.86,
-    "part_net": 0.288,
-    "part_fort": 0.076,
-    "ecart_moyen_pct": -0.12,
+    "n": 302,
+    "z_abs_moyen": 0.85,
+    "part_net": 0.281,
+    "part_fort": 0.073,
+    "ecart_moyen_pct": -0.1,
     "ecart_abs_median_pct": 0.86,
     "id": "gouvernance",
     "libelle": "Gouvernance et dirigeants"
    },
    {
-    "n": 822,
+    "n": 751,
     "z_abs_moyen": 0.76,
-    "part_net": 0.254,
-    "part_fort": 0.064,
+    "part_net": 0.246,
+    "part_fort": 0.068,
     "ecart_moyen_pct": 0.11,
     "ecart_abs_median_pct": 0.74,
     "id": "commercial",
     "libelle": "Contrats, produits et essais cliniques"
    },
    {
-    "n": 153,
-    "z_abs_moyen": 0.71,
-    "part_net": 0.268,
-    "part_fort": 0.046,
-    "ecart_moyen_pct": 0.07,
-    "ecart_abs_median_pct": 0.69,
+    "n": 139,
+    "z_abs_moyen": 0.72,
+    "part_net": 0.266,
+    "part_fort": 0.05,
+    "ecart_moyen_pct": 0.11,
+    "ecart_abs_median_pct": 0.7,
     "id": "trafic",
     "libelle": "Trafic et activité mensuelle"
    },
    {
-    "n": 644,
-    "z_abs_moyen": 0.74,
-    "part_net": 0.258,
-    "part_fort": 0.04,
+    "n": 580,
+    "z_abs_moyen": 0.76,
+    "part_net": 0.266,
+    "part_fort": 0.043,
     "ecart_moyen_pct": -0.06,
-    "ecart_abs_median_pct": 0.7,
+    "ecart_abs_median_pct": 0.73,
     "id": "financement",
     "libelle": "Financement et capital"
    }
   ],
   "sens_mots_cles": {
-   "n": 1079,
-   "justes": 288,
-   "faux": 202,
-   "taux": 0.588,
-   "p": 0.0001,
+   "n": 999,
+   "justes": 265,
+   "faux": 191,
+   "taux": 0.581,
+   "p": 0.0006,
    "ecart_moyen_pct": 0.3,
    "z_moyen": 0.22,
-   "p_t": 0.0023,
+   "p_t": 0.0035,
    "rang_p": 0.0,
    "par_sens": {
     "positif": {
-     "n": 1058,
+     "n": 983,
      "ecart_moyen_pct": 0.31
     },
     "negatif": {
-     "n": 21,
-     "ecart_moyen_pct": 0.42
+     "n": 16,
+     "ecart_moyen_pct": 0.34
     }
    }
   },
   "apres_cloture": {
-   "n": 3369,
-   "z_abs_jour_publication": 0.79,
-   "z_abs_lendemain": 1.03
+   "n": 3008,
+   "z_abs_jour_publication": 0.78,
+   "z_abs_lendemain": 1.04
   },
   "plus_fortes_reactions": [
    {
@@ -1255,17 +970,6 @@
     "z": -10.95
    },
    {
-    "jour": "2020-01-24",
-    "ticker": "IPN.PA",
-    "nom": "Ipsen",
-    "categorie": "autre",
-    "titre": "Informations privilégiées / Autres communiqués",
-    "rendement_pct": -23.39,
-    "indice_pct": 0.88,
-    "ecart_pct": -23.81,
-    "z": -10.79
-   },
-   {
     "jour": "2022-07-28",
     "ticker": "SCR.PA",
     "nom": "SCOR",
@@ -1299,15 +1003,26 @@
     "z": 10.57
    },
    {
-    "jour": "2019-10-11",
-    "ticker": "PUB.PA",
-    "nom": "Publicis",
+    "jour": "2024-10-31",
+    "ticker": "GLE.PA",
+    "nom": "Société Générale",
     "categorie": "resultats",
-    "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
-    "rendement_pct": -14.51,
-    "indice_pct": 1.73,
-    "ecart_pct": -15.8,
-    "z": -10.31
+    "titre": "Société Générale : Résultats du troisième trimestre 2024",
+    "rendement_pct": 11.33,
+    "indice_pct": -1.05,
+    "ecart_pct": 12.56,
+    "z": 9.97
+   },
+   {
+    "jour": "2026-04-22",
+    "ticker": "BVI.PA",
+    "nom": "Bureau Veritas",
+    "categorie": "resultats",
+    "titre": "BUREAU VERITAS - Croissance organique du chiffre d’affaires soutenue au T1 2026 ; Un contexte macroéconomique en évolution continue et un portefeuille d’activités en transition ; Mise à jour des perspectives 2026",
+    "rendement_pct": -10.59,
+    "indice_pct": -0.96,
+    "ecart_pct": -9.93,
+    "z": -9.95
    }
   ]
  }
