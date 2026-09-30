@@ -1,7 +1,176 @@
 {
  "version": 1,
- "maj_le": "2026-09-30T05:09:02+00:00",
+ "maj_le": "2026-09-30T18:26:20+00:00",
  "alertes": [
+  {
+   "id": "amf-083299_20260930",
+   "date": "2026-09-30",
+   "source": "amf",
+   "titre": "Engie : négociations avec l'État belge, date cible repoussée au 4 novembre 2026",
+   "resume": "Engie et l'État belge reportent au 4 novembre 2026 la date cible de conclusion des Heads of Terms. Le calendrier de l'accord est donc décalé.",
+   "nouveaute": "Nouvelle date cible du 4 novembre 2026 pour la conclusion des Heads of Terms.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083299_20260930.pdf",
+   "etape": "information",
+   "probabilite": 1.0,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ENGI.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Le report décale le calendrier d'un accord dont le contenu n'est pas précisé dans le titre.",
+     "extrait": "L’État belge et le groupe ENGIE ont convenu de reporter au 4 novembre 2026 la date cible pour la conclusion des Heads of Terms",
+     "nom": "Engie"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Engie : L’État belge et le groupe ENGIE ont convenu de reporter au 4 novembre 2026 la date cible pour la conclusion des Heads of Terms",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083299_20260930.pdf",
+     "date": "2026-09-30",
+     "publie_le": "2026-09-30T16:15:48+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-30",
+   "publie_a": "2026-09-30T18:26:20+00:00",
+   "initial": {
+    "etape": "information",
+    "probabilite": 1.0
+   }
+  },
+  {
+   "id": "amf-083292_20260930",
+   "date": "2026-09-30",
+   "source": "amf",
+   "titre": "Air Liquide investit plus de 170 M€ pour un fabricant de semi-conducteurs au Japon",
+   "resume": "Air Liquide annonce un investissement de plus de 170 M€ pour accompagner un leader des semi-conducteurs dans l'extension de ses capacités de production au Japon.",
+   "nouveaute": "Nouvel investissement de plus de 170 M€ annoncé au Japon.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083292_20260930.pdf",
+   "etape": "annonce",
+   "probabilite": 1.0,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Investissement de plus de 170 M€ adossé à un client semi-conducteurs, source de revenus récurrents ; faible au regard du résultat annuel.",
+     "extrait": "Air Liquide investit plus de 170 millions d’euros pour accompagner un leader des semi-conducteurs dans le développement de ses capacités de production au Japon",
+     "nom": "Air Liquide"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Air Liquide : Air Liquide investit plus de 170 millions d’euros pour accompagner un leader des semi-conducteurs dans le développement de ses capacités de production au Japon",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083292_20260930.pdf",
+     "date": "2026-09-30",
+     "publie_le": "2026-09-30T06:44:45+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-30",
+   "publie_a": "2026-09-30T18:26:20+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1.0
+   }
+  },
+  {
+   "id": "amf-135545_20260930",
+   "date": "2026-09-30",
+   "source": "amf",
+   "titre": "Alstom accompagne la modernisation du Gautrain en Afrique du Sud",
+   "resume": "Alstom annonce sa participation à la modernisation du réseau ferroviaire express Gautrain (province du Gauteng). Montant non précisé dans le titre.",
+   "nouveaute": "Nouveau contrat de modernisation du Gautrain annoncé par Alstom.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135545_20260930.pdf",
+   "etape": "annonce",
+   "probabilite": 1.0,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Contrat de modernisation d'un réseau express, montant non communiqué dans le titre.",
+     "extrait": "ALSTOM S.A : Alstom accompagne la modernisation du Gautrain, le réseau ferroviaire express de la province du Gauteng, en Afrique du Sud",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Alstom : ALSTOM S.A : Alstom accompagne la modernisation du Gautrain, le réseau ferroviaire express de la province du Gauteng, en Afrique du Sud",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW135545_20260930.pdf",
+     "date": "2026-09-30",
+     "publie_le": "2026-09-30T15:45:00+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-30",
+   "publie_a": "2026-09-30T18:26:20+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1.0
+   }
+  },
+  {
+   "id": "presse-e89263bd6ee575a7",
+   "date": "2026-09-30",
+   "source": "presse",
+   "titre": "Satellites d'observation IRIS : commande de deux satellites attendue (plus d'1 Md€)",
+   "resume": "Selon la presse spécialisée, le ministère des Armées serait sur le point de commander deux nouveaux satellites d'observation du programme IRIS, pour un contrat de plus d'un milliard d'euros.",
+   "nouveaute": "Commande imminente des deux satellites IRIS, évoquée pour plus d'un milliard d'euros.",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZ0dMUWNUZXJ6M3VrT2h2dEJhRkZuQ29oU3ZkSWlTWGE0dmI1ZDJoYktNdXY1a3p2NHkxbVN2YzF5d09GZ2FOc0xRMUdienp6Wkx6TUJHbkNhSmo5NmhWV2NUVFhEd3BYLTF1Q1E3WU9PcHFLYnV6NmE4NzRGNnlQTHJJM2lzY2N5cHV6NC1OOVhSc0RWM0NSMGlmRlQ1TGZyMU1nWDFMdHQwMjctOUtkT1NNQW1WbmtVOTFJeUtqN2phUjY0UW1HaDlzcHZFOFlJbk1zdHRlZ2ZMREVpVm5aQ19CYzBRVVU?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.6,
+   "themes": [
+    "defense"
+   ],
+   "entreprises": [
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Acteur majeur des satellites d'observation militaires français ; part exacte du contrat non connue.",
+     "extrait": "Le ministère des Armées serait sur le point de commander les deux nouveaux satellites d’observation du programme IRIS",
+     "nom": "Airbus"
+    },
+    {
+     "ticker": "HO.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Acteur du secteur spatial de défense ; part exacte du contrat non connue.",
+     "extrait": "Satellites espions : un contrat de plus d’un milliard se prépare",
+     "nom": "Thales"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Le ministère des Armées serait sur le point de commander les deux nouveaux satellites d’observation du programme IRIS - Zone Militaire",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZ0dMUWNUZXJ6M3VrT2h2dEJhRkZuQ29oU3ZkSWlTWGE0dmI1ZDJoYktNdXY1a3p2NHkxbVN2YzF5d09GZ2FOc0xRMUdienp6Wkx6TUJHbkNhSmo5NmhWV2NUVFhEd3BYLTF1Q1E3WU9PcHFLYnV6NmE4NzRGNnlQTHJJM2lzY2N5cHV6NC1OOVhSc0RWM0NSMGlmRlQ1TGZyMU1nWDFMdHQwMjctOUtkT1NNQW1WbmtVOTFJeUtqN2phUjY0UW1HaDlzcHZFOFlJbk1zdHRlZ2ZMREVpVm5aQ19CYzBRVVU?oc=5",
+     "date": "2026-09-30",
+     "publie_le": "2026-09-30T15:04:46+00:00",
+     "media": "Zone Militaire"
+    },
+    {
+     "titre": "Satellites espions : un contrat de plus d’un milliard se prépare - L'Essentiel de l'Éco",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTU93ekZHVndkaUtDR2tidldzLVJ1cUZONnZqdzJKWUNDcVc3S09uRnR6ekhEdl9TZzItMEk2Nnp5bEZnTXA0M1JnOGo5ejhzc19HVFJmNmJ2MXFEX09hZDcxdXZROTRIeHh0TnZrSVFvd0s2cnl3TXFzaTdqUEpYM24tZ1A5TjhEUFEtc2U4dW1sTVVDR3g2SC1uaw?oc=5",
+     "date": "2026-09-30",
+     "publie_le": "2026-09-30T06:00:03+00:00",
+     "media": "L'Essentiel de l'Éco"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-09-30",
+   "publie_a": "2026-09-30T18:26:20+00:00",
+   "initial": {
+    "etape": "rumeur",
+    "probabilite": 0.6
+   }
+  },
   {
    "id": "presse-181a5dc8f47983e9",
    "date": "2026-09-29",
