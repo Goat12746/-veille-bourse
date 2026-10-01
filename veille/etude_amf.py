@@ -22,6 +22,8 @@ import math
 
 from communiques import (CATEGORIES, LIBELLES, ORDRE, charger_classes, charger_communiques, generique, normaliser,
                          rapports_redondants)
+import consensus as consensus_mod
+import positions as positions_mod
 from mesures import (SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale,
                      p_deux_proportions, pct)
 
@@ -34,6 +36,11 @@ DEBUT_VALIDATION = "2022-01-01"
 FORCE_SENS = 6  # poids des frequences de l'ensemble face a l'historique de l'entreprise
 FORCE_REACTION = 10
 HORIZON_PROCHAINES = 60  # jours
+SEUIL_SURPRISE = 1.0  # % d'ecart au consensus du BPA en deca duquel le resultat est conforme
+SEUIL_REVISION = 1.0  # % d'evolution du consensus sur 30 jours en deca duquel il est stable
+# Part du capital vendue a decouvert (positions publiques, >= 0,5 % chacune).
+TRANCHES_COURTES = [("aucune", 0, 0.5), ("moderees", 0.5, 2), ("fortes", 2, 1e9)]
+SURPRISES = {"superieur": "positive", "conforme": "conforme", "inferieur": "negative"}
 
 
 # ---------------------------------------------------------------------------
@@ -111,7 +118,7 @@ def construire_evenements(communiques, classes, referentiel, cal, series):
               "titre": _titre(principal), "id": principal["id"], "publie_le": cs[0][1]["publie_le"],
               "n_communiques": len(cs), "sens": sens, "origine": origine}
         if avis is not None and avis["type"] in ("resultats", "revision"):
-            for k in ("activite", "rentabilite", "perspectives", "attentes"):
+            for k in ("activite", "rentabilite", "perspectives", "attentes", "consensus"):
                 ev[k] = avis.get(k)
             ev["exceptionnel"] = bool(avis.get("exceptionnel"))
             ev["actionnaires"] = bool(avis.get("actionnaires"))
@@ -152,6 +159,110 @@ def mesurer(ev, serie, premier):
         ev["z_veille"] = round(serie.ecart(mod, s - 1, s - 1) / mod[2], 2)
     ev["_mod"] = (s, mod)
     return True
+
+
+def enrichir(evts, positions, consensus):
+    """Attentes du marche avant chaque publication de resultats ou revision :
+    part du capital vendue a decouvert la veille (AMF), ecart du BPA publie au
+    consensus (avis de Claude, sinon Yahoo pour les BPA trimestriels) et
+    revision du consensus sur les 30 jours precedents."""
+    par_ticker = {}
+    for ev in evts:
+        if ev["categorie"] in ("resultats", "revision"):
+            par_ticker.setdefault(ev["ticker"], []).append(ev)
+    for ticker, v in par_ticker.items():
+        v.sort(key=lambda x: x["jour"])
+        fiche = consensus.get(ticker)
+        for ev in v:
+            pub = ev["publie_le"][:10]
+            if positions is not None:
+                total, n = positions_mod.niveau((positions.get(ticker) or {}).get("points"), pub)
+                ev["courtes_pct"], ev["courtes_n"] = total, n
+                ev["courtes"] = next(t for t, a, b in TRANCHES_COURTES if a <= total < b)
+            rev = consensus_mod.revision_pct(fiche, pub)
+            if rev is not None:
+                ev["revision_30j_pct"] = rev
+                ev["revision"] = ("hausse" if rev > SEUIL_REVISION else "baisse" if rev < -SEUIL_REVISION
+                                  else "stable")
+            if ev.get("consensus") in SURPRISES:
+                ev["surprise"] = SURPRISES[ev["consensus"]]
+        # Surprises de BPA trimestriel (Yahoo) : premiere publication de
+        # resultats dans les 110 jours qui suivent la fin du trimestre.
+        for s in (fiche or {}).get("surprises", []):
+            if s.get("surprise_pct") is None:
+                continue
+            fin = (dt.date.fromisoformat(s["trimestre"]) + dt.timedelta(days=110)).isoformat()
+            ev = next((x for x in v if x["categorie"] == "resultats" and s["trimestre"] < x["jour"] <= fin), None)
+            if ev is None:
+                continue
+            ev["surprise_bpa_pct"] = s["surprise_pct"]
+            ev.setdefault("surprise", "positive" if s["surprise_pct"] > SEUIL_SURPRISE
+                          else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme")
+
+
+def croise(v, cle, valeurs):
+    """Part de hausse selon la valeur d'un champ, en tout et par sens des
+    resultats."""
+    res = []
+    for val in valeurs:
+        w = [x for x in v if x.get(cle) == val and x["reaction"]]
+        par_sens = {}
+        for s in SENS_RESULTATS:
+            u = [x for x in w if x["sens"] == s]
+            par_sens[s] = {"n": len(u), "part_hausse": _part(sum(1 for x in u if x["reaction"] == "hausse"), len(u))}
+        suites = [x["suite_pct"] for x in w if x.get("suite_pct") is not None]
+        res.append({"valeur": val, "n": len(w),
+                    "part_hausse": _part(sum(1 for x in w if x["reaction"] == "hausse"), len(w)),
+                    "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2) if w else None,
+                    "suite_moyenne_pct": arrondi(moyenne(suites), 2) if suites else None,
+                    "par_sens": par_sens})
+    return res
+
+
+def attentes_marche(avec_sens, consensus):
+    """Resume des attentes du marche : positions vendeuses (historique AMF
+    complet) et consensus des analystes (historique en construction)."""
+    courtes = [x for x in avec_sens if x.get("courtes") is not None]
+    surpr = [x for x in avec_sens if x.get("surprise")]
+    revis = [x for x in avec_sens if x.get("revision")]
+    concord = [x for x in surpr if x["surprise"] != "conforme" and x["reaction"]]
+    ok = sum(1 for x in concord if (x["surprise"], x["reaction"]) in (("positive", "hausse"), ("negative", "baisse")))
+    releves = [r["jour"] for f in consensus.values() for r in f.get("releves", []) if not r.get("reconstitue")]
+    return {
+        "positions_courtes": {"n": len(courtes),
+                              "par_tranche": croise(courtes, "courtes", [t for t, _, _ in TRANCHES_COURTES])},
+        "consensus": {
+            "n_entreprises": sum(1 for f in consensus.values() if f.get("releves")),
+            "releve_depuis": min(releves) if releves else None,
+            "n_surprises": len(surpr),
+            "par_surprise": croise(surpr, "surprise", ["positive", "conforme", "negative"]),
+            "concordance": _part(ok, len(concord)),
+            "p": arrondi(p_binomiale(ok, len(concord)), 4) if concord else None,
+            "n_revisions": len(revis),
+            "par_revision": croise(revis, "revision", ["hausse", "stable", "baisse"]),
+        },
+    }
+
+
+def marche_actuel(ticker, positions, consensus, aujourd_hui):
+    """Attentes du marche aujourd'hui pour une entreprise (fiche)."""
+    res = {}
+    if positions is not None:
+        pts = (positions.get(ticker) or {}).get("points")
+        total, n = positions_mod.niveau(pts, "9999-12-31")
+        il_y_a = (dt.date.fromisoformat(aujourd_hui) - dt.timedelta(days=30)).isoformat()
+        avant, _ = positions_mod.niveau(pts, il_y_a)
+        res["courtes"] = {"pct": total, "n": n, "variation_30j": round(total - avant, 2),
+                          "au": pts[-1][0] if pts else None}
+    fiche = consensus.get(ticker)
+    dernier = fiche["releves"][-1] if fiche and fiche.get("releves") else None
+    if dernier:
+        res["consensus"] = {"au": dernier["jour"], "fin": dernier.get("fin", {}),
+                            "bpa": dernier.get("bpa", {}), "ca": dernier.get("ca", {}),
+                            "revision_30j_pct": consensus_mod.revision_pct(fiche, "9999-12-31"),
+                            "revisions": fiche.get("revisions", {}),
+                            "surprises": fiche.get("surprises", [])[-4:]}
+    return res
 
 
 def jour_ordinaire(evts, series, jours):
@@ -288,6 +399,12 @@ FACTEURS = [
      lambda x, b: x.get("attentes") == "superieures"),
     ("attentes_inferieures", "Inférieurs aux attentes (dit par l'entreprise)",
      lambda x, b: x.get("attentes") == "inferieures"),
+    ("surprise_positive", "Au-dessus du consensus des analystes", lambda x, b: x.get("surprise") == "positive"),
+    ("surprise_negative", "Sous le consensus des analystes", lambda x, b: x.get("surprise") == "negative"),
+    ("revision_hausse", "Consensus relevé dans les 30 jours avant", lambda x, b: x.get("revision") == "hausse"),
+    ("revision_baisse", "Consensus abaissé dans les 30 jours avant", lambda x, b: x.get("revision") == "baisse"),
+    ("courtes_fortes", "Plus de 2 % du capital vendu à découvert", lambda x, b: x.get("courtes") == "fortes"),
+    ("courtes_aucune", "Aucune vente à découvert déclarée", lambda x, b: x.get("courtes") == "aucune"),
 ]
 
 
@@ -536,7 +653,7 @@ def _evenement_public(x):
     """Publication de resultats telle qu'affichee dans l'application."""
     cles = ["jour", "periode", "titre", "sens", "origine", "activite", "rentabilite", "perspectives", "attentes",
             "exceptionnel", "actionnaires", "avant_pct", "z_avant", "rendement_pct", "ecart_pct", "z", "suite_pct",
-            "reaction"]
+            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "revision_30j_pct"]
     # Sans les valeurs nulles ni fausses (l'application les lit par defaut) :
     # le fichier reste leger malgre des milliers de publications.
     ev = {k: x[k] for k in cles if x.get(k) is not None and x.get(k) is not False}
@@ -553,6 +670,10 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
     communiques = [c for c in doc["communiques"] if c["publie_le"] >= depuis]
     classes = charger_classes()["classes"]
     evts, jours, en_attente = construire_evenements(communiques, classes, referentiel, cal, series)
+    pos_doc = positions_mod.charger()
+    positions = pos_doc.get("entreprises") if pos_doc else None
+    consensus = consensus_mod.charger().get("entreprises", {})
+    enrichir(evts, positions, consensus)
     base = jour_ordinaire(evts, series, jours)
 
     # Types de communiques.
@@ -581,6 +702,7 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
                                                                     "abaissees"]),
         "bons_puis_baisse": facteurs(avec_sens, "positif", "baisse", bornes),
         "mauvais_puis_hausse": facteurs(avec_sens, "negatif", "hausse", bornes),
+        "attentes_marche": attentes_marche(avec_sens, consensus),
     }
     modele = Modele(avec_sens) if len(avec_sens) >= 200 else None
     if modele is not None:
@@ -609,6 +731,7 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
             "resultats": {"n": len(r), "matrice": matrice(rs), "concordance": sens_reaction(rs),
                           "mouvements": mouvements(r),
                           "evenements": [_evenement_public(x) for x in r]},
+            "marche": marche_actuel(e["ticker"], positions, consensus, aujourd_hui),
         }
         serie = series.get(e["ticker"])
         prochaine = dates.get(e["ticker"])

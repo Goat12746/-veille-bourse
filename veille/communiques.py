@@ -522,6 +522,8 @@ def valider_avis(cid, a):
         e.append(f"{cid} : perspectives {a.get('perspectives')!r}, attendu {PERSPECTIVES} ou null")
     if a.get("attentes") not in ATTENTES + [None]:
         e.append(f"{cid} : attentes {a.get('attentes')!r}, attendu {ATTENTES} ou null")
+    if a.get("consensus") not in ["superieur", "conforme", "inferieur", None]:
+        e.append(f"{cid} : consensus {a.get('consensus')!r}, attendu superieur, conforme, inferieur ou null")
     for champ in ("exceptionnel", "actionnaires"):
         if not isinstance(a.get(champ, False), bool):
             e.append(f"{cid} : {champ} doit etre true ou false")
@@ -588,7 +590,9 @@ def a_classer(communiques, referentiel):
     """Publications de resultats et revisions d'objectifs sans avis de
     Claude : un communique par jour et par societe (le communique de presse
     plutot que le rapport financier du meme jour)."""
+    import consensus as consensus_mod  # releve des analystes (facultatif)
     classes = charger_classes()["classes"]
+    estimations = consensus_mod.charger().get("entreprises", {})
     noms = {e["isin"]: (e["ticker"], e["nom"]) for e in referentiel}
     redondants = rapports_redondants(communiques, classes=classes)
     par_jour = {}
@@ -616,7 +620,10 @@ def a_classer(communiques, referentiel):
         liste.append({"id": c["id"], "ticker": ticker, "nom": nom, "publie_le": c["publie_le"],
                       "categorie": c["categorie"], "periode": c["periode"],
                       "titre": c["entete"] if generique(c["titre"]) and c["entete"] else c["titre"],
-                      "url": c["url"], "extrait": extrait_resultats(texte)})
+                      "url": c["url"], "extrait": extrait_resultats(texte),
+                      # Consensus des analystes la veille : a comparer aux
+                      # chiffres publies (champ "consensus" de l'avis).
+                      "consensus": consensus_mod.avant(estimations.get(ticker), jour)})
     return liste
 
 

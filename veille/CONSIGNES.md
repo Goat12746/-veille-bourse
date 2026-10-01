@@ -21,8 +21,13 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Il valide ton analyse, met à jour `alertes.json`, `etat.json` et
      l'archive `historique.json`.
    - En cas d'erreur de validation, corrige `sortie/analyse.json` et relance.
-4. **Communiqués AMF** : `python communiques.py` puis
+4. **Attentes du marché et communiqués AMF** : `python consensus.py`,
+   `python positions.py`, `python communiques.py` puis
    `python communiques.py --a-classer`
+   - `consensus.py` relève le consensus des analystes (Yahoo) et
+     `positions.py` les ventes à découvert déclarées à l'AMF : sans IA, ne les
+     modifie pas à la main. Une source en erreur n'arrête rien (le fichier
+     précédent est gardé) : signale-le.
    - Ajoute les communiqués des derniers jours à `communiques.json`, puis liste
      dans `sortie/resultats_a_classer.json` les publications de résultats et
      révisions d'objectifs que tu n'as pas encore jugées.
@@ -37,8 +42,8 @@ Tout se passe dans le dossier `veille/` du dépôt.
      de l'application).
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
 6. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
-   `statistiques.json`, `communiques.json` et `resultats_classes.json`
-   uniquement, message : `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans
+   `statistiques.json`, `communiques.json`, `resultats_classes.json`,
+   `consensus.json` et `positions_courtes.json` uniquement, message : `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans
    le commit).
 7. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
    importantes, sources en erreur, publications de résultats jugées, et la
@@ -184,7 +189,8 @@ extrait du communiqué (chiffres clés, perspectives). Ton avis :
 ```json
 {"137031_20251105": {"type": "resultats", "sens": "positif", "activite": "+",
   "rentabilite": "+", "perspectives": "confirmees", "attentes": null,
-  "exceptionnel": false, "actionnaires": false, "par": "claude"}}
+  "consensus": "superieur", "exceptionnel": false, "actionnaires": false,
+  "par": "claude"}}
 ```
 
 - **type** : `resultats` (comptes, chiffre d'affaires trimestriel),
@@ -209,6 +215,15 @@ extrait du communiqué (chiffres clés, perspectives). Ton avis :
   (premiers objectifs de l'année) ou `null`.
 - **attentes** : `superieures`, `conformes` ou `inferieures` seulement si
   l'entreprise se compare elle-même à ses objectifs ou au consensus.
+- **consensus** : `superieur`, `conforme` ou `inferieur` d'après le champ
+  `consensus` de l'entrée (moyenne des analystes la veille ; `bpa` et `ca` par
+  période : `0q` trimestre en cours, `0y` exercice en cours, chaque valeur
+  `[moyenne, nombre d'analystes]`, `fin` donne la date de fin de période).
+  Compare le chiffre publié de la même période : le chiffre d'affaires du
+  trimestre pour un chiffre d'affaires trimestriel, le BPA (ou à défaut le
+  chiffre d'affaires) pour des comptes. Écart de moins de 1 % : `conforme`.
+  Si la presse cite un consensus plus précis (« contre un consensus de… »),
+  utilise-le. Sans consensus comparable : `null`.
 - **exceptionnel** : dépréciation ou élément non récurrent marquant ;
   **actionnaires** : nouveau rachat d'actions, dividende relevé,
   exceptionnel ou rétabli.

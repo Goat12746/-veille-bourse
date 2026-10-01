@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+"""Consensus des analystes (Yahoo Finance) : releve quotidien pour les
+entreprises du referentiel, afin de comparer chaque publication de resultats a
+ce que le marche attendait.
+
+Pour chaque entreprise :
+  - estimations moyennes du benefice par action (BPA) et du chiffre
+    d'affaires, pour le trimestre en cours, le suivant, l'annee en cours et la
+    suivante, avec le nombre d'analystes (un releve n'est garde que s'il change) ;
+  - revisions : analystes ayant releve ou abaisse leur estimation sur 7 et 30
+    jours ;
+  - surprises : BPA estime et publie des derniers trimestres (seulement pour les
+    societes qui publient un BPA trimestriel), cumulees d'un releve a l'autre.
+
+Historique gratuit disponible : Yahoo donne le BPA moyen d'il y a 7, 30, 60 et
+90 jours (reconstitue au premier releve) et les surprises des 4 derniers
+trimestres. Au-dela, l'historique se construit jour apres jour.
+
+Ecrit consensus.json, lu par communiques.py (--a-classer : consensus avant la
+publication) et par l'etude des communiques (etude_amf.py).
+
+Usage :
+  python consensus.py
+Bibliotheque standard uniquement.
+"""
+
+import concurrent.futures as cf
+import datetime as dt
+import http.cookiejar
+import json
+import math
+import os
+import sys
+import urllib.parse
+import urllib.request
+
+from collecte import _yahoo_get, http_get
+
+ICI = os.path.dirname(os.path.abspath(__file__))
+SORTIE = os.path.join(ICI, "consensus.json")
+PERIODES = ("0q", "+1q", "0y", "+1y")
+RECUL = {"7daysAgo": 7, "30daysAgo": 30, "60daysAgo": 60, "90daysAgo": 90}
+MODULES = "earningsTrend,earningsHistory"
+
+
+def _sig(x, n=4):
+    """Arrondi a n chiffres significatifs (releves comparables d'un jour a
+    l'autre)."""
+    if x is None or x == 0:
+        return x
+    return round(x, n - 1 - int(math.floor(math.log10(abs(x)))))
+
+
+def _raw(d, *cles):
+    for c in cles:
+        d = (d or {}).get(c)
+    return d.get("raw") if isinstance(d, dict) else d
+
+
+def session():
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    try:
+        http_get("https://fc.yahoo.com", opener)
+    except Exception:
+        pass  # la reponse est une erreur, mais le cookie est pose
+    crumb = _yahoo_get("https://query1.finance.yahoo.com/v1/test/getcrumb", opener).decode()
+    return opener, crumb
+
+
+def lire(ticker, opener, crumb):
+    """Releve du jour, BPA moyen des jours passes, revisions et surprises."""
+    url = (f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{urllib.parse.quote(ticker)}"
+           f"?modules={MODULES}&crumb={urllib.parse.quote(crumb)}")
+    r = json.loads(_yahoo_get(url, opener))["quoteSummary"]["result"][0]
+    releve = {"bpa": {}, "ca": {}, "fin": {}}
+    passe = {}  # jours -> {periode: bpa moyen}
+    revisions = {}
+    for t in (r.get("earningsTrend") or {}).get("trend", []):
+        p = t.get("period")
+        if p not in PERIODES:
+            continue
+        if t.get("endDate"):
+            releve["fin"][p] = t["endDate"]
+        bpa = _raw(t, "earningsEstimate", "avg")
+        if bpa is not None:
+            releve["bpa"][p] = [_sig(bpa), _raw(t, "earningsEstimate", "numberOfAnalysts")]
+        ca = _raw(t, "revenueEstimate", "avg")
+        if ca:  # Yahoo met 0 quand il n'a rien
+            releve["ca"][p] = [_sig(ca), _raw(t, "revenueEstimate", "numberOfAnalysts")]
+        for cle, jours in RECUL.items():
+            v = _raw(t, "epsTrend", cle)
+            if v is not None:
+                passe.setdefault(jours, {})[p] = _sig(v)
+        rev = [_raw(t, "epsRevisions", c) for c in ("upLast7days", "upLast30days", "downLast7Days",
+                                                    "downLast30days")]
+        if any(x is not None for x in rev):
+            revisions[p] = rev
+    surprises = []
+    for h in (r.get("earningsHistory") or {}).get("history", []):
+        est, pub = _raw(h, "epsEstimate"), _raw(h, "epsActual")
+        trim = (h.get("quarter") or {}).get("fmt")
+        if trim and est is not None and pub is not None:
+            surprises.append({"trimestre": trim, "estime": _sig(est), "publie": _sig(pub),
+                              "surprise_pct": round((pub - est) / abs(est) * 100, 1) if est else None})
+    return releve, passe, revisions, surprises
+
+
+def charger():
+    if not os.path.exists(SORTIE):
+        return {"version": 1, "entreprises": {}}
+    with open(SORTIE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def avant(fiche, jour):
+    """Dernier releve strictement anterieur a `jour` (AAAA-MM-JJ), ou None."""
+    rel = [r for r in (fiche or {}).get("releves", []) if r["jour"] < jour]
+    return rel[-1] if rel else None
+
+
+def revision_pct(fiche, jour, periode="0y", jours=30):
+    """Evolution (%) du BPA moyen de `periode` entre le releve d'il y a
+    `jours` jours et le dernier releve avant `jour` (meme exercice)."""
+    fin = avant(fiche, jour)
+    if not fin or periode not in fin.get("bpa", {}):
+        return None
+    limite = (dt.date.fromisoformat(fin["jour"]) - dt.timedelta(days=jours)).isoformat()
+    debut = avant(fiche, (dt.date.fromisoformat(limite) + dt.timedelta(days=1)).isoformat())
+    if (not debut or periode not in debut.get("bpa", {}) or debut["jour"] < (
+            dt.date.fromisoformat(limite) - dt.timedelta(days=10)).isoformat()
+            or debut.get("fin", {}).get(periode) != fin.get("fin", {}).get(periode)):
+        return None
+    a, b = debut["bpa"][periode][0], fin["bpa"][periode][0]
+    return round((b - a) / abs(a) * 100, 1) if a else None
+
+
+def ecrire(doc):
+    with open(SORTIE, "w", encoding="utf-8") as f:
+        f.write('{\n "version": 1,\n "source": "Yahoo Finance (consensus des analystes)",\n')
+        f.write(f' "maj": {json.dumps(doc.get("maj"))},\n "entreprises": {{\n')
+        f.write(",\n".join(f'  {json.dumps(t)}: {json.dumps(v, ensure_ascii=False, separators=(",", ":"))}'
+                           for t, v in sorted(doc["entreprises"].items())))
+        f.write('\n }\n}\n')
+
+
+def main():
+    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
+        tickers = [e["ticker"] for e in json.load(f)["entreprises"]]
+    doc = charger()
+    aujourd_hui = dt.date.today()
+    jour = aujourd_hui.isoformat()
+    try:
+        opener, crumb = session()
+    except Exception as e:
+        print(f"Consensus indisponible (Yahoo) : {e}", file=sys.stderr)
+        return
+    erreurs, nouveaux = {}, 0
+    with cf.ThreadPoolExecutor(4) as ex:
+        futurs = {ex.submit(lire, t, opener, crumb): t for t in tickers}
+        for fu in cf.as_completed(futurs):
+            t = futurs[fu]
+            try:
+                releve, passe, revisions, surprises = fu.result()
+            except Exception as e:
+                erreurs[t] = str(e)[:120]
+                continue
+            fiche = doc["entreprises"].setdefault(t, {"releves": [], "surprises": []})
+            if not releve["bpa"] and not releve["ca"]:
+                continue
+            # Premier releve : le BPA moyen des 90 derniers jours donne deja
+            # un debut d'historique (revisions avant la prochaine publication).
+            if not fiche["releves"]:
+                for jours in sorted(passe, reverse=True):
+                    d = (aujourd_hui - dt.timedelta(days=jours)).isoformat()
+                    fiche["releves"].append({"jour": d, "bpa": {p: [v, None] for p, v in passe[jours].items()},
+                                             "ca": {}, "fin": releve["fin"], "reconstitue": True})
+            dernier = fiche["releves"][-1] if fiche["releves"] else None
+            if dernier and dernier["jour"] == jour:
+                fiche["releves"][-1] = dict(releve, jour=jour)
+            elif not dernier or {k: dernier.get(k) for k in ("bpa", "ca", "fin")} != releve:
+                fiche["releves"].append(dict(releve, jour=jour))
+                nouveaux += 1
+            fiche["revisions"] = revisions
+            connus = {s["trimestre"]: s for s in fiche.get("surprises", [])}
+            connus.update({s["trimestre"]: s for s in surprises})
+            fiche["surprises"] = [connus[k] for k in sorted(connus)]
+    doc["maj"] = jour
+    ecrire(doc)
+    avec = sum(1 for f in doc["entreprises"].values() if f["releves"])
+    surpr = sum(len(f.get("surprises", [])) for f in doc["entreprises"].values())
+    print(f"consensus.json : {avec} entreprise(s) suivie(s), {nouveaux} releve(s) nouveau(x), "
+          f"{surpr} surprise(s) de BPA connue(s)"
+          + (f" ; illisibles : {sorted(erreurs)}" if erreurs else "") + ".")
+
+
+if __name__ == "__main__":
+    main()
