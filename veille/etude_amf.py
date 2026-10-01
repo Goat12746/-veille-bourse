@@ -338,13 +338,16 @@ def sens_reaction(v):
 
 
 def matrice(v):
-    """Scenarios : sens des resultats x reaction, nombre, ecart moyen et suite."""
+    """Scenarios : sens des resultats x reaction, nombre, ecart moyen au CAC 40
+    sur les 20 seances avant, le jour de la reaction et les 5 seances apres."""
     res = {}
     for s in SENS_RESULTATS:
         ligne = {}
         for r in REACTIONS:
             w = [x for x in v if x["sens"] == s and x["reaction"] == r]
-            ligne[r] = {"n": len(w), "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2),
+            ligne[r] = {"n": len(w),
+                        "avant_moyen_pct": arrondi(moyenne([x["avant_pct"] for x in w if "avant_pct" in x]), 2),
+                        "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2),
                         "suite_moyenne_pct": arrondi(moyenne([x["suite_pct"] for x in w if "suite_pct" in x]), 2)}
         n = ligne["hausse"]["n"] + ligne["baisse"]["n"]
         ligne["n"] = n
