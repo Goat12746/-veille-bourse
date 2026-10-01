@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-01T12:32:54+02:00",
+ "genere_le": "2026-10-01T11:19:34+00:00",
  "derniere_seance": "2026-09-30",
  "methode": {
   "indice": "CAC 40",
@@ -13,46 +13,46 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 18,
-  "n_observations": 72,
+  "n_alertes": 21,
+  "n_observations": 75,
   "statuts": {
-   "attente": 2,
-   "note": 15,
+   "attente": 4,
+   "note": 16,
    "confondu": 8,
    "non_directionnel": 7,
    "macro": 40
   },
   "synthese": {
-   "n": 15,
+   "n": 16,
    "points": {
-    "total": 2,
-    "moyenne": 0.13,
+    "total": 3,
+    "moyenne": 0.19,
     "repartition": {
      "2": 1,
-     "1": 3,
+     "1": 4,
      "0": 8,
      "-1": 3,
      "-2": 0
     }
    },
    "sens": {
-    "justes": 4,
+    "justes": 5,
     "faux": 1,
     "bruit": 10,
-    "taux": 0.8,
-    "p": 0.375
+    "taux": 0.833,
+    "p": 0.2188
    },
-   "ecart_moyen_pct": 0.31,
-   "z_moyen": 0.35,
-   "t": 0.92,
-   "p_t": 0.3751,
+   "ecart_moyen_pct": 0.51,
+   "z_moyen": 0.46,
+   "t": 1.23,
+   "p_t": 0.2388,
    "signe": {
-    "positifs": 7,
+    "positifs": 8,
     "p": 1.0
    },
    "rang": {
-    "moyen": 0.52,
-    "p": 0.7905
+    "moyen": 0.548,
+    "p": 0.5032
    },
    "ampleur": {
     "n": 14,
@@ -104,21 +104,21 @@
     "cle": "presse"
    },
    {
-    "n": 2,
+    "n": 3,
     "points_moyen": 1.0,
-    "justes": 2,
+    "justes": 3,
     "faux": 0,
-    "z_moyen": 2.94,
+    "z_moyen": 2.65,
     "cle": "amf"
    }
   ],
   "par_etape": [
    {
-    "n": 5,
-    "points_moyen": 0.6,
-    "justes": 3,
+    "n": 6,
+    "points_moyen": 0.67,
+    "justes": 4,
     "faux": 0,
-    "z_moyen": 1.11,
+    "z_moyen": 1.27,
     "cle": "annonce"
    },
    {
@@ -165,27 +165,81 @@
    },
    {
     "n": 2,
+    "points_moyen": 0.5,
+    "justes": 1,
+    "faux": 0,
+    "z_moyen": 0.93,
+    "cle": "inconnue"
+   },
+   {
+    "n": 2,
     "points_moyen": 0.0,
     "justes": 1,
     "faux": 0,
     "z_moyen": 1.86,
     "cle": "moyenne"
-   },
-   {
-    "n": 1,
-    "points_moyen": 0.0,
-    "justes": 0,
-    "faux": 0,
-    "z_moyen": -0.2,
-    "cle": "inconnue"
    }
   ],
   "probabilites": {
    "n_tranchees": 1,
-   "n_en_cours": 10,
+   "n_en_cours": 12,
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "amf-135658_20261001",
+    "titre": "Vicat en négociations exclusives pour reprendre les activités béton et granulats de Cemex dans le Sud-Est",
+    "date": "2026-10-01",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 0.8,
+    "publie_a": "2026-10-01T13:18",
+    "information": "2026-10-01T08:00",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "VCT.PA",
+      "nom": "Vicat",
+      "sens": "incertain",
+      "ampleur": "inconnue",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-135651_20261001",
+    "titre": "Sanofi élargit son alliance avec Regeneron : 1 Md$ à la signature, jusqu'à 7 Md$ d'étapes",
+    "date": "2026-10-01",
+    "source": "amf",
+    "etape": "publie",
+    "probabilite": 1.0,
+    "publie_a": "2026-10-01T13:18",
+    "information": "2026-10-01T07:00",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "SAN.PA",
+      "nom": "Sanofi",
+      "sens": "incertain",
+      "ampleur": "inconnue",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "amf-083299_20260930",
     "titre": "Engie : négociations avec l'État belge, date cible repoussée au 4 novembre 2026",
@@ -276,6 +330,47 @@
       "points": {
        "sens": 1,
        "ampleur": 0,
+       "total": 1
+      }
+     }
+    ]
+   },
+   {
+    "id": "amf-083290_20260930",
+    "titre": "OPmobility acquiert l'activité éclairage de Hyundai Mobis (valeur d'entreprise ~390 M€)",
+    "date": "2026-09-30",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 0.85,
+    "publie_a": "2026-10-01T13:18",
+    "information": "2026-09-30T08:32",
+    "reaction": {
+     "debut": "2026-09-30",
+     "fin": "2026-09-30",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "OPM.PA",
+      "nom": "OPmobility",
+      "sens": "positif",
+      "ampleur": "inconnue",
+      "rendement_pct": 2.29,
+      "indice_pct": -0.89,
+      "beta": 1.37,
+      "sigma_pct": 1.72,
+      "ecart_pct": 3.55,
+      "z": 2.07,
+      "rang": 0.976,
+      "avant_pct": -0.54,
+      "statut": "note",
+      "niveau": "fort",
+      "points": {
+       "sens": 1,
+       "ampleur": null,
        "total": 1
       }
      }
@@ -1380,10 +1475,10 @@
   "version": 2,
   "depuis": "2019-01-01",
   "jusqu_a": "2026-09-30",
-  "n_communiques": 18382,
+  "n_communiques": 18386,
   "n_evenements": 14767,
   "n_entreprises": 115,
-  "en_attente": 5,
+  "en_attente": 9,
   "jour_ordinaire": {
    "n": 222129,
    "z_abs_moyen": 0.67,
@@ -2287,7 +2382,7 @@
        "n": 702
       },
       {
-       "prevu": 0.804,
+       "prevu": 0.803,
        "observe": 1.0,
        "n": 1
       }
@@ -7977,7 +8072,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.25,
       "p": 0.625,
-      "ecart_moyen_positif_pct": -0.34,
+      "ecart_moyen_positif_pct": -0.33,
       "ecart_moyen_negatif_pct": null,
       "id": "strategie"
      },
@@ -8051,7 +8146,7 @@
        "hausse": {
         "n": 2,
         "ecart_moyen_pct": 4.41,
-        "suite_moyenne_pct": -0.92
+        "suite_moyenne_pct": -0.93
        },
        "baisse": {
         "n": 2,
@@ -8293,7 +8388,7 @@
        "z_avant": -0.79,
        "rendement_pct": 1.56,
        "ecart_pct": 2.19,
-       "z": 2.04,
+       "z": 2.03,
        "suite_pct": 1.83,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -8567,7 +8662,7 @@
        "rendement_pct": 6.53,
        "ecart_pct": 5.49,
        "z": 3.57,
-       "suite_pct": -2.63,
+       "suite_pct": -2.64,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -11362,7 +11457,7 @@
       "concordance": 0.593,
       "p": 0.4421,
       "ecart_moyen_positif_pct": 0.48,
-      "ecart_moyen_negatif_pct": -0.64,
+      "ecart_moyen_negatif_pct": -0.65,
       "id": "resultats"
      },
      {
@@ -21771,7 +21866,7 @@
        "baisse": {
         "n": 8,
         "ecart_moyen_pct": -2.56,
-        "suite_moyenne_pct": 0.32
+        "suite_moyenne_pct": 0.31
        },
        "n": 13,
        "part_hausse": 0.385
@@ -22350,7 +22445,7 @@
        "rentabilite": "+",
        "attentes": "conformes",
        "avant_pct": -2.52,
-       "z_avant": -0.67,
+       "z_avant": -0.68,
        "rendement_pct": 0.0,
        "ecart_pct": -0.03,
        "z": -0.03,
@@ -23202,7 +23297,7 @@
        "z_avant": 1.36,
        "rendement_pct": 3.09,
        "ecart_pct": 1.96,
-       "z": 2.13,
+       "z": 2.14,
        "suite_pct": -0.51,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -23355,7 +23450,7 @@
     "categories": [
      {
       "n": 32,
-      "z_abs_moyen": 2.52,
+      "z_abs_moyen": 2.51,
       "part_net": 0.625,
       "part_fort": 0.438,
       "ecart_abs_median_pct": 2.12,
@@ -23540,7 +23635,7 @@
      },
      "mouvements": {
       "n": 32,
-      "z_abs_moyen": 2.52,
+      "z_abs_moyen": 2.51,
       "part_net": 0.625,
       "part_fort": 0.438,
       "ecart_abs_median_pct": 2.12
@@ -25907,7 +26002,7 @@
     "categories": [
      {
       "n": 4,
-      "z_abs_moyen": 2.18,
+      "z_abs_moyen": 2.17,
       "part_net": 0.75,
       "part_fort": 0.75,
       "ecart_abs_median_pct": 3.73,
@@ -26120,7 +26215,7 @@
       "concordance": 0.586,
       "p": 0.4583,
       "ecart_moyen_positif_pct": 0.84,
-      "ecart_moyen_negatif_pct": 2.11
+      "ecart_moyen_negatif_pct": 2.12
      },
      "mouvements": {
       "n": 30,
@@ -26282,7 +26377,7 @@
        "perspectives": "confirmees",
        "avant_pct": -0.1,
        "z_avant": -0.02,
-       "rendement_pct": 6.88,
+       "rendement_pct": 6.87,
        "ecart_pct": 5.65,
        "z": 5.29,
        "suite_pct": 4.13,
@@ -26749,7 +26844,7 @@
     "nom": "Sanofi",
     "indice": "CAC 40",
     "secteur": "Pharmacie",
-    "n_communiques": 553,
+    "n_communiques": 554,
     "n_evenements": 454,
     "categories": [
      {
@@ -26903,7 +26998,7 @@
       "positif": {
        "hausse": {
         "n": 10,
-        "ecart_moyen_pct": 2.56,
+        "ecart_moyen_pct": 2.55,
         "suite_moyenne_pct": -0.88
        },
        "baisse": {
@@ -26937,7 +27032,7 @@
        "baisse": {
         "n": 2,
         "ecart_moyen_pct": -10.48,
-        "suite_moyenne_pct": 0.47
+        "suite_moyenne_pct": 0.46
        },
        "n": 3,
        "part_hausse": 0.333
@@ -27165,7 +27260,7 @@
        "rendement_pct": -18.93,
        "ecart_pct": -18.61,
        "z": -15.34,
-       "suite_pct": 3.18,
+       "suite_pct": 3.17,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -29792,7 +29887,7 @@
        "avant_pct": -2.07,
        "z_avant": -0.19,
        "rendement_pct": -14.12,
-       "ecart_pct": -14.41,
+       "ecart_pct": -14.42,
        "z": -5.76,
        "suite_pct": -1.26,
        "reaction": "baisse",
@@ -34403,7 +34498,7 @@
      },
      {
       "n": 76,
-      "z_abs_moyen": 0.72,
+      "z_abs_moyen": 0.71,
       "part_net": 0.289,
       "part_fort": 0.013,
       "ecart_abs_median_pct": 0.53,
@@ -34483,7 +34578,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.77,
+      "z_abs_moyen": 0.76,
       "part_net": 0.25,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 0.52,
@@ -36241,7 +36336,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.79,
+      "z_abs_moyen": 0.78,
       "part_net": 0.25,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 0.48,
@@ -37144,7 +37239,7 @@
       "positif": {
        "hausse": {
         "n": 6,
-        "ecart_moyen_pct": 9.6,
+        "ecart_moyen_pct": 9.61,
         "suite_moyenne_pct": 2.51
        },
        "baisse": {
@@ -40725,7 +40820,7 @@
     "categories": [
      {
       "n": 4,
-      "z_abs_moyen": 1.29,
+      "z_abs_moyen": 1.3,
       "part_net": 0.75,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 3.43,
@@ -44257,7 +44352,7 @@
       "negatif": {
        "hausse": {
         "n": 4,
-        "ecart_moyen_pct": 6.65,
+        "ecart_moyen_pct": 6.64,
         "suite_moyenne_pct": -0.32
        },
        "baisse": {
@@ -44291,7 +44386,7 @@
       "concordance": 0.536,
       "p": 0.8506,
       "ecart_moyen_positif_pct": 2.01,
-      "ecart_moyen_negatif_pct": 6.65
+      "ecart_moyen_negatif_pct": 6.64
      },
      "mouvements": {
       "n": 29,
@@ -47368,7 +47463,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.667,
       "p": 0.6875,
-      "ecart_moyen_positif_pct": 0.93,
+      "ecart_moyen_positif_pct": 0.94,
       "ecart_moyen_negatif_pct": null,
       "id": "strategie"
      },
@@ -47433,7 +47528,7 @@
        "baisse": {
         "n": 12,
         "ecart_moyen_pct": -1.89,
-        "suite_moyenne_pct": 0.99
+        "suite_moyenne_pct": 1.0
        },
        "n": 21,
        "part_hausse": 0.429
@@ -49286,10 +49381,34 @@
       "surprises": []
      }
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2026-11-06",
+     "source": "Yahoo Finance",
+     "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -4.1,
-     "z_avant": -0.39
+     "z_avant": -0.39,
+     "tiers": "baisse",
+     "scenarios": {
+      "positif_hausse": 0.42,
+      "positif_baisse": 0.31,
+      "negatif_hausse": 0.08,
+      "negatif_baisse": 0.091,
+      "mitige_hausse": 0.049,
+      "mitige_baisse": 0.051
+     },
+     "probable": "positif_hausse",
+     "p_sens": {
+      "positif": 0.729,
+      "negatif": 0.171,
+      "mitige": 0.099
+     },
+     "p_hausse_si": {
+      "positif": 0.575,
+      "negatif": 0.466,
+      "mitige": 0.49
+     },
+     "p_hausse": 0.548
     }
    },
    {
@@ -50360,7 +50479,7 @@
     "nom": "Arkema",
     "indice": "SBF 120",
     "secteur": "Chimie de spécialités",
-    "n_communiques": 388,
+    "n_communiques": 389,
     "n_evenements": 339,
     "categories": [
      {
@@ -50477,7 +50596,7 @@
      },
      {
       "n": 10,
-      "z_abs_moyen": 0.81,
+      "z_abs_moyen": 0.8,
       "part_net": 0.1,
       "part_fort": 0.1,
       "ecart_abs_median_pct": 0.59,
@@ -51177,10 +51296,34 @@
       ]
      }
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2026-11-05",
+     "source": "Yahoo Finance",
+     "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -3.56,
-     "z_avant": -0.41
+     "z_avant": -0.41,
+     "tiers": "baisse",
+     "scenarios": {
+      "positif_hausse": 0.357,
+      "positif_baisse": 0.139,
+      "negatif_hausse": 0.237,
+      "negatif_baisse": 0.151,
+      "mitige_hausse": 0.074,
+      "mitige_baisse": 0.042
+     },
+     "probable": "positif_hausse",
+     "p_sens": {
+      "positif": 0.496,
+      "negatif": 0.388,
+      "mitige": 0.116
+     },
+     "p_hausse_si": {
+      "positif": 0.72,
+      "negatif": 0.61,
+      "mitige": 0.635
+     },
+     "p_hausse": 0.667
     }
    },
    {
@@ -52767,7 +52910,7 @@
     },
     "prochaine": {
      "date": "2026-10-29",
-     "source": "même période l'an dernier",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -10.61,
@@ -53414,7 +53557,7 @@
        "rentabilite": "+",
        "avant_pct": 9.08,
        "z_avant": 1.63,
-       "rendement_pct": -2.05,
+       "rendement_pct": -2.04,
        "ecart_pct": -2.86,
        "z": -2.18,
        "suite_pct": 4.67,
@@ -55122,7 +55265,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.6,
       "p": 0.5034,
-      "ecart_moyen_positif_pct": 0.49,
+      "ecart_moyen_positif_pct": 0.5,
       "ecart_moyen_negatif_pct": null,
       "id": "financement"
      },
@@ -57899,7 +58042,7 @@
     },
     "prochaine": {
      "date": "2026-11-19",
-     "source": "même période l'an dernier",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -7.61,
@@ -59467,7 +59610,7 @@
        "baisse": {
         "n": 4,
         "ecart_moyen_pct": -7.28,
-        "suite_moyenne_pct": 4.09
+        "suite_moyenne_pct": 4.1
        },
        "n": 9,
        "part_hausse": 0.556
@@ -60084,7 +60227,7 @@
     "nom": "Eurazeo",
     "indice": "SBF 120",
     "secteur": "Investissement",
-    "n_communiques": 277,
+    "n_communiques": 278,
     "n_evenements": 226,
     "categories": [
      {
@@ -60984,7 +61127,7 @@
        "baisse": {
         "n": 2,
         "ecart_moyen_pct": -2.08,
-        "suite_moyenne_pct": 1.09
+        "suite_moyenne_pct": 1.08
        },
        "n": 2,
        "part_hausse": 0.0
@@ -61347,7 +61490,7 @@
        "rendement_pct": -2.1,
        "ecart_pct": -2.37,
        "z": -1.96,
-       "suite_pct": 0.85,
+       "suite_pct": 0.84,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -61751,7 +61894,7 @@
        "baisse": {
         "n": 8,
         "ecart_moyen_pct": -2.33,
-        "suite_moyenne_pct": 1.15
+        "suite_moyenne_pct": 1.16
        },
        "n": 19,
        "part_hausse": 0.579
@@ -64214,7 +64357,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 1.45,
+      "z_abs_moyen": 1.44,
       "part_net": 0.75,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 2.39,
@@ -64224,7 +64367,7 @@
       "baisse_si_negatif": null,
       "concordance": 1.0,
       "p": 0.125,
-      "ecart_moyen_positif_pct": 2.36,
+      "ecart_moyen_positif_pct": 2.37,
       "ecart_moyen_negatif_pct": null,
       "id": "commercial"
      },
@@ -64774,7 +64917,7 @@
        "z_avant": 0.48,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.56,
+       "z": 1.55,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -64906,8 +65049,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-10-30",
-     "source": "même période l'an dernier",
+     "date": "2026-10-29",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -5.61,
@@ -69421,7 +69564,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.667,
       "p": 0.6875,
-      "ecart_moyen_positif_pct": 0.64,
+      "ecart_moyen_positif_pct": 0.63,
       "ecart_moyen_negatif_pct": null,
       "id": "commercial"
      },
@@ -69940,7 +70083,7 @@
        "origine": "claude",
        "activite": "+",
        "rentabilite": "+",
-       "avant_pct": 28.36,
+       "avant_pct": 28.37,
        "z_avant": 2.73,
        "rendement_pct": 1.64,
        "ecart_pct": 1.37,
@@ -70848,7 +70991,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.47,
+      "z_abs_moyen": 0.48,
       "part_net": 0.25,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 0.69,
@@ -72492,7 +72635,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.93,
+      "z_abs_moyen": 0.94,
       "part_net": 0.5,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 1.17,
@@ -73940,7 +74083,7 @@
        },
        "baisse": {
         "n": 4,
-        "ecart_moyen_pct": -3.03,
+        "ecart_moyen_pct": -3.04,
         "suite_moyenne_pct": -3.48
        },
        "n": 7,
@@ -75350,7 +75493,7 @@
     },
     "prochaine": {
      "date": "2026-10-29",
-     "source": "même période l'an dernier",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -6.56,
@@ -76090,7 +76233,7 @@
       "concordance": 0.643,
       "p": 0.1849,
       "ecart_moyen_positif_pct": 0.92,
-      "ecart_moyen_negatif_pct": -2.74,
+      "ecart_moyen_negatif_pct": -2.75,
       "id": "resultats"
      },
      {
@@ -77505,8 +77648,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-10-15",
-     "source": "même période l'an dernier",
+     "date": "2026-10-22",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": 12.46,
@@ -77531,7 +77674,7 @@
       "negatif": 0.558,
       "mitige": 0.469
      },
-     "p_hausse": 0.583
+     "p_hausse": 0.584
     }
    },
    {
@@ -78471,7 +78614,7 @@
       "baisse_si_negatif": 0.5,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": -3.66,
+      "ecart_moyen_positif_pct": -3.65,
       "ecart_moyen_negatif_pct": -2.6,
       "id": "resultats"
      },
@@ -79307,7 +79450,7 @@
     },
     "prochaine": {
      "date": "2026-11-05",
-     "source": "même période l'an dernier",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -6.68,
@@ -79873,7 +80016,7 @@
        "avant_pct": 6.22,
        "z_avant": 1.02,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.59,
+       "ecart_pct": 7.6,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -80230,7 +80373,7 @@
       "z_abs_moyen": 0.42,
       "part_net": 0.143,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 0.34,
+      "ecart_abs_median_pct": 0.35,
       "n_positif": 12,
       "n_negatif": 0,
       "hausse_si_positif": 0.5,
@@ -80361,7 +80504,7 @@
        "hausse": {
         "n": 14,
         "ecart_moyen_pct": 3.89,
-        "suite_moyenne_pct": -0.8
+        "suite_moyenne_pct": -0.81
        },
        "baisse": {
         "n": 10,
@@ -80996,8 +81139,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-10-22",
-     "source": "même période l'an dernier",
+     "date": "2026-10-23",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -2.57,
@@ -81232,7 +81375,7 @@
       "concordance": 0.528,
       "p": 0.8679,
       "ecart_moyen_positif_pct": 0.9,
-      "ecart_moyen_negatif_pct": -1.65
+      "ecart_moyen_negatif_pct": -1.64
      },
      "mouvements": {
       "n": 37,
@@ -81969,7 +82112,7 @@
     },
     "prochaine": {
      "date": "2026-11-18",
-     "source": "même période l'an dernier",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": 30.04,
@@ -82168,10 +82311,34 @@
       ]
      }
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2026-11-04",
+     "source": "Yahoo Finance",
+     "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -2.64,
-     "z_avant": -0.4
+     "z_avant": -0.4,
+     "tiers": "baisse",
+     "scenarios": {
+      "positif_hausse": 0.42,
+      "positif_baisse": 0.31,
+      "negatif_hausse": 0.08,
+      "negatif_baisse": 0.092,
+      "mitige_hausse": 0.049,
+      "mitige_baisse": 0.051
+     },
+     "probable": "positif_hausse",
+     "p_sens": {
+      "positif": 0.729,
+      "negatif": 0.171,
+      "mitige": 0.099
+     },
+     "p_hausse_si": {
+      "positif": 0.575,
+      "negatif": 0.466,
+      "mitige": 0.491
+     },
+     "p_hausse": 0.548
     }
    },
    {
@@ -82312,7 +82479,7 @@
      },
      {
       "n": 12,
-      "z_abs_moyen": 0.76,
+      "z_abs_moyen": 0.75,
       "part_net": 0.167,
       "part_fort": 0.083,
       "ecart_abs_median_pct": 1.42,
@@ -82378,7 +82545,7 @@
        "hausse": {
         "n": 4,
         "ecart_moyen_pct": 7.7,
-        "suite_moyenne_pct": 2.14
+        "suite_moyenne_pct": 2.13
        },
        "baisse": {
         "n": 1,
@@ -83796,7 +83963,7 @@
     },
     "prochaine": {
      "date": "2026-10-29",
-     "source": "même période l'an dernier",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": 0.8,
@@ -83981,7 +84148,7 @@
       "negatif": {
        "hausse": {
         "n": 4,
-        "ecart_moyen_pct": 5.26,
+        "ecart_moyen_pct": 5.27,
         "suite_moyenne_pct": 2.49
        },
        "baisse": {
@@ -84603,10 +84770,34 @@
       "surprises": []
      }
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2026-10-29",
+     "source": "Yahoo Finance",
+     "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -9.88,
-     "z_avant": -1.78
+     "z_avant": -1.78,
+     "tiers": "baisse",
+     "scenarios": {
+      "positif_hausse": 0.402,
+      "positif_baisse": 0.22,
+      "negatif_hausse": 0.12,
+      "negatif_baisse": 0.131,
+      "mitige_hausse": 0.077,
+      "mitige_baisse": 0.051
+     },
+     "probable": "positif_hausse",
+     "p_sens": {
+      "positif": 0.622,
+      "negatif": 0.251,
+      "mitige": 0.128
+     },
+     "p_hausse_si": {
+      "positif": 0.647,
+      "negatif": 0.477,
+      "mitige": 0.6
+     },
+     "p_hausse": 0.598
     }
    },
    {
@@ -85470,8 +85661,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-11-26",
-     "source": "même période l'an dernier",
+     "date": "2026-11-23",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -9.52,
@@ -86329,8 +86520,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-11-20",
-     "source": "même période l'an dernier",
+     "date": "2026-11-19",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": 9.61,
@@ -87045,7 +87236,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.23,
+       "suite_pct": -0.22,
        "reaction": "baisse",
        "courtes_pct": 6.25
       },
@@ -87975,8 +88166,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-11-13",
-     "source": "même période l'an dernier",
+     "date": "2026-11-20",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -1.31,
@@ -89691,8 +89882,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-10-22",
-     "source": "même période l'an dernier",
+     "date": "2026-10-27",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -5.55,
@@ -89725,7 +89916,7 @@
     "nom": "Vicat",
     "indice": "SBF 120",
     "secteur": "Ciment",
-    "n_communiques": 64,
+    "n_communiques": 65,
     "n_evenements": 52,
     "categories": [
      {
@@ -90571,7 +90762,7 @@
      },
      {
       "n": 10,
-      "z_abs_moyen": 1.02,
+      "z_abs_moyen": 1.03,
       "part_net": 0.6,
       "part_fort": 0.1,
       "ecart_abs_median_pct": 2.16,
@@ -90581,7 +90772,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": 0.58,
+      "ecart_moyen_positif_pct": 0.57,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -91927,8 +92118,8 @@
      }
     },
     "prochaine": {
-     "date": "2026-10-30",
-     "source": "même période l'an dernier",
+     "date": "2026-11-03",
+     "source": "Yahoo Finance",
      "estimee": true,
      "au": "2026-09-30",
      "avant_pct": -7.72,
@@ -95360,17 +95551,6 @@
     "avant_pct": 1.25
    },
    {
-    "ticker": "DIM.PA",
-    "nom": "Sartorius Stedim Biotech",
-    "date": "2026-10-15",
-    "estimee": true,
-    "probable": "positif_hausse",
-    "p_probable": 0.489,
-    "p_hausse": 0.583,
-    "z_avant": 1.2,
-    "avant_pct": 12.46
-   },
-   {
     "ticker": "EL.PA",
     "nom": "EssilorLuxottica",
     "date": "2026-10-16",
@@ -95635,15 +95815,15 @@
     "avant_pct": -1.44
    },
    {
-    "ticker": "SW.PA",
-    "nom": "Sodexo",
+    "ticker": "DIM.PA",
+    "nom": "Sartorius Stedim Biotech",
     "date": "2026-10-22",
     "estimee": true,
     "probable": "positif_hausse",
-    "p_probable": 0.461,
-    "p_hausse": 0.551,
-    "z_avant": -0.34,
-    "avant_pct": -2.57
+    "p_probable": 0.489,
+    "p_hausse": 0.584,
+    "z_avant": 1.2,
+    "avant_pct": 12.46
    },
    {
     "ticker": "HO.PA",
@@ -95655,17 +95835,6 @@
     "p_hausse": 0.395,
     "z_avant": -0.44,
     "avant_pct": -3.73
-   },
-   {
-    "ticker": "VRLA.PA",
-    "nom": "Verallia",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "positif_hausse",
-    "p_probable": 0.32,
-    "p_hausse": 0.494,
-    "z_avant": -0.73,
-    "avant_pct": -5.55
    },
    {
     "ticker": "AC.PA",
@@ -95743,6 +95912,17 @@
     "p_hausse": 0.593,
     "z_avant": 1.18,
     "avant_pct": 7.73
+   },
+   {
+    "ticker": "SW.PA",
+    "nom": "Sodexo",
+    "date": "2026-10-23",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.461,
+    "p_hausse": 0.551,
+    "z_avant": -0.34,
+    "avant_pct": -2.57
    },
    {
     "ticker": "URW.PA",
@@ -95831,6 +96011,17 @@
     "p_hausse": 0.591,
     "z_avant": -2.1,
     "avant_pct": -13.5
+   },
+   {
+    "ticker": "VRLA.PA",
+    "nom": "Verallia",
+    "date": "2026-10-27",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.32,
+    "p_hausse": 0.494,
+    "z_avant": -0.73,
+    "avant_pct": -5.55
    },
    {
     "ticker": "AIR.PA",
@@ -95943,6 +96134,17 @@
     "avant_pct": 3.29
    },
    {
+    "ticker": "NK.PA",
+    "nom": "Imerys",
+    "date": "2026-10-29",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.298,
+    "p_hausse": 0.528,
+    "z_avant": -0.73,
+    "avant_pct": -5.61
+   },
+   {
     "ticker": "PLX.PA",
     "nom": "Pluxee",
     "date": "2026-10-29",
@@ -95985,6 +96187,17 @@
     "p_hausse": 0.552,
     "z_avant": 0.07,
     "avant_pct": 0.52
+   },
+   {
+    "ticker": "TFI.PA",
+    "nom": "TF1",
+    "date": "2026-10-29",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.402,
+    "p_hausse": 0.598,
+    "z_avant": -1.78,
+    "avant_pct": -9.88
    },
    {
     "ticker": "TE.PA",
@@ -96042,17 +96255,6 @@
     "avant_pct": -6.01
    },
    {
-    "ticker": "NK.PA",
-    "nom": "Imerys",
-    "date": "2026-10-30",
-    "estimee": true,
-    "probable": "positif_hausse",
-    "p_probable": 0.298,
-    "p_hausse": 0.528,
-    "z_avant": -0.73,
-    "avant_pct": -5.61
-   },
-   {
     "ticker": "SCR.PA",
     "nom": "SCOR",
     "date": "2026-10-30",
@@ -96097,17 +96299,6 @@
     "avant_pct": -3.47
    },
    {
-    "ticker": "VIRI.PA",
-    "nom": "Viridien",
-    "date": "2026-10-30",
-    "estimee": true,
-    "probable": "positif_hausse",
-    "p_probable": 0.38,
-    "p_hausse": 0.5,
-    "z_avant": -0.4,
-    "avant_pct": -7.72
-   },
-   {
     "ticker": "COFA.PA",
     "nom": "Coface",
     "date": "2026-11-02",
@@ -96141,6 +96332,17 @@
     "avant_pct": -0.21
    },
    {
+    "ticker": "VIRI.PA",
+    "nom": "Viridien",
+    "date": "2026-11-03",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.38,
+    "p_hausse": 0.5,
+    "z_avant": -0.4,
+    "avant_pct": -7.72
+   },
+   {
     "ticker": "RUI.PA",
     "nom": "Rubis",
     "date": "2026-11-04",
@@ -96150,6 +96352,17 @@
     "p_hausse": 0.591,
     "z_avant": 0.61,
     "avant_pct": 3.5
+   },
+   {
+    "ticker": "SOLB.BR",
+    "nom": "Solvay",
+    "date": "2026-11-04",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.42,
+    "p_hausse": 0.548,
+    "z_avant": -0.4,
+    "avant_pct": -2.64
    },
    {
     "ticker": "BIM.PA",
@@ -96183,6 +96396,17 @@
     "p_hausse": 0.547,
     "z_avant": -0.6,
     "avant_pct": -5.49
+   },
+   {
+    "ticker": "AKE.PA",
+    "nom": "Arkema",
+    "date": "2026-11-05",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.357,
+    "p_hausse": 0.667,
+    "z_avant": -0.41,
+    "avant_pct": -3.56
    },
    {
     "ticker": "EN.PA",
@@ -96273,6 +96497,17 @@
     "avant_pct": -1.85
    },
    {
+    "ticker": "APAM.AS",
+    "nom": "Aperam",
+    "date": "2026-11-06",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.42,
+    "p_hausse": 0.548,
+    "z_avant": -0.39,
+    "avant_pct": -4.1
+   },
+   {
     "ticker": "DEC.PA",
     "nom": "JCDecaux",
     "date": "2026-11-06",
@@ -96293,17 +96528,6 @@
     "p_hausse": 0.566,
     "z_avant": -0.6,
     "avant_pct": -3.11
-   },
-   {
-    "ticker": "VK.PA",
-    "nom": "Vallourec",
-    "date": "2026-11-13",
-    "estimee": true,
-    "probable": "positif_hausse",
-    "p_probable": 0.298,
-    "p_hausse": 0.522,
-    "z_avant": -0.14,
-    "avant_pct": -1.31
    },
    {
     "ticker": "ALO.PA",
@@ -96339,6 +96563,17 @@
     "avant_pct": -7.61
    },
    {
+    "ticker": "UBI.PA",
+    "nom": "Ubisoft",
+    "date": "2026-11-19",
+    "estimee": true,
+    "probable": "negatif_hausse",
+    "p_probable": 0.335,
+    "p_hausse": 0.606,
+    "z_avant": 0.47,
+    "avant_pct": 9.61
+   },
+   {
     "ticker": "VLA.PA",
     "nom": "Valneva",
     "date": "2026-11-19",
@@ -96350,15 +96585,26 @@
     "avant_pct": -4.22
    },
    {
-    "ticker": "UBI.PA",
-    "nom": "Ubisoft",
+    "ticker": "VK.PA",
+    "nom": "Vallourec",
     "date": "2026-11-20",
     "estimee": true,
-    "probable": "negatif_hausse",
-    "p_probable": 0.335,
-    "p_hausse": 0.606,
-    "z_avant": 0.47,
-    "avant_pct": 9.61
+    "probable": "positif_hausse",
+    "p_probable": 0.298,
+    "p_hausse": 0.522,
+    "z_avant": -0.14,
+    "avant_pct": -1.31
+   },
+   {
+    "ticker": "TRI.PA",
+    "nom": "Trigano",
+    "date": "2026-11-23",
+    "estimee": true,
+    "probable": "positif_hausse",
+    "p_probable": 0.391,
+    "p_hausse": 0.558,
+    "z_avant": -1.18,
+    "avant_pct": -9.52
    },
    {
     "ticker": "RCO.PA",
@@ -96370,17 +96616,6 @@
     "p_hausse": 0.461,
     "z_avant": 0.29,
     "avant_pct": 2.74
-   },
-   {
-    "ticker": "TRI.PA",
-    "nom": "Trigano",
-    "date": "2026-11-26",
-    "estimee": true,
-    "probable": "positif_hausse",
-    "p_probable": 0.391,
-    "p_hausse": 0.558,
-    "z_avant": -1.18,
-    "avant_pct": -9.52
    }
   ],
   "apres_cloture": {

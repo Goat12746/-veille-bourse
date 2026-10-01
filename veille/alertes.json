@@ -1,16 +1,16 @@
 {
  "version": 1,
- "genere_le": "2026-10-01T05:10:48+00:00",
+ "genere_le": "2026-10-01T11:18:03+00:00",
  "sources": {
   "amf": {
    "ok": true,
    "trouves": 14,
-   "nouveaux": 0
+   "nouveaux": 8
   },
   "presse": {
    "ok": true,
-   "trouves": 102,
-   "nouveaux": 27
+   "trouves": 67,
+   "nouveaux": 37
   },
   "assemblee": {
    "ok": true,
@@ -23,10 +23,112 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 31
+   "trouves": 52
   }
  },
  "alertes": [
+  {
+   "id": "amf-135651_20261001",
+   "date": "2026-10-01",
+   "source": "amf",
+   "titre": "Sanofi élargit son alliance avec Regeneron : 1 Md$ à la signature, jusqu'à 7 Md$ d'étapes",
+   "resume": "Sanofi verse 1 Md$ à Regeneron, avec jusqu'à 7 Md$ de paiements d'étapes, pour co-développer quatre anticorps immunologiques à action prolongée (IL-13, IL-4xIL-13, IL-4, IL-4Rα) ; coûts et bénéfices partagés à parts égales. L'anti-IL-13 est en phase 1, les trois autres entrent en clinique en 2027. Conférence investisseurs à 14 h.",
+   "nouveaute": "Nouvel accord chiffré avec Regeneron : 1 Md$ immédiat et jusqu'à 7 Md$ d'étapes pour de nouveaux anticorps de relais du Dupixent.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135651_20261001.pdf",
+   "etape": "publie",
+   "probabilite": 1.0,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SAN.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Sortie de trésorerie de 1 Md$ immédiate et engagement potentiel de 7 Md$ de plus, contre des candidats à un stade précoce (phase 1 ou préclinique) qui prolongent l'alliance Dupixent.",
+     "extrait": "Regeneron recevra un paiement initial d'un milliard de dollars de la part de Sanofi, avec un potentiel de paiements d'étapes liés au développement, aux autorisations réglementaires et à la commercialisation, pouvant atteindre 7 milliards de dollars additionnels.",
+     "nom": "Sanofi"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Sanofi : Communiqué de presse : Sanofi et Regeneron élargissent leur Alliance mondiale avec plusieurs anticorps immunologiques de nouvelle génération à action prolongée",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135651_20261001.pdf",
+     "date": "2026-10-01",
+     "publie_le": "2026-10-01T05:00:00+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-01",
+   "publie_a": "2026-10-01T11:18:03+00:00"
+  },
+  {
+   "id": "amf-135658_20261001",
+   "date": "2026-10-01",
+   "source": "amf",
+   "titre": "Vicat en négociations exclusives pour reprendre les activités béton et granulats de Cemex dans le Sud-Est",
+   "resume": "Vicat vise 48 centrales à béton et 9 carrières de Cemex (vallée du Rhône, PACA) ; finalisation attendue avant le 31 décembre 2026, sous contrôle de la concurrence. Prix non communiqué ; nouvel objectif de levier de 1,3x à 1,5x sur 2026-2027 (1,5x fin 2025).",
+   "nouveaute": "Première annonce du projet d'acquisition et du nouvel objectif de levier ; prix non publié.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135658_20261001.pdf",
+   "etape": "annonce",
+   "probabilite": 0.8,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "VCT.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Acquisition qui renforce le maillage régional et les synergies avec le ciment, mais prix non divulgué et levier financier désormais visé entre 1,3x et 1,5x.",
+     "extrait": "Le Groupe se fixe un nouvel objectif de levier financier compris entre 1,3x et 1,5x sur la période 2026-2027.",
+     "nom": "Vicat"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Vicat : Vicat - Projet d’acquisition par le groupe Vicat des filiales de béton prêt à l’emploi et granulats du groupe Cemex dans le Sud-Est de la France",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135658_20261001.pdf",
+     "date": "2026-10-01",
+     "publie_le": "2026-10-01T06:00:00+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-01",
+   "publie_a": "2026-10-01T11:18:03+00:00"
+  },
+  {
+   "id": "amf-083290_20260930",
+   "date": "2026-09-30",
+   "source": "amf",
+   "titre": "OPmobility acquiert l'activité éclairage de Hyundai Mobis (valeur d'entreprise ~390 M€)",
+   "resume": "Accord pour 100 % de l'éclairage de Hyundai Mobis : valeur d'entreprise de 600 Md de wons (~390 M€), chiffre d'affaires 2025 de 2 500 Md de wons (~1,6 Md€), marge opérationnelle positive, cinq usines. Finalisation visée au second semestre 2027 sous autorisations ; impact non significatif sur le désendettement.",
+   "nouveaute": "Accord signé avec prix et chiffre d'affaires de l'activité acquise, qui n'étaient pas connus.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083290_20260930.pdf",
+   "etape": "annonce",
+   "probabilite": 0.85,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "OPM.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Apport d'environ 1,6 Md€ de chiffre d'affaires (contre 11,5 Md€ pour le groupe) pour environ 0,24 fois le chiffre d'affaires, avec un partenariat approfondi avec Hyundai et Kia.",
+     "extrait": "L'activité éclairage de Hyundai Mobis a réalisé un chiffre d'affaires de 2 500 milliards de wons sud-coréens en 2025, avec une marge opérationnelle positive.",
+     "nom": "OPmobility"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "OPmobility : OPmobility signe un accord pour acquérir l'activité éclairage de Hyundai Mobis",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083290_20260930.pdf",
+     "date": "2026-09-30",
+     "publie_le": "2026-09-30T06:32:39+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-01",
+   "publie_a": "2026-10-01T11:18:03+00:00"
+  },
   {
    "id": "amf-083299_20260930",
    "date": "2026-09-30",
@@ -1460,6 +1562,42 @@
    "fiable": true
   },
   {
+   "date": "2026-10-22",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Sartorius Stedim Biotech : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "DIM.PA"
+   ],
+   "tickers_mots_cles": [
+    "DIM.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/DIM.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-23",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Sodexo : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "SW.PA"
+   ],
+   "tickers_mots_cles": [
+    "SW.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SW.PA",
+   "fiable": false
+  },
+  {
    "date": "2026-10-27",
    "heure": "",
    "type": "resultats",
@@ -1475,6 +1613,24 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ORA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-27",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Verallia : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "VRLA.PA"
+   ],
+   "tickers_mots_cles": [
+    "VRLA.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/VRLA.PA",
    "fiable": false
   },
   {
@@ -1622,6 +1778,96 @@
    "fiable": false
   },
   {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Ayvens : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "AYV.PA"
+   ],
+   "tickers_mots_cles": [
+    "AYV.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/AYV.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Imerys : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "NK.PA"
+   ],
+   "tickers_mots_cles": [
+    "NK.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/NK.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Pluxee : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "PLX.PA"
+   ],
+   "tickers_mots_cles": [
+    "PLX.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/PLX.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Technip Energies : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "TE.PA"
+   ],
+   "tickers_mots_cles": [
+    "TE.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/TE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-10-29",
+   "heure": "",
+   "type": "resultats",
+   "titre": "TF1 : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "TFI.PA"
+   ],
+   "tickers_mots_cles": [
+    "TFI.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/TFI.PA",
+   "fiable": false
+  },
+  {
    "date": "2026-10-30",
    "heure": "",
    "type": "resultats",
@@ -1691,6 +1937,42 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COFA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-03",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Viridien : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "VIRI.PA"
+   ],
+   "tickers_mots_cles": [
+    "VIRI.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/VIRI.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-04",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Solvay : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "SOLB.BR"
+   ],
+   "tickers_mots_cles": [
+    "SOLB.BR"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SOLB.BR",
    "fiable": false
   },
   {
@@ -1802,6 +2084,60 @@
    "fiable": false
   },
   {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Arkema : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "AKE.PA"
+   ],
+   "tickers_mots_cles": [
+    "AKE.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/AKE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-05",
+   "heure": "",
+   "type": "resultats",
+   "titre": "SES S.A. : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "SESG.PA"
+   ],
+   "tickers_mots_cles": [
+    "SESG.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SESG.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-06",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Aperam : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "APAM.AS"
+   ],
+   "tickers_mots_cles": [
+    "APAM.AS"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/APAM.AS",
+   "fiable": false
+  },
+  {
    "date": "2026-11-12",
    "heure": "",
    "type": "dividende",
@@ -1838,6 +2174,24 @@
    "fiable": false
   },
   {
+   "date": "2026-11-13",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Aperam : détachement du dividende",
+   "tickers": [
+    "APAM.AS"
+   ],
+   "tickers_mots_cles": [
+    "APAM.AS"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/APAM.AS",
+   "fiable": false
+  },
+  {
    "date": "2026-11-17",
    "heure": "",
    "type": "resultats",
@@ -1853,6 +2207,114 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ALO.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-17",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Wendel : détachement du dividende",
+   "tickers": [
+    "MF.PA"
+   ],
+   "tickers_mots_cles": [
+    "MF.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/MF.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-18",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Soitec : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "SOI.PA"
+   ],
+   "tickers_mots_cles": [
+    "SOI.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SOI.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-19",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Elior : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "ELIOR.PA"
+   ],
+   "tickers_mots_cles": [
+    "ELIOR.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ELIOR.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-19",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Ubisoft : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "UBI.PA"
+   ],
+   "tickers_mots_cles": [
+    "UBI.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/UBI.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-20",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Vallourec : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "VK.PA"
+   ],
+   "tickers_mots_cles": [
+    "VK.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/VK.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-11-23",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Trigano : publication de résultats (date Yahoo, à confirmer)",
+   "tickers": [
+    "TRI.PA"
+   ],
+   "tickers_mots_cles": [
+    "TRI.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/TRI.PA",
    "fiable": false
   },
   {
@@ -1925,6 +2387,24 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ORA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-08",
+   "heure": "",
+   "type": "dividende",
+   "titre": "GTT (Gaztransport & Technigaz) : détachement du dividende",
+   "tickers": [
+    "GTT.PA"
+   ],
+   "tickers_mots_cles": [
+    "GTT.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/GTT.PA",
    "fiable": false
   },
   {
