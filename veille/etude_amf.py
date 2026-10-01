@@ -244,9 +244,22 @@ def attentes_marche(avec_sens, consensus):
     }
 
 
-def marche_actuel(ticker, positions, consensus, aujourd_hui):
-    """Attentes du marche aujourd'hui pour une entreprise (fiche)."""
+def marche_actuel(ticker, positions, consensus, aujourd_hui, publications=()):
+    """Attentes du marche aujourd'hui pour une entreprise (fiche), et son
+    habitude face au consensus : ecart moyen de son BPA publie (tous les
+    trimestres connus, mediane : un BPA attendu proche de zero donne des
+    ecarts en % extremes) et nombre de publications au-dessus, conformes ou en
+    dessous du consensus."""
     res = {}
+    jugees = [x for x in publications if x.get("surprise")]
+    bpa = [s["surprise_pct"] for s in (consensus.get(ticker) or {}).get("surprises", [])
+           if s.get("surprise_pct") is not None]
+    if jugees or bpa:
+        res["habitude"] = {"n": len(jugees),
+                           "n_positive": sum(1 for x in jugees if x["surprise"] == "positive"),
+                           "n_conforme": sum(1 for x in jugees if x["surprise"] == "conforme"),
+                           "n_negative": sum(1 for x in jugees if x["surprise"] == "negative"),
+                           "n_bpa": len(bpa), "bpa_mediane_pct": arrondi(mediane(bpa), 1) if bpa else None}
     if positions is not None:
         pts = (positions.get(ticker) or {}).get("points")
         total, n = positions_mod.niveau(pts, "9999-12-31")
@@ -731,7 +744,7 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
             "resultats": {"n": len(r), "matrice": matrice(rs), "concordance": sens_reaction(rs),
                           "mouvements": mouvements(r),
                           "evenements": [_evenement_public(x) for x in r]},
-            "marche": marche_actuel(e["ticker"], positions, consensus, aujourd_hui),
+            "marche": marche_actuel(e["ticker"], positions, consensus, aujourd_hui, r),
         }
         serie = series.get(e["ticker"])
         prochaine = dates.get(e["ticker"])
