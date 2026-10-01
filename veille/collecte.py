@@ -209,30 +209,39 @@ def source_amf(a, depuis):
                    "url_de_recuperation,informationdeposee_inf_lng_inf"),
         "limit": 100,
     }
-    candidats, offset = [], 0
+    lignes, offset = [], 0
     while True:
         params["offset"] = offset
         d = json.loads(http_get(AMF_API + "?" + urllib.parse.urlencode(params)))
         res = d.get("results", [])
-        for r in res:
-            sous_type = r.get("sous_type_d_information") or ""
-            if sous_type in AMF_EXCLUS:
-                continue
-            # Le meme communique est souvent depose en francais et en anglais.
-            if (r.get("informationdeposee_inf_lng_inf") or "").lower().startswith("angl"):
-                continue
-            e = a.par_isin.get(r["identificationsociete_iso_cd_isi"])
-            if e is None:
-                continue
-            titre = r.get("informationdeposee_inf_tit_inf") or sous_type
-            candidats.append(a.candidat(
-                "amf-" + r["uin_idt_uin"], "amf", r["informationdeposee_inf_dat_emt"][:10],
-                f"{e['nom']} : {titre}", f"{sous_type}. {titre}", r.get("url_de_recuperation") or "",
-                {"type": r.get("type_d_information"), "sous_type": sous_type, "heure": r["informationdeposee_inf_dat_emt"]},
-                themes=[], tickers=[e["ticker"]], publie_le=r["informationdeposee_inf_dat_emt"]))
+        lignes += res
         offset += len(res)
         if not res or offset >= d.get("total_count", 0):
             break
+    # Le meme communique est souvent depose en francais et en anglais : la
+    # version anglaise n'est gardee que si la societe n'a rien depose en
+    # francais ce jour-la (quelques societes ne publient qu'en anglais).
+    anglais = lambda r: (r.get("informationdeposee_inf_lng_inf") or "").lower().startswith("angl")  # noqa: E731
+    jour_fr = {(r["identificationsociete_iso_cd_isi"], r["informationdeposee_inf_dat_emt"][:10])
+               for r in lignes if not anglais(r)}
+    candidats = []
+    for r in lignes:
+        sous_type = r.get("sous_type_d_information") or ""
+        if sous_type in AMF_EXCLUS:
+            continue
+        jour = r["informationdeposee_inf_dat_emt"][:10]
+        if anglais(r) and (r["identificationsociete_iso_cd_isi"], jour) in jour_fr:
+            continue
+        e = a.par_isin.get(r["identificationsociete_iso_cd_isi"])
+        if e is None:
+            continue
+        titre = r.get("informationdeposee_inf_tit_inf") or sous_type
+        candidats.append(a.candidat(
+            "amf-" + r["uin_idt_uin"], "amf", r["informationdeposee_inf_dat_emt"][:10],
+            f"{e['nom']} : {titre}", f"{sous_type}. {titre}", r.get("url_de_recuperation") or "",
+            {"type": r.get("type_d_information"), "sous_type": sous_type,
+             "heure": r["informationdeposee_inf_dat_emt"]},
+            themes=[], tickers=[e["ticker"]], publie_le=r["informationdeposee_inf_dat_emt"]))
     return candidats
 
 

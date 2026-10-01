@@ -44,6 +44,7 @@ statistiques.json à l'adresse configurée
 | `communiques.py` | Communiqués AMF du CAC 40 et du SBF 120 depuis 2019 (`communiques.json`) ; avis de Claude sur les publications de résultats (`resultats_classes.json`). |
 | `etude_amf.py` | Étude de la réaction des cours aux communiqués : scénarios des résultats, facteurs, prévision (appelée par `statistiques.py`). |
 | `consensus.py` | Relevé quotidien du consensus des analystes (Yahoo) : BPA et chiffre d'affaires attendus, révisions, surprises (`consensus.json`, historique gratuit limité à 90 jours et 4 trimestres, puis construit jour après jour). |
+| `avant_ouverture.py` | Résultats publiés depuis la dernière clôture : part de hausse historique selon le consensus, les perspectives et le sens des résultats, pour les alertes de résultats de la veille du matin (avant 9 h). |
 | `positions.py` | Ventes à découvert déclarées à l'AMF depuis 2012 (data.gouv.fr) : part du capital par entreprise et par jour (`positions_courtes.json`). |
 
 ## Statistiques

@@ -14,14 +14,7 @@ Tout se passe dans le dossier `veille/` du dépôt.
 1. **Collecte** : `python collecte.py --jours 3`
    - Produit `sortie/candidats.json`. Si une source est en erreur (`sources`),
      continue avec les autres et signale-le dans ton compte rendu.
-2. **Analyse** : lis `sortie/candidats.json` et écris `sortie/analyse.json`
-   (format ci-dessous). **Chaque candidat doit être soit publié (dans
-   `alertes`, comme `id` ou dans `ids_lies`), soit écarté (`ecartes`).**
-3. **Publication** : `python fusionner.py`
-   - Il valide ton analyse, met à jour `alertes.json`, `etat.json` et
-     l'archive `historique.json`.
-   - En cas d'erreur de validation, corrige `sortie/analyse.json` et relance.
-4. **Attentes du marché et communiqués AMF** : `python consensus.py`,
+2. **Attentes du marché et communiqués AMF** : `python consensus.py`,
    `python positions.py`, `python communiques.py` puis
    `python communiques.py --a-classer`
    - `consensus.py` relève le consensus des analystes (Yahoo) et
@@ -38,18 +31,57 @@ Tout se passe dans le dossier `veille/` du dépôt.
      `python communiques.py --integrer sortie/avis_resultats.json`.
    - Relance `--a-classer` : il doit afficher 0 publication (un avis « autre »
      sur un document joint peut faire apparaître le vrai communiqué du jour).
-5. **Statistiques** : `python statistiques.py`
+3. **Résultats depuis la dernière clôture** : `python avant_ouverture.py`
+   - Pour chaque publication de résultats jugée depuis la dernière clôture
+     (17 h 35) : la part de hausse historique selon l'écart au consensus, les
+     perspectives et le sens des résultats, l'historique propre à l'entreprise
+     et une suggestion de sens et d'ampleur (`sortie/avant_ouverture.json`).
+     Sert à l'étape suivante (« Alertes de résultats » plus bas). Pendant la
+     séance (veille de 13 h 12), il ne liste rien : la réaction a déjà commencé.
+4. **Analyse** : lis `sortie/candidats.json` et écris `sortie/analyse.json`
+   (format ci-dessous). **Chaque candidat doit être soit publié (dans
+   `alertes`, comme `id` ou dans `ids_lies`), soit écarté (`ecartes`).**
+5. **Publication** : `python fusionner.py`
+   - Il valide ton analyse, met à jour `alertes.json`, `etat.json` et
+     l'archive `historique.json`.
+   - En cas d'erreur de validation, corrige `sortie/analyse.json` et relance.
+6. **Statistiques** : `python statistiques.py`
    - Mesure la réaction des cours aux alertes (clôtures de la veille comprises)
      et aux communiqués AMF, et écrit `statistiques.json` (onglet Statistiques
      de l'application).
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
-6. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
+7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json` et `positions_courtes.json` uniquement, message : `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans
-   le commit).
-7. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
-   importantes, sources en erreur, publications de résultats jugées, et la
-   ligne de résultat de `statistiques.py` (points, sens juste).
+   `consensus.json` et `positions_courtes.json` uniquement, message :
+   `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
+8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
+   importantes, sources en erreur, publications de résultats jugées (et
+   alertes de résultats publiées), et la ligne de résultat de
+   `statistiques.py` (points, sens juste).
+
+## Alertes de résultats (avant l'ouverture)
+
+La veille du matin passe avant l'ouverture de la Bourse (9 h) : c'est le
+moment d'alerter sur les résultats publiés la veille au soir ou le matin même,
+avant que le cours ne réagisse.
+
+- Pour chaque publication de `sortie/avant_ouverture.json` qui a un
+  `candidat` (candidat de la collecte à qui rattacher l'alerte), publie une
+  alerte si la
+  suggestion est `positif` ou `negatif`, ou si l'historique propre à
+  l'entreprise est net (au moins 8 publications du même sens avec 70 % ou plus
+  de hausse, ou 30 % ou moins). Sinon, écarte le candidat comme les autres.
+- L'alerte : `id` = le `candidat`, `etape` = `information`,
+  `probabilite` = 1 ; titre factuel (« Legrand : chiffre d'affaires au-dessus
+  du consensus, objectifs relevés ») ; une seule entreprise, avec le `sens` et
+  l'`ampleur` suggérés (tu peux les corriger si le communiqué le justifie :
+  avertissement massif, dépréciation exceptionnelle…) ; la `justification`
+  cite la référence historique (« objectifs relevés : hausse dans 69 % des
+  354 cas depuis 2019 ») et l'historique de l'entreprise s'il existe ; l'
+  `extrait` cite la phrase clé du communiqué (chiffre ou objectif).
+- Ce sont des probabilités, pas des certitudes : jamais « l'action va
+  monter ». Ces alertes sont notées comme les autres (statistiques.py) : on
+  saura si elles annoncent bien la réaction.
 
 ## Règles d'analyse
 
@@ -183,7 +215,7 @@ ne peut pas la vérifier.
 **En cas de doute** sur le sens ou l'ampleur : `incertain` / `inconnue` plutôt
 qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
 
-## Publications de résultats (étape 4)
+## Publications de résultats (étape 2)
 
 Chaque entrée de `sortie/resultats_a_classer.json` donne le titre et un
 extrait du communiqué (chiffres clés, perspectives). Ton avis :
