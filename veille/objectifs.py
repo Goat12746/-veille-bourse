@@ -13,24 +13,25 @@ Deux sources :
     par jour sur environ 5 ans, et fourchette haut-bas, lus dans le graphique
     << Evolution de l'objectif de cours >> de la page Consensus (image SVG
     dont on convertit les coordonnees en dates et en euros grace aux lignes de
-    la grille ; precision d'environ 0,5 % du cours). Releve une fois par
-    trimestre (environ 45 minutes, 1,7 Mo par entreprise) : le releve Yahoo
-    quotidien prend le relais entre deux lectures ; chaque lecture couvre les
-    5 dernieres annees, les plus anciennes valeurs deja connues sont gardees.
+    la grille ; precision d'environ 0,5 % du cours). Lu une fois le
+    1er octobre 2026 pour tout le referentiel ; le releve Yahoo quotidien
+    prend le relais. A relancer a la main seulement pour une entreprise
+    ajoutee au referentiel (--zonebourse --ticker) ; une lecture couvre les
+    5 dernieres annees, les valeurs plus anciennes deja connues sont gardees.
 
 Zonebourse refuse les scripts qui se presentent comme un navigateur ; il
 repond a un client en ligne de commande (en-tete de curl). Une requete toutes
-les quelques secondes, une fois par trimestre : usage personnel uniquement.
+les quelques secondes, a la main seulement : usage personnel uniquement.
 
 Ecrit objectifs.json. Une source en erreur n'arrete rien : le fichier
 precedent est garde.
 
 Usage :
-  python objectifs.py                  releve Yahoo du jour ; Zonebourse si le
-                                       dernier releve a 90 jours ou plus
-  python objectifs.py --zonebourse     relit Zonebourse maintenant
-  python objectifs.py --sans-zonebourse
-  python objectifs.py --ticker CAP.PA  (avec --zonebourse) une seule entreprise
+  python objectifs.py                  releve Yahoo du jour
+  python objectifs.py --zonebourse --ticker CAP.PA
+                                       historique Zonebourse d'une entreprise
+                                       (sans --ticker : tout le referentiel,
+                                       environ 45 minutes)
 Bibliotheque standard uniquement.
 """
 
@@ -54,7 +55,6 @@ SORTIE = os.path.join(ICI, "objectifs.json")
 ZB = "https://www.zonebourse.com"
 ZB_UA = "curl/8.5.0"
 ZB_PAUSE = 3  # secondes entre deux requetes Zonebourse
-ZB_INTERVALLE = 90  # jours entre deux releves Zonebourse
 MODULES = "financialData,recommendationTrend"
 MOIS = {"janv": 1, "fevr": 2, "mars": 3, "avr": 4, "mai": 5, "juin": 6, "juil": 7, "aout": 8, "sept": 9,
         "oct": 10, "nov": 11, "dec": 12}
@@ -357,8 +357,7 @@ def ecrire(doc):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--zonebourse", action="store_true", help="relit Zonebourse meme si le releve est recent")
-    p.add_argument("--sans-zonebourse", action="store_true")
+    p.add_argument("--zonebourse", action="store_true", help="lit l'historique Zonebourse")
     p.add_argument("--ticker", action="append", help="limite Zonebourse a ces entreprises")
     args = p.parse_args()
     with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
@@ -370,12 +369,11 @@ def main():
     else:
         print(f"objectifs.json (Yahoo) : deja releve aujourd'hui ({jour}).")
     dernier = doc.get("maj_zonebourse")
-    du = (dt.date.today() - dt.date.fromisoformat(dernier)).days if dernier else None
-    if not args.sans_zonebourse and (args.zonebourse or du is None or du >= ZB_INTERVALLE):
+    if args.zonebourse:
         cibles = [e for e in entreprises if not args.ticker or e["ticker"] in args.ticker]
         releve_zonebourse(doc, cibles, jour)
         if args.ticker:
-            doc["maj_zonebourse"] = dernier  # releve partiel : le releve complet reste a faire
+            doc["maj_zonebourse"] = dernier  # releve partiel : garde la date du releve complet
     ecrire(doc)
 
 

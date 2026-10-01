@@ -18,8 +18,7 @@ Tout se passe dans le dossier `veille/` du dépôt.
    `python objectifs.py`, `python positions.py`, `python communiques.py` puis
    `python communiques.py --a-classer`
    - `consensus.py` relève le consensus des analystes (Yahoo),
-     `objectifs.py` leurs objectifs de cours (Yahoo chaque jour, historique
-     Zonebourse une fois par trimestre, environ 45 minutes ce jour-là) et
+     `objectifs.py` leurs objectifs de cours (Yahoo) et
      `positions.py` les ventes à découvert déclarées à l'AMF : sans IA, ne les
      modifie pas à la main. Une source en erreur n'arrête rien (le fichier
      précédent est gardé) : signale-le. Lance-les à chaque veille : ils ne
