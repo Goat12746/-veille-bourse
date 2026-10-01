@@ -25,8 +25,12 @@ communiques.py (sans IA)    découvert (AMF), communiqués AMF ; Claude juge
 statistiques.py (sans IA)   réaction des cours aux alertes, référence AMF
       |                     -> statistiques.json
       v
-Application (onglets Actualités et Statistiques) lit alertes.json et
-statistiques.json à l'adresse configurée
+objectifs.py, scores.py     objectifs de cours des analystes (Yahoo,
+      |                     Zonebourse) comparés au cours à 12 mois
+      |                     -> scores.json
+      v
+Application (onglets Actualités et Statistiques) lit alertes.json,
+statistiques.json et scores.json à l'adresse configurée
 ```
 
 | Fichier | Rôle |
@@ -45,6 +49,8 @@ statistiques.json à l'adresse configurée
 | `etude_amf.py` | Étude de la réaction des cours aux communiqués : scénarios des résultats, facteurs, prévision (appelée par `statistiques.py`). |
 | `consensus.py` | Relevé quotidien du consensus des analystes (Yahoo) : BPA et chiffre d'affaires attendus, révisions, surprises (`consensus.json`, historique gratuit limité à 90 jours et 4 trimestres, puis construit jour après jour). |
 | `avant_ouverture.py` | Résultats publiés depuis la dernière clôture : part de hausse historique selon le consensus, les perspectives et le sens des résultats, pour les alertes de résultats de la veille du matin (avant 9 h). |
+| `objectifs.py` | Objectifs de cours des analystes (`objectifs.json`) : relevé quotidien Yahoo (moyen, médian, haut, bas, note, recommandations) et, une fois par trimestre, historique de l'objectif moyen sur 5 ans lu dans le graphique de la page Consensus de Zonebourse (S&P Global Market Intelligence). |
+| `scores.py` | Scores des objectifs à 12 mois : écart du cours à l'objectif à l'échéance, objectif atteint, bon sens, par tranche de potentiel, année, secteur et entreprise (`scores.json`). Sans IA. |
 | `positions.py` | Ventes à découvert déclarées à l'AMF depuis 2012 (data.gouv.fr) : part du capital par entreprise et par jour (`positions_courtes.json`). |
 
 ## Statistiques

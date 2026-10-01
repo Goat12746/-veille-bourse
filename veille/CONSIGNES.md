@@ -15,9 +15,11 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Produit `sortie/candidats.json`. Si une source est en erreur (`sources`),
      continue avec les autres et signale-le dans ton compte rendu.
 2. **Attentes du marché et communiqués AMF** : `python consensus.py`,
-   `python positions.py`, `python communiques.py` puis
+   `python objectifs.py`, `python positions.py`, `python communiques.py` puis
    `python communiques.py --a-classer`
-   - `consensus.py` relève le consensus des analystes (Yahoo) et
+   - `consensus.py` relève le consensus des analystes (Yahoo),
+     `objectifs.py` leurs objectifs de cours (Yahoo chaque jour, historique
+     Zonebourse une fois par trimestre, environ 45 minutes ce jour-là) et
      `positions.py` les ventes à découvert déclarées à l'AMF : sans IA, ne les
      modifie pas à la main. Une source en erreur n'arrête rien (le fichier
      précédent est gardé) : signale-le. Lance-les à chaque veille : ils ne
@@ -50,14 +52,17 @@ Tout se passe dans le dossier `veille/` du dépôt.
      et aux communiqués AMF, et écrit `statistiques.json` (onglet Statistiques
      de l'application).
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
+   - Puis `python scores.py` : compare les objectifs de cours à 12 mois au
+     cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json` et `positions_courtes.json` uniquement, message :
+   `consensus.json`, `positions_courtes.json`, `objectifs.json` et
+   `scores.json` uniquement, message :
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
 8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
    importantes, sources en erreur, publications de résultats jugées (et
-   alertes de résultats publiées), et la ligne de résultat de
-   `statistiques.py` (points, sens juste).
+   alertes de résultats publiées), et les lignes de résultat de
+   `statistiques.py` (points, sens juste) et de `scores.py`.
 
 ## Alertes de résultats (avant l'ouverture)
 
