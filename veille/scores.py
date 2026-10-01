@@ -28,6 +28,8 @@ L'objectif median n'a pas d'historique gratuit : il est releve chaque jour
 depuis le 1er octobre 2026 (Yahoo) et sera note a partir d'octobre 2027.
 
 Ecrit scores.json. Usage : python scores.py
+  python scores.py --univers monde   autres indices de l'application (objectifs_monde.json
+  -> scores_monde.json et scores_monde/), a la main
 Bibliotheque standard uniquement.
 """
 
@@ -102,21 +104,33 @@ class Escalier:
         return self.valeurs[i] if i >= 0 else None
 
 
-def objectif_moyen(fiche, change=None):
-    """Changements de l'objectif moyen : Zonebourse, puis le releve Yahoo au-dela
-    de la derniere date lue chez Zonebourse. `change(jour)` : nombre d'unites
-    de la devise de Zonebourse pour un euro, si elle n'est pas l'euro."""
-    zb = [[j, round(v / change(j), 2) if change else v] for j, v in fiche.get("moyen", [])]
-    zb = [x for x in zb if x[1]]
+def objectif_moyen(fiche, mult=None, mult_yahoo=1):
+    """Changements de l'objectif moyen, dans la devise du cours : Zonebourse,
+    puis le releve Yahoo au-dela de la derniere date lue chez Zonebourse.
+    `mult(jour)` convertit la devise de Zonebourse dans celle du cours ;
+    `mult_yahoo` corrige un objectif Yahoo en livres pour un cours en pence."""
+    zb = [[j, round(v * mult(j), 2) if mult else v] for j, v in fiche.get("moyen", [])]
+    zb = [x for x in zb if x[1] and x[1] == x[1]]
     fin = zb[-1][0] if zb else ""
-    yahoo = [[r[0], r[1]] for r in fiche.get("yahoo", []) if r[0] > fin and r[1]]
+    yahoo = [[r[0], round(r[1] * mult_yahoo, 2)] for r in fiche.get("yahoo", []) if r[0] > fin and r[1]]
     return zb + yahoo
 
 
-def change_euro(devise, debut, limite):
-    """{jour: unites de `devise` pour un euro} (Yahoo, ex. EURUSD=X)."""
-    clotures, _, _ = cours_bruts(f"EUR{devise}=X", debut, limite)
-    return clotures
+def conversion(devise, devise_cours, debut, limite):
+    """Fonction jour -> nombre d'unites de la devise du cours pour une unite
+    de `devise` (Yahoo, ex. USDEUR=X ; cours de Londres en pence : GBp), ou
+    None si les devises sont les memes."""
+    devise = "GBp" if devise == "GBX" else devise
+    if devise == devise_cours:
+        return None
+    if {devise, devise_cours} == {"GBP", "GBp"}:
+        f = 100 if devise_cours == "GBp" else 0.01
+        return lambda j: f
+    base = "GBP" if devise_cours == "GBp" else devise_cours
+    source, f_source = ("GBP", 0.01) if devise == "GBp" else (devise, 1)
+    taux = Escalier(sorted(cours_bruts(f"{source}{base}=X", debut, limite)[0].items()))
+    f = (100 if devise_cours == "GBp" else 1) * f_source
+    return lambda j: (taux(j) or float("nan")) * f
 
 
 # ---------------------------------------------------------------------------
@@ -223,79 +237,85 @@ def _public(o):
 
 # ---------------------------------------------------------------------------
 
-def main():
-    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
-        entreprises = json.load(f)["entreprises"]
-    with open(os.path.join(ICI, "objectifs.json"), encoding="utf-8") as f:
-        objectifs = json.load(f)
-    limite = limite_cotation()
-    debuts = [f["moyen"][0][0] for f in objectifs["entreprises"].values() if f.get("moyen")]
-    debut = min(debuts + [limite])
-    print(f"Cours depuis {debut} (dernière clôture : {limite})…", file=sys.stderr)
-    indice, _, _ = cours_bruts(INDICE, debut, limite)
-
+def calculer(entreprises, objectifs, indices, limite):
+    """Fiches et observations echues des entreprises. `indices` : {zone:
+    {jour: cloture}} de l'indice de comparaison."""
+    debut = min([f["moyen"][0][0] for f in objectifs["entreprises"].values() if f.get("moyen")] + [limite])
     toutes, fiches, erreurs = [], [], {}
     for e in entreprises:
         t = e["ticker"]
         fo = objectifs["entreprises"].get(t) or {}
         yahoo = fo.get("yahoo") or []
+        if not fo.get("moyen") and not yahoo:
+            continue
+        depart = min([x[0] for x in fo.get("moyen", [])[:1]] + [r[0] for r in yahoo[:1]] + [limite])
+        try:
+            cours, dividendes, devise = cours_bruts(t, depart, limite)
+        except Exception as ex:
+            erreurs[t] = f"cours illisibles : {str(ex)[:100]}"
+            continue
+        devise = devise or "EUR"
         # Historique Zonebourse garde seulement si son dernier objectif rejoint
-        # (a 10 % pres) l'objectif moyen en euros de Yahoo : ecarte une
-        # lecture fausse du graphique ou un historique non ajuste (augmentation
-        # de capital, restructuration). Consensus tenu dans la devise des
-        # comptes (dollar : TotalEnergies, STMicroelectronics...) : converti
-        # au cours du jour.
-        change = None
-        source = fo
+        # (a 10 % pres) l'objectif moyen de Yahoo : ecarte une lecture fausse
+        # du graphique ou un historique non ajuste (augmentation de capital,
+        # restructuration). Consensus tenu dans une autre devise (dollar pour
+        # TotalEnergies, HSBC, Novartis...) : converti au cours du jour.
+        mult, mult_yahoo, source = None, 1, fo
+        ref = next((r[1] for r in reversed(yahoo) if r[1]), None)
         if fo.get("moyen"):
-            devise_zb = fo.get("devise") or "EUR"
+            devise_zb = fo.get("devise") or devise
+            dernier_zb = fo["moyen"][-1]
             try:
-                if devise_zb != "EUR":
-                    change = Escalier(sorted(change_euro(devise_zb, debut, limite).items()))
-                dernier_zb = fo["moyen"][-1]
-                converti = dernier_zb[1] / (change(dernier_zb[0]) if change else 1)
+                mult = conversion(devise_zb, devise, debut, limite)
+                converti = dernier_zb[1] * (mult(dernier_zb[0]) if mult else 1)
+                if converti != converti:
+                    raise ValueError("pas de cours de change")
             except Exception as ex:
-                converti, dernier_zb = None, None
+                converti = None
                 erreurs[t] = f"historique en {devise_zb}, change illisible : {str(ex)[:80]}"
-            ref = next((r[1] for r in reversed(yahoo) if r[1]), None)
-            if converti is None or (ref and not 0.9 < converti / ref < 1.1):
+            r = converti / ref if converti and ref else None
+            if r and 90 < r < 110:
+                mult_yahoo = 100  # Yahoo donne l'objectif en livres, le cours en pence
+            elif r and 0.009 < r < 0.011:
+                mult_yahoo = 0.01
+            elif converti is None or (r and not 0.9 < r < 1.1):
                 if converti is not None:
                     erreurs[t] = (f"historique écarté : dernier objectif {dernier_zb[1]} {devise_zb}"
-                                  + (f" (soit {converti:.2f} EUR)" if change else "")
-                                  + f" contre {ref} EUR chez Yahoo")
-                source, change = {"yahoo": yahoo}, None
-        changements = objectif_moyen(source, change)
+                                  + (f" (soit {converti:.2f} {devise})" if mult else "")
+                                  + f" contre {ref} {devise} chez Yahoo")
+                source, mult = {"yahoo": yahoo}, None
+        changements = objectif_moyen(source, mult, mult_yahoo)
         if not changements:
             continue
-        try:
-            cours, dividendes, devise = cours_bruts(t, changements[0][0], limite)
-        except Exception as ex:
-            erreurs[t] = str(ex)[:120]
-            continue
-        if devise and devise != "EUR":
-            erreurs[t] = f"cours en {devise}"
-            continue
+        indice = indices.get(e.get("zone", "france"), {})
         echues, en_cours = observations(cours, dividendes, indice, Escalier(changements), changements[0][0])
         for o in echues:
             o["ticker"] = t
         toutes += echues
         jours = sorted(cours)
-        fiche = {"ticker": t, "nom": e["nom"], "indice": e.get("indice"), "secteur": e.get("secteur"),
-                 "depuis": changements[0][0], **resume(echues)}
+        fiche = {"ticker": t, "nom": e["nom"], "indice": e.get("indice") or ", ".join(e.get("indices", [])),
+                 "secteur": e.get("secteur"), "devise": devise, "depuis": changements[0][0], **resume(echues)}
+        if e.get("zone"):
+            fiche["zone"] = e["zone"]
+            fiche["indices"] = e.get("indices", [])
         fiche.pop("n_entreprises", None)
         # Consensus actuel (dernier releve Yahoo, sinon Zonebourse).
         if jours:
             p = cours[jours[-1]]
             dernier = yahoo[-1] if yahoo else None
-            moyen = (dernier[1] if dernier else None) or changements[-1][1]
+
+            def y(x):
+                return round(x * mult_yahoo, 2) if isinstance(x, (int, float)) else x
+
+            moyen = (y(dernier[1]) if dernier else None) or changements[-1][1]
             actuel = {"jour": jours[-1], "cours": round(p, 2), "objectif_moyen": moyen,
                       "potentiel_moyen": pct(moyen / p - 1)}
             if dernier:
-                actuel.update({"releve": dernier[0], "objectif_median": dernier[2], "haut": dernier[3],
-                               "bas": dernier[4], "n_analystes": dernier[5], "note": dernier[6],
+                actuel.update({"releve": dernier[0], "objectif_median": y(dernier[2]), "haut": y(dernier[3]),
+                               "bas": y(dernier[4]), "n_analystes": dernier[5], "note": dernier[6],
                                "recommandations": dernier[7]})
                 if dernier[2]:
-                    actuel["potentiel_median"] = pct(dernier[2] / p - 1)
+                    actuel["potentiel_median"] = pct(y(dernier[2]) / p - 1)
             # Si l'objectif se trompe comme d'habitude pour cette entreprise.
             if len(echues) >= MIN_OBS_CORRECTION:
                 corr = mediane([o["ecart"] for o in echues])
@@ -311,35 +331,62 @@ def main():
         fiche["courbe"] = [[j, round(cours[j], 2), Escalier(changements)(j)] for j in sorted(mois.values())]
         fiche["observations"] = [_public(o) for o in echues]
         fiches.append(fiche)
+    return toutes, fiches, erreurs
 
-    tranches = []
-    for nom, a, b in TRANCHES:
-        w = [o for o in toutes if a <= o["potentiel"] * 100 < b]
-        tranches.append(dict(resume(w), id=nom))
-    annees = []
-    for an in sorted({o["jour"][:4] for o in toutes}):
-        annees.append(dict(resume([o for o in toutes if o["jour"][:4] == an]), annee=an))
+
+def groupes(toutes, fiches):
+    """Tranches de potentiel, annees et secteurs."""
+    tranches = [dict(resume([o for o in toutes if a <= o["potentiel"] * 100 < b]), id=nom)
+                for nom, a, b in TRANCHES]
+    annees = [dict(resume([o for o in toutes if o["jour"][:4] == an]), annee=an)
+              for an in sorted({o["jour"][:4] for o in toutes})]
+    secteur_de = {f["ticker"]: f.get("secteur") or "" for f in fiches}
     secteurs = []
-    for s in sorted({f.get("secteur") or "" for f in fiches}):
-        w = [o for o in toutes if next((f.get("secteur") for f in fiches if f["ticker"] == o["ticker"]), "") == s]
+    for s in sorted(set(secteur_de.values())):
+        w = [o for o in toutes if secteur_de.get(o["ticker"]) == s]
         if w:
             secteurs.append(dict(resume(w), secteur=s or "Autre"))
     secteurs.sort(key=lambda x: -x["n"])
+    return tranches, annees, secteurs
 
+
+def methode(objectifs, sources):
+    return {
+        "horizon_jours": HORIZON,
+        "objectif": "moyen",
+        "sources": sources,
+        "median_depuis": min((f["yahoo"][0][0] for f in objectifs["entreprises"].values() if f.get("yahoo")),
+                             default=None),
+        "maj_zonebourse": objectifs.get("maj_zonebourse"),
+        "maj_yahoo": objectifs.get("maj_yahoo"),
+    }
+
+
+def ligne(nom, toutes, fiches, erreurs):
+    s = resume(toutes)
+    return (f"{nom} : {s['n']} objectif(s) échu(s) sur {len(fiches)} entreprise(s)"
+            + (f", écart médian à l'objectif {s['ecart_median']} %, atteint {s['atteint_pct']} %, "
+               f"bon sens {s['bon_sens_pct']} %" if s["n"] else "")
+            + (f" ; écartées : {sorted(erreurs)}" if erreurs else "") + ".")
+
+
+def main_veille():
+    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
+        entreprises = json.load(f)["entreprises"]
+    with open(os.path.join(ICI, "objectifs.json"), encoding="utf-8") as f:
+        objectifs = json.load(f)
+    limite = limite_cotation()
+    debut = min([f["moyen"][0][0] for f in objectifs["entreprises"].values() if f.get("moyen")] + [limite])
+    print(f"Cours depuis {debut} (dernière clôture : {limite})…", file=sys.stderr)
+    indice, _, _ = cours_bruts(INDICE, debut, limite)
+    toutes, fiches, erreurs = calculer(entreprises, objectifs, {"france": indice}, limite)
+    tranches, annees, secteurs = groupes(toutes, fiches)
     sortie = {
         "version": 1,
         "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
         "derniere_seance": indice and max(indice),
-        "methode": {
-            "horizon_jours": HORIZON,
-            "objectif": "moyen",
-            "sources": "Objectif moyen : Zonebourse / S&P Global Market Intelligence (historique), Yahoo "
-                       "Finance (relevé quotidien). Cours : Yahoo Finance.",
-            "median_depuis": min((f["yahoo"][0][0] for f in objectifs["entreprises"].values() if f.get("yahoo")),
-                                 default=None),
-            "maj_zonebourse": objectifs.get("maj_zonebourse"),
-            "maj_yahoo": objectifs.get("maj_yahoo"),
-        },
+        "methode": methode(objectifs, "Objectif moyen : Zonebourse / S&P Global Market Intelligence (historique), "
+                                      "Yahoo Finance (relevé quotidien). Cours : Yahoo Finance."),
         "ecartees": erreurs,
         "synthese": resume(toutes),
         "tranches": tranches,
@@ -350,11 +397,77 @@ def main():
     with open(os.path.join(ICI, "scores.json"), "w", encoding="utf-8") as f:
         json.dump(sortie, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
-    s = sortie["synthese"]
-    print(f"scores.json : {s['n']} objectif(s) échu(s) sur {len(fiches)} entreprise(s)"
-          + (f", écart médian à l'objectif {s['ecart_median']} %, atteint {s['atteint_pct']} %, "
-             f"bon sens {s['bon_sens_pct']} %" if s["n"] else "")
-          + (f" ; écartées : {sorted(erreurs)}" if erreurs else "") + ".")
+    print(ligne("scores.json", toutes, fiches, erreurs))
+
+
+RESERVES = {"CON", "PRN", "AUX", "NUL"} | {f"{x}{i}" for x in ("COM", "LPT") for i in range(1, 10)}
+
+
+def fichier_detail(ticker):
+    """CON.DE -> CON_DE.json ; noms reserves de Windows (CON, AUX...) suivis
+    d'un _. Meme regle dans l'application (scores_service.dart)."""
+    base = ticker.replace(".", "_")
+    return base + ("_" if base.upper() in RESERVES else "") + ".json"
+
+
+ZONES = {"europe": ("Europe", "^STOXX", "STOXX Europe 600"), "usa": ("États-Unis", "^GSPC", "S&P 500")}
+DETAIL = ("derniere_echue", "en_cours", "courbe", "observations")
+
+
+def main_monde():
+    """Autres indices de l'application : scores_monde.json (synthese par zone et
+    resume de chaque entreprise) et scores_monde/<ticker>.json (detail, charge
+    par l'application a l'ouverture de la page de l'entreprise)."""
+    with open(os.path.join(ICI, "univers_objectifs.json"), encoding="utf-8") as f:
+        entreprises = json.load(f)["entreprises"]
+    with open(os.path.join(ICI, "objectifs_monde.json"), encoding="utf-8") as f:
+        objectifs = json.load(f)
+    limite = limite_cotation()
+    debut = min([f["moyen"][0][0] for f in objectifs["entreprises"].values() if f.get("moyen")] + [limite])
+    indices = {z: cours_bruts(sym, debut, limite)[0] for z, (_, sym, _) in ZONES.items()}
+    zones, toutes_fiches, erreurs = [], [], {}
+    for z, (libelle, _, nom_indice) in ZONES.items():
+        print(f"{libelle}…", file=sys.stderr)
+        toutes, fiches, err = calculer([e for e in entreprises if e["zone"] == z], objectifs, indices, limite)
+        erreurs.update(err)
+        tranches, annees, secteurs = groupes(toutes, fiches)
+        zones.append({"id": z, "libelle": libelle, "indice_reference": nom_indice, "synthese": resume(toutes),
+                      "tranches": tranches, "annees": annees, "secteurs": secteurs})
+        toutes_fiches += fiches
+        s = resume(toutes)
+        print(f"{libelle} : {s['n']} objectif(s) échu(s) sur {len(fiches)} entreprise(s)"
+              + (f", écart médian {s['ecart_median']} %, atteint {s['atteint_pct']} %" if s["n"] else "")
+              + f" ; écartées : {len(err)}.")
+    dossier = os.path.join(ICI, "scores_monde")
+    os.makedirs(dossier, exist_ok=True)
+    for nom in os.listdir(dossier):
+        os.remove(os.path.join(dossier, nom))
+    for fiche in toutes_fiches:
+        with open(os.path.join(dossier, fichier_detail(fiche["ticker"])), "w", encoding="utf-8") as f:
+            json.dump({k: fiche[k] for k in DETAIL}, f, ensure_ascii=False, separators=(",", ":"))
+    sortie = {
+        "version": 1,
+        "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+        "derniere_seance": max(max(v) for v in indices.values() if v),
+        "methode": methode(objectifs, "Objectif moyen : Zonebourse / S&P Global Market Intelligence (lu une "
+                                      "fois). Cours et consensus du jour : Yahoo Finance. Calcul figé, relancé "
+                                      "à la main."),
+        "ecartees": erreurs,
+        "zones": zones,
+        "entreprises": sorted(({k: v for k, v in f.items() if k not in DETAIL} for f in toutes_fiches),
+                              key=lambda f: f["nom"]),
+    }
+    with open(os.path.join(ICI, "scores_monde.json"), "w", encoding="utf-8") as f:
+        json.dump(sortie, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    print(f"scores_monde.json : {len(toutes_fiches)} entreprise(s), détail dans scores_monde/.")
+
+
+def main():
+    if sys.argv[1:3] == ["--univers", "monde"]:
+        main_monde()
+    else:
+        main_veille()
 
 
 if __name__ == "__main__":

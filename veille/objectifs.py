@@ -52,6 +52,10 @@ from consensus import _raw, session
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "objectifs.json")
+# Autres indices de l'application (univers.py) : historique lu une fois a la
+# main, a part de la veille (les routines n'y touchent pas).
+SORTIE_MONDE = os.path.join(ICI, "objectifs_monde.json")
+UNIVERS_MONDE = os.path.join(ICI, "univers_objectifs.json")
 ZB = "https://www.zonebourse.com"
 ZB_UA = "curl/8.5.0"
 ZB_PAUSE = 3  # secondes entre deux requetes Zonebourse
@@ -131,6 +135,31 @@ def zb_page(isin):
     b = zb_get(f"{ZB}/recherche/?q={isin}")
     m = re.search(r'class="link link--blue txt-inline ml-5" href="/cours/action/([A-Za-z0-9-]+)/', b)
     return m.group(1) if m else None
+
+
+def _code(c):
+    return re.sub(r"[^A-Z0-9]", "", (c or "").upper())
+
+
+def zb_recherche(code, drapeau):
+    """Chemin Zonebourse d'apres le code boursier (actions sans ISIN connu) :
+    la ligne de la liste des instruments dont le code et le pays de cotation
+    correspondent, a defaut le meme code dans un autre pays."""
+    b = zb_get(f"{ZB}/recherche/?q={urllib.parse.quote(code)}")
+    lignes = []
+    for r in re.findall(r"<tr.*?</tr>", b, re.S):
+        lien = re.search(r'href="/cours/action/([A-Za-z0-9-]+)/', r)
+        mnemo = re.search(r'aria-label="Mnemo"[^>]*>(.*?)</td>', r, re.S)
+        if lien and mnemo:
+            pays = re.search(r"flag__(\w+)", r)
+            lignes.append((lien.group(1), _code(re.sub(r"<[^>]+>|\*", "", html.unescape(mnemo.group(1)))),
+                           pays.group(1) if pays else None))
+    cible = _code(code)
+    for exige_pays in (True, False):
+        for lien, mnemo, pays in lignes:
+            if mnemo == cible and (pays == drapeau or not exige_pays):
+                return lien
+    return None
 
 
 def _nombres(d):
@@ -282,14 +311,22 @@ def _etendre(liste):
     return {j: v for j, v in liste}
 
 
-def releve_zonebourse(doc, entreprises, jour):
+def releve_zonebourse(doc, entreprises, jour, reprise=False, sauver=None):
+    """Lit l'historique Zonebourse de chaque entreprise. `reprise` : saute
+    celles deja lues ou en echec (lecture longue interrompue) ; `sauver` :
+    appele toutes les 10 entreprises."""
     ok, erreurs = 0, {}
-    for e in entreprises:
+    for k, e in enumerate(entreprises):
         t = e["ticker"]
         fiche = doc["entreprises"].setdefault(t, {})
+        if reprise and (fiche.get("zonebourse_lu") or fiche.get("zonebourse_erreur")):
+            continue
+        if sauver and k % 10 == 0:
+            sauver(doc)
         try:
             if not fiche.get("zonebourse"):
-                fiche["zonebourse"] = zb_page(e["isin"])
+                fiche["zonebourse"] = (zb_page(e["isin"]) if e.get("isin")
+                                       else zb_recherche(e["zb_code"], e["zb_drapeau"]))
                 time.sleep(ZB_PAUSE)
                 if not fiche["zonebourse"]:
                     raise ValueError("introuvable dans la recherche")
@@ -317,7 +354,9 @@ def releve_zonebourse(doc, entreprises, jour):
                 fourchette = {recule(j): v for j, v in fourchette.items()}
         except Exception as ex:
             erreurs[t] = str(ex)[:120]
+            fiche["zonebourse_erreur"] = erreurs[t]
             continue
+        fiche.pop("zonebourse_erreur", None)
         # Fusion : la lecture remplace tout ce qu'elle couvre ; les jours plus
         # anciens deja connus sont gardes.
         debut = min(moyen)
@@ -331,21 +370,21 @@ def releve_zonebourse(doc, entreprises, jour):
         print(f"  {t} : {fiche['zonebourse']}, {min(moyen)} -> {max(moyen)}, "
               f"objectif moyen {moyen[max(moyen)]} {devise}", file=sys.stderr)
     doc["maj_zonebourse"] = jour
-    print(f"objectifs.json (Zonebourse) : {ok} entreprise(s) lue(s)"
+    print(f"Zonebourse : {ok} entreprise(s) lue(s)"
           + (f" ; illisibles : {erreurs}" if erreurs else "") + ".")
 
 
 # ---------------------------------------------------------------------------
 
-def charger():
-    if not os.path.exists(SORTIE):
+def charger(chemin=SORTIE):
+    if not os.path.exists(chemin):
         return {"version": 1, "entreprises": {}}
-    with open(SORTIE, encoding="utf-8") as f:
+    with open(chemin, encoding="utf-8") as f:
         return json.load(f)
 
 
-def ecrire(doc):
-    with open(SORTIE, "w", encoding="utf-8") as f:
+def ecrire(doc, chemin=SORTIE):
+    with open(chemin, "w", encoding="utf-8") as f:
         f.write('{\n "version": 1,\n "source": "Yahoo Finance (releve quotidien), Zonebourse / S&P Global '
                 'Market Intelligence (historique de l\'objectif moyen)",\n')
         f.write(f' "maj_yahoo": {json.dumps(doc.get("maj_yahoo"))},\n')
@@ -359,10 +398,16 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--zonebourse", action="store_true", help="lit l'historique Zonebourse")
     p.add_argument("--ticker", action="append", help="limite Zonebourse a ces entreprises")
+    p.add_argument("--univers", choices=("veille", "monde"), default="veille",
+                   help="monde : autres indices de l'application (univers_objectifs.json -> objectifs_monde.json)")
+    p.add_argument("--reprise", action="store_true",
+                   help="Zonebourse : saute les entreprises deja lues ou en echec (lecture interrompue)")
     args = p.parse_args()
-    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
+    monde = args.univers == "monde"
+    with open(UNIVERS_MONDE if monde else os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
         entreprises = json.load(f)["entreprises"]
-    doc = charger()
+    chemin = SORTIE_MONDE if monde else SORTIE
+    doc = charger(chemin)
     jour = dt.date.today().isoformat()
     if doc.get("maj_yahoo") != jour:
         releve_yahoo(doc, [e["ticker"] for e in entreprises], jour)
@@ -371,10 +416,10 @@ def main():
     dernier = doc.get("maj_zonebourse")
     if args.zonebourse:
         cibles = [e for e in entreprises if not args.ticker or e["ticker"] in args.ticker]
-        releve_zonebourse(doc, cibles, jour)
+        releve_zonebourse(doc, cibles, jour, reprise=args.reprise, sauver=lambda d: ecrire(d, chemin))
         if args.ticker:
             doc["maj_zonebourse"] = dernier  # releve partiel : garde la date du releve complet
-    ecrire(doc)
+    ecrire(doc, chemin)
 
 
 if __name__ == "__main__":
