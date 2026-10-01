@@ -1,6 +1,6 @@
 {
  "version": 1,
- "maj_le": "2026-09-30T18:26:20+00:00",
+ "maj_le": "2026-10-01T05:10:48+00:00",
  "alertes": [
   {
    "id": "amf-083299_20260930",
@@ -1006,10 +1006,10 @@
    "date": "2026-09-28",
    "source": "presse",
    "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
-   "resume": "L'Assemblée examine le 30 septembre une proposition de loi visant à abroger les zones à faibles émissions. Proposition de loi à l'issue incertaine.",
+   "resume": "L'Assemblée nationale a rejeté le 30 septembre la proposition de loi abrogeant les zones à faibles émissions : les ZFE sont maintenues en l'état.",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ2dQcWdaUURLT3N6am5ucHhjRXY0WmRKeDBLcWFHVy1ncVNHYmhYOHJ0UFBhZ3JxZk1MNDlsa1U5bzVXWTBYNUtMTnVMSUo2WVJVcnlXOVhGdjl1ZlRUaDRTd2pzRG84OFdrWGVNSlBGZGZCVENXYzFSaHVOZjBVX2ZPSVJpMUo0SmhqQ3FXcUNlRkE1NlQ1ZFltWDhnUnh5RlV4WFNqNFZRblZaMlRzazZWZEs?oc=5",
-   "etape": "depot",
-   "probabilite": 0.3,
+   "etape": "rejete",
+   "probabilite": 0.02,
    "themes": [
     "automobile"
    ],
@@ -1042,7 +1042,7 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "n° 2970",
-   "maj_le": "2026-09-29",
+   "maj_le": "2026-10-01",
    "initial": {
     "etape": "depot",
     "probabilite": 0.3

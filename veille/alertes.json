@@ -1,24 +1,25 @@
 {
  "version": 1,
- "genere_le": "2026-09-30T18:26:20+00:00",
+ "genere_le": "2026-10-01T05:10:48+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 10,
-   "nouveaux": 6
+   "trouves": 14,
+   "nouveaux": 0
   },
   "presse": {
    "ok": true,
-   "trouves": 43,
-   "nouveaux": 36
+   "trouves": 102,
+   "nouveaux": 27
   },
   "assemblee": {
-   "ok": false,
-   "erreur": "IncompleteRead(20528002 bytes read, 283521736 more expected)"
+   "ok": true,
+   "trouves": 1,
+   "nouveaux": 0
   },
   "agenda": {
    "ok": true,
-   "trouves": 9
+   "trouves": 8
   },
   "calendrier": {
    "ok": true,
@@ -939,10 +940,10 @@
    "date": "2026-09-28",
    "source": "presse",
    "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
-   "resume": "L'Assemblée examine le 30 septembre une proposition de loi visant à abroger les zones à faibles émissions. Proposition de loi à l'issue incertaine.",
+   "resume": "L'Assemblée nationale a rejeté le 30 septembre la proposition de loi abrogeant les zones à faibles émissions : les ZFE sont maintenues en l'état.",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ2dQcWdaUURLT3N6am5ucHhjRXY0WmRKeDBLcWFHVy1ncVNHYmhYOHJ0UFBhZ3JxZk1MNDlsa1U5bzVXWTBYNUtMTnVMSUo2WVJVcnlXOVhGdjl1ZlRUaDRTd2pzRG84OFdrWGVNSlBGZGZCVENXYzFSaHVOZjBVX2ZPSVJpMUo0SmhqQ3FXcUNlRkE1NlQ1ZFltWDhnUnh5RlV4WFNqNFZRblZaMlRzazZWZEs?oc=5",
-   "etape": "depot",
-   "probabilite": 0.3,
+   "etape": "rejete",
+   "probabilite": 0.02,
    "themes": [
     "automobile"
    ],
@@ -975,7 +976,7 @@
    "analyse": "claude",
    "ajoute_le": "2026-09-29",
    "texte": "n° 2970",
-   "maj_le": "2026-09-29"
+   "maj_le": "2026-10-01"
   },
   {
    "id": "presse-ff79c0193462f61e",
@@ -1029,57 +1030,6 @@
   }
  ],
  "calendrier": [
-  {
-   "date": "2026-09-30",
-   "heure": "",
-   "type": "dividende",
-   "titre": "TotalEnergies : détachement du dividende",
-   "tickers": [
-    "TTE.PA"
-   ],
-   "tickers_mots_cles": [
-    "TTE.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/TTE.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-09-30",
-   "heure": "09:30",
-   "type": "examen_texte",
-   "titre": "Examen de la proposition de loi visant à abroger les zones à faibles émissions-mobilités (n° 2970) (sous réserve de son inscription à l’ordre du jour) (rapport).",
-   "tickers": [
-    "FRVIA.PA",
-    "ML.PA",
-    "RNO.PA",
-    "STLAP.PA"
-   ],
-   "tickers_mots_cles": [
-    "FRVIA.PA",
-    "ML.PA",
-    "RNO.PA",
-    "STLAP.PA"
-   ],
-   "themes": [
-    "automobile"
-   ],
-   "texte": "n° 2970",
-   "mesures": [
-    {
-     "alerte_id": "presse-8158ac12ab6fdb24",
-     "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
-     "etape": "depot",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Commission du développement durable et de l'aménagement du territoire",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-09-30#odj-OMC_RUANR5L17S2026IDC461121",
-   "fiable": true
-  },
   {
    "date": "2026-10-01",
    "heure": "",
@@ -1245,15 +1195,8 @@
    "themes": [
     "automobile"
    ],
-   "texte": "n° 2970",
-   "mesures": [
-    {
-     "alerte_id": "presse-8158ac12ab6fdb24",
-     "titre": "Assemblée : examen d'une proposition de loi abrogeant les ZFE le 30 septembre",
-     "etape": "depot",
-     "article": ""
-    }
-   ],
+   "texte": "",
+   "mesures": [],
    "source": "Assemblée nationale — Séance publique",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-08#odj-OMC_RUANR5L17S2027IDS30930",
    "fiable": true
@@ -2000,6 +1943,24 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/STMPA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-31",
+   "heure": "",
+   "type": "dividende",
+   "titre": "TotalEnergies : détachement du dividende",
+   "tickers": [
+    "TTE.PA"
+   ],
+   "tickers_mots_cles": [
+    "TTE.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/TTE.PA",
    "fiable": false
   }
  ]
