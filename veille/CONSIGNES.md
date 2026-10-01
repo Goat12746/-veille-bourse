@@ -21,16 +21,28 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Il valide ton analyse, met à jour `alertes.json`, `etat.json` et
      l'archive `historique.json`.
    - En cas d'erreur de validation, corrige `sortie/analyse.json` et relance.
-4. **Statistiques** : `python statistiques.py`
+4. **Communiqués AMF** : `python communiques.py` puis
+   `python communiques.py --a-classer`
+   - Ajoute les communiqués des derniers jours à `communiques.json`, puis liste
+     dans `sortie/resultats_a_classer.json` les publications de résultats et
+     révisions d'objectifs que tu n'as pas encore jugées.
+   - Juge chacune (voir « Publications de résultats » plus bas), écris tes avis
+     dans `sortie/avis_resultats.json` (`{"<id>": {avis}}`) et lance
+     `python communiques.py --integrer sortie/avis_resultats.json`.
+   - Relance `--a-classer` : il doit afficher 0 publication (un avis « autre »
+     sur un document joint peut faire apparaître le vrai communiqué du jour).
+5. **Statistiques** : `python statistiques.py`
    - Mesure la réaction des cours aux alertes (clôtures de la veille comprises)
-     et écrit `statistiques.json` (onglet Statistiques de l'application).
+     et aux communiqués AMF, et écrit `statistiques.json` (onglet Statistiques
+     de l'application).
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
-5. **Commit et push** de `alertes.json`, `etat.json`, `historique.json` et
-   `statistiques.json` uniquement, message : `veille : AAAA-MM-JJ, N alertes`
-   (rien d'autre dans le commit).
-6. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
-   importantes, sources en erreur, et la ligne de résultat de
-   `statistiques.py` (points, sens juste).
+6. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
+   `statistiques.json`, `communiques.json` et `resultats_classes.json`
+   uniquement, message : `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans
+   le commit).
+7. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
+   importantes, sources en erreur, publications de résultats jugées, et la
+   ligne de résultat de `statistiques.py` (points, sens juste).
 
 ## Règles d'analyse
 
@@ -163,6 +175,46 @@ ne peut pas la vérifier.
 
 **En cas de doute** sur le sens ou l'ampleur : `incertain` / `inconnue` plutôt
 qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
+
+## Publications de résultats (étape 4)
+
+Chaque entrée de `sortie/resultats_a_classer.json` donne le titre et un
+extrait du communiqué (chiffres clés, perspectives). Ton avis :
+
+```json
+{"137031_20251105": {"type": "resultats", "sens": "positif", "activite": "+",
+  "rentabilite": "+", "perspectives": "confirmees", "attentes": null,
+  "exceptionnel": false, "actionnaires": false, "par": "claude"}}
+```
+
+- **type** : `resultats` (comptes, chiffre d'affaires trimestriel),
+  `revision` (avertissement, objectifs relevés ou abaissés hors publication
+  des comptes) ou `autre` (avis de mise à disposition, calendrier, états
+  financiers ou rapport des commissaires aux comptes, rapport déposé après le
+  communiqué de presse, version anglaise en double, filiale, trafic, ventes en
+  volume, essai clinique, opération, assemblée, journée investisseurs). Pour
+  `autre`, `{"type": "autre", "par": "claude"}` suffit.
+- **sens** : d'après les **chiffres publiés face à la même période de l'an
+  dernier**, jamais d'après la réaction du cours. Trimestriel : le trimestre ;
+  annuel : l'année. Croissance organique ou à périmètre constant de
+  préférence. Seuils : environ ±1 % pour le chiffre d'affaires, ±2 % pour le
+  résultat. `mitige` si activité et rentabilité divergent nettement ou si tout
+  est stable ; bénéfice en hausse et chiffre d'affaires en léger recul :
+  `positif`. Banques : résultat net (sous-jacent si la base est faussée) ;
+  foncières : résultat récurrent ; holdings : ANR par action face au dernier
+  publié ; pétroliers : résultat net ajusté. Texte illisible : `null`.
+- **activite**, **rentabilite** : `+`, `-`, `=` ou `null` (non publié).
+- **perspectives** : `relevees` (y compris « haut de fourchette »),
+  `confirmees`, `abaissees` (y compris « bas de fourchette »), `nouvelles`
+  (premiers objectifs de l'année) ou `null`.
+- **attentes** : `superieures`, `conformes` ou `inferieures` seulement si
+  l'entreprise se compare elle-même à ses objectifs ou au consensus.
+- **exceptionnel** : dépréciation ou élément non récurrent marquant ;
+  **actionnaires** : nouveau rachat d'actions, dividende relevé,
+  exceptionnel ou rétabli.
+- Plusieurs documents le même jour : juge le communiqué de presse et classe
+  les autres en `autre`. Un rapport financier seul ce jour-là est jugé comme
+  le communiqué.
 
 ## Format de `sortie/analyse.json`
 
