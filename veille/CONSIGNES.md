@@ -27,7 +27,9 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - `consensus.py` relève le consensus des analystes (Yahoo) et
      `positions.py` les ventes à découvert déclarées à l'AMF : sans IA, ne les
      modifie pas à la main. Une source en erreur n'arrête rien (le fichier
-     précédent est gardé) : signale-le.
+     précédent est gardé) : signale-le. Lance-les à chaque veille : ils ne
+     font rien s'il n'y a rien de nouveau (consensus déjà relevé le jour même,
+     export de l'AMF inchangé ; l'AMF publie vers 12 h 30).
    - Ajoute les communiqués des derniers jours à `communiques.json`, puis liste
      dans `sortie/resultats_a_classer.json` les publications de résultats et
      révisions d'objectifs que tu n'as pas encore jugées.

@@ -14,16 +14,28 @@ Pour chaque entreprise :
 
 Historique gratuit disponible : Yahoo donne le BPA moyen d'il y a 7, 30, 60 et
 90 jours (reconstitue au premier releve) et les surprises des 4 derniers
-trimestres. Au-dela, l'historique se construit jour apres jour.
+trimestres. Au-dela, l'historique se construit au fil des releves.
+
+Yahoo est interroge une fois par jour (un second lancement le meme jour ne
+fait rien) mais tous les releves ne sont pas gardes :
+  - un par semaine et par entreprise (les revisions se lisent deja sur 7 a 90
+    jours dans chaque releve) ;
+  - un par jour autour d'une publication de resultats attendue (de 21 jours
+    avant a 7 jours apres la date connue ou estimee) : le consensus de la
+    veille sert a mesurer la surprise ;
+  - le dernier releve, toujours (marque provisoire, remplace le lendemain),
+    pour une publication a une date imprevue.
 
 Ecrit consensus.json, lu par communiques.py (--a-classer : consensus avant la
 publication) et par l'etude des communiques (etude_amf.py).
 
 Usage :
-  python consensus.py
+  python consensus.py            releve du jour (rien si deja fait aujourd'hui)
+  python consensus.py --forcer   releve meme s'il a deja ete fait aujourd'hui
 Bibliotheque standard uniquement.
 """
 
+import argparse
 import concurrent.futures as cf
 import datetime as dt
 import http.cookiejar
@@ -40,6 +52,8 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "consensus.json")
 PERIODES = ("0q", "+1q", "0y", "+1y")
 RECUL = {"7daysAgo": 7, "30daysAgo": 30, "60daysAgo": 60, "90daysAgo": 90}
+INTERVALLE = 7  # jours entre deux releves gardes, loin d'une publication
+AVANT_PUBLICATION, APRES_PUBLICATION = 21, 7  # releves quotidiens autour d'une publication
 MODULES = "earningsTrend,earningsHistory"
 
 
@@ -135,6 +149,40 @@ def revision_pct(fiche, jour, periode="0y", jours=30):
     return round((b - a) / abs(a) * 100, 1) if a else None
 
 
+def dates_publication():
+    """Prochaine date de resultats connue ou estimee par entreprise (calcul
+    precedent de statistiques.py)."""
+    chemin = os.path.join(ICI, "statistiques.json")
+    try:
+        with open(chemin, encoding="utf-8") as f:
+            histo = json.load(f).get("historique_amf") or {}
+    except (OSError, ValueError):
+        return {}
+    return {e["ticker"]: e["prochaine"]["date"] for e in histo.get("entreprises", [])
+            if (e.get("prochaine") or {}).get("date")}
+
+
+def garder(fiche, releve, aujourd_hui, publication):
+    """Ajoute le releve du jour a l'historique de l'entreprise selon la regle
+    du module (hebdomadaire, quotidien pres d'une publication, dernier releve
+    provisoire). Retourne True si un releve definitif a ete ajoute."""
+    jour = aujourd_hui.isoformat()
+    rel = fiche["releves"]
+    if rel and (rel[-1].get("provisoire") or rel[-1]["jour"] == jour):
+        rel.pop()  # remplace par celui du jour
+    dernier = rel[-1] if rel else None
+    if dernier and {k: dernier.get(k) for k in ("bpa", "ca", "fin")} == releve:
+        return False  # rien n'a change depuis le dernier releve garde
+    proche = False
+    if publication:
+        d = dt.date.fromisoformat(publication)
+        proche = d - dt.timedelta(days=AVANT_PUBLICATION) <= aujourd_hui <= d + dt.timedelta(days=APRES_PUBLICATION)
+    definitif = (dernier is None or proche
+                 or (aujourd_hui - dt.date.fromisoformat(dernier["jour"])).days >= INTERVALLE)
+    rel.append(dict(releve, jour=jour) if definitif else dict(releve, jour=jour, provisoire=True))
+    return definitif
+
+
 def ecrire(doc):
     with open(SORTIE, "w", encoding="utf-8") as f:
         f.write('{\n "version": 1,\n "source": "Yahoo Finance (consensus des analystes)",\n')
@@ -145,11 +193,18 @@ def ecrire(doc):
 
 
 def main():
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--forcer", action="store_true", help="releve meme s'il a deja ete fait aujourd'hui")
+    args = p.parse_args()
     with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
         tickers = [e["ticker"] for e in json.load(f)["entreprises"]]
     doc = charger()
     aujourd_hui = dt.date.today()
     jour = aujourd_hui.isoformat()
+    if doc.get("maj") == jour and not args.forcer:
+        print(f"consensus.json : deja releve aujourd'hui ({jour}), rien a faire.")
+        return
+    publications = dates_publication()
     try:
         opener, crumb = session()
     except Exception as e:
@@ -175,12 +230,7 @@ def main():
                     d = (aujourd_hui - dt.timedelta(days=jours)).isoformat()
                     fiche["releves"].append({"jour": d, "bpa": {p: [v, None] for p, v in passe[jours].items()},
                                              "ca": {}, "fin": releve["fin"], "reconstitue": True})
-            dernier = fiche["releves"][-1] if fiche["releves"] else None
-            if dernier and dernier["jour"] == jour:
-                fiche["releves"][-1] = dict(releve, jour=jour)
-            elif not dernier or {k: dernier.get(k) for k in ("bpa", "ca", "fin")} != releve:
-                fiche["releves"].append(dict(releve, jour=jour))
-                nouveaux += 1
+            nouveaux += garder(fiche, releve, aujourd_hui, publications.get(t))
             fiche["revisions"] = revisions
             connus = {s["trimestre"]: s for s in fiche.get("surprises", [])}
             connus.update({s["trimestre"]: s for s in surprises})
@@ -189,7 +239,7 @@ def main():
     ecrire(doc)
     avec = sum(1 for f in doc["entreprises"].values() if f["releves"])
     surpr = sum(len(f.get("surprises", [])) for f in doc["entreprises"].values())
-    print(f"consensus.json : {avec} entreprise(s) suivie(s), {nouveaux} releve(s) nouveau(x), "
+    print(f"consensus.json : {avec} entreprise(s) suivie(s), {nouveaux} releve(s) garde(s), "
           f"{surpr} surprise(s) de BPA connue(s)"
           + (f" ; illisibles : {sorted(erreurs)}" if erreurs else "") + ".")
 

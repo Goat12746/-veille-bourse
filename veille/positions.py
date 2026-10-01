@@ -11,7 +11,8 @@ Ecrit positions_courtes.json, lu par l'etude des communiques (etude_amf.py) :
 part du capital vendue a decouvert la veille d'une publication de resultats.
 
 Usage :
-  python positions.py        telecharge le fichier de l'AMF et met a jour
+  python positions.py        met a jour si l'AMF a publie un nouvel export
+                             (une fois par jour ouvre : rien a faire sinon)
 Bibliotheque standard uniquement.
 """
 
@@ -38,11 +39,11 @@ def _get(url, timeout=300):
         return r.read()
 
 
-def telecharger():
-    """Texte du dernier export CSV de l'AMF."""
+def dernier_export():
+    """(url, date de mise a jour) du dernier export CSV de l'AMF."""
     jeu = json.loads(_get(JEU, 60))
     res = max(jeu["resources"], key=lambda r: r.get("last_modified") or "")
-    return _get(res["url"]).decode("utf-8-sig"), res.get("last_modified")
+    return res["url"], res.get("last_modified")
 
 
 def series_par_isin(texte, isins):
@@ -116,7 +117,11 @@ def main():
         ref = json.load(f)["entreprises"]
     isins = {e["isin"]: e["ticker"] for e in ref if e.get("isin")}
     try:
-        texte, maj = telecharger()
+        url, maj = dernier_export()
+        if maj and maj == charger().get("maj_source"):
+            print(f"positions_courtes.json : deja a jour (export de l'AMF du {maj[:10]}), rien a faire.")
+            return
+        texte = _get(url).decode("utf-8-sig")
     except Exception as e:
         print(f"Positions courtes indisponibles (le fichier precedent est garde) : {e}", file=sys.stderr)
         return
