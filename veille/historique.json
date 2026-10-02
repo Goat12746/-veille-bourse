@@ -1,7 +1,45 @@
 {
  "version": 1,
- "maj_le": "2026-10-01T11:18:03+00:00",
+ "maj_le": "2026-10-02T06:18:47+00:00",
  "alertes": [
+  {
+   "id": "amf-135709_20261001",
+   "date": "2026-10-01",
+   "source": "amf",
+   "titre": "Argan : revenus locatifs +5 % sur 9 mois, objectif annuel 2026 relevé à 222 M€ au moins",
+   "resume": "Argan publie 166,2 M€ de revenus locatifs sur neuf mois (+5 %), dont +7 % au 3e trimestre, et relève à nouveau son objectif annuel à au moins 222 M€ (+5 % vs 2025).",
+   "nouveaute": "Nouveau relèvement de l'objectif annuel de revenus locatifs, avec un 3e trimestre en accélération (+7 %).",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135709_20261001.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ARG.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Objectifs relevés : hausse dans 69 % des 353 cas depuis 2019 ; pour Argan, 55 % de hausse sur 42 publications de même sens, écart médian de réaction 1,33 %.",
+     "extrait": "ARGAN rehausse à nouveau son objectif annuel pour les revenus locatifs au titre de 2026 et vise au moins 222 M€",
+     "nom": "Argan SA"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Argan SA : ARGAN : REVENUS LOCATIFS EN HAUSSE DE + 5 %  SUR LES 9 PREMIERS MOIS DE 2026",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135709_20261001.pdf",
+     "date": "2026-10-01",
+     "publie_le": "2026-10-01T15:45:00+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-02",
+   "publie_a": "2026-10-02T06:18:47+00:00",
+   "initial": {
+    "etape": "information",
+    "probabilite": 1
+   }
+  },
   {
    "id": "amf-135651_20261001",
    "date": "2026-10-01",
