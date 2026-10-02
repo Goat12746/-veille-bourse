@@ -4584,6 +4584,8 @@
   "083245_20260924": {"type":"resultats","sens":"positif","activite":"+","rentabilite":"+","perspectives":"relevees","attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
   "134999_20260928": {"type":"resultats","sens":null,"activite":null,"rentabilite":null,"perspectives":null,"attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
   "169532_20260928": {"type":"autre","par":"claude","le":"2026-10-01"},
-  "135709_20261001": {"type":"resultats","sens":"positif","activite":"+","rentabilite":null,"perspectives":"relevees","attentes":null,"consensus":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-02"}
+  "135709_20261001": {"type":"resultats","sens":"positif","activite":"+","rentabilite":null,"perspectives":"relevees","attentes":null,"consensus":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-02"},
+  "169601_20261002": {"type":"autre","par":"claude","le":"2026-10-02"},
+  "169607_20261002": {"type":"autre","par":"claude","le":"2026-10-02"}
  }
 }

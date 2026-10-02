@@ -1,25 +1,25 @@
 {
  "version": 1,
- "genere_le": "2026-10-02T06:18:47+00:00",
+ "genere_le": "2026-10-02T11:14:33+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 31,
-   "nouveaux": 13
+   "trouves": 11,
+   "nouveaux": 2
   },
   "presse": {
    "ok": true,
-   "trouves": 141,
-   "nouveaux": 50
+   "trouves": 59,
+   "nouveaux": 20
   },
   "assemblee": {
    "ok": true,
-   "trouves": 1,
+   "trouves": 0,
    "nouveaux": 0
   },
   "agenda": {
-   "ok": true,
-   "trouves": 8
+   "ok": false,
+   "erreur": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   "calendrier": {
    "ok": true,
