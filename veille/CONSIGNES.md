@@ -74,8 +74,8 @@ Tout se passe dans le dossier `veille/` du dépôt.
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
    - **Résultats américains, veille de 13 h 12 seulement** (après 12 h,
      heure de Paris), une fois ce push vérifié : `python edgar.py`,
-     `python consensus.py --zone usa`, `python etude_usa.py` puis
-     `python communiques_usa.py --jour`.
+     `python perspectives_usa.py`, `python consensus.py --zone usa`,
+     `python etude_usa.py` puis `python communiques_usa.py --jour`.
      Publications de résultats des entreprises américaines déposées à la SEC,
      sens d'après leurs comptes, consensus des analystes et réaction face au
      S&P 500 (`communiques_usa.json`, onglet Statistiques > Communiqués >
@@ -83,7 +83,8 @@ Tout se passe dans le dossier `veille/` du dépôt.
      script échoue (SEC ou Yahoo injoignable), lance quand même les suivants
      (le fichier précédent est gardé) et signale-le.
    - Puis un second commit des seuls `resultats_usa.json`,
-     `consensus_usa.json`, `communiques_usa.json` et `resultats_usa_jour.json`,
+     `resultats_usa_perspectives.json`, `consensus_usa.json`,
+     `communiques_usa.json` et `resultats_usa_jour.json`,
      message
      `veille : AAAA-MM-JJ, résultats américains`, et push (même vérification
      du hash). Rien à commiter : signale-le simplement.
@@ -308,7 +309,10 @@ Mêmes règles et même format pour les publications américaines
   `[moyenne, nombre d'analystes]`, `fin` donne la date de fin de période).
   Compare le chiffre publié de la même période : le chiffre d'affaires du
   trimestre pour un chiffre d'affaires trimestriel, le BPA (ou à défaut le
-  chiffre d'affaires) pour des comptes. Écart de moins de 1 % : `conforme`.
+  chiffre d'affaires) pour des comptes. Écart de moins de 5 % (dans un sens
+  ou dans l'autre) : `conforme` ; au-delà, `superieur` ou `inferieur`
+  (seuil mesuré sur l'historique : battre le consensus de moins de 5 % ne
+  fait pas monter le cours).
   Si la presse cite un consensus plus précis (« contre un consensus de… »),
   utilise-le. Sans consensus comparable : `null`.
 - **periode** : la période publiée comme l'entreprise la nomme : `T3 2025`,

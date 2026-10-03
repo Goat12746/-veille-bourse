@@ -2,9 +2,8 @@
 estimes par le consensus la veille, chiffres publies (avis de Claude), ecarts,
 et probabilite de hausse du cours ajustee pas a pas.
 
-Probabilite : on part de la probabilite de hausse connaissant le sens des
-resultats (bons, mauvais, mitiges), le cours des 20 seances avant et
-l'habitude de l'entreprise (prevision de l'etude), puis chaque element connu
+Probabilite : on part de la part de hausse des publications passees de
+l'entreprise de meme sens (bons, mauvais, mitiges), puis chaque element connu
 le jour meme la decale de l'ecart qu'il a montre dans l'historique, a sens
 des resultats egal (en log-cote) :
   - perspectives relevees, confirmees, abaissees ou nouvelles ;
@@ -78,8 +77,9 @@ def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=
     p = p_base if p_base is not None else base_sens
     if p is None:
         return None
-    etapes = [{"libelle": f"{LIBELLES_SENS[sens]}, cours des 20 séances avant, habitude de l'entreprise"
-               if p_base is not None else LIBELLES_SENS[sens], "p": round(p, 3)}]
+    etapes = [{"libelle": f"{LIBELLES_SENS[sens]} : ses publications passées"
+               if p_base is not None else f"{LIBELLES_SENS[sens]} : toutes entreprises (pas d'historique propre)",
+               "p": round(p, 3)}]
     x = _logit(p)
     if perspectives in LIBELLES_PERSPECTIVES:
         t, src = t_marche, None

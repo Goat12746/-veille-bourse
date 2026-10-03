@@ -72,6 +72,12 @@ def evenements(doc, referentiel, cal, series):
     if os.path.exists(chemin):
         with open(chemin, encoding="utf-8") as f:
             classes = json.load(f).get("classes", {})
+    # Perspectives reperees par mots-cles (perspectives_usa.py), a defaut d'avis.
+    mots = {}
+    chemin = os.path.join(ICI, "resultats_usa_perspectives.json")
+    if os.path.exists(chemin):
+        with open(chemin, encoding="utf-8") as f:
+            mots = json.load(f).get("publications", {})
     evts, en_attente = [], 0
     for ticker, fiche in doc["entreprises"].items():
         for p in fiche["publications"]:
@@ -92,6 +98,8 @@ def evenements(doc, referentiel, cal, series):
                 ev["objectifs_vs"] = (avis.get("objectifs") or {}).get("vs_consensus")
                 if not ev["sens"] and avis.get("sens"):  # comptes pas encore deposes
                     ev["sens"], ev["origine"] = avis["sens"], "claude"
+            if ev.get("perspectives") is None and (mots.get(p["id"]) or [None])[0]:
+                ev["perspectives"] = mots[p["id"]][0]
             if mesurer(ev, series.get(ticker), t):
                 evts.append(ev)
     jours = {}

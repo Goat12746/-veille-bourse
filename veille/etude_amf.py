@@ -38,7 +38,11 @@ FORCE_SENS = 6  # poids des frequences de l'ensemble face a l'historique de l'en
 FORCE_REACTION = 10
 RECENTES = 14  # jours de publications listees pour l'onglet Actualites > Alertes
 HORIZON_PROCHAINES = 60  # jours
-SEUIL_SURPRISE = 1.0  # % d'ecart au consensus du BPA en deca duquel le resultat est conforme
+# % d'ecart au consensus du BPA en deca duquel le resultat est conforme. Mesure
+# sur 1 990 publications americaines (octobre 2026) : sous +5 %, battre le
+# consensus ne fait pas monter le cours (46 a 48 % de hausses) ; au-dela, 56 a
+# 58 % ; sous -5 %, 30 a 37 %. Les etudes citent +-2 %, moins discriminant ici.
+SEUIL_SURPRISE = 5.0
 SEUIL_REVISION = 1.0  # % d'evolution du consensus sur 30 jours en deca duquel il est stable
 # Part du capital vendue a decouvert (positions publiques, >= 0,5 % chacune).
 TRANCHES_COURTES = [("aucune", 0, 0.5), ("moderees", 0.5, 2), ("fortes", 2, 1e9)]
@@ -187,6 +191,7 @@ def enrichir(evts, positions, consensus):
                 ev["revision_30j_pct"] = rev
                 ev["revision"] = ("hausse" if rev > SEUIL_REVISION else "baisse" if rev < -SEUIL_REVISION
                                   else "stable")
+            # Avis de Claude, a defaut de l'ecart chiffre de Yahoo (qui prime, ci-dessous).
             if ev.get("consensus") in SURPRISES:
                 ev["surprise"] = SURPRISES[ev["consensus"]]
         # Surprises de BPA trimestriel (Yahoo) : premiere publication de
@@ -199,8 +204,8 @@ def enrichir(evts, positions, consensus):
             if ev is None:
                 continue
             ev["surprise_bpa_pct"] = s["surprise_pct"]
-            ev.setdefault("surprise", "positive" if s["surprise_pct"] > SEUIL_SURPRISE
-                          else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme")
+            ev["surprise"] = ("positive" if s["surprise_pct"] > SEUIL_SURPRISE
+                              else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme")
 
 
 def croise(v, cle, valeurs):
@@ -630,6 +635,30 @@ def valider(v, debut=DEBUT_VALIDATION):
     }
 
 
+def prevision_entreprise(hist):
+    """Scenarios de la prochaine publication d'apres le seul passe de
+    l'entreprise (pas les autres entreprises) : P(sens) = frequence de chaque
+    sens dans ses publications, P(hausse | sens) = part de ses publications
+    de ce sens suivies d'une hausse. Lissage minimal (un cas fictif par issue)
+    pour ne jamais afficher 0 % ou 100 % sur quelques publications. None sans
+    publication jugee."""
+    v = [x for x in hist if x["sens"] in SENS_RESULTATS and x["reaction"]]
+    if not v:
+        return None
+    n = len(v)
+    p_sens = {s: (sum(1 for x in v if x["sens"] == s) + 1) / (n + len(SENS_RESULTATS)) for s in SENS_RESULTATS}
+    p_hausse_si = {}
+    for s in SENS_RESULTATS:
+        w = [x for x in v if x["sens"] == s]
+        p_hausse_si[s] = (sum(1 for x in w if x["reaction"] == "hausse") + 1) / (len(w) + 2)
+    sc = {}
+    for s in SENS_RESULTATS:
+        sc[f"{s}_hausse"] = p_sens[s] * p_hausse_si[s]
+        sc[f"{s}_baisse"] = p_sens[s] * (1 - p_hausse_si[s])
+    return {"n": n, "scenarios": sc, "p_sens": p_sens, "p_hausse_si": p_hausse_si,
+            "n_par_sens": {s: sum(1 for x in v if x["sens"] == s) for s in SENS_RESULTATS}}
+
+
 def cours_recent(serie):
     """Ecart cumule au CAC 40 des 20 dernieres seances (en % et en sigma)."""
     s = len(serie.dates)
@@ -794,21 +823,29 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
                            for cid in ORDRE for w in [[x for x in v if x["categorie"] == cid]] if w],
             "resultats": {"n": len(r), "matrice": matrice(rs), "concordance": sens_reaction(rs),
                           "mouvements": mouvements(r),
+                          # Propres a l'entreprise (peu de cas au debut : se
+                          # completent au fil des publications).
+                          "par_surprise": [x for x in croise(r, "surprise", ["positive", "conforme", "negative"])
+                                           if x["n"]],
+                          "par_perspectives": par_valeur(r, "perspectives", ["relevees", "confirmees", "nouvelles",
+                                                                             "abaissees"]),
                           "evenements": [_evenement_public(x) for x in r]},
             "marche": marche_actuel(e["ticker"], positions, consensus, aujourd_hui, r),
         }
         serie = series.get(e["ticker"])
         prochaine = dates.get(e["ticker"])
         recent = cours_recent(serie) if serie is not None else None
-        if prochaine and recent and modele is not None:
+        prev = prevision_entreprise(r)
+        if prochaine and recent and prev is not None:
             z = recent["z_avant"]
-            sc = modele.scenarios(e["ticker"], z)
+            sc = prev["scenarios"]
             probable = max(sc, key=sc.get)
-            prochaine = dict(prochaine, **recent, tiers=tiers_de(z, modele.bornes),
+            prochaine = dict(prochaine, **recent, tiers=tiers_de(z, bornes),
                              scenarios={k: arrondi(p) for k, p in sc.items()}, probable=probable,
-                             p_sens={s: arrondi(p) for s, p in modele.probas_sens(e["ticker"], z).items()},
-                             p_hausse_si={s: arrondi(modele.p_hausse(e["ticker"], s, z)) for s in SENS_RESULTATS},
-                             p_hausse=arrondi(sum(p for k, p in sc.items() if k.endswith("_hausse"))))
+                             p_sens={s: arrondi(p) for s, p in prev["p_sens"].items()},
+                             p_hausse_si={s: arrondi(p) for s, p in prev["p_hausse_si"].items()},
+                             p_hausse=arrondi(sum(p for k, p in sc.items() if k.endswith("_hausse"))),
+                             n_historique=prev["n"], n_par_sens=prev["n_par_sens"])
             fiche["prochaine"] = prochaine
             if prochaine["date"] <= (dt.date.fromisoformat(aujourd_hui)
                                      + dt.timedelta(days=HORIZON_PROCHAINES)).isoformat():
@@ -827,13 +864,10 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
     jour_pub = []
     for pub, avis in recentes or []:
         ev = mesures.get(pub["id"])
-        p_base = None
-        if modele is not None:
-            z = ev.get("z_avant") if ev else None
-            if z is None and series.get(pub["ticker"]) is not None:
-                z = (cours_recent(series[pub["ticker"]]) or {}).get("z_avant")
-            if z is not None:
-                p_base = {s: modele.p_hausse(pub["ticker"], s, z) for s in SENS_RESULTATS}
+        # Probabilite de depart : seul passe de l'entreprise (hors cette publication).
+        prev = prevision_entreprise([x for x in evts if x["ticker"] == pub["ticker"] and x["categorie"] == "resultats"
+                                     and x["id"] != pub["id"]])
+        p_base = prev["p_hausse_si"] if prev else None
         fe = consensus.get(pub["ticker"]) or {}
         f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]), p_base, t_marche,
                          surprises=fe.get("surprises"))

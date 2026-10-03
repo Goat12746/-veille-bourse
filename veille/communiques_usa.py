@@ -49,7 +49,7 @@ JOURS_A_CLASSER = 5  # publications proposees a Claude (rattrapage d'une veille 
 FLUX_PAGES = 8  # pages de 100 depots 8-K dans le flux de la SEC
 
 # Reperage des perspectives par mots-cles (signal provisoire, a confirmer).
-_OBJET = r"(?:its |our |the |full[- ]year |fiscal |annual |20\d\d |year |quarter |\w+ )*(?:guidance|outlook|forecast|expectations)"
+_OBJET = r"(?:its |our |the |full[- ]year |fiscal |annual |20\d\d |year |quarter |\w+ ){0,5}(?:guidance|outlook|forecast)"
 _PERSPECTIVES = [
     ("abaissees", rf"\b(?:lower(?:s|ed|ing)?|reduc(?:e|es|ed|ing)|cut(?:s|ting)?|trim(?:s|med)?|narrow(?:s|ed)? (?:to|toward) the low end of) {_OBJET}"),
     ("abaissees", r"\b(?:guidance|outlook) (?:was |is )?(?:lowered|reduced|cut)\b"),
@@ -165,7 +165,10 @@ def perspectives_mots(texte):
         for v, motif in _PERSPECTIVES:
             if v != valeur:
                 continue
-            m = re.search(motif, t, re.I)
+            m = next((x for x in re.finditer(motif, t, re.I)
+                      # "is not updating or confirming", "does not change its guidance"
+                      if not re.search(r"\b(?:not|no longer|neither|nor)\b[^.]{0,40}$", t[max(0, x.start() - 60):x.start()],
+                                       re.I)), None)
             if m:
                 debut = max(0, t.rfind(".", 0, m.start()) + 1)
                 fin = t.find(".", m.end())
