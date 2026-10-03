@@ -7,7 +7,9 @@ jamais face a l'an dernier. Probabilite : on part de la part de hausse des
 publications passees de l'entreprise, puis chaque element connu le jour meme
 la decale de l'ecart qu'il a montre dans l'historique du meme marche (en
 log-cote) :
-  - resultats au-dessus, conformes ou en dessous du consensus ;
+  - resultats au-dessus, conformes ou en dessous du consensus : face aux
+    publications de son grand secteur si la position y compte au moins N_MIN
+    cas, sinon face a tout le marche ;
   - perspectives relevees, confirmees, abaissees ou nouvelles, et objectifs
     face au consensus (a position face au consensus egale si l'historique le
     permet, sinon toutes positions confondues) ;
@@ -65,7 +67,17 @@ def tables(resultats):
             "surprise": surprise,
             "perspectives": croise(resultats.get("par_perspectives_surprise")),
             "objectifs": croise(resultats.get("par_objectifs_surprise")),
+            "secteurs": {g: _surprise(m) for g, m in (resultats.get("consensus_par_secteur") or {}).items()},
             "forte_hausse_12m": resultats.get("forte_hausse_12m")}
+
+
+def _surprise(mc):
+    """Part de hausse par position face au consensus et part de hausse de
+    toutes les publications comparees ({position: (p, n)}, p_consensus)."""
+    par = {s: (l.get("part_hausse"), l.get("n", 0)) for s, l in mc.items()}
+    n = sum(x for _, x in par.values())
+    h = sum((l.get("hausse") or {}).get("n", 0) for l in mc.values())
+    return par, (h / n if n else None)
 
 
 def _decalage(t, table, valeur, surprise):
@@ -84,7 +96,7 @@ def _decalage(t, table, valeur, surprise):
     return _logit(p) - _logit(t["tous"]), n, False
 
 
-def probabilites(p_base, perspectives, surprise, t_marche, objectifs=None, perf_12m=None):
+def probabilites(p_base, perspectives, surprise, t_marche, objectifs=None, perf_12m=None, secteur=None):
     """Etapes de la probabilite de hausse : [{libelle, p, n}] et probabilite
     finale. `p_base` : {"p", "n"}, part de hausse des publications passees de
     l'entreprise (None : celle de toutes les entreprises du marche)."""
@@ -101,12 +113,22 @@ def probabilites(p_base, perspectives, surprise, t_marche, objectifs=None, perf_
     x = _logit(p)
     non_comptes = []
     if surprise in LIBELLES_SURPRISE:
-        p_s, n = t_marche["surprise"].get(surprise) or (None, 0)
-        if p_s is not None and n >= N_MIN and t_marche.get("consensus"):
-            x += _logit(p_s) - _logit(t_marche["consensus"])
-            etapes.append({"libelle": LIBELLES_SURPRISE[surprise], "p": round(_sig(x), 3), "n": n})
+        # Face aux publications de son grand secteur, a defaut tout le marche.
+        par_s, ref_s = (t_marche.get("secteurs") or {}).get(secteur) or ({}, None)
+        p_s, n_s = par_s.get(surprise, (None, 0))
+        if secteur and p_s is not None and n_s >= N_MIN and ref_s:
+            x += _logit(p_s) - _logit(ref_s)
+            etapes.append({"libelle": f"{LIBELLES_SURPRISE[surprise]} (secteur {secteur})", "p": round(_sig(x), 3),
+                           "n": n_s})
         else:
-            non_comptes.append(f"{LIBELLES_SURPRISE[surprise]} : historique encore trop court ({n} cas)")
+            p_m, n = t_marche["surprise"].get(surprise) or (None, 0)
+            if p_m is not None and n >= N_MIN and t_marche.get("consensus"):
+                x += _logit(p_m) - _logit(t_marche["consensus"])
+                trop_court = f"secteur {secteur} : {n_s} cas" if secteur else "secteur inconnu"
+                etapes.append({"libelle": f"{LIBELLES_SURPRISE[surprise]} (tout le marché ; {trop_court})",
+                               "p": round(_sig(x), 3), "n": n})
+            else:
+                non_comptes.append(f"{LIBELLES_SURPRISE[surprise]} : historique encore trop court ({n} cas)")
     else:
         non_comptes.append("Pas de consensus comparable : position face aux attentes inconnue")
     for table, valeur, libelles in (("perspectives", perspectives, LIBELLES_PERSPECTIVES),
@@ -179,7 +201,7 @@ def _ecart(publie, attendu):
     return round((publie - attendu[0]) / abs(attendu[0]) * 100, 1)
 
 
-def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None):
+def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, secteur=None):
     """Publication du jour pour l'application : `pub` = {id, ticker, nom,
     publie_le, url}, `avis` = avis de Claude (ou None : jugement a venir),
     `releve` = consensus de la veille, `p_base` = part de hausse des
@@ -218,7 +240,7 @@ def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None):
     if surprise:
         res["surprise"] = surprise
     pr = probabilites(p_base, avis.get("perspectives"), surprise, t_marche,
-                      (avis.get("objectifs") or {}).get("vs_consensus"), perf_12m)
+                      (avis.get("objectifs") or {}).get("vs_consensus"), perf_12m, secteur)
     if pr:
         res["probabilites"] = pr
     return {k: v for k, v in res.items() if v is not None and v is not False and v != {}}

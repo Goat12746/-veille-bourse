@@ -324,6 +324,7 @@ def ecrire_jour():
     etude = charger(ETUDE_USA, {})
     t_usa = jour_j.tables(etude.get("resultats"))
     p_base = {e["ticker"]: e.get("p_hausse_passee") for e in etude.get("entreprises", [])}
+    secteur = {e["ticker"]: e.get("grand_secteur") for e in etude.get("entreprises", [])}
     perf = {e["ticker"]: (e.get("prochaine") or e.get("cours_recent") or {}).get("perf_12m_pct")
             for e in etude.get("entreprises", [])}
     pubs = {}
@@ -341,7 +342,8 @@ def ecrire_jour():
         avis = classes.get(numero)
         fe = estimations.get(pub["ticker"]) or {}
         f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]),
-                         p_base.get(pub["ticker"]), t_usa, fe.get("surprises"), perf.get(pub["ticker"]))
+                         p_base.get(pub["ticker"]), t_usa, fe.get("surprises"), perf.get(pub["ticker"]),
+                         secteur.get(pub["ticker"]))
         if avis and avis.get("perspectives_mots"):
             f["perspectives_mots"] = avis["perspectives_mots"]
         rx = reactions.get(numero) or {}

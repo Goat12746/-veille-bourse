@@ -11,8 +11,10 @@ des cours a chaque communique des entreprises du referentiel depuis 2019.
   - publications de resultats : jugees seulement face aux attentes, c'est-a-
     dire au consensus des analystes (au-dessus, conforme, en dessous) :
     scenarios position x reaction, perspectives et objectifs ;
-  - prevision de la prochaine publication d'apres les publications de son
-    grand secteur (meme marche) face au consensus.
+  - prevision de la prochaine publication : hausse ou baisse, d'apres la
+    reaction du cours aux publications passees de l'entreprise ; le jour de
+    la publication, la position face au consensus est comparee a celle des
+    publications de son grand secteur (meme marche).
 """
 
 import datetime as dt
@@ -409,32 +411,6 @@ def part_hausse_passee(hist):
     return {"p": arrondi((sum(1 for x in v if x["reaction"] == "hausse") + 1) / (len(v) + 2)), "n": len(v)}
 
 
-def prevision_secteur(hist):
-    """Scenarios de la prochaine publication d'apres les publications de son
-    grand secteur, dans le meme marche, comparees au consensus : P(position)
-    = frequence de chaque position (au-dessus, conforme, en dessous),
-    P(hausse | position) = part des publications de cette position suivies
-    d'une hausse. Lissage minimal (un cas fictif par issue) pour ne jamais
-    afficher 0 % ou 100 % sur quelques publications. None sans publication
-    comparee au consensus."""
-    v = [x for x in hist if x.get("surprise") in POSITIONS_CONSENSUS and x["reaction"]]
-    if not v:
-        return None
-    n = len(v)
-    ps = POSITIONS_CONSENSUS
-    p_position = {s: (sum(1 for x in v if x["surprise"] == s) + 1) / (n + len(ps)) for s in ps}
-    p_hausse_si = {}
-    for s in ps:
-        w = [x for x in v if x["surprise"] == s]
-        p_hausse_si[s] = (sum(1 for x in w if x["reaction"] == "hausse") + 1) / (len(w) + 2)
-    sc = {}
-    for s in ps:
-        sc[f"{s}_hausse"] = p_position[s] * p_hausse_si[s]
-        sc[f"{s}_baisse"] = p_position[s] * (1 - p_hausse_si[s])
-    return {"n": n, "scenarios": sc, "p_position": p_position, "p_hausse_si": p_hausse_si,
-            "n_par_position": {s: sum(1 for x in v if x["surprise"] == s) for s in ps}}
-
-
 def perf_12m(serie, s):
     """Evolution de l'action face a l'indice sur les 12 mois (250 seances)
     precedant la seance s, en points de %. None sans assez d'historique."""
@@ -615,16 +591,15 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
 
     # Par entreprise.
     dates = prochaines_dates(referentiel, res, calendrier, aujourd_hui)
-    # Publications de resultats de chaque grand secteur (scenario le plus
-    # probable de la prochaine publication).
+    # Scenarios face au consensus de chaque grand secteur (meme marche) : le
+    # jour de la publication, la position face au consensus est comparee a
+    # celle des publications du secteur (jour_j.py).
     secteur_de = {e["ticker"]: grand_secteur(e.get("secteur")) for e in referentiel}
     par_secteur = {}
     for x in res:
-        par_secteur.setdefault(secteur_de.get(x["ticker"]), []).append(x)
-    prev_secteur = {g: prevision_secteur(v) for g, v in par_secteur.items() if g}
-    n_entreprises_secteur = {}
-    for t, g in secteur_de.items():
-        n_entreprises_secteur[g] = n_entreprises_secteur.get(g, 0) + 1
+        if x.get("surprise"):
+            par_secteur.setdefault(secteur_de.get(x["ticker"]), []).append(x)
+    resultats["consensus_par_secteur"] = {g: matrice(v) for g, v in sorted(par_secteur.items()) if g}
     entreprises, prochaines = [], []
     for e in referentiel:
         v = [x for x in evts if x["ticker"] == e["ticker"]]
@@ -652,30 +627,26 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         recent = cours_recent(serie) if serie is not None else None
         gs = secteur_de.get(e["ticker"])
         fiche["grand_secteur"] = gs
-        prev = prev_secteur.get(gs)
         passe = part_hausse_passee(r)
         if passe is not None:  # depart de la probabilite du jour de publication
             fiche["p_hausse_passee"] = passe
         if prochaine and recent:
+            # Deux scenarios, hausse ou baisse, d'apres la reaction du cours
+            # aux publications passees de l'entreprise.
             z = recent["z_avant"]
-            prochaine = dict(prochaine, **recent, n_historique=prev["n"] if prev else 0, secteur=gs,
-                             n_entreprises_secteur=n_entreprises_secteur.get(gs, 0))
+            prochaine = dict(prochaine, **recent, n_historique=passe["n"] if passe else 0)
             probable = None
-            if prev is not None:
-                sc = prev["scenarios"]
+            if passe is not None:
+                sc = {"hausse": passe["p"], "baisse": arrondi(1 - passe["p"])}
                 probable = max(sc, key=sc.get)
-                prochaine.update(scenarios={k: arrondi(p) for k, p in sc.items()}, probable=probable,
-                                 p_position={s: arrondi(p) for s, p in prev["p_position"].items()},
-                                 p_hausse_si={s: arrondi(p) for s, p in prev["p_hausse_si"].items()},
-                                 p_hausse=arrondi(sum(p for k, p in sc.items() if k.endswith("_hausse"))),
-                                 n_par_position=prev["n_par_position"])
+                prochaine.update(scenarios=sc, probable=probable, p_hausse=passe["p"])
             fiche["prochaine"] = prochaine
             if prochaine["date"] <= (dt.date.fromisoformat(aujourd_hui)
                                      + dt.timedelta(days=HORIZON_PROCHAINES)).isoformat():
                 prochaines.append({k: v for k, v in {
                     "ticker": e["ticker"], "nom": e["nom"], "date": prochaine["date"],
                     "estimee": prochaine["estimee"], "probable": probable,
-                    "p_probable": arrondi(prev["scenarios"][probable]) if probable else None,
+                    "p_probable": prochaine["scenarios"][probable] if probable else None,
                     "p_hausse": prochaine.get("p_hausse"), "z_avant": z, "avant_pct": recent["avant_pct"]}.items()
                     if v is not None})
         elif recent:
@@ -697,7 +668,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         if perf is None and series.get(pub["ticker"]) is not None:
             perf = (cours_recent(series[pub["ticker"]]) or {}).get("perf_12m_pct")
         f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]), p_base, t_marche,
-                         surprises=fe.get("surprises"), perf_12m=perf)
+                         surprises=fe.get("surprises"), perf_12m=perf, secteur=secteur_de.get(pub["ticker"]))
         if ev:
             f.update({k: ev.get(k) for k in ("jour", "rendement_pct", "indice_pct", "ecart_pct", "z")})
         jour_pub.append(f)

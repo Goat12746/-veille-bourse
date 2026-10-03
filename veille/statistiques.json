@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-03T20:47:25+02:00",
+ "genere_le": "2026-10-03T20:58:36+02:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -2433,6 +2433,358 @@
       }
      }
     }
+   },
+   "consensus_par_secteur": {
+    "Communication": {
+     "positive": {
+      "hausse": {
+       "n": 2,
+       "avant_moyen_pct": -0.23,
+       "ecart_moyen_pct": 5.35,
+       "suite_moyenne_pct": -4.48
+      },
+      "baisse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "n": 2,
+      "part_hausse": 1.0
+     },
+     "conforme": {
+      "hausse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "baisse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "n": 0,
+      "part_hausse": null
+     },
+     "negative": {
+      "hausse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "baisse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "n": 0,
+      "part_hausse": null
+     }
+    },
+    "Finance": {
+     "positive": {
+      "hausse": {
+       "n": 10,
+       "avant_moyen_pct": 1.84,
+       "ecart_moyen_pct": 4.0,
+       "suite_moyenne_pct": -0.34
+      },
+      "baisse": {
+       "n": 4,
+       "avant_moyen_pct": -3.5,
+       "ecart_moyen_pct": -4.29,
+       "suite_moyenne_pct": 0.32
+      },
+      "n": 14,
+      "part_hausse": 0.714
+     },
+     "conforme": {
+      "hausse": {
+       "n": 1,
+       "avant_moyen_pct": -7.13,
+       "ecart_moyen_pct": 3.92,
+       "suite_moyenne_pct": -1.49
+      },
+      "baisse": {
+       "n": 7,
+       "avant_moyen_pct": -2.27,
+       "ecart_moyen_pct": -4.37,
+       "suite_moyenne_pct": 3.0
+      },
+      "n": 8,
+      "part_hausse": 0.125
+     },
+     "negative": {
+      "hausse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": 4.93,
+       "ecart_moyen_pct": -3.97,
+       "suite_moyenne_pct": -1.76
+      },
+      "n": 1,
+      "part_hausse": 0.0
+     }
+    },
+    "Industrie": {
+     "positive": {
+      "hausse": {
+       "n": 5,
+       "avant_moyen_pct": -5.27,
+       "ecart_moyen_pct": 6.74,
+       "suite_moyenne_pct": -2.14
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": 3.61,
+       "ecart_moyen_pct": -2.83,
+       "suite_moyenne_pct": 1.89
+      },
+      "n": 6,
+      "part_hausse": 0.833
+     },
+     "conforme": {
+      "hausse": {
+       "n": 4,
+       "avant_moyen_pct": 2.94,
+       "ecart_moyen_pct": 3.15,
+       "suite_moyenne_pct": 0.67
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": 9.17,
+       "ecart_moyen_pct": -0.33,
+       "suite_moyenne_pct": -0.55
+      },
+      "n": 5,
+      "part_hausse": 0.8
+     },
+     "negative": {
+      "hausse": {
+       "n": 2,
+       "avant_moyen_pct": -6.27,
+       "ecart_moyen_pct": 0.79,
+       "suite_moyenne_pct": 2.23
+      },
+      "baisse": {
+       "n": 3,
+       "avant_moyen_pct": -1.53,
+       "ecart_moyen_pct": -10.51,
+       "suite_moyenne_pct": -6.89
+      },
+      "n": 5,
+      "part_hausse": 0.4
+     }
+    },
+    "Matériaux": {
+     "positive": {
+      "hausse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": 7.79,
+       "ecart_moyen_pct": -1.0,
+       "suite_moyenne_pct": 4.12
+      },
+      "n": 1,
+      "part_hausse": 0.0
+     },
+     "conforme": {
+      "hausse": {
+       "n": 1,
+       "avant_moyen_pct": 3.98,
+       "ecart_moyen_pct": 4.38,
+       "suite_moyenne_pct": -1.82
+      },
+      "baisse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "n": 1,
+      "part_hausse": 1.0
+     },
+     "negative": {
+      "hausse": {
+       "n": 1,
+       "avant_moyen_pct": 12.16,
+       "ecart_moyen_pct": 1.1,
+       "suite_moyenne_pct": 0.29
+      },
+      "baisse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "n": 1,
+      "part_hausse": 1.0
+     }
+    },
+    "Santé": {
+     "positive": {
+      "hausse": {
+       "n": 1,
+       "avant_moyen_pct": 9.27,
+       "ecart_moyen_pct": 2.58,
+       "suite_moyenne_pct": -0.03
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": 9.37,
+       "ecart_moyen_pct": -9.46,
+       "suite_moyenne_pct": 0.77
+      },
+      "n": 2,
+      "part_hausse": 0.5
+     },
+     "conforme": {
+      "hausse": {
+       "n": 1,
+       "avant_moyen_pct": 2.54,
+       "ecart_moyen_pct": 0.72,
+       "suite_moyenne_pct": -1.23
+      },
+      "baisse": {
+       "n": 3,
+       "avant_moyen_pct": 2.26,
+       "ecart_moyen_pct": -6.78,
+       "suite_moyenne_pct": 2.2
+      },
+      "n": 4,
+      "part_hausse": 0.25
+     },
+     "negative": {
+      "hausse": {
+       "n": 5,
+       "avant_moyen_pct": -3.29,
+       "ecart_moyen_pct": 2.48,
+       "suite_moyenne_pct": 4.48
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": -1.62,
+       "ecart_moyen_pct": -0.5,
+       "suite_moyenne_pct": -1.55
+      },
+      "n": 6,
+      "part_hausse": 0.833
+     }
+    },
+    "Technologie": {
+     "positive": {
+      "hausse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "baisse": {
+       "n": 2,
+       "avant_moyen_pct": -8.8,
+       "ecart_moyen_pct": -15.16,
+       "suite_moyenne_pct": -5.18
+      },
+      "n": 2,
+      "part_hausse": 0.0
+     },
+     "conforme": {
+      "hausse": {
+       "n": 2,
+       "avant_moyen_pct": 8.71,
+       "ecart_moyen_pct": 3.14,
+       "suite_moyenne_pct": 5.48
+      },
+      "baisse": {
+       "n": 2,
+       "avant_moyen_pct": 0.35,
+       "ecart_moyen_pct": -16.8,
+       "suite_moyenne_pct": -4.06
+      },
+      "n": 4,
+      "part_hausse": 0.5
+     },
+     "negative": {
+      "hausse": {
+       "n": 1,
+       "avant_moyen_pct": 24.34,
+       "ecart_moyen_pct": 13.06,
+       "suite_moyenne_pct": 8.18
+      },
+      "baisse": {
+       "n": 1,
+       "avant_moyen_pct": 13.38,
+       "ecart_moyen_pct": -5.82,
+       "suite_moyenne_pct": 2.01
+      },
+      "n": 2,
+      "part_hausse": 0.5
+     }
+    },
+    "Énergie": {
+     "positive": {
+      "hausse": {
+       "n": 2,
+       "avant_moyen_pct": 7.78,
+       "ecart_moyen_pct": 20.27,
+       "suite_moyenne_pct": 2.65
+      },
+      "baisse": {
+       "n": 0,
+       "avant_moyen_pct": null,
+       "ecart_moyen_pct": null,
+       "suite_moyenne_pct": null
+      },
+      "n": 2,
+      "part_hausse": 1.0
+     },
+     "conforme": {
+      "hausse": {
+       "n": 2,
+       "avant_moyen_pct": 7.49,
+       "ecart_moyen_pct": 2.49,
+       "suite_moyenne_pct": -0.28
+      },
+      "baisse": {
+       "n": 3,
+       "avant_moyen_pct": 1.72,
+       "ecart_moyen_pct": -0.3,
+       "suite_moyenne_pct": -0.24
+      },
+      "n": 5,
+      "part_hausse": 0.4
+     },
+     "negative": {
+      "hausse": {
+       "n": 3,
+       "avant_moyen_pct": 2.03,
+       "ecart_moyen_pct": 10.36,
+       "suite_moyenne_pct": -5.59
+      },
+      "baisse": {
+       "n": 4,
+       "avant_moyen_pct": -1.3,
+       "ecart_moyen_pct": -5.35,
+       "suite_moyenne_pct": -4.07
+      },
+      "n": 7,
+      "part_hausse": 0.429
+     }
+    }
    }
   },
   "revisions": {
@@ -3215,9 +3567,13 @@
      "avant_pct": 0.8,
      "z_avant": 0.14,
      "perf_12m_pct": 12.54,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 29,
+     "scenarios": {
+      "hausse": 0.548,
+      "baisse": 0.452
+     },
+     "probable": "hausse",
+     "p_hausse": 0.548
     }
    },
    {
@@ -4090,34 +4446,13 @@
      "avant_pct": 2.52,
      "z_avant": 0.58,
      "perf_12m_pct": 13.3,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
+     "n_historique": 38,
      "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
+      "hausse": 0.575,
+      "baisse": 0.425
      },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.575
     }
    },
    {
@@ -4320,34 +4655,7 @@
      "avant_pct": 1.05,
      "z_avant": 0.16,
      "perf_12m_pct": -4.0,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
-     "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
-     },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "n_historique": 0
     }
    },
    {
@@ -5142,34 +5450,13 @@
      "avant_pct": -3.82,
      "z_avant": -0.33,
      "perf_12m_pct": -31.5,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.469,
+      "baisse": 0.531
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "baisse",
+     "p_hausse": 0.469
     }
    },
    {
@@ -5372,34 +5659,7 @@
      "avant_pct": -12.18,
      "z_avant": -1.33,
      "perf_12m_pct": 71.32,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
-     "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
-     },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "n_historique": 0
     }
    },
    {
@@ -6119,34 +6379,13 @@
      "avant_pct": -3.4,
      "z_avant": -0.85,
      "perf_12m_pct": 13.83,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 28,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.567,
+      "baisse": 0.433
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.567
     }
    },
    {
@@ -7004,34 +7243,13 @@
      "avant_pct": -5.1,
      "z_avant": -0.92,
      "perf_12m_pct": 31.46,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.636,
+      "baisse": 0.364
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.636
     }
    },
    {
@@ -7924,34 +8142,13 @@
      "avant_pct": -5.95,
      "z_avant": -1.17,
      "perf_12m_pct": 12.16,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.667,
+      "baisse": 0.333
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.667
     }
    },
    {
@@ -8790,34 +8987,13 @@
      "avant_pct": 0.55,
      "z_avant": 0.09,
      "perf_12m_pct": 2.47,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 36,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.684,
+      "baisse": 0.316
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.684
     }
    },
    {
@@ -9608,34 +9784,13 @@
      "avant_pct": 5.51,
      "z_avant": 0.52,
      "perf_12m_pct": -6.11,
-     "n_historique": 8,
-     "secteur": "Technologie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 32,
      "scenarios": {
-      "positive_hausse": 0.068,
-      "positive_baisse": 0.205,
-      "conforme_hausse": 0.227,
-      "conforme_baisse": 0.227,
-      "negative_hausse": 0.136,
-      "negative_baisse": 0.136
+      "hausse": 0.529,
+      "baisse": 0.471
      },
-     "probable": "conforme_hausse",
-     "p_position": {
-      "positive": 0.273,
-      "conforme": 0.455,
-      "negative": 0.273
-     },
-     "p_hausse_si": {
-      "positive": 0.25,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.432,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 2
-     }
+     "probable": "hausse",
+     "p_hausse": 0.529
     }
    },
    {
@@ -10457,9 +10612,13 @@
      "avant_pct": -7.73,
      "z_avant": -1.28,
      "perf_12m_pct": 29.44,
-     "n_historique": 0,
-     "secteur": "Consommation de base",
-     "n_entreprises_secteur": 7
+     "n_historique": 34,
+     "scenarios": {
+      "hausse": 0.583,
+      "baisse": 0.417
+     },
+     "probable": "hausse",
+     "p_hausse": 0.583
     }
    },
    {
@@ -11242,34 +11401,13 @@
      "avant_pct": -7.32,
      "z_avant": -1.64,
      "perf_12m_pct": 10.36,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.387,
+      "baisse": 0.613
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "baisse",
+     "p_hausse": 0.387
     }
    },
    {
@@ -12050,9 +12188,13 @@
      "avant_pct": -5.48,
      "z_avant": -0.87,
      "perf_12m_pct": -17.6,
-     "n_historique": 0,
-     "secteur": "Consommation de base",
-     "n_entreprises_secteur": 7
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.606,
+      "baisse": 0.394
+     },
+     "probable": "hausse",
+     "p_hausse": 0.606
     }
    },
    {
@@ -12792,34 +12934,13 @@
      "avant_pct": 1.9,
      "z_avant": 0.17,
      "perf_12m_pct": -25.94,
-     "n_historique": 8,
-     "secteur": "Technologie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 20,
      "scenarios": {
-      "positive_hausse": 0.068,
-      "positive_baisse": 0.205,
-      "conforme_hausse": 0.227,
-      "conforme_baisse": 0.227,
-      "negative_hausse": 0.136,
-      "negative_baisse": 0.136
+      "hausse": 0.545,
+      "baisse": 0.455
      },
-     "probable": "conforme_hausse",
-     "p_position": {
-      "positive": 0.273,
-      "conforme": 0.455,
-      "negative": 0.273
-     },
-     "p_hausse_si": {
-      "positive": 0.25,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.432,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 2
-     }
+     "probable": "hausse",
+     "p_hausse": 0.545
     }
    },
    {
@@ -13628,34 +13749,13 @@
      "avant_pct": -5.71,
      "z_avant": -0.99,
      "perf_12m_pct": 28.54,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.531,
+      "baisse": 0.469
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "hausse",
+     "p_hausse": 0.531
     }
    },
    {
@@ -14432,34 +14532,13 @@
      "avant_pct": -10.72,
      "z_avant": -0.81,
      "perf_12m_pct": 38.79,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.625,
+      "baisse": 0.375
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.625
     }
    },
    {
@@ -15230,34 +15309,13 @@
      "avant_pct": 4.47,
      "z_avant": 0.58,
      "perf_12m_pct": -45.63,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.485,
+      "baisse": 0.515
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "baisse",
+     "p_hausse": 0.485
     }
    },
    {
@@ -15850,34 +15908,13 @@
      "avant_pct": 5.95,
      "z_avant": 0.83,
      "perf_12m_pct": 22.22,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 22,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.292,
+      "baisse": 0.708
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "baisse",
+     "p_hausse": 0.292
     }
    },
    {
@@ -16730,34 +16767,13 @@
      "avant_pct": -0.51,
      "z_avant": -0.08,
      "perf_12m_pct": 29.21,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.688,
+      "baisse": 0.312
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.688
     }
    },
    {
@@ -17416,9 +17432,13 @@
      "avant_pct": -0.28,
      "z_avant": -0.04,
      "perf_12m_pct": -35.61,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.667,
+      "baisse": 0.333
+     },
+     "probable": "hausse",
+     "p_hausse": 0.667
     }
    },
    {
@@ -18203,9 +18223,13 @@
      "avant_pct": -7.88,
      "z_avant": -0.74,
      "perf_12m_pct": -29.8,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.545,
+      "baisse": 0.455
+     },
+     "probable": "hausse",
+     "p_hausse": 0.545
     }
    },
    {
@@ -18952,9 +18976,13 @@
      "avant_pct": 2.62,
      "z_avant": 0.43,
      "perf_12m_pct": 2.84,
-     "n_historique": 0,
-     "secteur": "Consommation de base",
-     "n_entreprises_secteur": 7
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.606,
+      "baisse": 0.394
+     },
+     "probable": "hausse",
+     "p_hausse": 0.606
     }
    },
    {
@@ -19848,34 +19876,13 @@
      "avant_pct": 9.35,
      "z_avant": 1.35,
      "perf_12m_pct": 2.93,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 32,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.471,
+      "baisse": 0.529
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "baisse",
+     "p_hausse": 0.471
     }
    },
    {
@@ -20569,9 +20576,13 @@
      "avant_pct": -3.68,
      "z_avant": -0.58,
      "perf_12m_pct": -28.81,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 30,
+     "scenarios": {
+      "hausse": 0.562,
+      "baisse": 0.438
+     },
+     "probable": "hausse",
+     "p_hausse": 0.562
     }
    },
    {
@@ -21123,9 +21134,13 @@
      "avant_pct": -2.5,
      "z_avant": -0.47,
      "perf_12m_pct": 18.11,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 17,
+     "scenarios": {
+      "hausse": 0.579,
+      "baisse": 0.421
+     },
+     "probable": "hausse",
+     "p_hausse": 0.579
     }
    },
    {
@@ -21936,34 +21951,13 @@
      "avant_pct": -10.2,
      "z_avant": -1.59,
      "perf_12m_pct": 9.82,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.576,
+      "baisse": 0.424
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "hausse",
+     "p_hausse": 0.576
     }
    },
    {
@@ -23591,34 +23585,13 @@
      "avant_pct": -6.59,
      "z_avant": -0.86,
      "perf_12m_pct": 21.09,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 32,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.647,
+      "baisse": 0.353
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "hausse",
+     "p_hausse": 0.647
     }
    },
    {
@@ -24437,9 +24410,13 @@
      "avant_pct": -10.3,
      "z_avant": -1.34,
      "perf_12m_pct": -22.66,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.364,
+      "baisse": 0.636
+     },
+     "probable": "baisse",
+     "p_hausse": 0.364
     }
    },
    {
@@ -25197,34 +25174,13 @@
      "avant_pct": 6.38,
      "z_avant": 0.98,
      "perf_12m_pct": 11.96,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.594,
+      "baisse": 0.406
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.594
     }
    },
    {
@@ -26013,34 +25969,13 @@
      "avant_pct": -2.89,
      "z_avant": -0.49,
      "perf_12m_pct": -21.48,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.656,
+      "baisse": 0.344
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.656
     }
    },
    {
@@ -26925,34 +26860,13 @@
      "avant_pct": -4.52,
      "z_avant": -0.67,
      "perf_12m_pct": -10.06,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.406,
+      "baisse": 0.594
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "baisse",
+     "p_hausse": 0.406
     }
    },
    {
@@ -27726,34 +27640,13 @@
      "avant_pct": 11.03,
      "z_avant": 1.61,
      "perf_12m_pct": 25.38,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.667,
+      "baisse": 0.333
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.667
     }
    },
    {
@@ -28565,34 +28458,13 @@
      "avant_pct": -5.03,
      "z_avant": -0.72,
      "perf_12m_pct": 25.48,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.548,
+      "baisse": 0.452
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.548
     }
    },
    {
@@ -28742,9 +28614,7 @@
      "avant_pct": -8.28,
      "z_avant": -0.64,
      "perf_12m_pct": -56.16,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 0
     }
    },
    {
@@ -29658,34 +29528,13 @@
      "avant_pct": 15.07,
      "z_avant": 1.06,
      "perf_12m_pct": 107.81,
-     "n_historique": 8,
-     "secteur": "Technologie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.068,
-      "positive_baisse": 0.205,
-      "conforme_hausse": 0.227,
-      "conforme_baisse": 0.227,
-      "negative_hausse": 0.136,
-      "negative_baisse": 0.136
+      "hausse": 0.531,
+      "baisse": 0.469
      },
-     "probable": "conforme_hausse",
-     "p_position": {
-      "positive": 0.273,
-      "conforme": 0.455,
-      "negative": 0.273
-     },
-     "p_hausse_si": {
-      "positive": 0.25,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.432,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 2
-     }
+     "probable": "hausse",
+     "p_hausse": 0.531
     }
    },
    {
@@ -30463,34 +30312,13 @@
      "avant_pct": -2.87,
      "z_avant": -0.21,
      "perf_12m_pct": 17.32,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.531,
+      "baisse": 0.469
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.531
     }
    },
    {
@@ -31275,34 +31103,13 @@
      "avant_pct": -2.3,
      "z_avant": -0.27,
      "perf_12m_pct": -11.94,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.355,
+      "baisse": 0.645
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "baisse",
+     "p_hausse": 0.355
     }
    },
    {
@@ -32155,34 +31962,13 @@
      "avant_pct": -6.22,
      "z_avant": -0.98,
      "perf_12m_pct": 54.82,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.406,
+      "baisse": 0.594
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "baisse",
+     "p_hausse": 0.406
     }
    },
    {
@@ -32642,9 +32428,13 @@
      "avant_pct": -8.08,
      "z_avant": -2.01,
      "perf_12m_pct": 6.6,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 13,
+     "scenarios": {
+      "hausse": 0.4,
+      "baisse": 0.6
+     },
+     "probable": "baisse",
+     "p_hausse": 0.4
     }
    },
    {
@@ -33467,9 +33257,13 @@
      "avant_pct": -1.75,
      "z_avant": -0.38,
      "perf_12m_pct": 12.35,
-     "n_historique": 0,
-     "secteur": "Services publics",
-     "n_entreprises_secteur": 1
+     "n_historique": 33,
+     "scenarios": {
+      "hausse": 0.371,
+      "baisse": 0.629
+     },
+     "probable": "baisse",
+     "p_hausse": 0.371
     }
    },
    {
@@ -35165,34 +34959,13 @@
      "avant_pct": -4.1,
      "z_avant": -0.8,
      "perf_12m_pct": -4.08,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 35,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.568,
+      "baisse": 0.432
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.568
     }
    },
    {
@@ -35978,34 +35751,13 @@
      "avant_pct": 4.2,
      "z_avant": 0.53,
      "perf_12m_pct": -1.23,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.484,
+      "baisse": 0.516
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "baisse",
+     "p_hausse": 0.484
     }
    },
    {
@@ -36621,34 +36373,13 @@
      "avant_pct": 8.05,
      "z_avant": 0.67,
      "perf_12m_pct": -0.49,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 13,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.6,
+      "baisse": 0.4
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.6
     }
    },
    {
@@ -37547,34 +37278,13 @@
      "avant_pct": -0.58,
      "z_avant": -0.14,
      "perf_12m_pct": 27.71,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 38,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.5,
+      "baisse": 0.5
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.5
     }
    },
    {
@@ -38836,34 +38546,13 @@
      "avant_pct": -5.47,
      "z_avant": -0.85,
      "perf_12m_pct": 9.94,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.515,
+      "baisse": 0.485
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.515
     }
    },
    {
@@ -39696,34 +39385,13 @@
      "avant_pct": -17.3,
      "z_avant": -2.11,
      "perf_12m_pct": 21.35,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 34,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.556,
+      "baisse": 0.444
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "hausse",
+     "p_hausse": 0.556
     }
    },
    {
@@ -40552,34 +40220,13 @@
      "avant_pct": 8.65,
      "z_avant": 1.03,
      "perf_12m_pct": -30.2,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 32,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.382,
+      "baisse": 0.618
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "baisse",
+     "p_hausse": 0.382
     }
    },
    {
@@ -41463,9 +41110,13 @@
      "avant_pct": 1.41,
      "z_avant": 0.15,
      "perf_12m_pct": -5.57,
-     "n_historique": 0,
-     "secteur": "Consommation de base",
-     "n_entreprises_secteur": 7
+     "n_historique": 41,
+     "scenarios": {
+      "hausse": 0.442,
+      "baisse": 0.558
+     },
+     "probable": "baisse",
+     "p_hausse": 0.442
     }
    },
    {
@@ -42239,9 +41890,13 @@
      "avant_pct": -3.3,
      "z_avant": -0.3,
      "perf_12m_pct": -19.0,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 30,
+     "scenarios": {
+      "hausse": 0.531,
+      "baisse": 0.469
+     },
+     "probable": "hausse",
+     "p_hausse": 0.531
     }
    },
    {
@@ -42952,9 +42607,13 @@
      "avant_pct": -5.49,
      "z_avant": -0.93,
      "perf_12m_pct": -17.97,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 26,
+     "scenarios": {
+      "hausse": 0.536,
+      "baisse": 0.464
+     },
+     "probable": "hausse",
+     "p_hausse": 0.536
     }
    },
    {
@@ -43686,34 +43345,13 @@
      "avant_pct": 0.09,
      "z_avant": 0.02,
      "perf_12m_pct": -8.09,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.677,
+      "baisse": 0.323
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.677
     }
    },
    {
@@ -44514,34 +44152,13 @@
      "avant_pct": 2.49,
      "z_avant": 0.41,
      "perf_12m_pct": 30.46,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.438,
+      "baisse": 0.562
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "baisse",
+     "p_hausse": 0.438
     }
    },
    {
@@ -45280,34 +44897,13 @@
      "avant_pct": 4.82,
      "z_avant": 0.51,
      "perf_12m_pct": 8.23,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.548,
+      "baisse": 0.452
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.548
     }
    },
    {
@@ -45973,34 +45569,13 @@
      "avant_pct": -0.89,
      "z_avant": -0.22,
      "perf_12m_pct": 6.78,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 28,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.567,
+      "baisse": 0.433
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.567
     }
    },
    {
@@ -46767,34 +46342,13 @@
      "avant_pct": -7.86,
      "z_avant": -1.49,
      "perf_12m_pct": 38.47,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 28,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.433,
+      "baisse": 0.567
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "baisse",
+     "p_hausse": 0.433
     }
    },
    {
@@ -47901,34 +47455,7 @@
      "avant_pct": -13.02,
      "z_avant": -1.24,
      "perf_12m_pct": 34.83,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
-     "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
-     },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "n_historique": 0
     }
    },
    {
@@ -49786,34 +49313,13 @@
      "avant_pct": -4.8,
      "z_avant": -0.55,
      "perf_12m_pct": 13.32,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
+     "n_historique": 28,
      "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
+      "hausse": 0.7,
+      "baisse": 0.3
      },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.7
     }
    },
    {
@@ -51423,34 +50929,13 @@
      "avant_pct": -13.48,
      "z_avant": -1.8,
      "perf_12m_pct": 1.62,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.515,
+      "baisse": 0.485
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.515
     }
    },
    {
@@ -53579,9 +53064,13 @@
      "avant_pct": -6.88,
      "z_avant": -1.5,
      "perf_12m_pct": -5.38,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 23,
+     "scenarios": {
+      "hausse": 0.64,
+      "baisse": 0.36
+     },
+     "probable": "hausse",
+     "p_hausse": 0.64
     }
    },
    {
@@ -54361,34 +53850,13 @@
      "avant_pct": -15.91,
      "z_avant": -1.61,
      "perf_12m_pct": -29.48,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.5,
+      "baisse": 0.5
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "hausse",
+     "p_hausse": 0.5
     }
    },
    {
@@ -55121,9 +54589,13 @@
      "avant_pct": -7.63,
      "z_avant": -1.48,
      "perf_12m_pct": -14.79,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 28,
+     "scenarios": {
+      "hausse": 0.5,
+      "baisse": 0.5
+     },
+     "probable": "hausse",
+     "p_hausse": 0.5
     }
    },
    {
@@ -55647,34 +55119,13 @@
      "avant_pct": -12.8,
      "z_avant": -1.34,
      "perf_12m_pct": 40.3,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 14,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.688,
+      "baisse": 0.312
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.688
     }
    },
    {
@@ -56349,9 +55800,13 @@
      "avant_pct": -7.27,
      "z_avant": -0.66,
      "perf_12m_pct": -32.52,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 25,
+     "scenarios": {
+      "hausse": 0.444,
+      "baisse": 0.556
+     },
+     "probable": "baisse",
+     "p_hausse": 0.444
     }
    },
    {
@@ -57226,34 +56681,13 @@
      "avant_pct": -5.31,
      "z_avant": -0.98,
      "perf_12m_pct": -7.16,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 38,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.65,
+      "baisse": 0.35
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.65
     }
    },
    {
@@ -58428,34 +57862,13 @@
      "avant_pct": 5.45,
      "z_avant": 0.36,
      "perf_12m_pct": -25.03,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
+     "n_historique": 27,
      "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
+      "hausse": 0.448,
+      "baisse": 0.552
      },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "probable": "baisse",
+     "p_hausse": 0.448
     }
    },
    {
@@ -59129,34 +58542,13 @@
      "avant_pct": -4.23,
      "z_avant": -0.57,
      "perf_12m_pct": -20.04,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 25,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.481,
+      "baisse": 0.519
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "baisse",
+     "p_hausse": 0.481
     }
    },
    {
@@ -59932,9 +59324,13 @@
      "avant_pct": -9.91,
      "z_avant": -2.2,
      "perf_12m_pct": -19.69,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.424,
+      "baisse": 0.576
+     },
+     "probable": "baisse",
+     "p_hausse": 0.424
     }
    },
    {
@@ -60685,34 +60081,13 @@
      "avant_pct": -5.04,
      "z_avant": -0.72,
      "perf_12m_pct": 36.4,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.562,
+      "baisse": 0.438
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "hausse",
+     "p_hausse": 0.562
     }
    },
    {
@@ -61514,9 +60889,13 @@
      "avant_pct": -14.13,
      "z_avant": -2.51,
      "perf_12m_pct": -17.33,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.424,
+      "baisse": 0.576
+     },
+     "probable": "baisse",
+     "p_hausse": 0.424
     }
    },
    {
@@ -62995,34 +62374,13 @@
      "avant_pct": -2.64,
      "z_avant": -0.34,
      "perf_12m_pct": 7.47,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
+      "hausse": 0.531,
+      "baisse": 0.469
      },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.531
     }
    },
    {
@@ -64671,34 +64029,13 @@
      "avant_pct": -4.06,
      "z_avant": -0.39,
      "perf_12m_pct": 5.35,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.645,
+      "baisse": 0.355
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.645
     }
    },
    {
@@ -65596,34 +64933,13 @@
      "avant_pct": 1.25,
      "z_avant": 0.16,
      "perf_12m_pct": 69.49,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 38,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.475,
+      "baisse": 0.525
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "baisse",
+     "p_hausse": 0.475
     }
    },
    {
@@ -66377,9 +65693,13 @@
      "avant_pct": -9.45,
      "z_avant": -2.2,
      "perf_12m_pct": 15.31,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 29,
+     "scenarios": {
+      "hausse": 0.516,
+      "baisse": 0.484
+     },
+     "probable": "hausse",
+     "p_hausse": 0.516
     }
    },
    {
@@ -67087,34 +66407,13 @@
      "avant_pct": -11.65,
      "z_avant": -1.91,
      "perf_12m_pct": -3.46,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.455,
+      "baisse": 0.545
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "baisse",
+     "p_hausse": 0.455
     }
    },
    {
@@ -68001,34 +67300,13 @@
      "avant_pct": -12.87,
      "z_avant": -1.12,
      "perf_12m_pct": 62.89,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 42,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.568,
+      "baisse": 0.432
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "hausse",
+     "p_hausse": 0.568
     }
    },
    {
@@ -68489,34 +67767,13 @@
      "avant_pct": -1.06,
      "z_avant": -0.07,
      "perf_12m_pct": -20.69,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 14,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.375,
+      "baisse": 0.625
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "baisse",
+     "p_hausse": 0.375
     }
    },
    {
@@ -69293,9 +68550,13 @@
      "avant_pct": -13.94,
      "z_avant": -2.97,
      "perf_12m_pct": -2.74,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 30,
+     "scenarios": {
+      "hausse": 0.531,
+      "baisse": 0.469
+     },
+     "probable": "hausse",
+     "p_hausse": 0.531
     }
    },
    {
@@ -70078,34 +69339,13 @@
      "avant_pct": 15.58,
      "z_avant": 1.4,
      "perf_12m_pct": 68.92,
-     "n_historique": 16,
-     "secteur": "Industrie",
-     "n_entreprises_secteur": 26,
+     "n_historique": 31,
      "scenarios": {
-      "positive_hausse": 0.276,
-      "positive_baisse": 0.092,
-      "conforme_hausse": 0.226,
-      "conforme_baisse": 0.09,
-      "negative_hausse": 0.135,
-      "negative_baisse": 0.18
+      "hausse": 0.636,
+      "baisse": 0.364
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.368,
-      "conforme": 0.316,
-      "negative": 0.316
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.714,
-      "negative": 0.429
-     },
-     "p_hausse": 0.637,
-     "n_par_position": {
-      "positive": 6,
-      "conforme": 5,
-      "negative": 5
-     }
+     "probable": "hausse",
+     "p_hausse": 0.636
     }
    },
    {
@@ -70898,9 +70138,13 @@
      "avant_pct": -30.59,
      "z_avant": -2.81,
      "perf_12m_pct": -53.54,
-     "n_historique": 0,
-     "secteur": "Immobilier",
-     "n_entreprises_secteur": 9
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.576,
+      "baisse": 0.424
+     },
+     "probable": "hausse",
+     "p_hausse": 0.576
     }
    },
    {
@@ -72188,9 +71432,13 @@
      "avant_pct": 0.44,
      "z_avant": 0.06,
      "perf_12m_pct": -7.67,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 32,
+     "scenarios": {
+      "hausse": 0.559,
+      "baisse": 0.441
+     },
+     "probable": "hausse",
+     "p_hausse": 0.559
     }
    },
    {
@@ -72547,33 +71795,12 @@
      "z_avant": 0.02,
      "perf_12m_pct": 22.01,
      "n_historique": 8,
-     "secteur": "Technologie",
-     "n_entreprises_secteur": 9,
      "scenarios": {
-      "positive_hausse": 0.068,
-      "positive_baisse": 0.205,
-      "conforme_hausse": 0.227,
-      "conforme_baisse": 0.227,
-      "negative_hausse": 0.136,
-      "negative_baisse": 0.136
+      "hausse": 0.5,
+      "baisse": 0.5
      },
-     "probable": "conforme_hausse",
-     "p_position": {
-      "positive": 0.273,
-      "conforme": 0.455,
-      "negative": 0.273
-     },
-     "p_hausse_si": {
-      "positive": 0.25,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.432,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 2
-     }
+     "probable": "hausse",
+     "p_hausse": 0.5
     }
    },
    {
@@ -72984,34 +72211,13 @@
      "avant_pct": -8.17,
      "z_avant": -0.8,
      "perf_12m_pct": -4.22,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 8,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.7,
+      "baisse": 0.3
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.7
     }
    },
    {
@@ -75086,34 +74292,13 @@
      "avant_pct": 14.44,
      "z_avant": 1.37,
      "perf_12m_pct": 10.96,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 15,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.588,
+      "baisse": 0.412
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "hausse",
+     "p_hausse": 0.588
     }
    },
    {
@@ -76832,34 +76017,13 @@
      "avant_pct": -12.64,
      "z_avant": -0.92,
      "perf_12m_pct": -29.65,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.469,
+      "baisse": 0.531
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "baisse",
+     "p_hausse": 0.469
     }
    },
    {
@@ -77660,9 +76824,13 @@
      "avant_pct": -3.13,
      "z_avant": -0.52,
      "perf_12m_pct": 28.54,
-     "n_historique": 0,
-     "secteur": "Consommation de base",
-     "n_entreprises_secteur": 7
+     "n_historique": 31,
+     "scenarios": {
+      "hausse": 0.545,
+      "baisse": 0.455
+     },
+     "probable": "hausse",
+     "p_hausse": 0.545
     }
    },
    {
@@ -78455,9 +77623,13 @@
      "avant_pct": -5.04,
      "z_avant": -0.68,
      "perf_12m_pct": 7.72,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 29,
+     "scenarios": {
+      "hausse": 0.548,
+      "baisse": 0.452
+     },
+     "probable": "hausse",
+     "p_hausse": 0.548
     }
    },
    {
@@ -79365,34 +78537,13 @@
      "avant_pct": 25.93,
      "z_avant": 0.9,
      "perf_12m_pct": 276.96,
-     "n_historique": 8,
-     "secteur": "Technologie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 37,
      "scenarios": {
-      "positive_hausse": 0.068,
-      "positive_baisse": 0.205,
-      "conforme_hausse": 0.227,
-      "conforme_baisse": 0.227,
-      "negative_hausse": 0.136,
-      "negative_baisse": 0.136
+      "hausse": 0.641,
+      "baisse": 0.359
      },
-     "probable": "conforme_hausse",
-     "p_position": {
-      "positive": 0.273,
-      "conforme": 0.455,
-      "negative": 0.273
-     },
-     "p_hausse_si": {
-      "positive": 0.25,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.432,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 2
-     }
+     "probable": "hausse",
+     "p_hausse": 0.641
     }
    },
    {
@@ -79591,34 +78742,7 @@
      "avant_pct": -2.49,
      "z_avant": -0.38,
      "perf_12m_pct": 3.38,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
-     "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
-     },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "n_historique": 0
     }
    },
    {
@@ -80411,34 +79535,13 @@
      "avant_pct": -4.5,
      "z_avant": -0.37,
      "perf_12m_pct": 22.12,
-     "n_historique": 8,
-     "secteur": "Technologie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.068,
-      "positive_baisse": 0.205,
-      "conforme_hausse": 0.227,
-      "conforme_baisse": 0.227,
-      "negative_hausse": 0.136,
-      "negative_baisse": 0.136
+      "hausse": 0.594,
+      "baisse": 0.406
      },
-     "probable": "conforme_hausse",
-     "p_position": {
-      "positive": 0.273,
-      "conforme": 0.455,
-      "negative": 0.273
-     },
-     "p_hausse_si": {
-      "positive": 0.25,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.432,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 2
-     }
+     "probable": "hausse",
+     "p_hausse": 0.594
     }
    },
    {
@@ -81223,34 +80326,13 @@
      "avant_pct": -0.6,
      "z_avant": -0.07,
      "perf_12m_pct": -26.13,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 25,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.519,
+      "baisse": 0.481
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "hausse",
+     "p_hausse": 0.519
     }
    },
    {
@@ -81980,34 +81062,13 @@
      "avant_pct": -10.62,
      "z_avant": -1.93,
      "perf_12m_pct": -21.07,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.625,
+      "baisse": 0.375
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "hausse",
+     "p_hausse": 0.625
     }
    },
    {
@@ -82824,9 +81885,13 @@
      "avant_pct": -12.43,
      "z_avant": -1.54,
      "perf_12m_pct": -8.61,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 39,
+     "scenarios": {
+      "hausse": 0.561,
+      "baisse": 0.439
+     },
+     "probable": "hausse",
+     "p_hausse": 0.561
     }
    },
    {
@@ -83628,34 +82693,13 @@
      "avant_pct": 9.1,
      "z_avant": 0.45,
      "perf_12m_pct": -46.26,
-     "n_historique": 2,
-     "secteur": "Communication",
-     "n_entreprises_secteur": 8,
+     "n_historique": 29,
      "scenarios": {
-      "positive_hausse": 0.45,
-      "positive_baisse": 0.15,
-      "conforme_hausse": 0.1,
-      "conforme_baisse": 0.1,
-      "negative_hausse": 0.1,
-      "negative_baisse": 0.1
+      "hausse": 0.613,
+      "baisse": 0.387
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.6,
-      "conforme": 0.2,
-      "negative": 0.2
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.5,
-      "negative": 0.5
-     },
-     "p_hausse": 0.65,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 0,
-      "negative": 0
-     }
+     "probable": "hausse",
+     "p_hausse": 0.613
     }
    },
    {
@@ -84438,9 +83482,13 @@
      "avant_pct": 1.64,
      "z_avant": 0.13,
      "perf_12m_pct": 46.74,
-     "n_historique": 0,
-     "secteur": "Consommation discrétionnaire",
-     "n_entreprises_secteur": 16
+     "n_historique": 29,
+     "scenarios": {
+      "hausse": 0.387,
+      "baisse": 0.613
+     },
+     "probable": "baisse",
+     "p_hausse": 0.387
     }
    },
    {
@@ -85290,34 +84338,13 @@
      "avant_pct": -4.45,
      "z_avant": -0.47,
      "perf_12m_pct": 7.1,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 25,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.519,
+      "baisse": 0.481
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "hausse",
+     "p_hausse": 0.519
     }
    },
    {
@@ -86266,34 +85293,13 @@
      "avant_pct": -9.26,
      "z_avant": -0.49,
      "perf_12m_pct": -45.59,
-     "n_historique": 12,
-     "secteur": "Santé",
-     "n_entreprises_secteur": 11,
+     "n_historique": 34,
      "scenarios": {
-      "positive_hausse": 0.1,
-      "positive_baisse": 0.1,
-      "conforme_hausse": 0.111,
-      "conforme_baisse": 0.222,
-      "negative_hausse": 0.35,
-      "negative_baisse": 0.117
+      "hausse": 0.528,
+      "baisse": 0.472
      },
-     "probable": "negative_hausse",
-     "p_position": {
-      "positive": 0.2,
-      "conforme": 0.333,
-      "negative": 0.467
-     },
-     "p_hausse_si": {
-      "positive": 0.5,
-      "conforme": 0.333,
-      "negative": 0.75
-     },
-     "p_hausse": 0.561,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 4,
-      "negative": 6
-     }
+     "probable": "hausse",
+     "p_hausse": 0.528
     }
    },
    {
@@ -87005,34 +86011,13 @@
      "avant_pct": -10.36,
      "z_avant": -1.37,
      "perf_12m_pct": -23.92,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
+     "n_historique": 25,
      "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
+      "hausse": 0.481,
+      "baisse": 0.519
      },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "probable": "baisse",
+     "p_hausse": 0.481
     }
    },
    {
@@ -87780,34 +86765,13 @@
      "avant_pct": -4.74,
      "z_avant": -0.59,
      "perf_12m_pct": 0.27,
-     "n_historique": 3,
-     "secteur": "Matériaux",
-     "n_entreprises_secteur": 10,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.111,
-      "positive_baisse": 0.222,
-      "conforme_hausse": 0.222,
-      "conforme_baisse": 0.111,
-      "negative_hausse": 0.222,
-      "negative_baisse": 0.111
+      "hausse": 0.562,
+      "baisse": 0.438
      },
-     "probable": "positive_baisse",
-     "p_position": {
-      "positive": 0.333,
-      "conforme": 0.333,
-      "negative": 0.333
-     },
-     "p_hausse_si": {
-      "positive": 0.333,
-      "conforme": 0.667,
-      "negative": 0.667
-     },
-     "p_hausse": 0.556,
-     "n_par_position": {
-      "positive": 1,
-      "conforme": 1,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.562
     }
    },
    {
@@ -89188,34 +88152,13 @@
      "avant_pct": -8.59,
      "z_avant": -0.45,
      "perf_12m_pct": 19.54,
-     "n_historique": 14,
-     "secteur": "Énergie",
-     "n_entreprises_secteur": 9,
+     "n_historique": 8,
      "scenarios": {
-      "positive_hausse": 0.132,
-      "positive_baisse": 0.044,
-      "conforme_hausse": 0.151,
-      "conforme_baisse": 0.202,
-      "negative_hausse": 0.209,
-      "negative_baisse": 0.261
+      "hausse": 0.5,
+      "baisse": 0.5
      },
-     "probable": "negative_baisse",
-     "p_position": {
-      "positive": 0.176,
-      "conforme": 0.353,
-      "negative": 0.471
-     },
-     "p_hausse_si": {
-      "positive": 0.75,
-      "conforme": 0.429,
-      "negative": 0.444
-     },
-     "p_hausse": 0.493,
-     "n_par_position": {
-      "positive": 2,
-      "conforme": 5,
-      "negative": 7
-     }
+     "probable": "hausse",
+     "p_hausse": 0.5
     }
    },
    {
@@ -91499,34 +90442,13 @@
      "avant_pct": -6.57,
      "z_avant": -1.22,
      "perf_12m_pct": 1.36,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 26,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.571,
+      "baisse": 0.429
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "hausse",
+     "p_hausse": 0.571
     }
    },
    {
@@ -92320,34 +91242,13 @@
      "avant_pct": -20.07,
      "z_avant": -0.95,
      "perf_12m_pct": -62.67,
-     "n_historique": 23,
-     "secteur": "Finance",
-     "n_entreprises_secteur": 13,
+     "n_historique": 30,
      "scenarios": {
-      "positive_hausse": 0.397,
-      "positive_baisse": 0.18,
-      "conforme_hausse": 0.069,
-      "conforme_baisse": 0.277,
-      "negative_hausse": 0.026,
-      "negative_baisse": 0.051
+      "hausse": 0.438,
+      "baisse": 0.562
      },
-     "probable": "positive_hausse",
-     "p_position": {
-      "positive": 0.577,
-      "conforme": 0.346,
-      "negative": 0.077
-     },
-     "p_hausse_si": {
-      "positive": 0.688,
-      "conforme": 0.2,
-      "negative": 0.333
-     },
-     "p_hausse": 0.492,
-     "n_par_position": {
-      "positive": 14,
-      "conforme": 8,
-      "negative": 1
-     }
+     "probable": "baisse",
+     "p_hausse": 0.438
     }
    }
   ],
@@ -92357,9 +91258,9 @@
     "nom": "Publicis",
     "date": "2026-10-13",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "hausse",
+    "p_probable": 0.647,
+    "p_hausse": 0.647,
     "z_avant": -0.86,
     "avant_pct": -6.59
    },
@@ -92368,6 +91269,9 @@
     "nom": "Gecina",
     "date": "2026-10-14",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.576,
+    "p_hausse": 0.424,
     "z_avant": -2.2,
     "avant_pct": -9.91
    },
@@ -92376,6 +91280,9 @@
     "nom": "LVMH",
     "date": "2026-10-14",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.562,
+    "p_hausse": 0.562,
     "z_avant": -0.58,
     "avant_pct": -3.68
    },
@@ -92384,9 +91291,9 @@
     "nom": "Rexel",
     "date": "2026-10-14",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "baisse",
+    "p_probable": 0.562,
+    "p_hausse": 0.438,
     "z_avant": 0.41,
     "avant_pct": 2.49
    },
@@ -92395,6 +91302,9 @@
     "nom": "FDJ United",
     "date": "2026-10-15",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.536,
+    "p_hausse": 0.536,
     "z_avant": -0.93,
     "avant_pct": -5.49
    },
@@ -92403,9 +91313,9 @@
     "nom": "Maurel & Prom",
     "date": "2026-10-15",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "hausse",
+    "p_probable": 0.568,
+    "p_hausse": 0.568,
     "z_avant": -1.12,
     "avant_pct": -12.87
    },
@@ -92414,9 +91324,9 @@
     "nom": "EssilorLuxottica",
     "date": "2026-10-16",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "baisse",
+    "p_probable": 0.515,
+    "p_hausse": 0.485,
     "z_avant": 0.58,
     "avant_pct": 4.47
    },
@@ -92425,6 +91335,9 @@
     "nom": "Mercialys",
     "date": "2026-10-16",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.531,
+    "p_hausse": 0.531,
     "z_avant": -2.97,
     "avant_pct": -13.94
    },
@@ -92433,6 +91346,9 @@
     "nom": "Forvia",
     "date": "2026-10-19",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.531,
+    "p_hausse": 0.531,
     "z_avant": -0.3,
     "avant_pct": -3.3
    },
@@ -92441,9 +91357,9 @@
     "nom": "Eurofins Scientific",
     "date": "2026-10-20",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "baisse",
+    "p_probable": 0.708,
+    "p_hausse": 0.292,
     "z_avant": 0.83,
     "avant_pct": 5.95
    },
@@ -92452,9 +91368,9 @@
     "nom": "Getlink",
     "date": "2026-10-20",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.5,
+    "p_hausse": 0.5,
     "z_avant": -0.14,
     "avant_pct": -0.58
    },
@@ -92463,9 +91379,9 @@
     "nom": "Planisware",
     "date": "2026-10-20",
     "estimee": true,
-    "probable": "conforme_hausse",
-    "p_probable": 0.227,
-    "p_hausse": 0.432,
+    "probable": "hausse",
+    "p_probable": 0.5,
+    "p_hausse": 0.5,
     "z_avant": 0.02,
     "avant_pct": 0.22
    },
@@ -92474,9 +91390,9 @@
     "nom": "Edenred",
     "date": "2026-10-21",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.625,
+    "p_hausse": 0.625,
     "z_avant": -0.81,
     "avant_pct": -10.72
    },
@@ -92485,6 +91401,9 @@
     "nom": "Hermès",
     "date": "2026-10-21",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.667,
+    "p_hausse": 0.667,
     "z_avant": -0.04,
     "avant_pct": -0.28
    },
@@ -92493,9 +91412,9 @@
     "nom": "Ipsen",
     "date": "2026-10-21",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "hausse",
+    "p_probable": 0.556,
+    "p_hausse": 0.556,
     "z_avant": -2.11,
     "avant_pct": -17.3
    },
@@ -92504,6 +91423,9 @@
     "nom": "L'Oréal",
     "date": "2026-10-21",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.606,
+    "p_hausse": 0.606,
     "z_avant": 0.43,
     "avant_pct": 2.62
    },
@@ -92512,6 +91434,9 @@
     "nom": "OPmobility",
     "date": "2026-10-21",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.559,
+    "p_hausse": 0.559,
     "z_avant": 0.06,
     "avant_pct": 0.44
    },
@@ -92520,9 +91445,9 @@
     "nom": "Worldline",
     "date": "2026-10-21",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "baisse",
+    "p_probable": 0.562,
+    "p_hausse": 0.438,
     "z_avant": -0.95,
     "avant_pct": -20.07
    },
@@ -92531,9 +91456,9 @@
     "nom": "Bureau Veritas",
     "date": "2026-10-22",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.684,
+    "p_hausse": 0.684,
     "z_avant": 0.09,
     "avant_pct": 0.55
    },
@@ -92542,6 +91467,9 @@
     "nom": "Carrefour",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.583,
+    "p_hausse": 0.583,
     "z_avant": -1.28,
     "avant_pct": -7.73
    },
@@ -92550,6 +91478,9 @@
     "nom": "Covivio",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.5,
+    "p_hausse": 0.5,
     "z_avant": -1.48,
     "avant_pct": -7.63
    },
@@ -92558,6 +91489,9 @@
     "nom": "Icade",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.576,
+    "p_hausse": 0.424,
     "z_avant": -2.51,
     "avant_pct": -14.13
    },
@@ -92566,9 +91500,9 @@
     "nom": "Ipsos SA",
     "date": "2026-10-22",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.645,
+    "p_hausse": 0.645,
     "z_avant": -0.39,
     "avant_pct": -4.06
    },
@@ -92577,6 +91511,9 @@
     "nom": "Kering",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.545,
+    "p_hausse": 0.545,
     "z_avant": -0.74,
     "avant_pct": -7.88
    },
@@ -92585,6 +91522,9 @@
     "nom": "Klépierre",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.516,
+    "p_hausse": 0.516,
     "z_avant": -2.2,
     "avant_pct": -9.45
    },
@@ -92593,6 +91533,9 @@
     "nom": "Michelin",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.579,
+    "p_hausse": 0.579,
     "z_avant": -0.47,
     "avant_pct": -2.5
    },
@@ -92601,9 +91544,9 @@
     "nom": "Nexans",
     "date": "2026-10-22",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.548,
+    "p_hausse": 0.548,
     "z_avant": 0.51,
     "avant_pct": 4.82
    },
@@ -92612,6 +91555,9 @@
     "nom": "Renault",
     "date": "2026-10-22",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.636,
+    "p_hausse": 0.364,
     "z_avant": -1.34,
     "avant_pct": -10.3
    },
@@ -92620,9 +91566,9 @@
     "nom": "Sartorius Stedim Biotech",
     "date": "2026-10-22",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "hausse",
+    "p_probable": 0.588,
+    "p_hausse": 0.588,
     "z_avant": 1.37,
     "avant_pct": 14.44
    },
@@ -92631,9 +91577,9 @@
     "nom": "Thales",
     "date": "2026-10-22",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "baisse",
+    "p_probable": 0.645,
+    "p_hausse": 0.355,
     "z_avant": -0.27,
     "avant_pct": -2.3
    },
@@ -92642,6 +91588,9 @@
     "nom": "Accor",
     "date": "2026-10-23",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.548,
+    "p_hausse": 0.548,
     "z_avant": 0.14,
     "avant_pct": 0.8
    },
@@ -92650,9 +91599,9 @@
     "nom": "Aéroports de Paris (Groupe ADP)",
     "date": "2026-10-23",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "baisse",
+    "p_probable": 0.516,
+    "p_hausse": 0.484,
     "z_avant": 0.53,
     "avant_pct": 4.2
    },
@@ -92661,6 +91610,9 @@
     "nom": "Carmila",
     "date": "2026-10-23",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.64,
+    "p_hausse": 0.64,
     "z_avant": -1.5,
     "avant_pct": -6.88
    },
@@ -92669,9 +91621,9 @@
     "nom": "Mersen",
     "date": "2026-10-23",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.636,
+    "p_hausse": 0.636,
     "z_avant": 1.4,
     "avant_pct": 15.58
    },
@@ -92680,6 +91632,9 @@
     "nom": "Nexity",
     "date": "2026-10-23",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.576,
+    "p_hausse": 0.576,
     "z_avant": -2.81,
     "avant_pct": -30.59
    },
@@ -92688,9 +91643,9 @@
     "nom": "Safran",
     "date": "2026-10-23",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.594,
+    "p_hausse": 0.594,
     "z_avant": 0.98,
     "avant_pct": 6.38
    },
@@ -92699,6 +91654,9 @@
     "nom": "Sodexo",
     "date": "2026-10-23",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.548,
+    "p_hausse": 0.548,
     "z_avant": -0.68,
     "avant_pct": -5.04
    },
@@ -92707,6 +91665,9 @@
     "nom": "Unibail-Rodamco-Westfield",
     "date": "2026-10-23",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.6,
+    "p_hausse": 0.4,
     "z_avant": -2.01,
     "avant_pct": -8.08
    },
@@ -92715,6 +91676,9 @@
     "nom": "Valeo",
     "date": "2026-10-23",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.613,
+    "p_hausse": 0.387,
     "z_avant": 0.13,
     "avant_pct": 1.64
    },
@@ -92723,9 +91687,9 @@
     "nom": "Wendel",
     "date": "2026-10-23",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.571,
+    "p_hausse": 0.571,
     "z_avant": -1.22,
     "avant_pct": -6.57
    },
@@ -92734,9 +91698,9 @@
     "nom": "Air Liquide",
     "date": "2026-10-27",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
+    "probable": "hausse",
+    "p_probable": 0.575,
+    "p_hausse": 0.575,
     "z_avant": 0.58,
     "avant_pct": 2.52
    },
@@ -92745,9 +91709,9 @@
     "nom": "Capgemini",
     "date": "2026-10-27",
     "estimee": true,
-    "probable": "conforme_hausse",
-    "p_probable": 0.227,
-    "p_hausse": 0.432,
+    "probable": "hausse",
+    "p_probable": 0.529,
+    "p_hausse": 0.529,
     "z_avant": 0.52,
     "avant_pct": 5.51
    },
@@ -92756,9 +91720,9 @@
     "nom": "Clariane",
     "date": "2026-10-27",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "hausse",
+    "p_probable": 0.5,
+    "p_hausse": 0.5,
     "z_avant": -1.61,
     "avant_pct": -15.91
    },
@@ -92767,6 +91731,9 @@
     "nom": "Danone",
     "date": "2026-10-27",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.606,
+    "p_hausse": 0.606,
     "z_avant": -0.87,
     "avant_pct": -5.48
    },
@@ -92775,9 +91742,9 @@
     "nom": "Orange",
     "date": "2026-10-27",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "hausse",
+    "p_probable": 0.576,
+    "p_hausse": 0.576,
     "z_avant": -1.59,
     "avant_pct": -10.2
    },
@@ -92786,9 +91753,9 @@
     "nom": "Verallia",
     "date": "2026-10-27",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
+    "probable": "baisse",
+    "p_probable": 0.519,
+    "p_hausse": 0.481,
     "z_avant": -1.37,
     "avant_pct": -10.36
    },
@@ -92797,9 +91764,6 @@
     "nom": "Airbus",
     "date": "2026-10-28",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
     "z_avant": 0.16,
     "avant_pct": 1.05
    },
@@ -92808,9 +91772,9 @@
     "nom": "BNP Paribas",
     "date": "2026-10-28",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.636,
+    "p_hausse": 0.636,
     "z_avant": -0.92,
     "avant_pct": -5.1
    },
@@ -92819,9 +91783,9 @@
     "nom": "Dassault Systèmes",
     "date": "2026-10-28",
     "estimee": true,
-    "probable": "conforme_hausse",
-    "p_probable": 0.227,
-    "p_hausse": 0.432,
+    "probable": "hausse",
+    "p_probable": 0.545,
+    "p_hausse": 0.545,
     "z_avant": 0.17,
     "avant_pct": 1.9
    },
@@ -92830,9 +91794,9 @@
     "nom": "M6 (Métropole Télévision)",
     "date": "2026-10-28",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "baisse",
+    "p_probable": 0.545,
+    "p_hausse": 0.455,
     "z_avant": -1.91,
     "avant_pct": -11.65
    },
@@ -92841,6 +91805,9 @@
     "nom": "Société BIC",
     "date": "2026-10-28",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.545,
+    "p_hausse": 0.545,
     "z_avant": -0.52,
     "avant_pct": -3.13
    },
@@ -92849,9 +91816,9 @@
     "nom": "Sopra Steria",
     "date": "2026-10-28",
     "estimee": true,
-    "probable": "conforme_hausse",
-    "p_probable": 0.227,
-    "p_hausse": 0.432,
+    "probable": "hausse",
+    "p_probable": 0.594,
+    "p_hausse": 0.594,
     "z_avant": -0.37,
     "avant_pct": -4.5
    },
@@ -92868,9 +91835,9 @@
     "nom": "Amundi",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "baisse",
+    "p_probable": 0.567,
+    "p_hausse": 0.433,
     "z_avant": -1.49,
     "avant_pct": -7.86
    },
@@ -92879,9 +91846,9 @@
     "nom": "Ayvens",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.515,
+    "p_hausse": 0.515,
     "z_avant": -1.8,
     "avant_pct": -13.48
    },
@@ -92890,9 +91857,9 @@
     "nom": "Eramet",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
+    "probable": "baisse",
+    "p_probable": 0.552,
+    "p_hausse": 0.448,
     "z_avant": 0.36,
     "avant_pct": 5.45
    },
@@ -92901,9 +91868,9 @@
     "nom": "Imerys",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
+    "probable": "hausse",
+    "p_probable": 0.531,
+    "p_hausse": 0.531,
     "z_avant": -0.34,
     "avant_pct": -2.64
    },
@@ -92912,9 +91879,9 @@
     "nom": "Pluxee",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.7,
+    "p_hausse": 0.7,
     "z_avant": -0.8,
     "avant_pct": -8.17
    },
@@ -92923,9 +91890,9 @@
     "nom": "STMicroelectronics",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "conforme_hausse",
-    "p_probable": 0.227,
-    "p_hausse": 0.432,
+    "probable": "hausse",
+    "p_probable": 0.531,
+    "p_hausse": 0.531,
     "z_avant": 1.06,
     "avant_pct": 15.07
    },
@@ -92934,9 +91901,9 @@
     "nom": "Schneider Electric",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.667,
+    "p_hausse": 0.667,
     "z_avant": 1.61,
     "avant_pct": 11.03
    },
@@ -92945,9 +91912,9 @@
     "nom": "Société Générale",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.548,
+    "p_hausse": 0.548,
     "z_avant": -0.72,
     "avant_pct": -5.03
    },
@@ -92956,9 +91923,9 @@
     "nom": "TF1",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "hausse",
+    "p_probable": 0.625,
+    "p_hausse": 0.625,
     "z_avant": -1.93,
     "avant_pct": -10.62
    },
@@ -92967,9 +91934,9 @@
     "nom": "Technip Energies",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "hausse",
+    "p_probable": 0.519,
+    "p_hausse": 0.519,
     "z_avant": -0.07,
     "avant_pct": -0.6
    },
@@ -92978,9 +91945,9 @@
     "nom": "TotalEnergies",
     "date": "2026-10-29",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "baisse",
+    "p_probable": 0.594,
+    "p_hausse": 0.406,
     "z_avant": -0.98,
     "avant_pct": -6.22
    },
@@ -92989,9 +91956,9 @@
     "nom": "AXA",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.567,
+    "p_hausse": 0.567,
     "z_avant": -0.85,
     "avant_pct": -3.4
    },
@@ -93000,9 +91967,9 @@
     "nom": "Crédit Agricole",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "baisse",
+    "p_probable": 0.613,
+    "p_hausse": 0.387,
     "z_avant": -1.64,
     "avant_pct": -7.32
    },
@@ -93011,9 +91978,9 @@
     "nom": "Elis",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.65,
+    "p_hausse": 0.65,
     "z_avant": -0.98,
     "avant_pct": -5.31
    },
@@ -93022,9 +91989,9 @@
     "nom": "SCOR",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.515,
+    "p_hausse": 0.515,
     "z_avant": -0.85,
     "avant_pct": -5.47
    },
@@ -93033,9 +92000,9 @@
     "nom": "SPIE",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.677,
+    "p_hausse": 0.677,
     "z_avant": 0.02,
     "avant_pct": 0.09
    },
@@ -93044,9 +92011,9 @@
     "nom": "Saint-Gobain",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.656,
+    "p_hausse": 0.656,
     "z_avant": -0.49,
     "avant_pct": -2.89
    },
@@ -93055,9 +92022,9 @@
     "nom": "Sanofi",
     "date": "2026-10-30",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "baisse",
+    "p_probable": 0.594,
+    "p_hausse": 0.406,
     "z_avant": -0.67,
     "avant_pct": -4.52
    },
@@ -93066,9 +92033,9 @@
     "nom": "Coface",
     "date": "2026-11-02",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.567,
+    "p_hausse": 0.567,
     "z_avant": -0.22,
     "avant_pct": -0.89
    },
@@ -93077,9 +92044,9 @@
     "nom": "GTT (Gaztransport & Technigaz)",
     "date": "2026-11-02",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "hausse",
+    "p_probable": 0.562,
+    "p_hausse": 0.562,
     "z_avant": -0.72,
     "avant_pct": -5.04
    },
@@ -93088,9 +92055,9 @@
     "nom": "Vicat",
     "date": "2026-11-03",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
+    "probable": "hausse",
+    "p_probable": 0.562,
+    "p_hausse": 0.562,
     "z_avant": -0.59,
     "avant_pct": -4.74
    },
@@ -93099,9 +92066,9 @@
     "nom": "Viridien",
     "date": "2026-11-03",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "hausse",
+    "p_probable": 0.5,
+    "p_hausse": 0.5,
     "z_avant": -0.45,
     "avant_pct": -8.59
    },
@@ -93110,9 +92077,6 @@
     "nom": "Solvay",
     "date": "2026-11-04",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
     "z_avant": -0.38,
     "avant_pct": -2.49
    },
@@ -93121,9 +92085,9 @@
     "nom": "bioMérieux",
     "date": "2026-11-04",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "baisse",
+    "p_probable": 0.618,
+    "p_hausse": 0.382,
     "z_avant": 1.03,
     "avant_pct": 8.65
    },
@@ -93132,9 +92096,9 @@
     "nom": "Air France-KLM",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.6,
+    "p_hausse": 0.6,
     "z_avant": 0.67,
     "avant_pct": 8.05
    },
@@ -93143,9 +92107,6 @@
     "nom": "ArcelorMittal",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
     "z_avant": -1.33,
     "avant_pct": -12.18
    },
@@ -93154,9 +92115,9 @@
     "nom": "Arkema",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
+    "probable": "hausse",
+    "p_probable": 0.7,
+    "p_hausse": 0.7,
     "z_avant": -0.55,
     "avant_pct": -4.8
    },
@@ -93165,9 +92126,9 @@
     "nom": "Bouygues",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.667,
+    "p_hausse": 0.667,
     "z_avant": -1.17,
     "avant_pct": -5.95
    },
@@ -93176,9 +92137,9 @@
     "nom": "Engie",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "hausse",
+    "p_probable": 0.531,
+    "p_hausse": 0.531,
     "z_avant": -0.99,
     "avant_pct": -5.71
    },
@@ -93187,9 +92148,9 @@
     "nom": "Eurazeo",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "baisse",
+    "p_probable": 0.519,
+    "p_hausse": 0.481,
     "z_avant": -0.57,
     "avant_pct": -4.23
    },
@@ -93198,9 +92159,9 @@
     "nom": "Euronext",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.397,
-    "p_hausse": 0.492,
+    "probable": "hausse",
+    "p_probable": 0.688,
+    "p_hausse": 0.688,
     "z_avant": -0.08,
     "avant_pct": -0.51
    },
@@ -93209,9 +92170,9 @@
     "nom": "Legrand",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "baisse",
+    "p_probable": 0.529,
+    "p_hausse": 0.471,
     "z_avant": 1.35,
     "avant_pct": 9.35
    },
@@ -93220,9 +92181,9 @@
     "nom": "SES S.A.",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "baisse",
+    "p_probable": 0.531,
+    "p_hausse": 0.469,
     "z_avant": -0.92,
     "avant_pct": -12.64
    },
@@ -93231,9 +92192,9 @@
     "nom": "Teleperformance",
     "date": "2026-11-05",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.531,
+    "p_hausse": 0.531,
     "z_avant": -0.21,
     "avant_pct": -2.87
    },
@@ -93242,6 +92203,9 @@
     "nom": "Veolia",
     "date": "2026-11-05",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.629,
+    "p_hausse": 0.371,
     "z_avant": -0.38,
     "avant_pct": -1.75
    },
@@ -93250,9 +92214,6 @@
     "nom": "Aperam",
     "date": "2026-11-06",
     "estimee": true,
-    "probable": "positive_baisse",
-    "p_probable": 0.222,
-    "p_hausse": 0.556,
     "z_avant": -1.24,
     "avant_pct": -13.02
    },
@@ -93261,9 +92222,9 @@
     "nom": "JCDecaux",
     "date": "2026-11-06",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "baisse",
+    "p_probable": 0.525,
+    "p_hausse": 0.475,
     "z_avant": 0.16,
     "avant_pct": 1.25
    },
@@ -93272,9 +92233,9 @@
     "nom": "Eiffage",
     "date": "2026-11-12",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "hausse",
+    "p_probable": 0.568,
+    "p_hausse": 0.568,
     "z_avant": -0.8,
     "avant_pct": -4.1
    },
@@ -93283,9 +92244,9 @@
     "nom": "Alstom",
     "date": "2026-11-17",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.276,
-    "p_hausse": 0.637,
+    "probable": "baisse",
+    "p_probable": 0.531,
+    "p_hausse": 0.469,
     "z_avant": -0.33,
     "avant_pct": -3.82
    },
@@ -93294,9 +92255,9 @@
     "nom": "Soitec",
     "date": "2026-11-18",
     "estimee": true,
-    "probable": "conforme_hausse",
-    "p_probable": 0.227,
-    "p_hausse": 0.432,
+    "probable": "hausse",
+    "p_probable": 0.641,
+    "p_hausse": 0.641,
     "z_avant": 0.9,
     "avant_pct": 25.93
    },
@@ -93305,6 +92266,9 @@
     "nom": "Elior",
     "date": "2026-11-19",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.556,
+    "p_hausse": 0.444,
     "z_avant": -0.66,
     "avant_pct": -7.27
    },
@@ -93313,9 +92277,9 @@
     "nom": "Ubisoft",
     "date": "2026-11-19",
     "estimee": true,
-    "probable": "positive_hausse",
-    "p_probable": 0.45,
-    "p_hausse": 0.65,
+    "probable": "hausse",
+    "p_probable": 0.613,
+    "p_hausse": 0.613,
     "z_avant": 0.45,
     "avant_pct": 9.1
    },
@@ -93324,9 +92288,9 @@
     "nom": "Valneva",
     "date": "2026-11-19",
     "estimee": true,
-    "probable": "negative_hausse",
-    "p_probable": 0.35,
-    "p_hausse": 0.561,
+    "probable": "hausse",
+    "p_probable": 0.528,
+    "p_hausse": 0.528,
     "z_avant": -0.49,
     "avant_pct": -9.26
    },
@@ -93335,9 +92299,9 @@
     "nom": "Vallourec",
     "date": "2026-11-20",
     "estimee": true,
-    "probable": "negative_baisse",
-    "p_probable": 0.261,
-    "p_hausse": 0.493,
+    "probable": "hausse",
+    "p_probable": 0.519,
+    "p_hausse": 0.519,
     "z_avant": -0.47,
     "avant_pct": -4.45
    },
@@ -93346,6 +92310,9 @@
     "nom": "Trigano",
     "date": "2026-11-23",
     "estimee": true,
+    "probable": "hausse",
+    "p_probable": 0.561,
+    "p_hausse": 0.561,
     "z_avant": -1.54,
     "avant_pct": -12.43
    },
@@ -93354,6 +92321,9 @@
     "nom": "Rémy Cointreau",
     "date": "2026-11-25",
     "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.558,
+    "p_hausse": 0.442,
     "z_avant": 0.15,
     "avant_pct": 1.41
    }
