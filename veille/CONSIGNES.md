@@ -32,6 +32,19 @@ Tout se passe dans le dossier `veille/` du dépôt.
      `python communiques.py --integrer sortie/avis_resultats.json`.
    - Relance `--a-classer` : il doit afficher 0 publication (un avis « autre »
      sur un document joint peut faire apparaître le vrai communiqué du jour).
+   - **Résultats américains du jour** (à chaque veille) :
+     `python communiques_usa.py --a-classer` liste dans
+     `sortie/resultats_usa_a_classer.json` les publications de résultats des
+     entreprises américaines suivies (dépôts à la SEC des derniers jours) que
+     tu n'as pas encore jugées, avec un extrait du communiqué (en anglais), le
+     consensus de la veille et un repérage des perspectives par mots-clés
+     (`perspectives_mots`, à vérifier : ne le recopie pas sans lire le texte).
+     Juge chacune avec les mêmes règles (« Publications de résultats » plus
+     bas), écris tes avis dans `sortie/avis_resultats_usa.json` et lance
+     `python communiques_usa.py --integrer sortie/avis_resultats_usa.json`.
+     Un dépôt qui n'est pas une publication de comptes (livraisons,
+     production, calendrier, résultats d'une filiale) : `{"type": "autre"}`.
+     SEC injoignable : signale-le et continue.
 3. **Résultats depuis la dernière clôture** : `python avant_ouverture.py`
    - Pour chaque publication de résultats jugée depuis la dernière clôture
      (17 h 35) : la part de hausse historique selon l'écart au consensus, les
@@ -55,12 +68,14 @@ Tout se passe dans le dossier `veille/` du dépôt.
      cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json`, `positions_courtes.json`, `objectifs.json` et
-   `scores.json` uniquement, message :
+   `consensus.json`, `positions_courtes.json`, `objectifs.json`,
+   `scores.json`, `resultats_usa_classes.json` et `resultats_usa_jour.json`
+   uniquement, message :
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
    - **Résultats américains, veille de 13 h 12 seulement** (après 12 h,
      heure de Paris), une fois ce push vérifié : `python edgar.py`,
-     `python consensus.py --zone usa` puis `python etude_usa.py`.
+     `python consensus.py --zone usa`, `python etude_usa.py` puis
+     `python communiques_usa.py --jour`.
      Publications de résultats des entreprises américaines déposées à la SEC,
      sens d'après leurs comptes, consensus des analystes et réaction face au
      S&P 500 (`communiques_usa.json`, onglet Statistiques > Communiqués >
@@ -68,7 +83,8 @@ Tout se passe dans le dossier `veille/` du dépôt.
      script échoue (SEC ou Yahoo injoignable), lance quand même les suivants
      (le fichier précédent est gardé) et signale-le.
    - Puis un second commit des seuls `resultats_usa.json`,
-     `consensus_usa.json` et `communiques_usa.json`, message
+     `consensus_usa.json`, `communiques_usa.json` et `resultats_usa_jour.json`,
+     message
      `veille : AAAA-MM-JJ, résultats américains`, et push (même vérification
      du hash). Rien à commiter : signale-le simplement.
 8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
@@ -239,11 +255,18 @@ Chaque entrée de `sortie/resultats_a_classer.json` donne le titre et un
 extrait du communiqué (chiffres clés, perspectives). Ton avis :
 
 ```json
-{"137031_20251105": {"type": "resultats", "sens": "positif", "activite": "+",
-  "rentabilite": "+", "perspectives": "confirmees", "attentes": null,
-  "consensus": "superieur", "exceptionnel": false, "actionnaires": false,
+{"137031_20251105": {"type": "resultats", "periode": "T3 2025", "sens": "positif",
+  "activite": "+", "rentabilite": "+", "perspectives": "confirmees",
+  "attentes": null, "consensus": "superieur", "exceptionnel": false,
+  "actionnaires": false,
+  "chiffres": {"devise": "EUR", "ca": 4210, "ca_var_pct": 3.2,
+               "resultat": 512, "resultat_var_pct": 8.1, "bpa": 1.84,
+               "bpa_ajuste": false},
   "par": "claude"}}
 ```
+
+Mêmes règles et même format pour les publications américaines
+(`sortie/avis_resultats_usa.json`, clé : le numéro du dépôt).
 
 - **type** : `resultats` (comptes, chiffre d'affaires trimestriel),
   `revision` (avertissement, objectifs relevés ou abaissés hors publication
@@ -276,6 +299,17 @@ extrait du communiqué (chiffres clés, perspectives). Ton avis :
   chiffre d'affaires) pour des comptes. Écart de moins de 1 % : `conforme`.
   Si la presse cite un consensus plus précis (« contre un consensus de… »),
   utilise-le. Sans consensus comparable : `null`.
+- **periode** : la période publiée comme l'entreprise la nomme : `T3 2025`,
+  `S1 2026`, `2025` (comptes annuels) ; exercice décalé : celui de
+  l'entreprise (`T1 2027` pour un premier trimestre de l'exercice 2027).
+- **chiffres** : les chiffres clés publiés de cette période, en millions de
+  la devise pour `ca` (chiffre d'affaires, ou produit net bancaire) et
+  `resultat` (résultat net part du groupe), par action pour `bpa` ;
+  `*_var_pct` : variation face à la même période de l'an dernier telle que
+  publiée (celle qui fonde le sens, organique si c'est elle) ; `bpa` : celui
+  qui se compare au consensus (ajusté si l'entreprise en publie un,
+  `bpa_ajuste: true`). Omets ce que le texte ne donne pas ; l'application les
+  compare au consensus de la veille.
 - **exceptionnel** : dépréciation ou élément non récurrent marquant ;
   **actionnaires** : nouveau rachat d'actions, dividende relevé,
   exceptionnel ou rétabli.

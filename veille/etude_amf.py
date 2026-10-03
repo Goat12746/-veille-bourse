@@ -23,6 +23,7 @@ import math
 from communiques import (CATEGORIES, LIBELLES, ORDRE, charger_classes, charger_communiques, generique, normaliser,
                          rapports_redondants)
 import consensus as consensus_mod
+import jour_j
 import positions as positions_mod
 from mesures import (SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale,
                      p_deux_proportions, pct)
@@ -35,6 +36,7 @@ REACTIONS = ("hausse", "baisse")
 DEBUT_VALIDATION = "2022-01-01"
 FORCE_SENS = 6  # poids des frequences de l'ensemble face a l'historique de l'entreprise
 FORCE_REACTION = 10
+RECENTES = 14  # jours de publications listees pour l'onglet Actualites > Alertes
 HORIZON_PROCHAINES = 60  # jours
 SEUIL_SURPRISE = 1.0  # % d'ecart au consensus du BPA en deca duquel le resultat est conforme
 SEUIL_REVISION = 1.0  # % d'evolution du consensus sur 30 jours en deca duquel il est stable
@@ -697,11 +699,34 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
         t = isin_de.get(c["isin"])
         n_par_ticker[t] = n_par_ticker.get(t, 0) + 1
     return assembler(referentiel, evts, jours, en_attente, cal, series, depuis, len(communiques), n_par_ticker,
-                     positions, consensus, calendrier, aujourd_hui, indice="CAC 40")
+                     positions, consensus, calendrier, aujourd_hui, indice="CAC 40",
+                     recentes=publications_recentes(communiques, classes, referentiel, aujourd_hui))
+
+
+def publications_recentes(communiques, classes, referentiel, aujourd_hui=None):
+    """Publications de resultats (ou revisions) jugees par Claude depuis
+    RECENTES jours : une par entreprise et par jour, celle qui porte l'avis."""
+    aujourd_hui = aujourd_hui or dt.date.today().isoformat()
+    limite = (dt.date.fromisoformat(aujourd_hui) - dt.timedelta(days=RECENTES)).isoformat()
+    noms = {e["isin"]: (e["ticker"], e["nom"]) for e in referentiel}
+    vues, res = set(), []
+    for c in sorted(communiques, key=lambda c: c["publie_le"]):
+        a = classes.get(c["id"])
+        if c["publie_le"][:10] < limite or c["isin"] not in noms or not a or a.get("type") not in (
+                "resultats", "revision"):
+            continue
+        cle = (c["isin"], c["publie_le"][:10])
+        if cle in vues:
+            continue
+        vues.add(cle)
+        ticker, nom = noms[c["isin"]]
+        res.append(({"id": c["id"], "ticker": ticker, "nom": nom, "publie_le": c["publie_le"], "url": c["url"],
+                     "titre": _titre(c), "type_periode": c.get("periode")}, a))
+    return res
 
 
 def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_communiques, n_par_ticker,
-              positions, consensus, calendrier=None, aujourd_hui=None, indice="CAC 40"):
+              positions, consensus, calendrier=None, aujourd_hui=None, indice="CAC 40", recentes=None):
     """Etude a partir des evenements mesures (communiques AMF, ou publications
     de resultats americaines : etude_usa.py) : resumes, entreprises,
     prochaines publications."""
@@ -733,6 +758,10 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
                                   ["annuels", "semestriels", "trimestriels", "chiffre_affaires", "autres"]),
         "par_perspectives": par_valeur(avec_sens, "perspectives", ["relevees", "confirmees", "nouvelles",
                                                                     "abaissees"]),
+        # Part de hausse par perspectives et sens des resultats (ajustement
+        # des probabilites le jour de la publication, jour_j.py).
+        "par_perspectives_sens": croise(avec_sens, "perspectives", ["relevees", "confirmees", "nouvelles",
+                                                                   "abaissees"]),
         "bons_puis_baisse": facteurs(avec_sens, "positif", "baisse", bornes),
         "mauvais_puis_hausse": facteurs(avec_sens, "negatif", "hausse", bornes),
         "attentes_marche": attentes_marche(avec_sens, consensus),
@@ -790,6 +819,26 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         entreprises.append(fiche)
     prochaines.sort(key=lambda p: (p["date"], p["nom"]))
 
+    # Publications des derniers jours : fiche du jour de publication.
+    t_marche = jour_j.tables(resultats)
+    mesures = {ev["id"]: ev for ev in evts}
+    jour_pub = []
+    for pub, avis in recentes or []:
+        ev = mesures.get(pub["id"])
+        p_base = None
+        if modele is not None:
+            z = ev.get("z_avant") if ev else None
+            if z is None and series.get(pub["ticker"]) is not None:
+                z = (cours_recent(series[pub["ticker"]]) or {}).get("z_avant")
+            if z is not None:
+                p_base = {s: modele.p_hausse(pub["ticker"], s, z) for s in SENS_RESULTATS}
+        f = jour_j.fiche(pub, avis, consensus_mod.avant(consensus.get(pub["ticker"]), pub["publie_le"][:10]),
+                         p_base, t_marche)
+        if ev:
+            f.update({k: ev.get(k) for k in ("jour", "rendement_pct", "indice_pct", "ecart_pct", "z")})
+        jour_pub.append(f)
+    jour_pub.sort(key=lambda x: x["publie_le"], reverse=True)
+
     decales = [x for x in evts if x.get("z_veille") is not None]
     top = sorted(evts, key=lambda x: -abs(x["z"]))[:15]
     return {
@@ -811,6 +860,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         "apres_cloture": {"n": len(decales),
                           "z_abs_jour_publication": arrondi(moyenne([abs(x["z_veille"]) for x in decales]), 2),
                           "z_abs_lendemain": arrondi(moyenne([abs(x["z"]) for x in decales]), 2)},
+        "publications_recentes": jour_pub,
         "plus_fortes_reactions": [
             dict({k: x[k] for k in ("jour", "ticker", "nom", "categorie", "titre", "rendement_pct", "indice_pct",
                                     "ecart_pct", "z")}, sens=x["sens"]) for x in top],
