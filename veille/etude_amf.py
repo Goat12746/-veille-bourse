@@ -832,8 +832,9 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
                 z = (cours_recent(series[pub["ticker"]]) or {}).get("z_avant")
             if z is not None:
                 p_base = {s: modele.p_hausse(pub["ticker"], s, z) for s in SENS_RESULTATS}
-        f = jour_j.fiche(pub, avis, consensus_mod.avant(consensus.get(pub["ticker"]), pub["publie_le"][:10]),
-                         p_base, t_marche)
+        fe = consensus.get(pub["ticker"]) or {}
+        f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]), p_base, t_marche,
+                         surprises=fe.get("surprises"))
         if ev:
             f.update({k: ev.get(k) for k in ("jour", "rendement_pct", "indice_pct", "ecart_pct", "z")})
         jour_pub.append(f)

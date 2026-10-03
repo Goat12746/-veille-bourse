@@ -289,8 +289,9 @@ def ecrire_jour():
     fiches = []
     for numero, pub in pubs.items():
         avis = classes.get(numero)
-        f = jour_j.fiche(pub, avis, consensus_mod.avant(estimations.get(pub["ticker"]), pub["publie_le"][:10]),
-                         p_base.get(pub["ticker"]), t_usa, t_fr, "publications françaises")
+        fe = estimations.get(pub["ticker"]) or {}
+        f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]),
+                         p_base.get(pub["ticker"]), t_usa, t_fr, "publications françaises", fe.get("surprises"))
         if avis and avis.get("perspectives_mots"):
             f["perspectives_mots"] = avis["perspectives_mots"]
         rx = reactions.get(numero) or {}

@@ -95,23 +95,35 @@ def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=
     return {"etapes": etapes, "p_hausse": round(_sig(x), 3)}
 
 
-def estimes(releve, periode, publie_le):
+def estimes(releve, periode, publie_le, surprises=None):
     """Consensus de la veille pour la periode publiee : trimestre (0q) ou
     exercice (0y), si sa date de fin precede la publication de moins de 120
-    jours. {"fin", "ca": [moyenne en millions, analystes], "bpa": [...]}."""
-    if not releve:
+    jours. {"fin", "ca": [moyenne en millions, analystes], "bpa": [...]}.
+    BPA : celui que Yahoo garde dans son historique des publications
+    (`surprises`, consensus au moment de la publication) prime sur le releve,
+    qui peut etre reconstitue ou deja passe au trimestre suivant."""
+    jour = publie_le[:10]
+    histo = None
+    for s in surprises or []:
+        ecart = (dt.date.fromisoformat(jour) - dt.date.fromisoformat(s["trimestre"])).days
+        if 0 <= ecart <= 120 and s.get("estime") is not None and (histo is None or s["trimestre"] > histo["trimestre"]):
+            histo = s
+    if not releve and not histo:
         return None
+    if not releve:
+        return {"fin": histo["trimestre"], "periode": "trimestre", "bpa": [histo["estime"], None]}
     cle = "0y" if (periode or "").lower().startswith(("annuel", "exercice")) or (periode or "").isdigit() else "0q"
     fin = (releve.get("fin") or {}).get(cle)
-    jour = publie_le[:10]
     if not fin or not (0 <= (dt.date.fromisoformat(jour) - dt.date.fromisoformat(fin)).days <= 120):
-        return None
+        return {"fin": histo["trimestre"], "periode": "trimestre", "bpa": [histo["estime"], None]} if histo else None
     res = {"fin": fin, "periode": "exercice" if cle == "0y" else "trimestre"}
     if (releve.get("ca") or {}).get(cle):
         m, n = releve["ca"][cle]
         res["ca"] = [round(m / 1e6, 1), n]
     if (releve.get("bpa") or {}).get(cle):
         res["bpa"] = releve["bpa"][cle]
+    if histo and cle == "0q" and abs((dt.date.fromisoformat(fin) - dt.date.fromisoformat(histo["trimestre"])).days) <= 10:
+        res["bpa"] = [histo["estime"], (res.get("bpa") or [None, None])[1]]
     return res if ("ca" in res or "bpa" in res) else None
 
 
@@ -121,13 +133,14 @@ def _ecart(publie, attendu):
     return round((publie - attendu[0]) / abs(attendu[0]) * 100, 1)
 
 
-def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, source_perspectives=None):
+def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, source_perspectives=None,
+          surprises=None):
     """Publication du jour pour l'application : `pub` = {id, ticker, nom,
     publie_le, url}, `avis` = avis de Claude (ou None : jugement a venir),
     `releve` = consensus de la veille, `p_base_par_sens` = probabilite de
     hausse selon le sens des resultats pour l'entreprise."""
     res = dict(pub)
-    est = estimes(releve, (avis or {}).get("periode"), pub["publie_le"])
+    est = estimes(releve, (avis or {}).get("periode"), pub["publie_le"], surprises)
     if est:
         res["estimes"] = est
     if not avis or avis.get("type") not in ("resultats", "revision"):
