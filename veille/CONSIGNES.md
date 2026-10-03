@@ -77,8 +77,7 @@ Tout se passe dans le dossier `veille/` du dépôt.
      `python perspectives_usa.py`, `python consensus.py --zone usa`,
      `python etude_usa.py` puis `python communiques_usa.py --jour`.
      Publications de résultats des entreprises américaines déposées à la SEC,
-     sens d'après leurs comptes, consensus des analystes et réaction face au
-     S&P 500 (`communiques_usa.json`, onglet Statistiques > Communiqués >
+     position face au consensus des analystes et réaction face au S&P 500 (`communiques_usa.json`, onglet Statistiques > Communiqués >
      États-Unis). Sans IA, ne modifie pas ces fichiers à la main. Si un
      script échoue (SEC ou Yahoo injoignable), lance quand même les suivants
      (le fichier précédent est gardé) et signale-le.
@@ -104,8 +103,9 @@ avant que le cours ne réagisse.
   `candidat` (candidat de la collecte à qui rattacher l'alerte), publie une
   alerte si la
   suggestion est `positif` ou `negatif`, ou si l'historique propre à
-  l'entreprise est net (au moins 8 publications du même sens avec 70 % ou plus
-  de hausse, ou 30 % ou moins). Sinon, écarte le candidat comme les autres.
+  l'entreprise est net (`meme_position_consensus` : au moins 8 publications
+  de même position face au consensus avec 70 % ou plus de hausse, ou 30 % ou
+  moins). Sinon, écarte le candidat comme les autres.
 - L'alerte : `id` = le `candidat`, `etape` = `information`,
   `probabilite` = 1 ; titre factuel (« Legrand : chiffre d'affaires au-dessus
   du consensus, objectifs relevés ») ; une seule entreprise, avec le `sens` et
@@ -256,12 +256,10 @@ Chaque entrée de `sortie/resultats_a_classer.json` donne le titre et un
 extrait du communiqué (chiffres clés, perspectives). Ton avis :
 
 ```json
-{"137031_20251105": {"type": "resultats", "periode": "T3 2025", "sens": "positif",
-  "activite": "+", "rentabilite": "+", "perspectives": "confirmees",
-  "attentes": null, "consensus": "superieur", "exceptionnel": false,
-  "actionnaires": false,
-  "chiffres": {"devise": "EUR", "ca": 4210, "ca_var_pct": 3.2,
-               "resultat": 512, "resultat_var_pct": 8.1, "bpa": 1.84,
+{"137031_20251105": {"type": "resultats", "periode": "T3 2025",
+  "perspectives": "confirmees", "attentes": null, "consensus": "superieur",
+  "exceptionnel": false, "actionnaires": false,
+  "chiffres": {"devise": "EUR", "ca": 4210, "resultat": 512, "bpa": 1.84,
                "bpa_ajuste": false},
   "objectifs": {"periode": "2025", "ca": [16800, 17000], "bpa": 7.4,
                 "texte": "marge opérationnelle d'environ 12 %",
@@ -288,16 +286,12 @@ Mêmes règles et même format pour les publications américaines
   communiqué de presse, version anglaise en double, filiale, trafic, ventes en
   volume, essai clinique, opération, assemblée, journée investisseurs). Pour
   `autre`, `{"type": "autre", "par": "claude"}` suffit.
-- **sens** : d'après les **chiffres publiés face à la même période de l'an
-  dernier**, jamais d'après la réaction du cours. Trimestriel : le trimestre ;
-  annuel : l'année. Croissance organique ou à périmètre constant de
-  préférence. Seuils : environ ±1 % pour le chiffre d'affaires, ±2 % pour le
-  résultat. `mitige` si activité et rentabilité divergent nettement ou si tout
-  est stable ; bénéfice en hausse et chiffre d'affaires en léger recul :
-  `positif`. Banques : résultat net (sous-jacent si la base est faussée) ;
-  foncières : résultat récurrent ; holdings : ANR par action face au dernier
-  publié ; pétroliers : résultat net ajusté. Texte illisible : `null`.
-- **activite**, **rentabilite** : `+`, `-`, `=` ou `null` (non publié).
+- **Pas de sens pour les résultats** (ni bons ni mauvais, ni comparaison à
+  l'an dernier) : une publication de résultats n'est jugée que face aux
+  attentes, c'est-à-dire au consensus (`consensus`), aux perspectives et aux
+  objectifs. Ne donne ni `sens`, ni `activite`, ni `rentabilite`.
+- **sens** (`revision` seulement) : `positif` (objectifs relevés),
+  `negatif` (abaissés, avertissement), `mitige` ou `null`.
 - **perspectives** : `relevees` (y compris « haut de fourchette »),
   `confirmees`, `abaissees` (y compris « bas de fourchette »), `nouvelles`
   (premiers objectifs de l'année) ou `null`.
@@ -320,10 +314,8 @@ Mêmes règles et même format pour les publications américaines
   l'entreprise (`T1 2027` pour un premier trimestre de l'exercice 2027).
 - **chiffres** : les chiffres clés publiés de cette période, en millions de
   la devise pour `ca` (chiffre d'affaires, ou produit net bancaire) et
-  `resultat` (résultat net part du groupe), par action pour `bpa` ;
-  `*_var_pct` : variation face à la même période de l'an dernier telle que
-  publiée (celle qui fonde le sens, organique si c'est elle) ; `bpa` : celui
-  qui se compare au consensus (ajusté si l'entreprise en publie un,
+  `resultat` (résultat net part du groupe), par action pour `bpa` ; `bpa` :
+  celui qui se compare au consensus (ajusté si l'entreprise en publie un,
   `bpa_ajuste: true`). Omets ce que le texte ne donne pas ; l'application les
   compare au consensus de la veille.
 - **objectifs** : objectifs chiffrés que l'entreprise annonce (ou confirme)

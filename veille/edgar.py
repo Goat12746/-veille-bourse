@@ -10,16 +10,11 @@ Communiques > Etats-Unis).
     celle des index JSON est decalee pour certains deposants). Un seul depot
     par periode comptable (le premier) ;
   - periode publiee : le dernier trimestre (ou exercice) clos avant la
-    publication, d'apres les comptes deposes ensuite (10-Q, 10-K) ;
-  - sens, sans IA : chiffre d'affaires et resultat net de la periode face a la
-    meme periode de l'an dernier, tels que publies dans les comptes (XBRL).
-    4e trimestre : exercice moins neuf mois. Seuils : +-1 % pour le chiffre
-    d'affaires, +-2 % pour le resultat (memes seuils que les avis de Claude sur
-    les communiques AMF). Le resultat prime : en hausse, resultats bons (sauf
-    chiffre d'affaires en net recul : mitiges) ; stable, le chiffre d'affaires
-    tranche ;
-  - une publication recente reste sans sens tant que ses comptes (10-Q ou
-    10-K, quelques semaines plus tard) ne sont pas deposes.
+    publication, d'apres les comptes deposes ensuite (10-Q, 10-K, XBRL) ;
+    une publication recente reste sans periode tant que ses comptes ne sont
+    pas deposes (quelques semaines plus tard).
+Les resultats ne sont juges que face au consensus des analystes (etude_usa.py),
+jamais face a l'an dernier.
 
 Ecrit resultats_usa.json. Mise a jour : seules les entreprises ayant depose
 un 8-K, 10-Q ou 10-K depuis la derniere mise a jour sont relues (index
@@ -50,8 +45,6 @@ SORTIE = os.path.join(ICI, "resultats_usa.json")
 UA = "veille-bourse paczekgau@gmail.com"
 DEPUIS = "2019-01-01"
 FORMES_COMPTES = ("10-Q", "10-K", "10-Q/A", "10-K/A")
-SEUIL_CA, SEUIL_RESULTAT = 1.0, 2.0  # % (memes seuils que les avis de Claude)
-RECUL_CA_NET = -5.0  # % : resultat en hausse mais chiffre d'affaires en net recul -> mitiges
 DELAI_TRIMESTRE, DELAI_EXERCICE = 75, 100  # jours max entre la fin de la periode et la publication
 EN_ATTENTE = 120  # jours : publication recente sans comptes encore deposes
 
@@ -231,43 +224,22 @@ class Comptes:
         return None
 
 
-def _tendance(pct, seuil):
-    if pct is None:
-        return None
-    return "+" if pct > seuil else "-" if pct < -seuil else "="
-
-
-def sens_de(activite, rentabilite, ca_pct):
-    """Sens des resultats (meme esprit que les avis de Claude sur les
-    communiques AMF : le resultat prime)."""
-    if rentabilite is None:
-        return {"+": "positif", "-": "negatif", "=": "mitige"}.get(activite)
-    if rentabilite == "+":
-        return "mitige" if ca_pct is not None and ca_pct < RECUL_CA_NET else "positif"
-    if rentabilite == "-":
-        return "mitige" if ca_pct is not None and ca_pct > -RECUL_CA_NET else "negatif"
-    return {"+": "positif", "-": "negatif"}.get(activite, "mitige")
-
-
-def _pc(x):
-    return f"{'+' if x > 0 else ''}{x:.1f}".replace(".", ",") + " %"
+# Champs des versions precedentes (sens face a l'an dernier), retires.
+OBSOLETES = ("activite", "rentabilite", "ca_pct", "resultat_pct", "sens")
 
 
 def titre(p):
-    """Titre affiche : "Résultats T3 2026 : CA +8,1 %, résultat net +12,3 %"."""
+    """Titre affiche : "Résultats T3 2026"."""
     if not p.get("fin"):
         return "Résultats (comptes pas encore déposés)"
     t, ex = p.get("trimestre"), p.get("exercice")
     quand = (f"annuels {ex}" if t == "FY" and ex else f"T{t[1]} {ex}" if t and t[0] == "Q" and ex
              else f"au {p['fin']}")
-    chiffres = ", ".join(x for x in [
-        f"CA {_pc(p['ca_pct'])}" if p.get("ca_pct") is not None else None,
-        f"résultat net {_pc(p['resultat_pct'])}" if p.get("resultat_pct") is not None else None] if x)
-    return f"Résultats {quand}" + (f" : {chiffres}" if chiffres else "")
+    return f"Résultats {quand}"
 
 
 def publications(cik, liste, comptes, aujourd_hui, heures):
-    """Publications de resultats : periode, chiffres et sens. `heures` :
+    """Publications de resultats : periode publiee. `heures` :
     heures d'acceptation deja connues (numero -> heure)."""
     fins = comptes.fins()
     prises, res = set(), []
@@ -282,12 +254,8 @@ def publications(cik, liste, comptes, aujourd_hui, heures):
             prises.add(fin)
             ca, rn = comptes.variation(CA, fin), comptes.variation(RESULTAT, fin)
             fy, fp = next(((x[1], x[2]) for x in (ca, rn) if x and x[1]), (None, None))
-            act = _tendance(ca[0] if ca else None, SEUIL_CA)
-            ren = _tendance(rn[0] if rn else None, SEUIL_RESULTAT)
             pub.update({"fin": fin, "periode": "annuels" if fp in ("Q4", "FY") else "trimestriels",
-                        "exercice": fy, "trimestre": fp, "activite": act, "rentabilite": ren,
-                        "ca_pct": ca[0] if ca else None, "resultat_pct": rn[0] if rn else None,
-                        "sens": sens_de(act, ren, ca[0] if ca else None)})
+                        "exercice": fy, "trimestre": fp})
         elif _jours(jour, aujourd_hui) > EN_ATTENTE:
             continue  # ancien depot sans periode reconnue
         pub["publie_le"] = heures.get(numero) or acceptation(cik, numero)
@@ -309,7 +277,14 @@ def charger():
     if not os.path.exists(SORTIE):
         return {"version": 1, "depuis": DEPUIS, "maj": None, "a_relire": [], "entreprises": {}}
     with open(SORTIE, encoding="utf-8") as f:
-        return json.load(f)
+        doc = json.load(f)
+    for e in doc.get("entreprises", {}).values():  # champs des versions precedentes
+        for p in e.get("publications", []):
+            if any(k in p for k in OBSOLETES):
+                for k in OBSOLETES:
+                    p.pop(k, None)
+                p["titre"] = titre(p)
+    return doc
 
 
 def ecrire(doc):
@@ -406,9 +381,9 @@ def main():
     doc["a_relire"] = sorted(erreurs)
     ecrire(doc)
     pubs = [x for v in doc["entreprises"].values() for x in v["publications"]]
-    jugees = sum(1 for x in pubs if x.get("sens"))
+    datees = sum(1 for x in pubs if x.get("fin"))
     print(f"resultats_usa.json : {len(doc['entreprises'])} entreprises, {len(pubs)} publications de résultats, "
-          f"{jugees} avec sens (comptes déposés)"
+          f"{datees} avec période (comptes déposés)"
           + (f" ; tickers inconnus de la SEC : {inconnus}" if inconnus else "")
           + (f" ; illisibles : {erreurs}" if erreurs else "") + ".")
 

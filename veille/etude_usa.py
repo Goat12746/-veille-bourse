@@ -3,8 +3,8 @@
 Communiques > Etats-Unis) : meme methode que l'etude des communiques AMF
 (etude_amf.py), avec le S&P 500 pour reference et l'heure de New York.
 
-  - publications : resultats_usa.json (edgar.py), sens d'apres les comptes
-    deposes a la SEC ;
+  - publications : resultats_usa.json (edgar.py), jugees seulement face au
+    consensus des analystes ;
   - reaction : ecart au S&P 500 corrige du beta le jour de la reaction,
     premiere seance dont la cloture (16 h a New York) suit la publication ;
   - consensus des analystes : consensus_usa.json (consensus.py --zone usa),
@@ -88,16 +88,14 @@ def evenements(doc, referentiel, cal, series):
                 continue
             ev = {"ticker": ticker, "nom": nom_de.get(ticker, fiche["nom"]), "jour": jour,
                   "categorie": "resultats", "periode": p.get("periode"), "titre": p["titre"], "id": p["id"],
-                  "publie_le": p["publie_le"], "n_communiques": 1, "sens": p.get("sens"), "origine": "comptes",
-                  "activite": p.get("activite"), "rentabilite": p.get("rentabilite")}
+                  "publie_le": p["publie_le"], "n_communiques": 1, "sens": None, "origine": "comptes"}
             avis = classes.get(p["id"])
             if avis and avis.get("type") == "resultats":
+                ev["origine"] = "claude"
                 for k in ("perspectives", "attentes", "consensus", "exceptionnel", "actionnaires"):
                     if avis.get(k) is not None:
                         ev[k] = avis[k]
                 ev["objectifs_vs"] = (avis.get("objectifs") or {}).get("vs_consensus")
-                if not ev["sens"] and avis.get("sens"):  # comptes pas encore deposes
-                    ev["sens"], ev["origine"] = avis["sens"], "claude"
             if ev.get("perspectives") is None and (mots.get(p["id"]) or [None])[0]:
                 ev["perspectives"] = mots[p["id"]][0]
             if mesurer(ev, series.get(ticker), t):
@@ -110,8 +108,8 @@ def evenements(doc, referentiel, cal, series):
 
 def recentes(doc, evts, aujourd_hui):
     """Publications des derniers jours, mesurees ou non (Actualites >
-    Etats-Unis) : heure, titre, sens s'il est connu, reaction si elle est
-    cotee, ecart au consensus du BPA."""
+    Etats-Unis) : heure, titre, reaction si elle est cotee, ecart au
+    consensus du BPA."""
     limite = (dt.date.fromisoformat(aujourd_hui) - dt.timedelta(days=RECENTES)).isoformat()
     mesures = {ev["id"]: ev for ev in evts}
     res = []
@@ -120,7 +118,7 @@ def recentes(doc, evts, aujourd_hui):
             if p["publie_le"][:10] < limite:
                 continue
             x = {"ticker": ticker, "nom": fiche["nom"], "id": p["id"], "publie_le": p["publie_le"],
-                 "titre": p["titre"], "url": p.get("url"), "sens": p.get("sens")}
+                 "titre": p["titre"], "url": p.get("url")}
             ev = mesures.get(p["id"])
             if ev:
                 x.update({k: ev.get(k) for k in ("jour", "rendement_pct", "indice_pct", "ecart_pct", "z",
@@ -183,7 +181,7 @@ def main():
         f.write("\n")
     r = histo["resultats"]
     print(f"communiques_usa.json : {histo['n_evenements']} publications mesurées ({histo['n_entreprises']} "
-          f"entreprises) depuis {histo['depuis']}, dont {r['n'] - r['n_sans_sens']} avec sens ; "
+          f"entreprises) depuis {histo['depuis']}, dont {r['n_consensus']} comparées au consensus ; "
           f"en attente de cotation : {en_attente} ; {os.path.getsize(SORTIE) // 1024} Ko.")
 
 

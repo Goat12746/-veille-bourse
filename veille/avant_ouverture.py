@@ -5,13 +5,13 @@ la reaction du cours, pour une alerte avant l'ouverture (9 h).
 Pour chaque publication de resultats (ou revision d'objectifs) d'une
 entreprise du referentiel, deposee apres la derniere cloture (17 h 35) et deja
 jugee (resultats_classes.json) :
-  - part de hausse historique selon l'ecart au consensus, les perspectives et
-    le sens des resultats (toutes entreprises, statistiques.json) ;
-  - historique propre a l'entreprise : meme sens de resultats, habitude face
-    au consensus, ampleur habituelle de ses reactions ;
+  - part de hausse historique selon l'ecart au consensus et les perspectives
+    (toutes entreprises, statistiques.json) ;
+  - historique propre a l'entreprise : meme position face au consensus,
+    habitude face au consensus, ampleur habituelle de ses reactions ;
   - suggestion : sens (positif si 60 % de hausse ou plus, negatif si 40 % ou
     moins, incertain sinon, d'apres le premier element connu parmi consensus,
-    perspectives relevees ou abaissees, sens des resultats, perspectives
+    perspectives relevees ou abaissees, perspectives
     confirmees ou nouvelles) et ampleur
     (ecart median de ses reactions aux resultats : faible sous 2 %, forte
     au-dela de 5 %).
@@ -106,8 +106,8 @@ def main():
             p, n = _part(attentes.get("par_surprise", []), surprise)
             refs.append({"element": f"résultats {a['consensus']} au consensus", "part_hausse": p, "n": n})
         # Ordre de priorite : consensus, perspectives relevees ou abaissees,
-        # sens des resultats, puis perspectives confirmees ou nouvelles (peu
-        # informatives : autour de 50 %).
+        # puis perspectives confirmees ou nouvelles (peu informatives : autour
+        # de 50 %). Les resultats ne sont juges que face aux attentes.
         if persp in ("relevees", "abaissees"):
             p, n = _part(res.get("par_perspectives", []), persp)
             refs.append({"element": f"perspectives {persp}", "part_hausse": p, "n": n})
@@ -117,14 +117,10 @@ def main():
                 1 - r["baisse_si_negatif"] if sens == "negatif" and r.get("baisse_si_negatif") is not None else None)
             refs.append({"element": f"révision d'objectifs ({sens})", "part_hausse": p,
                          "n": r.get("n_positif" if sens == "positif" else "n_negatif", 0)})
-        elif sens:
-            ligne = (res.get("matrice") or {}).get(sens) or {}
-            refs.append({"element": f"résultats {sens}s", "part_hausse": ligne.get("part_hausse"),
-                         "n": ligne.get("n", 0)})
         if persp in ("confirmees", "nouvelles"):
             p, n = _part(res.get("par_perspectives", []), persp)
             refs.append({"element": f"perspectives {persp}", "part_hausse": p, "n": n})
-        propre = ((fiche.get("resultats") or {}).get("matrice") or {}).get(sens) or {}
+        propre = ((fiche.get("resultats") or {}).get("matrice_consensus") or {}).get(surprise) or {}
         mouv = (fiche.get("resultats") or {}).get("mouvements") or {}
         retenue = next((r for r in refs if r["part_hausse"] is not None and r["n"] >= N_MIN), None)
         p = retenue["part_hausse"] if retenue else None
@@ -136,10 +132,10 @@ def main():
         sortie.append({
             "id": "amf-" + c["id"], "candidat": cand, "ticker": e["ticker"], "nom": e["nom"], "publie_le": c["publie_le"],
             "titre": c.get("entete") or c["titre"], "avis": {k: a.get(k) for k in (
-                "type", "sens", "activite", "rentabilite", "perspectives", "attentes", "consensus")},
+                "type", "perspectives", "attentes", "consensus")}, **({"sens": sens} if a["type"] == "revision" else {}),
             "historique_ensemble": refs,
             "historique_entreprise": {
-                "meme_sens": {"n": propre.get("n", 0), "part_hausse": propre.get("part_hausse")},
+                "meme_position_consensus": {"n": propre.get("n", 0), "part_hausse": propre.get("part_hausse")},
                 "habitude_consensus": (fiche.get("marche") or {}).get("habitude"),
                 "ecart_median_reactions_pct": med,
             },
@@ -157,7 +153,7 @@ def main():
           f"du {depuis:%d/%m à %H h %M}.")
     for x in sortie:
         s = x["suggestion"]
-        print(f"- {x['nom']} (candidat {x['candidat'] or 'absent : pas d alerte possible'}) : {x['avis']['sens']}, perspectives {x['avis']['perspectives']}, "
+        print(f"- {x['nom']} (candidat {x['candidat'] or 'absent : pas d alerte possible'}) : perspectives {x['avis']['perspectives']}, "
               f"consensus {x['avis']['consensus']} -> "
               + (f"hausse {s['part_hausse'] * 100:.0f} % d'après {s['d_apres']}, suggestion {s['sens']}, "
                  f"ampleur {s['ampleur']}" if s["part_hausse"] is not None else "pas de référence historique"))

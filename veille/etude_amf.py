@@ -6,15 +6,13 @@ des cours a chaque communique des entreprises du referentiel depuis 2019.
     communique le plus important (revision d'objectifs, resultats...) ;
   - reaction : ecart au CAC 40 corrige du beta le jour de la reaction
     (hausse s'il est positif, baisse s'il est negatif), et en sigma ;
-  - sens du communique : avis de Claude pour les publications de resultats et
-    les revisions d'objectifs (resultats_classes.json), mots-cles sinon ;
-  - publications de resultats : quatre scenarios (bons ou mauvais resultats,
-    hausse ou baisse) et facteurs des scenarios contraires (perspectives,
-    cours avant la publication, elements exceptionnels, retour aux
-    actionnaires...) ;
-  - prevision de la reaction a la prochaine publication d'apres le cours des
-    20 seances precedentes, validee sur le passe : chaque publication depuis
-    2022 est prevue avec les seules donnees anterieures.
+  - sens du communique : avis de Claude pour les revisions d'objectifs
+    (resultats_classes.json), mots-cles sinon ;
+  - publications de resultats : jugees seulement face aux attentes, c'est-a-
+    dire au consensus des analystes (au-dessus, conforme, en dessous) :
+    scenarios position x reaction, perspectives et objectifs ;
+  - prevision de la prochaine publication d'apres le seul passe de
+    l'entreprise face au consensus.
 """
 
 import datetime as dt
@@ -25,19 +23,14 @@ from communiques import (CATEGORIES, LIBELLES, ORDRE, charger_classes, charger_c
 import consensus as consensus_mod
 import jour_j
 import positions as positions_mod
-from mesures import (SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale,
-                     p_deux_proportions, pct)
+from mesures import SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale, pct
 
 PRIORITE = {cid: i for i, cid in enumerate(ORDRE)}
 AVANT = 20  # seances avant la publication (le cours "recent")
 SUITE = 5  # seances apres la reaction (la baisse ou la hausse se prolonge-t-elle ?)
 UN_AN = 250  # seances de l'evolution sur 12 mois face a l'indice
 QUANTILE_FORTE_HAUSSE = 0.8  # 20 % des publications ayant le plus monte sur 12 mois
-SENS_RESULTATS = ("positif", "negatif", "mitige")
 REACTIONS = ("hausse", "baisse")
-DEBUT_VALIDATION = "2022-01-01"
-FORCE_SENS = 6  # poids des frequences de l'ensemble face a l'historique de l'entreprise
-FORCE_REACTION = 10
 RECENTES = 14  # jours de publications listees pour l'onglet Actualites > Alertes
 HORIZON_PROCHAINES = 60  # jours
 # % d'ecart au consensus du BPA en deca duquel le resultat est conforme. Mesure
@@ -49,6 +42,7 @@ SEUIL_REVISION = 1.0  # % d'evolution du consensus sur 30 jours en deca duquel i
 # Part du capital vendue a decouvert (positions publiques, >= 0,5 % chacune).
 TRANCHES_COURTES = [("aucune", 0, 0.5), ("moderees", 0.5, 2), ("fortes", 2, 1e9)]
 SURPRISES = {"superieur": "positive", "conforme": "conforme", "inferieur": "negative"}
+POSITIONS_CONSENSUS = ("positive", "conforme", "negative")  # face au consensus des analystes
 
 
 # ---------------------------------------------------------------------------
@@ -116,7 +110,11 @@ def construire_evenements(communiques, classes, referentiel, cal, series):
         # Un avis "autre" (document mis en ligne, calendrier...) n'a pas de
         # sens : celui des mots-cles reste.
         if avis is not None and avis["type"] in ("resultats", "revision"):
-            sens, origine = avis.get("sens"), "claude"
+            # Publications de resultats : jugees face au consensus seulement,
+            # pas de sens (bons ou mauvais face a l'an dernier).
+            sens, origine = (avis.get("sens") if cat == "revision" else None), "claude"
+        elif cat == "resultats":
+            sens, origine = None, "mots"
         else:
             vus = {c["sens_mots"] for c in membres} - {None}
             sens, origine = (vus.pop() if len(vus) == 1 else None), "mots"
@@ -126,7 +124,7 @@ def construire_evenements(communiques, classes, referentiel, cal, series):
               "titre": _titre(principal), "id": principal["id"], "publie_le": cs[0][1]["publie_le"],
               "n_communiques": len(cs), "sens": sens, "origine": origine}
         if avis is not None and avis["type"] in ("resultats", "revision"):
-            for k in ("activite", "rentabilite", "perspectives", "attentes", "consensus"):
+            for k in ("perspectives", "attentes", "consensus"):
                 ev[k] = avis.get(k)
             ev["objectifs_vs"] = (avis.get("objectifs") or {}).get("vs_consensus")
             ev["exceptionnel"] = bool(avis.get("exceptionnel"))
@@ -214,30 +212,31 @@ def enrichir(evts, positions, consensus):
 
 
 def croise(v, cle, valeurs):
-    """Part de hausse selon la valeur d'un champ, en tout et par sens des
-    resultats."""
+    """Part de hausse selon la valeur d'un champ, en tout et par position
+    face au consensus (au-dessus, conforme, en dessous)."""
     res = []
     for val in valeurs:
         w = [x for x in v if x.get(cle) == val and x["reaction"]]
-        par_sens = {}
-        for s in SENS_RESULTATS:
-            u = [x for x in w if x["sens"] == s]
-            par_sens[s] = {"n": len(u), "part_hausse": _part(sum(1 for x in u if x["reaction"] == "hausse"), len(u))}
+        par_surprise = {}
+        for s in POSITIONS_CONSENSUS:
+            u = [x for x in w if x.get("surprise") == s]
+            par_surprise[s] = {"n": len(u),
+                               "part_hausse": _part(sum(1 for x in u if x["reaction"] == "hausse"), len(u))}
         suites = [x["suite_pct"] for x in w if x.get("suite_pct") is not None]
         res.append({"valeur": val, "n": len(w),
                     "part_hausse": _part(sum(1 for x in w if x["reaction"] == "hausse"), len(w)),
                     "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2) if w else None,
                     "suite_moyenne_pct": arrondi(moyenne(suites), 2) if suites else None,
-                    "par_sens": par_sens})
+                    "par_surprise": par_surprise})
     return res
 
 
-def attentes_marche(avec_sens, consensus):
+def attentes_marche(res, consensus):
     """Resume des attentes du marche : positions vendeuses (historique AMF
     complet) et consensus des analystes (historique en construction)."""
-    courtes = [x for x in avec_sens if x.get("courtes") is not None]
-    surpr = [x for x in avec_sens if x.get("surprise")]
-    revis = [x for x in avec_sens if x.get("revision")]
+    courtes = [x for x in res if x.get("courtes") is not None]
+    surpr = [x for x in res if x.get("surprise")]
+    revis = [x for x in res if x.get("revision")]
     concord = [x for x in surpr if x["surprise"] != "conforme" and x["reaction"]]
     ok = sum(1 for x in concord if (x["surprise"], x["reaction"]) in (("positive", "hausse"), ("negative", "baisse")))
     releves = [r["jour"] for f in consensus.values() for r in f.get("releves", []) if not r.get("reconstitue")]
@@ -350,13 +349,26 @@ def sens_reaction(v):
             "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
 
 
-POSITIONS_CONSENSUS = ("positive", "conforme", "negative")
+def concordance_consensus(v):
+    """Publications au-dessus du consensus suivies d'une hausse, en dessous
+    suivies d'une baisse : parts et test de concordance (meme forme que
+    sens_reaction)."""
+    pos = [x for x in v if x.get("surprise") == "positive" and x["reaction"]]
+    neg = [x for x in v if x.get("surprise") == "negative" and x["reaction"]]
+    h = sum(1 for x in pos if x["reaction"] == "hausse")
+    b = sum(1 for x in neg if x["reaction"] == "baisse")
+    return {"n_positif": len(pos), "n_negatif": len(neg),
+            "hausse_si_positif": _part(h, len(pos)), "baisse_si_negatif": _part(b, len(neg)),
+            "concordance": _part(h + b, len(pos) + len(neg)),
+            "p": arrondi(p_binomiale(h + b, len(pos) + len(neg)), 4),
+            "ecart_moyen_positif_pct": arrondi(moyenne([x["ecart_pct"] for x in pos]), 2),
+            "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
 
 
-def matrice(v, cle="sens", valeurs=SENS_RESULTATS):
-    """Scenarios : sens des resultats (ou position face au consensus, cle
-    "surprise") x reaction, nombre, ecart moyen a l'indice sur les 20 seances
-    avant, le jour de la reaction et les 5 seances apres."""
+def matrice(v, cle="surprise", valeurs=POSITIONS_CONSENSUS):
+    """Scenarios : position face au consensus x reaction, nombre, ecart moyen
+    a l'indice sur les 20 seances avant, le jour de la reaction et les 5
+    seances apres."""
     res = {}
     for s in valeurs:
         ligne = {}
@@ -373,34 +385,6 @@ def matrice(v, cle="sens", valeurs=SENS_RESULTATS):
     return res
 
 
-def _tiers(v):
-    """Bornes des tiers du cours avant publication (z sur 20 seances)."""
-    zs = sorted(x["z_avant"] for x in v if x.get("z_avant") is not None)
-    if len(zs) < 30:
-        return None
-    return zs[len(zs) // 3], zs[2 * len(zs) // 3]
-
-
-def tiers_de(z, bornes):
-    if z is None or bornes is None:
-        return None
-    return "baisse" if z < bornes[0] else "hausse" if z > bornes[1] else "stable"
-
-
-def par_cours_avant(v, bornes):
-    """Cours des 20 seances avant x sens des resultats -> part de hausse."""
-    lignes = []
-    for t in ("baisse", "stable", "hausse"):
-        w = [x for x in v if tiers_de(x.get("z_avant"), bornes) == t]
-        ligne = {"tiers": t, "n": len(w), "avant_moyen_pct": arrondi(moyenne([x["avant_pct"] for x in w]), 2)}
-        for s in SENS_RESULTATS:
-            u = [x for x in w if x["sens"] == s and x["reaction"]]
-            ligne[s] = {"n": len(u), "part_hausse": _part(sum(1 for x in u if x["reaction"] == "hausse"), len(u)),
-                        "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in u]), 2)}
-        lignes.append(ligne)
-    return lignes
-
-
 def par_valeur(v, cle, valeurs):
     """Part de hausse et ecart moyen selon la valeur d'un champ."""
     res = []
@@ -414,258 +398,40 @@ def par_valeur(v, cle, valeurs):
     return res
 
 
-# Facteurs des scenarios contraires (bons resultats suivis d'une baisse,
-# mauvais resultats suivis d'une hausse) : mecanismes decrits dans la
-# litterature et mesurables ici.
-FACTEURS = [
-    ("perspectives_abaissees", "Perspectives abaissées", lambda x, b: x.get("perspectives") == "abaissees"),
-    ("perspectives_relevees", "Perspectives relevées", lambda x, b: x.get("perspectives") == "relevees"),
-    ("hausse_avant", "Forte hausse dans les 20 séances avant", lambda x, b: tiers_de(x.get("z_avant"), b) == "hausse"),
-    ("baisse_avant", "Forte baisse dans les 20 séances avant", lambda x, b: tiers_de(x.get("z_avant"), b) == "baisse"),
-    ("activite_baisse", "Chiffre d'affaires en baisse", lambda x, b: x.get("activite") == "-"),
-    ("activite_hausse", "Chiffre d'affaires en hausse", lambda x, b: x.get("activite") == "+"),
-    ("rentabilite_baisse", "Rentabilité en baisse", lambda x, b: x.get("rentabilite") == "-"),
-    ("rentabilite_hausse", "Rentabilité en hausse", lambda x, b: x.get("rentabilite") == "+"),
-    ("exceptionnel", "Éléments exceptionnels", lambda x, b: bool(x.get("exceptionnel"))),
-    ("actionnaires", "Retour aux actionnaires annoncé", lambda x, b: bool(x.get("actionnaires"))),
-    ("attentes_superieures", "Supérieurs aux attentes (dit par l'entreprise)",
-     lambda x, b: x.get("attentes") == "superieures"),
-    ("attentes_inferieures", "Inférieurs aux attentes (dit par l'entreprise)",
-     lambda x, b: x.get("attentes") == "inferieures"),
-    ("surprise_positive", "Au-dessus du consensus des analystes", lambda x, b: x.get("surprise") == "positive"),
-    ("surprise_negative", "Sous le consensus des analystes", lambda x, b: x.get("surprise") == "negative"),
-    ("revision_hausse", "Consensus relevé dans les 30 jours avant", lambda x, b: x.get("revision") == "hausse"),
-    ("revision_baisse", "Consensus abaissé dans les 30 jours avant", lambda x, b: x.get("revision") == "baisse"),
-    ("courtes_fortes", "Plus de 2 % du capital vendu à découvert", lambda x, b: x.get("courtes") == "fortes"),
-    ("courtes_aucune", "Aucune vente à découvert déclarée", lambda x, b: x.get("courtes") == "aucune"),
-]
-
-
-def facteurs(v, sens, contraire, bornes):
-    """Pour des resultats d'un sens donne : part de reactions contraires
-    avec et sans chaque facteur."""
-    w = [x for x in v if x["sens"] == sens and x["reaction"]]
-    res = []
-    for fid, libelle, f in FACTEURS:
-        avec = [x for x in w if f(x, bornes)]
-        sans = [x for x in w if not f(x, bornes)]
-        if len(avec) < 5:
-            continue
-        k1 = sum(1 for x in avec if x["reaction"] == contraire)
-        k2 = sum(1 for x in sans if x["reaction"] == contraire)
-        res.append({"id": fid, "libelle": libelle, "n_avec": len(avec), "taux_avec": _part(k1, len(avec)),
-                    "n_sans": len(sans), "taux_sans": _part(k2, len(sans)),
-                    "p": arrondi(p_deux_proportions(k1, len(avec), k2, len(sans)), 4)})
-    res.sort(key=lambda r: -((r["taux_avec"] or 0) - (r["taux_sans"] or 0)))
-    return res
-
-
-# ---------------------------------------------------------------------------
-# Prevision : P(sens) x P(hausse | sens, cours avant)
-# ---------------------------------------------------------------------------
-
-def _resoudre(a, b):
-    """Systeme lineaire (elimination de Gauss avec pivot partiel)."""
-    n = len(b)
-    m = [row[:] + [b[i]] for i, row in enumerate(a)]
-    for c in range(n):
-        p = max(range(c, n), key=lambda r: abs(m[r][c]))
-        m[c], m[p] = m[p], m[c]
-        if abs(m[c][c]) < 1e-12:
-            continue
-        for r in range(n):
-            if r != c:
-                f = m[r][c] / m[c][c]
-                for k in range(c, n + 1):
-                    m[r][k] -= f * m[c][k]
-    return [m[i][n] / m[i][i] if abs(m[i][i]) > 1e-12 else 0.0 for i in range(n)]
-
-
-def _sig(z):
-    return 1 / (1 + math.exp(-max(-30.0, min(30.0, z))))
-
-
-def logistique(xs, ys, l2=2.0):
-    """Regression logistique (Newton-Raphson, penalite L2 hors constante)."""
-    k = len(xs[0])
-    b = [0.0] * k
-    for _ in range(30):
-        g = [0.0] * k
-        h = [[0.0] * k for _ in range(k)]
-        for x, y in zip(xs, ys):
-            p = _sig(sum(bj * xj for bj, xj in zip(b, x)))
-            w = p * (1 - p)
-            for i in range(k):
-                g[i] += (y - p) * x[i]
-                for j in range(i, k):
-                    h[i][j] += w * x[i] * x[j]
-        for i in range(k):
-            for j in range(i):
-                h[i][j] = h[j][i]
-        for i in range(1, k):
-            g[i] -= l2 * b[i]
-            h[i][i] += l2
-        d = _resoudre(h, g)
-        b = [bj + dj for bj, dj in zip(b, d)]
-        if max(abs(x) for x in d) < 1e-7:
-            break
-    return b
-
-
-def _zc(z):
-    return max(-4.0, min(4.0, z))
-
-
-def _variables(sens, z, avec_cours=True):
-    pos, neg = float(sens == "positif"), float(sens == "negatif")
-    zc = _zc(z) if avec_cours else 0.0
-    return [1.0, pos, neg, zc, zc * pos, zc * neg]
-
-
-class Modele:
-    """Prevision estimee sur des publications passees (sens connu, cours
-    avant connu, reaction connue)."""
-
-    def __init__(self, v, avec_cours=True):
-        self.avec_cours = avec_cours
-        v = [x for x in v if x["sens"] in SENS_RESULTATS and x["reaction"] and x.get("z_avant") is not None]
-        self.n = len(v)
-        self.bornes = _tiers(v)
-        # P(sens | tiers du cours avant), lissee.
-        self.p_sens = {}
-        for t in ("baisse", "stable", "hausse", None):
-            w = [x for x in v if t is None or tiers_de(x["z_avant"], self.bornes) == t]
-            self.p_sens[t] = {s: (sum(1 for x in w if x["sens"] == s) + 1) / (len(w) + 3) for s in SENS_RESULTATS}
-        self.coef = logistique([_variables(x["sens"], x["z_avant"], avec_cours) for x in v],
-                               [1 if x["reaction"] == "hausse" else 0 for x in v])
-        # Ecart de chaque entreprise a la prevision commune (hausse plus ou
-        # moins frequente que prevu), ramene vers zero quand elle a peu de
-        # publications.
-        residus = {}
-        for x in v:
-            r = residus.setdefault(x["ticker"], [0.0, 0])
-            r[0] += (1 if x["reaction"] == "hausse" else 0) - self.p_hausse_commun(x["sens"], x["z_avant"])
-            r[1] += 1
-        self.decalage = {t: r[0] / (r[1] + FORCE_REACTION) for t, r in residus.items()}
-        self.sens_entreprise = {}
-        for x in v:
-            self.sens_entreprise.setdefault(x["ticker"], []).append(x["sens"])
-        self.frequent = max(((s, r) for s in SENS_RESULTATS for r in REACTIONS),
-                            key=lambda sr: sum(1 for x in v if (x["sens"], x["reaction"]) == sr))
-        self.hausse_frequente = sum(1 for x in v if x["reaction"] == "hausse") >= self.n / 2
-
-    def p_hausse_commun(self, sens, z):
-        return _sig(sum(b * x for b, x in zip(self.coef, _variables(sens, z, self.avec_cours))))
-
-    def p_hausse(self, ticker, sens, z):
-        return min(0.98, max(0.02, self.p_hausse_commun(sens, z) + self.decalage.get(ticker, 0.0)))
-
-    def probas_sens(self, ticker, z):
-        """P(sens) de la prochaine publication : frequences de l'entreprise
-        ramenees vers celles de l'ensemble (au meme cours avant)."""
-        base = self.p_sens[tiers_de(z, self.bornes) if self.avec_cours else None]
-        hist = self.sens_entreprise.get(ticker, [])
-        n = len(hist)
-        return {s: (hist.count(s) + FORCE_SENS * base[s]) / (n + FORCE_SENS) for s in SENS_RESULTATS}
-
-    def scenarios(self, ticker, z):
-        ps = self.probas_sens(ticker, z)
-        res = {}
-        for s in SENS_RESULTATS:
-            ph = self.p_hausse(ticker, s, z)
-            res[f"{s}_hausse"] = ps[s] * ph
-            res[f"{s}_baisse"] = ps[s] * (1 - ph)
-        return res
-
-
-def valider(v, debut=DEBUT_VALIDATION):
-    """Chaque publication depuis `debut` prevue avec les seules publications
-    anterieures (modele reestime chaque trimestre). Compare au scenario le plus
-    frequent jusque-la et au modele sans le cours avant."""
-    v = sorted((x for x in v if x["sens"] in SENS_RESULTATS and x["reaction"] and x.get("z_avant") is not None),
-               key=lambda x: x["jour"])
-    tests = [x for x in v if x["jour"] >= debut]
-    if len(tests) < 50:
+def part_hausse_passee(hist):
+    """Part de hausse des publications de resultats passees de l'entreprise
+    (point de depart de la probabilite du jour de publication), lissee d'un
+    cas fictif par issue. None sans publication mesuree."""
+    v = [x for x in hist if x["reaction"]]
+    if not v:
         return None
-    trimestres = sorted({(x["jour"][:4], (int(x["jour"][5:7]) - 1) // 3) for x in tests})
-    stats = {"n": 0, "scenario": 0, "scenario_base": 0, "reaction": 0, "reaction_base": 0,
-             "reaction_connue": 0, "reaction_connue_sans_cours": 0, "reaction_connue_base": 0,
-             "brier": 0.0, "brier_sans_cours": 0.0, "brier_base": 0.0}
-    calib = [[0.0, 0, 0] for _ in range(5)]
-    for annee, tri in trimestres:
-        debut_t = f"{annee}-{3 * tri + 1:02d}-01"
-        appr = [x for x in v if x["jour"] < debut_t]
-        if len(appr) < 200:
-            continue
-        m, m0 = Modele(appr), Modele(appr, avec_cours=False)
-        base_h = sum(1 for x in appr if x["reaction"] == "hausse") / len(appr)
-        base_sens = {s: (sum(1 for x in appr if x["sens"] == s and x["reaction"] == "hausse") + 1)
-                     / (sum(1 for x in appr if x["sens"] == s) + 2) for s in SENS_RESULTATS}
-        for x in tests:
-            if (x["jour"][:4], (int(x["jour"][5:7]) - 1) // 3) != (annee, tri):
-                continue
-            y = 1 if x["reaction"] == "hausse" else 0
-            sc = m.scenarios(x["ticker"], x["z_avant"])
-            prevu = max(sc, key=sc.get)
-            stats["n"] += 1
-            stats["scenario"] += prevu == f"{x['sens']}_{x['reaction']}"
-            stats["scenario_base"] += (x["sens"], x["reaction"]) == m.frequent
-            ph_total = sum(p for k, p in sc.items() if k.endswith("_hausse"))
-            stats["reaction"] += (ph_total >= 0.5) == bool(y)
-            stats["reaction_base"] += (base_h >= 0.5) == bool(y)
-            # Resultats connus : la reaction suit-elle la prevision ?
-            ph = m.p_hausse(x["ticker"], x["sens"], x["z_avant"])
-            ph0 = m0.p_hausse(x["ticker"], x["sens"], x["z_avant"])
-            pb = base_sens[x["sens"]]
-            stats["reaction_connue"] += (ph >= 0.5) == bool(y)
-            stats["reaction_connue_sans_cours"] += (ph0 >= 0.5) == bool(y)
-            stats["reaction_connue_base"] += (pb >= 0.5) == bool(y)
-            stats["brier"] += (ph - y) ** 2
-            stats["brier_sans_cours"] += (ph0 - y) ** 2
-            stats["brier_base"] += (pb - y) ** 2
-            c = calib[min(4, int(ph * 5))]
-            c[0] += ph
-            c[1] += y
-            c[2] += 1
-    n = stats["n"]
-    if not n:
-        return None
-    return {
-        "depuis": debut, "n": n,
-        "scenario": _part(stats["scenario"], n), "scenario_base": _part(stats["scenario_base"], n),
-        "reaction": _part(stats["reaction"], n), "reaction_base": _part(stats["reaction_base"], n),
-        "reaction_connue": _part(stats["reaction_connue"], n),
-        "reaction_connue_sans_cours": _part(stats["reaction_connue_sans_cours"], n),
-        "reaction_connue_base": _part(stats["reaction_connue_base"], n),
-        "brier": arrondi(stats["brier"] / n), "brier_sans_cours": arrondi(stats["brier_sans_cours"] / n),
-        "brier_base": arrondi(stats["brier_base"] / n),
-        "calibration": [{"prevu": arrondi(c[0] / c[2]), "observe": arrondi(c[1] / c[2]), "n": c[2]}
-                        for c in calib if c[2]],
-    }
+    return {"p": arrondi((sum(1 for x in v if x["reaction"] == "hausse") + 1) / (len(v) + 2)), "n": len(v)}
 
 
 def prevision_entreprise(hist):
     """Scenarios de la prochaine publication d'apres le seul passe de
-    l'entreprise (pas les autres entreprises) : P(sens) = frequence de chaque
-    sens dans ses publications, P(hausse | sens) = part de ses publications
-    de ce sens suivies d'une hausse. Lissage minimal (un cas fictif par issue)
+    l'entreprise face au consensus (pas les autres entreprises) : P(position)
+    = frequence de chaque position (au-dessus, conforme, en dessous) dans ses
+    publications, P(hausse | position) = part de ses publications de cette
+    position suivies d'une hausse. Lissage minimal (un cas fictif par issue)
     pour ne jamais afficher 0 % ou 100 % sur quelques publications. None sans
-    publication jugee."""
-    v = [x for x in hist if x["sens"] in SENS_RESULTATS and x["reaction"]]
+    publication comparee au consensus."""
+    v = [x for x in hist if x.get("surprise") in POSITIONS_CONSENSUS and x["reaction"]]
     if not v:
         return None
     n = len(v)
-    p_sens = {s: (sum(1 for x in v if x["sens"] == s) + 1) / (n + len(SENS_RESULTATS)) for s in SENS_RESULTATS}
+    ps = POSITIONS_CONSENSUS
+    p_position = {s: (sum(1 for x in v if x["surprise"] == s) + 1) / (n + len(ps)) for s in ps}
     p_hausse_si = {}
-    for s in SENS_RESULTATS:
-        w = [x for x in v if x["sens"] == s]
+    for s in ps:
+        w = [x for x in v if x["surprise"] == s]
         p_hausse_si[s] = (sum(1 for x in w if x["reaction"] == "hausse") + 1) / (len(w) + 2)
     sc = {}
-    for s in SENS_RESULTATS:
-        sc[f"{s}_hausse"] = p_sens[s] * p_hausse_si[s]
-        sc[f"{s}_baisse"] = p_sens[s] * (1 - p_hausse_si[s])
-    return {"n": n, "scenarios": sc, "p_sens": p_sens, "p_hausse_si": p_hausse_si,
-            "n_par_sens": {s: sum(1 for x in v if x["sens"] == s) for s in SENS_RESULTATS}}
+    for s in ps:
+        sc[f"{s}_hausse"] = p_position[s] * p_hausse_si[s]
+        sc[f"{s}_baisse"] = p_position[s] * (1 - p_hausse_si[s])
+    return {"n": n, "scenarios": sc, "p_position": p_position, "p_hausse_si": p_hausse_si,
+            "n_par_position": {s: sum(1 for x in v if x["surprise"] == s) for s in ps}}
 
 
 def perf_12m(serie, s):
@@ -748,8 +514,7 @@ def prochaines_dates(referentiel, resultats, calendrier, aujourd_hui):
 
 def _evenement_public(x):
     """Publication de resultats telle qu'affichee dans l'application."""
-    cles = ["jour", "periode", "titre", "sens", "origine", "activite", "rentabilite", "perspectives", "attentes",
-            "exceptionnel", "actionnaires", "avant_pct", "z_avant", "perf_12m_pct", "rendement_pct", "ecart_pct", "z",
+    cles = ["jour", "periode", "titre", "perspectives", "attentes", "exceptionnel", "actionnaires", "avant_pct", "z_avant", "perf_12m_pct", "rendement_pct", "ecart_pct", "z",
             "suite_pct",
             "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "revision_30j_pct", "objectifs_vs"]
     # Sans les valeurs nulles ni fausses (l'application les lit par defaut) :
@@ -821,38 +586,27 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
 
     # Publications de resultats.
     res = [x for x in evts if x["categorie"] == "resultats"]
-    bornes = _tiers([x for x in res if x["sens"] in SENS_RESULTATS])
-    avec_sens = [x for x in res if x["sens"] in SENS_RESULTATS]
+    mesurees = [x for x in res if x["reaction"]]
     resultats = {
         "n": len(res), "n_avis_claude": sum(1 for x in res if x["origine"] == "claude"),
-        "n_sans_sens": sum(1 for x in res if x["sens"] not in SENS_RESULTATS),
+        "n_consensus": sum(1 for x in res if x.get("surprise")),
+        "part_hausse": _part(sum(1 for x in mesurees if x["reaction"] == "hausse"), len(mesurees)),
         "mouvements": mouvements(res),
-        "matrice": matrice(avec_sens),
         # Scenarios face au consensus des analystes (historique du meme marche).
-        "matrice_consensus": matrice([x for x in res if x.get("surprise")], "surprise", POSITIONS_CONSENSUS),
-        "concordance": sens_reaction(avec_sens),
-        "tiers_avant": {"bas": bornes[0], "haut": bornes[1]} if bornes else None,
-        "par_cours_avant": par_cours_avant(avec_sens, bornes),
-        "par_periode": par_valeur(avec_sens, "periode",
+        "matrice_consensus": matrice([x for x in res if x.get("surprise")]),
+        "concordance": concordance_consensus(res),
+        "par_periode": par_valeur(res, "periode",
                                   ["annuels", "semestriels", "trimestriels", "chiffre_affaires", "autres"]),
-        "par_perspectives": par_valeur(avec_sens, "perspectives", ["relevees", "confirmees", "nouvelles",
-                                                                    "abaissees"]),
-        # Part de hausse par perspectives et sens des resultats (ajustement
-        # des probabilites le jour de la publication, jour_j.py).
-        "par_perspectives_sens": croise(avec_sens, "perspectives", ["relevees", "confirmees", "nouvelles",
-                                                                   "abaissees"]),
-        "par_objectifs_sens": croise(avec_sens, "objectifs_vs", ["superieurs", "conformes", "inferieurs"]),
-        "bons_puis_baisse": facteurs(avec_sens, "positif", "baisse", bornes),
-        "mauvais_puis_hausse": facteurs(avec_sens, "negatif", "hausse", bornes),
-        "attentes_marche": attentes_marche(avec_sens, consensus),
+        "par_perspectives": par_valeur(res, "perspectives", ["relevees", "confirmees", "nouvelles", "abaissees"]),
+        # Part de hausse par perspectives (et objectifs) x position face au
+        # consensus (ajustement des probabilites le jour de la publication,
+        # jour_j.py).
+        "par_perspectives_surprise": croise(res, "perspectives", ["relevees", "confirmees", "nouvelles",
+                                                                  "abaissees"]),
+        "par_objectifs_surprise": croise(res, "objectifs_vs", ["superieurs", "conformes", "inferieurs"]),
+        "attentes_marche": attentes_marche(res, consensus),
         "forte_hausse_12m": table_forte_hausse(res),
     }
-    modele = Modele(avec_sens) if len(avec_sens) >= 200 else None
-    if modele is not None:
-        resultats["prevision"] = {
-            "coefficients": [arrondi(b, 3) for b in modele.coef],
-            "validation": valider(avec_sens),
-        }
 
     # Revisions d'objectifs (hors publication de resultats).
     rev = [x for x in evts if x["categorie"] == "revision"]
@@ -865,16 +619,13 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         v = [x for x in evts if x["ticker"] == e["ticker"]]
         n_comm = n_par_ticker.get(e["ticker"], 0)
         r = sorted((x for x in v if x["categorie"] == "resultats"), key=lambda x: x["jour"], reverse=True)
-        rs = [x for x in r if x["sens"] in SENS_RESULTATS]
         fiche = {
             "ticker": e["ticker"], "nom": e["nom"], "indice": e.get("indice"), "secteur": e.get("secteur"),
             "n_communiques": n_comm, "n_evenements": len(v),
             "categories": [dict(mouvements(w), **sens_reaction(w), id=cid)
                            for cid in ORDRE for w in [[x for x in v if x["categorie"] == cid]] if w],
-            "resultats": {"n": len(r), "matrice": matrice(rs),
-                          "matrice_consensus": matrice([x for x in r if x.get("surprise")], "surprise",
-                                                       POSITIONS_CONSENSUS),
-                          "concordance": sens_reaction(rs),
+            "resultats": {"n": len(r), "matrice_consensus": matrice([x for x in r if x.get("surprise")]),
+                          "concordance": concordance_consensus(r),
                           "mouvements": mouvements(r),
                           # Propres a l'entreprise (peu de cas au debut : se
                           # completent au fil des publications).
@@ -889,25 +640,30 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         prochaine = dates.get(e["ticker"])
         recent = cours_recent(serie) if serie is not None else None
         prev = prevision_entreprise(r)
-        if prev is not None:  # part de hausse par sens, meme sans prochaine date connue
-            fiche["p_hausse_si"] = {s: arrondi(p) for s, p in prev["p_hausse_si"].items()}
-        if prochaine and recent and prev is not None:
+        passe = part_hausse_passee(r)
+        if passe is not None:  # depart de la probabilite du jour de publication
+            fiche["p_hausse_passee"] = passe
+        if prochaine and recent:
             z = recent["z_avant"]
-            sc = prev["scenarios"]
-            probable = max(sc, key=sc.get)
-            prochaine = dict(prochaine, **recent, tiers=tiers_de(z, bornes),
-                             scenarios={k: arrondi(p) for k, p in sc.items()}, probable=probable,
-                             p_sens={s: arrondi(p) for s, p in prev["p_sens"].items()},
-                             p_hausse_si={s: arrondi(p) for s, p in prev["p_hausse_si"].items()},
-                             p_hausse=arrondi(sum(p for k, p in sc.items() if k.endswith("_hausse"))),
-                             n_historique=prev["n"], n_par_sens=prev["n_par_sens"])
+            prochaine = dict(prochaine, **recent, n_historique=prev["n"] if prev else 0)
+            probable = None
+            if prev is not None:
+                sc = prev["scenarios"]
+                probable = max(sc, key=sc.get)
+                prochaine.update(scenarios={k: arrondi(p) for k, p in sc.items()}, probable=probable,
+                                 p_position={s: arrondi(p) for s, p in prev["p_position"].items()},
+                                 p_hausse_si={s: arrondi(p) for s, p in prev["p_hausse_si"].items()},
+                                 p_hausse=arrondi(sum(p for k, p in sc.items() if k.endswith("_hausse"))),
+                                 n_par_position=prev["n_par_position"])
             fiche["prochaine"] = prochaine
             if prochaine["date"] <= (dt.date.fromisoformat(aujourd_hui)
                                      + dt.timedelta(days=HORIZON_PROCHAINES)).isoformat():
-                prochaines.append({"ticker": e["ticker"], "nom": e["nom"], "date": prochaine["date"],
-                                   "estimee": prochaine["estimee"], "probable": probable,
-                                   "p_probable": arrondi(sc[probable]), "p_hausse": prochaine["p_hausse"],
-                                   "z_avant": z, "avant_pct": recent["avant_pct"]})
+                prochaines.append({k: v for k, v in {
+                    "ticker": e["ticker"], "nom": e["nom"], "date": prochaine["date"],
+                    "estimee": prochaine["estimee"], "probable": probable,
+                    "p_probable": arrondi(prev["scenarios"][probable]) if probable else None,
+                    "p_hausse": prochaine.get("p_hausse"), "z_avant": z, "avant_pct": recent["avant_pct"]}.items()
+                    if v is not None})
         elif recent:
             fiche["cours_recent"] = recent
         entreprises.append(fiche)
@@ -920,9 +676,8 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
     for pub, avis in recentes or []:
         ev = mesures.get(pub["id"])
         # Probabilite de depart : seul passe de l'entreprise (hors cette publication).
-        prev = prevision_entreprise([x for x in evts if x["ticker"] == pub["ticker"] and x["categorie"] == "resultats"
-                                     and x["id"] != pub["id"]])
-        p_base = prev["p_hausse_si"] if prev else None
+        p_base = part_hausse_passee([x for x in evts if x["ticker"] == pub["ticker"]
+                                     and x["categorie"] == "resultats" and x["id"] != pub["id"]])
         fe = consensus.get(pub["ticker"]) or {}
         perf = ev.get("perf_12m_pct") if ev else None
         if perf is None and series.get(pub["ticker"]) is not None:
@@ -958,5 +713,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         "publications_recentes": jour_pub,
         "plus_fortes_reactions": [
             dict({k: x[k] for k in ("jour", "ticker", "nom", "categorie", "titre", "rendement_pct", "indice_pct",
-                                    "ecart_pct", "z")}, sens=x["sens"]) for x in top],
+                                    "ecart_pct", "z")},
+                 sens=x["sens"] if x["categorie"] != "resultats" else None, surprise=x.get("surprise"))
+            for x in top],
     }

@@ -43,7 +43,6 @@ CLASSES = os.path.join(ICI, "resultats_usa_classes.json")
 JOUR = os.path.join(ICI, "resultats_usa_jour.json")
 A_CLASSER = os.path.join(ICI, "sortie", "resultats_usa_a_classer.json")
 ETUDE_USA = os.path.join(ICI, "communiques_usa.json")
-ETUDE_FR = os.path.join(ICI, "statistiques.json")
 JOURS = 14  # publications gardees dans resultats_usa_jour.json
 JOURS_A_CLASSER = 5  # publications proposees a Claude (rattrapage d'une veille manquee)
 FLUX_PAGES = 8  # pages de 100 depots 8-K dans le flux de la SEC
@@ -324,9 +323,7 @@ def ecrire_jour():
     estimations = consensus_mod.charger(consensus_mod.SORTIE_USA).get("entreprises", {})
     etude = charger(ETUDE_USA, {})
     t_usa = jour_j.tables(etude.get("resultats"))
-    t_fr = jour_j.tables((charger(ETUDE_FR, {}).get("historique_amf") or {}).get("resultats"))
-    p_base = {e["ticker"]: (e.get("prochaine") or {}).get("p_hausse_si") or e.get("p_hausse_si")
-              for e in etude.get("entreprises", [])}
+    p_base = {e["ticker"]: e.get("p_hausse_passee") for e in etude.get("entreprises", [])}
     perf = {e["ticker"]: (e.get("prochaine") or e.get("cours_recent") or {}).get("perf_12m_pct")
             for e in etude.get("entreprises", [])}
     pubs = {}
@@ -344,7 +341,7 @@ def ecrire_jour():
         avis = classes.get(numero)
         fe = estimations.get(pub["ticker"]) or {}
         f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]),
-                         p_base.get(pub["ticker"]), t_usa, None, None, fe.get("surprises"), perf.get(pub["ticker"]))
+                         p_base.get(pub["ticker"]), t_usa, fe.get("surprises"), perf.get(pub["ticker"]))
         if avis and avis.get("perspectives_mots"):
             f["perspectives_mots"] = avis["perspectives_mots"]
         rx = reactions.get(numero) or {}
