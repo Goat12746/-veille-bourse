@@ -335,9 +335,12 @@ Mêmes règles et même format pour les publications américaines
   dépasse le consensus de plus de 1 %, `inferieurs` s'il est en dessous de
   plus de 1 %, `conformes` sinon, `null` sans consensus comparable. Pas
   d'objectif chiffré : omets le champ.
-- **Analyse** (le plus important : elle s'affiche en tête de la fiche de
-  résultats de l'application). Lis l'extrait en entier ; s'il est tronqué
-  avant un chiffre clé ou les perspectives, ouvre le communiqué (`url`).
+- **Analyse approfondie** (`resume`, `points_cles`, `a_surveiller`,
+  `impact`) : **seulement sur demande** (voir « Analyse approfondie » plus
+  bas), jamais pendant la veille ordinaire, pour ménager le quota. Elle
+  s'affiche en tête de la fiche de résultats de l'application. Lis l'extrait
+  en entier ; s'il est tronqué avant un chiffre clé ou les perspectives,
+  ouvre le communiqué (`url`).
   - **resume** : une ou deux phrases, ce qu'un investisseur doit retenir.
   - **points_cles** : 3 à 7 faits chiffrés tirés du communiqué, chacun en
     moins de 120 caractères, avec `effet` `+` (favorable), `-`
@@ -400,3 +403,25 @@ Mêmes règles et même format pour les publications américaines
 
 Vérifie avec `python valider.py sortie/analyse.json` avant de lancer
 `fusionner.py`.
+
+## Analyse approfondie (sur demande)
+
+Demandée depuis l'application (bouton « Analyse approfondie par Claude » de
+la fiche d'une publication de résultats), pour une publication précise :
+
+1. `python communiques_usa.py --approfondir <numéro>` (États-Unis) ou
+   `python communiques.py --approfondir <id>` (France) : écrit
+   `sortie/analyse_approfondie.json` (extrait long, avis déjà donné,
+   consensus de la veille).
+2. Rédige les champs `resume`, `points_cles`, `a_surveiller` et `impact`
+   (règles de « Publications de résultats »), complète au besoin `chiffres`
+   et `objectifs`, et écris `{"<id>": {...}}` dans
+   `sortie/avis_approfondi.json` (seulement les champs ajoutés ou corrigés :
+   l'avis existant est complété, pas remplacé).
+3. `python communiques_usa.py --integrer sortie/avis_approfondi.json`
+   (États-Unis : met aussi à jour `resultats_usa_jour.json`) ou
+   `python communiques.py --integrer sortie/avis_approfondi.json` puis
+   `python statistiques.py` (France : la fiche est recalculée avec l'étude).
+4. Commit et push des fichiers modifiés (`resultats_usa_classes.json` et
+   `resultats_usa_jour.json`, ou `resultats_classes.json` et
+   `statistiques.json`), message `analyse approfondie : <entreprise>`.

@@ -546,9 +546,32 @@ def integrer(chemin):
     doc = charger_classes()
     jour = dt.date.today().isoformat()
     for k, a in nouveaux.items():
-        doc["classes"][k] = dict(a, le=a.get("le") or jour)
+        # Complete l'avis existant (analyse approfondie ajoutee apres coup).
+        doc["classes"][k] = dict(doc["classes"].get(k, {}), **a, le=a.get("le") or jour)
     ecrire_classes(doc)
     print(f"resultats_classes.json : {len(nouveaux)} avis ajoute(s), {len(doc['classes'])} au total.")
+
+
+def approfondir(cid):
+    """Analyse approfondie demandee depuis l'application : extrait long du
+    communique, avis deja donne et consensus de la veille."""
+    import consensus as consensus_mod
+    cid = cid.removeprefix("amf-")
+    doc = charger_communiques()
+    c = next((x for x in doc["communiques"] if x["id"] == cid), None)
+    if c is None:
+        sys.exit(f"{cid} : communique inconnu")
+    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as fichier:
+        ticker, nom = next((e["ticker"], e["nom"]) for e in json.load(fichier)["entreprises"] if e["isin"] == c["isin"])
+    estimations = consensus_mod.charger().get("entreprises", {})
+    demande = {"marche": "france", "id": cid, "ticker": ticker, "nom": nom, "publie_le": c["publie_le"],
+               "url": c["url"], "avis": charger_classes()["classes"].get(cid, {}),
+               "extrait": extrait_resultats(lire_texte(c, None) or "", 6000, 2000),
+               "consensus": consensus_mod.avant(estimations.get(ticker), c["publie_le"][:10])}
+    os.makedirs(os.path.join(ICI, "sortie"), exist_ok=True)
+    with open(os.path.join(ICI, "sortie", "analyse_approfondie.json"), "w", encoding="utf-8") as fichier:
+        json.dump(demande, fichier, ensure_ascii=False, indent=1)
+    print(f"sortie/analyse_approfondie.json : {nom} ({cid}), extrait de {len(demande['extrait'])} caractères.")
 
 
 def phrases_cles(texte, mots, limite):
@@ -623,7 +646,7 @@ def a_classer(communiques, referentiel):
         liste.append({"id": c["id"], "ticker": ticker, "nom": nom, "publie_le": c["publie_le"],
                       "categorie": c["categorie"], "periode": c["periode"],
                       "titre": c["entete"] if generique(c["titre"]) and c["entete"] else c["titre"],
-                      "url": c["url"], "extrait": extrait_resultats(texte, 4500, 1500),
+                      "url": c["url"], "extrait": extrait_resultats(texte, 2500, 800),
                       # Consensus des analystes la veille : a comparer aux
                       # chiffres publies (champ "consensus" de l'avis).
                       "consensus": consensus_mod.avant(estimations.get(ticker), jour)})
@@ -641,9 +664,14 @@ def main():
     p.add_argument("--a-classer", action="store_true",
                    help="ecrit sortie/resultats_a_classer.json (resultats sans avis de Claude)")
     p.add_argument("--integrer", metavar="FICHIER", help="ajoute des avis de Claude a resultats_classes.json")
+    p.add_argument("--approfondir", metavar="ID",
+                   help="extrait long d'un communique pour l'analyse approfondie -> sortie/analyse_approfondie.json")
     p.add_argument("--processus", type=int, default=8, help="telechargements en parallele")
     args = p.parse_args()
 
+    if args.approfondir:
+        approfondir(args.approfondir)
+        return
     if args.integrer:
         integrer(args.integrer)
         return

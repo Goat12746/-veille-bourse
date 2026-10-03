@@ -19,6 +19,8 @@ Usage :
   python communiques_usa.py --a-classer          -> sortie/resultats_usa_a_classer.json
   python communiques_usa.py --integrer FICHIER   ajoute des avis de Claude
   python communiques_usa.py --jour               recalcule resultats_usa_jour.json
+  python communiques_usa.py --approfondir NUMERO  extrait long pour l'analyse approfondie
+                                                 -> sortie/analyse_approfondie.json
 Bibliotheque standard uniquement.
 """
 
@@ -140,7 +142,7 @@ def communique(cik, numero):
     return texte_html(edgar.sec_get(url).decode("utf-8", "replace")), url
 
 
-def extrait(texte, n=5000, persp=2000):
+def extrait(texte, n=3000, persp=1200):
     """Debut du communique (chiffres cles) et phrases sur les perspectives."""
     t = texte or ""
     debut = t[:n]
@@ -305,7 +307,8 @@ def integrer(chemin):
         # encore figurer dans resultats_usa.json).
         meta = {c: a_juger[k][c] for c in ("ticker", "nom", "publie_le", "url", "perspectives_mots")
                 if k in a_juger and a_juger[k].get(c) is not None}
-        doc["classes"][k] = dict(meta, **a, le=a.get("le") or jour)
+        # Complete l'avis existant (analyse approfondie ajoutee apres coup).
+        doc["classes"][k] = dict(doc["classes"].get(k, {}), **meta, **a, le=a.get("le") or jour)
     ecrire_classes(doc)
     print(f"{os.path.relpath(CLASSES, ICI)} : {len(nouveaux)} avis ajouté(s), {len(doc['classes'])} au total.")
     ecrire_jour()
@@ -350,17 +353,42 @@ def ecrire_jour():
           f"{sum(1 for x in fiches if x.get('juge'))} jugée(s).")
 
 
+def approfondir(numero):
+    """Analyse approfondie demandee depuis l'application : extrait long du
+    communique, avis deja donne et consensus de la veille."""
+    classes = charger(CLASSES, {"classes": {}})["classes"]
+    avis = classes.get(numero) or {}
+    pub = recentes(30).get(numero) or {c: avis.get(c) for c in ("ticker", "nom", "publie_le", "url")}
+    if not pub.get("ticker"):
+        sys.exit(f"{numero} : publication inconnue (ni recente, ni jugee)")
+    cik = pub.get("cik") or next((c for c, (t, _) in entreprises().items() if t == pub["ticker"]), None)
+    texte, url = communique(cik, numero)
+    estimations = consensus_mod.charger(consensus_mod.SORTIE_USA).get("entreprises", {})
+    demande = {"marche": "usa", "id": numero, "ticker": pub["ticker"], "nom": pub["nom"],
+               "publie_le": pub["publie_le"], "url": url or pub.get("url"), "avis": avis,
+               "extrait": extrait(texte, 7000, 2500),
+               "consensus": consensus_mod.avant(estimations.get(pub["ticker"]), pub["publie_le"][:10])}
+    os.makedirs(os.path.dirname(A_CLASSER), exist_ok=True)
+    chemin = os.path.join(ICI, "sortie", "analyse_approfondie.json")
+    with open(chemin, "w", encoding="utf-8") as f:
+        json.dump(demande, f, ensure_ascii=False, indent=1)
+    print(f"sortie/analyse_approfondie.json : {pub['nom']} ({numero}), extrait de {len(demande['extrait'])} caractères.")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--a-classer", action="store_true")
     g.add_argument("--integrer", metavar="FICHIER")
     g.add_argument("--jour", action="store_true")
+    g.add_argument("--approfondir", metavar="NUMERO")
     args = p.parse_args()
     if args.a_classer:
         a_classer()
     elif args.integrer:
         integrer(args.integrer)
+    elif args.approfondir:
+        approfondir(args.approfondir)
     else:
         ecrire_jour()
 
