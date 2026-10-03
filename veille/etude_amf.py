@@ -11,8 +11,8 @@ des cours a chaque communique des entreprises du referentiel depuis 2019.
   - publications de resultats : jugees seulement face aux attentes, c'est-a-
     dire au consensus des analystes (au-dessus, conforme, en dessous) :
     scenarios position x reaction, perspectives et objectifs ;
-  - prevision de la prochaine publication d'apres le seul passe de
-    l'entreprise face au consensus.
+  - prevision de la prochaine publication d'apres les publications de son
+    grand secteur (meme marche) face au consensus.
 """
 
 import datetime as dt
@@ -23,6 +23,7 @@ from communiques import (CATEGORIES, LIBELLES, ORDRE, charger_classes, charger_c
 import consensus as consensus_mod
 import jour_j
 import positions as positions_mod
+from secteurs import grand_secteur
 from mesures import SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale, pct
 
 PRIORITE = {cid: i for i, cid in enumerate(ORDRE)}
@@ -408,14 +409,14 @@ def part_hausse_passee(hist):
     return {"p": arrondi((sum(1 for x in v if x["reaction"] == "hausse") + 1) / (len(v) + 2)), "n": len(v)}
 
 
-def prevision_entreprise(hist):
-    """Scenarios de la prochaine publication d'apres le seul passe de
-    l'entreprise face au consensus (pas les autres entreprises) : P(position)
-    = frequence de chaque position (au-dessus, conforme, en dessous) dans ses
-    publications, P(hausse | position) = part de ses publications de cette
-    position suivies d'une hausse. Lissage minimal (un cas fictif par issue)
-    pour ne jamais afficher 0 % ou 100 % sur quelques publications. None sans
-    publication comparee au consensus."""
+def prevision_secteur(hist):
+    """Scenarios de la prochaine publication d'apres les publications de son
+    grand secteur, dans le meme marche, comparees au consensus : P(position)
+    = frequence de chaque position (au-dessus, conforme, en dessous),
+    P(hausse | position) = part des publications de cette position suivies
+    d'une hausse. Lissage minimal (un cas fictif par issue) pour ne jamais
+    afficher 0 % ou 100 % sur quelques publications. None sans publication
+    comparee au consensus."""
     v = [x for x in hist if x.get("surprise") in POSITIONS_CONSENSUS and x["reaction"]]
     if not v:
         return None
@@ -614,6 +615,16 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
 
     # Par entreprise.
     dates = prochaines_dates(referentiel, res, calendrier, aujourd_hui)
+    # Publications de resultats de chaque grand secteur (scenario le plus
+    # probable de la prochaine publication).
+    secteur_de = {e["ticker"]: grand_secteur(e.get("secteur")) for e in referentiel}
+    par_secteur = {}
+    for x in res:
+        par_secteur.setdefault(secteur_de.get(x["ticker"]), []).append(x)
+    prev_secteur = {g: prevision_secteur(v) for g, v in par_secteur.items() if g}
+    n_entreprises_secteur = {}
+    for t, g in secteur_de.items():
+        n_entreprises_secteur[g] = n_entreprises_secteur.get(g, 0) + 1
     entreprises, prochaines = [], []
     for e in referentiel:
         v = [x for x in evts if x["ticker"] == e["ticker"]]
@@ -639,13 +650,16 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         serie = series.get(e["ticker"])
         prochaine = dates.get(e["ticker"])
         recent = cours_recent(serie) if serie is not None else None
-        prev = prevision_entreprise(r)
+        gs = secteur_de.get(e["ticker"])
+        fiche["grand_secteur"] = gs
+        prev = prev_secteur.get(gs)
         passe = part_hausse_passee(r)
         if passe is not None:  # depart de la probabilite du jour de publication
             fiche["p_hausse_passee"] = passe
         if prochaine and recent:
             z = recent["z_avant"]
-            prochaine = dict(prochaine, **recent, n_historique=prev["n"] if prev else 0)
+            prochaine = dict(prochaine, **recent, n_historique=prev["n"] if prev else 0, secteur=gs,
+                             n_entreprises_secteur=n_entreprises_secteur.get(gs, 0))
             probable = None
             if prev is not None:
                 sc = prev["scenarios"]
