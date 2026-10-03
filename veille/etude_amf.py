@@ -197,7 +197,8 @@ def enrichir(evts, positions, consensus):
                 ev["revision_30j_pct"] = rev
                 ev["revision"] = ("hausse" if rev > SEUIL_REVISION else "baisse" if rev < -SEUIL_REVISION
                                   else "stable")
-            # Avis de Claude, a defaut de l'ecart chiffre de Yahoo (qui prime, ci-dessous).
+            # Jugement d'ensemble de Claude (tous les indicateurs face au
+            # consensus) ; a defaut, l'ecart chiffre du BPA (Yahoo, ci-dessous).
             if ev.get("consensus") in SURPRISES:
                 ev["surprise"] = SURPRISES[ev["consensus"]]
         # Surprises de BPA trimestriel (Yahoo) : premiere publication de
@@ -210,6 +211,8 @@ def enrichir(evts, positions, consensus):
             if ev is None:
                 continue
             ev["surprise_bpa_pct"] = s["surprise_pct"]
+            if ev.get("consensus") in SURPRISES:
+                continue  # jugement de Claude
             # Ecart exact (avant l'arrondi de surprise_pct) face au seuil.
             ev["surprise"] = (jour_j.position_consensus(s.get("publie"), s.get("estime"))
                               or ("positive" if s["surprise_pct"] > SEUIL_SURPRISE

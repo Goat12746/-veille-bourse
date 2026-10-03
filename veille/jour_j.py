@@ -236,9 +236,9 @@ def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, se
             res["autre"] = True  # pas une publication de resultats (livraisons, calendrier...)
         return {k: v for k, v in res.items() if v is not None}
     ch = avis.get("chiffres") or {}
-    res.update({k: avis.get(k) for k in ("periode", "perspectives", "attentes", "consensus", "exceptionnel",
-                                         "actionnaires", "objectifs", "resume", "points_cles", "a_surveiller",
-                                         "impact")})
+    res.update({k: avis.get(k) for k in ("periode", "perspectives", "attentes", "consensus", "consensus_raison",
+                                         "exceptionnel", "actionnaires", "objectifs", "resume", "points_cles",
+                                         "a_surveiller", "impact")})
     res["juge"] = True
     if ch:
         res["chiffres"] = ch
@@ -246,11 +246,16 @@ def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, se
         res["ecarts"] = {k: v for k, v in {"ca_pct": _ecart(ch.get("ca"), est.get("ca")),
                                            "bpa_pct": _ecart(ch.get("bpa"), est.get("bpa"))}.items()
                          if v is not None}
+    # Position face au consensus : jugement d'ensemble de Claude (BPA, chiffre
+    # d'affaires, marges... ponderes selon ce qui compte le plus pour le
+    # titre), a defaut l'ecart chiffre du seul BPA au seuil de 5 %.
     surprise = SURPRISES.get(avis.get("consensus"))
-    # Ecart chiffre du BPA au consensus (prime sur l'avis de Claude).
-    chiffree = position_consensus(ch.get("bpa"), ((est or {}).get("bpa") or [None])[0])
-    if chiffree:
-        surprise = chiffree
+    if surprise:
+        res["position_source"] = "claude"
+    else:
+        surprise = position_consensus(ch.get("bpa"), ((est or {}).get("bpa") or [None])[0])
+        if surprise:
+            res["position_source"] = "bpa"
     if surprise:
         res["surprise"] = surprise
     pr = probabilites(p_base, avis.get("perspectives"), surprise, t_marche,

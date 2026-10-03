@@ -258,6 +258,7 @@ extrait du communiqué (chiffres clés, perspectives). Ton avis :
 ```json
 {"137031_20251105": {"type": "resultats", "periode": "T3 2025",
   "perspectives": "confirmees", "attentes": null, "consensus": "superieur",
+  "consensus_raison": "BPA 1,84 € contre 1,71 € (+8 %), chiffre d'affaires en ligne (+1 %) : le bénéfice prime.",
   "exceptionnel": false, "actionnaires": false,
   "chiffres": {"devise": "EUR", "ca": 4210, "resultat": 512, "bpa": 1.84,
                "bpa_ajuste": false},
@@ -297,18 +298,34 @@ Mêmes règles et même format pour les publications américaines
   (premiers objectifs de l'année) ou `null`.
 - **attentes** : `superieures`, `conformes` ou `inferieures` seulement si
   l'entreprise se compare elle-même à ses objectifs ou au consensus.
-- **consensus** : `superieur`, `conforme` ou `inferieur` d'après le champ
-  `consensus` de l'entrée (moyenne des analystes la veille ; `bpa` et `ca` par
-  période : `0q` trimestre en cours, `0y` exercice en cours, chaque valeur
-  `[moyenne, nombre d'analystes]`, `fin` donne la date de fin de période).
-  Compare le chiffre publié de la même période : le chiffre d'affaires du
-  trimestre pour un chiffre d'affaires trimestriel, le BPA (ou à défaut le
-  chiffre d'affaires) pour des comptes. Écart de moins de 5 % (dans un sens
-  ou dans l'autre) : `conforme` ; au-delà, `superieur` ou `inferieur`
-  (seuil mesuré sur l'historique : battre le consensus de moins de 5 % ne
-  fait pas monter le cours).
-  Si la presse cite un consensus plus précis (« contre un consensus de… »),
-  utilise-le. Sans consensus comparable : `null`.
+- **consensus** : `superieur`, `conforme` ou `inferieur` : **jugement
+  d'ensemble** des résultats face aux attentes des analystes, d'après le
+  champ `consensus` de l'entrée (moyenne des analystes la veille ; `bpa` et
+  `ca` par période : `0q` trimestre en cours, `0y` exercice en cours, chaque
+  valeur `[moyenne, nombre d'analystes]`, `fin` donne la date de fin de
+  période) et ce que le communiqué ou la presse en disent (« record »,
+  « au-dessus des attentes », consensus cité, marge, indicateur clé du
+  secteur). Compare **chaque indicateur publié** à son consensus de la même
+  période (BPA, chiffre d'affaires, et ce que la presse compare : marge,
+  ventes à périmètre constant, abonnés, réservations…), puis tranche :
+  - si tous vont dans le même sens, c'est ce sens ;
+  - s'ils divergent, retiens celui qui compte le plus pour le cours de
+    cette entreprise : en général le BPA ; le chiffre d'affaires pour une
+    valeur de croissance ou quand le bénéfice est faussé par des éléments
+    exceptionnels ; l'indicateur clé du secteur s'il est cité (produit net
+    bancaire, ventes à magasins comparables…) ;
+  - repères d'écart : le BPA bouge beaucoup (moins de 5 % d'écart :
+    `conforme`, seuil mesuré sur l'historique) ; le chiffre d'affaires bouge
+    peu (2 à 3 % d'écart est déjà net) ;
+  - un trimestre « record » n'est pas en soi au-dessus du consensus : seul
+    compte l'écart aux attentes.
+  Les perspectives et objectifs se jugent à part (`perspectives`,
+  `objectifs`), pas ici. Sans consensus comparable ni chiffre cité par la
+  presse : `null`.
+- **consensus_raison** : une phrase courte qui justifie `consensus` avec les
+  chiffres comparés et, s'ils divergent, lequel prime et pourquoi (« BPA
+  +5 % au-dessus, chiffre d'affaires +4 %, marge brute record : au-dessus »).
+  `null` si `consensus` est `null`.
 - **periode** : la période publiée comme l'entreprise la nomme : `T3 2025`,
   `S1 2026`, `2025` (comptes annuels) ; exercice décalé : celui de
   l'entreprise (`T1 2027` pour un premier trimestre de l'exercice 2027).

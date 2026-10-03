@@ -524,6 +524,8 @@ def valider_avis(cid, a):
         e.append(f"{cid} : attentes {a.get('attentes')!r}, attendu {ATTENTES} ou null")
     if a.get("consensus") not in ["superieur", "conforme", "inferieur", None]:
         e.append(f"{cid} : consensus {a.get('consensus')!r}, attendu superieur, conforme, inferieur ou null")
+    if a.get("consensus_raison") is not None and not isinstance(a["consensus_raison"], str):
+        e.append(f"{cid} : consensus_raison doit etre un texte court")
     for champ in ("exceptionnel", "actionnaires"):
         if not isinstance(a.get(champ, False), bool):
             e.append(f"{cid} : {champ} doit etre true ou false")
