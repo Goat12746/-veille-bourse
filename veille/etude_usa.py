@@ -29,6 +29,7 @@ from etude_amf import assembler, mesurer
 from mesures import Calendrier, Serie, telecharger_cours
 
 ICI = os.path.dirname(os.path.abspath(__file__))
+RECENTES = 14  # jours de publications listees pour l'onglet Actualites > Etats-Unis
 SORTIE = os.path.join(ICI, "communiques_usa.json")
 INDICE = "^GSPC"  # S&P 500
 CLOTURE = (16, 0)  # heure de New York
@@ -84,6 +85,27 @@ def evenements(doc, referentiel, cal, series):
     return evts, jours, en_attente
 
 
+def recentes(doc, evts, aujourd_hui):
+    """Publications des derniers jours, mesurees ou non (Actualites >
+    Etats-Unis) : heure, titre, sens s'il est connu, reaction si elle est
+    cotee, ecart au consensus du BPA."""
+    limite = (dt.date.fromisoformat(aujourd_hui) - dt.timedelta(days=RECENTES)).isoformat()
+    mesures = {ev["id"]: ev for ev in evts}
+    res = []
+    for ticker, fiche in doc["entreprises"].items():
+        for p in fiche["publications"]:
+            if p["publie_le"][:10] < limite:
+                continue
+            x = {"ticker": ticker, "nom": fiche["nom"], "id": p["id"], "publie_le": p["publie_le"],
+                 "titre": p["titre"], "url": p.get("url"), "sens": p.get("sens")}
+            ev = mesures.get(p["id"])
+            if ev:
+                x.update({k: ev.get(k) for k in ("jour", "rendement_pct", "indice_pct", "ecart_pct", "z",
+                                                 "surprise", "surprise_bpa_pct")})
+            res.append({k: v for k, v in x.items() if v is not None})
+    return sorted(res, key=lambda x: x["publie_le"], reverse=True)
+
+
 def main():
     with open(edgar.SORTIE, encoding="utf-8") as f:
         doc = json.load(f)
@@ -124,9 +146,12 @@ def main():
                       sum(n_par_ticker.values()), n_par_ticker, None, consensus, calendrier, aujourd_hui,
                       indice="S&P 500")
     # Sens toujours tire des comptes : champ inutile dans chaque publication.
+    # CIK : l'application reconnait les depots du jour dans le flux de la SEC.
     for e in histo["entreprises"]:
+        e["cik"] = doc["entreprises"][e["ticker"]]["cik"]
         for x in e["resultats"]["evenements"]:
             x.pop("origine", None)
+    histo["recentes"] = recentes(doc, evts, aujourd_hui)
     histo["zone"] = "usa"
     histo["genere_le"] = dt.datetime.now().astimezone().isoformat(timespec="seconds")
     histo["cours_indisponibles"] = sorted(erreurs)
