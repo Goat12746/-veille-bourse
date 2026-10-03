@@ -210,8 +210,10 @@ def enrichir(evts, positions, consensus):
             if ev is None:
                 continue
             ev["surprise_bpa_pct"] = s["surprise_pct"]
-            ev["surprise"] = ("positive" if s["surprise_pct"] > SEUIL_SURPRISE
-                              else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme")
+            # Ecart exact (avant l'arrondi de surprise_pct) face au seuil.
+            ev["surprise"] = (jour_j.position_consensus(s.get("publie"), s.get("estime"))
+                              or ("positive" if s["surprise_pct"] > SEUIL_SURPRISE
+                                  else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme"))
 
 
 def croise(v, cle, valeurs):

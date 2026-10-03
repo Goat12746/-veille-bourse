@@ -195,10 +195,23 @@ def estimes(releve, periode, publie_le, surprises=None):
     return res if ("ca" in res or "bpa" in res) else None
 
 
+SEUIL_SURPRISE = 5.0  # % d'ecart du BPA au consensus (meme seuil que l'etude, etude_amf.py)
+
+
+def position_consensus(publie, attendu):
+    """Au-dessus (positive), conforme ou en dessous (negative) du consensus :
+    ecart exact du chiffre publie a l'attendu, compare au seuil avant tout
+    arrondi (5,03 % est au-dessus, meme affiche "+5,0 %"). None sans chiffre."""
+    if publie is None or not attendu:
+        return None
+    e = (publie - attendu) / abs(attendu) * 100
+    return "positive" if e > SEUIL_SURPRISE else "negative" if e < -SEUIL_SURPRISE else "conforme"
+
+
 def _ecart(publie, attendu):
     if publie is None or not attendu or not attendu[0]:
         return None
-    return round((publie - attendu[0]) / abs(attendu[0]) * 100, 1)
+    return round((publie - attendu[0]) / abs(attendu[0]) * 100, 2)
 
 
 def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, secteur=None):
@@ -234,9 +247,10 @@ def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, se
                                            "bpa_pct": _ecart(ch.get("bpa"), est.get("bpa"))}.items()
                          if v is not None}
     surprise = SURPRISES.get(avis.get("consensus"))
-    ecart_bpa = (res.get("ecarts") or {}).get("bpa_pct")
-    if ecart_bpa is not None:  # ecart chiffre au consensus : meme seuil que l'etude (5 %)
-        surprise = "positive" if ecart_bpa > 5 else "negative" if ecart_bpa < -5 else "conforme"
+    # Ecart chiffre du BPA au consensus (prime sur l'avis de Claude).
+    chiffree = position_consensus(ch.get("bpa"), ((est or {}).get("bpa") or [None])[0])
+    if chiffree:
+        surprise = chiffree
     if surprise:
         res["surprise"] = surprise
     pr = probabilites(p_base, avis.get("perspectives"), surprise, t_marche,
