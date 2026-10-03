@@ -31,6 +31,8 @@ from mesures import (SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyen
 PRIORITE = {cid: i for i, cid in enumerate(ORDRE)}
 AVANT = 20  # seances avant la publication (le cours "recent")
 SUITE = 5  # seances apres la reaction (la baisse ou la hausse se prolonge-t-elle ?)
+UN_AN = 250  # seances de l'evolution sur 12 mois face a l'indice
+QUANTILE_FORTE_HAUSSE = 0.8  # 20 % des publications ayant le plus monte sur 12 mois
 SENS_RESULTATS = ("positif", "negatif", "mitige")
 REACTIONS = ("hausse", "baisse")
 DEBUT_VALIDATION = "2022-01-01"
@@ -164,6 +166,9 @@ def mesurer(ev, serie, premier):
     veille = premier.date().isoformat()
     if veille in serie.pos and veille != ev["jour"] and s >= 1:
         ev["z_veille"] = round(serie.ecart(mod, s - 1, s - 1) / mod[2], 2)
+    perf = perf_12m(serie, s)
+    if perf is not None:
+        ev["perf_12m_pct"] = perf
     ev["_mod"] = (s, mod)
     return True
 
@@ -659,14 +664,51 @@ def prevision_entreprise(hist):
             "n_par_sens": {s: sum(1 for x in v if x["sens"] == s) for s in SENS_RESULTATS}}
 
 
+def perf_12m(serie, s):
+    """Evolution de l'action face a l'indice sur les 12 mois (250 seances)
+    precedant la seance s, en points de %. None sans assez d'historique."""
+    if serie is None or s - 1 - UN_AN < 0:
+        return None
+    a = serie.clo[s - 1] / serie.clo[s - 1 - UN_AN] - 1
+    m = serie.clo_m[s - 1] / serie.clo_m[s - 1 - UN_AN] - 1
+    return pct(a - m)
+
+
+def table_forte_hausse(res):
+    """Resultats face au consensus apres une forte hausse sur 12 mois (20 %
+    des publications ayant le plus monte face a l'indice) : part de hausse le
+    jour de la reaction, pour ces publications et pour toutes. Mesure sur 14 890
+    publications americaines (octobre 2026) : resultats conformes au consensus
+    apres une forte annee, 34 % de hausses contre 47 % en general."""
+    v = [x for x in res if x.get("perf_12m_pct") is not None and x.get("surprise") and x["reaction"]]
+    if len(v) < 50:
+        return None
+    valeurs = sorted(x["perf_12m_pct"] for x in v)
+    seuil = valeurs[int(len(valeurs) * QUANTILE_FORTE_HAUSSE)]
+    res_t = {"seuil_pct": arrondi(seuil, 1), "par_surprise": {}}
+    for s in ("positive", "conforme", "negative"):
+        w = [x for x in v if x["surprise"] == s]
+        haut = [x for x in w if x["perf_12m_pct"] >= seuil]
+        res_t["par_surprise"][s] = {
+            "tous": {"n": len(w), "part_hausse": _part(sum(1 for x in w if x["reaction"] == "hausse"), len(w))},
+            "haut": {"n": len(haut), "part_hausse": _part(sum(1 for x in haut if x["reaction"] == "hausse"),
+                                                           len(haut))}}
+    return res_t
+
+
 def cours_recent(serie):
-    """Ecart cumule au CAC 40 des 20 dernieres seances (en % et en sigma)."""
+    """Ecart cumule a l'indice des 20 dernieres seances (en % et en sigma),
+    et evolution face a l'indice sur 12 mois."""
     s = len(serie.dates)
     mod = serie.modele(s - AVANT) if s - AVANT > 0 else None
     if mod is None:
         return None
     car = serie.ecart(mod, s - AVANT, s - 1)
-    return {"au": serie.dates[-1], "avant_pct": pct(car), "z_avant": round(car / (mod[2] * math.sqrt(AVANT)), 2)}
+    res = {"au": serie.dates[-1], "avant_pct": pct(car), "z_avant": round(car / (mod[2] * math.sqrt(AVANT)), 2)}
+    perf = perf_12m(serie, s)
+    if perf is not None:
+        res["perf_12m_pct"] = perf
+    return res
 
 
 def prochaines_dates(referentiel, resultats, calendrier, aujourd_hui):
@@ -703,7 +745,8 @@ def prochaines_dates(referentiel, resultats, calendrier, aujourd_hui):
 def _evenement_public(x):
     """Publication de resultats telle qu'affichee dans l'application."""
     cles = ["jour", "periode", "titre", "sens", "origine", "activite", "rentabilite", "perspectives", "attentes",
-            "exceptionnel", "actionnaires", "avant_pct", "z_avant", "rendement_pct", "ecart_pct", "z", "suite_pct",
+            "exceptionnel", "actionnaires", "avant_pct", "z_avant", "perf_12m_pct", "rendement_pct", "ecart_pct", "z",
+            "suite_pct",
             "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "revision_30j_pct", "objectifs_vs"]
     # Sans les valeurs nulles ni fausses (l'application les lit par defaut) :
     # le fichier reste leger malgre des milliers de publications.
@@ -796,6 +839,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         "bons_puis_baisse": facteurs(avec_sens, "positif", "baisse", bornes),
         "mauvais_puis_hausse": facteurs(avec_sens, "negatif", "hausse", bornes),
         "attentes_marche": attentes_marche(avec_sens, consensus),
+        "forte_hausse_12m": table_forte_hausse(res),
     }
     modele = Modele(avec_sens) if len(avec_sens) >= 200 else None
     if modele is not None:
@@ -836,6 +880,8 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         prochaine = dates.get(e["ticker"])
         recent = cours_recent(serie) if serie is not None else None
         prev = prevision_entreprise(r)
+        if prev is not None:  # part de hausse par sens, meme sans prochaine date connue
+            fiche["p_hausse_si"] = {s: arrondi(p) for s, p in prev["p_hausse_si"].items()}
         if prochaine and recent and prev is not None:
             z = recent["z_avant"]
             sc = prev["scenarios"]
@@ -869,8 +915,11 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
                                      and x["id"] != pub["id"]])
         p_base = prev["p_hausse_si"] if prev else None
         fe = consensus.get(pub["ticker"]) or {}
+        perf = ev.get("perf_12m_pct") if ev else None
+        if perf is None and series.get(pub["ticker"]) is not None:
+            perf = (cours_recent(series[pub["ticker"]]) or {}).get("perf_12m_pct")
         f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]), p_base, t_marche,
-                         surprises=fe.get("surprises"))
+                         surprises=fe.get("surprises"), perf_12m=perf)
         if ev:
             f.update({k: ev.get(k) for k in ("jour", "rendement_pct", "indice_pct", "ecart_pct", "z")})
         jour_pub.append(f)

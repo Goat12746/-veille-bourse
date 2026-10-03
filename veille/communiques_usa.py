@@ -325,7 +325,10 @@ def ecrire_jour():
     etude = charger(ETUDE_USA, {})
     t_usa = jour_j.tables(etude.get("resultats"))
     t_fr = jour_j.tables((charger(ETUDE_FR, {}).get("historique_amf") or {}).get("resultats"))
-    p_base = {e["ticker"]: (e.get("prochaine") or {}).get("p_hausse_si") for e in etude.get("entreprises", [])}
+    p_base = {e["ticker"]: (e.get("prochaine") or {}).get("p_hausse_si") or e.get("p_hausse_si")
+              for e in etude.get("entreprises", [])}
+    perf = {e["ticker"]: (e.get("prochaine") or e.get("cours_recent") or {}).get("perf_12m_pct")
+            for e in etude.get("entreprises", [])}
     pubs = {}
     for numero, p in recentes(JOURS).items():
         pubs[numero] = {"id": numero, "ticker": p["ticker"], "nom": p["nom"], "publie_le": p["publie_le"],
@@ -341,7 +344,7 @@ def ecrire_jour():
         avis = classes.get(numero)
         fe = estimations.get(pub["ticker"]) or {}
         f = jour_j.fiche(pub, avis, consensus_mod.avant(fe, pub["publie_le"][:10]),
-                         p_base.get(pub["ticker"]), t_usa, t_fr, "publications françaises", fe.get("surprises"))
+                         p_base.get(pub["ticker"]), t_usa, None, None, fe.get("surprises"), perf.get(pub["ticker"]))
         if avis and avis.get("perspectives_mots"):
             f["perspectives_mots"] = avis["perspectives_mots"]
         rx = reactions.get(numero) or {}

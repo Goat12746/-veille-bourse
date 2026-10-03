@@ -55,6 +55,7 @@ def tables(resultats):
             "perspectives": croise(resultats.get("par_perspectives_sens")),
             "surprise": croise(((resultats.get("attentes_marche") or {}).get("consensus") or {}).get("par_surprise")),
             "objectifs": croise(resultats.get("par_objectifs_sens")),
+            "forte_hausse_12m": resultats.get("forte_hausse_12m"),
             "n": sum(n for _, n in par_sens.values())}
 
 
@@ -67,7 +68,7 @@ def _decalage(table, valeur, sens, base):
 
 
 def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=None, source_perspectives=None,
-                 objectifs=None):
+                 objectifs=None, perf_12m=None):
     """Etapes de la probabilite de hausse : [{libelle, p, n, source}] et
     probabilite finale. `t_perspectives` : tables d'un autre marche pour les
     perspectives quand le marche n'a pas encore d'historique (Etats-Unis)."""
@@ -97,6 +98,21 @@ def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=
             x += d
             etapes.append({"libelle": LIBELLES_SURPRISE[surprise], "p": round(_sig(x), 3), "n": n})
     non_comptes = []
+    # Resultats seulement conformes au consensus apres une forte hausse sur 12
+    # mois : le marche attendait mieux (historique du meme marche seulement).
+    fh = t_marche.get("forte_hausse_12m")
+    if surprise == "conforme" and perf_12m is not None:
+        if not fh:
+            non_comptes.append("Forte hausse sur 12 mois : historique encore trop court")
+        elif perf_12m >= fh["seuil_pct"]:
+            cel = fh["par_surprise"]["conforme"]
+            n = cel["haut"]["n"]
+            if n >= N_MIN and cel["haut"]["part_hausse"] is not None and cel["tous"]["part_hausse"]:
+                x += _logit(cel["haut"]["part_hausse"]) - _logit(cel["tous"]["part_hausse"])
+                etapes.append({"libelle": f"Conforme au consensus après forte hausse sur 12 mois "
+                                          f"({perf_12m:+.0f} % face à l'indice)", "p": round(_sig(x), 3), "n": n})
+            else:
+                non_comptes.append(f"Forte hausse sur 12 mois : historique encore trop court ({n} cas)")
     if objectifs in LIBELLES_OBJECTIFS:
         d, n = _decalage(t_marche.get("objectifs"), objectifs, sens, base_sens)
         if d is not None:
@@ -149,12 +165,14 @@ def _ecart(publie, attendu):
 
 
 def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, source_perspectives=None,
-          surprises=None):
+          surprises=None, perf_12m=None):
     """Publication du jour pour l'application : `pub` = {id, ticker, nom,
     publie_le, url}, `avis` = avis de Claude (ou None : jugement a venir),
     `releve` = consensus de la veille, `p_base_par_sens` = probabilite de
     hausse selon le sens des resultats pour l'entreprise."""
     res = dict(pub)
+    if perf_12m is not None:
+        res["perf_12m_pct"] = perf_12m
     est = estimes(releve, (avis or {}).get("periode"), pub["publie_le"], surprises)
     if est:
         res["estimes"] = est
@@ -180,9 +198,13 @@ def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, sou
                                            "bpa_pct": _ecart(ch.get("bpa"), est.get("bpa"))}.items()
                          if v is not None}
     surprise = SURPRISES.get(avis.get("consensus"))
+    ecart_bpa = (res.get("ecarts") or {}).get("bpa_pct")
+    if ecart_bpa is not None:  # ecart chiffre au consensus : meme seuil que l'etude (5 %)
+        surprise = "positive" if ecart_bpa > 5 else "negative" if ecart_bpa < -5 else "conforme"
     sens = avis.get("sens")
     pr = probabilites(sens, (p_base_par_sens or {}).get(sens), avis.get("perspectives"), surprise, t_marche,
-                      t_perspectives, source_perspectives, (avis.get("objectifs") or {}).get("vs_consensus"))
+                      t_perspectives, source_perspectives, (avis.get("objectifs") or {}).get("vs_consensus"),
+                      perf_12m)
     if pr:
         res["probabilites"] = pr
     return {k: v for k, v in res.items() if v is not None and v is not False and v != {}}
