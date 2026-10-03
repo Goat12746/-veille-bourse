@@ -78,6 +78,13 @@ def evenements(doc, referentiel, cal, series):
     if os.path.exists(chemin):
         with open(chemin, encoding="utf-8") as f:
             mots = json.load(f).get("publications", {})
+    # Perspectives relues par Claude (relecture_usa.py) : priment sur les
+    # mots-cles, meme quand la relecture n'en trouve pas (null).
+    relues = {}
+    chemin = os.path.join(ICI, "relecture", "perspectives_claude.json")
+    if os.path.exists(chemin):
+        with open(chemin, encoding="utf-8") as f:
+            relues = json.load(f).get("publications", {})
     evts, en_attente = [], 0
     for ticker, fiche in doc["entreprises"].items():
         for p in fiche["publications"]:
@@ -96,8 +103,11 @@ def evenements(doc, referentiel, cal, series):
                     if avis.get(k) is not None:
                         ev[k] = avis[k]
                 ev["objectifs_vs"] = (avis.get("objectifs") or {}).get("vs_consensus")
-            if ev.get("perspectives") is None and (mots.get(p["id"]) or [None])[0]:
-                ev["perspectives"] = mots[p["id"]][0]
+            if ev.get("perspectives") is None:
+                if p["id"] in relues:
+                    ev["perspectives"] = relues[p["id"]]
+                elif (mots.get(p["id"]) or [None])[0]:
+                    ev["perspectives"] = mots[p["id"]][0]
             if mesurer(ev, series.get(ticker), t):
                 evts.append(ev)
     jours = {}
