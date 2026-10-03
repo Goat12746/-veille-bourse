@@ -1,10 +1,6 @@
 {
  "version": 1,
-<<<<<<< Updated upstream
- "genere_le": "2026-10-03T15:18:33+00:00",
-=======
- "genere_le": "2026-10-03T18:45:53+02:00",
->>>>>>> Stashed changes
+ "genere_le": "2026-10-03T18:47:43+02:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -8739,7 +8735,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.25,
       "p": 0.625,
-      "ecart_moyen_positif_pct": -0.33,
+      "ecart_moyen_positif_pct": -0.34,
       "ecart_moyen_negatif_pct": null,
       "id": "strategie"
      },
@@ -12319,7 +12315,7 @@
       "concordance": 0.593,
       "p": 0.4421,
       "ecart_moyen_positif_pct": 0.48,
-      "ecart_moyen_negatif_pct": -0.65,
+      "ecart_moyen_negatif_pct": -0.64,
       "id": "resultats"
      },
      {
@@ -23304,7 +23300,7 @@
         "n": 8,
         "avant_moyen_pct": -2.21,
         "ecart_moyen_pct": -2.56,
-        "suite_moyenne_pct": 0.31
+        "suite_moyenne_pct": 0.32
        },
        "n": 13,
        "part_hausse": 0.385
@@ -24938,7 +24934,7 @@
     "categories": [
      {
       "n": 32,
-      "z_abs_moyen": 2.51,
+      "z_abs_moyen": 2.52,
       "part_net": 0.625,
       "part_fort": 0.438,
       "ecart_abs_median_pct": 2.12,
@@ -25129,7 +25125,7 @@
      },
      "mouvements": {
       "n": 32,
-      "z_abs_moyen": 2.51,
+      "z_abs_moyen": 2.52,
       "part_net": 0.625,
       "part_fort": 0.438,
       "ecart_abs_median_pct": 2.12
@@ -26040,7 +26036,7 @@
       "negatif": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": 3.16,
+        "avant_moyen_pct": 3.15,
         "ecart_moyen_pct": 2.08,
         "suite_moyenne_pct": 4.7
        },
@@ -27612,7 +27608,7 @@
     "categories": [
      {
       "n": 4,
-      "z_abs_moyen": 2.17,
+      "z_abs_moyen": 2.18,
       "part_net": 0.75,
       "part_fort": 0.75,
       "ecart_abs_median_pct": 3.73,
@@ -27831,7 +27827,7 @@
       "concordance": 0.586,
       "p": 0.4583,
       "ecart_moyen_positif_pct": 0.84,
-      "ecart_moyen_negatif_pct": 2.12
+      "ecart_moyen_negatif_pct": 2.11
      },
      "mouvements": {
       "n": 30,
@@ -28645,7 +28641,7 @@
        "hausse": {
         "n": 10,
         "avant_moyen_pct": 0.42,
-        "ecart_moyen_pct": 2.55,
+        "ecart_moyen_pct": 2.56,
         "suite_moyenne_pct": -0.88
        },
        "baisse": {
@@ -31772,7 +31768,7 @@
        "avant_pct": -2.07,
        "z_avant": -0.19,
        "rendement_pct": -14.12,
-       "ecart_pct": -14.42,
+       "ecart_pct": -14.41,
        "z": -5.76,
        "suite_pct": -1.26,
        "reaction": "baisse",
@@ -34345,7 +34341,7 @@
       "positif": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": -0.39,
+        "avant_moyen_pct": -0.38,
         "ecart_moyen_pct": 1.81,
         "suite_moyenne_pct": 0.12
        },
@@ -36614,7 +36610,7 @@
      },
      {
       "n": 76,
-      "z_abs_moyen": 0.71,
+      "z_abs_moyen": 0.72,
       "part_net": 0.289,
       "part_fort": 0.013,
       "ecart_abs_median_pct": 0.53,
@@ -36694,7 +36690,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.76,
+      "z_abs_moyen": 0.77,
       "part_net": 0.25,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 0.52,
@@ -38511,7 +38507,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.78,
+      "z_abs_moyen": 0.79,
       "part_net": 0.25,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 0.48,
@@ -39458,7 +39454,7 @@
        "hausse": {
         "n": 6,
         "avant_moyen_pct": 0.09,
-        "ecart_moyen_pct": 9.61,
+        "ecart_moyen_pct": 9.6,
         "suite_moyenne_pct": 2.51
        },
        "baisse": {
@@ -43306,7 +43302,7 @@
     "categories": [
      {
       "n": 4,
-      "z_abs_moyen": 1.3,
+      "z_abs_moyen": 1.29,
       "part_net": 0.75,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 3.43,
@@ -47006,7 +47002,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": -4.2,
-        "ecart_moyen_pct": 6.64,
+        "ecart_moyen_pct": 6.65,
         "suite_moyenne_pct": -0.32
        },
        "baisse": {
@@ -47043,7 +47039,7 @@
       "concordance": 0.536,
       "p": 0.8506,
       "ecart_moyen_positif_pct": 2.01,
-      "ecart_moyen_negatif_pct": 6.64
+      "ecart_moyen_negatif_pct": 6.65
      },
      "mouvements": {
       "n": 29,
@@ -50251,7 +50247,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.667,
       "p": 0.6875,
-      "ecart_moyen_positif_pct": 0.94,
+      "ecart_moyen_positif_pct": 0.93,
       "ecart_moyen_negatif_pct": null,
       "id": "strategie"
      },
@@ -50318,7 +50314,7 @@
         "n": 12,
         "avant_moyen_pct": 0.88,
         "ecart_moyen_pct": -1.89,
-        "suite_moyenne_pct": 1.0
+        "suite_moyenne_pct": 0.99
        },
        "n": 21,
        "part_hausse": 0.429
@@ -53441,7 +53437,7 @@
      },
      {
       "n": 10,
-      "z_abs_moyen": 0.8,
+      "z_abs_moyen": 0.81,
       "part_net": 0.1,
       "part_fort": 0.1,
       "ecart_abs_median_pct": 0.59,
@@ -54461,7 +54457,7 @@
       "positif": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": -1.86,
+        "avant_moyen_pct": -1.85,
         "ecart_moyen_pct": 4.69,
         "suite_moyenne_pct": 2.38
        },
@@ -56165,7 +56161,7 @@
      },
      {
       "n": 3,
-      "z_abs_moyen": 3.46,
+      "z_abs_moyen": 3.45,
       "part_net": 0.667,
       "part_fort": 0.333,
       "ecart_abs_median_pct": 2.18,
@@ -58444,7 +58440,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.6,
       "p": 0.5034,
-      "ecart_moyen_positif_pct": 0.5,
+      "ecart_moyen_positif_pct": 0.49,
       "ecart_moyen_negatif_pct": null,
       "id": "financement"
      },
@@ -63001,7 +62997,7 @@
         "n": 4,
         "avant_moyen_pct": -3.14,
         "ecart_moyen_pct": -7.28,
-        "suite_moyenne_pct": 4.1
+        "suite_moyenne_pct": 4.09
        },
        "n": 9,
        "part_hausse": 0.556
@@ -65400,7 +65396,7 @@
         "n": 8,
         "avant_moyen_pct": -0.85,
         "ecart_moyen_pct": -2.33,
-        "suite_moyenne_pct": 1.16
+        "suite_moyenne_pct": 1.15
        },
        "n": 19,
        "part_hausse": 0.579
@@ -67917,7 +67913,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 1.44,
+      "z_abs_moyen": 1.45,
       "part_net": 0.75,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 2.39,
@@ -67927,7 +67923,7 @@
       "baisse_si_negatif": null,
       "concordance": 1.0,
       "p": 0.125,
-      "ecart_moyen_positif_pct": 2.37,
+      "ecart_moyen_positif_pct": 2.36,
       "ecart_moyen_negatif_pct": null,
       "id": "commercial"
      },
@@ -73275,7 +73271,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.667,
       "p": 0.6875,
-      "ecart_moyen_positif_pct": 0.63,
+      "ecart_moyen_positif_pct": 0.64,
       "ecart_moyen_negatif_pct": null,
       "id": "commercial"
      },
@@ -74730,7 +74726,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.48,
+      "z_abs_moyen": 0.47,
       "part_net": 0.25,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 0.69,
@@ -76460,7 +76456,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.94,
+      "z_abs_moyen": 0.93,
       "part_net": 0.5,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 1.17,
@@ -77963,7 +77959,7 @@
        "baisse": {
         "n": 4,
         "avant_moyen_pct": 0.95,
-        "ecart_moyen_pct": -3.04,
+        "ecart_moyen_pct": -3.03,
         "suite_moyenne_pct": -3.48
        },
        "n": 7,
@@ -80261,7 +80257,7 @@
       "concordance": 0.643,
       "p": 0.1849,
       "ecart_moyen_positif_pct": 0.92,
-      "ecart_moyen_negatif_pct": -2.75,
+      "ecart_moyen_negatif_pct": -2.74,
       "id": "resultats"
      },
      {
@@ -82482,7 +82478,7 @@
        "origine": "claude",
        "activite": "+",
        "rentabilite": "+",
-       "avant_pct": 0.07,
+       "avant_pct": 0.08,
        "z_avant": 0.01,
        "rendement_pct": -7.6,
        "ecart_pct": -8.08,
@@ -82779,7 +82775,7 @@
       "baisse_si_negatif": 0.5,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": -3.65,
+      "ecart_moyen_positif_pct": -3.66,
       "ecart_moyen_negatif_pct": -2.6,
       "id": "resultats"
      },
@@ -84291,7 +84287,7 @@
        "avant_pct": 6.22,
        "z_avant": 1.02,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.59,
+       "ecart_pct": 7.6,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -84362,7 +84358,7 @@
        "attentes": "superieures",
        "avant_pct": 4.24,
        "z_avant": 0.52,
-       "rendement_pct": 9.93,
+       "rendement_pct": 9.94,
        "ecart_pct": 9.62,
        "z": 6.09,
        "suite_pct": 3.94,
@@ -84786,7 +84782,7 @@
         "n": 14,
         "avant_moyen_pct": 0.46,
         "ecart_moyen_pct": 3.89,
-        "suite_moyenne_pct": -0.81
+        "suite_moyenne_pct": -0.8
        },
        "baisse": {
         "n": 10,
@@ -85705,7 +85701,7 @@
       "concordance": 0.528,
       "p": 0.8679,
       "ecart_moyen_positif_pct": 0.9,
-      "ecart_moyen_negatif_pct": -1.64
+      "ecart_moyen_negatif_pct": -1.65
      },
      "mouvements": {
       "n": 37,
@@ -86838,7 +86834,7 @@
      },
      {
       "n": 12,
-      "z_abs_moyen": 0.75,
+      "z_abs_moyen": 0.76,
       "part_net": 0.167,
       "part_fort": 0.083,
       "ecart_abs_median_pct": 1.42,
@@ -86909,7 +86905,7 @@
         "n": 4,
         "avant_moyen_pct": -10.02,
         "ecart_moyen_pct": 7.7,
-        "suite_moyenne_pct": 2.13
+        "suite_moyenne_pct": 2.14
        },
        "baisse": {
         "n": 1,
@@ -88612,7 +88608,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": 3.98,
-        "ecart_moyen_pct": 5.27,
+        "ecart_moyen_pct": 5.26,
         "suite_moyenne_pct": 2.49
        },
        "baisse": {
@@ -94147,7 +94143,7 @@
       "mitige": {
        "hausse": {
         "n": 1,
-        "avant_moyen_pct": 3.8,
+        "avant_moyen_pct": 3.79,
         "ecart_moyen_pct": 0.82,
         "suite_moyenne_pct": -1.67
        },
@@ -94596,7 +94592,7 @@
        "activite": "-",
        "rentabilite": "=",
        "perspectives": "confirmees",
-       "avant_pct": 3.8,
+       "avant_pct": 3.79,
        "z_avant": 0.38,
        "rendement_pct": 0.87,
        "ecart_pct": 0.82,
@@ -94913,7 +94909,7 @@
        },
        "baisse": {
         "n": 8,
-        "avant_moyen_pct": -1.29,
+        "avant_moyen_pct": -1.28,
         "ecart_moyen_pct": -2.66,
         "suite_moyenne_pct": 1.02
        },
@@ -95635,7 +95631,7 @@
      },
      {
       "n": 10,
-      "z_abs_moyen": 1.03,
+      "z_abs_moyen": 1.02,
       "part_net": 0.6,
       "part_fort": 0.1,
       "ecart_abs_median_pct": 2.16,
@@ -95645,7 +95641,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": 0.57,
+      "ecart_moyen_positif_pct": 0.58,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
