@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-03T15:44:58+02:00",
+ "genere_le": "2026-10-03T16:15:23+02:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -2187,6 +2187,71 @@
       "mitige": {
        "n": 20,
        "part_hausse": 0.2
+      }
+     }
+    }
+   ],
+   "par_objectifs_sens": [
+    {
+     "valeur": "superieurs",
+     "n": 0,
+     "part_hausse": null,
+     "ecart_moyen_pct": null,
+     "suite_moyenne_pct": null,
+     "par_sens": {
+      "positif": {
+       "n": 0,
+       "part_hausse": null
+      },
+      "negatif": {
+       "n": 0,
+       "part_hausse": null
+      },
+      "mitige": {
+       "n": 0,
+       "part_hausse": null
+      }
+     }
+    },
+    {
+     "valeur": "conformes",
+     "n": 0,
+     "part_hausse": null,
+     "ecart_moyen_pct": null,
+     "suite_moyenne_pct": null,
+     "par_sens": {
+      "positif": {
+       "n": 0,
+       "part_hausse": null
+      },
+      "negatif": {
+       "n": 0,
+       "part_hausse": null
+      },
+      "mitige": {
+       "n": 0,
+       "part_hausse": null
+      }
+     }
+    },
+    {
+     "valeur": "inferieurs",
+     "n": 0,
+     "part_hausse": null,
+     "ecart_moyen_pct": null,
+     "suite_moyenne_pct": null,
+     "par_sens": {
+      "positif": {
+       "n": 0,
+       "part_hausse": null
+      },
+      "negatif": {
+       "n": 0,
+       "part_hausse": null
+      },
+      "mitige": {
+       "n": 0,
+       "part_hausse": null
       }
      }
     }
@@ -97609,10 +97674,29 @@
     "publie_le": "2026-10-01T15:45:00+00:00",
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW135709_20261001.pdf",
     "titre": "ARGAN : REVENUS LOCATIFS EN HAUSSE DE + 5 %  SUR LES 9 PREMIERS MOIS DE 2026",
+    "type_periode": "chiffre_affaires",
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      6.024,
+      null
+     ]
+    },
+    "periode": "9 mois 2026",
     "sens": "positif",
     "activite": "+",
     "perspectives": "relevees",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "revenus locatifs d'au moins 222 M€ (objectif relevé)",
+     "vs_consensus": null
+    },
     "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 166.2,
+     "ca_var_pct": 5.0
+    },
     "probabilites": {
      "etapes": [
       {
@@ -97640,7 +97724,13 @@
     "publie_le": "2026-09-28T15:35:00+00:00",
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/09/FCMKW134999_20260928.pdf",
     "titre": "NORTH ATLANTIC ENERGIES :",
+    "type_periode": "semestriels",
+    "periode": "S1 2026",
     "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "resultat": -30
+    },
     "jour": "2026-09-29",
     "rendement_pct": -5.19,
     "indice_pct": -0.53,
@@ -97654,11 +97744,32 @@
     "publie_le": "2026-09-24T15:39:23+00:00",
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083245_20260924.pdf",
     "titre": "ALTEN : Activité du 1er semestre 2026",
+    "type_periode": "semestriels",
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      7.639,
+      null
+     ]
+    },
+    "periode": "S1 2026",
     "sens": "positif",
     "activite": "+",
     "rentabilite": "+",
     "perspectives": "relevees",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "objectifs 2026 revus à la hausse",
+     "vs_consensus": null
+    },
     "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 2109.2,
+     "ca_var_pct": 1.2,
+     "resultat": 113.8,
+     "resultat_var_pct": 37.8
+    },
     "probabilites": {
      "etapes": [
       {
@@ -97686,9 +97797,23 @@
     "publie_le": "2026-09-23T15:41:21+00:00",
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083226_20260923.pdf",
     "titre": "Chiffre d'affaires 2025/2026",
+    "type_periode": "chiffre_affaires",
+    "exercice": {
+     "fin": "2026-08-31",
+     "bpa": [
+      14.54,
+      null
+     ]
+    },
+    "periode": "2025/2026",
     "sens": "positif",
     "activite": "+",
     "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 3800.0,
+     "ca_var_pct": 3.8
+    },
     "probabilites": {
      "etapes": [
       {
@@ -97711,12 +97836,34 @@
     "publie_le": "2026-09-23T15:23:56+00:00",
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/09/FCECO083225_20260923.pdf",
     "titre": "260923 BENETEAU Résultats S1 2026",
+    "type_periode": "semestriels",
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      0.2404,
+      null
+     ]
+    },
+    "periode": "S1 2026",
     "sens": "positif",
     "activite": "+",
     "rentabilite": "+",
     "perspectives": "nouvelles",
     "exceptionnel": true,
+    "objectifs": {
+     "periode": "2026",
+     "ca": [
+      860,
+      900
+     ],
+     "texte": "résultat opérationnel courant positif (hors activités américaines arrêtées)",
+     "vs_consensus": null
+    },
     "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca_var_pct": 11.0
+    },
     "probabilites": {
      "etapes": [
       {
@@ -97744,11 +97891,32 @@
     "publie_le": "2026-09-21T15:40:00+00:00",
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ACT/2026/09/FCACT081417_20260921.pdf",
     "titre": "Résultats du 1er semestre 2026 : Forte croissance du chiffre d'affaires, de la rentabilité et du free cash-flow opérationnel. Confirmation des perspectives annuelles.",
+    "type_periode": "annuels",
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      9.621,
+      null
+     ]
+    },
+    "periode": "S1 2026",
     "sens": "positif",
     "activite": "+",
     "rentabilite": "+",
     "perspectives": "confirmees",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "objectifs annuels 2026 maintenus",
+     "vs_consensus": null
+    },
     "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 839.3,
+     "ca_var_pct": 29.0,
+     "resultat": 77.4,
+     "resultat_var_pct": 81.0
+    },
     "probabilites": {
      "etapes": [
       {

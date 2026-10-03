@@ -122,6 +122,7 @@ def construire_evenements(communiques, classes, referentiel, cal, series):
         if avis is not None and avis["type"] in ("resultats", "revision"):
             for k in ("activite", "rentabilite", "perspectives", "attentes", "consensus"):
                 ev[k] = avis.get(k)
+            ev["objectifs_vs"] = (avis.get("objectifs") or {}).get("vs_consensus")
             ev["exceptionnel"] = bool(avis.get("exceptionnel"))
             ev["actionnaires"] = bool(avis.get("actionnaires"))
         if not mesurer(ev, series.get(ticker), cs[0][0]):
@@ -674,7 +675,7 @@ def _evenement_public(x):
     """Publication de resultats telle qu'affichee dans l'application."""
     cles = ["jour", "periode", "titre", "sens", "origine", "activite", "rentabilite", "perspectives", "attentes",
             "exceptionnel", "actionnaires", "avant_pct", "z_avant", "rendement_pct", "ecart_pct", "z", "suite_pct",
-            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "revision_30j_pct"]
+            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "revision_30j_pct", "objectifs_vs"]
     # Sans les valeurs nulles ni fausses (l'application les lit par defaut) :
     # le fichier reste leger malgre des milliers de publications.
     ev = {k: x[k] for k in cles if x.get(k) is not None and x.get(k) is not False}
@@ -762,6 +763,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         # des probabilites le jour de la publication, jour_j.py).
         "par_perspectives_sens": croise(avec_sens, "perspectives", ["relevees", "confirmees", "nouvelles",
                                                                    "abaissees"]),
+        "par_objectifs_sens": croise(avec_sens, "objectifs_vs", ["superieurs", "conformes", "inferieurs"]),
         "bons_puis_baisse": facteurs(avec_sens, "positif", "baisse", bornes),
         "mauvais_puis_hausse": facteurs(avec_sens, "negatif", "hausse", bornes),
         "attentes_marche": attentes_marche(avec_sens, consensus),

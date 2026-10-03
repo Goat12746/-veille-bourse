@@ -65,6 +65,13 @@ def evenements(doc, referentiel, cal, series):
     """Publications mesurees, jours d'evenement par action, publications pas
     encore cotees."""
     nom_de = {e["ticker"]: e["nom"] for e in referentiel}
+    # Avis de Claude sur les publications du jour (depuis octobre 2026) :
+    # perspectives, objectifs face au consensus, position face au consensus.
+    classes = {}
+    chemin = os.path.join(ICI, "resultats_usa_classes.json")
+    if os.path.exists(chemin):
+        with open(chemin, encoding="utf-8") as f:
+            classes = json.load(f).get("classes", {})
     evts, en_attente = [], 0
     for ticker, fiche in doc["entreprises"].items():
         for p in fiche["publications"]:
@@ -77,6 +84,14 @@ def evenements(doc, referentiel, cal, series):
                   "categorie": "resultats", "periode": p.get("periode"), "titre": p["titre"], "id": p["id"],
                   "publie_le": p["publie_le"], "n_communiques": 1, "sens": p.get("sens"), "origine": "comptes",
                   "activite": p.get("activite"), "rentabilite": p.get("rentabilite")}
+            avis = classes.get(p["id"])
+            if avis and avis.get("type") == "resultats":
+                for k in ("perspectives", "attentes", "consensus", "exceptionnel", "actionnaires"):
+                    if avis.get(k) is not None:
+                        ev[k] = avis[k]
+                ev["objectifs_vs"] = (avis.get("objectifs") or {}).get("vs_consensus")
+                if not ev["sens"] and avis.get("sens"):  # comptes pas encore deposes
+                    ev["sens"], ev["origine"] = avis["sens"], "claude"
             if mesurer(ev, series.get(ticker), t):
                 evts.append(ev)
     jours = {}

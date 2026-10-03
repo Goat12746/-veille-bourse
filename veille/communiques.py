@@ -537,7 +537,9 @@ def integrer(chemin):
     if isinstance(nouveaux, list):
         nouveaux = {a["id"]: a for a in nouveaux}
     nouveaux = {k.removeprefix("amf-"): {c: v for c, v in a.items() if c != "id"} for k, a in nouveaux.items()}
-    erreurs = [x for k, a in nouveaux.items() for x in valider_avis(k, a)]
+    from communiques_usa import valider_chiffres, valider_objectifs
+    erreurs = [x for k, a in nouveaux.items()
+               for x in valider_avis(k, a) + valider_chiffres(k, a) + valider_objectifs(k, a)]
     if erreurs:
         sys.exit("Avis invalides :\n - " + "\n - ".join(erreurs))
     doc = charger_classes()

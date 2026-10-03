@@ -262,6 +262,10 @@ extrait du communiqué (chiffres clés, perspectives). Ton avis :
   "chiffres": {"devise": "EUR", "ca": 4210, "ca_var_pct": 3.2,
                "resultat": 512, "resultat_var_pct": 8.1, "bpa": 1.84,
                "bpa_ajuste": false},
+  "objectifs": {"periode": "2025", "ca": [16800, 17000], "bpa": 7.4,
+                "texte": "marge opérationnelle d'environ 12 %",
+                "consensus_ca": 16950, "consensus_bpa": 7.55,
+                "vs_consensus": "inferieurs"},
   "par": "claude"}}
 ```
 
@@ -310,6 +314,19 @@ Mêmes règles et même format pour les publications américaines
   qui se compare au consensus (ajusté si l'entreprise en publie un,
   `bpa_ajuste: true`). Omets ce que le texte ne donne pas ; l'application les
   compare au consensus de la veille.
+- **objectifs** : objectifs chiffrés que l'entreprise annonce (ou confirme)
+  pour une période à venir : `periode` (`T1 2027`, `S2 2026`, `2026`),
+  `ca` et `bpa` (valeur, ou `[min, max]` pour une fourchette ; `ca` en
+  millions), `texte` pour les autres (marge, résultat opérationnel, revenus
+  locatifs, croissance organique…), en quelques mots. Compare-les au
+  consensus de la même période dans le champ `consensus` de l'entrée (`+1q`
+  trimestre suivant, `0y` exercice en cours, `+1y` exercice suivant, `fin`
+  pour les dates de fin ; le BPA de préférence, sinon le chiffre
+  d'affaires) : recopie dans `consensus_bpa` / `consensus_ca` la valeur
+  comparée, et `vs_consensus` : `superieurs` si le milieu de la fourchette
+  dépasse le consensus de plus de 1 %, `inferieurs` s'il est en dessous de
+  plus de 1 %, `conformes` sinon, `null` sans consensus comparable. Pas
+  d'objectif chiffré : omets le champ.
 - **exceptionnel** : dépréciation ou élément non récurrent marquant ;
   **actionnaires** : nouveau rachat d'actions, dividende relevé,
   exceptionnel ou rétabli.

@@ -243,6 +243,24 @@ def valider_chiffres(cid, a):
     return e
 
 
+def valider_objectifs(cid, a):
+    o = a.get("objectifs")
+    if o is None:
+        return []
+    if not isinstance(o, dict):
+        return [f"{cid} : objectifs doit etre un objet"]
+    e = []
+    if o.get("vs_consensus") not in ("superieurs", "conformes", "inferieurs", None):
+        e.append(f"{cid} : objectifs.vs_consensus {o.get('vs_consensus')!r}, attendu superieurs, conformes, "
+                 "inferieurs ou null")
+    for k in ("ca", "bpa", "consensus_ca", "consensus_bpa"):
+        v = o.get(k)
+        if v is not None and not (isinstance(v, (int, float)) or (isinstance(v, list) and len(v) == 2 and all(
+                isinstance(x, (int, float)) for x in v))):
+            e.append(f"{cid} : objectifs.{k} doit etre un nombre ou [min, max]")
+    return e
+
+
 def integrer(chemin):
     nouveaux = charger(chemin, None)
     if nouveaux is None:
@@ -250,7 +268,8 @@ def integrer(chemin):
     if isinstance(nouveaux, list):
         nouveaux = {a["id"]: a for a in nouveaux}
     nouveaux = {k: {c: v for c, v in a.items() if c != "id"} for k, a in nouveaux.items()}
-    erreurs = [x for k, a in nouveaux.items() for x in valider_avis(k, a) + valider_chiffres(k, a)]
+    erreurs = [x for k, a in nouveaux.items()
+               for x in valider_avis(k, a) + valider_chiffres(k, a) + valider_objectifs(k, a)]
     if erreurs:
         sys.exit("Avis invalides :\n - " + "\n - ".join(erreurs))
     doc = charger(CLASSES, {"version": 1, "classes": {}})

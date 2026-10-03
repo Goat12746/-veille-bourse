@@ -27,6 +27,8 @@ LIBELLES_PERSPECTIVES = {"relevees": "Perspectives relevées", "confirmees": "Pe
                          "abaissees": "Perspectives abaissées", "nouvelles": "Nouvelles perspectives"}
 LIBELLES_SURPRISE = {"positive": "Au-dessus du consensus", "conforme": "Conforme au consensus",
                      "negative": "Sous le consensus"}
+LIBELLES_OBJECTIFS = {"superieurs": "Objectifs au-dessus du consensus", "conformes": "Objectifs conformes au consensus",
+                      "inferieurs": "Objectifs sous le consensus"}
 
 
 def _logit(p):
@@ -53,6 +55,7 @@ def tables(resultats):
     return {"sens": par_sens,
             "perspectives": croise(resultats.get("par_perspectives_sens")),
             "surprise": croise(((resultats.get("attentes_marche") or {}).get("consensus") or {}).get("par_surprise")),
+            "objectifs": croise(resultats.get("par_objectifs_sens")),
             "n": sum(n for _, n in par_sens.values())}
 
 
@@ -64,7 +67,8 @@ def _decalage(table, valeur, sens, base):
     return _logit(p) - _logit(base), n
 
 
-def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=None, source_perspectives=None):
+def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=None, source_perspectives=None,
+                 objectifs=None):
     """Etapes de la probabilite de hausse : [{libelle, p, n, source}] et
     probabilite finale. `t_perspectives` : tables d'un autre marche pour les
     perspectives quand le marche n'a pas encore d'historique (Etats-Unis)."""
@@ -92,7 +96,18 @@ def probabilites(sens, p_base, perspectives, surprise, t_marche, t_perspectives=
         if d is not None:
             x += d
             etapes.append({"libelle": LIBELLES_SURPRISE[surprise], "p": round(_sig(x), 3), "n": n})
-    return {"etapes": etapes, "p_hausse": round(_sig(x), 3)}
+    non_comptes = []
+    if objectifs in LIBELLES_OBJECTIFS:
+        d, n = _decalage(t_marche.get("objectifs"), objectifs, sens, base_sens)
+        if d is not None:
+            x += d
+            etapes.append({"libelle": LIBELLES_OBJECTIFS[objectifs], "p": round(_sig(x), 3), "n": n})
+        else:
+            non_comptes.append(f"{LIBELLES_OBJECTIFS[objectifs]} : historique encore trop court ({n} cas)")
+    res = {"etapes": etapes, "p_hausse": round(_sig(x), 3)}
+    if non_comptes:
+        res["non_comptes"] = non_comptes
+    return res
 
 
 def estimes(releve, periode, publie_le, surprises=None):
@@ -143,13 +158,19 @@ def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, sou
     est = estimes(releve, (avis or {}).get("periode"), pub["publie_le"], surprises)
     if est:
         res["estimes"] = est
+    elif releve and (releve.get("bpa") or {}).get("0y"):
+        # Pas de consensus pour la periode publiee (chiffre d'affaires de neuf
+        # mois, semestre...) : celui de l'exercice, en repere.
+        res["exercice"] = {"fin": (releve.get("fin") or {}).get("0y"), "bpa": releve["bpa"]["0y"],
+                           **({"ca": [round(releve["ca"]["0y"][0] / 1e6, 1), releve["ca"]["0y"][1]]}
+                              if (releve.get("ca") or {}).get("0y") else {})}
     if not avis or avis.get("type") not in ("resultats", "revision"):
         if avis and avis.get("type") == "autre":
             res["autre"] = True  # pas une publication de resultats (livraisons, calendrier...)
         return {k: v for k, v in res.items() if v is not None}
     ch = avis.get("chiffres") or {}
     res.update({k: avis.get(k) for k in ("periode", "sens", "activite", "rentabilite", "perspectives", "attentes",
-                                         "consensus", "exceptionnel", "actionnaires")})
+                                         "consensus", "exceptionnel", "actionnaires", "objectifs")})
     res["juge"] = True
     if ch:
         res["chiffres"] = ch
@@ -160,7 +181,7 @@ def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, sou
     surprise = SURPRISES.get(avis.get("consensus"))
     sens = avis.get("sens")
     pr = probabilites(sens, (p_base_par_sens or {}).get(sens), avis.get("perspectives"), surprise, t_marche,
-                      t_perspectives, source_perspectives)
+                      t_perspectives, source_perspectives, (avis.get("objectifs") or {}).get("vs_consensus"))
     if pr:
         res["probabilites"] = pr
     return {k: v for k, v in res.items() if v is not None and v is not False and v != {}}
