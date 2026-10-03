@@ -53,24 +53,29 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
    - Puis `python scores.py` : compare les objectifs de cours à 12 mois au
      cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
-   - **Veille du matin seulement** (avant 12 h, heure de Paris) :
-     `python edgar.py`, `python consensus.py --zone usa` puis
-     `python etude_usa.py`. Publications de résultats des entreprises
-     américaines déposées à la SEC, sens d'après leurs comptes, consensus des
-     analystes et réaction face au S&P 500 (`communiques_usa.json`, onglet
-     Statistiques > Communiqués > États-Unis). Sans IA, ne modifie pas ces
-     fichiers à la main. Si la SEC ou Yahoo est injoignable, le fichier
-     précédent est gardé : signale-le.
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json`, `positions_courtes.json`, `objectifs.json`,
-   `scores.json`, `resultats_usa.json`, `consensus_usa.json` et
-   `communiques_usa.json` uniquement, message :
+   `consensus.json`, `positions_courtes.json`, `objectifs.json` et
+   `scores.json` uniquement, message :
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
+   - **Résultats américains, veille de 13 h 12 seulement** (après 12 h,
+     heure de Paris), une fois ce push vérifié : `python edgar.py`,
+     `python consensus.py --zone usa` puis `python etude_usa.py`.
+     Publications de résultats des entreprises américaines déposées à la SEC,
+     sens d'après leurs comptes, consensus des analystes et réaction face au
+     S&P 500 (`communiques_usa.json`, onglet Statistiques > Communiqués >
+     États-Unis). Sans IA, ne modifie pas ces fichiers à la main. Si un
+     script échoue (SEC ou Yahoo injoignable), lance quand même les suivants
+     (le fichier précédent est gardé) et signale-le.
+   - Puis un second commit des seuls `resultats_usa.json`,
+     `consensus_usa.json` et `communiques_usa.json`, message
+     `veille : AAAA-MM-JJ, résultats américains`, et push (même vérification
+     du hash). Rien à commiter : signale-le simplement.
 8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
    importantes, sources en erreur, publications de résultats jugées (et
    alertes de résultats publiées), et les lignes de résultat de
-   `statistiques.py` (points, sens juste) et de `scores.py`.
+   `statistiques.py` (points, sens juste) et de `scores.py` (et, à 13 h 12,
+   d'`edgar.py` et d'`etude_usa.py`).
 
 ## Alertes de résultats (avant l'ouverture)
 
