@@ -266,6 +266,14 @@ extrait du communiqué (chiffres clés, perspectives). Ton avis :
                 "texte": "marge opérationnelle d'environ 12 %",
                 "consensus_ca": 16950, "consensus_bpa": 7.55,
                 "vs_consensus": "inferieurs"},
+  "resume": "Trimestre solide porté par l'Europe, mais objectif annuel abaissé sous le consensus.",
+  "points_cles": [
+    {"texte": "Marge opérationnelle 12,4 % (+80 pb sur un an)", "effet": "+"},
+    {"texte": "Chine : ventes -11 %, demande toujours faible", "effet": "-"},
+    {"texte": "BPA 2025 visé 7,40 €, sous le consensus (7,55 €)", "effet": "-"},
+    {"texte": "Rachat d'actions de 500 M€ lancé", "effet": "+"}],
+  "a_surveiller": ["Effet des droits de douane américains au 4e trimestre"],
+  "impact": {"sens": "negatif", "ampleur": "moyenne"},
   "par": "claude"}}
 ```
 
@@ -327,6 +335,27 @@ Mêmes règles et même format pour les publications américaines
   dépasse le consensus de plus de 1 %, `inferieurs` s'il est en dessous de
   plus de 1 %, `conformes` sinon, `null` sans consensus comparable. Pas
   d'objectif chiffré : omets le champ.
+- **Analyse** (le plus important : elle s'affiche en tête de la fiche de
+  résultats de l'application). Lis l'extrait en entier ; s'il est tronqué
+  avant un chiffre clé ou les perspectives, ouvre le communiqué (`url`).
+  - **resume** : une ou deux phrases, ce qu'un investisseur doit retenir.
+  - **points_cles** : 3 à 7 faits chiffrés tirés du communiqué, chacun en
+    moins de 120 caractères, avec `effet` `+` (favorable), `-`
+    (défavorable) ou `=` (neutre), du plus important au moins important.
+    Passe en revue : chiffre d'affaires et croissance organique, activité par
+    métier ou par région quand un écart est marquant, marges, éléments
+    exceptionnels, trésorerie, dette et free cash-flow, retour aux
+    actionnaires, objectifs face au consensus, annonces stratégiques
+    (restructuration, acquisition, cession), changement de direction,
+    commentaires sur la demande, les prix, les volumes, les droits de douane
+    ou la conjoncture. Rien d'inventé ni de déduit de la réaction du cours.
+  - **a_surveiller** : 0 à 3 points d'attention (risque, incertitude,
+    échéance), en quelques mots.
+  - **impact** : ta lecture de l'effet probable de la publication sur le
+    cours, résultats, perspectives et consensus compris : `sens`
+    (`positif`, `negatif`, `incertain`) et `ampleur` (`faible`, `moyenne`,
+    `forte`). C'est une lecture, pas un conseil : jamais « acheter » ou
+    « vendre ».
 - **exceptionnel** : dépréciation ou élément non récurrent marquant ;
   **actionnaires** : nouveau rachat d'actions, dividende relevé,
   exceptionnel ou rétabli.

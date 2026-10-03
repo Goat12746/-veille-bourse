@@ -140,7 +140,7 @@ def communique(cik, numero):
     return texte_html(edgar.sec_get(url).decode("utf-8", "replace")), url
 
 
-def extrait(texte, n=2500, persp=1200):
+def extrait(texte, n=5000, persp=2000):
     """Debut du communique (chiffres cles) et phrases sur les perspectives."""
     t = texte or ""
     debut = t[:n]
@@ -261,6 +261,30 @@ def valider_objectifs(cid, a):
     return e
 
 
+IMPACTS = ("positif", "negatif", "incertain")
+AMPLEURS = ("faible", "moyenne", "forte")
+EFFETS = ("+", "-", "=")
+
+
+def valider_analyse(cid, a):
+    """Analyse de Claude : resume, points cles (effet +, - ou =), points a
+    surveiller, impact attendu."""
+    e = []
+    if a.get("resume") is not None and not isinstance(a.get("resume"), str):
+        e.append(f"{cid} : resume doit etre un texte")
+    for p in a.get("points_cles") or []:
+        if not isinstance(p, dict) or not isinstance(p.get("texte"), str) or p.get("effet") not in EFFETS:
+            e.append(f"{cid} : points_cles attend des objets {{texte, effet: +, - ou =}}")
+            break
+    if not all(isinstance(x, str) for x in a.get("a_surveiller") or []):
+        e.append(f"{cid} : a_surveiller attend une liste de textes")
+    imp = a.get("impact")
+    if imp is not None and (not isinstance(imp, dict) or imp.get("sens") not in IMPACTS
+                            or imp.get("ampleur") not in AMPLEURS + (None,)):
+        e.append(f"{cid} : impact attend {{sens: {'/'.join(IMPACTS)}, ampleur: {'/'.join(AMPLEURS)}}}")
+    return e
+
+
 def integrer(chemin):
     nouveaux = charger(chemin, None)
     if nouveaux is None:
@@ -269,7 +293,8 @@ def integrer(chemin):
         nouveaux = {a["id"]: a for a in nouveaux}
     nouveaux = {k: {c: v for c, v in a.items() if c != "id"} for k, a in nouveaux.items()}
     erreurs = [x for k, a in nouveaux.items()
-               for x in valider_avis(k, a) + valider_chiffres(k, a) + valider_objectifs(k, a)]
+               for x in valider_avis(k, a) + valider_chiffres(k, a) + valider_objectifs(k, a)
+               + valider_analyse(k, a)]
     if erreurs:
         sys.exit("Avis invalides :\n - " + "\n - ".join(erreurs))
     doc = charger(CLASSES, {"version": 1, "classes": {}})

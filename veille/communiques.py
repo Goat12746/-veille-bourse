@@ -537,9 +537,10 @@ def integrer(chemin):
     if isinstance(nouveaux, list):
         nouveaux = {a["id"]: a for a in nouveaux}
     nouveaux = {k.removeprefix("amf-"): {c: v for c, v in a.items() if c != "id"} for k, a in nouveaux.items()}
-    from communiques_usa import valider_chiffres, valider_objectifs
+    from communiques_usa import valider_analyse, valider_chiffres, valider_objectifs
     erreurs = [x for k, a in nouveaux.items()
-               for x in valider_avis(k, a) + valider_chiffres(k, a) + valider_objectifs(k, a)]
+               for x in valider_avis(k, a) + valider_chiffres(k, a) + valider_objectifs(k, a)
+               + valider_analyse(k, a)]
     if erreurs:
         sys.exit("Avis invalides :\n - " + "\n - ".join(erreurs))
     doc = charger_classes()
@@ -569,12 +570,12 @@ PERSPECTIVES_MOTS = ["objectif", "perspective", "prevision", "guidance", "outloo
                      "target", "reaffirm", "confirm", "raise", "lower"]
 
 
-def extrait_resultats(texte, n=900):
+def extrait_resultats(texte, n=900, persp_max=400):
     """Debut du texte (chiffres cles) et phrases sur les perspectives, pour
     l'avis de Claude."""
     debut = " ".join((texte or "").split("\n"))[:n]
-    persp = phrases_cles((texte or "")[n:], PERSPECTIVES_MOTS, 400)
-    return debut + ((" [...] " + " ".join(persp)[:450]) if persp else "")
+    persp = phrases_cles((texte or "")[n:], PERSPECTIVES_MOTS, persp_max)
+    return debut + ((" [...] " + " ".join(persp)[:persp_max + 50]) if persp else "")
 
 
 _DOCUMENTS = ("mise a disposition", "mise en ligne", "availability of", "comptes consolides", "etats financiers",
@@ -622,7 +623,7 @@ def a_classer(communiques, referentiel):
         liste.append({"id": c["id"], "ticker": ticker, "nom": nom, "publie_le": c["publie_le"],
                       "categorie": c["categorie"], "periode": c["periode"],
                       "titre": c["entete"] if generique(c["titre"]) and c["entete"] else c["titre"],
-                      "url": c["url"], "extrait": extrait_resultats(texte),
+                      "url": c["url"], "extrait": extrait_resultats(texte, 4500, 1500),
                       # Consensus des analystes la veille : a comparer aux
                       # chiffres publies (champ "consensus" de l'avis).
                       "consensus": consensus_mod.avant(estimations.get(ticker), jour)})

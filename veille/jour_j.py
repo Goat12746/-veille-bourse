@@ -170,7 +170,8 @@ def fiche(pub, avis, releve, p_base_par_sens, t_marche, t_perspectives=None, sou
         return {k: v for k, v in res.items() if v is not None}
     ch = avis.get("chiffres") or {}
     res.update({k: avis.get(k) for k in ("periode", "sens", "activite", "rentabilite", "perspectives", "attentes",
-                                         "consensus", "exceptionnel", "actionnaires", "objectifs")})
+                                         "consensus", "exceptionnel", "actionnaires", "objectifs", "resume",
+                                         "points_cles", "a_surveiller", "impact")})
     res["juge"] = True
     if ch:
         res["chiffres"] = ch

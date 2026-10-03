@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-03T16:15:23+02:00",
+ "genere_le": "2026-10-03T16:30:31+02:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -97762,6 +97762,40 @@
      "texte": "objectifs 2026 revus à la hausse",
      "vs_consensus": null
     },
+    "resume": "Retour à la croissance organique et forte hausse des marges au premier semestre ; objectifs 2026 relevés.",
+    "points_cles": [
+     {
+      "texte": "CA 2 109 M€ (+1,2 %, +1,6 % à périmètre et change constants)",
+      "effet": "+"
+     },
+     {
+      "texte": "Marge opérationnelle d'activité 8,9 % (+1,6 pt)",
+      "effet": "+"
+     },
+     {
+      "texte": "Résultat net 113,8 M€ (+38 %), free cash-flow +33 %",
+      "effet": "+"
+     },
+     {
+      "texte": "Objectifs 2026 revus à la hausse",
+      "effet": "+"
+     },
+     {
+      "texte": "Aéronautique et défense en forte progression",
+      "effet": "+"
+     },
+     {
+      "texte": "Benelux et pays nordiques encore en recul de plus de 5 %",
+      "effet": "-"
+     }
+    ],
+    "a_surveiller": [
+     "Environnement macroéconomique et géopolitique incertain"
+    ],
+    "impact": {
+     "sens": "positif",
+     "ampleur": "moyenne"
+    },
     "juge": true,
     "chiffres": {
      "devise": "EUR",
@@ -97859,6 +97893,41 @@
      "texte": "résultat opérationnel courant positif (hors activités américaines arrêtées)",
      "vs_consensus": null
     },
+    "resume": "Chiffre d'affaires en hausse et résultat opérationnel courant revenu à l'équilibre, mais résultat net pénalisé par l'arrêt des marques américaines et commandes freinées par le conflit au Moyen-Orient.",
+    "points_cles": [
+     {
+      "texte": "Chiffre d'affaires +11 % au premier semestre",
+      "effet": "+"
+     },
+     {
+      "texte": "Résultat opérationnel courant revenu à l'équilibre (+20 M€)",
+      "effet": "+"
+     },
+     {
+      "texte": "30 M€ de charges non récurrentes liées aux marques américaines arrêtées",
+      "effet": "-"
+     },
+     {
+      "texte": "Prises de commandes freinées depuis mars par le conflit au Moyen-Orient",
+      "effet": "-"
+     },
+     {
+      "texte": "CA 2026 visé 860 à 900 M€ (+4 % à +9 %)",
+      "effet": "="
+     },
+     {
+      "texte": "Bon accueil des 18 nouveautés au salon de Cannes",
+      "effet": "+"
+     }
+    ],
+    "a_surveiller": [
+     "Prises de commandes",
+     "Cession des activités américaines, sans repreneur confirmé"
+    ],
+    "impact": {
+     "sens": "incertain",
+     "ampleur": "moyenne"
+    },
     "juge": true,
     "chiffres": {
      "devise": "EUR",
@@ -97908,6 +97977,40 @@
      "periode": "2026",
      "texte": "objectifs annuels 2026 maintenus",
      "vs_consensus": null
+    },
+    "resume": "Croissance de près de 30 % et forte hausse de la rentabilité au premier semestre ; objectifs annuels confirmés.",
+    "points_cles": [
+     {
+      "texte": "CA ajusté 839 M€ (+29 %, +37 % à change et droits de douane constants)",
+      "effet": "+"
+     },
+     {
+      "texte": "Services (VAS) 125 M€ (+39 %), dont récurrent +73 %",
+      "effet": "+"
+     },
+     {
+      "texte": "Marge d'EBITDA ajusté 19,1 % (+2,4 pts)",
+      "effet": "+"
+     },
+     {
+      "texte": "Résultat net ajusté 77 M€ (+81 %)",
+      "effet": "+"
+     },
+     {
+      "texte": "Free cash-flow opérationnel 127 M€ (+51 %)",
+      "effet": "+"
+     },
+     {
+      "texte": "Trésorerie nette en baisse de 241 M€ sur le semestre",
+      "effet": "-"
+     }
+    ],
+    "a_surveiller": [
+     "Atteinte des objectifs du second semestre"
+    ],
+    "impact": {
+     "sens": "positif",
+     "ampleur": "moyenne"
     },
     "juge": true,
     "chiffres": {
