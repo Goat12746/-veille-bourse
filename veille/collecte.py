@@ -108,15 +108,24 @@ def telecharger_cache(url, nom):
     if os.path.exists(chemin):
         mtime = os.path.getmtime(chemin)
         entetes["If-Modified-Since"] = email.utils.formatdate(mtime, usegmt=True)
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=entetes), timeout=600) as r:
-            data = r.read()
-        with open(chemin, "wb") as f:
-            f.write(data)
-    except urllib.error.HTTPError as e:
-        if e.code != 304:
-            raise
-    return chemin
+    # Le serveur de l'Assemblee coupe parfois la connexion en cours de
+    # telechargement : on reessaie avant de compter la source en erreur.
+    for essai in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=entetes), timeout=600) as r:
+                data = r.read()
+            with open(chemin, "wb") as f:
+                f.write(data)
+            return chemin
+        except urllib.error.HTTPError as e:
+            if e.code == 304:
+                return chemin
+            if e.code < 500 or essai == 2:
+                raise
+        except (urllib.error.URLError, OSError):
+            if essai == 2:
+                raise
+        time.sleep(10 * (essai + 1))
 
 
 def extrait(texte, mots):
