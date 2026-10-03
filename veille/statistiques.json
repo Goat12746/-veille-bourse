@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-03T19:03:16+02:00",
+ "genere_le": "2026-10-03T20:19:28+02:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -1962,6 +1962,56 @@
      "part_hausse": 0.476
     }
    },
+   "matrice_consensus": {
+    "positive": {
+     "hausse": {
+      "n": 20,
+      "avant_moyen_pct": 0.82,
+      "ecart_moyen_pct": 6.38,
+      "suite_moyenne_pct": -0.89
+     },
+     "baisse": {
+      "n": 9,
+      "avant_moyen_pct": -1.21,
+      "ecart_moyen_pct": -6.75,
+      "suite_moyenne_pct": -0.26
+     },
+     "n": 29,
+     "part_hausse": 0.69
+    },
+    "conforme": {
+     "hausse": {
+      "n": 11,
+      "avant_moyen_pct": 3.96,
+      "ecart_moyen_pct": 2.99,
+      "suite_moyenne_pct": 0.78
+     },
+     "baisse": {
+      "n": 16,
+      "avant_moyen_pct": 0.37,
+      "ecart_moyen_pct": -5.36,
+      "suite_moyenne_pct": 1.14
+     },
+     "n": 27,
+     "part_hausse": 0.407
+    },
+    "negative": {
+     "hausse": {
+      "n": 12,
+      "avant_moyen_pct": 1.13,
+      "ecart_moyen_pct": 4.93,
+      "suite_moyenne_pct": 1.55
+     },
+     "baisse": {
+      "n": 10,
+      "avant_moyen_pct": 0.69,
+      "ecart_moyen_pct": -6.33,
+      "suite_moyenne_pct": -3.83
+     },
+     "n": 22,
+     "part_hausse": 0.545
+    }
+   },
    "concordance": {
     "n_positif": 2282,
     "n_negatif": 606,
@@ -3014,6 +3064,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 24,
       "n_negatif": 5,
@@ -3910,6 +4010,56 @@
        "part_hausse": 0.667
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 35,
       "n_negatif": 0,
@@ -4787,6 +4937,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 0,
       "n_negatif": 0,
@@ -5144,6 +5344,56 @@
        },
        "n": 6,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -5908,6 +6158,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 0,
       "n_negatif": 0,
@@ -6249,6 +6549,56 @@
        },
        "n": 1,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -7078,6 +7428,56 @@
        },
        "n": 5,
        "part_hausse": 0.8
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 10.58,
+        "ecart_moyen_pct": 1.38,
+        "suite_moyenne_pct": -2.74
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 3,
+        "avant_moyen_pct": -3.38,
+        "ecart_moyen_pct": -2.05,
+        "suite_moyenne_pct": 1.42
+       },
+       "n": 3,
+       "part_hausse": 0.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -8074,6 +8474,56 @@
        },
        "n": 0,
        "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": -0.5,
+        "ecart_moyen_pct": 3.89,
+        "suite_moyenne_pct": -2.94
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 3.61,
+        "ecart_moyen_pct": -2.83,
+        "suite_moyenne_pct": 1.89
+       },
+       "n": 3,
+       "part_hausse": 0.667
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 2.88,
+        "ecart_moyen_pct": 1.27,
+        "suite_moyenne_pct": 1.42
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
       }
      },
      "concordance": {
@@ -9100,6 +9550,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 27,
       "n_negatif": 4,
@@ -10078,6 +10578,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 23,
       "n_negatif": 7,
@@ -11024,6 +11574,56 @@
        "part_hausse": 0.75
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 29,
       "n_negatif": 0,
@@ -11940,6 +12540,56 @@
        },
        "n": 6,
        "part_hausse": 0.167
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 2,
+        "avant_moyen_pct": -1.87,
+        "ecart_moyen_pct": -4.33,
+        "suite_moyenne_pct": 2.54
+       },
+       "n": 2,
+       "part_hausse": 0.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 4.93,
+        "ecart_moyen_pct": -3.97,
+        "suite_moyenne_pct": -1.76
+       },
+       "n": 1,
+       "part_hausse": 0.0
       }
      },
      "concordance": {
@@ -12898,6 +13548,56 @@
        "part_hausse": 0.75
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 23,
       "n_negatif": 4,
@@ -13841,6 +14541,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": 8.71,
+        "ecart_moyen_pct": 3.14,
+        "suite_moyenne_pct": 5.48
+       },
+       "baisse": {
+        "n": 2,
+        "avant_moyen_pct": 0.35,
+        "ecart_moyen_pct": -16.8,
+        "suite_moyenne_pct": -4.06
+       },
+       "n": 4,
+       "part_hausse": 0.5
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 20,
       "n_negatif": 0,
@@ -14664,6 +15414,56 @@
        },
        "n": 3,
        "part_hausse": 0.667
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -15586,6 +16386,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 27,
       "n_negatif": 2,
@@ -16492,6 +17342,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 26,
       "n_negatif": 4,
@@ -17345,6 +18245,56 @@
        "part_hausse": 0.4
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 17,
       "n_negatif": 0,
@@ -18069,6 +19019,56 @@
        },
        "n": 3,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": -0.94,
+        "ecart_moyen_pct": 5.62,
+        "suite_moyenne_pct": -0.21
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 2,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": -7.13,
+        "ecart_moyen_pct": 3.92,
+        "suite_moyenne_pct": -1.49
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 1.74,
+        "ecart_moyen_pct": -3.08,
+        "suite_moyenne_pct": 10.62
+       },
+       "n": 2,
+       "part_hausse": 0.5
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -19001,6 +20001,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 30,
       "n_negatif": 1,
@@ -19890,6 +20940,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 14,
       "n_negatif": 13,
@@ -20760,6 +21860,56 @@
        "part_hausse": 0.667
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -21656,6 +22806,56 @@
        },
        "n": 1,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 12.13,
+        "ecart_moyen_pct": 2.52,
+        "suite_moyenne_pct": 0.11
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 9.17,
+        "ecart_moyen_pct": -0.33,
+        "suite_moyenne_pct": -0.55
+       },
+       "n": 2,
+       "part_hausse": 0.5
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": -15.41,
+        "ecart_moyen_pct": 0.3,
+        "suite_moyenne_pct": 3.04
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -2.67,
+        "ecart_moyen_pct": -10.96,
+        "suite_moyenne_pct": -2.66
+       },
+       "n": 2,
+       "part_hausse": 0.5
       }
      },
      "concordance": {
@@ -22686,6 +23886,56 @@
        "part_hausse": 0.333
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 19,
       "n_negatif": 8,
@@ -23511,6 +24761,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 7,
       "n_negatif": 8,
@@ -24163,6 +25463,56 @@
        },
        "n": 13,
        "part_hausse": 0.385
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -25154,6 +26504,56 @@
        "part_hausse": 0.333
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 15,
       "n_negatif": 12,
@@ -26045,6 +27445,56 @@
        },
        "n": 1,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -27038,6 +28488,56 @@
        "part_hausse": 0.667
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 16,
       "n_negatif": 12,
@@ -27909,6 +29409,56 @@
        "part_hausse": 0.6
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -28864,6 +30414,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 23,
       "n_negatif": 6,
@@ -29765,6 +31365,56 @@
        },
        "n": 3,
        "part_hausse": 0.333
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 9.27,
+        "ecart_moyen_pct": 2.58,
+        "suite_moyenne_pct": -0.03
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 9.37,
+        "ecart_moyen_pct": -9.46,
+        "suite_moyenne_pct": 0.77
+       },
+       "n": 2,
+       "part_hausse": 0.5
+      },
+      "conforme": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 2.54,
+        "ecart_moyen_pct": 0.72,
+        "suite_moyenne_pct": -1.23
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -4.72,
+        "ecart_moyen_pct": -0.57,
+        "suite_moyenne_pct": 3.87
+       },
+       "n": 2,
+       "part_hausse": 0.5
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -30774,6 +32424,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 28,
       "n_negatif": 2,
@@ -31682,6 +33382,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": -4.36,
+        "ecart_moyen_pct": 4.03,
+        "suite_moyenne_pct": -1.1
+       },
+       "baisse": {
+        "n": 3,
+        "avant_moyen_pct": -3.06,
+        "ecart_moyen_pct": -3.67,
+        "suite_moyenne_pct": -1.24
+       },
+       "n": 4,
+       "part_hausse": 0.25
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 19,
       "n_negatif": 6,
@@ -32500,6 +34250,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 0,
       "n_negatif": 0,
@@ -32803,6 +34603,56 @@
         "suite_moyenne_pct": 0.56
        },
        "n": 4,
+       "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 2,
+        "avant_moyen_pct": -8.8,
+        "ecart_moyen_pct": -15.16,
+        "suite_moyenne_pct": -5.18
+       },
+       "n": 2,
+       "part_hausse": 0.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 24.34,
+        "ecart_moyen_pct": 13.06,
+        "suite_moyenne_pct": 8.18
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 13.38,
+        "ecart_moyen_pct": -5.82,
+        "suite_moyenne_pct": 2.01
+       },
+       "n": 2,
        "part_hausse": 0.5
       }
      },
@@ -33850,6 +35700,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 27,
       "n_negatif": 1,
@@ -34755,6 +36655,56 @@
        "part_hausse": 0.2
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -35684,6 +37634,56 @@
        "part_hausse": 0.333
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": 7.49,
+        "ecart_moyen_pct": 2.49,
+        "suite_moyenne_pct": -0.28
+       },
+       "baisse": {
+        "n": 2,
+        "avant_moyen_pct": -0.12,
+        "ecart_moyen_pct": -0.35,
+        "suite_moyenne_pct": -1.81
+       },
+       "n": 4,
+       "part_hausse": 0.5
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 10,
       "n_negatif": 17,
@@ -36607,6 +38607,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 13,
       "n_negatif": 0,
@@ -37153,6 +39203,56 @@
        "part_hausse": 0.333
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -38193,6 +40293,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 22,
       "n_negatif": 3,
@@ -39119,6 +41269,56 @@
        },
        "n": 1,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -40124,6 +42324,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 21,
       "n_negatif": 6,
@@ -41004,6 +43254,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": -7.98,
+        "ecart_moyen_pct": 7.22,
+        "suite_moyenne_pct": -1.74
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 2,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": -3.21,
+        "ecart_moyen_pct": 2.79,
+        "suite_moyenne_pct": 12.1
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -0.39,
+        "ecart_moyen_pct": -13.23,
+        "suite_moyenne_pct": -5.96
+       },
+       "n": 1,
+       "part_hausse": 0.0
+      }
+     },
      "concordance": {
       "n_positif": 8,
       "n_negatif": 0,
@@ -41725,6 +44025,56 @@
        },
        "n": 6,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -42722,6 +45072,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 6,
       "n_negatif": 2,
@@ -43209,6 +45609,56 @@
        "part_hausse": 0.4
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 3,
+        "avant_moyen_pct": 1.93,
+        "ecart_moyen_pct": 2.98,
+        "suite_moyenne_pct": -0.13
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 3,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -3.75,
+        "ecart_moyen_pct": -12.71,
+        "suite_moyenne_pct": 1.01
+       },
+       "n": 1,
+       "part_hausse": 0.0
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -44178,6 +46628,56 @@
        "part_hausse": null
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -45175,6 +47675,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 24,
       "n_negatif": 5,
@@ -46088,6 +48638,56 @@
        },
        "n": 1,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -47130,6 +49730,56 @@
        "part_hausse": 0.4
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 15,
       "n_negatif": 10,
@@ -48035,6 +50685,56 @@
        "part_hausse": 0.667
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 17,
       "n_negatif": 6,
@@ -48842,6 +51542,56 @@
        },
        "n": 1,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -49742,6 +52492,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 22,
       "n_negatif": 7,
@@ -50640,6 +53440,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 25,
       "n_negatif": 2,
@@ -51489,6 +54339,56 @@
        "part_hausse": 0.286
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 17,
       "n_negatif": 4,
@@ -52303,6 +55203,56 @@
        },
        "n": 4,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 3,
+        "avant_moyen_pct": 2.76,
+        "ecart_moyen_pct": 4.8,
+        "suite_moyenne_pct": 0.4
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -4.82,
+        "ecart_moyen_pct": -6.14,
+        "suite_moyenne_pct": 4.98
+       },
+       "n": 4,
+       "part_hausse": 0.75
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -53153,6 +56103,56 @@
        },
        "n": 6,
        "part_hausse": 0.167
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -54165,6 +57165,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 0,
       "n_negatif": 0,
@@ -54473,6 +57523,56 @@
        },
        "n": 2,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -55611,6 +58711,56 @@
        "part_hausse": 0.667
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 7.79,
+        "ecart_moyen_pct": -1.0,
+        "suite_moyenne_pct": 4.12
+       },
+       "n": 1,
+       "part_hausse": 0.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 3.98,
+        "ecart_moyen_pct": 4.38,
+        "suite_moyenne_pct": -1.82
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 12.16,
+        "ecart_moyen_pct": 1.1,
+        "suite_moyenne_pct": 0.29
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      }
+     },
      "concordance": {
       "n_positif": 11,
       "n_negatif": 11,
@@ -56628,6 +59778,56 @@
        "part_hausse": 0.667
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 7,
       "n_negatif": 12,
@@ -57402,6 +60602,56 @@
        },
        "n": 8,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": -9.37,
+        "ecart_moyen_pct": 11.47,
+        "suite_moyenne_pct": -1.31
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": 1.42,
+        "ecart_moyen_pct": 3.65,
+        "suite_moyenne_pct": -4.76
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 2,
+       "part_hausse": 1.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -1.53,
+        "ecart_moyen_pct": -7.35,
+        "suite_moyenne_pct": -12.05
+       },
+       "n": 1,
+       "part_hausse": 0.0
       }
      },
      "concordance": {
@@ -58421,6 +61671,56 @@
        "part_hausse": 0.333
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 17,
       "n_negatif": 2,
@@ -59161,6 +62461,56 @@
        },
        "n": 1,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -60103,6 +63453,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 23,
       "n_negatif": 0,
@@ -60870,6 +64270,56 @@
        },
        "n": 4,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -61781,6 +65231,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 23,
       "n_negatif": 1,
@@ -62638,6 +66138,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 6,
       "n_negatif": 5,
@@ -63201,6 +66751,56 @@
        },
        "n": 3,
        "part_hausse": 0.667
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -63972,6 +67572,56 @@
        "part_hausse": 0.8
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -65005,6 +68655,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 7,
       "n_negatif": 0,
@@ -65510,6 +69210,56 @@
        },
        "n": 2,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -66366,6 +70116,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 23,
       "n_negatif": 1,
@@ -67143,6 +70943,56 @@
        },
        "n": 2,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -68011,6 +71861,56 @@
        },
        "n": 2,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -68940,6 +72840,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 18,
       "n_negatif": 4,
@@ -69737,6 +73687,56 @@
        "part_hausse": null
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -70709,6 +74709,56 @@
        "part_hausse": 0.75
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 14,
       "n_negatif": 12,
@@ -71551,6 +75601,56 @@
        },
        "n": 4,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -72673,6 +76773,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 19,
       "n_negatif": 6,
@@ -73528,6 +77678,56 @@
        },
        "n": 3,
        "part_hausse": 0.667
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -74566,6 +78766,56 @@
        "part_hausse": 1.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 21,
       "n_negatif": 5,
@@ -75409,6 +79659,56 @@
        },
        "n": 7,
        "part_hausse": 0.429
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -76291,6 +80591,56 @@
        },
        "n": 2,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -77312,6 +81662,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 3,
       "n_negatif": 2,
@@ -77841,6 +82241,56 @@
        "part_hausse": 1.0
       },
       "mitige": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
        "hausse": {
         "n": 0,
         "avant_moyen_pct": null,
@@ -78726,6 +83176,56 @@
        },
        "n": 4,
        "part_hausse": 0.25
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -79660,6 +84160,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 12,
       "n_negatif": 8,
@@ -80512,6 +85062,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 4,
       "n_negatif": 8,
@@ -81119,6 +85719,56 @@
        },
        "n": 3,
        "part_hausse": 0.667
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -81950,6 +86600,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 8,
       "n_negatif": 0,
@@ -82424,6 +87124,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 7,
       "n_negatif": 1,
@@ -82839,6 +87589,56 @@
        },
        "n": 3,
        "part_hausse": 0.333
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -83658,6 +88458,56 @@
        },
        "n": 5,
        "part_hausse": 0.4
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -84560,6 +89410,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 2,
+        "avant_moyen_pct": 5.75,
+        "ecart_moyen_pct": -9.88,
+        "suite_moyenne_pct": 1.37
+       },
+       "n": 2,
+       "part_hausse": 0.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": -5.84,
+        "ecart_moyen_pct": 5.27,
+        "suite_moyenne_pct": -3.03
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 2,
+       "part_hausse": 1.0
+      }
+     },
      "concordance": {
       "n_positif": 13,
       "n_negatif": 1,
@@ -85300,6 +90200,56 @@
        },
        "n": 3,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -86295,6 +91245,56 @@
        },
        "n": 14,
        "part_hausse": 0.357
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 2,
+        "avant_moyen_pct": -0.23,
+        "ecart_moyen_pct": 5.35,
+        "suite_moyenne_pct": -4.48
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 2,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -87306,6 +92306,56 @@
        "part_hausse": 0.75
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 16,
       "n_negatif": 9,
@@ -88236,6 +93286,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 24,
       "n_negatif": 5,
@@ -89136,6 +94236,56 @@
        },
        "n": 1,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -90051,6 +95201,56 @@
        "part_hausse": null
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 0,
       "n_negatif": 0,
@@ -90404,6 +95604,56 @@
        },
        "n": 5,
        "part_hausse": 0.8
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -91315,6 +96565,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 5.38,
+        "ecart_moyen_pct": 3.4,
+        "suite_moyenne_pct": -6.5
+       },
+       "baisse": {
+        "n": 3,
+        "avant_moyen_pct": -2.38,
+        "ecart_moyen_pct": -6.49,
+        "suite_moyenne_pct": -2.22
+       },
+       "n": 4,
+       "part_hausse": 0.25
+      }
+     },
      "concordance": {
       "n_positif": 18,
       "n_negatif": 2,
@@ -92191,6 +97491,56 @@
        "part_hausse": 0.75
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 18,
       "n_negatif": 8,
@@ -93015,6 +98365,56 @@
        },
        "n": 4,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -94053,6 +99453,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 9,
       "n_negatif": 19,
@@ -94984,6 +100434,56 @@
        "part_hausse": 0.25
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 17,
       "n_negatif": 8,
@@ -95906,6 +101406,56 @@
        },
        "n": 4,
        "part_hausse": 0.25
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 3.87,
+        "ecart_moyen_pct": 1.6,
+        "suite_moyenne_pct": -4.45
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 5.38,
+        "ecart_moyen_pct": -0.19,
+        "suite_moyenne_pct": 2.89
+       },
+       "n": 1,
+       "part_hausse": 0.0
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 1.61,
+        "ecart_moyen_pct": 11.81,
+        "suite_moyenne_pct": -11.6
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": 1.94,
+        "ecart_moyen_pct": -1.95,
+        "suite_moyenne_pct": -9.62
+       },
+       "n": 2,
+       "part_hausse": 0.5
       }
      },
      "concordance": {
@@ -96868,6 +102418,56 @@
        },
        "n": 4,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 3,
+        "avant_moyen_pct": -1.59,
+        "ecart_moyen_pct": 0.63,
+        "suite_moyenne_pct": 9.48
+       },
+       "baisse": {
+        "n": 1,
+        "avant_moyen_pct": -1.62,
+        "ecart_moyen_pct": -0.5,
+        "suite_moyenne_pct": -1.55
+       },
+       "n": 4,
+       "part_hausse": 0.75
       }
      },
      "concordance": {
@@ -97934,6 +103534,56 @@
        "part_hausse": 0.5
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 14,
       "n_negatif": 9,
@@ -98754,6 +104404,56 @@
        },
        "n": 7,
        "part_hausse": 0.286
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -99603,6 +105303,56 @@
        },
        "n": 4,
        "part_hausse": 0.5
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -100634,6 +106384,56 @@
        "part_hausse": 0.0
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": 11.69,
+        "ecart_moyen_pct": 38.93,
+        "suite_moyenne_pct": 9.76
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 1,
+        "avant_moyen_pct": -0.89,
+        "ecart_moyen_pct": 15.87,
+        "suite_moyenne_pct": 1.33
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 1,
+       "part_hausse": 1.0
+      }
+     },
      "concordance": {
       "n_positif": 5,
       "n_negatif": 1,
@@ -101210,6 +107010,56 @@
        },
        "n": 1,
        "part_hausse": 1.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -102068,6 +107918,56 @@
        },
        "n": 1,
        "part_hausse": 0.0
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {
@@ -103051,6 +108951,56 @@
        "part_hausse": 0.667
       }
      },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      }
+     },
      "concordance": {
       "n_positif": 10,
       "n_negatif": 5,
@@ -103817,6 +109767,56 @@
        },
        "n": 4,
        "part_hausse": 0.25
+      }
+     },
+     "matrice_consensus": {
+      "positive": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "conforme": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
+      },
+      "negative": {
+       "hausse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "baisse": {
+        "n": 0,
+        "avant_moyen_pct": null,
+        "ecart_moyen_pct": null,
+        "suite_moyenne_pct": null
+       },
+       "n": 0,
+       "part_hausse": null
       }
      },
      "concordance": {

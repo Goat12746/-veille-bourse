@@ -350,14 +350,18 @@ def sens_reaction(v):
             "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
 
 
-def matrice(v):
-    """Scenarios : sens des resultats x reaction, nombre, ecart moyen au CAC 40
-    sur les 20 seances avant, le jour de la reaction et les 5 seances apres."""
+POSITIONS_CONSENSUS = ("positive", "conforme", "negative")
+
+
+def matrice(v, cle="sens", valeurs=SENS_RESULTATS):
+    """Scenarios : sens des resultats (ou position face au consensus, cle
+    "surprise") x reaction, nombre, ecart moyen a l'indice sur les 20 seances
+    avant, le jour de la reaction et les 5 seances apres."""
     res = {}
-    for s in SENS_RESULTATS:
+    for s in valeurs:
         ligne = {}
         for r in REACTIONS:
-            w = [x for x in v if x["sens"] == s and x["reaction"] == r]
+            w = [x for x in v if x.get(cle) == s and x["reaction"] == r]
             ligne[r] = {"n": len(w),
                         "avant_moyen_pct": arrondi(moyenne([x["avant_pct"] for x in w if "avant_pct" in x]), 2),
                         "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2),
@@ -824,6 +828,8 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         "n_sans_sens": sum(1 for x in res if x["sens"] not in SENS_RESULTATS),
         "mouvements": mouvements(res),
         "matrice": matrice(avec_sens),
+        # Scenarios face au consensus des analystes (historique du meme marche).
+        "matrice_consensus": matrice([x for x in res if x.get("surprise")], "surprise", POSITIONS_CONSENSUS),
         "concordance": sens_reaction(avec_sens),
         "tiers_avant": {"bas": bornes[0], "haut": bornes[1]} if bornes else None,
         "par_cours_avant": par_cours_avant(avec_sens, bornes),
@@ -865,7 +871,10 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
             "n_communiques": n_comm, "n_evenements": len(v),
             "categories": [dict(mouvements(w), **sens_reaction(w), id=cid)
                            for cid in ORDRE for w in [[x for x in v if x["categorie"] == cid]] if w],
-            "resultats": {"n": len(r), "matrice": matrice(rs), "concordance": sens_reaction(rs),
+            "resultats": {"n": len(r), "matrice": matrice(rs),
+                          "matrice_consensus": matrice([x for x in r if x.get("surprise")], "surprise",
+                                                       POSITIONS_CONSENSUS),
+                          "concordance": sens_reaction(rs),
                           "mouvements": mouvements(r),
                           # Propres a l'entreprise (peu de cas au debut : se
                           # completent au fil des publications).
