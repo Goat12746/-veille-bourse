@@ -53,6 +53,8 @@ statistiques.json et scores.json à l'adresse configurée
 | `scores.py` | Scores des objectifs à 12 mois : écart du cours à l'objectif à l'échéance, objectif atteint, bon sens, par tranche de potentiel, année, secteur et entreprise (`scores.json`). Sans IA. |
 | `univers.py` | Actions des autres indices de l'application pour les scores des objectifs (STOXX 600 via les positions de l'ETF iShares, S&P 500 et Nasdaq-100 via Wikipedia, étiquettes DAX et Euro Stoxx 50) : `univers_objectifs.json`. À la main. |
 | `objectifs.py --univers monde --zonebourse --reprise` puis `scores.py --univers monde` | Scores des objectifs des autres indices, lus une seule fois depuis le PC (environ 10 heures de lecture Zonebourse, reprise possible) : `objectifs_monde.json`, `scores_monde.json` (synthèse par zone) et `scores_monde/<ticker>.json` (détail chargé par l'application à l'ouverture d'une entreprise). Les routines n'y touchent pas : calcul figé jusqu'à la prochaine relance à la main. |
+| `edgar.py` | Publications de résultats des entreprises américaines (S&P 500, Nasdaq-100) depuis 2019 d'après la SEC : dépôts 8-K item 2.02 à l'heure de New York, sens (bons, mauvais, mitigés) d'après le chiffre d'affaires et le résultat net des comptes déposés face à la même période de l'an dernier (`resultats_usa.json`). Sans IA. |
+| `etude_usa.py` | Réaction des cours aux publications américaines, face au S&P 500 : même étude que `etude_amf.py` (`communiques_usa.json`, avec `consensus.py --zone usa` → `consensus_usa.json`). |
 | `positions.py` | Ventes à découvert déclarées à l'AMF depuis 2012 (data.gouv.fr) : part du capital par entreprise et par jour (`positions_courtes.json`). |
 
 ## Statistiques

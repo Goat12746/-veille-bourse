@@ -53,10 +53,19 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
    - Puis `python scores.py` : compare les objectifs de cours à 12 mois au
      cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
+   - **Veille du matin seulement** (avant 12 h, heure de Paris) :
+     `python edgar.py`, `python consensus.py --zone usa` puis
+     `python etude_usa.py`. Publications de résultats des entreprises
+     américaines déposées à la SEC, sens d'après leurs comptes, consensus des
+     analystes et réaction face au S&P 500 (`communiques_usa.json`, onglet
+     Statistiques > Communiqués > États-Unis). Sans IA, ne modifie pas ces
+     fichiers à la main. Si la SEC ou Yahoo est injoignable, le fichier
+     précédent est gardé : signale-le.
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json`, `positions_courtes.json`, `objectifs.json` et
-   `scores.json` uniquement, message :
+   `consensus.json`, `positions_courtes.json`, `objectifs.json`,
+   `scores.json`, `resultats_usa.json`, `consensus_usa.json` et
+   `communiques_usa.json` uniquement, message :
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
 8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
    importantes, sources en erreur, publications de résultats jugées (et

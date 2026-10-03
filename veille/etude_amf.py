@@ -649,8 +649,11 @@ def prochaines_dates(referentiel, resultats, calendrier, aujourd_hui):
                 res[t] = {"date": ev["date"], "source": ev.get("source") or "Yahoo Finance",
                           "estimee": not ev.get("fiable", False)}
     j = dt.date.fromisoformat(aujourd_hui)
+    recent = (j - dt.timedelta(days=45)).isoformat()
     for e in referentiel:
         passees = sorted({x["jour"] for x in resultats if x["ticker"] == e["ticker"]})
+        if passees and passees[-1] >= recent:
+            continue  # vient de publier : la date de l'an dernier ne vaut plus
         for d in passees:
             prevue = dt.date.fromisoformat(d) + dt.timedelta(days=364)
             if j <= prevue <= j + dt.timedelta(days=HORIZON_PROCHAINES + 60):
@@ -679,7 +682,6 @@ def _evenement_public(x):
 
 
 def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
-    aujourd_hui = aujourd_hui or dt.date.today().isoformat()
     doc = charger_communiques()
     if doc is None:
         raise RuntimeError("communiques.json introuvable : lancer communiques.py")
@@ -689,6 +691,21 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
     pos_doc = positions_mod.charger()
     positions = pos_doc.get("entreprises") if pos_doc else None
     consensus = consensus_mod.charger().get("entreprises", {})
+    isin_de = {e["isin"]: e["ticker"] for e in referentiel}
+    n_par_ticker = {}
+    for c in communiques:
+        t = isin_de.get(c["isin"])
+        n_par_ticker[t] = n_par_ticker.get(t, 0) + 1
+    return assembler(referentiel, evts, jours, en_attente, cal, series, depuis, len(communiques), n_par_ticker,
+                     positions, consensus, calendrier, aujourd_hui, indice="CAC 40")
+
+
+def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_communiques, n_par_ticker,
+              positions, consensus, calendrier=None, aujourd_hui=None, indice="CAC 40"):
+    """Etude a partir des evenements mesures (communiques AMF, ou publications
+    de resultats americaines : etude_usa.py) : resumes, entreprises,
+    prochaines publications."""
+    aujourd_hui = aujourd_hui or dt.date.today().isoformat()
     enrichir(evts, positions, consensus)
     base = jour_ordinaire(evts, series, jours)
 
@@ -736,7 +753,7 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
     entreprises, prochaines = [], []
     for e in referentiel:
         v = [x for x in evts if x["ticker"] == e["ticker"]]
-        n_comm = sum(1 for c in communiques if c["isin"] == e["isin"])
+        n_comm = n_par_ticker.get(e["ticker"], 0)
         r = sorted((x for x in v if x["categorie"] == "resultats"), key=lambda x: x["jour"], reverse=True)
         rs = [x for x in r if x["sens"] in SENS_RESULTATS]
         fiche = {
@@ -777,9 +794,10 @@ def etude(referentiel, cal, series, depuis, calendrier=None, aujourd_hui=None):
     top = sorted(evts, key=lambda x: -abs(x["z"]))[:15]
     return {
         "version": 2,
+        "indice": indice,
         "depuis": depuis,
         "jusqu_a": cal.dates[-1],
-        "n_communiques": len(communiques),
+        "n_communiques": n_communiques,
         "n_evenements": len(evts),
         "n_entreprises": len({x["ticker"] for x in evts}),
         "en_attente": en_attente,

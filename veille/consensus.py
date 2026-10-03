@@ -27,11 +27,14 @@ fait rien) mais tous les releves ne sont pas gardes :
     pour une publication a une date imprevue.
 
 Ecrit consensus.json, lu par communiques.py (--a-classer : consensus avant la
-publication) et par l'etude des communiques (etude_amf.py).
+publication) et par l'etude des communiques (etude_amf.py). Avec --zone usa :
+entreprises americaines d'univers_objectifs.json, avec la prochaine date de
+resultats (Yahoo), dans consensus_usa.json, lu par etude_usa.py.
 
 Usage :
-  python consensus.py            releve du jour (rien si deja fait aujourd'hui)
-  python consensus.py --forcer   releve meme s'il a deja ete fait aujourd'hui
+  python consensus.py              releve du jour (rien si deja fait aujourd'hui)
+  python consensus.py --forcer     releve meme s'il a deja ete fait aujourd'hui
+  python consensus.py --zone usa   entreprises americaines
 Bibliotheque standard uniquement.
 """
 
@@ -50,6 +53,7 @@ from collecte import _yahoo_get, http_get
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "consensus.json")
+SORTIE_USA = os.path.join(ICI, "consensus_usa.json")
 PERIODES = ("0q", "+1q", "0y", "+1y")
 RECUL = {"7daysAgo": 7, "30daysAgo": 30, "60daysAgo": 60, "90daysAgo": 90}
 INTERVALLE = 7  # jours entre deux releves gardes, loin d'une publication
@@ -82,11 +86,15 @@ def session():
     return opener, crumb
 
 
-def lire(ticker, opener, crumb):
-    """Releve du jour, BPA moyen des jours passes, revisions et surprises."""
+def lire(ticker, opener, crumb, modules=MODULES):
+    """Releve du jour, BPA moyen des jours passes, revisions, surprises et
+    prochaine date de resultats (si calendarEvents est demande)."""
     url = (f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{urllib.parse.quote(ticker)}"
-           f"?modules={MODULES}&crumb={urllib.parse.quote(crumb)}")
+           f"?modules={modules}&crumb={urllib.parse.quote(crumb)}")
     r = json.loads(_yahoo_get(url, opener))["quoteSummary"]["result"][0]
+    dates = ((r.get("calendarEvents") or {}).get("earnings") or {}).get("earningsDate") or []
+    prochaine = (dt.datetime.fromtimestamp(dates[0]["raw"], dt.timezone.utc).date().isoformat()
+                 if dates and dates[0].get("raw") else None)
     releve = {"bpa": {}, "ca": {}, "fin": {}}
     passe = {}  # jours -> {periode: bpa moyen}
     revisions = {}
@@ -117,13 +125,13 @@ def lire(ticker, opener, crumb):
         if trim and est is not None and pub is not None:
             surprises.append({"trimestre": trim, "estime": _sig(est), "publie": _sig(pub),
                               "surprise_pct": round((pub - est) / abs(est) * 100, 1) if est else None})
-    return releve, passe, revisions, surprises
+    return releve, passe, revisions, surprises, prochaine
 
 
-def charger():
-    if not os.path.exists(SORTIE):
+def charger(chemin=SORTIE):
+    if not os.path.exists(chemin):
         return {"version": 1, "entreprises": {}}
-    with open(SORTIE, encoding="utf-8") as f:
+    with open(chemin, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -149,13 +157,14 @@ def revision_pct(fiche, jour, periode="0y", jours=30):
     return round((b - a) / abs(a) * 100, 1) if a else None
 
 
-def dates_publication():
+def dates_publication(usa=False):
     """Prochaine date de resultats connue ou estimee par entreprise (calcul
-    precedent de statistiques.py)."""
-    chemin = os.path.join(ICI, "statistiques.json")
+    precedent de statistiques.py, ou d'etude_usa.py)."""
+    chemin = os.path.join(ICI, "communiques_usa.json" if usa else "statistiques.json")
     try:
         with open(chemin, encoding="utf-8") as f:
-            histo = json.load(f).get("historique_amf") or {}
+            doc = json.load(f)
+        histo = doc if usa else doc.get("historique_amf") or {}
     except (OSError, ValueError):
         return {}
     return {e["ticker"]: e["prochaine"]["date"] for e in histo.get("entreprises", [])
@@ -183,8 +192,8 @@ def garder(fiche, releve, aujourd_hui, publication):
     return definitif
 
 
-def ecrire(doc):
-    with open(SORTIE, "w", encoding="utf-8") as f:
+def ecrire(doc, chemin=SORTIE):
+    with open(chemin, "w", encoding="utf-8") as f:
         f.write('{\n "version": 1,\n "source": "Yahoo Finance (consensus des analystes)",\n')
         f.write(f' "maj": {json.dumps(doc.get("maj"))},\n "entreprises": {{\n')
         f.write(",\n".join(f'  {json.dumps(t)}: {json.dumps(v, ensure_ascii=False, separators=(",", ":"))}'
@@ -195,16 +204,23 @@ def ecrire(doc):
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--forcer", action="store_true", help="releve meme s'il a deja ete fait aujourd'hui")
+    p.add_argument("--zone", choices=["france", "usa"], default="france")
     args = p.parse_args()
-    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
-        tickers = [e["ticker"] for e in json.load(f)["entreprises"]]
-    doc = charger()
+    usa = args.zone == "usa"
+    chemin = SORTIE_USA if usa else SORTIE
+    if usa:
+        with open(os.path.join(ICI, "univers_objectifs.json"), encoding="utf-8") as f:
+            tickers = [e["ticker"] for e in json.load(f)["entreprises"] if e["zone"] == "usa"]
+    else:
+        with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
+            tickers = [e["ticker"] for e in json.load(f)["entreprises"]]
+    doc = charger(chemin)
     aujourd_hui = dt.date.today()
     jour = aujourd_hui.isoformat()
     if doc.get("maj") == jour and not args.forcer:
-        print(f"consensus.json : deja releve aujourd'hui ({jour}), rien a faire.")
+        print(f"{os.path.basename(chemin)} : deja releve aujourd'hui ({jour}), rien a faire.")
         return
-    publications = dates_publication()
+    publications = dates_publication(usa)
     try:
         opener, crumb = session()
     except Exception as e:
@@ -212,11 +228,12 @@ def main():
         return
     erreurs, nouveaux = {}, 0
     with cf.ThreadPoolExecutor(4) as ex:
-        futurs = {ex.submit(lire, t, opener, crumb): t for t in tickers}
+        modules = MODULES + (",calendarEvents" if usa else "")
+        futurs = {ex.submit(lire, t, opener, crumb, modules): t for t in tickers}
         for fu in cf.as_completed(futurs):
             t = futurs[fu]
             try:
-                releve, passe, revisions, surprises = fu.result()
+                releve, passe, revisions, surprises, prochaine = fu.result()
             except Exception as e:
                 erreurs[t] = str(e)[:120]
                 continue
@@ -230,16 +247,18 @@ def main():
                     d = (aujourd_hui - dt.timedelta(days=jours)).isoformat()
                     fiche["releves"].append({"jour": d, "bpa": {p: [v, None] for p, v in passe[jours].items()},
                                              "ca": {}, "fin": releve["fin"], "reconstitue": True})
-            nouveaux += garder(fiche, releve, aujourd_hui, publications.get(t))
+            nouveaux += garder(fiche, releve, aujourd_hui, publications.get(t) or prochaine)
             fiche["revisions"] = revisions
+            if usa:
+                fiche["prochaine"] = prochaine
             connus = {s["trimestre"]: s for s in fiche.get("surprises", [])}
             connus.update({s["trimestre"]: s for s in surprises})
             fiche["surprises"] = [connus[k] for k in sorted(connus)]
     doc["maj"] = jour
-    ecrire(doc)
+    ecrire(doc, chemin)
     avec = sum(1 for f in doc["entreprises"].values() if f["releves"])
     surpr = sum(len(f.get("surprises", [])) for f in doc["entreprises"].values())
-    print(f"consensus.json : {avec} entreprise(s) suivie(s), {nouveaux} releve(s) garde(s), "
+    print(f"{os.path.basename(chemin)} : {avec} entreprise(s) suivie(s), {nouveaux} releve(s) garde(s), "
           f"{surpr} surprise(s) de BPA connue(s)"
           + (f" ; illisibles : {sorted(erreurs)}" if erreurs else "") + ".")
 
