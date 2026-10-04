@@ -18,7 +18,9 @@ des cours a chaque communique des entreprises du referentiel depuis 2019.
 """
 
 import datetime as dt
+import json
 import math
+import os
 
 from communiques import (CATEGORIES, LIBELLES, ORDRE, charger_classes, charger_communiques, generique, normaliser,
                          rapports_redondants)
@@ -29,6 +31,20 @@ from secteurs import grand_secteur
 from mesures import SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale, pct
 
 PRIORITE = {cid: i for i, cid in enumerate(ORDRE)}
+
+
+def _historique_bpa():
+    """BPA estime par les analystes avant chaque publication et BPA publie, depuis 2018
+    (calendrier des resultats de Yahoo, consensus_historique.json) : {ticker: [[date, estime, publie]]}."""
+    try:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "consensus_historique.json"),
+                  encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+HISTORIQUE_BPA = _historique_bpa()
 AVANT = 20  # seances avant la publication (le cours "recent")
 SUITE = 5  # seances apres la reaction (la baisse ou la hausse se prolonge-t-elle ?)
 UN_AN = 250  # seances de l'evolution sur 12 mois face a l'indice
@@ -217,6 +233,26 @@ def enrichir(evts, positions, consensus):
             ev["surprise"] = (jour_j.position_consensus(s.get("publie"), s.get("estime"))
                               or ("positive" if s["surprise_pct"] > SEUIL_SURPRISE
                                   else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme"))
+        # Historique complet de Yahoo pour les publications sans jugement ni surprise recente : la
+        # ligne du calendrier la plus proche (3 jours au plus) de la date de publication.
+        lignes = HISTORIQUE_BPA.get(ticker)
+        if lignes:
+            prises = set()
+            for ev in v:
+                if ev["categorie"] != "resultats" or ev.get("surprise"):
+                    continue
+                pub = dt.date.fromisoformat(ev["publie_le"][:10])
+                ecarts = [(abs((dt.date.fromisoformat(r[0]) - pub).days), i) for i, r in enumerate(lignes)
+                          if i not in prises]
+                if not ecarts or min(ecarts)[0] > 3:
+                    continue
+                i = min(ecarts)[1]
+                prises.add(i)
+                _, estime, publie = lignes[i]
+                if not estime:
+                    continue
+                ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+                ev["surprise"] = jour_j.position_consensus(publie, estime)
 
 
 def croise(v, cle, valeurs):
@@ -252,7 +288,8 @@ def attentes_marche(res, consensus):
         "positions_courtes": {"n": len(courtes),
                               "par_tranche": croise(courtes, "courtes", [t for t, _, _ in TRANCHES_COURTES])},
         "consensus": {
-            "n_entreprises": sum(1 for f in consensus.values() if f.get("releves")),
+            "n_entreprises": len({t for t, f in consensus.items() if f.get("releves")}
+                                 | {x["ticker"] for x in surpr}),
             "releve_depuis": min(releves) if releves else None,
             "n_surprises": len(surpr),
             "par_surprise": croise(surpr, "surprise", ["positive", "conforme", "negative"]),
