@@ -1,0 +1,2925 @@
+{
+"_commentaire": "BPA publié vérifié dans les communiqués (etude_surprise/verif_bpa, octobre 2026) : corrige = BPA ajusté du communiqué à la place du BPA Yahoo/Investing ; exclu = écart au consensus inutilisable. Clé ticker|jour de réaction.",
+"publications": {
+"AC.PA|2026-02-19": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.23,
+"publie": 0.81,
+"publie_corrige": null,
+"note": "S2 ajusté : BPA ajusté du S1 2025 absent ; attendu 1,23 incohérent avec 1,84-S1"
+},
+"AC.PA|2023-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.4,
+"publie": 0.4047,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AC.PA|2022-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.08,
+"publie": -0.01,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AC.PA|2022-02-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.67,
+"publie": -0.1,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AC.PA|2021-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -1.37,
+"publie": 0.17,
+"publie_corrige": null,
+"note": "aucun BPA ; publié 0,17 face à une perte au S1 2021"
+},
+"AC.PA|2021-02-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.62,
+"publie": -1.84,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AC.PA|2020-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.88,
+"publie": 1.17,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AC.PA|2019-08-01": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.77,
+"publie": 0.46,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AI.PA|2026-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.39,
+"publie": 3.02,
+"publie_corrige": null,
+"note": "BPA S1 2026 = 2,86 ; 3,02 et attendu 3,39 sans équivalent (récurrent non chiffré)"
+},
+"AI.PA|2026-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.21,
+"publie": 3.33,
+"publie_corrige": null,
+"note": "S2 2025 = 6,10-3,12 = 2,98 (ou ajusté des actions gratuites 2,71) ≠ 3,33"
+},
+"AI.PA|2024-10-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.23,
+"publie": 0,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AI.PA|2024-04-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.8,
+"publie": 3.45,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AI.PA|2024-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.81,
+"publie": 2.76,
+"publie_corrige": null,
+"note": "S2 2023 = 5,90-3,30 = 2,60 ≠ 2,76, base des actions incertaine"
+},
+"AI.PA|2023-04-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.75,
+"publie": 2.5,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AI.PA|2022-10-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.73,
+"publie": 3,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AI.PA|2022-04-27": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 2.22,
+"publie": 0.98,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AI.PA|2022-02-16": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 2.13,
+"publie": 0.94,
+"publie_corrige": null,
+"note": "Yahoo 0,94 sans rapport avec le BPA 2021 (5,45)"
+},
+"AI.PA|2021-04-23": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 2.12,
+"publie": 0.98,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AI.PA|2020-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.99,
+"publie": 2.41,
+"publie_corrige": null,
+"note": "BPA S1 2020 = 2,29 ; 2,41 sans équivalent"
+},
+"AI.PA|2020-04-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.04,
+"publie": 1.26,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"AI.PA|2019-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.19,
+"publie": 2.8,
+"publie_corrige": null,
+"note": "S1 2019 : 2,80 et attendu 2,19 sur des bases d'actions différentes"
+},
+"AI.PA|2019-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.04,
+"publie": 2.51,
+"publie_corrige": null,
+"note": "S1 2018 absent, 2,51 sans équivalent"
+},
+"AI.PA|2017-07-31": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.15,
+"publie": 2.24,
+"publie_corrige": null,
+"note": "BPA S1 2017 = 2,40 ; 2,24 sans équivalent"
+},
+"ALO.PA|2025-11-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -1.5,
+"publie": 0.38,
+"publie_corrige": null,
+"note": "attendu -1,50 incohérent avec le BPA S1 0,38"
+},
+"ALO.PA|2024-11-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.17,
+"publie": 0.11,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"ALO.PA|2023-05-10": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.4,
+"publie": -0.3,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ALO.PA|2021-11-10": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.56,
+"publie": -0.06,
+"publie_corrige": null,
+"note": "aucun BPA dans le communiqué"
+},
+"ALO.PA|2020-11-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.06,
+"publie": 0.71,
+"publie_corrige": null,
+"note": "aucun BPA dans le communiqué"
+},
+"ALO.PA|2018-11-14": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.78,
+"publie": 0.55,
+"publie_corrige": null,
+"note": "aucun BPA dans le communiqué"
+},
+"CS.PA|2026-02-26": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.76,
+"publie": 2.83,
+"publie_corrige": 1.83,
+"note": "S2 2025 opérationnel = 3,86-2,03 ; 2,83 sans équivalent"
+},
+"CS.PA|2025-08-01": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.04,
+"publie": 1.72,
+"publie_corrige": 2.03,
+"note": "publié = BPA net IFRS 1,72 ; opérationnel 2,03"
+},
+"CS.PA|2023-02-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.48,
+"publie": 2.75,
+"publie_corrige": null,
+"note": "2,75 = BPA opérationnel 2021 ; S2 2022 non calculable (S1 absent)"
+},
+"CS.PA|2022-02-24": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.41,
+"publie": 1.34,
+"publie_corrige": 1.27,
+"note": "S2 2021 opérationnel = 2,75-1,48"
+},
+"CS.PA|2021-08-02": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.39,
+"publie": 1.63,
+"publie_corrige": 1.48,
+"note": "publié = BPA IFRS dilué 1,63 ; opérationnel 1,48"
+},
+"CS.PA|2021-02-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.36,
+"publie": 0.69,
+"publie_corrige": null,
+"note": "S2 2020 : BPA opérationnel annuel ambigu dans le communiqué"
+},
+"CS.PA|2019-02-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.09,
+"publie": -0.3,
+"publie_corrige": null,
+"note": "S2 2018 : S1 opérationnel absent ; -0,30 = net IFRS"
+},
+"BNP.PA|2024-10-31": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 2.48,
+"publie": 2.47,
+"publie_corrige": 2.38,
+"note": "BPA 3T24 publié 2,38"
+},
+"BNP.PA|2024-07-24": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 2.48,
+"publie": 2.9,
+"publie_corrige": 2.81,
+"note": "BPA 2T24 publié 2,81"
+},
+"BNP.PA|2023-02-07": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 1.65,
+"publie": 0.49,
+"publie_corrige": null,
+"note": "T4 2022 : 0,49 incohérent avec l'année (7,80)"
+},
+"BVI.PA|2026-07-29": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.6433,
+"publie": 0.53,
+"publie_corrige": 0.68,
+"note": "publié = BPA IFRS dilué 0,53 ; ajusté 0,68"
+},
+"BVI.PA|2026-02-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.7975,
+"publie": 0.8038,
+"publie_corrige": 0.77,
+"note": "S2 2025 ajusté = 1,42-0,65"
+},
+"BVI.PA|2025-07-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.6338,
+"publie": 0.71,
+"publie_corrige": 0.65,
+"note": "publié = BPA IFRS 0,71 ; ajusté 0,65"
+},
+"BVI.PA|2022-02-24": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.54,
+"publie": 0.5,
+"publie_corrige": 0.59,
+"note": "S2 2021 ajusté = 1,07-0,48"
+},
+"BVI.PA|2021-02-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.48,
+"publie": 0.36,
+"publie_corrige": 0.45,
+"note": "S2 2020 ajusté = 0,64-0,19"
+},
+"BVI.PA|2020-07-29": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.28,
+"publie": -0.08,
+"publie_corrige": 0.19,
+"note": "publié = BPA IFRS -0,08 ; ajusté 0,19"
+},
+"BVI.PA|2020-02-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.55,
+"publie": 0.84,
+"publie_corrige": 0.55,
+"note": "S2 2019 ajusté = 1,02-0,47"
+},
+"BVI.PA|2019-07-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.48,
+"publie": 0.39,
+"publie_corrige": 0.47,
+"note": "publié = BPA IFRS 0,39 ; ajusté 0,47"
+},
+"BVI.PA|2019-02-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.54,
+"publie": 0.42,
+"publie_corrige": 0.52,
+"note": "S2 2018 ajusté = 0,96-0,44"
+},
+"CAP.PA|2026-02-13": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 7.55,
+"publie": 5.02,
+"publie_corrige": 6.95,
+"note": "S2 2025 normalisé = 12,95-6,00"
+},
+"CAP.PA|2025-07-30": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 6.33,
+"publie": 4.11,
+"publie_corrige": 6.0,
+"note": "publié = BPA IFRS dilué ; normalisé 6,00"
+},
+"CAP.PA|2025-02-18": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 6.4,
+"publie": 4.6,
+"publie_corrige": 6.35,
+"note": "S2 2024 normalisé = 12,23-5,88"
+},
+"CAP.PA|2023-02-21": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 5.81,
+"publie": 8.79,
+"publie_corrige": 6.22,
+"note": "S2 2022 normalisé = 11,09-4,87"
+},
+"CAP.PA|2022-07-29": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.58,
+"publie": 3.78,
+"publie_corrige": 4.87,
+"note": "publié = BPA IFRS ; normalisé 4,87"
+},
+"CAP.PA|2022-02-15": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.76,
+"publie": 4.1,
+"publie_corrige": 5.39,
+"note": "S2 2021 normalisé = 8,97-3,58"
+},
+"CAP.PA|2021-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.86,
+"publie": 2.55,
+"publie_corrige": 3.58,
+"note": "S1 2021 normalisé 3,58 (communiqué de février 2022) ; publié = IFRS"
+},
+"CAP.PA|2021-02-18": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.6,
+"publie": 3.75,
+"publie_corrige": 4.48,
+"note": "S2 2020 normalisé = 7,28-2,80"
+},
+"CAP.PA|2020-09-03": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.53,
+"publie": 1.8,
+"publie_corrige": 2.8,
+"note": "publié = BPA IFRS 1,80 ; normalisé 2,80"
+},
+"CAP.PA|2020-02-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.44,
+"publie": 2.73,
+"publie_corrige": null,
+"note": "S2 2019 normalisé 3,50 face à un attendu de 4,44 : attendu incohérent"
+},
+"CAP.PA|2019-07-30": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.11,
+"publie": 2.27,
+"publie_corrige": 2.9,
+"note": "publié = BPA IFRS ; normalisé 2,90"
+},
+"CAP.PA|2019-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.71,
+"publie": 2.43,
+"publie_corrige": null,
+"note": "S2 2018 normalisé ambigu (charge d'impôt transitoire, S1 2,64 ou 2,75)"
+},
+"CA.PA|2023-10-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.42,
+"publie": 0.4156,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"CA.PA|2023-02-15": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.04,
+"publie": 1.85,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"CA.PA|2022-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.58,
+"publie": 0.33,
+"publie_corrige": null,
+"note": "rapproché d'une ligne « activités abandonnées » ; BPA ajusté absent"
+},
+"CA.PA|2022-02-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.93,
+"publie": 1.31,
+"publie_corrige": null,
+"note": "S2 2021 ajusté : BPA ajusté du S1 absent"
+},
+"CA.PA|2021-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.36,
+"publie": 0.34,
+"publie_corrige": null,
+"note": "rapproché d'une ligne « activités abandonnées »"
+},
+"CA.PA|2020-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.3,
+"publie": -0.03,
+"publie_corrige": null,
+"note": "rapproché d'une ligne « activités abandonnées » ; BPA ajusté absent"
+},
+"CA.PA|2019-02-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.18,
+"publie": -0.34,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ACA.PA|2025-04-30": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.61,
+"publie": 0.59,
+"publie_corrige": 0.56,
+"note": "BPA T1 2025 publié 0,56"
+},
+"BN.PA|2026-02-20": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.97,
+"publie": 1.21,
+"publie_corrige": 1.89,
+"note": "S2 2025 courant = 3,80-1,91"
+},
+"BN.PA|2021-02-19": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.02,
+"publie": 1.44,
+"publie_corrige": null,
+"note": "S2 2020 courant 1,44 face à un attendu de 2,02 : attendu incohérent"
+},
+"BN.PA|2020-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.97,
+"publie": 1.37,
+"publie_corrige": null,
+"note": "S2 2019 courant : rapprochement ambigu"
+},
+"BN.PA|2019-10-18": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 1.99,
+"publie": 0.78,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"BN.PA|2017-07-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.61,
+"publie": 1.57,
+"publie_corrige": 1.69,
+"note": "publié = BPA IFRS 1,57 ; courant 1,69"
+},
+"DSY.PA|2025-07-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.3014,
+"publie": 0.17,
+"publie_corrige": 0.3,
+"note": "publié = BPA IFRS 0,17 ; non-IFRS 0,30"
+},
+"ENGI.PA|2026-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.45,
+"publie": 0.54,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"ENGI.PA|2025-11-06": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.33,
+"publie": 0.27,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2025-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.44,
+"publie": 0.48,
+"publie_corrige": null,
+"note": "S2 2024 : 0,48 sans équivalent (IFRS 1,66-0,78 = 0,88)"
+},
+"ENGI.PA|2024-11-07": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.39,
+"publie": 0.4,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2024-08-02": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.52,
+"publie": 0.58,
+"publie_corrige": null,
+"note": "S1 2024 : 0,58 sans équivalent"
+},
+"ENGI.PA|2024-05-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.84,
+"publie": 0.79,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2023-02-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.48,
+"publie": 0.4795,
+"publie_corrige": null,
+"note": "Engie : consensus sur le résultat net récurrent, non chiffré par action"
+},
+"ENGI.PA|2020-11-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.1373,
+"publie": 0.1284,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2019-11-08": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.17,
+"publie": 0.1729,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2019-02-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.29,
+"publie": 0.2671,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2018-11-07": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.17,
+"publie": 0.1678,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2016-11-10": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.19,
+"publie": 0.1894,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EDEN.PA|2026-07-23": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.02,
+"publie": 0.89,
+"publie_corrige": 1.09,
+"note": "publié = BPA IFRS ; ajusté 1,09"
+},
+"EDEN.PA|2026-02-24": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.38,
+"publie": 1.17,
+"publie_corrige": 1.43,
+"note": "S2 2025 ajusté = 2,59-1,16"
+},
+"EDEN.PA|2025-07-23": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.21,
+"publie": 0.95,
+"publie_corrige": 1.16,
+"note": "publié = BPA IFRS 0,95 ; ajusté 1,16"
+},
+"EDEN.PA|2025-02-18": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.26,
+"publie": 1.12,
+"publie_corrige": 1.27,
+"note": "S2 2024 ajusté = 2,35-1,08"
+},
+"EDEN.PA|2023-02-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.02,
+"publie": 1.46,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EDEN.PA|2022-07-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.74,
+"publie": 0.64,
+"publie_corrige": null,
+"note": "BPA ajusté S1 2022 absent ; 0,64 sans équivalent"
+},
+"EDEN.PA|2022-02-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.77,
+"publie": 0.68,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EDEN.PA|2021-03-02": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.65,
+"publie": 0.56,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EDEN.PA|2020-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.59,
+"publie": 0.41,
+"publie_corrige": null,
+"note": "0,41 = BPA IFRS ; BPA courant absent"
+},
+"EDEN.PA|2020-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.76,
+"publie": 0.69,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EDEN.PA|2019-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.57,
+"publie": 0.6,
+"publie_corrige": null,
+"note": "aucun BPA dans le communiqué"
+},
+"EDEN.PA|2019-02-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.58,
+"publie": 0.55,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EL.PA|2025-02-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.37,
+"publie": 2.15,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"EL.PA|2023-02-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.7,
+"publie": 4.83,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"EL.PA|2022-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.25,
+"publie": 2.64,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"EL.PA|2022-03-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.12,
+"publie": 1.35,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"EL.PA|2017-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.12,
+"publie": 1.76,
+"publie_corrige": 2.0,
+"note": "publié = BPA IFRS ; ajusté S1 2017 2,00"
+},
+"ERF.PA|2026-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.01,
+"publie": 1.49,
+"publie_corrige": null,
+"note": "BPA ajusté non lisible"
+},
+"ERF.PA|2026-01-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.36,
+"publie": 1.07,
+"publie_corrige": null,
+"note": "BPA ajusté non lisible"
+},
+"ERF.PA|2025-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.91,
+"publie": 1.16,
+"publie_corrige": null,
+"note": "BPA ajusté non lisible"
+},
+"ENX.PA|2016-07-28": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.62,
+"publie": 0.75,
+"publie_corrige": 0.71,
+"note": "BPA T2 2016 publié 0,71"
+},
+"ENX.PA|2015-07-30": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.61,
+"publie": 0.73,
+"publie_corrige": null,
+"note": "BPA T2 2015 publié 0,41 ; 0,73 sans équivalent"
+},
+"ENX.PA|2015-05-06": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.58,
+"publie": 0.62,
+"publie_corrige": null,
+"note": "BPA T1 2015 publié 0,69 ; 0,62 sans équivalent"
+},
+"RMS.PA|2022-02-18": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 20.6,
+"publie": 12.11,
+"publie_corrige": null,
+"note": "attendu 20,60 (annuel) face au 2e semestre 12,11"
+},
+"RMS.PA|2021-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.78,
+"publie": 11.19,
+"publie_corrige": null,
+"note": "attendu 5,78 (trimestre ?) face au S1 11,19"
+},
+"KER.PA|2023-02-15": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 16.53,
+"publie": 13.22,
+"publie_corrige": 14.3,
+"note": "S2 2022 hors éléments non courants = 30,39-16,09"
+},
+"KER.PA|2022-02-17": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 13.47,
+"publie": 13.86,
+"publie_corrige": 13.64,
+"note": "S2 2021 hors éléments non courants = 25,49-11,85"
+},
+"KER.PA|2021-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 8.57,
+"publie": 11.71,
+"publie_corrige": 11.85,
+"note": "publié = BPA IFRS dilué 11,71 ; hors éléments non courants 11,85"
+},
+"KER.PA|2021-02-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 15.16,
+"publie": 15.01,
+"publie_corrige": null,
+"note": "S2 2020 en IFRS ; BPA hors éléments non courants absent"
+},
+"KER.PA|2020-02-12": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 15.81,
+"publie": 12.33,
+"publie_corrige": null,
+"note": "S2 2019 : S1 hors éléments non courants absent"
+},
+"KER.PA|2019-07-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 9.82,
+"publie": 4.96,
+"publie_corrige": null,
+"note": "S1 2019 : BPA hors éléments non courants illisible ; 4,96 = IFRS"
+},
+"KER.PA|2019-02-12": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 11.72,
+"publie": 11.13,
+"publie_corrige": null,
+"note": "S2 2018 : BPA hors éléments non courants illisible"
+},
+"KER.PA|2017-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 6.74,
+"publie": 6.58,
+"publie_corrige": 6.92,
+"note": "publié = BPA IFRS 6,58 ; hors éléments non courants 6,92"
+},
+"OR.PA|2021-04-16": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 2.15,
+"publie": 1.85,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"OR.PA|2021-02-12": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.71,
+"publie": 3.09,
+"publie_corrige": 3.48,
+"note": "S2 2020 BNPA hors non récurrents = 7,30-3,82"
+},
+"OR.PA|2020-07-31": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.74,
+"publie": 3.25,
+"publie_corrige": 3.82,
+"note": "publié = BPA IFRS 3,25 ; hors non récurrents 3,82"
+},
+"OR.PA|2020-02-07": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.39,
+"publie": 2.53,
+"publie_corrige": 3.36,
+"note": "S2 2019 BNPA hors non récurrents = 7,74-4,38"
+},
+"OR.PA|2015-02-13": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 2.02,
+"publie": 0.85,
+"publie_corrige": null,
+"note": "Yahoo 0,85 sans rapport avec le BPA 2014 (5,34)"
+},
+"LR.PA|2018-11-08": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.76,
+"publie": 0.73,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"MC.PA|2026-01-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 15.14,
+"publie": 10.42,
+"publie_corrige": null,
+"note": "S2 2025 = 10,42 (21,86-11,44) face à un attendu de 15,14 : attendu incohérent"
+},
+"MC.PA|2025-07-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 15.11,
+"publie": 11.42,
+"publie_corrige": null,
+"note": "S1 2025 11,42 face à un attendu de 15,11 : attendu incohérent"
+},
+"MC.PA|2025-01-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 13.54,
+"publie": 10.58,
+"publie_corrige": null,
+"note": "S2 2024 = 10,58 face à un attendu de 13,54 : attendu incohérent"
+},
+"MC.PA|2024-07-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 16.87,
+"publie": 14.54,
+"publie_corrige": null,
+"note": "LVMH : attendu Investing 16,87 incohérent (S1 14,54)"
+},
+"MC.PA|2022-01-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 10.45,
+"publie": 11.18,
+"publie_corrige": null,
+"note": "S2 2021 incohérent avec le BPA annuel"
+},
+"MC.PA|2021-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.87,
+"publie": 7.4,
+"publie_corrige": null,
+"note": "S1 2021 = 10,50 ; 7,40 et attendu 4,87 sans équivalent"
+},
+"ML.PA|2026-02-12": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.73,
+"publie": 1.16,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"ML.PA|2025-02-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.75,
+"publie": 1.02,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"ORA.PA|2026-02-19": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.36,
+"publie": 0.32,
+"publie_corrige": null,
+"note": "S2 2025 ajusté : S1 ajusté absent"
+},
+"ORA.PA|2025-10-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.37,
+"publie": 0.32,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ORA.PA|2025-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.24,
+"publie": -0.21,
+"publie_corrige": null,
+"note": "BPA ajusté S1 2025 absent ; -0,21 = IFRS"
+},
+"ORA.PA|2025-04-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.23,
+"publie": 0.24,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ORA.PA|2025-02-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.41,
+"publie": 0.29,
+"publie_corrige": null,
+"note": "S2 2024 : 0,29 sans équivalent (IFRS 0,82-0,28 = 0,54)"
+},
+"ORA.PA|2024-10-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.4,
+"publie": 0.41,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"RI.PA|2022-09-01": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.54,
+"publie": 2.34,
+"publie_corrige": null,
+"note": "S2 2021/22 courant : BPA annuel illisible"
+},
+"RI.PA|2021-02-11": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.42,
+"publie": 3.69,
+"publie_corrige": 4.16,
+"note": "publié = BPA IFRS 3,69 ; courant 4,16"
+},
+"RI.PA|2019-10-17": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 2.23,
+"publie": 1.88,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RI.PA|2019-08-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.1,
+"publie": 1.63,
+"publie_corrige": null,
+"note": "S2 2018/19 courant : S1 absent"
+},
+"RI.PA|2018-02-09": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.56,
+"publie": 4.34,
+"publie_corrige": null,
+"note": "BPA courant S1 2017-18 absent ; 4,34 = IFRS"
+},
+"PUB.PA|2026-02-03": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.29,
+"publie": 3.27,
+"publie_corrige": 3.97,
+"note": "S2 2025 courant dilué = 7,48-3,51"
+},
+"PUB.PA|2025-07-17": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.66,
+"publie": 3.25,
+"publie_corrige": 3.51,
+"note": "publié = BPA IFRS dilué 3,25 ; courant 3,51"
+},
+"PUB.PA|2025-02-04": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.05,
+"publie": 3.5,
+"publie_corrige": 3.92,
+"note": "S2 2024 courant dilué = 7,30-3,38"
+},
+"PUB.PA|2023-02-02": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.41,
+"publie": 2.69,
+"publie_corrige": 3.47,
+"note": "S2 2022 courant dilué = 6,35-2,88"
+},
+"PUB.PA|2022-07-21": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.37,
+"publie": 2.13,
+"publie_corrige": 2.88,
+"note": "publié = BPA IFRS 2,13 ; courant 2,88"
+},
+"PUB.PA|2021-02-03": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.66,
+"publie": 1.79,
+"publie_corrige": 2.52,
+"note": "S2 2020 courant dilué = 4,27-1,75"
+},
+"PUB.PA|2020-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.68,
+"publie": 0.57,
+"publie_corrige": null,
+"note": "S1 2020 courant 1,75 face à un attendu de 0,68 : attendu incohérent"
+},
+"PUB.PA|2020-02-06": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.81,
+"publie": 2.06,
+"publie_corrige": 3.04,
+"note": "S2 2019 courant dilué = 5,02-1,98"
+},
+"PUB.PA|2019-07-19": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.92,
+"publie": 1.48,
+"publie_corrige": null,
+"note": "BPA courant S1 2019 1,49 face à un attendu de 1,92 : attendu incohérent"
+},
+"RNO.PA|2022-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.55,
+"publie": 2.33,
+"publie_corrige": null,
+"note": "BPA S1 2022 = -4,98 (Russie) ; 2,33 sans équivalent publié"
+},
+"RNO.PA|2019-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 8.5,
+"publie": 4.95,
+"publie_corrige": null,
+"note": "S2 2018 ≈ 4,9 face à un attendu de 8,50 : attendu incohérent"
+},
+"SAF.PA|2026-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.17,
+"publie": 4.21,
+"publie_corrige": null,
+"note": "base du BPA S1 2026 incertaine (ajusté / consolidé), attendu 5,17"
+},
+"SAF.PA|2025-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.22,
+"publie": -1.78,
+"publie_corrige": null,
+"note": "S2 2024 ajusté : S1 ajusté absent ; -1,78 = IFRS"
+},
+"SAF.PA|2023-02-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.27,
+"publie": 3.05,
+"publie_corrige": null,
+"note": "S2 2022 ajusté = 2,76-1,26 = 1,50 face à un attendu de 2,27 : attendu incohérent"
+},
+"SAF.PA|2022-02-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.99,
+"publie": -1.48,
+"publie_corrige": null,
+"note": "S2 2021 ajusté = 1,78-0,63 = 1,15 face à un attendu de 1,99 : attendu incohérent"
+},
+"SAF.PA|2021-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1,
+"publie": 1.53,
+"publie_corrige": null,
+"note": "S1 2021 ajusté 0,63 face à un attendu de 1,00 ; 1,53 sans équivalent"
+},
+"SAF.PA|2020-02-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.76,
+"publie": 2.35,
+"publie_corrige": 3.07,
+"note": "S2 2019 ajusté = 6,20-3,13"
+},
+"SAF.PA|2019-09-05": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.67,
+"publie": 3.27,
+"publie_corrige": null,
+"note": "S1 2019 ajusté 3,13 face à un attendu de 4,67 : attendu incohérent"
+},
+"SAF.PA|2019-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.5,
+"publie": 1.73,
+"publie_corrige": null,
+"note": "S2 2018 ajusté = 4,60-2,17 = 2,43 face à un attendu de 1,50 : attendu incohérent"
+},
+"SGO.PA|2026-07-31": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.2,
+"publie": 2.87,
+"publie_corrige": 3.44,
+"note": "publié = BPA IFRS ; courant 3,44"
+},
+"SGO.PA|2026-02-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.45,
+"publie": 2.54,
+"publie_corrige": 3.07,
+"note": "S2 2025 courant = 6,70-3,63"
+},
+"SGO.PA|2022-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.99,
+"publie": 3.31,
+"publie_corrige": 3.51,
+"note": "BNPA courant S1 2022 3,51"
+},
+"SGO.PA|2022-02-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.33,
+"publie": 2.32,
+"publie_corrige": 2.5,
+"note": "S2 2021 courant = 5,35-2,85"
+},
+"SGO.PA|2021-07-30": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2,
+"publie": 2.43,
+"publie_corrige": 2.85,
+"note": "BNPA courant S1 2021 2,85"
+},
+"SGO.PA|2021-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.2,
+"publie": 1.66,
+"publie_corrige": null,
+"note": "S2 2020 courant = 2,74-0,51 = 2,23 face à un attendu de 1,20 : attendu incohérent"
+},
+"SGO.PA|2020-02-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.7,
+"publie": 1.32,
+"publie_corrige": 1.79,
+"note": "S2 2019 courant = 3,53-1,74"
+},
+"SGO.PA|2019-07-26": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.57,
+"publie": 1.26,
+"publie_corrige": 1.74,
+"note": "publié = BPA IFRS 1,26 ; courant 1,74"
+},
+"SU.PA|2026-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.7,
+"publie": 4.88,
+"publie_corrige": null,
+"note": "S2 2025 ajusté = 8,59-3,97 = 4,62 face à un attendu de 5,70 : attendu incohérent"
+},
+"SU.PA|2025-07-31": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.7,
+"publie": 3.38,
+"publie_corrige": null,
+"note": "S1 2025 ajusté 3,97 face à un attendu de 4,70 : attendu incohérent"
+},
+"SU.PA|2025-02-20": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.09,
+"publie": 4.21,
+"publie_corrige": 4.31,
+"note": "S2 2024 ajusté = 8,32-4,01"
+},
+"SU.PA|2023-02-16": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.69,
+"publie": 3.46,
+"publie_corrige": 3.87,
+"note": "S2 2022 ajusté = 7,11-3,24"
+},
+"SU.PA|2022-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.29,
+"publie": 2.69,
+"publie_corrige": 3.24,
+"note": "publié = BPA IFRS 2,69 ; ajusté 3,24"
+},
+"SU.PA|2022-02-17": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.02,
+"publie": 2.89,
+"publie_corrige": 3.21,
+"note": "S2 2021 ajusté = 6,13-2,92"
+},
+"SU.PA|2021-07-30": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.81,
+"publie": 2.78,
+"publie_corrige": 2.92,
+"note": "publié = BPA IFRS 2,78 ; ajusté 2,92"
+},
+"SU.PA|2021-02-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.6,
+"publie": 2.42,
+"publie_corrige": null,
+"note": "S2 2020 ajusté : S1 ajusté absent"
+},
+"SU.PA|2020-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.41,
+"publie": 2.55,
+"publie_corrige": null,
+"note": "S2 2019 ajusté = 5,32-2,27 = 3,05 face à un attendu de 2,41 : attendu incohérent"
+},
+"SU.PA|2019-07-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.35,
+"publie": 1.78,
+"publie_corrige": 2.27,
+"note": "publié = BPA IFRS 1,78 ; ajusté 2,27"
+},
+"SU.PA|2019-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.39,
+"publie": 2.46,
+"publie_corrige": null,
+"note": "S2 2018 ajusté : S1 ajusté absent"
+},
+"SU.PA|2018-02-15": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.02,
+"publie": 2.13,
+"publie_corrige": null,
+"note": "S2 2017 en IFRS ; BPA ajusté du S1 absent"
+},
+"TEP.PA|2026-07-31": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 7.05,
+"publie": 3.7,
+"publie_corrige": null,
+"note": "BPA ajusté S1 2026 absent ; 3,70 = IFRS"
+},
+"TEP.PA|2026-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 8.25,
+"publie": 4.21,
+"publie_corrige": null,
+"note": "S2 2025 ajusté : S1 ajusté absent ; 4,21 = IFRS"
+},
+"TEP.PA|2025-08-01": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 6.69,
+"publie": 4.19,
+"publie_corrige": null,
+"note": "BPA ajusté S1 2025 absent ; 4,19 = IFRS"
+},
+"TEP.PA|2023-02-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 7.58,
+"publie": 6.2,
+"publie_corrige": null,
+"note": "S2 2022 en IFRS ; BPA ajusté absent"
+},
+"TEP.PA|2022-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.87,
+"publie": 4.6,
+"publie_corrige": null,
+"note": "BPA ajusté absent ; 4,60 = IFRS"
+},
+"TEP.PA|2022-02-18": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.87,
+"publie": 5.05,
+"publie_corrige": null,
+"note": "S2 2021 en IFRS ; BPA ajusté absent"
+},
+"TEP.PA|2021-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.71,
+"publie": 4.31,
+"publie_corrige": null,
+"note": "BPA ajusté absent ; 4,31 = IFRS"
+},
+"TEP.PA|2021-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.09,
+"publie": 4.44,
+"publie_corrige": null,
+"note": "S2 2020 en IFRS ; BPA ajusté absent"
+},
+"TEP.PA|2017-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.39,
+"publie": 1.98,
+"publie_corrige": null,
+"note": "BPA ajusté absent ; 1,98 = IFRS"
+},
+"HO.PA|2026-03-03": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.99,
+"publie": 5.27,
+"publie_corrige": 5.49,
+"note": "S2 2025 ajusté = 9,76-4,27"
+},
+"HO.PA|2025-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.27,
+"publie": 3.22,
+"publie_corrige": null,
+"note": "3,22 = BPA IFRS (ajusté 4,27) face à un attendu de 3,27 : base incertaine"
+},
+"HO.PA|2025-03-04": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.19,
+"publie": 4.48,
+"publie_corrige": null,
+"note": "S2 2024 ajusté = 9,24-4,21 = 5,03 face à un attendu de 4,19 : attendu incohérent"
+},
+"HO.PA|2022-07-21": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.66,
+"publie": 2.14,
+"publie_corrige": 3.41,
+"note": "publié = BPA IFRS ; ajusté 3,41"
+},
+"HO.PA|2022-03-03": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.27,
+"publie": 2.53,
+"publie_corrige": 3.61,
+"note": "S2 2021 ajusté = 6,39-2,78"
+},
+"HO.PA|2021-07-23": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.94,
+"publie": 2.03,
+"publie_corrige": 2.78,
+"note": "publié = BPA IFRS 2,03 ; ajusté 2,78"
+},
+"HO.PA|2021-03-04": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.9,
+"publie": 1.96,
+"publie_corrige": 3.31,
+"note": "S2 2020 ajusté = 4,40-1,09"
+},
+"HO.PA|2020-02-26": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.75,
+"publie": 2.65,
+"publie_corrige": 3.91,
+"note": "S2 2019 ajusté = 6,61-2,70"
+},
+"HO.PA|2019-09-04": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.67,
+"publie": 2.61,
+"publie_corrige": 2.7,
+"note": "BPA ajusté S1 2019 2,70"
+},
+"HO.PA|2019-02-26": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.85,
+"publie": 2.45,
+"publie_corrige": 3.01,
+"note": "S2 2018 ajusté = 5,55-2,54"
+},
+"HO.PA|2017-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.9,
+"publie": 1.58,
+"publie_corrige": 2.0,
+"note": "publié = BPA IFRS 1,58 ; ajusté 2,00"
+},
+"URW.PA|2025-07-31": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 5.28,
+"publie": 4.81,
+"publie_corrige": 5.11,
+"note": "AREPS S1 2025 5,11"
+},
+"VIE.PA|2026-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.53,
+"publie": 0.54,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"VIE.PA|2026-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.59,
+"publie": 0.58,
+"publie_corrige": null,
+"note": "0,58 sans équivalent (BPA courant annuel 2,25)"
+},
+"VIE.PA|2025-11-06": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.53,
+"publie": 0.51,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"VIE.PA|2025-07-31": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.52,
+"publie": 0.81,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"VIE.PA|2025-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.5,
+"publie": 0.53,
+"publie_corrige": null,
+"note": "0,53 sans équivalent (BPA courant annuel 2,13)"
+},
+"VIE.PA|2021-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.29,
+"publie": 0.2893,
+"publie_corrige": null,
+"note": "0,29 sans équivalent (BPA courant S1 2021 0,91)"
+},
+"VIE.PA|2019-02-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.35,
+"publie": 0.33,
+"publie_corrige": null,
+"note": "S2 2018 courant : S1 absent"
+},
+"DG.PA|2021-07-30": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.3,
+"publie": 1.19,
+"publie_corrige": 1.53,
+"note": "publié = 1,19 avec la charge d'impôt différé britannique ; hors cet effet 1,53"
+},
+"DG.PA|2018-02-12": {
+"verdict": "exclu",
+"source": null,
+"estime": null,
+"publie": null,
+"publie_corrige": null,
+"note": "ligne de consensus introuvable"
+},
+"FGR.PA|2019-02-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.2,
+"publie": 6.44,
+"publie_corrige": null,
+"note": "6,44 ≈ BPA annuel face à un attendu semestriel"
+},
+"ADP.PA|2020-02-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.81,
+"publie": 5.39,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"ADP.PA|2019-02-15": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.51,
+"publie": 6.18,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"GET.PA|2026-02-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.56,
+"publie": 0.38,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"GET.PA|2020-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.15,
+"publie": 0.29,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"GET.PA|2019-02-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.19,
+"publie": 0.24,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"AM.PA|2026-07-23": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 7.69,
+"publie": 4.67,
+"publie_corrige": 6.42,
+"note": "publié = BPA IFRS 4,67 ; ajusté 6,42"
+},
+"AM.PA|2025-03-05": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 5.58,
+"publie": 7.84,
+"publie_corrige": null,
+"note": "S2 2024 ajusté 7,84 face à un attendu de 5,58 : attendu incohérent"
+},
+"AM.PA|2023-03-09": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 4.75,
+"publie": 8.62,
+"publie_corrige": 6.17,
+"note": "S2 2022 ajusté = 9,99-3,82"
+},
+"SCR.PA|2024-05-17": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 1.15,
+"publie": 0.99,
+"publie_corrige": 1.1,
+"note": "BPA T1 2024 publié 1,10"
+},
+"SCR.PA|2021-04-28": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": -0.06,
+"publie": 1.25,
+"publie_corrige": null,
+"note": "BPA T1 2021 publié 0,24 ; 1,25 sans équivalent"
+},
+"SCR.PA|2019-02-20": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.37,
+"publie": 0.97,
+"publie_corrige": -0.1,
+"note": "BPA T4 2018 publié -0,10"
+},
+"SCR.PA|2016-02-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.72,
+"publie": 0.81,
+"publie_corrige": null,
+"note": "BPA annuel 3,46 face à des valeurs trimestrielles"
+},
+"IPN.PA|2022-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.87,
+"publie": 4.59,
+"publie_corrige": null,
+"note": "BPA IFRS des activités poursuivies ; BPA des activités absent"
+},
+"IPN.PA|2021-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.75,
+"publie": 3.63,
+"publie_corrige": null,
+"note": "BPA IFRS des activités poursuivies ; BPA des activités absent"
+},
+"IPN.PA|2021-02-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.8,
+"publie": 6.52,
+"publie_corrige": null,
+"note": "rapproché d'une ligne « activités abandonnées » ; BPA des activités absent"
+},
+"IPN.PA|2020-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.48,
+"publie": 2.66,
+"publie_corrige": null,
+"note": "rapproché d'une ligne « activités abandonnées » ; BPA des activités absent"
+},
+"IPN.PA|2020-02-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.46,
+"publie": -3.26,
+"publie_corrige": null,
+"note": "S2 2019 des activités : S1 des activités absent ; -3,26 = IFRS"
+},
+"IPN.PA|2019-07-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.64,
+"publie": 2.59,
+"publie_corrige": null,
+"note": "2,60 = BPA IFRS des activités poursuivies ; BPA des activités absent"
+},
+"IPN.PA|2019-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 3.08,
+"publie": 2.28,
+"publie_corrige": null,
+"note": "S2 2018 des activités : S1 des activités absent"
+},
+"BIM.PA|2026-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.34,
+"publie": 1.99,
+"publie_corrige": null,
+"note": "S2 2025 ajusté : S1 ajusté absent"
+},
+"BIM.PA|2025-09-04": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.19,
+"publie": 1.35,
+"publie_corrige": null,
+"note": "BPA ajusté S1 2025 absent ; 1,35 = IFRS"
+},
+"RCO.PA|2024-11-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.7,
+"publie": 1.79,
+"publie_corrige": null,
+"note": "BNPA hors éléments non récurrents illisible"
+},
+"RCO.PA|2022-06-02": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.43,
+"publie": 1.59,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RCO.PA|2021-06-03": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.57,
+"publie": 1.59,
+"publie_corrige": null,
+"note": "S2 2020-21 hors éléments non récurrents illisible"
+},
+"RCO.PA|2020-11-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.95,
+"publie": 1.24,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RCO.PA|2019-11-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.87,
+"publie": 1.61,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RCO.PA|2019-06-06": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.55,
+"publie": 1.37,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RCO.PA|2018-11-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.75,
+"publie": 1.66,
+"publie_corrige": null,
+"note": "BNPA hors éléments non récurrents S1 2018-19 illisible"
+},
+"FRVIA.PA|2020-02-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.85,
+"publie": 1.78,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"FDJU.PA|2023-02-15": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.85,
+"publie": 1.61,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"FDJU.PA|2022-02-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.69,
+"publie": 0.78,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"FDJU.PA|2021-02-12": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.62,
+"publie": 0.86,
+"publie_corrige": null,
+"note": "aucun BPA dans le texte"
+},
+"RXL.PA|2026-02-12": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.33,
+"publie": 1.16,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"RXL.PA|2025-07-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.47,
+"publie": 0.88,
+"publie_corrige": null,
+"note": "BPA récurrent absent ; 0,88 = IFRS"
+},
+"RXL.PA|2025-02-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.35,
+"publie": -0.04,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"RXL.PA|2021-02-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.36,
+"publie": 0.59,
+"publie_corrige": null,
+"note": "S2 2020 en IFRS ; BPA récurrent absent"
+},
+"RXL.PA|2019-10-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.27,
+"publie": 0.29,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RXL.PA|2019-04-30": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.19,
+"publie": 0.24,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"NEX.PA|2021-02-17": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.65,
+"publie": 2.93,
+"publie_corrige": null,
+"note": "S2 2020 : 2,93 sans équivalent (année 1,80)"
+},
+"NEX.PA|2019-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1,
+"publie": -0.6,
+"publie_corrige": null,
+"note": "S2 2018 : S1 absent ; -0,60 = IFRS"
+},
+"AMUN.PA|2020-07-31": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.11,
+"publie": 1.15,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"AKE.PA|2016-03-03": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.82,
+"publie": 0.38,
+"publie_corrige": null,
+"note": "0,38 = BPA IFRS du T4 ; BPA courant trimestriel absent"
+},
+"ATO.PA|2021-02-18": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.99,
+"publie": 2.02,
+"publie_corrige": 3.72,
+"note": "S2 2020 normalisé = 6,65-2,93"
+},
+"ATO.PA|2020-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.54,
+"publie": 3.02,
+"publie_corrige": null,
+"note": "S1 2020 normalisé 2,93 face à un attendu de 4,54 : attendu incohérent"
+},
+"ATO.PA|2019-02-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.48,
+"publie": 3.77,
+"publie_corrige": null,
+"note": "S2 2018 normalisé : S1 normalisé absent"
+},
+"AYV.PA|2026-07-31": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.3,
+"publie": 0.28,
+"publie_corrige": 0.3,
+"note": "BPA T2 2026 publié 0,30"
+},
+"AYV.PA|2026-07-30": {
+"verdict": "corrige",
+"source": "yahoo_recent",
+"estime": 0.2968,
+"publie": 0.2822,
+"publie_corrige": 0.3,
+"note": "BPA T2 2026 publié 0,30"
+},
+"AYV.PA|2024-08-01": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.18,
+"publie": 0.24,
+"publie_corrige": 0.21,
+"note": "BPA T2 2024 publié 0,21"
+},
+"AYV.PA|2022-05-05": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.58,
+"publie": 0.6331,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"COV.PA|2026-07-21": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.48,
+"publie": 2.33,
+"publie_corrige": 2.55,
+"note": "résultat net récurrent (EPRA ajusté) S1 2026 2,55"
+},
+"COV.PA|2026-02-19": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.2,
+"publie": 3.86,
+"publie_corrige": 2.37,
+"note": "S2 2025 récurrent = 4,75-2,38"
+},
+"COV.PA|2020-07-22": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.46,
+"publie": 2.06,
+"publie_corrige": 2.17,
+"note": "EPRA Earnings S1 2020 2,17"
+},
+"COV.PA|2020-02-14": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.95,
+"publie": 4.45,
+"publie_corrige": 2.68,
+"note": "S2 2019 EPRA = 5,31-2,63"
+},
+"COV.PA|2019-07-24": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.85,
+"publie": 4.09,
+"publie_corrige": 2.63,
+"note": "EPRA Earnings S1 2019 2,63"
+},
+"COV.PA|2019-02-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.73,
+"publie": 3.78,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ELIOR.PA|2025-11-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.14,
+"publie": 0.17,
+"publie_corrige": null,
+"note": "BNPA ajusté illisible"
+},
+"ELIOR.PA|2025-05-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.23,
+"publie": 0.17,
+"publie_corrige": null,
+"note": "0,17 = BPA IFRS ; BNPA ajusté absent"
+},
+"ELIOR.PA|2022-11-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.33,
+"publie": -0.93,
+"publie_corrige": null,
+"note": "BNPA ajusté absent ; -0,93 sans équivalent"
+},
+"ELIOR.PA|2019-05-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.34,
+"publie": 0.19,
+"publie_corrige": null,
+"note": "BPA ajusté S1 0,18 face à un attendu de 0,34 : attendu incohérent"
+},
+"ELIOR.PA|2018-05-29": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.39,
+"publie": 0.21,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"GFC.PA|2026-07-23": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.25,
+"publie": -0.17,
+"publie_corrige": 3.43,
+"note": "RRN S1 2026 3,43 ; -0,17 = IFRS"
+},
+"GFC.PA|2026-02-11": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.59,
+"publie": 2.14,
+"publie_corrige": 3.3,
+"note": "S2 2025 RRN = 6,68-3,38"
+},
+"GFC.PA|2025-07-24": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 3.45,
+"publie": 1.95,
+"publie_corrige": 3.38,
+"note": "RRN S1 2025 3,38"
+},
+"GFC.PA|2021-07-23": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.7,
+"publie": 5.19,
+"publie_corrige": 2.75,
+"note": "RRN S1 2021 2,75"
+},
+"GFC.PA|2021-02-19": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.74,
+"publie": -2.5,
+"publie_corrige": 2.78,
+"note": "S2 2020 RRN = 5,72-2,94"
+},
+"GFC.PA|2020-07-24": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.89,
+"publie": 4.6,
+"publie_corrige": 2.94,
+"note": "RRN S1 2020 2,94"
+},
+"GTT.PA|2026-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 6.35,
+"publie": 6.28,
+"publie_corrige": null,
+"note": "BPA illisible"
+},
+"GTT.PA|2022-10-28": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.68,
+"publie": 0.66,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"GTT.PA|2015-04-15": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 1.13,
+"publie": 0.52,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"ICAD.PA|2026-02-18": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.34,
+"publie": -0.41,
+"publie_corrige": null,
+"note": "S2 2025 CFNC : CFNC Groupe du S1 absent"
+},
+"ICAD.PA|2025-07-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.39,
+"publie": -1.21,
+"publie_corrige": null,
+"note": "CFNC Groupe S1 2025 absent ; -1,21 = IFRS"
+},
+"ICAD.PA|2022-07-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.74,
+"publie": 4.63,
+"publie_corrige": null,
+"note": "4,63 = BPA IFRS ; CFNC absent"
+},
+"ICAD.PA|2019-02-18": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.79,
+"publie": 2.11,
+"publie_corrige": null,
+"note": "S2 2018 CFNC : S1 absent"
+},
+"LI.PA|2026-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.4,
+"publie": 2.39,
+"publie_corrige": null,
+"note": "CFNC S1 2026 absent ; 2,39 sans équivalent"
+},
+"LI.PA|2026-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.27,
+"publie": 2.38,
+"publie_corrige": null,
+"note": "S2 2025 CFNC : S1 absent"
+},
+"LI.PA|2025-07-31": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.28,
+"publie": 2.15,
+"publie_corrige": null,
+"note": "CFNC S1 2025 absent"
+},
+"LI.PA|2022-07-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.18,
+"publie": 1.03,
+"publie_corrige": 1.32,
+"note": "CFNC S1 2022 1,32"
+},
+"LI.PA|2022-02-17": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.28,
+"publie": 1.52,
+"publie_corrige": 1.46,
+"note": "S2 2021 CFNC = 2,18-0,72"
+},
+"LI.PA|2020-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.8,
+"publie": -0.57,
+"publie_corrige": null,
+"note": "CFNC S1 2020 1,37 face à un attendu de 0,80 : attendu incohérent"
+},
+"MMT.PA|2023-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.06,
+"publie": 1.27,
+"publie_corrige": null,
+"note": "BPA annuel absent de l'extrait"
+},
+"MMT.PA|2020-02-14": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.72,
+"publie": 1.38,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"MMT.PA|2019-02-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.69,
+"publie": 1.38,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"MEDCL.PA|2025-12-10": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.16,
+"publie": -0.18,
+"publie_corrige": null,
+"note": "BPA S1 2025-26 -0,49 ; -0,18 sans équivalent"
+},
+"MERY.PA|2023-02-15": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.56,
+"publie": 0.46,
+"publie_corrige": 0.52,
+"note": "S2 2022 FFO = 1,13-0,61"
+},
+"MERY.PA|2022-02-15": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.45,
+"publie": 0.67,
+"publie_corrige": 0.5,
+"note": "S2 2021 FFO = 1,10-0,60"
+},
+"MERY.PA|2021-07-29": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.51,
+"publie": 0.34,
+"publie_corrige": 0.6,
+"note": "FFO S1 2021 0,60"
+},
+"MERY.PA|2021-02-16": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.5,
+"publie": 0.94,
+"publie_corrige": 0.35,
+"note": "S2 2020 FFO = 1,04-0,69"
+},
+"MERY.PA|2020-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.43,
+"publie": 0.36,
+"publie_corrige": null,
+"note": "FFO S1 2020 0,69 face à un attendu de 0,43 : attendu incohérent"
+},
+"MERY.PA|2020-02-13": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.63,
+"publie": 0.98,
+"publie_corrige": 0.66,
+"note": "S2 2019 FFO = 1,35-0,69"
+},
+"MERY.PA|2019-07-25": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.65,
+"publie": 0.41,
+"publie_corrige": 0.69,
+"note": "FFO S1 2019 0,69"
+},
+"MERY.PA|2019-02-14": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.63,
+"publie": 0.88,
+"publie_corrige": 0.6,
+"note": "S2 2018 FFO = 1,25-0,65"
+},
+"MERY.PA|2017-07-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.65,
+"publie": 0.55,
+"publie_corrige": 0.65,
+"note": "FFO S1 2017 0,65"
+},
+"OPM.PA|2023-02-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.46,
+"publie": 0.44,
+"publie_corrige": null,
+"note": "S2 2022 : S1 absent"
+},
+"OPM.PA|2021-02-18": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.8,
+"publie": 1.05,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"OPM.PA|2017-07-21": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.18,
+"publie": 1.41,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"RUI.PA|2022-03-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.23,
+"publie": 1.56,
+"publie_corrige": null,
+"note": "S2 2021 : 1,56 sans équivalent (année 1,75)"
+},
+"SESG.PA|2024-11-07": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.01,
+"publie": 0,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"SW.PA|2025-04-04": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 4.09,
+"publie": 2.94,
+"publie_corrige": null,
+"note": "rapproché d'une ligne « activités non poursuivies » ; BPA ajusté absent"
+},
+"SW.PA|2022-04-01": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.21,
+"publie": 2.27,
+"publie_corrige": 2.32,
+"note": "BPA ajusté S1 2022 2,32"
+},
+"SW.PA|2021-10-27": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.37,
+"publie": 0.72,
+"publie_corrige": 1.5,
+"note": "S2 2020-21 ajusté = 2,37-0,87"
+},
+"SW.PA|2021-04-01": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.13,
+"publie": 0.22,
+"publie_corrige": null,
+"note": "0,22 = BPA IFRS (ajusté 0,87) face à un attendu de 0,13 : attendu incohérent"
+},
+"SW.PA|2019-11-07": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.26,
+"publie": 2.04,
+"publie_corrige": null,
+"note": "S2 2018-19 ajusté : S1 ajusté absent"
+},
+"SW.PA|2019-04-11": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.81,
+"publie": 2.46,
+"publie_corrige": null,
+"note": "BPA ajusté S1 2018-19 absent ; 2,46 = IFRS dilué"
+},
+"SW.PA|2018-11-08": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 2.16,
+"publie": 1.86,
+"publie_corrige": 2.1,
+"note": "S2 2017-18 ajusté = 4,77-2,67"
+},
+"SOI.PA|2026-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": -0.34,
+"publie": -0.02,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"SOI.PA|2026-02-04": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.31,
+"publie": -0.09,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"SOI.PA|2025-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.5,
+"publie": -0.24,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"SOI.PA|2025-02-06": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.98,
+"publie": 0.51,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"SOI.PA|2023-07-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.26,
+"publie": 0.2616,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"SOI.PA|2019-06-13": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.62,
+"publie": 1.74,
+"publie_corrige": null,
+"note": "S2 2018-19 : BPA annuel absent"
+},
+"TE.PA|2026-02-26": {
+"verdict": "corrige",
+"source": "yahoo_recent",
+"estime": 0.6016,
+"publie": 0.46,
+"publie_corrige": 0.48,
+"note": "T4 2025 = année 2,04 - 9M 1,56"
+},
+"TE.PA|2025-08-01": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.5924,
+"publie": 0.5538,
+"publie_corrige": 0.49,
+"note": "T2 2025 = S1 1,06 - T1 0,57"
+},
+"TE.PA|2025-02-27": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.53,
+"publie": 0.61,
+"publie_corrige": 0.64,
+"note": "T4 2024 = année 2,17 - 9M 1,53"
+},
+"TE.PA|2022-10-20": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.36,
+"publie": 0.51,
+"publie_corrige": 0.47,
+"note": "T3 2022 = 9M 1,14 - S1 0,67"
+},
+"TE.PA|2022-07-28": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.26,
+"publie": 0.33,
+"publie_corrige": 0.29,
+"note": "T2 2022 = S1 0,67 - T1 0,38"
+},
+"TE.PA|2022-04-25": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.36,
+"publie": 0.41,
+"publie_corrige": 0.38,
+"note": "BPA dilué T1 2022 publié 0,38"
+},
+"TE.PA|2022-03-03": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.36,
+"publie": 0.51,
+"publie_corrige": 0.44,
+"note": "T4 2021 = année 1,36 - 9M 0,92"
+},
+"TE.PA|2021-10-21": {
+"verdict": "corrige",
+"source": "yahoo",
+"estime": 0.41,
+"publie": 0.33,
+"publie_corrige": 0.3,
+"note": "T3 2021 = 9M 0,92 - S1 0,62"
+},
+"TE.PA|2021-02-26": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.38,
+"publie": 0.3775,
+"publie_corrige": 0.32,
+"note": "T4 2020 ajusté = année 1,15 - 9M 0,83"
+},
+"UBI.PA|2019-05-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.98,
+"publie": -0.35,
+"publie_corrige": null,
+"note": "S2 2018-19 non-IFRS = 2,80-1,32 = 1,48 face à un attendu de 1,98 : attendu incohérent"
+},
+"FR.PA|2026-07-23": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.3095,
+"publie": 0.2555,
+"publie_corrige": null,
+"note": "BPA S1 2026 = 0,43 ; 0,26 sans équivalent"
+},
+"FR.PA|2026-04-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.3443,
+"publie": 0.2978,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2026-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.4873,
+"publie": 0.2443,
+"publie_corrige": null,
+"note": "BPA annuel absent de l'extrait"
+},
+"FR.PA|2025-07-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.3249,
+"publie": 0.42,
+"publie_corrige": null,
+"note": "0,42 sans équivalent lisible"
+},
+"FR.PA|2024-10-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.3634,
+"publie": 0.2994,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2022-10-28": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.33,
+"publie": 0.56,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2022-04-27": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.34,
+"publie": -0.1,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2020-10-27": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": -1.05,
+"publie": -0.2,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2019-10-25": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.74,
+"publie": 0.32,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2019-04-26": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.5,
+"publie": 0.37,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2019-02-22": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.44,
+"publie": 0.396,
+"publie_corrige": null,
+"note": "BPA hors éléments non récurrents illisible"
+},
+"FR.PA|2018-04-26": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.88,
+"publie": 0.8246,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"FR.PA|2017-10-25": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.95,
+"publie": 0.9208,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VK.PA|2020-07-30": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": -8.13,
+"publie": -2.62,
+"publie_corrige": null,
+"note": "BPA S1 2020 -49,60 € (après regroupement) ; -2,62 sans équivalent"
+},
+"VLA.PA|2026-02-19": {
+"verdict": "exclu",
+"source": "yahoo_recent",
+"estime": -0.125,
+"publie": -0.2848,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VLA.PA|2021-11-18": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 1.24,
+"publie": -0.95,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VRLA.PA|2023-02-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.38,
+"publie": 1.43,
+"publie_corrige": null,
+"note": "S2 2022 hors amortissement des relations clients : S1 absent"
+},
+"VIRI.PA|2026-02-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.16,
+"publie": 3.48,
+"publie_corrige": null,
+"note": "S2 2025 : 3,48 sans équivalent"
+},
+"VIRI.PA|2025-10-31": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": -2.65,
+"publie": 5.69,
+"publie_corrige": null,
+"note": "BPA T3 2025 2,57 ; 5,69 sans équivalent"
+},
+"VIV.PA|2025-03-07": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.0925,
+"publie": -0.0925,
+"publie_corrige": null,
+"note": "signe du BPA S2 2024 incohérent avec l'attendu"
+},
+"VIV.PA|2023-10-20": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.28,
+"publie": 0.2811,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VIV.PA|2023-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.35,
+"publie": 0.3513,
+"publie_corrige": 0.32,
+"note": "résultat net ajusté par action S1 2023 0,32"
+},
+"VIV.PA|2023-04-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.35,
+"publie": 0.3513,
+"publie_corrige": null,
+"note": "même ligne que le S1 2023, rapprochée d'un communiqué du T1 sans BPA"
+},
+"VIV.PA|2021-10-22": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.27,
+"publie": 0.27,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VIV.PA|2021-04-23": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.33,
+"publie": 0.23,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VIV.PA|2020-10-21": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.22,
+"publie": 0.21,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VIV.PA|2019-10-18": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.25,
+"publie": 0.22,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VIV.PA|2019-04-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.19,
+"publie": 0.1778,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"VIV.PA|2019-04-15": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.19,
+"publie": 0.18,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"WLN.PA|2025-07-30": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 32.34,
+"publie": -15.05,
+"publie_corrige": null,
+"note": "BPA normalisé S1 2025 0,43 ; attendu et publié sur une autre base d'actions, incohérents"
+},
+"WLN.PA|2021-04-21": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 40.0,
+"publie": 16.0,
+"publie_corrige": null,
+"note": "communiqué de chiffre d'affaires, sans BPA"
+}
+}
+}

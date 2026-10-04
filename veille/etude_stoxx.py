@@ -25,6 +25,7 @@ Bibliotheque standard uniquement.
 """
 
 import datetime as dt
+import re
 import json
 import math
 import os
@@ -131,11 +132,27 @@ def instant_local(p, regime):
     return d.replace(hour=22 if regime == "apres" else 7)
 
 
+# Communiques qui ne sont pas les resultats de l'entreprise elle-meme :
+# filiales cotees publiees sous le nom du groupe (Anglo American Platinum,
+# Kumba Iron Ore), assemblees de porteurs d'obligations.
+PAS_LES_RESULTATS = re.compile(r"anglo american platinum|kumba iron ore|bondholder", re.I)
+DOUBLON_JOURS = 4  # jours calendaires : correction ou remplacement du meme communique
+
+
 def evenements(doc, cal, series, perspectives, reg):
     evts, en_attente, sans_cours = [], 0, 0
     for ticker, fiche in doc["entreprises"].items():
         cloture = CLOTURES.get(fiche["pays"], CLOTURE_DEFAUT)
-        for p in fiche["publications"]:
+        derniere = None
+        for p in sorted(fiche["publications"], key=lambda x: x["publie_le"]):
+            if PAS_LES_RESULTATS.search(p.get("titre") or ""):
+                continue
+            # Correction, remplacement ou rapport publie quelques jours apres :
+            # la publication ne compte qu'une fois (la premiere).
+            d = dt.date.fromisoformat(p["publie_le"][:10])
+            if derniere is not None and (d - derniere).days <= DOUBLON_JOURS:
+                continue
+            derniere = d
             t = instant_local(p, reg[ticker][0])
             jour = cal.reaction(t, cloture)
             if jour is None:

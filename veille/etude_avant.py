@@ -17,6 +17,13 @@ statistiques.json ; Etats-Unis : communiques_usa.json) :
 "ensuite" (aussi par entreprise) : rendement moyen des 20 seances avant la reaction et de la seance
 de reaction, selon que le cours a monte ou baisse ce jour-la.
 
+"consensus" (France seulement, seule zone ou le consensus du chiffre
+d'affaires est connu) : P(hausse) selon l'ecart du BPA publie au consensus
+(lignes) et celui du chiffre d'affaires (colonnes), publications ou les deux
+sont connus (surprise_bpa_pct et surprise_ca_pct de statistiques.json) ; une
+grille detaillee (9 tranches : bornes +-2, 5, 10 et 15 %) puis une grille 3 x 3
+par seuil (au-dessus, conforme, en dessous).
+
 Les tableaux sont aussi donnes par grand secteur (secteurs.py).
 
 Ecrit test_avant.json. Aucun reseau : lit les cours deja en cache
@@ -41,11 +48,34 @@ AVANT = 20  # seances du "cours recent" de l'encadre Avant / jour J
 # Bornes basses (incluses) des tranches de R[N], en %.
 BORNES = (-10, -5, -2, 2, 5, 10)
 LIBELLES = ("< −10 %", "−10 à −5 %", "−5 à −2 %", "−2 à 2 %", "2 à 5 %", "5 à 10 %", "> 10 %")
+# Ecart au consensus (BPA et chiffre d'affaires) : grille detaillee, puis un
+# seuil a la fois.
+BORNES_CONSENSUS = (-15, -10, -5, -2, 2, 5, 10, 15)
+LIBELLES_CONSENSUS = ("< −15 %", "−15 à −10 %", "−10 à −5 %", "−5 à −2 %", "−2 à 2 %", "2 à 5 %", "5 à 10 %",
+                      "10 à 15 %", "> 15 %")
+SEUILS_CONSENSUS = (2, 5, 10, 15)
 
 
 def tranche(r):
     """Indice de la tranche de R (en %) : bornes basses incluses."""
     return bisect.bisect_right(BORNES, r)
+
+
+def grilles_consensus(couples):
+    """couples = [(ecart BPA %, ecart CA %, hausse)] : grille detaillee puis
+    une grille 3 x 3 par seuil ; cases[i][j] = BPA dans la tranche i, CA dans
+    la tranche j (n, hausses)."""
+    def grille(seuil, bornes, libelles):
+        cases = [[{"n": 0, "hausses": 0} for _ in libelles] for _ in libelles]
+        for bpa, ca, hausse in couples:
+            c = cases[bisect.bisect_right(bornes, bpa)][bisect.bisect_right(bornes, ca)]
+            c["n"] += 1
+            c["hausses"] += hausse
+        return {"seuil": seuil, "libelles": list(libelles), "cases": cases}
+
+    return {"n": len(couples), "hausses": sum(h for _, _, h in couples),
+            "grilles": [grille(None, BORNES_CONSENSUS, LIBELLES_CONSENSUS)]
+            + [grille(t, (-t, t), (f"< −{t} %", f"±{t} %", f"> {t} %")) for t in SEUILS_CONSENSUS]}
 
 
 def charger_cours(ticker):
@@ -102,6 +132,7 @@ def etudier(entreprises):
     # Cours recent (R[20]) et reaction du jour, moyennes selon le sens.
     ensuite = nouvelle_ensuite()
     par_ticker = {}
+    couples = []  # (ecart BPA, ecart CA, hausse) face au consensus
     cours, sans_cours = {}, set()
     for e in entreprises:
         t = e["ticker"]
@@ -118,6 +149,8 @@ def etudier(entreprises):
                 continue
             s = dates_index(t, dates)[ev["jour"]]
             hausse = rea > 0
+            if ev.get("surprise_bpa_pct") is not None and ev.get("surprise_ca_pct") is not None:
+                couples.append((ev["surprise_bpa_pct"], ev["surprise_ca_pct"], int(hausse)))
             total["n"] += 1
             total["hausses" if hausse else "baisses"] += 1
             if s - 1 - AVANT >= 0:
@@ -137,11 +170,14 @@ def etudier(entreprises):
     for h in HORIZONS:
         for c in cases[h]:
             c["reaction_moyenne_pct"] = round(c.pop("somme_reaction_pct") / c["n"], 2) if c["n"] else None
-    return {"n": total["n"], "hausses": total["hausses"], "baisses": total["baisses"], "ensuite": moyennes(ensuite),
+    res = {"n": total["n"], "hausses": total["hausses"], "baisses": total["baisses"], "ensuite": moyennes(ensuite),
             "entreprises": {t: moyennes(x) for t, x in par_ticker.items() if x["hausse"]["n"] + x["baisse"]["n"]},
             "horizons": [{"seances": h, "tranches": [{"libelle": LIBELLES[i], **c}
                                                       for i, c in enumerate(cases[h])]} for h in HORIZONS],
             "sans_cours": sorted(sans_cours)}
+    if couples:
+        res["consensus"] = grilles_consensus(couples)
+    return res
 
 
 def etudier_zone(histo):
@@ -180,7 +216,8 @@ def main():
         f.write("\n")
     for zone, z in zones.items():
         print(f"test_avant.json : {zone} {z['n']} publications ({z['hausses']} hausses), "
-              f"{len(z['secteurs'])} secteurs, cours manquants : {len(z['sans_cours'])}.")
+              f"{len(z['secteurs'])} secteurs, cours manquants : {len(z['sans_cours'])}"
+              + (f", BPA et CA face au consensus : {z['consensus']['n']}." if "consensus" in z else "."))
 
 
 if __name__ == "__main__":

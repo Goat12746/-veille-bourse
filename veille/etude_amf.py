@@ -52,6 +52,11 @@ HISTORIQUE_BPA_INVESTING = _historique("consensus_bpa_investing.json")
 # (Investing.com, releve a la main ; lignes ou l'attendu egale le publie et
 # periodes melangees ecartees).
 HISTORIQUE_CA = _historique("consensus_ca_historique.json")
+# BPA publié vérifié dans les communiqués ("ticker|jour" : corrige = BPA ajusté
+# du communiqué à la place de celui de Yahoo ou d'Investing, exclu = écart
+# inutilisable : BPA comptable face à un consensus ajusté sans ajusté connu,
+# chiffre d'affaires seul, attendu incohérent...).
+BPA_VERIFIE = _historique("bpa_verifie.json").get("publications", {})
 AVANT = 20  # seances avant la publication (le cours "recent")
 SUITE = 5  # seances apres la reaction (la baisse ou la hausse se prolonge-t-elle ?)
 UN_AN = 250  # seances de l'evolution sur 12 mois face a l'indice
@@ -161,7 +166,27 @@ def construire_evenements(communiques, classes, referentiel, cal, series):
     jours = {}
     for ev in evts:
         jours.setdefault(ev["ticker"], set()).add(ev["jour"])
-    return evts, jours, en_attente
+    return sans_doublons(evts), jours, en_attente
+
+
+DOUBLON_JOURS = 4  # jours calendaires
+
+
+def sans_doublons(evts):
+    """Une publication de resultats suivie, quelques jours plus tard, de la
+    mise en ligne du rapport financier (ou du communique en anglais) ne compte
+    qu'une fois : on garde la premiere seance de reaction. Le jour ecarte reste
+    exclu de la base "jour ordinaire"."""
+    derniere, garde = {}, []
+    for ev in sorted(evts, key=lambda x: (x["ticker"], x["jour"])):
+        if ev["categorie"] == "resultats":
+            j = dt.date.fromisoformat(ev["jour"])
+            avant = derniere.get(ev["ticker"])
+            derniere[ev["ticker"]] = j
+            if avant is not None and (j - avant).days <= DOUBLON_JOURS:
+                continue
+        garde.append(ev)
+    return garde
 
 
 def mesurer(ev, serie, premier):
@@ -249,6 +274,21 @@ def enrichir(evts, positions, consensus):
                     continue
                 ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
                 ev["surprise"] = jour_j.position_consensus(publie, estime)
+        # Verification dans les communiques (le jugement de Claude, s'il existe, reste).
+        for ev in v:
+            verif = BPA_VERIFIE.get(f"{ticker}|{ev['jour']}")
+            if verif is None or ev.get("surprise_bpa_pct") is None:
+                continue
+            claude = ev.get("consensus") in SURPRISES
+            if verif["verdict"] == "exclu":
+                ev.pop("surprise_bpa_pct")
+                if not claude:
+                    ev.pop("surprise", None)
+            elif verif["verdict"] == "corrige" and verif.get("estime"):
+                estime, publie = verif["estime"], verif["publie_corrige"]
+                ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+                if not claude:
+                    ev["surprise"] = jour_j.position_consensus(publie, estime)
         # Chiffre d'affaires face au consensus (memes seuils que le BPA).
         for ev, (_, estime, publie) in _rapprocher([x for x in v if x["categorie"] == "resultats"],
                                                    HISTORIQUE_CA.get(ticker)):
@@ -578,7 +618,7 @@ def _evenement_public(x):
     """Publication de resultats telle qu'affichee dans l'application."""
     cles = ["jour", "periode", "titre", "perspectives", "attentes", "exceptionnel", "actionnaires", "avant_pct", "z_avant", "perf_12m_pct", "rendement_pct", "ecart_pct", "z",
             "suite_pct",
-            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "revision_30j_pct", "objectifs_vs"]
+            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "surprise_ca_pct", "revision_30j_pct", "objectifs_vs"]
     # Sans les valeurs nulles ni fausses (l'application les lit par defaut) :
     # le fichier reste leger malgre des milliers de publications.
     ev = {k: x[k] for k in cles if x.get(k) is not None and x.get(k) is not False}
