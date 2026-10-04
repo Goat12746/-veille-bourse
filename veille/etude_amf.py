@@ -410,6 +410,27 @@ def concordance_consensus(v):
             "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
 
 
+SEUILS_AUTRES = (2, 10, 15)  # autres matrices : meme etude avec un ecart de plus de 2, 10 ou 15 %
+
+
+def avec_surprise(v, seuil):
+    """Publications dont l'ecart du BPA est connu (surprise_bpa_pct), avec
+    leur position face au consensus au seuil donne (champ surprise<seuil>)."""
+    sortie = []
+    for x in v:
+        e = x.get("surprise_bpa_pct")
+        if e is None:
+            continue
+        x[f"surprise{seuil}"] = "positive" if e > seuil else "negative" if e < -seuil else "conforme"
+        sortie.append(x)
+    return sortie
+
+
+def matrices_seuils(v):
+    """{"matrice_consensus2": ..., "matrice_consensus10": ..., ...}"""
+    return {f"matrice_consensus{t}": matrice(avec_surprise(v, t), f"surprise{t}") for t in SEUILS_AUTRES}
+
+
 def matrice(v, cle="surprise", valeurs=POSITIONS_CONSENSUS):
     """Scenarios : position face au consensus x reaction, nombre, ecart moyen
     a l'indice sur les 20 seances avant, le jour de la reaction et les 5
@@ -613,6 +634,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         "mouvements": mouvements(res),
         # Scenarios face au consensus des analystes (historique du meme marche).
         "matrice_consensus": matrice([x for x in res if x.get("surprise")]),
+        **matrices_seuils(res),
         "concordance": concordance_consensus(res),
         "par_periode": par_valeur(res, "periode",
                                   ["annuels", "semestriels", "trimestriels", "chiffre_affaires", "autres"]),
@@ -653,6 +675,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
             "categories": [dict(mouvements(w), **sens_reaction(w), id=cid)
                            for cid in ORDRE for w in [[x for x in v if x["categorie"] == cid]] if w],
             "resultats": {"n": len(r), "matrice_consensus": matrice([x for x in r if x.get("surprise")]),
+                          **matrices_seuils(r),
                           "concordance": concordance_consensus(r),
                           "mouvements": mouvements(r),
                           # Propres a l'entreprise (peu de cas au debut : se

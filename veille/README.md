@@ -46,7 +46,7 @@ statistiques.json et scores.json à l'adresse configurée
 | `statistiques.py` | Étude d'événements : réaction des cours aux alertes (écart au CAC 40 corrigé du bêta, en σ), points, tests ; référence sur l'historique des communiqués AMF depuis 2019. Sans IA. |
 | `statistiques.json` | Résultats lus par l'onglet Statistiques (aussi intégré à l'APK). |
 | `communiques.py` | Communiqués AMF du CAC 40 et du SBF 120 depuis 2019 (`communiques.json`) ; avis de Claude sur les publications de résultats (`resultats_classes.json`). |
-| `etude_amf.py` | Étude de la réaction des cours aux communiqués : scénarios des résultats, facteurs, prévision (appelée par `statistiques.py`). |
+| `etude_amf.py` | Étude de la réaction des cours aux communiqués : scénarios des résultats (au seuil de 5 % et, pour ±2, ±10 et ±15 %, `matrice_consensus2/10/15`), facteurs, prévision (appelée par `statistiques.py`). |
 | `consensus.py` | Relevé quotidien du consensus des analystes (Yahoo) : BPA et chiffre d'affaires attendus, révisions, surprises (`consensus.json`, historique gratuit limité à 90 jours et 4 trimestres, puis construit jour après jour). |
 | `avant_ouverture.py` | Résultats publiés depuis la dernière clôture : part de hausse historique selon le consensus et les perspectives, pour les alertes de résultats de la veille du matin (avant 9 h). |
 | `objectifs.py` | Objectifs de cours des analystes (`objectifs.json`) : relevé quotidien Yahoo (moyen, médian, haut, bas, note, recommandations) ; historique de l'objectif moyen depuis 2021 lu une fois dans le graphique de la page Consensus de Zonebourse (S&P Global Market Intelligence), à relancer à la main pour une entreprise ajoutée au référentiel. |
