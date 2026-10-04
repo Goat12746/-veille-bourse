@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-04T18:14:01+02:00",
+ "genere_le": "2026-10-04T22:01:08+02:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -2123,6 +2123,218 @@
     "ecart_moyen_positif_pct": 1.12,
     "ecart_moyen_negatif_pct": -0.46
    },
+   "n_consensus_ca": 1290,
+   "n_entreprises_ca": 105,
+   "matrice_consensus_ca": {
+    "positive": {
+     "hausse": {
+      "n": 127,
+      "avant_moyen_pct": 0.86,
+      "ecart_moyen_pct": 4.48,
+      "suite_moyenne_pct": -0.13
+     },
+     "baisse": {
+      "n": 62,
+      "avant_moyen_pct": -0.12,
+      "ecart_moyen_pct": -2.9,
+      "suite_moyenne_pct": -0.91
+     },
+     "n": 189,
+     "part_hausse": 0.672
+    },
+    "conforme": {
+     "hausse": {
+      "n": 541,
+      "avant_moyen_pct": -0.04,
+      "ecart_moyen_pct": 3.78,
+      "suite_moyenne_pct": 0.08
+     },
+     "baisse": {
+      "n": 425,
+      "avant_moyen_pct": 0.42,
+      "ecart_moyen_pct": -3.83,
+      "suite_moyenne_pct": -0.08
+     },
+     "n": 966,
+     "part_hausse": 0.56
+    },
+    "negative": {
+     "hausse": {
+      "n": 62,
+      "avant_moyen_pct": -0.45,
+      "ecart_moyen_pct": 5.17,
+      "suite_moyenne_pct": -0.02
+     },
+     "baisse": {
+      "n": 71,
+      "avant_moyen_pct": -0.79,
+      "ecart_moyen_pct": -4.57,
+      "suite_moyenne_pct": -0.47
+     },
+     "n": 133,
+     "part_hausse": 0.466
+    }
+   },
+   "matrice_consensus_ca2": {
+    "positive": {
+     "hausse": {
+      "n": 245,
+      "avant_moyen_pct": 0.79,
+      "ecart_moyen_pct": 4.23,
+      "suite_moyenne_pct": -0.24
+     },
+     "baisse": {
+      "n": 122,
+      "avant_moyen_pct": 0.17,
+      "ecart_moyen_pct": -2.97,
+      "suite_moyenne_pct": -0.7
+     },
+     "n": 367,
+     "part_hausse": 0.668
+    },
+    "conforme": {
+     "hausse": {
+      "n": 361,
+      "avant_moyen_pct": -0.14,
+      "ecart_moyen_pct": 3.78,
+      "suite_moyenne_pct": 0.17
+     },
+     "baisse": {
+      "n": 293,
+      "avant_moyen_pct": 0.47,
+      "ecart_moyen_pct": -3.61,
+      "suite_moyenne_pct": -0.01
+     },
+     "n": 654,
+     "part_hausse": 0.552
+    },
+    "negative": {
+     "hausse": {
+      "n": 124,
+      "avant_moyen_pct": -0.66,
+      "ecart_moyen_pct": 4.32,
+      "suite_moyenne_pct": 0.19
+     },
+     "baisse": {
+      "n": 143,
+      "avant_moyen_pct": -0.31,
+      "ecart_moyen_pct": -4.97,
+      "suite_moyenne_pct": -0.26
+     },
+     "n": 267,
+     "part_hausse": 0.464
+    }
+   },
+   "matrice_consensus_ca10": {
+    "positive": {
+     "hausse": {
+      "n": 47,
+      "avant_moyen_pct": 2.19,
+      "ecart_moyen_pct": 4.65,
+      "suite_moyenne_pct": -0.57
+     },
+     "baisse": {
+      "n": 32,
+      "avant_moyen_pct": -0.94,
+      "ecart_moyen_pct": -3.25,
+      "suite_moyenne_pct": -0.44
+     },
+     "n": 79,
+     "part_hausse": 0.595
+    },
+    "conforme": {
+     "hausse": {
+      "n": 652,
+      "avant_moyen_pct": 0.05,
+      "ecart_moyen_pct": 3.93,
+      "suite_moyenne_pct": 0.12
+     },
+     "baisse": {
+      "n": 490,
+      "avant_moyen_pct": 0.28,
+      "ecart_moyen_pct": -3.91,
+      "suite_moyenne_pct": -0.2
+     },
+     "n": 1142,
+     "part_hausse": 0.571
+    },
+    "negative": {
+     "hausse": {
+      "n": 31,
+      "avant_moyen_pct": -2.52,
+      "ecart_moyen_pct": 4.92,
+      "suite_moyenne_pct": -0.91
+     },
+     "baisse": {
+      "n": 36,
+      "avant_moyen_pct": 0.14,
+      "ecart_moyen_pct": -3.06,
+      "suite_moyenne_pct": -0.32
+     },
+     "n": 67,
+     "part_hausse": 0.463
+    }
+   },
+   "matrice_consensus_ca15": {
+    "positive": {
+     "hausse": {
+      "n": 31,
+      "avant_moyen_pct": 3.7,
+      "ecart_moyen_pct": 4.64,
+      "suite_moyenne_pct": 0.33
+     },
+     "baisse": {
+      "n": 21,
+      "avant_moyen_pct": -1.66,
+      "ecart_moyen_pct": -3.5,
+      "suite_moyenne_pct": -0.72
+     },
+     "n": 52,
+     "part_hausse": 0.596
+    },
+    "conforme": {
+     "hausse": {
+      "n": 678,
+      "avant_moyen_pct": -0.03,
+      "ecart_moyen_pct": 3.98,
+      "suite_moyenne_pct": 0.04
+     },
+     "baisse": {
+      "n": 513,
+      "avant_moyen_pct": 0.27,
+      "ecart_moyen_pct": -3.85,
+      "suite_moyenne_pct": -0.24
+     },
+     "n": 1191,
+     "part_hausse": 0.569
+    },
+    "negative": {
+     "hausse": {
+      "n": 21,
+      "avant_moyen_pct": -1.59,
+      "ecart_moyen_pct": 4.41,
+      "suite_moyenne_pct": -0.66
+     },
+     "baisse": {
+      "n": 24,
+      "avant_moyen_pct": 0.43,
+      "ecart_moyen_pct": -3.44,
+      "suite_moyenne_pct": 0.55
+     },
+     "n": 45,
+     "part_hausse": 0.467
+    }
+   },
+   "concordance_ca": {
+    "n_positif": 189,
+    "n_negatif": 133,
+    "hausse_si_positif": 0.672,
+    "baisse_si_negatif": 0.534,
+    "concordance": 0.615,
+    "p": 0.0,
+    "ecart_moyen_positif_pct": 2.06,
+    "ecart_moyen_negatif_pct": -0.03
+   },
    "par_periode": [
     {
      "valeur": "annuels",
@@ -2729,7 +2941,7 @@
        "n": 4,
        "avant_moyen_pct": 0.82,
        "ecart_moyen_pct": -2.15,
-       "suite_moyenne_pct": 3.4
+       "suite_moyenne_pct": 3.41
       },
       "n": 10,
       "part_hausse": 0.6
@@ -8194,7 +8406,7 @@
        "z_avant": -0.67,
        "perf_12m_pct": 1.1,
        "rendement_pct": -2.77,
-       "ecart_pct": -2.96,
+       "ecart_pct": -2.97,
        "z": -3.49,
        "suite_pct": 2.32,
        "reaction": "baisse",
@@ -24532,7 +24744,7 @@
        "titre": "Kering : Résultats semestriels 2023",
        "avant_pct": 5.84,
        "z_avant": 1.15,
-       "perf_12m_pct": -14.03,
+       "perf_12m_pct": -14.02,
        "rendement_pct": -1.15,
        "ecart_pct": -1.27,
        "z": -1.13,
@@ -28286,7 +28498,7 @@
        "periode": "chiffre_affaires",
        "titre": "Version PDF",
        "avant_pct": 0.07,
-       "z_avant": 0.01,
+       "z_avant": 0.02,
        "perf_12m_pct": 18.78,
        "rendement_pct": 4.61,
        "ecart_pct": 3.55,
@@ -31245,7 +31457,7 @@
        "perf_12m_pct": 23.91,
        "rendement_pct": 3.09,
        "ecart_pct": 1.96,
-       "z": 2.13,
+       "z": 2.14,
        "suite_pct": -0.51,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -34615,7 +34827,7 @@
        "z_avant": 0.0,
        "perf_12m_pct": -20.17,
        "rendement_pct": 3.9,
-       "ecart_pct": 7.69,
+       "ecart_pct": 7.7,
        "z": 3.14,
        "suite_pct": 3.63,
        "reaction": "hausse",
@@ -42864,7 +43076,7 @@
        "rendement_pct": -3.79,
        "ecart_pct": -4.19,
        "z": -2.27,
-       "suite_pct": 1.35,
+       "suite_pct": 1.34,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -43712,7 +43924,7 @@
       "positive": {
        "hausse": {
         "n": 11,
-        "avant_moyen_pct": -2.32,
+        "avant_moyen_pct": -2.31,
         "ecart_moyen_pct": 1.48,
         "suite_moyenne_pct": -0.2
        },
@@ -44652,7 +44864,7 @@
        "jour": "2015-10-29",
        "periode": "trimestriels",
        "titre": "Information financière du troisième trimestre",
-       "avant_pct": 0.24,
+       "avant_pct": 0.25,
        "z_avant": 0.05,
        "perf_12m_pct": -14.91,
        "rendement_pct": 0.73,
@@ -46486,7 +46698,7 @@
        "avant_pct": 3.64,
        "z_avant": 0.65,
        "perf_12m_pct": -14.4,
-       "rendement_pct": -0.44,
+       "rendement_pct": -0.45,
        "ecart_pct": -0.15,
        "z": -0.12,
        "suite_pct": -0.49,
@@ -47392,7 +47604,7 @@
        "titre": "INFORMATION TRIMESTRIELLE AU 30 SEPTEMBRE 2022",
        "avant_pct": -2.62,
        "z_avant": -0.57,
-       "perf_12m_pct": 8.59,
+       "perf_12m_pct": 8.58,
        "rendement_pct": 2.04,
        "ecart_pct": 1.61,
        "z": 1.52,
@@ -50036,7 +50248,7 @@
        "titre": "Aéroports de Paris SA : Des indicateurs financiers très impactés par la crise liée à l'épidémie de CoVid-19",
        "avant_pct": 1.36,
        "z_avant": 0.12,
-       "perf_12m_pct": -33.8,
+       "perf_12m_pct": -33.79,
        "rendement_pct": -2.14,
        "ecart_pct": -1.73,
        "z": -0.68,
@@ -55760,7 +55972,7 @@
        "periode": "chiffre_affaires",
        "titre": "bioMérieux – Information financière du 1er trimestre 2025",
        "perspectives": "confirmees",
-       "avant_pct": 5.36,
+       "avant_pct": 5.37,
        "z_avant": 0.87,
        "perf_12m_pct": 28.53,
        "rendement_pct": -3.89,
@@ -63519,7 +63731,7 @@
        "avant_pct": 1.97,
        "z_avant": 0.28,
        "perf_12m_pct": -11.19,
-       "rendement_pct": -6.65,
+       "rendement_pct": -6.66,
        "ecart_pct": -5.19,
        "z": -2.51,
        "suite_pct": -2.74,
@@ -68521,7 +68733,7 @@
        "rendement_pct": 3.42,
        "ecart_pct": 3.85,
        "z": 3.04,
-       "suite_pct": -1.24,
+       "suite_pct": -1.23,
        "reaction": "hausse",
        "courtes_pct": 0.6,
        "surprise": "positive",
@@ -73796,7 +74008,7 @@
        "actionnaires": true,
        "avant_pct": -6.95,
        "z_avant": -1.09,
-       "perf_12m_pct": 19.01,
+       "perf_12m_pct": 19.02,
        "rendement_pct": -4.57,
        "ecart_pct": -5.18,
        "z": -3.66,
@@ -82540,7 +82752,7 @@
        "rendement_pct": -2.1,
        "ecart_pct": -2.37,
        "z": -1.96,
-       "suite_pct": 0.85,
+       "suite_pct": 0.84,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -83968,7 +84180,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.21,
+       "avant_pct": 4.2,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -85061,10 +85273,10 @@
        "jour": "2015-05-06",
        "periode": "chiffre_affaires",
        "titre": "ICADE – ACTIVITÉ DU 1ER TRIMESTRE 2015",
-       "avant_pct": -6.36,
+       "avant_pct": -6.35,
        "z_avant": -1.33,
        "perf_12m_pct": -1.25,
-       "rendement_pct": -1.96,
+       "rendement_pct": -1.97,
        "ecart_pct": -2.06,
        "z": -1.91,
        "suite_pct": -2.95,
@@ -86788,7 +87000,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.29,
+       "suite_pct": 1.28,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -87062,7 +87274,7 @@
        "perf_12m_pct": -30.65,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.55,
+       "z": 1.56,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -89790,7 +90002,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.424,
       "p": 0.175,
-      "ecart_moyen_positif_pct": -0.0,
+      "ecart_moyen_positif_pct": 0.0,
       "ecart_moyen_negatif_pct": null,
       "id": "commercial"
      },
@@ -90981,7 +91193,7 @@
       "z_abs_moyen": 1.1,
       "part_net": 1.0,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 1.48,
+      "ecart_abs_median_pct": 1.49,
       "n_positif": 1,
       "n_negatif": 0,
       "hausse_si_positif": 1.0,
@@ -93802,7 +94014,7 @@
        "jour": "2022-03-18",
        "periode": "annuels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 28.36,
+       "avant_pct": 28.37,
        "z_avant": 2.73,
        "perf_12m_pct": 57.06,
        "rendement_pct": 1.64,
@@ -93832,7 +94044,7 @@
        "titre": "Activité 9 mois 2021",
        "avant_pct": 36.98,
        "z_avant": 3.42,
-       "perf_12m_pct": 94.93,
+       "perf_12m_pct": 94.92,
        "rendement_pct": -8.28,
        "ecart_pct": -8.01,
        "z": -3.23,
@@ -104809,7 +105021,7 @@
        "jour": "2021-07-23",
        "periode": "semestriels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 0.08,
+       "avant_pct": 0.07,
        "z_avant": 0.01,
        "perf_12m_pct": -13.91,
        "rendement_pct": -7.6,
@@ -107236,7 +107448,7 @@
        "z_avant": 1.02,
        "perf_12m_pct": -17.87,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.6,
+       "ecart_pct": 7.59,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -108704,7 +108916,7 @@
        "periode": "annuels",
        "titre": "CdP Sodexo Résultats Annuels FY 2015 FR",
        "perspectives": "nouvelles",
-       "avant_pct": 2.04,
+       "avant_pct": 2.05,
        "z_avant": 0.67,
        "perf_12m_pct": -8.6,
        "rendement_pct": 9.85,
@@ -116182,7 +116394,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 9,
        "part_hausse": 0.667
@@ -116232,7 +116444,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 9,
        "part_hausse": 0.667
@@ -116282,7 +116494,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 9,
        "part_hausse": 0.667
@@ -116332,7 +116544,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 9,
        "part_hausse": 0.667
@@ -116854,7 +117066,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.23,
+       "suite_pct": -0.22,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
@@ -122394,7 +122606,7 @@
        "titre": "Virbac: chiffre d'affaires du 3ème trimestre 2017",
        "perspectives": "confirmees",
        "avant_pct": -7.1,
-       "z_avant": -0.79,
+       "z_avant": -0.8,
        "perf_12m_pct": -35.62,
        "rendement_pct": -1.33,
        "ecart_pct": -1.21,
@@ -123556,7 +123768,7 @@
       "negative": {
        "hausse": {
         "n": 10,
-        "avant_moyen_pct": -1.81,
+        "avant_moyen_pct": -1.8,
         "ecart_moyen_pct": 2.42,
         "suite_moyenne_pct": -0.76
        },
@@ -124232,7 +124444,7 @@
        "jour": "2018-11-16",
        "periode": "chiffre_affaires",
        "titre": "Bonne progression du chiffre d’affaires au 3ème trimestre 2018, en hausse de 5,6 %1",
-       "avant_pct": -3.21,
+       "avant_pct": -3.2,
        "z_avant": -0.56,
        "perf_12m_pct": 1.98,
        "rendement_pct": 3.09,

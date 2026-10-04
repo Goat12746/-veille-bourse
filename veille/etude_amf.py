@@ -33,18 +33,22 @@ from mesures import SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenn
 PRIORITE = {cid: i for i, cid in enumerate(ORDRE)}
 
 
-def _historique_bpa():
-    """BPA estime par les analystes avant chaque publication et BPA publie, depuis 2018
-    (calendrier des resultats de Yahoo, consensus_historique.json) : {ticker: [[date, estime, publie]]}."""
+def _historique(nom):
+    """{ticker: [[date, estime, publie]]} lu dans un fichier de la veille ({} s'il manque)."""
     try:
-        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "consensus_historique.json"),
-                  encoding="utf-8") as f:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), nom), encoding="utf-8") as f:
             return json.load(f)
     except (OSError, ValueError):
         return {}
 
 
-HISTORIQUE_BPA = _historique_bpa()
+# BPA estime par les analystes avant chaque publication et BPA publie, depuis
+# 2015 (calendrier des resultats de Yahoo).
+HISTORIQUE_BPA = _historique("consensus_historique.json")
+# Chiffre d'affaires attendu et publie, depuis 2014, valeurs francaises
+# (Investing.com, releve a la main ; lignes ou l'attendu egale le publie et
+# periodes melangees ecartees).
+HISTORIQUE_CA = _historique("consensus_ca_historique.json")
 AVANT = 20  # seances avant la publication (le cours "recent")
 SUITE = 5  # seances apres la reaction (la baisse ou la hausse se prolonge-t-elle ?)
 UN_AN = 250  # seances de l'evolution sur 12 mois face a l'indice
@@ -233,26 +237,38 @@ def enrichir(evts, positions, consensus):
             ev["surprise"] = (jour_j.position_consensus(s.get("publie"), s.get("estime"))
                               or ("positive" if s["surprise_pct"] > SEUIL_SURPRISE
                                   else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme"))
-        # Historique complet de Yahoo pour les publications sans jugement ni surprise recente : la
-        # ligne du calendrier la plus proche (3 jours au plus) de la date de publication.
-        lignes = HISTORIQUE_BPA.get(ticker)
-        if lignes:
-            prises = set()
-            for ev in v:
-                if ev["categorie"] != "resultats" or ev.get("surprise"):
-                    continue
-                pub = dt.date.fromisoformat(ev["publie_le"][:10])
-                ecarts = [(abs((dt.date.fromisoformat(r[0]) - pub).days), i) for i, r in enumerate(lignes)
-                          if i not in prises]
-                if not ecarts or min(ecarts)[0] > 3:
-                    continue
-                i = min(ecarts)[1]
-                prises.add(i)
-                _, estime, publie = lignes[i]
-                if not estime:
-                    continue
-                ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
-                ev["surprise"] = jour_j.position_consensus(publie, estime)
+        # Historique complet de Yahoo pour les publications sans jugement ni surprise recente.
+        for ev, (_, estime, publie) in _rapprocher(
+                [x for x in v if x["categorie"] == "resultats" and not x.get("surprise")], HISTORIQUE_BPA.get(ticker)):
+            if not estime:
+                continue
+            ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+            ev["surprise"] = jour_j.position_consensus(publie, estime)
+        # Chiffre d'affaires face au consensus (memes seuils que le BPA).
+        for ev, (_, estime, publie) in _rapprocher([x for x in v if x["categorie"] == "resultats"],
+                                                   HISTORIQUE_CA.get(ticker)):
+            if not estime:
+                continue
+            ev["surprise_ca_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+            ev["surprise_ca"] = jour_j.position_consensus(publie, estime)
+
+
+def _rapprocher(v, lignes):
+    """(publication, ligne) : pour chaque publication, la ligne de l'historique la
+    plus proche (3 jours au plus) de sa date, chaque ligne servant une fois."""
+    if not lignes:
+        return []
+    prises, res = set(), []
+    for ev in v:
+        pub = dt.date.fromisoformat(ev["publie_le"][:10])
+        ecarts = [(abs((dt.date.fromisoformat(r[0]) - pub).days), i) for i, r in enumerate(lignes)
+                  if i not in prises]
+        if not ecarts or min(ecarts)[0] > 3:
+            continue
+        i = min(ecarts)[1]
+        prises.add(i)
+        res.append((ev, lignes[i]))
+    return res
 
 
 def croise(v, cle, valeurs):
@@ -394,12 +410,12 @@ def sens_reaction(v):
             "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
 
 
-def concordance_consensus(v):
+def concordance_consensus(v, cle="surprise"):
     """Publications au-dessus du consensus suivies d'une hausse, en dessous
     suivies d'une baisse : parts et test de concordance (meme forme que
     sens_reaction)."""
-    pos = [x for x in v if x.get("surprise") == "positive" and x["reaction"]]
-    neg = [x for x in v if x.get("surprise") == "negative" and x["reaction"]]
+    pos = [x for x in v if x.get(cle) == "positive" and x["reaction"]]
+    neg = [x for x in v if x.get(cle) == "negative" and x["reaction"]]
     h = sum(1 for x in pos if x["reaction"] == "hausse")
     b = sum(1 for x in neg if x["reaction"] == "baisse")
     return {"n_positif": len(pos), "n_negatif": len(neg),
@@ -413,22 +429,23 @@ def concordance_consensus(v):
 SEUILS_AUTRES = (2, 10, 15)  # autres matrices : meme etude avec un ecart de plus de 2, 10 ou 15 %
 
 
-def avec_surprise(v, seuil):
-    """Publications dont l'ecart du BPA est connu (surprise_bpa_pct), avec
-    leur position face au consensus au seuil donne (champ surprise<seuil>)."""
+def avec_surprise(v, seuil, ecart="surprise_bpa_pct", cle="surprise"):
+    """Publications dont l'ecart au consensus est connu (surprise_bpa_pct, ou
+    surprise_ca_pct), avec leur position face au consensus au seuil donne
+    (champ <cle><seuil>)."""
     sortie = []
     for x in v:
-        e = x.get("surprise_bpa_pct")
+        e = x.get(ecart)
         if e is None:
             continue
-        x[f"surprise{seuil}"] = "positive" if e > seuil else "negative" if e < -seuil else "conforme"
+        x[f"{cle}{seuil}"] = "positive" if e > seuil else "negative" if e < -seuil else "conforme"
         sortie.append(x)
     return sortie
 
 
-def matrices_seuils(v):
+def matrices_seuils(v, ecart="surprise_bpa_pct", cle="surprise", prefixe="matrice_consensus"):
     """{"matrice_consensus2": ..., "matrice_consensus10": ..., ...}"""
-    return {f"matrice_consensus{t}": matrice(avec_surprise(v, t), f"surprise{t}") for t in SEUILS_AUTRES}
+    return {f"{prefixe}{t}": matrice(avec_surprise(v, t, ecart, cle), f"{cle}{t}") for t in SEUILS_AUTRES}
 
 
 def matrice(v, cle="surprise", valeurs=POSITIONS_CONSENSUS):
@@ -636,6 +653,12 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
         "matrice_consensus": matrice([x for x in res if x.get("surprise")]),
         **matrices_seuils(res),
         "concordance": concordance_consensus(res),
+        # Meme etude pour le chiffre d'affaires (France : historique Investing).
+        "n_consensus_ca": sum(1 for x in res if x.get("surprise_ca")),
+        "n_entreprises_ca": len({x["ticker"] for x in res if x.get("surprise_ca")}),
+        "matrice_consensus_ca": matrice([x for x in res if x.get("surprise_ca")], "surprise_ca"),
+        **matrices_seuils(res, "surprise_ca_pct", "surprise_ca", "matrice_consensus_ca"),
+        "concordance_ca": concordance_consensus(res, "surprise_ca"),
         "par_periode": par_valeur(res, "periode",
                                   ["annuels", "semestriels", "trimestriels", "chiffre_affaires", "autres"]),
         "par_perspectives": par_valeur(res, "perspectives", ["relevees", "confirmees", "nouvelles", "abaissees"]),
