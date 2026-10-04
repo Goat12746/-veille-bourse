@@ -193,6 +193,11 @@ def main():
     print(f"communiques_usa.json : {histo['n_evenements']} publications mesurées ({histo['n_entreprises']} "
           f"entreprises) depuis {histo['depuis']}, dont {r['n_consensus']} comparées au consensus ; "
           f"en attente de cotation : {en_attente} ; {os.path.getsize(SORTIE) // 1024} Ko.")
+    try:  # onglet Test : rendement avant resultats et sens de la reaction
+        import etude_avant
+        etude_avant.main()
+    except Exception as e:  # ne bloque pas la publication des resultats
+        print(f"test_avant.json indisponible : {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":

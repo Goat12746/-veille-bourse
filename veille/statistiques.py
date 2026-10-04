@@ -417,6 +417,11 @@ def main():
           + (f" Communiqués AMF : {histo['n_evenements']} événements depuis {histo['depuis']}, "
              f"{histo['resultats']['n']} publications de résultats." if histo and histo.get("version") == 2
              else ""))
+    try:  # onglet Test : rendement avant resultats et sens de la reaction
+        import etude_avant
+        etude_avant.main()
+    except Exception as e:  # ne bloque pas la publication des statistiques
+        print(f"test_avant.json indisponible : {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":
