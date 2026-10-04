@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Communiques AMF des entreprises du referentiel depuis 2019 : type et sens
+"""Communiques AMF des entreprises du referentiel depuis 2015 : type et sens
 de chaque communique, base de l'etude de la reaction des cours
 (statistiques.py, onglet Statistiques > Historique AMF).
 
@@ -48,7 +48,7 @@ FICHIER = os.path.join(ICI, "communiques.json")
 CLASSES = os.path.join(ICI, "resultats_classes.json")
 AMF_EXPORT = ("https://www.info-financiere.gouv.fr/api/explore/v2.1/catalog/"
               "datasets/flux-amf-new-prod/exports/json")
-DEPUIS = "2019-01-01"
+DEPUIS = "2015-01-01"
 RECOUVREMENT = 7  # jours relus a chaque mise a jour (depots tardifs)
 TEXTE_MAX = 6000  # caracteres gardes par communique (deux premieres pages)
 
@@ -681,9 +681,11 @@ def main():
     referentiel = charger(os.path.join(ICI, "referentiel.json"))["entreprises"]
     isins = sorted(e["isin"] for e in referentiel)
     doc = charger_communiques()
-    if doc is None or doc.get("depuis") != args.depuis:
+    if doc is None:
         doc = {"version": 1, "depuis": args.depuis, "communiques": []}
         args.complet = True
+    elif doc.get("depuis") != args.depuis:
+        args.complet = True  # liste reprise depuis le nouveau debut ; les communiques deja lus sont gardes
     connus = {c["id"]: c for c in doc["communiques"]}
 
     if args.a_classer:

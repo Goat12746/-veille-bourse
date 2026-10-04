@@ -22,7 +22,7 @@ communique des entreprises suivies depuis 2019, par entreprise et par type,
 selon le sens du communique ; publications de resultats (bons ou mauvais
 resultats, hausse ou baisse) et prevision de la reaction.
 
-Usage : python statistiques.py [--depuis-historique 2019-01-01] [--sans-historique]
+Usage : python statistiques.py [--depuis-historique 2015-01-01] [--sans-historique]
 Bibliotheque standard uniquement.
 """
 
@@ -351,7 +351,7 @@ def charger(nom, defaut=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--depuis-historique", default="2019-01-01", help="debut de l'etude des communiques AMF")
+    p.add_argument("--depuis-historique", default="2015-01-01", help="debut de l'etude des communiques AMF")
     p.add_argument("--sans-historique", action="store_true",
                    help="ne recalcule pas l'etude des communiques AMF (reprend la precedente)")
     args = p.parse_args()

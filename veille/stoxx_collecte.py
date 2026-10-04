@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Publications de resultats des entreprises du STOXX Europe 600 qui ne font
 pas deja partie du marche francais de l'application (CAC 40 et SBF 120), depuis
-2019 : onglet Statistiques > Communiques > STOXX 600.
+2015 : onglet Statistiques > Communiques > STOXX 600.
 
 Aucune source gratuite ne couvre toute l'Europe : on assemble les meilleures,
 et chaque publication garde sa source.
@@ -23,7 +23,7 @@ etude_stoxx.py.
 
 Usage :
   python stoxx_collecte.py --yahoo       calendrier Yahoo (yfinance requis ; reprise possible)
-  python stoxx_collecte.py --uk          annonces Investegate
+  python stoxx_collecte.py --uk          annonces Investegate (--complement : 2015-2018 seulement, ajoutees a l'existant)
   python stoxx_collecte.py --nordique    annonces Nasdaq Nordic
   python stoxx_collecte.py --fusion      resultats_stoxx.json
 """
@@ -43,7 +43,9 @@ import urllib.request
 ICI = os.path.dirname(os.path.abspath(__file__))
 DOSSIER = os.path.join(ICI, "stoxx")
 SORTIE = os.path.join(ICI, "resultats_stoxx.json")
-DEPUIS = "2019-01-01"
+DEPUIS = "2015-01-01"
+FIN_COMPLEMENT = "2018-12-31"  # --uk --complement : seulement les annonces avant l'ancien debut (2019)
+_fin = [None]  # date de fin de la recherche Investegate (aujourd'hui par defaut)
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                     "Chrome/120.0 Safari/537.36"}
 # Doublons de valeurs deja suivies sur le marche francais (autre place de cotation).
@@ -155,7 +157,7 @@ INV_UA = dict(UA, **{"X-Requested-With": "XMLHttpRequest", "Referer": "https://w
 
 def _inv_page(mot, recherche, page):
     q = urllib.parse.urlencode({"search_for": recherche, "search_word": mot, "date_from": DEPUIS,
-                                "date_to": dt.date.today().isoformat(), "categories[]": 2,
+                                "date_to": _fin[0] or dt.date.today().isoformat(), "categories[]": 2,
                                 "exclude_navs": "true", "page": page})
     req = urllib.request.Request("https://www.investegate.co.uk/advanced-search/draw?" + q, headers=INV_UA)
     for essai in range(3):
@@ -185,10 +187,15 @@ def _epic(co):
     return re.sub(r"\.$", "", m.group(1)) if m else None
 
 
-def collecter_uk():
+def collecter_uk(complement=False):
     chemin = os.path.join(DOSSIER, "uk.json")
     doc = lire_json(chemin, {})
-    uk = [e for e in univers() if e["ticker"].endswith(".L") and not doc.get(e["ticker"], {}).get("annonces")]
+    if complement:
+        _fin[0] = FIN_COMPLEMENT
+        uk = [e for e in univers() if e["ticker"].endswith(".L") and doc.get(e["ticker"], {}).get("annonces")
+              and not doc[e["ticker"]].get("complement")]
+    else:
+        uk = [e for e in univers() if e["ticker"].endswith(".L") and not doc.get(e["ticker"], {}).get("annonces")]
 
     def lire(e):
         tidm = re.sub(r"\.$", "", e["ticker"][:-2].replace("-", "."))
@@ -196,6 +203,8 @@ def collecter_uk():
         essais = [(" ".join(nom[:2]), 1), (" ".join(nom[:1]), 1), (tidm, 2)]
         if len(tidm) <= 3:
             essais.insert(0, (tidm, 1))
+        if complement:  # meme recherche que celle qui a trouve les annonces recentes
+            essais = [(doc[e["ticker"]]["recherche"], 2 if doc[e["ticker"]]["recherche"] == tidm else 1)]
         for mot, recherche in essais:
             if len(mot) < 2:
                 continue
@@ -213,7 +222,12 @@ def collecter_uk():
 
     with cf.ThreadPoolExecutor(4) as ex:
         for i, (t, r) in enumerate(ex.map(lire, uk), 1):
-            doc[t] = r
+            if complement:
+                connues = {x["url"] for x in doc[t]["annonces"]}
+                doc[t]["annonces"] += [x for x in r["annonces"] if x["url"] not in connues]
+                doc[t]["complement"] = FIN_COMPLEMENT
+            else:
+                doc[t] = r
             if i % 10 == 0:
                 ecrire_json(chemin, doc)
                 print(f"  {i}/{len(uk)}", file=sys.stderr)
@@ -469,11 +483,12 @@ def main():
     p.add_argument("--uk", action="store_true")
     p.add_argument("--nordique", action="store_true")
     p.add_argument("--fusion", action="store_true")
+    p.add_argument("--complement", action="store_true", help="avec --uk : annonces de 2015 a 2018")
     a = p.parse_args()
     if a.yahoo:
         collecter_yahoo()
     if a.uk:
-        collecter_uk()
+        collecter_uk(a.complement)
     if a.nordique:
         collecter_nordique()
     if a.fusion or not (a.yahoo or a.uk or a.nordique):

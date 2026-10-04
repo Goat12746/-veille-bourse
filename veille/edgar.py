@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Publications de resultats des entreprises americaines suivies (S&P 500 et
-Nasdaq-100 d'univers_objectifs.json) depuis 2019, d'apres la SEC (EDGAR),
+Nasdaq-100 d'univers_objectifs.json) depuis 2015, d'apres la SEC (EDGAR),
 base de l'etude des resultats americains (etude_usa.py, onglet Statistiques >
 Communiques > Etats-Unis).
 
@@ -43,7 +43,7 @@ import urllib.request
 ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "resultats_usa.json")
 UA = "veille-bourse paczekgau@gmail.com"
-DEPUIS = "2019-01-01"
+DEPUIS = "2015-01-01"
 FORMES_COMPTES = ("10-Q", "10-K", "10-Q/A", "10-K/A")
 DELAI_TRIMESTRE, DELAI_EXERCICE = 75, 100  # jours max entre la fin de la periode et la publication
 EN_ATTENTE = 120  # jours : publication recente sans comptes encore deposes
@@ -327,6 +327,7 @@ def main():
     p.add_argument("--complet", action="store_true", help="relit toutes les entreprises")
     args = p.parse_args()
     doc = charger()
+    doc["depuis"] = DEPUIS
     aujourd_hui = dt.date.today().isoformat()
     cik_de = tickers_cik()
 

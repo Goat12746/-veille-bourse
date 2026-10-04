@@ -29,7 +29,7 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "positions_courtes.json")
 JEU = "https://www.data.gouv.fr/api/1/datasets/62738e33f1be79935d3e5553/"
 SEUIL = 0.5  # % du capital : en dessous, la position n'est plus publique
-DEPUIS = "2018-06-01"  # 20 seances avant le debut de l'etude des communiques (2019)
+DEPUIS = "2014-06-01"  # 20 seances avant le debut de l'etude des communiques (2015)
 UA = "Mozilla/5.0 (veille-bourse; usage personnel)"
 
 
