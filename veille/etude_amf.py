@@ -45,6 +45,9 @@ def _historique(nom):
 # BPA estime par les analystes avant chaque publication et BPA publie, depuis
 # 2015 (calendrier des resultats de Yahoo).
 HISTORIQUE_BPA = _historique("consensus_historique.json")
+# A defaut de Yahoo, BPA attendu et publie d'Investing.com, valeurs francaises
+# (meme releve que le chiffre d'affaires, attendu egal au publie ecarte).
+HISTORIQUE_BPA_INVESTING = _historique("consensus_bpa_investing.json")
 # Chiffre d'affaires attendu et publie, depuis 2014, valeurs francaises
 # (Investing.com, releve a la main ; lignes ou l'attendu egale le publie et
 # periodes melangees ecartees).
@@ -237,13 +240,15 @@ def enrichir(evts, positions, consensus):
             ev["surprise"] = (jour_j.position_consensus(s.get("publie"), s.get("estime"))
                               or ("positive" if s["surprise_pct"] > SEUIL_SURPRISE
                                   else "negative" if s["surprise_pct"] < -SEUIL_SURPRISE else "conforme"))
-        # Historique complet de Yahoo pour les publications sans jugement ni surprise recente.
-        for ev, (_, estime, publie) in _rapprocher(
-                [x for x in v if x["categorie"] == "resultats" and not x.get("surprise")], HISTORIQUE_BPA.get(ticker)):
-            if not estime:
-                continue
-            ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
-            ev["surprise"] = jour_j.position_consensus(publie, estime)
+        # Historique complet de Yahoo pour les publications sans jugement ni surprise recente,
+        # puis celui d'Investing pour celles qui restent.
+        for historique in (HISTORIQUE_BPA, HISTORIQUE_BPA_INVESTING):
+            for ev, (_, estime, publie) in _rapprocher(
+                    [x for x in v if x["categorie"] == "resultats" and not x.get("surprise")], historique.get(ticker)):
+                if not estime:
+                    continue
+                ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+                ev["surprise"] = jour_j.position_consensus(publie, estime)
         # Chiffre d'affaires face au consensus (memes seuils que le BPA).
         for ev, (_, estime, publie) in _rapprocher([x for x in v if x["categorie"] == "resultats"],
                                                    HISTORIQUE_CA.get(ticker)):
