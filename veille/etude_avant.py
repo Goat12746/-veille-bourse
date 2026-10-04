@@ -14,6 +14,11 @@ statistiques.json ; Etats-Unis : communiques_usa.json) :
     -2 a 2, 2 a 5, 5 a 10, > 10 %), puis P(hausse | R[N] dans la tranche) est
     le nombre de hausses sur le nombre de publications de la tranche.
 
+"ensuite" (aussi par entreprise) : rendement moyen des 20 seances avant la reaction et de la seance
+de reaction, selon que le cours a monte ou baisse ce jour-la.
+
+Les tableaux sont aussi donnes par grand secteur (secteurs.py).
+
 Ecrit test_avant.json. Aucun reseau : lit les cours deja en cache
 (.cache/cours, ecrits par statistiques.py et etude_usa.py).
 
@@ -26,10 +31,13 @@ import datetime as dt
 import json
 import os
 
+from secteurs import SECTEURS, grand_secteur
+
 ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "test_avant.json")
 COURS = os.path.join(ICI, ".cache", "cours")
 HORIZONS = (1, 10, 30)
+AVANT = 20  # seances du "cours recent" de l'encadre Avant / jour J
 # Bornes basses (incluses) des tranches de R[N], en %.
 BORNES = (-10, -5, -2, 2, 5, 10)
 LIBELLES = ("< −10 %", "−10 à −5 %", "−5 à −2 %", "−2 à 2 %", "2 à 5 %", "5 à 10 %", "> 10 %")
@@ -68,14 +76,34 @@ def evenements_usa():
         return json.load(f)
 
 
-def etudier(histo):
-    """Tableaux d'une zone : pour chaque horizon, les 7 tranches avec le
-    nombre de publications, de hausses et de baisses."""
+def evenements_stoxx():
+    chemin = os.path.join(ICI, "communiques_stoxx.json")
+    if not os.path.exists(chemin):
+        return None
+    with open(chemin, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def nouvelle_ensuite():
+    return {k: {"n": 0, "avant": 0.0, "jour": 0.0} for k in ("hausse", "baisse")}
+
+
+def moyennes(ensuite):
+    return {k: {"n": x["n"], "avant_20_pct": round(x["avant"] / x["n"], 2) if x["n"] else None,
+                "jour_pct": round(x["jour"] / x["n"], 2) if x["n"] else None} for k, x in ensuite.items()}
+
+
+def etudier(entreprises):
+    """Tableaux d'un ensemble d'entreprises : pour chaque horizon, les 7
+    tranches avec le nombre de publications, de hausses et de baisses."""
     cases = {h: [{"n": 0, "hausses": 0, "baisses": 0, "somme_reaction_pct": 0.0} for _ in LIBELLES]
              for h in HORIZONS}
     total = {"n": 0, "hausses": 0, "baisses": 0}
+    # Cours recent (R[20]) et reaction du jour, moyennes selon le sens.
+    ensuite = nouvelle_ensuite()
+    par_ticker = {}
     cours, sans_cours = {}, set()
-    for e in histo["entreprises"]:
+    for e in entreprises:
         t = e["ticker"]
         if t not in cours:
             cours[t] = charger_cours(t)
@@ -83,6 +111,7 @@ def etudier(histo):
             sans_cours.add(t)
             continue
         dates, clo = cours[t]
+        locale = par_ticker[t] = nouvelle_ensuite()
         for ev in e["resultats"]["evenements"]:
             rea = ev.get("rendement_pct")
             if rea is None or rea == 0 or ev["jour"] not in dates_index(t, dates):
@@ -91,6 +120,12 @@ def etudier(histo):
             hausse = rea > 0
             total["n"] += 1
             total["hausses" if hausse else "baisses"] += 1
+            if s - 1 - AVANT >= 0:
+                for cumul in (ensuite, locale):
+                    x = cumul["hausse" if hausse else "baisse"]
+                    x["n"] += 1
+                    x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100
+                    x["jour"] += rea
             for h in HORIZONS:
                 if s - 1 - h < 0:
                     continue
@@ -102,11 +137,25 @@ def etudier(histo):
     for h in HORIZONS:
         for c in cases[h]:
             c["reaction_moyenne_pct"] = round(c.pop("somme_reaction_pct") / c["n"], 2) if c["n"] else None
-    return {"depuis": histo["depuis"], "jusqu_a": histo["jusqu_a"], "n": total["n"], "hausses": total["hausses"],
-            "baisses": total["baisses"],
+    return {"n": total["n"], "hausses": total["hausses"], "baisses": total["baisses"], "ensuite": moyennes(ensuite),
+            "entreprises": {t: moyennes(x) for t, x in par_ticker.items() if x["hausse"]["n"] + x["baisse"]["n"]},
             "horizons": [{"seances": h, "tranches": [{"libelle": LIBELLES[i], **c}
                                                       for i, c in enumerate(cases[h])]} for h in HORIZONS],
             "sans_cours": sorted(sans_cours)}
+
+
+def etudier_zone(histo):
+    """Une zone : toutes les entreprises, puis chaque grand secteur."""
+    zone = {"depuis": histo["depuis"], "jusqu_a": histo["jusqu_a"], **etudier(histo["entreprises"])}
+    # Par entreprise : seulement au niveau de la zone (pas dans chaque secteur).
+    secteurs = {}
+    for nom in SECTEURS:
+        membres = [e for e in histo["entreprises"] if grand_secteur(e.get("secteur")) == nom]
+        if membres:
+            secteurs[nom] = etudier(membres)
+            secteurs[nom].pop("entreprises")
+    zone["secteurs"] = secteurs
+    return zone
 
 
 _index = {}
@@ -121,9 +170,9 @@ def dates_index(ticker, dates):
 
 def main():
     zones = {}
-    for zone, histo in (("france", evenements_france()), ("usa", evenements_usa())):
+    for zone, histo in (("france", evenements_france()), ("usa", evenements_usa()), ("stoxx", evenements_stoxx())):
         if histo:
-            zones[zone] = etudier(histo)
+            zones[zone] = etudier_zone(histo)
     doc = {"version": 1, "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
            "tranches": list(LIBELLES), "zones": zones}
     with open(SORTIE, "w", encoding="utf-8") as f:
@@ -131,7 +180,7 @@ def main():
         f.write("\n")
     for zone, z in zones.items():
         print(f"test_avant.json : {zone} {z['n']} publications ({z['hausses']} hausses), "
-              f"cours manquants : {len(z['sans_cours'])}.")
+              f"{len(z['secteurs'])} secteurs, cours manquants : {len(z['sans_cours'])}.")
 
 
 if __name__ == "__main__":
