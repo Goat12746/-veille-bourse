@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-05T06:24:09+00:00",
+ "genere_le": "2026-10-05T11:17:30+00:00",
  "derniere_seance": "2026-10-02",
  "methode": {
   "indice": "CAC 40",
@@ -13,10 +13,10 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 23,
-  "n_observations": 77,
+  "n_alertes": 25,
+  "n_observations": 79,
   "statuts": {
-   "attente": 1,
+   "attente": 3,
    "note": 18,
    "non_directionnel": 10,
    "confondu": 8,
@@ -248,10 +248,64 @@
   ],
   "probabilites": {
    "n_tranchees": 1,
-   "n_en_cours": 13,
+   "n_en_cours": 15,
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "amf-083333_20261005",
+    "titre": "Air Liquide : plan stratégique BEYOND 2030, BPA récurrent +10 % par an et rachat d'actions de 4 Md€",
+    "date": "2026-10-05",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-05T13:16",
+    "information": "2026-10-05T07:59",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "AI.PA",
+      "nom": "Air Liquide",
+      "sens": "positif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-083331_20261005",
+    "titre": "Schneider Electric va acquérir PTC pour 22,6 Md$ en numéraire (205 $ par action)",
+    "date": "2026-10-05",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 0.9,
+    "publie_a": "2026-10-05T13:16",
+    "information": "2026-10-05T06:59",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "SU.PA",
+      "nom": "Schneider Electric",
+      "sens": "incertain",
+      "ampleur": "forte",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "an-AMANR5L17PO420120B2892P0D1N000059",
     "titre": "Titres-restaurant : le rapporteur propose un plafond majoré au restaurant et l'usage le dimanche",
@@ -1723,10 +1777,10 @@
   "indice": "CAC 40",
   "depuis": "2015-01-01",
   "jusqu_a": "2026-10-02",
-  "n_communiques": 25915,
+  "n_communiques": 25920,
   "n_evenements": 21096,
   "n_entreprises": 115,
-  "en_attente": 0,
+  "en_attente": 5,
   "jour_ordinaire": {
    "n": 311976,
    "z_abs_moyen": 0.67,
@@ -4503,7 +4557,7 @@
     "nom": "Air Liquide",
     "indice": "CAC 40",
     "secteur": "Gaz industriels",
-    "n_communiques": 507,
+    "n_communiques": 508,
     "n_evenements": 445,
     "categories": [
      {
@@ -20050,7 +20104,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.27,
+       "avant_pct": 1.28,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -26995,7 +27049,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.63,
+       "suite_pct": -2.64,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -32316,7 +32370,7 @@
        "perf_12m_pct": 23.91,
        "rendement_pct": 3.09,
        "ecart_pct": 1.96,
-       "z": 2.13,
+       "z": 2.14,
        "suite_pct": -0.51,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -38095,7 +38149,7 @@
        "rendement_pct": -18.93,
        "ecart_pct": -18.61,
        "z": -15.34,
-       "suite_pct": 3.17,
+       "suite_pct": 3.18,
        "reaction": "baisse",
        "courtes_pct": 0.0,
        "surprise": "conforme",
@@ -38700,7 +38754,7 @@
     "nom": "Schneider Electric",
     "indice": "CAC 40",
     "secteur": "Équipement électrique",
-    "n_communiques": 208,
+    "n_communiques": 209,
     "n_evenements": 166,
     "categories": [
      {
@@ -41364,7 +41418,7 @@
     "nom": "STMicroelectronics",
     "indice": "CAC 40",
     "secteur": "Semi-conducteurs",
-    "n_communiques": 488,
+    "n_communiques": 489,
     "n_evenements": 427,
     "categories": [
      {
@@ -48122,7 +48176,7 @@
        "avant_pct": 3.64,
        "z_avant": 0.65,
        "perf_12m_pct": -14.4,
-       "rendement_pct": -0.45,
+       "rendement_pct": -0.44,
        "ecart_pct": -0.15,
        "z": -0.12,
        "suite_pct": -0.49,
@@ -56714,7 +56768,7 @@
        "avant_pct": -1.44,
        "z_avant": -0.17,
        "perf_12m_pct": 8.03,
-       "rendement_pct": 16.16,
+       "rendement_pct": 16.17,
        "ecart_pct": 15.58,
        "z": 7.83,
        "suite_pct": -11.67,
@@ -72447,7 +72501,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": 1.06,
+      "ecart_moyen_positif_pct": 1.05,
       "ecart_moyen_negatif_pct": null,
       "id": "autre"
      }
@@ -73207,7 +73261,7 @@
        "rendement_pct": -4.27,
        "ecart_pct": -4.45,
        "z": -2.94,
-       "suite_pct": 0.98,
+       "suite_pct": 0.99,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -74106,7 +74160,7 @@
        "avant_pct": 9.08,
        "z_avant": 1.63,
        "perf_12m_pct": -11.8,
-       "rendement_pct": -2.04,
+       "rendement_pct": -2.05,
        "ecart_pct": -2.86,
        "z": -2.18,
        "suite_pct": 4.67,
@@ -81605,7 +81659,7 @@
     "nom": "Emeis",
     "indice": "SBF 120",
     "secteur": "Maisons de retraite, cliniques",
-    "n_communiques": 48,
+    "n_communiques": 49,
     "n_evenements": 33,
     "categories": [
      {
@@ -84112,7 +84166,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.84,
+       "perf_12m_pct": -2.83,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -86392,7 +86446,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.2,
+       "avant_pct": 4.21,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -89273,7 +89327,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.28,
+       "suite_pct": 1.29,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -91876,7 +91930,7 @@
        "jour": "2020-02-27",
        "periode": "annuels",
        "titre": "Ipsos Résultats annuels 2019 : une année dynamique",
-       "avant_pct": -6.66,
+       "avant_pct": -6.67,
        "z_avant": -0.79,
        "perf_12m_pct": 17.04,
        "rendement_pct": 1.58,
@@ -94337,7 +94391,7 @@
        "perf_12m_pct": -11.43,
        "rendement_pct": -2.96,
        "ecart_pct": -3.51,
-       "z": -3.13,
+       "z": -3.14,
        "suite_pct": 2.58,
        "reaction": "baisse",
        "courtes_pct": 0.62,
@@ -96543,7 +96597,7 @@
        "titre": "Activité 9 mois 2021",
        "avant_pct": 36.98,
        "z_avant": 3.42,
-       "perf_12m_pct": 94.92,
+       "perf_12m_pct": 94.93,
        "rendement_pct": -8.28,
        "ecart_pct": -8.01,
        "z": -3.23,
@@ -99902,7 +99956,7 @@
        "z_avant": -2.6,
        "perf_12m_pct": -28.92,
        "rendement_pct": 0.07,
-       "ecart_pct": -0.99,
+       "ecart_pct": -0.98,
        "z": -0.53,
        "suite_pct": -2.38,
        "reaction": "baisse",
@@ -100837,7 +100891,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.13,
+       "rendement_pct": 8.12,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -107767,7 +107821,7 @@
        "jour": "2021-07-23",
        "periode": "semestriels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 0.07,
+       "avant_pct": 0.08,
        "z_avant": 0.01,
        "perf_12m_pct": -13.91,
        "rendement_pct": -7.6,
@@ -117650,7 +117704,7 @@
        "jour": "2017-01-04",
        "periode": "chiffre_affaires",
        "titre": "Chiffre d'affaires du 1er trimestre 2016/2017",
-       "avant_pct": -0.61,
+       "avant_pct": -0.62,
        "z_avant": -0.07,
        "perf_12m_pct": 12.92,
        "rendement_pct": 4.32,
@@ -120192,7 +120246,7 @@
     "nom": "Vallourec",
     "indice": "SBF 120",
     "secteur": "Tubes pour l'énergie",
-    "n_communiques": 189,
+    "n_communiques": 190,
     "n_evenements": 158,
     "categories": [
      {
@@ -125538,7 +125592,7 @@
        "titre": "Virbac: chiffre d'affaires du 3ème trimestre 2017",
        "perspectives": "confirmees",
        "avant_pct": -7.1,
-       "z_avant": -0.79,
+       "z_avant": -0.8,
        "perf_12m_pct": -35.62,
        "rendement_pct": -1.33,
        "ecart_pct": -1.21,

@@ -1,7 +1,83 @@
 {
  "version": 1,
- "maj_le": "2026-10-05T06:22:42+00:00",
+ "maj_le": "2026-10-05T11:16:14+00:00",
  "alertes": [
+  {
+   "id": "amf-083331_20261005",
+   "date": "2026-10-05",
+   "source": "amf",
+   "titre": "Schneider Electric va acquérir PTC pour 22,6 Md$ en numéraire (205 $ par action)",
+   "resume": "Accord définitif d'acquisition de 100 % de PTC à 205 $ par action, soit 22,6 Md$ de fonds propres (20,1 Md€) et 23,7 Md$ de valeur d'entreprise, prime de 42,3 % pour les actionnaires de PTC. Synergies de coûts de 250 M€ par an sous trois ans et environ 800 M€ de synergies de revenus visées ; la réalisation reste soumise aux conditions usuelles.",
+   "nouveaute": "Première annonce de l'opération : accord définitif, prix, multiple (21x VE/EBITA ajusté 2027E) et synergies.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083331_20261005.pdf",
+   "etape": "annonce",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SU.PA",
+     "sens": "incertain",
+     "ampleur": "forte",
+     "justification": "Acquisition de 20,1 Md€ intégralement en numéraire, multiple de 21x l'EBITA ajusté 2027E (13x avec synergies) : effet sur le bilan et exécution de l'intégration à peser face aux synergies annoncées.",
+     "extrait": "Acquisition intégralement en numéraire au prix de 205 dollars par action portant sur 100 % du capital de PTC et valorisant les capitaux propres de PTC à environ 22,6 milliards de dollars (20,1 milliards d’euros)",
+     "nom": "Schneider Electric"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Schneider Electric : Schneider Electric va acquérir PTC, portant l’Intelligence Énergétique et Industrielle à un nouveau niveau",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083331_20261005.pdf",
+     "date": "2026-10-05",
+     "publie_le": "2026-10-05T04:59:44+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-05",
+   "publie_a": "2026-10-05T11:16:14+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.9
+   }
+  },
+  {
+   "id": "amf-083333_20261005",
+   "date": "2026-10-05",
+   "source": "amf",
+   "titre": "Air Liquide : plan stratégique BEYOND 2030, BPA récurrent +10 % par an et rachat d'actions de 4 Md€",
+   "resume": "Objectifs à 2030 : croissance annuelle moyenne du résultat net récurrent par action de +10 % (±2 %), ROCE récurrent supérieur à 11 %, chiffre d'affaires +5 % par an, marge opérationnelle +400 à +600 pb, plus de 40 Md€ d'allocation du capital. Premier programme de rachat d'actions de 4 Md€ sur 2027-2028.",
+   "nouveaute": "Nouveau plan 2030 avec objectifs chiffrés et premier programme de rachat d'actions de 4 Md€, inconnus la veille.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083333_20261005.pdf",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AI.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Cible de BPA récurrent à +10 % par an et retour aux actionnaires renforcé (4 Md€ de rachats) ; à comparer au consensus des analystes, non encore mesuré ici.",
+     "extrait": "Une progression annuelle moyenne sur la période du Résultat Net Récurrent par Action de +10 % (+/-2%), gage de croissance ambitieuse et profitable",
+     "nom": "Air Liquide"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Air Liquide : BEYOND, Air Liquide accélère la création de valeur durable avec son nouveau plan stratégique à horizon 2030",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083333_20261005.pdf",
+     "date": "2026-10-05",
+     "publie_le": "2026-10-05T05:59:42+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-05",
+   "publie_a": "2026-10-05T11:16:14+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1
+   }
+  },
   {
    "id": "an-AMANR5L17PO420120B2892P0D1N000059",
    "date": "2026-10-02",
