@@ -2920,6 +2920,94 @@
 "publie": 16.0,
 "publie_corrige": null,
 "note": "communiqué de chiffre d'affaires, sans BPA"
+},
+"CS.PA|2019-08-01": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 1.5,
+"publie": 0.92,
+"publie_corrige": 1.46,
+"note": "publié = BPA IFRS 0,92 ; opérationnel S1 2019 1,46"
+},
+"BVI.PA|2017-07-28": {
+"verdict": "corrige",
+"source": "investing",
+"estime": 0.44,
+"publie": 0.31,
+"publie_corrige": 0.43,
+"note": "publié = BPA IFRS 0,31 ; ajusté 0,43"
+},
+"BN.PA|2018-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.78,
+"publie": 1.76,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"ENGI.PA|2022-11-10": {
+"verdict": "exclu",
+"source": "yahoo",
+"estime": 0.23,
+"publie": -0.48,
+"publie_corrige": null,
+"note": "pas de BPA trimestriel (information à 9 mois) ; -0,48 IFRS face à un attendu en résultat net récurrent"
+},
+"EDEN.PA|2018-07-24": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 0.5,
+"publie": 0.52,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"RNO.PA|2023-02-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.85,
+"publie": 3.73,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"RNO.PA|2018-02-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 7.39,
+"publie": 9.98,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"RNO.PA|2017-07-28": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 8.09,
+"publie": 8.7,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"SU.PA|2017-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.73,
+"publie": 1.69,
+"publie_corrige": null,
+"note": "publié 1,69 ≈ BPA IFRS S1 1,72 ; BPA ajusté du S1 absent"
+},
+"NEX.PA|2022-02-16": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 2.55,
+"publie": 1.85,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
+},
+"NEX.PA|2017-07-27": {
+"verdict": "exclu",
+"source": "investing",
+"estime": 1.85,
+"publie": 1.97,
+"publie_corrige": null,
+"note": "Investing invérifiable (pas de BPA dans le communiqué) chez une société qui publie un BPA ajusté"
 }
 }
 }

@@ -139,7 +139,8 @@ FAUX_RESULTATS = ["resultat de l'offre", "resultats de l'offre", "resultat du ra
                   "resultats de l'etude", "resultats de l'essai", "resultats positifs de l'essai",
                   "resultats cliniques", "results of the study", "trial results", "topline",
                   "declaration des transactions", "transactions realisees", "programme de rachat",
-                  "rachat d'actions", "droits de vote", "mise a disposition", "modalites de mise"]
+                  "rachat d'actions", "droits de vote", "mise a disposition", "modalites de mise",
+                  "contrat de liquidite", "exigences prudentielles"]
 
 # Sens d'un texte par mots-cles (methode simple, sans IA, a titre indicatif :
 # les entreprises choisissent leurs mots).
@@ -265,13 +266,34 @@ def _trouve(n, mots):
 # hausse ou de baisse.
 _CHIFFRE_CLE = re.compile(
     r"(chiffre d'affaires|resultat net|resultat operationnel|ebitda|marge operationnelle|croissance organique|"
-    r"bnpa|revenus locatifs|net bookings|revenue|net income|operating income|organic growth|sales)"
+    r"bnpa|rnpg|revenus locatifs|net bookings|revenue|net income|operating income|organic growth|sales)"
     r"[^.%]{0,90}?(?:[+-]\s?\d|(?:hausse|baisse|progression|recul|up|down)\s(?:de\s|of\s|by\s)?\d)"
     r"[\d.,]*\s?%")
 
 
+# Periode des comptes annoncee en tete du texte ("Communique de presse -
+# 2eme trimestre et 1er semestre 2026") : Credit Agricole, dont les titres
+# ne disent pas "resultats".
+_PERIODE_EN_TETE = re.compile(
+    r"\b\d(?:er|e|eme)? trimestre (?:et \d(?:er|e|eme)? semestre )?20\d\d|"
+    r"resultats (?:annuels|semestriels|trimestriels|du (?:\d|premier|deuxieme|troisieme|quatrieme))")
+
+
 def chiffres_de_resultats(texte):
-    return bool(texte) and bool(_CHIFFRE_CLE.search(normaliser(texte[:700])))
+    if not texte:
+        return False
+    return bool(_CHIFFRE_CLE.search(normaliser(texte[:700])) or _PERIODE_EN_TETE.search(normaliser(texte[:200])))
+
+
+_NOMS = {}
+
+
+def _noms():
+    """Nom de chaque societe (sans accents, minuscules), par ISIN."""
+    if not _NOMS:
+        ref = charger(os.path.join(ICI, "referentiel.json"), {"entreprises": []})
+        _NOMS.update({e["isin"]: normaliser(e["nom"]) for e in ref["entreprises"]})
+    return _NOMS
 
 
 def categorie(c, texte):
@@ -280,6 +302,13 @@ def categorie(c, texte):
     for rubrique, cid in RUBRIQUES.items():
         if rubrique in titre:
             return cid
+    # "CREDIT AGRICOLE SA : ..." : le nom de la societe en tete du titre ne
+    # dit rien du type ("credit" classait ses resultats en financement).
+    tete, sep, reste = titre.partition(" : ")
+    nom = _noms().get(c["isin"], "")
+    if sep and nom and nom.split()[0] in tete and not any(
+            _trouve(tete.replace(nom.split()[0], ""), mots) for _, _, mots in CATEGORIES):
+        titre = reste
     sources = [] if generique(c["titre"]) else [titre]
     if texte:
         sources.append(normaliser(entete(texte) + " " + texte[:400]))

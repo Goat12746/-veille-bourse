@@ -137,6 +137,20 @@ def instant_local(p, regime):
 # Kumba Iron Ore), assemblees de porteurs d'obligations.
 PAS_LES_RESULTATS = re.compile(r"anglo american platinum|kumba iron ore|bondholder", re.I)
 DOUBLON_JOURS = 4  # jours calendaires : correction ou remplacement du meme communique
+# BPA publie Yahoo verifie contre les communiques (R.-U. et nordiques) : exclu
+# (publie ou attendu faux, periodes melangees) ou corrige.
+BPA_VERIFIE = lire_json(os.path.join(ICI, "bpa_verifie_stoxx.json"), {}).get("publications", {})
+
+
+def bpa(p):
+    """(estime, publie) apres verification ; (None, None) si la publication est ecartee."""
+    est, pub = p.get("bpa_estime"), p.get("bpa_publie")
+    v = BPA_VERIFIE.get(p["id"])
+    if v and v["verdict"] == "exclu":
+        return None, None
+    if v and v["verdict"] == "corrige":
+        pub = v["publie_corrige"]
+    return est, pub
 
 
 def evenements(doc, cal, series, perspectives, reg):
@@ -163,7 +177,7 @@ def evenements(doc, cal, series, perspectives, reg):
                   "publie_le": t.isoformat(), "n_communiques": 1, "sens": None, "origine": "comptes"}
             if p["id"] in perspectives and perspectives[p["id"]]:
                 ev["perspectives"] = perspectives[p["id"]]
-            est, pub = p.get("bpa_estime"), p.get("bpa_publie")
+            est, pub = bpa(p)
             position = jour_j.position_consensus(pub, est)
             if position:
                 ev["consensus"] = SURPRISE_CODE[position]
@@ -212,7 +226,7 @@ def main():
                             "indice": " · ".join([PAYS.get(f["pays"], f["pays"])] + etiquettes)})
         surprises = []
         for p in f["publications"]:
-            est, pub = p.get("bpa_estime"), p.get("bpa_publie")
+            est, pub = bpa(p)
             if est is None or pub is None:
                 continue
             veille = (dt.date.fromisoformat(p["publie_le"][:10]) - dt.timedelta(days=1)).isoformat()
