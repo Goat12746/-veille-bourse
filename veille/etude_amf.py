@@ -28,6 +28,7 @@ import consensus as consensus_mod
 import jour_j
 import positions as positions_mod
 from secteurs import grand_secteur
+from etude_avant import DEBUT_SUIVI
 from mesures import SEUIL_FORT, SEUIL_NET, arrondi, heure_paris, mediane, moyenne, p_binomiale, pct
 
 PRIORITE = {cid: i for i, cid in enumerate(ORDRE)}
@@ -57,6 +58,14 @@ HISTORIQUE_CA = _historique("consensus_ca_historique.json")
 # inutilisable : BPA comptable face à un consensus ajusté sans ajusté connu,
 # chiffre d'affaires seul, attendu incohérent...).
 BPA_VERIFIE = _historique("bpa_verifie.json").get("publications", {})
+# Google Finance (google_finance.py) : BPA et chiffre d'affaires publies face
+# a l'estimation, dernier rapport de chaque entreprise releve au fil des jours.
+GOOGLE = _historique("consensus_google.json").get("entreprises", {})
+# Publications depuis le debut du suivi (l'application a l'historique d'avant) :
+# memes filtres que cet historique.
+ECART_COURS_MAX = 5.0  # % : BPA ecarte si |publie - attendu| depasse 5 % du cours de la veille
+CA_RAPPORT = (0.6, 1.6)  # chiffre d'affaires publie / attendu hors de ces bornes : periodes melangees
+BPA_PERIODES_EUROPE = ((1.65, 2.5), (0.4, 0.61))  # BPA publie / attendu : semestre face a un trimestre
 AVANT = 20  # seances avant la publication (le cours "recent")
 SUITE = 5  # seances apres la reaction (la baisse ou la hausse se prolonge-t-elle ?)
 UN_AN = 250  # seances de l'evolution sur 12 mois face a l'indice
@@ -222,7 +231,7 @@ def mesurer(ev, serie, premier):
     return True
 
 
-def enrichir(evts, positions, consensus):
+def enrichir(evts, positions, consensus, series=None):
     """Attentes du marche avant chaque publication de resultats ou revision :
     part du capital vendue a decouvert la veille (AMF), ecart du BPA publie au
     consensus (avis de Claude, sinon Yahoo pour les BPA trimestriels) et
@@ -296,6 +305,69 @@ def enrichir(evts, positions, consensus):
                 continue
             ev["surprise_ca_pct"] = round((publie - estime) / abs(estime) * 100, 1)
             ev["surprise_ca"] = jour_j.position_consensus(publie, estime)
+        suivi(ticker, [x for x in v if x["categorie"] == "resultats" and x["jour"] >= DEBUT_SUIVI],
+              fiche, (series or {}).get(ticker))
+
+
+def suivi(ticker, v, fiche, serie):
+    """Publications depuis DEBUT_SUIVI : chiffre d'affaires face au consensus
+    (Google Finance ; estimation Yahoo du trimestre a defaut), BPA de Google a
+    defaut de Yahoo, puis filtres de l'historique de l'application (BPA ecarte
+    au-dela de 5 % du cours, periodes melangees)."""
+    google = (GOOGLE.get(ticker) or {}).get("rapports") or []
+    europe = "." in ticker
+    lignes_ca, lignes_bpa = [], []
+    for date, _, _, bpa_pub, bpa_est, ca_pub, ca_est, _ in google:
+        if ca_pub is not None and ca_est is None:
+            releve = consensus_mod.avant(fiche, date) if fiche else None
+            q = ((releve or {}).get("ca") or {}).get("0q")
+            if q and q[0] and ((releve.get("fin") or {}).get("0q") or "9") <= date:
+                ca_est = q[0]
+        lignes_ca.append([date, ca_est, ca_pub])
+        lignes_bpa.append([date, bpa_est, bpa_pub])
+    for ev, (_, estime, publie) in _rapprocher([x for x in v if x.get("surprise_ca_pct") is None], lignes_ca):
+        if estime and publie is not None:
+            ev["surprise_ca_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+            ev["surprise_ca"] = jour_j.position_consensus(publie, estime)
+    for ev, (_, estime, publie) in _rapprocher([x for x in v if x.get("surprise_bpa_pct") is None], lignes_bpa):
+        if estime and publie is not None:
+            ev["surprise_bpa_pct"] = round((publie - estime) / abs(estime) * 100, 1)
+            ev["bpa_suivi"] = (estime, publie)
+            if ev.get("consensus") not in SURPRISES:
+                ev["surprise"] = jour_j.position_consensus(publie, estime)
+    for ev in v:
+        # Chiffre d'affaires d'une autre periode que le consensus.
+        e = ev.get("surprise_ca_pct")
+        if e is not None and not CA_RAPPORT[0] <= 1 + e / 100 <= CA_RAPPORT[1]:
+            ev.pop("surprise_ca_pct")
+            ev.pop("surprise_ca", None)
+        e = ev.get("surprise_bpa_pct")
+        if e is None:
+            continue
+        ecarte = europe and any(a <= 1 + e / 100 <= b for a, b in BPA_PERIODES_EUROPE)
+        # Ecart au consensus rapporte au cours de la veille.
+        estime, publie = ev.get("bpa_suivi") or _bpa_yahoo(fiche, ev)
+        if not ecarte and estime is not None and serie is not None and ev["jour"] in serie.pos:
+            s = serie.pos[ev["jour"]]
+            cours = serie.clo[s - 1] if s > 0 else None
+            if cours and ticker.endswith(".L") and cours / max(abs(estime), abs(publie), 1e-9) > 600:
+                cours /= 100  # cours en pence, BPA en livres
+            ecarte = bool(cours) and abs(publie - estime) / cours * 100 > ECART_COURS_MAX
+        ev.pop("bpa_suivi", None)
+        if ecarte:
+            ev.pop("surprise_bpa_pct")
+            if ev.get("consensus") not in SURPRISES:
+                ev.pop("surprise", None)
+
+
+def _bpa_yahoo(fiche, ev):
+    """(estime, publie) du BPA trimestriel Yahoo rapproche d'une publication
+    (meme regle qu'enrichir), (None, None) sinon."""
+    for s in (fiche or {}).get("surprises", []):
+        fin = (dt.date.fromisoformat(s["trimestre"]) + dt.timedelta(days=110)).isoformat()
+        if s["trimestre"] < ev["jour"] <= fin and s.get("estime") and s.get("publie") is not None:
+            return s["estime"], s["publie"]
+    return None, None
 
 
 def _rapprocher(v, lignes):
@@ -618,7 +690,7 @@ def _evenement_public(x):
     """Publication de resultats telle qu'affichee dans l'application."""
     cles = ["jour", "periode", "titre", "perspectives", "attentes", "exceptionnel", "actionnaires", "avant_pct", "z_avant", "perf_12m_pct", "rendement_pct", "ecart_pct", "z",
             "suite_pct",
-            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "surprise_ca_pct", "revision_30j_pct", "objectifs_vs"]
+            "reaction", "courtes_pct", "surprise", "surprise_bpa_pct", "surprise_ca_pct", "surprise_ca", "revision_30j_pct", "objectifs_vs"]
     # Sans les valeurs nulles ni fausses (l'application les lit par defaut) :
     # le fichier reste leger malgre des milliers de publications.
     ev = {k: x[k] for k in cles if x.get(k) is not None and x.get(k) is not False}
@@ -675,7 +747,7 @@ def assembler(referentiel, evts, jours, en_attente, cal, series, depuis, n_commu
     de resultats americaines : etude_usa.py) : resumes, entreprises,
     prochaines publications."""
     aujourd_hui = aujourd_hui or dt.date.today().isoformat()
-    enrichir(evts, positions, consensus)
+    enrichir(evts, positions, consensus, series)
     base = jour_ordinaire(evts, series, jours)
 
     # Types de communiques.

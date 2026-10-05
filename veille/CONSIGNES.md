@@ -15,9 +15,12 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Produit `sortie/candidats.json`. Si une source est en erreur (`sources`),
      continue avec les autres et signale-le dans ton compte rendu.
 2. **Attentes du marché et communiqués AMF** : `python consensus.py`,
-   `python objectifs.py`, `python positions.py`, `python communiques.py` puis
-   `python communiques.py --a-classer`
+   `python google_finance.py`, `python objectifs.py`, `python positions.py`,
+   `python communiques.py` puis `python communiques.py --a-classer`
    - `consensus.py` relève le consensus des analystes (Yahoo),
+     `google_finance.py` le chiffre d'affaires (et le BPA) publié face à
+     l'estimation des analystes pour les publications des 12 derniers jours
+     (Google Finance, `consensus_google.json`),
      `objectifs.py` leurs objectifs de cours (Yahoo) et
      `positions.py` les ventes à découvert déclarées à l'AMF : sans IA, ne les
      modifie pas à la main. Une source en erreur n'arrête rien (le fichier
@@ -68,9 +71,9 @@ Tout se passe dans le dossier `veille/` du dépôt.
      cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json`, `positions_courtes.json`, `objectifs.json`,
-   `scores.json`, `resultats_usa_classes.json` et `resultats_usa_jour.json`
-   uniquement, message :
+   `consensus.json`, `consensus_google.json`, `positions_courtes.json`,
+   `objectifs.json`, `scores.json`, `resultats_usa_classes.json` et
+   `resultats_usa_jour.json` uniquement, message :
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
    - **Résultats américains, veille de 13 h 12 seulement** (après 12 h,
      heure de Paris), une fois ce push vérifié : `python edgar.py`,
@@ -83,7 +86,8 @@ Tout se passe dans le dossier `veille/` du dépôt.
      (le fichier précédent est gardé) et signale-le.
    - Puis un second commit des seuls `resultats_usa.json`,
      `resultats_usa_perspectives.json`, `consensus_usa.json`,
-     `communiques_usa.json` et `resultats_usa_jour.json`,
+     `communiques_usa.json`, `test_avant.json` (onglet Test, recalculé par
+     `etude_usa.py`) et `resultats_usa_jour.json`,
      message
      `veille : AAAA-MM-JJ, résultats américains`, et push (même vérification
      du hash). Rien à commiter : signale-le simplement.

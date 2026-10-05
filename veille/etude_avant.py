@@ -17,12 +17,14 @@ statistiques.json ; Etats-Unis : communiques_usa.json) :
 "ensuite" (aussi par entreprise) : rendement moyen des 20 seances avant la reaction et de la seance
 de reaction, selon que le cours a monte ou baisse ce jour-la.
 
-"consensus" (France seulement, seule zone ou le consensus du chiffre
-d'affaires est connu) : P(hausse) selon l'ecart du BPA publie au consensus
+"consensus" (zones ou le consensus du chiffre d'affaires est connu) : P(hausse) selon l'ecart du BPA publie au consensus
 (lignes) et celui du chiffre d'affaires (colonnes), publications ou les deux
 sont connus (surprise_bpa_pct et surprise_ca_pct de statistiques.json) ; une
 grille detaillee (9 tranches : bornes +-2, 5, 10 et 15 %) puis une grille 3 x 3
 par seuil (au-dessus, conforme, en dessous).
+
+"suivi" : grille et encadre Avant / jour J des seules publications depuis
+DEBUT_SUIVI, que l'application ajoute a son historique fige.
 
 Les tableaux sont aussi donnes par grand secteur (secteurs.py).
 
@@ -54,6 +56,10 @@ BORNES_CONSENSUS = (-15, -10, -5, -2, 2, 5, 10, 15)
 LIBELLES_CONSENSUS = ("< −15 %", "−15 à −10 %", "−10 à −5 %", "−5 à −2 %", "−2 à 2 %", "2 à 5 %", "5 à 10 %",
                       "10 à 15 %", "> 15 %")
 SEUILS_CONSENSUS = (2, 5, 10, 15)
+# Debut du suivi : l'application a un historique fige des publications
+# anterieures (BPA et chiffre d'affaires face au consensus) et y ajoute celles
+# qui reagissent a partir de cette date (bloc "suivi" de chaque ensemble).
+DEBUT_SUIVI = "2026-10-05"
 
 
 def tranche(r):
@@ -133,6 +139,8 @@ def etudier(entreprises):
     ensuite = nouvelle_ensuite()
     par_ticker = {}
     couples = []  # (ecart BPA, ecart CA, hausse) face au consensus
+    # Memes calculs sur les publications depuis DEBUT_SUIVI.
+    couples_suivi, ensuite_suivi = [], nouvelle_ensuite()
     cours, sans_cours = {}, set()
     for e in entreprises:
         t = e["ticker"]
@@ -149,12 +157,15 @@ def etudier(entreprises):
                 continue
             s = dates_index(t, dates)[ev["jour"]]
             hausse = rea > 0
+            suivi = ev["jour"] >= DEBUT_SUIVI
             if ev.get("surprise_bpa_pct") is not None and ev.get("surprise_ca_pct") is not None:
                 couples.append((ev["surprise_bpa_pct"], ev["surprise_ca_pct"], int(hausse)))
+                if suivi:
+                    couples_suivi.append(couples[-1])
             total["n"] += 1
             total["hausses" if hausse else "baisses"] += 1
             if s - 1 - AVANT >= 0:
-                for cumul in (ensuite, locale):
+                for cumul in (ensuite, locale) + ((ensuite_suivi,) if suivi else ()):
                     x = cumul["hausse" if hausse else "baisse"]
                     x["n"] += 1
                     x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100
@@ -174,7 +185,9 @@ def etudier(entreprises):
             "entreprises": {t: moyennes(x) for t, x in par_ticker.items() if x["hausse"]["n"] + x["baisse"]["n"]},
             "horizons": [{"seances": h, "tranches": [{"libelle": LIBELLES[i], **c}
                                                       for i, c in enumerate(cases[h])]} for h in HORIZONS],
-            "sans_cours": sorted(sans_cours)}
+            "sans_cours": sorted(sans_cours),
+            "suivi": {"depuis": DEBUT_SUIVI, "consensus": grilles_consensus(couples_suivi),
+                      "ensuite": moyennes(ensuite_suivi)}}
     if couples:
         res["consensus"] = grilles_consensus(couples)
     return res
