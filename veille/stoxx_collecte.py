@@ -26,6 +26,8 @@ Usage :
   python stoxx_collecte.py --uk          annonces Investegate (--complement : 2015-2018 seulement, ajoutees a l'existant)
   python stoxx_collecte.py --nordique    annonces Nasdaq Nordic
   python stoxx_collecte.py --fusion      resultats_stoxx.json
+  python stoxx_collecte.py --recent      mise a jour quotidienne (veille de 13 h 12) : annonces des
+                                         RECENT derniers jours des trois sources, puis --fusion
 """
 
 import argparse
@@ -44,6 +46,7 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 DOSSIER = os.path.join(ICI, "stoxx")
 SORTIE = os.path.join(ICI, "resultats_stoxx.json")
 DEPUIS = "2015-01-01"
+RECENT = 14  # jours relus par --recent
 FIN_COMPLEMENT = "2018-12-31"  # --uk --complement : seulement les annonces avant l'ancien debut (2019)
 _fin = [None]  # date de fin de la recherche Investegate (aujourd'hui par defaut)
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -155,8 +158,8 @@ def collecter_yahoo():
 INV_UA = dict(UA, **{"X-Requested-With": "XMLHttpRequest", "Referer": "https://www.investegate.co.uk/advanced-search"})
 
 
-def _inv_page(mot, recherche, page):
-    q = urllib.parse.urlencode({"search_for": recherche, "search_word": mot, "date_from": DEPUIS,
+def _inv_page(mot, recherche, page, depuis=DEPUIS):
+    q = urllib.parse.urlencode({"search_for": recherche, "search_word": mot, "date_from": depuis,
                                 "date_to": _fin[0] or dt.date.today().isoformat(), "categories[]": 2,
                                 "exclude_navs": "true", "page": page})
     req = urllib.request.Request("https://www.investegate.co.uk/advanced-search/draw?" + q, headers=INV_UA)
@@ -477,14 +480,110 @@ def fusionner():
           f"{avec_bpa} avec le BPA estimé ; sources : {sources}.")
 
 
+def collecter_recent():
+    """Mise a jour quotidienne : seulement les annonces recentes, ajoutees aux
+    collectes completes (stoxx/*.json)."""
+    aujourd_hui = dt.date.today()
+    debut = (aujourd_hui - dt.timedelta(days=RECENT)).isoformat()
+    fin = (aujourd_hui + dt.timedelta(days=3)).isoformat()
+    tous = {e["ticker"]: e for e in univers()}
+
+    # Yahoo : entreprises dont une date de resultats (passee ou attendue) tombe
+    # dans la fenetre ; leur calendrier recent remplace les memes dates.
+    chemin = os.path.join(DOSSIER, "yahoo.json")
+    doc = lire_json(chemin, {})
+    todo = [t for t, l in doc.items() if t in tous and isinstance(l, list)
+            and any(debut <= x[0][:10] <= fin for x in l)]
+    try:
+        import yfinance as yf
+    except ImportError:
+        yf = None
+        print("Yahoo : yfinance absent (pip install yfinance), calendrier non relu.", file=sys.stderr)
+
+    def lire_yahoo(t):
+        for _ in range(3):
+            try:
+                df = yf.Ticker(t).get_earnings_dates(limit=12)
+                if df is None or df.empty:
+                    return t, []
+                return t, [[ts.isoformat(), *[None if r[c] != r[c] else float(r[c])
+                                              for c in ("EPS Estimate", "Reported EPS", "Surprise(%)")]]
+                           for ts, r in df.iterrows()]
+            except Exception:
+                time.sleep(2)
+        return t, None
+
+    if yf is not None:
+        with cf.ThreadPoolExecutor(5) as ex:
+            for t, lignes in ex.map(lire_yahoo, todo):
+                if lignes:
+                    jours = {x[0][:10] for x in lignes}
+                    doc[t] = sorted([x for x in doc[t] if x[0][:10] not in jours] + lignes, key=lambda x: x[0],
+                                    reverse=True)
+        ecrire_json(chemin, doc)
+        print(f"stoxx/yahoo.json : {len(todo)} calendrier(s) relu(s).", file=sys.stderr)
+
+    # Investegate : annonces de resultats recentes, meme recherche que la collecte.
+    chemin = os.path.join(DOSSIER, "uk.json")
+    uk = lire_json(chemin, {})
+    cibles = [t for t, f in uk.items() if t in tous and f.get("recherche")]
+
+    def lire_uk(t):
+        tidm = re.sub(r"\.$", "", t[:-2].replace("-", "."))
+        mot = uk[t]["recherche"]
+        tot = []
+        for page in range(1, 4):
+            ls = _inv_lignes(_inv_page(mot, 2 if mot == tidm else 1, page, debut))
+            tot += [x for x in ls if _epic(x["co"]) == tidm]
+            if len(ls) < 20:
+                break
+        return t, tot
+
+    nouvelles = 0
+    with cf.ThreadPoolExecutor(4) as ex:
+        for t, annonces in ex.map(lire_uk, cibles):
+            connues = {x["url"] for x in uk[t]["annonces"]}
+            ajout = [x for x in annonces if x["url"] not in connues]
+            uk[t]["annonces"] += ajout
+            nouvelles += len(ajout)
+    ecrire_json(chemin, uk)
+    print(f"stoxx/uk.json : {nouvelles} annonce(s) ajoutée(s).", file=sys.stderr)
+
+    # Nasdaq Nordic : premiere page de chaque categorie de rapport.
+    chemin = os.path.join(DOSSIER, "nordique.json")
+    nord = lire_json(chemin, {})
+    cibles = [t for t, f in nord.items() if t in tous and f.get("societe")]
+
+    def lire_nord(t):
+        out = []
+        for cat in CATEGORIES_NORDIQUES:
+            its = _nasdaq(company=nord[t]["societe"], cnscategory=cat) or []
+            out += [{"t": i["releaseTime"], "titre": i["headline"], "categorie": cat, "langue": i["language"],
+                     "url": i.get("messageUrl")} for i in its if i["releaseTime"] >= debut]
+        return t, out
+
+    nouvelles = 0
+    with cf.ThreadPoolExecutor(4) as ex:
+        for t, annonces in ex.map(lire_nord, cibles):
+            connues = {x["url"] for x in nord[t]["annonces"]}
+            ajout = [x for x in annonces if x["url"] not in connues]
+            nord[t]["annonces"] += ajout
+            nouvelles += len(ajout)
+    ecrire_json(chemin, nord)
+    print(f"stoxx/nordique.json : {nouvelles} annonce(s) ajoutée(s).", file=sys.stderr)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--yahoo", action="store_true")
     p.add_argument("--uk", action="store_true")
     p.add_argument("--nordique", action="store_true")
     p.add_argument("--fusion", action="store_true")
+    p.add_argument("--recent", action="store_true", help="mise a jour quotidienne, puis fusion")
     p.add_argument("--complement", action="store_true", help="avec --uk : annonces de 2015 a 2018")
     a = p.parse_args()
+    if a.recent:
+        collecter_recent()
     if a.yahoo:
         collecter_yahoo()
     if a.uk:
