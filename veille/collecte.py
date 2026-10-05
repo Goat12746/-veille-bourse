@@ -8,9 +8,11 @@ ensuite par Claude (voir CONSIGNES.md), puis fusionner.py publie
 alertes.json pour l'application.
 
 Sources :
-  - AMF (info-financiere.gouv.fr) : communiques reglementes des societes ;
+  - AMF (info-financiere.gouv.fr) : communiques reglementes des societes,
+    publies par lots toutes les deux heures environ (premier lot a 9 h) ;
   - Assemblee nationale (open data) : amendements deposes ou votes, agenda ;
-  - Google Actualites (RSS) : presse, par theme ;
+  - Google Actualites (RSS) : presse, par theme et par entreprise (titres des
+    dernieres 24 h, la seule source des communiques du matin avant 9 h) ;
   - Yahoo Finance : dates de resultats et de detachement du dividende
     (indicatives, a confirmer).
 
@@ -487,9 +489,64 @@ def source_presse(a, jours):
             themes = [th] + [t for t in a.themes_de(norm) if t is not th]
             candidats[cid] = a.candidat(cid, "presse", date, titre, titre, lien,
                                         {"media": source}, themes=themes, publie_le=publie_le)
-    if echecs and len(echecs) == len(a.themes):
+    n_requetes = len(a.themes)
+    for i in range(0, len(a.entreprises), PRESSE_PAR_REQUETE):
+        n_requetes += 1
+        try:
+            for c in presse_entreprises(a, a.entreprises[i:i + PRESSE_PAR_REQUETE]):
+                candidats.setdefault(c["id"], c)
+        except Exception as e:
+            print(f"  presse entreprises {i} : {e}", file=sys.stderr)
+            echecs.append(str(e))
+    if echecs and len(echecs) == n_requetes:
         raise RuntimeError(f"toutes les requetes ont echoue : {echecs[0]}")
     return list(candidats.values())
+
+
+# Presse par entreprise : le flux de l'AMF n'arrive que par lots (9 h, 11 h,
+# 13 h, 15 h, 17 h, 19 h, 20 h 05 ; communiques emis jusqu'a environ une heure
+# avant) ; les titres de presse sur un communique du matin sont la des 7 h.
+PRESSE_PAR_REQUETE = 10  # noms d'entreprises par requete Google Actualites
+PRESSE_MAX_PAR_ENTREPRISE = 4  # articles les plus recents gardes par entreprise
+# Revues de marche et listes de valeurs : pas un fait propre a une entreprise.
+PRESSE_REVUES = re.compile(r"\b(cac 40|sbf 120|bourse de paris|valeurs? a suivre|les actions|ouverture|cloture|"
+                           r"marches? europeens|wall street|palmares|ce qu.il faut retenir)\b")
+
+
+def presse_entreprises(a, entreprises):
+    """Google Actualites des dernieres 24 h pour quelques entreprises du
+    referentiel (une requete, noms entre guillemets reunis par OR) : titres
+    qui nomment une ou deux entreprises, hors revues de marche."""
+    noms = [e["nom"].split(" (")[0] for e in entreprises]
+    q = " OR ".join(f'"{n}"' for n in noms) + " when:1d"
+    url = ("https://news.google.com/rss/search?" +
+           urllib.parse.urlencode({"q": q, "hl": "fr", "gl": "FR", "ceid": "FR:fr"}))
+    racine = ET.fromstring(http_get(url))
+    par_ticker = {}
+    for item in racine.iter("item"):
+        titre = item.findtext("title") or ""
+        lien = item.findtext("link") or ""
+        norm = normaliser(titre)
+        tickers = a.entreprises_de([], norm)
+        if not tickers or len(tickers) > 2 or PRESSE_REVUES.search(norm):
+            continue
+        try:
+            publie = email.utils.parsedate_to_datetime(item.findtext("pubDate"))
+            date, publie_le = publie.date().isoformat(), publie.isoformat()
+        except Exception:
+            date, publie_le = dt.date.today().isoformat(), None
+        cid = "presse-" + hashlib.sha1(lien.encode()).hexdigest()[:16]
+        c = a.candidat(cid, "presse", date, titre, titre, lien,
+                       {"media": item.findtext("source") or "", "requete": "entreprise"},
+                       themes=[], tickers=tickers, publie_le=publie_le)
+        for t in tickers:
+            par_ticker.setdefault(t, []).append(c)
+    res = {}
+    for v in par_ticker.values():
+        v.sort(key=lambda c: c["publie_le"] or "", reverse=True)
+        for c in v[:PRESSE_MAX_PAR_ENTREPRISE]:
+            res[c["id"]] = c
+    return list(res.values())
 
 
 def source_calendrier_yahoo(a):

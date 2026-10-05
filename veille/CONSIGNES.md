@@ -113,6 +113,12 @@ La veille du matin passe avant l'ouverture de la Bourse (9 h) : c'est le
 moment d'alerter sur les résultats publiés la veille au soir ou le matin même,
 avant que le cours ne réagisse.
 
+Les résultats publiés le matin même ne sont pas encore dans le flux de l'AMF
+à 8 h 15 (premier lot à 9 h) : `avant_ouverture.py` ne voit que ceux de la
+veille au soir. Ceux du matin arrivent par la presse par entreprise (voir
+« Règles d'analyse ») : juge-les de la même façon, chiffres du communiqué lu
+sur le site de l'entreprise face au consensus de `consensus.json`.
+
 - Pour chaque publication de `sortie/avant_ouverture.json` qui a un
   `candidat` (candidat de la collecte à qui rattacher l'alerte), publie une
   alerte si la
@@ -203,6 +209,16 @@ autres dans `ids_lies`.
   communiqué sur le web (site de l'entreprise, Zonebourse, Boursorama).
 - Pour un article de presse dont seul le titre est connu, cherche l'article
   ou un article équivalent sur le web avant d'évaluer le sens et l'ampleur.
+- **Presse par entreprise** (`meta.requete` = `entreprise`) : titres des
+  dernières 24 h qui nomment une entreprise du référentiel. Le flux de l'AMF
+  n'arrive que par lots (9 h, 11 h, 13 h, 15 h, 17 h, 19 h, 20 h 05, avec les
+  communiqués émis jusqu'à environ une heure avant) : à 8 h 15, un communiqué
+  du matin n'est souvent connu que par la presse. Lis le communiqué sur le
+  site de l'entreprise (ou un article complet) et publie l'alerte sur le
+  meilleur titre (`id`, les autres dans `ids_lies`), avec l'`etape` du
+  communiqué lui-même (`publie`, `annonce`…) ; `rumeur` si l'entreprise n'a
+  rien confirmé. Quand le communiqué AMF arrive à une veille suivante, écarte-le
+  comme doublon d'une alerte déjà publiée.
 - Ne recopie pas `date`, `source` ni `url` : `fusionner.py` les reprend de la
   collecte.
 - **Juge le sens et l'ampleur d'après le contenu de l'information** (mécanisme,
