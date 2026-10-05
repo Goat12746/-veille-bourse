@@ -1,7 +1,53 @@
 {
  "version": 1,
- "maj_le": "2026-10-02T11:14:33+00:00",
+ "maj_le": "2026-10-05T06:22:42+00:00",
  "alertes": [
+  {
+   "id": "an-AMANR5L17PO420120B2892P0D1N000059",
+   "date": "2026-10-02",
+   "source": "assemblee",
+   "titre": "Titres-restaurant : le rapporteur propose un plafond majoré au restaurant et l'usage le dimanche",
+   "resume": "Deux amendements du rapporteur (AS59, AS60) à la proposition de loi n° 2892, en commission des affaires sociales, instaurent un plafond journalier majoré (au moins +20 %) pour les titres utilisés chez les restaurateurs et autorisent leur usage tous les jours, dimanches et fériés compris. L'examen en commission est en cours ; le plafond actuel est de 25 € par jour.",
+   "nouveaute": "Premiers amendements du rapporteur sur le plafond majoré au restaurant et l'usage le week-end, déposés cette semaine.",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2892/CION-SOC/AS59",
+   "etape": "depot",
+   "probabilite": 0.6,
+   "themes": [
+    "tickets_restaurant"
+   ],
+   "entreprises": [
+    {
+     "ticker": "EDEN.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Un plafond majoré chez les restaurateurs et l'usage le week-end peuvent soutenir les volumes d'émission, mais le plafond de droit commun et le régime des titres restent inchangés : effet à ce stade limité.",
+     "extrait": "Le plafond majoré est fixé par le même décret à un niveau supér",
+     "nom": "Edenred"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Amendement AS59 (M. Naegelen, rapporteur)",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2892/CION-SOC/AS59",
+     "date": "2026-10-02",
+     "media": "assemblee"
+    },
+    {
+     "titre": "Amendement AS60 (M. Naegelen, rapporteur)",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2892/CION-SOC/AS60",
+     "date": "2026-10-02",
+     "media": "assemblee"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-05",
+   "publie_a": "2026-10-05T06:22:42+00:00",
+   "texte": "n° 2892",
+   "initial": {
+    "etape": "depot",
+    "probabilite": 0.6
+   }
+  },
   {
    "id": "amf-135709_20261001",
    "date": "2026-10-01",

@@ -1,32 +1,74 @@
 {
  "version": 1,
- "genere_le": "2026-10-02T11:14:33+00:00",
+ "genere_le": "2026-10-05T06:22:42+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 11,
-   "nouveaux": 2
+   "trouves": 3,
+   "nouveaux": 1
   },
   "presse": {
    "ok": true,
-   "trouves": 59,
-   "nouveaux": 20
+   "trouves": 96,
+   "nouveaux": 86
   },
   "assemblee": {
    "ok": true,
-   "trouves": 0,
-   "nouveaux": 0
+   "trouves": 502,
+   "nouveaux": 502
   },
   "agenda": {
-   "ok": false,
-   "erreur": "<urlopen error [Errno 104] Connection reset by peer>"
+   "ok": true,
+   "trouves": 7
   },
   "calendrier": {
    "ok": true,
-   "trouves": 52
+   "trouves": 53
   }
  },
  "alertes": [
+  {
+   "id": "an-AMANR5L17PO420120B2892P0D1N000059",
+   "date": "2026-10-02",
+   "source": "assemblee",
+   "titre": "Titres-restaurant : le rapporteur propose un plafond majoré au restaurant et l'usage le dimanche",
+   "resume": "Deux amendements du rapporteur (AS59, AS60) à la proposition de loi n° 2892, en commission des affaires sociales, instaurent un plafond journalier majoré (au moins +20 %) pour les titres utilisés chez les restaurateurs et autorisent leur usage tous les jours, dimanches et fériés compris. L'examen en commission est en cours ; le plafond actuel est de 25 € par jour.",
+   "nouveaute": "Premiers amendements du rapporteur sur le plafond majoré au restaurant et l'usage le week-end, déposés cette semaine.",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2892/CION-SOC/AS59",
+   "etape": "depot",
+   "probabilite": 0.6,
+   "themes": [
+    "tickets_restaurant"
+   ],
+   "entreprises": [
+    {
+     "ticker": "EDEN.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Un plafond majoré chez les restaurateurs et l'usage le week-end peuvent soutenir les volumes d'émission, mais le plafond de droit commun et le régime des titres restent inchangés : effet à ce stade limité.",
+     "extrait": "Le plafond majoré est fixé par le même décret à un niveau supér",
+     "nom": "Edenred"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Amendement AS59 (M. Naegelen, rapporteur)",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2892/CION-SOC/AS59",
+     "date": "2026-10-02",
+     "media": "assemblee"
+    },
+    {
+     "titre": "Amendement AS60 (M. Naegelen, rapporteur)",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2892/CION-SOC/AS60",
+     "date": "2026-10-02",
+     "media": "assemblee"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-05",
+   "publie_a": "2026-10-05T06:22:42+00:00",
+   "texte": "n° 2892"
+  },
   {
    "id": "amf-135709_20261001",
    "date": "2026-10-01",
@@ -1167,36 +1209,6 @@
  ],
  "calendrier": [
   {
-   "date": "2026-10-01",
-   "heure": "",
-   "type": "budget",
-   "titre": "Présentation du projet de loi de finances et du PLFSS 2027 en Conseil des ministres",
-   "tickers": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "CS.PA",
-    "BN.PA"
-   ],
-   "tickers_mots_cles": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "CS.PA",
-    "BN.PA"
-   ],
-   "themes": [
-    "concessions_autoroutes",
-    "assurances",
-    "fiscalite_grandes_entreprises"
-   ],
-   "texte": "",
-   "mesures": [],
-   "source": "NosParlementaires (calendrier du PLFSS 2027)",
-   "url": "https://nosparlementaires.fr/actualites/plfss-2027-calendrier-examen-date-par-date",
-   "fiable": false
-  },
-  {
    "date": "2026-10-05",
    "heure": "",
    "type": "dividende",
@@ -1218,7 +1230,7 @@
    "date": "2026-10-07",
    "heure": "09:00",
    "type": "budget",
-   "titre": "Examen de la première partie du projet de loi de finances pour 2027",
+   "titre": "Examen de la première partie du projet de loi de finances pour 2027 (n° 3210) (M. Philippe Juvin, rapporteur général).",
    "tickers": [
     "DG.PA",
     "FGR.PA",
@@ -1292,26 +1304,6 @@
    "fiable": true
   },
   {
-   "date": "2026-10-07",
-   "heure": "09:00",
-   "type": "examen_texte",
-   "titre": "Examen de la proposition de loi visant à moderniser et rééquilibrer le fonctionnement du titre-restaurant (n° 2892).",
-   "tickers": [
-    "EDEN.PA"
-   ],
-   "tickers_mots_cles": [
-    "EDEN.PA"
-   ],
-   "themes": [
-    "tickets_restaurant"
-   ],
-   "texte": "n° 2892",
-   "mesures": [],
-   "source": "Assemblée nationale — Commission des affaires sociales",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461169",
-   "fiable": true
-  },
-  {
    "date": "2026-10-08",
    "heure": "09:00",
    "type": "examen_texte",
@@ -1351,7 +1343,7 @@
    "themes": [
     "tickets_restaurant"
    ],
-   "texte": "n° 2892",
+   "texte": "",
    "mesures": [],
    "source": "Assemblée nationale — Séance publique",
    "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-12#odj-OMC_RUANR5L17S2027IDS30938",
@@ -2421,6 +2413,24 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/ORA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-02",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Thales : détachement du dividende",
+   "tickers": [
+    "HO.PA"
+   ],
+   "tickers_mots_cles": [
+    "HO.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/HO.PA",
    "fiable": false
   },
   {
