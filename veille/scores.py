@@ -28,8 +28,8 @@ L'objectif median n'a pas d'historique gratuit : il est releve chaque jour
 depuis le 1er octobre 2026 (Yahoo) et sera note a partir d'octobre 2027.
 
 Ecrit scores.json. Usage : python scores.py
-  python scores.py --univers monde   autres indices de l'application (objectifs_monde.json
-  -> scores_monde.json et scores_monde/), a la main
+  python scores.py --univers monde   Europe (STOXX 600 + SBF 120) et Etats-Unis
+  (objectifs_monde.json et objectifs.json -> scores_monde.json et scores_monde/), a la main
 Bibliotheque standard uniquement.
 """
 
@@ -287,7 +287,7 @@ def calculer(entreprises, objectifs, indices, limite):
         changements = objectif_moyen(source, mult, mult_yahoo)
         if not changements:
             continue
-        indice = indices.get(e.get("zone", "france"), {})
+        indice = indices.get(e.get("indice_comparaison") or e.get("zone", "france"), {})
         echues, en_cours = observations(cours, dividendes, indice, Escalier(changements), changements[0][0])
         for o in echues:
             o["ticker"] = t
@@ -410,7 +410,8 @@ def fichier_detail(ticker):
     return base + ("_" if base.upper() in RESERVES else "") + ".json"
 
 
-ZONES = {"europe": ("Europe", "^STOXX", "STOXX Europe 600"), "usa": ("États-Unis", "^GSPC", "S&P 500")}
+ZONES = {"europe": ("Europe", "^STOXX", "STOXX Europe 600 (CAC 40 pour les valeurs du SBF 120)"),
+         "usa": ("États-Unis", "^GSPC", "S&P 500")}
 DETAIL = ("derniere_echue", "en_cours", "courbe", "observations")
 
 
@@ -422,9 +423,20 @@ def main_monde():
         entreprises = json.load(f)["entreprises"]
     with open(os.path.join(ICI, "objectifs_monde.json"), encoding="utf-8") as f:
         objectifs = json.load(f)
+    # Europe = STOXX 600 et SBF 120 (referentiel et objectifs.json de la veille),
+    # les valeurs du SBF 120 comparees au CAC 40 comme dans scores.json.
+    with open(os.path.join(ICI, "referentiel.json"), encoding="utf-8") as f:
+        sbf = json.load(f)["entreprises"]
+    with open(os.path.join(ICI, "objectifs.json"), encoding="utf-8") as f:
+        objectifs_sbf = json.load(f)["entreprises"]
+    deja = {e["ticker"] for e in entreprises}
+    entreprises += [{**e, "zone": "europe", "indices": ["CAC 40", "SBF 120"] if e["indice"] == "CAC 40" else ["SBF 120"],
+                     "indice_comparaison": "france"} for e in sbf if e["ticker"] not in deja]
+    objectifs["entreprises"].update({t: v for t, v in objectifs_sbf.items() if t not in deja})
     limite = limite_cotation()
     debut = min([f["moyen"][0][0] for f in objectifs["entreprises"].values() if f.get("moyen")] + [limite])
     indices = {z: cours_bruts(sym, debut, limite)[0] for z, (_, sym, _) in ZONES.items()}
+    indices["france"] = cours_bruts(INDICE, debut, limite)[0]
     zones, toutes_fiches, erreurs = [], [], {}
     for z, (libelle, _, nom_indice) in ZONES.items():
         print(f"{libelle}…", file=sys.stderr)
