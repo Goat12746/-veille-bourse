@@ -2,31 +2,25 @@
 """Onglet Test : le rendement de l'action avant la publication des resultats
 annonce-t-il le sens de la reaction ?
 
-Pour chaque publication de resultats deja mesuree (France : historique_amf de
-statistiques.json ; Etats-Unis : communiques_usa.json) :
+L'historique fige (publications avant DEBUT_SUIVI) est calcule sur les
+donnees FMP (donnees-fmp/stat_fmp.py, communiques_fmp.json, integre a
+l'application). Ce script ne mesure que les publications suivies depuis
+DEBUT_SUIVI (France : historique_amf de statistiques.json ; Etats-Unis :
+communiques_usa.json ; STOXX 600 : communiques_stoxx.json), bloc "suivi" que
+l'application additionne a l'historique FMP :
 
-  - R[N] = rendement de l'action (cours ajustes) sur les N seances qui
-    precedent la seance de reaction, N = 1, 10 et 30 : cloture de la derniere
-    seance avant la reaction / cloture N seances plus tot - 1 ;
-  - sens de la reaction : hausse ou baisse du cours le jour de la reaction
-    (rendement_pct de l'evenement, brut, sans correction de l'indice) ;
-  - R[N] est range dans l'une des 7 tranches (< -10 %, -10 a -5, -5 a -2,
-    -2 a 2, 2 a 5, 5 a 10, > 10 %), puis P(hausse | R[N] dans la tranche) est
-    le nombre de hausses sur le nombre de publications de la tranche.
+  - R[30] = rendement de l'action (cours ajustes) sur les 30 seances qui
+    precedent la seance de reaction, range dans l'une des 7 tranches
+    (< -10 %, -10 a -5, -5 a -2, -2 a 2, 2 a 5, 5 a 10, > 10 %) ; sens de la
+    reaction : hausse ou baisse du cours le jour de la reaction (rendement_pct,
+    brut) ; P(hausse | tranche) = hausses / publications ;
+  - "ensuite" (zone et chaque entreprise) : rendement moyen des 20 seances
+    avant la reaction et de la seance de reaction, selon le sens du jour ;
+  - "consensus" : P(hausse) selon l'ecart du BPA (lignes) et du chiffre
+    d'affaires (colonnes) au consensus, grille detaillee (bornes +-2, 5, 10 et
+    15 %) puis une grille 3 x 3 par seuil.
 
-"ensuite" (aussi par entreprise) : rendement moyen des 20 seances avant la reaction et de la seance
-de reaction, selon que le cours a monte ou baisse ce jour-la.
-
-"consensus" (zones ou le consensus du chiffre d'affaires est connu) : P(hausse) selon l'ecart du BPA publie au consensus
-(lignes) et celui du chiffre d'affaires (colonnes), publications ou les deux
-sont connus (surprise_bpa_pct et surprise_ca_pct de statistiques.json) ; une
-grille detaillee (9 tranches : bornes +-2, 5, 10 et 15 %) puis une grille 3 x 3
-par seuil (au-dessus, conforme, en dessous).
-
-"suivi" : grille et encadre Avant / jour J des seules publications depuis
-DEBUT_SUIVI, que l'application ajoute a son historique fige.
-
-Les tableaux sont aussi donnes par grand secteur (secteurs.py).
+Memes tableaux par grand secteur (secteurs.py), sauf "ensuite".
 
 Ecrit test_avant.json. Aucun reseau : lit les cours deja en cache
 (.cache/cours, ecrits par statistiques.py et etude_usa.py).
@@ -45,7 +39,7 @@ from secteurs import SECTEURS, grand_secteur
 ICI = os.path.dirname(os.path.abspath(__file__))
 SORTIE = os.path.join(ICI, "test_avant.json")
 COURS = os.path.join(ICI, ".cache", "cours")
-HORIZONS = (1, 10, 30)
+HORIZON = 30  # seances de R[N] (R[1] et R[10] retires de l'application)
 AVANT = 20  # seances du "cours recent" de l'encadre Avant / jour J
 # Bornes basses (incluses) des tranches de R[N], en %.
 BORNES = (-10, -5, -2, 2, 5, 10)
@@ -129,82 +123,66 @@ def moyennes(ensuite):
                 "jour_pct": round(x["jour"] / x["n"], 2) if x["n"] else None} for k, x in ensuite.items()}
 
 
-def etudier(entreprises):
-    """Tableaux d'un ensemble d'entreprises : pour chaque horizon, les 7
-    tranches avec le nombre de publications, de hausses et de baisses."""
-    cases = {h: [{"n": 0, "hausses": 0, "baisses": 0, "somme_reaction_pct": 0.0} for _ in LIBELLES]
-             for h in HORIZONS}
-    total = {"n": 0, "hausses": 0, "baisses": 0}
-    # Cours recent (R[20]) et reaction du jour, moyennes selon le sens.
-    ensuite = nouvelle_ensuite()
-    par_ticker = {}
-    couples = []  # (ecart BPA, ecart CA, hausse) face au consensus
-    # Memes calculs sur les publications depuis DEBUT_SUIVI.
-    couples_suivi, ensuite_suivi = [], nouvelle_ensuite()
-    cours, sans_cours = {}, set()
+def etudier(entreprises, par_entreprise=False):
+    """Bloc "suivi" d'un ensemble d'entreprises : publications depuis
+    DEBUT_SUIVI (l'historique fige vient de FMP, communiques_fmp.json, et
+    l'application les additionne). Les 7 tranches de R[30] (publications et
+    hausses), la grille consensus, l'encadre Avant / jour J, et par entreprise
+    si demande."""
+    cases = [{"n": 0, "hausses": 0} for _ in LIBELLES]
+    total = {"n": 0, "hausses": 0}
+    ensuite, par_ticker, couples = nouvelle_ensuite(), {}, []
     for e in entreprises:
         t = e["ticker"]
-        if t not in cours:
-            cours[t] = charger_cours(t)
-        if cours[t] is None:
-            sans_cours.add(t)
+        evs = [ev for ev in e["resultats"]["evenements"] if ev["jour"] >= DEBUT_SUIVI and ev.get("rendement_pct")]
+        if not evs:
             continue
-        dates, clo = cours[t]
-        locale = par_ticker[t] = nouvelle_ensuite()
-        for ev in e["resultats"]["evenements"]:
-            rea = ev.get("rendement_pct")
-            if rea is None or rea == 0 or ev["jour"] not in dates_index(t, dates):
+        cours = charger_cours(t)
+        if cours is None:
+            continue
+        dates, clo = cours
+        index = dates_index(t, dates)
+        locale = nouvelle_ensuite()
+        for ev in evs:
+            if ev["jour"] not in index:
                 continue
-            s = dates_index(t, dates)[ev["jour"]]
+            s, rea = index[ev["jour"]], ev["rendement_pct"]
             hausse = rea > 0
-            suivi = ev["jour"] >= DEBUT_SUIVI
             if ev.get("surprise_bpa_pct") is not None and ev.get("surprise_ca_pct") is not None:
                 couples.append((ev["surprise_bpa_pct"], ev["surprise_ca_pct"], int(hausse)))
-                if suivi:
-                    couples_suivi.append(couples[-1])
             total["n"] += 1
-            total["hausses" if hausse else "baisses"] += 1
+            total["hausses"] += hausse
             if s - 1 - AVANT >= 0:
-                for cumul in (ensuite, locale) + ((ensuite_suivi,) if suivi else ()):
+                for cumul in (ensuite, locale):
                     x = cumul["hausse" if hausse else "baisse"]
                     x["n"] += 1
                     x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100
                     x["jour"] += rea
-            for h in HORIZONS:
-                if s - 1 - h < 0:
-                    continue
-                r = (clo[s - 1] / clo[s - 1 - h] - 1) * 100
-                c = cases[h][tranche(r)]
+            if s - 1 - HORIZON >= 0:
+                c = cases[tranche((clo[s - 1] / clo[s - 1 - HORIZON] - 1) * 100)]
                 c["n"] += 1
-                c["hausses" if hausse else "baisses"] += 1
-                c["somme_reaction_pct"] += rea
-    for h in HORIZONS:
-        for c in cases[h]:
-            c["reaction_moyenne_pct"] = round(c.pop("somme_reaction_pct") / c["n"], 2) if c["n"] else None
-    res = {"n": total["n"], "hausses": total["hausses"], "baisses": total["baisses"], "ensuite": moyennes(ensuite),
-            "entreprises": {t: moyennes(x) for t, x in par_ticker.items() if x["hausse"]["n"] + x["baisse"]["n"]},
-            "horizons": [{"seances": h, "tranches": [{"libelle": LIBELLES[i], **c}
-                                                      for i, c in enumerate(cases[h])]} for h in HORIZONS],
-            "sans_cours": sorted(sans_cours),
-            "suivi": {"depuis": DEBUT_SUIVI, "consensus": grilles_consensus(couples_suivi),
-                      "ensuite": moyennes(ensuite_suivi)}}
-    if couples:
-        res["consensus"] = grilles_consensus(couples)
+                c["hausses"] += hausse
+        if locale["hausse"]["n"] + locale["baisse"]["n"]:
+            par_ticker[t] = moyennes(locale)
+    res = {"depuis": DEBUT_SUIVI, "n": total["n"], "hausses": total["hausses"],
+           "horizons": [{"seances": HORIZON, "tranches": [{"libelle": LIBELLES[i], **c} for i, c in enumerate(cases)]}],
+           "consensus": grilles_consensus(couples), "ensuite": moyennes(ensuite)}
+    if par_entreprise:
+        res["entreprises"] = par_ticker
     return res
 
 
 def etudier_zone(histo):
-    """Une zone : toutes les entreprises, puis chaque grand secteur."""
-    zone = {"depuis": histo["depuis"], "jusqu_a": histo["jusqu_a"], **etudier(histo["entreprises"])}
-    # Par entreprise : seulement au niveau de la zone (pas dans chaque secteur).
+    """Une zone : toutes les entreprises (et chacune), puis chaque grand
+    secteur ayant des publications suivies."""
     secteurs = {}
     for nom in SECTEURS:
         membres = [e for e in histo["entreprises"] if grand_secteur(e.get("secteur")) == nom]
-        if membres:
-            secteurs[nom] = etudier(membres)
-            secteurs[nom].pop("entreprises")
-    zone["secteurs"] = secteurs
-    return zone
+        s = etudier(membres) if membres else None
+        if s and s["n"]:
+            s.pop("ensuite")
+            secteurs[nom] = {"suivi": s}
+    return {"suivi": etudier(histo["entreprises"], par_entreprise=True), "secteurs": secteurs}
 
 
 _index = {}
@@ -222,15 +200,14 @@ def main():
     for zone, histo in (("france", evenements_france()), ("usa", evenements_usa()), ("stoxx", evenements_stoxx())):
         if histo:
             zones[zone] = etudier_zone(histo)
-    doc = {"version": 1, "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+    doc = {"version": 2, "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
            "tranches": list(LIBELLES), "zones": zones}
     with open(SORTIE, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     for zone, z in zones.items():
-        print(f"test_avant.json : {zone} {z['n']} publications ({z['hausses']} hausses), "
-              f"{len(z['secteurs'])} secteurs, cours manquants : {len(z['sans_cours'])}"
-              + (f", BPA et CA face au consensus : {z['consensus']['n']}." if "consensus" in z else "."))
+        print(f"test_avant.json : {zone} {z['suivi']['n']} publications suivies depuis {DEBUT_SUIVI} "
+              f"({z['suivi']['hausses']} hausses), {len(z['secteurs'])} secteurs.")
 
 
 if __name__ == "__main__":
