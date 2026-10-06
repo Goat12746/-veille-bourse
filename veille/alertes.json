@@ -1,29 +1,29 @@
 {
  "version": 1,
- "genere_le": "2026-10-05T11:16:14+00:00",
+ "genere_le": "2026-10-06T06:19:50+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 5,
-   "nouveaux": 5
+   "trouves": 16,
+   "nouveaux": 11
   },
   "presse": {
    "ok": true,
-   "trouves": 18,
-   "nouveaux": 8
+   "trouves": 348,
+   "nouveaux": 306
   },
   "assemblee": {
    "ok": true,
-   "trouves": 268,
-   "nouveaux": 0
+   "trouves": 395,
+   "nouveaux": 21
   },
   "agenda": {
    "ok": true,
-   "trouves": 7
+   "trouves": 8
   },
   "calendrier": {
    "ok": true,
-   "trouves": 53
+   "trouves": 52
   }
  },
  "alertes": [
@@ -1277,24 +1277,6 @@
  ],
  "calendrier": [
   {
-   "date": "2026-10-05",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Société Générale : détachement du dividende",
-   "tickers": [
-    "GLE.PA"
-   ],
-   "tickers_mots_cles": [
-    "GLE.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/GLE.PA",
-   "fiable": false
-  },
-  {
    "date": "2026-10-07",
    "heure": "09:00",
    "type": "budget",
@@ -1726,6 +1708,30 @@
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/VRLA.PA",
    "fiable": false
+  },
+  {
+   "date": "2026-10-27",
+   "heure": "15:00",
+   "type": "budget",
+   "titre": "Vote solennel sur le projet de loi de financement de la sécurité sociale pour 2027",
+   "tickers": [
+    "BN.PA",
+    "CA.PA"
+   ],
+   "tickers_mots_cles": [],
+   "themes": [],
+   "texte": "PLFSS 2027",
+   "mesures": [
+    {
+     "alerte_id": "presse-e4359fea6c50b69e",
+     "titre": "PLFSS 2027 : projet de taxe sur les produits sucrés transformés",
+     "etape": "rumeur",
+     "article": ""
+    }
+   ],
+   "source": "Assemblée nationale — Séance publique",
+   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-27#odj-OMC_RUANR5L17S2027IDS30964",
+   "fiable": true
   },
   {
    "date": "2026-10-28",

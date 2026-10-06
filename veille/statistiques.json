@@ -1,7 +1,7 @@
 {
  "version": 1,
- "genere_le": "2026-10-05T14:19:59+02:00",
- "derniere_seance": "2026-10-02",
+ "genere_le": "2026-10-06T06:21:08+00:00",
+ "derniere_seance": "2026-10-05",
  "methode": {
   "indice": "CAC 40",
   "estimation": 250,
@@ -16,7 +16,7 @@
   "n_alertes": 25,
   "n_observations": 79,
   "statuts": {
-   "attente": 3,
+   "donnees": 3,
    "note": 18,
    "non_directionnel": 10,
    "confondu": 8,
@@ -262,9 +262,9 @@
     "publie_a": "2026-10-05T13:16",
     "information": "2026-10-05T07:59",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-05",
+     "fin": "2026-10-05",
+     "seances": 1
     },
     "avant_reaction": false,
     "macro": false,
@@ -275,7 +275,7 @@
       "nom": "Air Liquide",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -289,9 +289,9 @@
     "publie_a": "2026-10-05T13:16",
     "information": "2026-10-05T06:59",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-05",
+     "fin": "2026-10-05",
+     "seances": 1
     },
     "avant_reaction": false,
     "macro": false,
@@ -302,7 +302,7 @@
       "nom": "Schneider Electric",
       "sens": "incertain",
       "ampleur": "forte",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -317,8 +317,8 @@
     "information": "2026-10-02T00:00",
     "reaction": {
      "debut": "2026-10-02",
-     "fin": null,
-     "seances": null
+     "fin": "2026-10-05",
+     "seances": 2
     },
     "avant_reaction": false,
     "macro": false,
@@ -329,7 +329,7 @@
       "nom": "Edenred",
       "sens": "incertain",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -1776,11 +1776,11 @@
   "version": 2,
   "indice": "CAC 40",
   "depuis": "2015-01-01",
-  "jusqu_a": "2026-10-02",
-  "n_communiques": 25920,
+  "jusqu_a": "2026-10-05",
+  "n_communiques": 25931,
   "n_evenements": 21095,
   "n_entreprises": 115,
-  "en_attente": 5,
+  "en_attente": 7,
   "jour_ordinaire": {
    "n": 311977,
    "z_abs_moyen": 0.67,
@@ -1858,7 +1858,7 @@
     "baisse_si_negatif": 0.4,
     "concordance": 0.538,
     "p": 0.3816,
-    "ecart_moyen_positif_pct": -0.42,
+    "ecart_moyen_positif_pct": -0.41,
     "ecart_moyen_negatif_pct": -2.16,
     "id": "juridique",
     "libelle": "Juridique et réglementaire"
@@ -2037,7 +2037,7 @@
      },
      "baisse": {
       "n": 146,
-      "avant_moyen_pct": -0.47,
+      "avant_moyen_pct": -0.46,
       "ecart_moyen_pct": -4.06,
       "suite_moyenne_pct": -0.24
      },
@@ -3285,7 +3285,7 @@
        "n": 4,
        "avant_moyen_pct": 1.35,
        "ecart_moyen_pct": 2.0,
-       "suite_moyenne_pct": 0.07
+       "suite_moyenne_pct": 0.08
       },
       "baisse": {
        "n": 3,
@@ -4837,7 +4837,7 @@
        "hausse": {
         "n": 6,
         "avant_moyen_pct": -1.5,
-        "ecart_moyen_pct": 1.33,
+        "ecart_moyen_pct": 1.34,
         "suite_moyenne_pct": -0.06
        },
        "baisse": {
@@ -4887,7 +4887,7 @@
        "hausse": {
         "n": 6,
         "avant_moyen_pct": -1.5,
-        "ecart_moyen_pct": 1.33,
+        "ecart_moyen_pct": 1.34,
         "suite_moyenne_pct": -0.06
        },
        "baisse": {
@@ -5706,7 +5706,7 @@
       "au": "2022-11-09"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -5719,11 +5719,11 @@
         1
        ],
        "0y": [
-        6.409,
+        6.408,
         16
        ],
        "+1y": [
-        7.164,
+        7.163,
         18
        ]
       },
@@ -5741,17 +5741,17 @@
         17
        ],
        "+1y": [
-        29520000000,
+        29510000000,
         18
        ]
       },
       "revision_30j_pct": -0.7,
       "revisions": {
        "+1q": [
+        0,
+        0,
         1,
-        0,
-        0,
-        0
+        1
        ],
        "0y": [
         0,
@@ -7333,7 +7333,7 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2027-03-31",
@@ -7341,12 +7341,12 @@
       },
       "bpa": {
        "0y": [
-        1.604,
-        6
+        1.609,
+        5
        ],
        "+1y": [
-        1.933,
-        6
+        1.97,
+        5
        ]
       },
       "ca": {
@@ -7363,7 +7363,7 @@
         13
        ]
       },
-      "revision_30j_pct": 2.4,
+      "revision_30j_pct": 2.7,
       "revisions": {
        "0y": [
         0,
@@ -7646,7 +7646,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -7655,53 +7655,53 @@
       },
       "bpa": {
        "0q": [
-        1.17,
+        1.09,
         4
        ],
        "+1q": [
-        1.503,
+        1.451,
         4
        ],
        "0y": [
-        4.348,
-        7
+        4.141,
+        8
        ],
        "+1y": [
-        7.435,
-        7
+        7.289,
+        8
        ]
       },
       "ca": {
        "0q": [
         17300000000,
-        6
+        5
        ],
        "+1q": [
-        17860000000,
-        6
+        18050000000,
+        5
        ],
        "0y": [
-        67260000000,
+        67300000000,
         16
        ],
        "+1y": [
-        72520000000,
+        72740000000,
         16
        ]
       },
-      "revision_30j_pct": -2.0,
+      "revision_30j_pct": -6.7,
       "revisions": {
        "0q": [
-        1,
         0,
-        3,
+        0,
+        1,
         1
        ],
        "+1q": [
         0,
+        0,
         1,
-        1,
-        2
+        1
        ],
        "0y": [
         0,
@@ -7711,9 +7711,9 @@
        ],
        "+1y": [
         0,
-        2,
         1,
-        1
+        1,
+        2
        ]
       },
       "surprises": [
@@ -8893,9 +8893,9 @@
       "revisions": {
        "0y": [
         1,
-        4,
-        1,
-        3
+        3,
+        2,
+        4
        ],
        "+1y": [
         1,
@@ -9945,7 +9945,7 @@
       "au": "2022-11-02"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -9962,11 +9962,11 @@
         3
        ],
        "0y": [
-        11.63,
+        11.65,
         12
        ],
        "+1y": [
-        13.27,
+        13.29,
         13
        ]
       },
@@ -9980,15 +9980,15 @@
         2
        ],
        "0y": [
-        55150000000,
+        55190000000,
         14
        ],
        "+1y": [
-        57520000000,
+        57550000000,
         14
        ]
       },
-      "revision_30j_pct": 0.7,
+      "revision_30j_pct": 0.9,
       "revisions": {
        "0q": [
         2,
@@ -10264,7 +10264,7 @@
        },
        "baisse": {
         "n": 6,
-        "avant_moyen_pct": 0.59,
+        "avant_moyen_pct": 0.6,
         "ecart_moyen_pct": -2.4,
         "suite_moyenne_pct": 1.63
        },
@@ -11257,7 +11257,7 @@
       "au": "2026-03-10"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -11818,7 +11818,7 @@
        "n": 6,
        "part_hausse": 0.833,
        "ecart_moyen_pct": 3.34,
-       "z_abs_moyen": 3.98
+       "z_abs_moyen": 3.99
       },
       {
        "valeur": "abaissees",
@@ -11989,7 +11989,7 @@
        "perf_12m_pct": -2.21,
        "rendement_pct": 1.56,
        "ecart_pct": 2.19,
-       "z": 2.03,
+       "z": 2.04,
        "suite_pct": 1.83,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -12516,43 +12516,43 @@
       "au": "2026-09-14"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.544,
+        1.543,
         13
        ],
        "+1y": [
-        1.631,
+        1.632,
         13
        ]
       },
       "ca": {
        "0y": [
-        6777000000,
+        6770000000,
         12
        ],
        "+1y": [
-        7053000000,
+        7051000000,
         12
        ]
       },
-      "revision_30j_pct": 0.1,
+      "revision_30j_pct": 0.0,
       "revisions": {
        "0y": [
         1,
-        1,
+        2,
         0,
-        1
+        0
        ],
        "+1y": [
+        1,
+        1,
         0,
-        1,
-        1,
         0
        ]
       },
@@ -13803,7 +13803,7 @@
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -15014,32 +15014,32 @@
       "au": "2026-09-28"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.729,
+        1.728,
         13
        ],
        "+1y": [
-        1.869,
+        1.867,
         13
        ]
       },
       "ca": {
        "0y": [
-        82060000000,
-        10
+        82270000000,
+        11
        ],
        "+1y": [
-        83510000000,
-        10
+        83790000000,
+        11
        ]
       },
-      "revision_30j_pct": 0.0,
+      "revision_30j_pct": -0.1,
       "revisions": {
        "0y": [
         0,
@@ -15306,7 +15306,7 @@
         "n": 12,
         "avant_moyen_pct": 1.6,
         "ecart_moyen_pct": 2.38,
-        "suite_moyenne_pct": -0.29
+        "suite_moyenne_pct": -0.3
        },
        "baisse": {
         "n": 11,
@@ -16261,8 +16261,8 @@
         0
        ],
        "+1y": [
-        1,
         3,
+        5,
         0,
         0
        ]
@@ -17464,7 +17464,7 @@
       "au": "2025-08-19"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -17473,33 +17473,33 @@
       },
       "bpa": {
        "0y": [
-        3.929,
+        3.927,
         19
        ],
        "+1y": [
-        4.227,
+        4.226,
         19
        ]
       },
       "ca": {
        "0q": [
-        7265000000,
-        3
-       ],
-       "+1q": [
-        7060000000,
+        7244000000,
         2
        ],
+       "+1q": [
+        7073000000,
+        1
+       ],
        "0y": [
-        28160000000,
+        28150000000,
         18
        ],
        "+1y": [
-        29470000000,
+        29460000000,
         18
        ]
       },
-      "revision_30j_pct": -0.2,
+      "revision_30j_pct": -0.3,
       "revisions": {
        "0y": [
         1,
@@ -17509,9 +17509,9 @@
        ],
        "+1y": [
         0,
-        8,
+        0,
         1,
-        6
+        2
        ]
       },
       "surprises": []
@@ -17882,7 +17882,7 @@
         "n": 8,
         "avant_moyen_pct": 1.9,
         "ecart_moyen_pct": 4.91,
-        "suite_moyenne_pct": 2.54
+        "suite_moyenne_pct": 2.53
        },
        "baisse": {
         "n": 11,
@@ -17977,7 +17977,7 @@
        "n": 4,
        "part_hausse": 0.75,
        "ecart_moyen_pct": 2.08,
-       "z_abs_moyen": 2.5
+       "z_abs_moyen": 2.49
       },
       {
        "valeur": "confirmees",
@@ -18406,7 +18406,7 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -18434,11 +18434,11 @@
       "ca": {
        "0q": [
         1521000000,
-        8
+        9
        ],
        "+1q": [
-        1778000000,
-        8
+        1782000000,
+        9
        ],
        "0y": [
         6366000000,
@@ -18452,20 +18452,20 @@
       "revision_30j_pct": 0.1,
       "revisions": {
        "0q": [
-        1,
-        1,
+        2,
+        2,
         0,
         0
        ],
        "+1q": [
         2,
-        1,
+        2,
         0,
         0
        ],
        "0y": [
-        2,
         3,
+        4,
         0,
         0
        ],
@@ -18735,7 +18735,7 @@
         "n": 4,
         "avant_moyen_pct": 0.79,
         "ecart_moyen_pct": 2.95,
-        "suite_moyenne_pct": -0.34
+        "suite_moyenne_pct": -0.33
        },
        "baisse": {
         "n": 4,
@@ -18785,7 +18785,7 @@
         "n": 4,
         "avant_moyen_pct": 0.79,
         "ecart_moyen_pct": 2.95,
-        "suite_moyenne_pct": -0.34
+        "suite_moyenne_pct": -0.33
        },
        "baisse": {
         "n": 4,
@@ -18867,7 +18867,7 @@
       "conforme": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": 2.06,
+        "avant_moyen_pct": 2.05,
         "ecart_moyen_pct": 3.02,
         "suite_moyenne_pct": -0.58
        },
@@ -19741,7 +19741,7 @@
       "au": "2025-02-28"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -19806,7 +19806,7 @@
        ],
        "+1y": [
         1,
-        2,
+        3,
         1,
         1
        ]
@@ -19841,7 +19841,7 @@
     "nom": "Edenred",
     "indice": "CAC 40",
     "secteur": "Titres-restaurant, paiements",
-    "n_communiques": 250,
+    "n_communiques": 251,
     "n_evenements": 193,
     "categories": [
      {
@@ -21030,7 +21030,7 @@
         5
        ],
        "+1y": [
-        0,
+        1,
         1,
         2,
         5
@@ -22136,7 +22136,7 @@
       "au": "2020-03-20"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -22145,45 +22145,45 @@
       },
       "bpa": {
        "0y": [
-        7.254,
-        20
+        7.235,
+        21
        ],
        "+1y": [
-        7.943,
+        7.887,
         21
        ]
       },
       "ca": {
        "0q": [
-        7356000000,
-        5
+        7358000000,
+        6
        ],
        "+1q": [
         7911000000,
         1
        ],
        "0y": [
-        30200000000,
+        30120000000,
         20
        ],
        "+1y": [
-        32770000000,
+        32600000000,
         20
        ]
       },
-      "revision_30j_pct": -2.0,
+      "revision_30j_pct": -2.3,
       "revisions": {
        "0y": [
         0,
         0,
-        3,
+        5,
         5
        ],
        "+1y": [
         0,
         0,
         5,
-        4
+        6
        ]
       },
       "surprises": []
@@ -22941,9 +22941,9 @@
         1
        ],
        "+1y": [
+        1,
+        1,
         0,
-        1,
-        1,
         1
        ]
       },
@@ -23131,7 +23131,7 @@
       "positive": {
        "hausse": {
         "n": 18,
-        "avant_moyen_pct": -0.93,
+        "avant_moyen_pct": -0.92,
         "ecart_moyen_pct": 3.65,
         "suite_moyenne_pct": 0.83
        },
@@ -23183,7 +23183,7 @@
         "n": 22,
         "avant_moyen_pct": -1.4,
         "ecart_moyen_pct": 3.34,
-        "suite_moyenne_pct": 0.88
+        "suite_moyenne_pct": 0.89
        },
        "baisse": {
         "n": 5,
@@ -24116,7 +24116,7 @@
       "au": "2026-02-13"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -24125,51 +24125,51 @@
       },
       "bpa": {
        "0q": [
-        2.014,
-        4
+        2.011,
+        5
        ],
        "+1q": [
         2.074,
         4
        ],
        "0y": [
-        8.44,
+        8.452,
         15
        ],
        "+1y": [
-        9.132,
+        9.141,
         16
        ]
       },
       "ca": {
        "0q": [
-        522200000,
-        3
+        522400000,
+        4
        ],
        "+1q": [
         533200000,
         3
        ],
        "0y": [
-        2073000000,
+        2074000000,
         16
        ],
        "+1y": [
-        2197000000,
+        2198000000,
         16
        ]
       },
-      "revision_30j_pct": 0.6,
+      "revision_30j_pct": 0.8,
       "revisions": {
        "0q": [
-        2,
-        2,
+        0,
+        0,
         0,
         0
        ],
        "+1q": [
         0,
-        2,
+        0,
         0,
         0
        ],
@@ -25263,7 +25263,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-02",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -25272,33 +25272,33 @@
       },
       "bpa": {
        "0y": [
-        44.16,
-        21
+        44.21,
+        22
        ],
        "+1y": [
-        49.5,
-        21
+        49.28,
+        22
        ]
       },
       "ca": {
        "0q": [
-        4134000000,
-        4
+        4127000000,
+        3
        ],
        "+1q": [
         4458000000,
         1
        ],
        "0y": [
-        16730000000,
-        20
+        16720000000,
+        21
        ],
        "+1y": [
-        18100000000,
-        19
+        18060000000,
+        21
        ]
       },
-      "revision_30j_pct": -0.9,
+      "revision_30j_pct": -0.7,
       "revisions": {
        "0y": [
         0,
@@ -26009,7 +26009,7 @@
        "titre": "Kering : Résultats semestriels 2023",
        "avant_pct": 5.84,
        "z_avant": 1.15,
-       "perf_12m_pct": -14.02,
+       "perf_12m_pct": -14.03,
        "rendement_pct": -1.15,
        "ecart_pct": -1.27,
        "z": -1.13,
@@ -26478,7 +26478,7 @@
       "au": "2026-09-23"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -26487,17 +26487,17 @@
       },
       "bpa": {
        "0y": [
-        6.33,
-        22
+        6.291,
+        23
        ],
        "+1y": [
-        9.699,
+        9.735,
         22
        ]
       },
       "ca": {
        "0q": [
-        3366000000,
+        3351000000,
         4
        ],
        "+1q": [
@@ -26505,15 +26505,15 @@
         2
        ],
        "0y": [
-        14640000000,
-        22
+        14600000000,
+        23
        ],
        "+1y": [
-        15530000000,
-        23
+        15500000000,
+        24
        ]
       },
-      "revision_30j_pct": -1.1,
+      "revision_30j_pct": -1.7,
       "revisions": {
        "0y": [
         2,
@@ -27625,7 +27625,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.64,
+       "suite_pct": -2.63,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -27663,7 +27663,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-02",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -27672,11 +27672,11 @@
       },
       "bpa": {
        "0y": [
-        13.62,
+        13.63,
         21
        ],
        "+1y": [
-        14.91,
+        14.92,
         20
        ]
       },
@@ -27694,15 +27694,15 @@
         20
        ],
        "+1y": [
-        49920000000,
+        49940000000,
         20
        ]
       },
       "revision_30j_pct": -0.1,
       "revisions": {
        "0y": [
-        1,
         2,
+        3,
         1,
         3
        ],
@@ -28101,7 +28101,7 @@
       "concordance": 0.632,
       "p": 0.3593,
       "ecart_moyen_positif_pct": 1.75,
-      "ecart_moyen_negatif_pct": -4.03
+      "ecart_moyen_negatif_pct": -4.02
      },
      "mouvements": {
       "n": 47,
@@ -28157,7 +28157,7 @@
        "valeur": "negative",
        "n": 6,
        "part_hausse": 0.333,
-       "ecart_moyen_pct": -4.03,
+       "ecart_moyen_pct": -4.02,
        "suite_moyenne_pct": 0.34,
        "par_surprise": {
         "positive": {
@@ -29046,7 +29046,7 @@
       "au": "2024-11-19"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -29067,7 +29067,7 @@
         16
        ],
        "+1y": [
-        6.854,
+        6.862,
         16
        ]
       },
@@ -29092,15 +29092,15 @@
       "revision_30j_pct": -0.3,
       "revisions": {
        "0q": [
-        0,
-        0,
         1,
+        0,
+        0,
         1
        ],
        "+1q": [
-        0,
-        0,
         1,
+        0,
+        0,
         1
        ],
        "0y": [
@@ -29926,7 +29926,7 @@
        "perf_12m_pct": 31.39,
        "rendement_pct": 5.56,
        "ecart_pct": 3.64,
-       "z": 3.5,
+       "z": 3.49,
        "suite_pct": -3.65,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -30113,7 +30113,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -30140,12 +30140,12 @@
         2
        ],
        "0y": [
-        80730000000,
-        22
+        80660000000,
+        23
        ],
        "+1y": [
-        84490000000,
-        22
+        84380000000,
+        23
        ]
       },
       "revision_30j_pct": -1.0,
@@ -30158,9 +30158,9 @@
        ],
        "+1y": [
         0,
-        3,
+        2,
         4,
-        7
+        8
        ]
       },
       "surprises": []
@@ -32018,7 +32018,7 @@
       "au": "2022-05-02"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -32077,9 +32077,9 @@
        ],
        "0y": [
         1,
+        2,
         1,
-        0,
-        0
+        1
        ],
        "+1y": [
         1,
@@ -32213,7 +32213,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.7,
       "p": 0.3438,
-      "ecart_moyen_positif_pct": 0.25,
+      "ecart_moyen_positif_pct": 0.24,
       "ecart_moyen_negatif_pct": null,
       "id": "actionnaires"
      },
@@ -33579,7 +33579,7 @@
        "baisse": {
         "n": 4,
         "avant_moyen_pct": -0.66,
-        "ecart_moyen_pct": -7.75,
+        "ecart_moyen_pct": -7.74,
         "suite_moyenne_pct": -0.37
        },
        "n": 6,
@@ -33614,7 +33614,7 @@
         "n": 4,
         "avant_moyen_pct": -0.82,
         "ecart_moyen_pct": -7.76,
-        "suite_moyenne_pct": 1.09
+        "suite_moyenne_pct": 1.1
        },
        "n": 9,
        "part_hausse": 0.556
@@ -34561,15 +34561,15 @@
       "revisions": {
        "0y": [
         0,
-        11,
+        0,
         2,
-        3
+        4
        ],
        "+1y": [
         0,
         1,
         1,
-        2
+        3
        ]
       },
       "surprises": []
@@ -34602,7 +34602,7 @@
     "nom": "Renault",
     "indice": "CAC 40",
     "secteur": "Automobile",
-    "n_communiques": 337,
+    "n_communiques": 338,
     "n_evenements": 264,
     "categories": [
      {
@@ -34665,7 +34665,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.444,
       "p": 0.8145,
-      "ecart_moyen_positif_pct": -0.39,
+      "ecart_moyen_positif_pct": -0.38,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -35839,7 +35839,7 @@
       "revisions": {
        "0y": [
         1,
-        0,
+        1,
         1,
         2
        ],
@@ -36067,7 +36067,7 @@
        "hausse": {
         "n": 1,
         "avant_moyen_pct": 0.02,
-        "ecart_moyen_pct": 7.7,
+        "ecart_moyen_pct": 7.69,
         "suite_moyenne_pct": 3.63
        },
        "baisse": {
@@ -36117,7 +36117,7 @@
        "hausse": {
         "n": 2,
         "avant_moyen_pct": -2.94,
-        "ecart_moyen_pct": 8.16,
+        "ecart_moyen_pct": 8.15,
         "suite_moyenne_pct": 2.18
        },
        "baisse": {
@@ -36167,7 +36167,7 @@
        "hausse": {
         "n": 1,
         "avant_moyen_pct": 0.02,
-        "ecart_moyen_pct": 7.7,
+        "ecart_moyen_pct": 7.69,
         "suite_moyenne_pct": 3.63
        },
        "baisse": {
@@ -36217,7 +36217,7 @@
        "hausse": {
         "n": 1,
         "avant_moyen_pct": 0.02,
-        "ecart_moyen_pct": 7.7,
+        "ecart_moyen_pct": 7.69,
         "suite_moyenne_pct": 3.63
        },
        "baisse": {
@@ -36238,7 +36238,7 @@
       "concordance": 0.5,
       "p": 1.0,
       "ecart_moyen_positif_pct": 1.42,
-      "ecart_moyen_negatif_pct": 7.7
+      "ecart_moyen_negatif_pct": 7.69
      },
      "mouvements": {
       "n": 41,
@@ -36294,7 +36294,7 @@
        "valeur": "negative",
        "n": 1,
        "part_hausse": 1.0,
-       "ecart_moyen_pct": 7.7,
+       "ecart_moyen_pct": 7.69,
        "suite_moyenne_pct": 3.63,
        "par_surprise": {
         "positive": {
@@ -36725,7 +36725,7 @@
        "z_avant": 0.0,
        "perf_12m_pct": -20.17,
        "rendement_pct": 3.9,
-       "ecart_pct": 7.7,
+       "ecart_pct": 7.69,
        "z": 3.14,
        "suite_pct": 3.63,
        "reaction": "hausse",
@@ -37097,7 +37097,7 @@
     "categories": [
      {
       "n": 4,
-      "z_abs_moyen": 2.18,
+      "z_abs_moyen": 2.17,
       "part_net": 0.75,
       "part_fort": 0.75,
       "ecart_abs_median_pct": 3.73,
@@ -37698,7 +37698,7 @@
        "avant_pct": -0.1,
        "z_avant": -0.02,
        "perf_12m_pct": 34.53,
-       "rendement_pct": 6.87,
+       "rendement_pct": 6.88,
        "ecart_pct": 5.65,
        "z": 5.29,
        "suite_pct": 4.13,
@@ -38227,7 +38227,7 @@
       "au": "2026-09-09"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -38236,11 +38236,11 @@
       },
       "bpa": {
        "0y": [
-        6.363,
+        6.347,
         12
        ],
        "+1y": [
-        6.793,
+        6.763,
         12
        ]
       },
@@ -38254,15 +38254,15 @@
         1
        ],
        "0y": [
-        46940000000,
+        46910000000,
         18
        ],
        "+1y": [
-        47940000000,
+        47880000000,
         18
        ]
       },
-      "revision_30j_pct": 0.0,
+      "revision_30j_pct": -0.2,
       "revisions": {
        "0y": [
         0,
@@ -38968,7 +38968,7 @@
        "rendement_pct": -18.93,
        "ecart_pct": -18.61,
        "z": -15.34,
-       "suite_pct": 3.17,
+       "suite_pct": 3.18,
        "reaction": "baisse",
        "courtes_pct": 0.0,
        "surprise": "conforme",
@@ -39473,7 +39473,7 @@
       "au": "2022-11-01"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -39500,19 +39500,19 @@
       },
       "ca": {
        "0q": [
-        13190000000,
-        6
+        13150000000,
+        5
        ],
        "+1q": [
-        12460000000,
-        6
+        12490000000,
+        5
        ],
        "0y": [
-        47660000000,
+        47680000000,
         12
        ],
        "+1y": [
-        50620000000,
+        50640000000,
         12
        ]
       },
@@ -39532,9 +39532,9 @@
        ],
        "0y": [
         1,
-        5,
+        4,
         1,
-        1
+        3
        ],
        "+1y": [
         1,
@@ -40760,7 +40760,7 @@
       "au": "2022-11-09"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -40769,12 +40769,12 @@
       },
       "bpa": {
        "0y": [
-        10.32,
-        20
+        10.35,
+        19
        ],
        "+1y": [
-        12.23,
-        21
+        12.34,
+        20
        ]
       },
       "ca": {
@@ -40787,15 +40787,15 @@
         1
        ],
        "0y": [
-        44950000000,
-        20
+        44870000000,
+        22
        ],
        "+1y": [
-        49230000000,
-        22
+        49550000000,
+        21
        ]
       },
-      "revision_30j_pct": 0.5,
+      "revision_30j_pct": 0.8,
       "revisions": {
        "0y": [
         0,
@@ -40806,7 +40806,7 @@
        "+1y": [
         1,
         3,
-        1,
+        0,
         1
        ]
       },
@@ -41116,7 +41116,7 @@
        },
        "baisse": {
         "n": 4,
-        "avant_moyen_pct": 0.61,
+        "avant_moyen_pct": 0.62,
         "ecart_moyen_pct": -4.49,
         "suite_moyenne_pct": -0.0
        },
@@ -41972,8 +41972,8 @@
         2
        ],
        "+1y": [
-        3,
-        4,
+        5,
+        5,
         1,
         2
        ]
@@ -42263,7 +42263,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -42585,7 +42585,7 @@
       "negative": {
        "hausse": {
         "n": 6,
-        "avant_moyen_pct": 6.33,
+        "avant_moyen_pct": 6.34,
         "ecart_moyen_pct": 7.62,
         "suite_moyenne_pct": -1.88
        },
@@ -43671,13 +43671,13 @@
         1
        ],
        "0y": [
-        0,
-        0,
+        2,
+        2,
         1,
         3
        ],
        "+1y": [
-        1,
+        2,
         3,
         0,
         0
@@ -45031,7 +45031,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": -0.48,
+      "ecart_moyen_positif_pct": -0.49,
       "ecart_moyen_negatif_pct": null,
       "id": "gouvernance"
      },
@@ -46084,7 +46084,7 @@
         1,
         1,
         1,
-        0
+        1
        ],
        "+1y": [
         0,
@@ -46293,7 +46293,7 @@
       "positive": {
        "hausse": {
         "n": 8,
-        "avant_moyen_pct": -4.07,
+        "avant_moyen_pct": -4.06,
         "ecart_moyen_pct": 1.55,
         "suite_moyenne_pct": 0.29
        },
@@ -47373,7 +47373,7 @@
       "au": "2026-08-26"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -47390,11 +47390,11 @@
         5
        ],
        "0y": [
-        11.55,
+        11.63,
         21
        ],
        "+1y": [
-        10.65,
+        10.73,
         21
        ]
       },
@@ -47416,19 +47416,19 @@
         14
        ]
       },
-      "revision_30j_pct": 6.2,
+      "revision_30j_pct": 6.9,
       "revisions": {
        "0q": [
         2,
         3,
         1,
-        0
+        1
        ],
        "+1q": [
         2,
         3,
         1,
-        0
+        1
        ],
        "0y": [
         5,
@@ -48113,7 +48113,7 @@
         0,
         0,
         1,
-        3
+        2
        ]
       },
       "surprises": []
@@ -49327,7 +49327,7 @@
       "au": "2018-07-20"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -49376,13 +49376,13 @@
        ],
        "0y": [
         3,
-        3,
+        4,
         0,
         0
        ],
        "+1y": [
         3,
-        3,
+        4,
         0,
         0
        ]
@@ -52054,7 +52054,7 @@
       "au": "2026-09-10"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -52062,7 +52062,7 @@
       "bpa": {
        "0y": [
         11.32,
-        13
+        14
        ],
        "+1y": [
         12.53,
@@ -52071,8 +52071,8 @@
       },
       "ca": {
        "0y": [
-        26070000000,
-        14
+        26040000000,
+        15
        ],
        "+1y": [
         26820000000,
@@ -52088,7 +52088,7 @@
         3
        ],
        "+1y": [
-        0,
+        1,
         4,
         1,
         5
@@ -52193,7 +52193,7 @@
      },
      {
       "n": 6,
-      "z_abs_moyen": 0.79,
+      "z_abs_moyen": 0.78,
       "part_net": 0.333,
       "part_fort": 0.167,
       "ecart_abs_median_pct": 0.51,
@@ -52283,7 +52283,7 @@
       "baisse_si_negatif": 0.5,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": -0.65,
+      "ecart_moyen_positif_pct": -0.66,
       "ecart_moyen_negatif_pct": 0.07,
       "id": "autre"
      }
@@ -54003,7 +54003,7 @@
       "au": "2026-09-22"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -54042,7 +54042,7 @@
         18
        ],
        "+1y": [
-        36750000000,
+        36770000000,
         18
        ]
       },
@@ -54050,7 +54050,7 @@
       "revisions": {
        "0q": [
         1,
-        0,
+        1,
         0,
         0
        ],
@@ -54070,7 +54070,7 @@
         0,
         0,
         0,
-        2
+        1
        ]
       },
       "surprises": [
@@ -54128,7 +54128,7 @@
     "nom": "Getlink",
     "indice": "SBF 120",
     "secteur": "Tunnel sous la Manche",
-    "n_communiques": 415,
+    "n_communiques": 416,
     "n_evenements": 393,
     "categories": [
      {
@@ -54502,7 +54502,7 @@
       "concordance": 0.75,
       "p": 0.625,
       "ecart_moyen_positif_pct": null,
-      "ecart_moyen_negatif_pct": -0.85
+      "ecart_moyen_negatif_pct": -0.84
      },
      "mouvements": {
       "n": 52,
@@ -54516,7 +54516,7 @@
        "valeur": "negative",
        "n": 4,
        "part_hausse": 0.25,
-       "ecart_moyen_pct": -0.85,
+       "ecart_moyen_pct": -0.84,
        "suite_moyenne_pct": 0.13,
        "par_surprise": {
         "positive": {
@@ -55354,7 +55354,7 @@
       "au": "2024-10-11"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -55371,8 +55371,8 @@
       },
       "ca": {
        "0y": [
-        1724000000,
-        13
+        1721000000,
+        14
        ],
        "+1y": [
         1772000000,
@@ -55979,7 +55979,7 @@
       "au": "2026-07-27"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -57677,7 +57677,7 @@
        "valeur": "confirmees",
        "n": 14,
        "part_hausse": 0.429,
-       "ecart_moyen_pct": -1.49,
+       "ecart_moyen_pct": -1.48,
        "z_abs_moyen": 2.17
       },
       {
@@ -58416,7 +58416,7 @@
     "categories": [
      {
       "n": 4,
-      "z_abs_moyen": 1.29,
+      "z_abs_moyen": 1.3,
       "part_net": 0.75,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 3.43,
@@ -58865,7 +58865,7 @@
        "n": 4,
        "part_hausse": 0.5,
        "ecart_moyen_pct": 0.76,
-       "z_abs_moyen": 2.12
+       "z_abs_moyen": 2.11
       },
       {
        "valeur": "confirmees",
@@ -58980,7 +58980,7 @@
        "periode": "chiffre_affaires",
        "titre": "bioMérieux – Information financière du 1er trimestre 2025",
        "perspectives": "confirmees",
-       "avant_pct": 5.37,
+       "avant_pct": 5.36,
        "z_avant": 0.87,
        "perf_12m_pct": 28.53,
        "rendement_pct": -3.89,
@@ -59453,7 +59453,7 @@
       "au": "2026-10-01"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -59484,7 +59484,7 @@
         0,
         0,
         2,
-        2
+        3
        ],
        "+1y": [
         2,
@@ -61931,7 +61931,7 @@
     "nom": "FDJ United",
     "indice": "SBF 120",
     "secteur": "Jeux d'argent",
-    "n_communiques": 121,
+    "n_communiques": 122,
     "n_evenements": 73,
     "categories": [
      {
@@ -62861,7 +62861,7 @@
     "nom": "SPIE",
     "indice": "SBF 120",
     "secteur": "Services techniques",
-    "n_communiques": 195,
+    "n_communiques": 196,
     "n_evenements": 155,
     "categories": [
      {
@@ -62978,7 +62978,7 @@
      },
      {
       "n": 6,
-      "z_abs_moyen": 0.96,
+      "z_abs_moyen": 0.95,
       "part_net": 0.333,
       "part_fort": 0.167,
       "ecart_abs_median_pct": 0.99,
@@ -63254,7 +63254,7 @@
        "valeur": "nouvelles",
        "n": 4,
        "part_hausse": 1.0,
-       "ecart_moyen_pct": 7.92,
+       "ecart_moyen_pct": 7.93,
        "z_abs_moyen": 5.04
       }
      ],
@@ -63852,14 +63852,14 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        3.073,
+        3.074,
         11
        ],
        "+1y": [
@@ -63869,11 +63869,11 @@
       },
       "ca": {
        "0y": [
-        11230000000,
+        11240000000,
         12
        ],
        "+1y": [
-        12070000000,
+        12080000000,
         12
        ]
       },
@@ -63882,7 +63882,7 @@
        "0y": [
         0,
         1,
-        1,
+        2,
         3
        ],
        "+1y": [
@@ -64264,7 +64264,7 @@
        },
        "baisse": {
         "n": 4,
-        "avant_moyen_pct": -3.56,
+        "avant_moyen_pct": -3.55,
         "ecart_moyen_pct": -3.58,
         "suite_moyenne_pct": -0.87
        },
@@ -64376,7 +64376,7 @@
        "n": 4,
        "part_hausse": 0.25,
        "ecart_moyen_pct": -1.98,
-       "z_abs_moyen": 1.77
+       "z_abs_moyen": 1.78
       },
       {
        "valeur": "confirmees",
@@ -65097,7 +65097,7 @@
       "au": "2026-07-27"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -65120,18 +65120,18 @@
        ],
        "0y": [
         20580000000,
-        11
+        12
        ],
        "+1y": [
-        22090000000,
-        11
+        22140000000,
+        12
        ]
       },
       "revision_30j_pct": -0.9,
       "revisions": {
        "0y": [
         0,
-        7,
+        0,
         1,
         1
        ],
@@ -66484,7 +66484,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.25,
       "p": 0.625,
-      "ecart_moyen_positif_pct": 0.9,
+      "ecart_moyen_positif_pct": 0.91,
       "ecart_moyen_negatif_pct": null,
       "id": "autre"
      }
@@ -67333,15 +67333,15 @@
       "au": "2026-09-07"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.455,
-        2
+        1.414,
+        3
        ],
        "+1y": [
         1.6,
@@ -67350,15 +67350,15 @@
       },
       "ca": {
        "0y": [
-        1882000000,
-        2
+        1872000000,
+        3
        ],
        "+1y": [
         1953000000,
         3
        ]
       },
-      "revision_30j_pct": -2.5,
+      "revision_30j_pct": -5.3,
       "revisions": {
        "0y": [
         0,
@@ -67482,7 +67482,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.667,
       "p": 0.6875,
-      "ecart_moyen_positif_pct": 0.93,
+      "ecart_moyen_positif_pct": 0.94,
       "ecart_moyen_negatif_pct": null,
       "id": "strategie"
      },
@@ -67514,7 +67514,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": -0.34,
+      "ecart_moyen_positif_pct": -0.33,
       "ecart_moyen_negatif_pct": null,
       "id": "gouvernance"
      },
@@ -68410,7 +68410,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -68419,11 +68419,11 @@
       },
       "bpa": {
        "0q": [
-        1.979,
+        1.978,
         2
        ],
        "+1q": [
-        2.135,
+        2.139,
         2
        ],
        "0y": [
@@ -68431,17 +68431,17 @@
         14
        ],
        "+1y": [
-        7.904,
+        7.896,
         14
        ]
       },
       "ca": {
        "0q": [
-        901200000,
+        901000000,
         2
        ],
        "+1q": [
-        943300000,
+        944200000,
         2
        ],
        "0y": [
@@ -68449,7 +68449,7 @@
         10
        ],
        "+1y": [
-        3670000000,
+        3672000000,
         12
        ]
       },
@@ -68474,9 +68474,9 @@
         1
        ],
        "+1y": [
-        3,
-        5,
         0,
+        3,
+        1,
         1
        ]
       },
@@ -69800,9 +69800,9 @@
       "revision_30j_pct": 3.5,
       "revisions": {
        "0y": [
-        1,
-        1,
-        1,
+        2,
+        2,
+        0,
         1
        ],
        "+1y": [
@@ -70079,7 +70079,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -70096,12 +70096,12 @@
         1
        ],
        "0y": [
-        2.368,
-        8
+        2.39,
+        9
        ],
        "+1y": [
-        4.704,
-        8
+        4.607,
+        9
        ]
       },
       "ca": {
@@ -70122,7 +70122,7 @@
         12
        ]
       },
-      "revision_30j_pct": -1.3,
+      "revision_30j_pct": -0.3,
       "revisions": {
        "0q": [
         0,
@@ -71433,7 +71433,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -71450,8 +71450,8 @@
       },
       "ca": {
        "0y": [
-        221300000,
-        6
+        221100000,
+        3
        ],
        "+1y": [
         232400000,
@@ -71493,7 +71493,7 @@
     "nom": "Arkema",
     "indice": "SBF 120",
     "secteur": "Chimie de spécialités",
-    "n_communiques": 469,
+    "n_communiques": 470,
     "n_evenements": 407,
     "categories": [
      {
@@ -71514,7 +71514,7 @@
      },
      {
       "n": 56,
-      "z_abs_moyen": 0.7,
+      "z_abs_moyen": 0.69,
       "part_net": 0.179,
       "part_fort": 0.054,
       "ecart_abs_median_pct": 0.73,
@@ -71749,7 +71749,7 @@
         "n": 12,
         "avant_moyen_pct": -0.43,
         "ecart_moyen_pct": 3.01,
-        "suite_moyenne_pct": 0.19
+        "suite_moyenne_pct": 0.18
        },
        "baisse": {
         "n": 3,
@@ -71886,7 +71886,7 @@
        "valeur": "conforme",
        "n": 6,
        "part_hausse": 0.667,
-       "ecart_moyen_pct": 1.22,
+       "ecart_moyen_pct": 1.21,
        "suite_moyenne_pct": -3.03,
        "par_surprise": {
         "positive": {
@@ -71945,7 +71945,7 @@
        "n": 4,
        "part_hausse": 0.75,
        "ecart_moyen_pct": 1.2,
-       "z_abs_moyen": 1.86
+       "z_abs_moyen": 1.87
       },
       {
        "valeur": "abaissees",
@@ -72258,7 +72258,7 @@
        "rendement_pct": 3.42,
        "ecart_pct": 3.85,
        "z": 3.04,
-       "suite_pct": -1.23,
+       "suite_pct": -1.24,
        "reaction": "hausse",
        "courtes_pct": 0.6,
        "surprise": "positive",
@@ -72657,7 +72657,7 @@
       "au": "2026-09-16"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -72722,9 +72722,9 @@
        ],
        "+1y": [
         0,
-        3,
+        2,
         1,
-        5
+        2
        ]
       },
       "surprises": [
@@ -73800,7 +73800,7 @@
       "revisions": {
        "0y": [
         1,
-        0,
+        1,
         0,
         0
        ],
@@ -76033,7 +76033,7 @@
       "baisse_si_negatif": 0.0,
       "concordance": 0.714,
       "p": 0.4531,
-      "ecart_moyen_positif_pct": 2.66,
+      "ecart_moyen_positif_pct": 2.65,
       "ecart_moyen_negatif_pct": 2.0,
       "id": "commercial"
      },
@@ -77906,7 +77906,7 @@
       "revisions": {
        "0y": [
         1,
-        1,
+        2,
         0,
         0
        ],
@@ -79404,7 +79404,7 @@
         "n": 4,
         "avant_moyen_pct": 1.87,
         "ecart_moyen_pct": 2.13,
-        "suite_moyenne_pct": -0.07
+        "suite_moyenne_pct": -0.08
        },
        "baisse": {
         "n": 1,
@@ -79454,7 +79454,7 @@
         "n": 4,
         "avant_moyen_pct": 1.87,
         "ecart_moyen_pct": 2.13,
-        "suite_moyenne_pct": -0.07
+        "suite_moyenne_pct": -0.08
        },
        "baisse": {
         "n": 2,
@@ -80219,15 +80219,15 @@
       "revision_30j_pct": -0.1,
       "revisions": {
        "0y": [
-        1,
-        1,
         0,
+        1,
+        1,
         1
        ],
        "+1y": [
-        1,
-        1,
         0,
+        1,
+        1,
         1
        ]
       },
@@ -81472,7 +81472,7 @@
        "n": 6,
        "part_hausse": 0.667,
        "ecart_moyen_pct": 3.6,
-       "z_abs_moyen": 1.74
+       "z_abs_moyen": 1.75
       },
       {
        "valeur": "abaissees",
@@ -83119,15 +83119,15 @@
       "revision_30j_pct": -0.5,
       "revisions": {
        "0y": [
-        1,
+        0,
         1,
         1,
         2
        ],
        "+1y": [
-        2,
-        2,
         0,
+        2,
+        1,
         2
        ]
       },
@@ -84147,7 +84147,7 @@
        "valeur": "abaissees",
        "n": 4,
        "part_hausse": 0.5,
-       "ecart_moyen_pct": -4.59,
+       "ecart_moyen_pct": -4.6,
        "z_abs_moyen": 1.98
       }
      ],
@@ -84704,7 +84704,7 @@
       "au": "2026-08-04"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -85162,7 +85162,7 @@
        "n": 4,
        "part_hausse": 0.25,
        "ecart_moyen_pct": -1.18,
-       "z_abs_moyen": 0.99
+       "z_abs_moyen": 1.0
       }
      ],
      "evenements": [
@@ -85699,7 +85699,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.83,
+       "perf_12m_pct": -2.84,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -86064,7 +86064,7 @@
        "baisse": {
         "n": 4,
         "avant_moyen_pct": 0.12,
-        "ecart_moyen_pct": -2.27,
+        "ecart_moyen_pct": -2.26,
         "suite_moyenne_pct": -1.23
        },
        "n": 6,
@@ -86114,7 +86114,7 @@
        "baisse": {
         "n": 4,
         "avant_moyen_pct": 0.12,
-        "ecart_moyen_pct": -2.27,
+        "ecart_moyen_pct": -2.26,
         "suite_moyenne_pct": -1.23
        },
        "n": 6,
@@ -86549,7 +86549,7 @@
        "rendement_pct": -2.1,
        "ecart_pct": -2.37,
        "z": -1.96,
-       "suite_pct": 0.84,
+       "suite_pct": 0.85,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -86951,16 +86951,16 @@
       "revision_30j_pct": 0.1,
       "revisions": {
        "0y": [
-        1,
+        0,
         2,
         0,
         0
        ],
        "+1y": [
         1,
+        1,
         0,
-        0,
-        3
+        2
        ]
       },
       "surprises": []
@@ -88013,7 +88013,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.2,
+       "avant_pct": 4.21,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -88077,7 +88077,7 @@
         1,
         1,
         0,
-        1
+        0
        ]
       },
       "surprises": []
@@ -89182,7 +89182,7 @@
       "au": "2026-09-15"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -89199,8 +89199,8 @@
       },
       "ca": {
        "0y": [
-        1292000000,
-        3
+        1282000000,
+        4
        ],
        "+1y": [
         1338000000,
@@ -90324,7 +90324,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-06-30",
        "0y": "2026-12-31",
@@ -90346,11 +90346,11 @@
         1
        ],
        "0y": [
-        4355000000,
+        4356000000,
         6
        ],
        "+1y": [
-        4786000000,
+        4796000000,
         6
        ]
       },
@@ -90490,7 +90490,7 @@
      },
      {
       "n": 8,
-      "z_abs_moyen": 1.03,
+      "z_abs_moyen": 1.02,
       "part_net": 0.5,
       "part_fort": 0.125,
       "ecart_abs_median_pct": 1.24,
@@ -90899,7 +90899,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.28,
+       "suite_pct": 1.29,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -91012,7 +91012,7 @@
        "perspectives": "confirmees",
        "avant_pct": 20.72,
        "z_avant": 3.37,
-       "perf_12m_pct": 26.82,
+       "perf_12m_pct": 26.81,
        "rendement_pct": -6.69,
        "ecart_pct": -5.94,
        "z": -4.28,
@@ -91414,15 +91414,15 @@
       "au": "2026-07-31"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.681,
-        5
+        1.605,
+        6
        ],
        "+1y": [
         1.901,
@@ -91439,7 +91439,7 @@
         6
        ]
       },
-      "revision_30j_pct": -3.6,
+      "revision_30j_pct": -8.0,
       "revisions": {
        "0y": [
         0,
@@ -91448,9 +91448,9 @@
         1
        ],
        "+1y": [
+        1,
+        1,
         0,
-        1,
-        1,
         1
        ]
       },
@@ -91595,7 +91595,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.25,
       "p": 0.625,
-      "ecart_moyen_positif_pct": -0.16,
+      "ecart_moyen_positif_pct": -0.17,
       "ecart_moyen_negatif_pct": null,
       "id": "autre"
      }
@@ -92693,7 +92693,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -92702,11 +92702,11 @@
       },
       "bpa": {
        "0y": [
-        1.343,
-        6
+        1.35,
+        7
        ],
        "+1y": [
-        1.426,
+        1.451,
         8
        ]
       },
@@ -92720,15 +92720,15 @@
         1
        ],
        "0y": [
-        859400000,
+        862100000,
         9
        ],
        "+1y": [
-        936700000,
+        943100000,
         9
        ]
       },
-      "revision_30j_pct": 2.0,
+      "revision_30j_pct": 2.5,
       "revisions": {
        "0y": [
         2,
@@ -93527,7 +93527,7 @@
        "jour": "2020-02-27",
        "periode": "annuels",
        "titre": "Ipsos Résultats annuels 2019 : une année dynamique",
-       "avant_pct": -6.66,
+       "avant_pct": -6.67,
        "z_avant": -0.79,
        "perf_12m_pct": 17.04,
        "rendement_pct": 1.58,
@@ -93817,7 +93817,7 @@
         0,
         0,
         1,
-        1
+        2
        ]
       },
       "surprises": []
@@ -93977,7 +93977,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.424,
       "p": 0.175,
-      "ecart_moyen_positif_pct": 0.0,
+      "ecart_moyen_positif_pct": -0.0,
       "ecart_moyen_negatif_pct": null,
       "id": "commercial"
      },
@@ -95107,7 +95107,7 @@
       "au": "2020-12-03"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -95227,7 +95227,7 @@
       "z_abs_moyen": 1.1,
       "part_net": 1.0,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 1.49,
+      "ecart_abs_median_pct": 1.48,
       "n_positif": 1,
       "n_negatif": 0,
       "hausse_si_positif": 1.0,
@@ -97460,7 +97460,7 @@
       "revisions": {
        "0y": [
         1,
-        0,
+        1,
         0,
         0
        ],
@@ -98277,7 +98277,7 @@
        "titre": "Activité 9 mois 2021",
        "avant_pct": 36.98,
        "z_avant": 3.42,
-       "perf_12m_pct": 94.92,
+       "perf_12m_pct": 94.93,
        "rendement_pct": -8.28,
        "ecart_pct": -8.01,
        "z": -3.23,
@@ -98719,7 +98719,7 @@
     "nom": "MedinCell",
     "indice": "SBF 120",
     "secteur": "Pharmacie",
-    "n_communiques": 259,
+    "n_communiques": 260,
     "n_evenements": 218,
     "categories": [
      {
@@ -99397,7 +99397,7 @@
     "nom": "Mercialys",
     "indice": "SBF 120",
     "secteur": "Immobilier commercial",
-    "n_communiques": 269,
+    "n_communiques": 270,
     "n_evenements": 239,
     "categories": [
      {
@@ -99466,7 +99466,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.47,
+      "z_abs_moyen": 0.48,
       "part_net": 0.25,
       "part_fort": 0.0,
       "ecart_abs_median_pct": 0.69,
@@ -99717,7 +99717,7 @@
       "conforme": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": -2.27,
+        "avant_moyen_pct": -2.26,
         "ecart_moyen_pct": 2.15,
         "suite_moyenne_pct": -0.43
        },
@@ -100570,7 +100570,7 @@
       "au": "2026-09-28"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -100587,8 +100587,8 @@
       },
       "ca": {
        "0y": [
-        188200000,
-        5
+        188000000,
+        4
        ],
        "+1y": [
         194700000,
@@ -100598,16 +100598,16 @@
       "revision_30j_pct": -0.2,
       "revisions": {
        "0y": [
-        3,
+        0,
         0,
         0,
         0
        ],
        "+1y": [
         0,
+        0,
         1,
-        1,
-        0
+        1
        ]
       },
       "surprises": []
@@ -100783,7 +100783,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.6,
       "p": 0.7539,
-      "ecart_moyen_positif_pct": 1.03,
+      "ecart_moyen_positif_pct": 1.04,
       "ecart_moyen_negatif_pct": null,
       "id": "autre"
      }
@@ -101869,7 +101869,7 @@
      },
      {
       "n": 4,
-      "z_abs_moyen": 0.93,
+      "z_abs_moyen": 0.94,
       "part_net": 0.5,
       "part_fort": 0.25,
       "ecart_abs_median_pct": 1.17,
@@ -102882,7 +102882,7 @@
         1
        ],
        "+1y": [
-        1,
+        0,
         0,
         1,
         1
@@ -105339,7 +105339,7 @@
       "au": "2025-08-07"
      },
      "consensus": {
-      "au": "2026-10-02",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -105348,11 +105348,11 @@
       },
       "bpa": {
        "0y": [
-        0.8582,
+        0.8571,
         8
        ],
        "+1y": [
-        0.9783,
+        0.9806,
         7
        ]
       },
@@ -105366,15 +105366,15 @@
         1
        ],
        "0y": [
-        221800000,
+        222000000,
         9
        ],
        "+1y": [
-        251700000,
+        252700000,
         9
        ]
       },
-      "revision_30j_pct": 3.8,
+      "revision_30j_pct": 3.6,
       "revisions": {
        "0y": [
         0,
@@ -106338,7 +106338,7 @@
        "n": 4,
        "part_hausse": 0.25,
        "ecart_moyen_pct": -0.95,
-       "z_abs_moyen": 1.84
+       "z_abs_moyen": 1.85
       },
       {
        "valeur": "nouvelles",
@@ -106908,7 +106908,7 @@
     "nom": "Rubis",
     "indice": "SBF 120",
     "secteur": "Distribution d'énergie",
-    "n_communiques": 144,
+    "n_communiques": 145,
     "n_evenements": 115,
     "categories": [
      {
@@ -107846,7 +107846,7 @@
       "au": "2025-08-25"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -108161,8 +108161,8 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": -4.99,
-        "ecart_moyen_pct": 8.0,
-        "suite_moyenne_pct": -0.71
+        "ecart_moyen_pct": 8.01,
+        "suite_moyenne_pct": -0.7
        },
        "baisse": {
         "n": 7,
@@ -108718,7 +108718,7 @@
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -108739,7 +108739,7 @@
         13
        ],
        "+1y": [
-        6.002,
+        6.003,
         13
        ]
       },
@@ -108783,9 +108783,9 @@
        ],
        "+1y": [
         2,
-        2,
+        4,
         0,
-        1
+        0
        ]
       },
       "surprises": [
@@ -109994,32 +109994,32 @@
       "au": "2025-09-12"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        5.758,
-        7
+        5.841,
+        8
        ],
        "+1y": [
-        7.828,
+        7.839,
         10
        ]
       },
       "ca": {
        "0y": [
-        8321000000,
+        8317000000,
         11
        ],
        "+1y": [
-        8628000000,
+        8624000000,
         11
        ]
       },
-      "revision_30j_pct": -4.6,
+      "revision_30j_pct": -3.2,
       "revisions": {
        "0y": [
         0,
@@ -110231,7 +110231,7 @@
        "baisse": {
         "n": 8,
         "avant_moyen_pct": 2.76,
-        "ecart_moyen_pct": -6.91,
+        "ecart_moyen_pct": -6.9,
         "suite_moyenne_pct": 0.45
        },
        "n": 17,
@@ -110281,7 +110281,7 @@
        "baisse": {
         "n": 8,
         "avant_moyen_pct": 2.76,
-        "ecart_moyen_pct": -6.91,
+        "ecart_moyen_pct": -6.9,
         "suite_moyenne_pct": 0.45
        },
        "n": 17,
@@ -110331,7 +110331,7 @@
        "baisse": {
         "n": 8,
         "avant_moyen_pct": 2.76,
-        "ecart_moyen_pct": -6.91,
+        "ecart_moyen_pct": -6.9,
         "suite_moyenne_pct": 0.45
        },
        "n": 17,
@@ -110381,7 +110381,7 @@
        "baisse": {
         "n": 8,
         "avant_moyen_pct": 2.76,
-        "ecart_moyen_pct": -6.91,
+        "ecart_moyen_pct": -6.9,
         "suite_moyenne_pct": 0.45
        },
        "n": 17,
@@ -112483,9 +112483,9 @@
         0
        ],
        "+1y": [
-        0,
         1,
         2,
+        0,
         2
        ]
       },
@@ -113582,7 +113582,7 @@
        "periode": "annuels",
        "titre": "CdP Sodexo Résultats Annuels FY 2015 FR",
        "perspectives": "nouvelles",
-       "avant_pct": 2.05,
+       "avant_pct": 2.04,
        "z_avant": 0.67,
        "perf_12m_pct": -8.6,
        "rendement_pct": 9.85,
@@ -113695,7 +113695,7 @@
        "+1y": [
         1,
         1,
-        1,
+        0,
         4
        ]
       },
@@ -115227,7 +115227,7 @@
         0,
         1,
         2,
-        4
+        3
        ]
       },
       "surprises": [
@@ -116344,14 +116344,14 @@
       "revision_30j_pct": -0.9,
       "revisions": {
        "0y": [
-        2,
         0,
         0,
+        1,
         1
        ],
        "+1y": [
         0,
-        7,
+        0,
         1,
         1
        ]
@@ -116386,7 +116386,7 @@
     "nom": "Technip Energies",
     "indice": "SBF 120",
     "secteur": "Ingénierie énergétique",
-    "n_communiques": 120,
+    "n_communiques": 121,
     "n_evenements": 93,
     "categories": [
      {
@@ -116540,9 +116540,9 @@
       "positive": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": -17.04,
+        "avant_moyen_pct": -17.05,
         "ecart_moyen_pct": 8.17,
-        "suite_moyenne_pct": 2.73
+        "suite_moyenne_pct": 2.74
        },
        "baisse": {
         "n": 4,
@@ -116573,7 +116573,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": 2.65,
-        "ecart_moyen_pct": 4.37,
+        "ecart_moyen_pct": 4.36,
         "suite_moyenne_pct": -0.44
        },
        "baisse": {
@@ -116623,7 +116623,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": 2.65,
-        "ecart_moyen_pct": 4.37,
+        "ecart_moyen_pct": 4.36,
         "suite_moyenne_pct": -0.44
        },
        "baisse": {
@@ -116640,9 +116640,9 @@
       "positive": {
        "hausse": {
         "n": 4,
-        "avant_moyen_pct": -17.04,
+        "avant_moyen_pct": -17.05,
         "ecart_moyen_pct": 8.17,
-        "suite_moyenne_pct": 2.73
+        "suite_moyenne_pct": 2.74
        },
        "baisse": {
         "n": 1,
@@ -116673,7 +116673,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": 2.65,
-        "ecart_moyen_pct": 4.37,
+        "ecart_moyen_pct": 4.36,
         "suite_moyenne_pct": -0.44
        },
        "baisse": {
@@ -117138,7 +117138,7 @@
        "titre": "Rapports financiers et d'audit semestriels/examens réduits / Rapport financier semestriel",
        "perspectives": "relevees",
        "attentes": "superieures",
-       "avant_pct": -20.39,
+       "avant_pct": -20.4,
        "z_avant": -1.95,
        "perf_12m_pct": 3.39,
        "rendement_pct": 3.4,
@@ -117284,14 +117284,14 @@
        "0q": [
         0,
         0,
-        2,
-        1
+        0,
+        0
        ],
        "+1q": [
         0,
         0,
-        2,
-        1
+        0,
+        0
        ],
        "0y": [
         0,
@@ -117303,7 +117303,7 @@
         0,
         0,
         1,
-        2
+        3
        ]
       },
       "surprises": [
@@ -119606,7 +119606,7 @@
        "jour": "2017-01-04",
        "periode": "chiffre_affaires",
        "titre": "Chiffre d'affaires du 1er trimestre 2016/2017",
-       "avant_pct": -0.61,
+       "avant_pct": -0.62,
        "z_avant": -0.07,
        "perf_12m_pct": 12.92,
        "rendement_pct": 4.32,
@@ -119818,14 +119818,14 @@
       "revisions": {
        "0y": [
         0,
-        1,
-        2,
-        2
+        0,
+        3,
+        3
        ],
        "+1y": [
         0,
         0,
-        2,
+        3,
         3
        ]
       },
@@ -121062,14 +121062,14 @@
        "0y": [
         0,
         0,
-        3,
+        1,
         0
        ],
        "+1y": [
+        0,
+        0,
         1,
-        1,
-        3,
-        3
+        1
        ]
       },
       "surprises": []
@@ -121235,7 +121235,7 @@
      },
      {
       "n": 32,
-      "z_abs_moyen": 0.93,
+      "z_abs_moyen": 0.92,
       "part_net": 0.312,
       "part_fort": 0.125,
       "ecart_abs_median_pct": 1.17,
@@ -121296,7 +121296,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -121346,7 +121346,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -121396,7 +121396,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -121446,7 +121446,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -2.63,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -121976,7 +121976,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.22,
+       "suite_pct": -0.23,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
@@ -122450,7 +122450,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": 9.21,
-        "ecart_moyen_pct": 4.11,
+        "ecart_moyen_pct": 4.1,
         "suite_moyenne_pct": 4.4
        },
        "baisse": {
@@ -122500,7 +122500,7 @@
        "hausse": {
         "n": 4,
         "avant_moyen_pct": 9.21,
-        "ecart_moyen_pct": 4.11,
+        "ecart_moyen_pct": 4.1,
         "suite_moyenne_pct": 4.4
        },
        "baisse": {
@@ -123056,7 +123056,7 @@
       "au": "2026-09-30"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -123083,19 +123083,19 @@
       },
       "ca": {
        "0q": [
-        912600000,
+        916400000,
         3
        ],
        "+1q": [
-        1095000000,
+        1104000000,
         2
        ],
        "0y": [
-        3818000000,
+        3824000000,
         9
        ],
        "+1y": [
-        4438000000,
+        4456000000,
         10
        ]
       },
@@ -123384,7 +123384,7 @@
        "hausse": {
         "n": 8,
         "avant_moyen_pct": 0.76,
-        "ecart_moyen_pct": 3.12,
+        "ecart_moyen_pct": 3.11,
         "suite_moyenne_pct": -2.16
        },
        "baisse": {
@@ -123434,7 +123434,7 @@
        "hausse": {
         "n": 8,
         "avant_moyen_pct": 0.76,
-        "ecart_moyen_pct": 3.12,
+        "ecart_moyen_pct": 3.11,
         "suite_moyenne_pct": -2.16
        },
        "baisse": {
@@ -123484,7 +123484,7 @@
        "hausse": {
         "n": 8,
         "avant_moyen_pct": 0.76,
-        "ecart_moyen_pct": 3.12,
+        "ecart_moyen_pct": 3.11,
         "suite_moyenne_pct": -2.16
        },
        "baisse": {
@@ -123534,7 +123534,7 @@
        "hausse": {
         "n": 8,
         "avant_moyen_pct": 0.76,
-        "ecart_moyen_pct": 3.12,
+        "ecart_moyen_pct": 3.11,
         "suite_moyenne_pct": -2.16
        },
        "baisse": {
@@ -126600,7 +126600,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": 0.58,
+      "ecart_moyen_positif_pct": 0.57,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -127575,7 +127575,7 @@
        "titre": "Virbac: chiffre d'affaires du 3ème trimestre 2017",
        "perspectives": "confirmees",
        "avant_pct": -7.1,
-       "z_avant": -0.8,
+       "z_avant": -0.79,
        "perf_12m_pct": -35.62,
        "rendement_pct": -1.33,
        "ecart_pct": -1.21,
@@ -127823,10 +127823,10 @@
       "revision_30j_pct": 1.9,
       "revisions": {
        "0y": [
+        1,
         2,
-        3,
-        0,
-        0
+        1,
+        1
        ],
        "+1y": [
         3,
@@ -128381,7 +128381,7 @@
       "au": "2026-09-30"
      },
      "consensus": {
-      "au": "2026-10-05",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -128398,8 +128398,8 @@
         1
        ],
        "0y": [
-        7.65,
-        1
+        6.328,
+        2
        ],
        "+1y": [
         14.49,
@@ -128412,15 +128412,15 @@
         1
        ],
        "0y": [
-        1089000000,
-        4
+        1074000000,
+        5
        ],
        "+1y": [
         1191000000,
         5
        ]
       },
-      "revision_30j_pct": -27.1,
+      "revision_30j_pct": -39.7,
       "revisions": {
        "0q": [
         0,
@@ -129392,7 +129392,7 @@
        "jour": "2018-11-16",
        "periode": "chiffre_affaires",
        "titre": "Bonne progression du chiffre d’affaires au 3ème trimestre 2018, en hausse de 5,6 %1",
-       "avant_pct": -3.2,
+       "avant_pct": -3.21,
        "z_avant": -0.56,
        "perf_12m_pct": 1.98,
        "rendement_pct": 3.09,
@@ -129630,7 +129630,7 @@
         0,
         0,
         0,
-        1
+        2
        ],
        "+1y": [
         0,
@@ -130733,7 +130733,7 @@
         2
        ],
        "+1y": [
-        1,
+        2,
         2,
         1,
         1
@@ -130759,7 +130759,7 @@
     "nom": "Wendel",
     "indice": "SBF 120",
     "secteur": "Investissement",
-    "n_communiques": 272,
+    "n_communiques": 273,
     "n_evenements": 231,
     "categories": [
      {
@@ -131776,7 +131776,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.625,
       "p": 0.4545,
-      "ecart_moyen_positif_pct": 0.77,
+      "ecart_moyen_positif_pct": 0.78,
       "ecart_moyen_negatif_pct": null,
       "id": "financement"
      },
@@ -132748,7 +132748,7 @@
       "au": "2026-08-03"
      },
      "consensus": {
-      "au": "2026-10-02",
+      "au": "2026-10-06",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -132775,8 +132775,8 @@
         1
        ],
        "0y": [
-        3733000000,
-        10
+        3709000000,
+        12
        ],
        "+1y": [
         3713000000,
@@ -134265,95 +134265,6 @@
     "indice_pct": -0.39,
     "ecart_pct": -1.36,
     "z": -0.88
-   },
-   {
-    "id": "081417_20260921",
-    "ticker": "VU.PA",
-    "nom": "VusionGroup",
-    "publie_le": "2026-09-21T15:40:00+00:00",
-    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ACT/2026/09/FCACT081417_20260921.pdf",
-    "titre": "Résultats du 1er semestre 2026 : Forte croissance du chiffre d'affaires, de la rentabilité et du free cash-flow opérationnel. Confirmation des perspectives annuelles.",
-    "type_periode": "annuels",
-    "perf_12m_pct": -56.28,
-    "exercice": {
-     "fin": "2026-12-31",
-     "bpa": [
-      9.621,
-      null
-     ]
-    },
-    "periode": "S1 2026",
-    "perspectives": "confirmees",
-    "objectifs": {
-     "periode": "2026",
-     "texte": "objectifs annuels 2026 maintenus",
-     "vs_consensus": null
-    },
-    "resume": "Croissance de près de 30 % et forte hausse de la rentabilité au premier semestre ; objectifs annuels confirmés.",
-    "points_cles": [
-     {
-      "texte": "CA ajusté 839 M€ (+29 %, +37 % à change et droits de douane constants)",
-      "effet": "+"
-     },
-     {
-      "texte": "Services (VAS) 125 M€ (+39 %), dont récurrent +73 %",
-      "effet": "+"
-     },
-     {
-      "texte": "Marge d'EBITDA ajusté 19,1 % (+2,4 pts)",
-      "effet": "+"
-     },
-     {
-      "texte": "Résultat net ajusté 77 M€ (+81 %)",
-      "effet": "+"
-     },
-     {
-      "texte": "Free cash-flow opérationnel 127 M€ (+51 %)",
-      "effet": "+"
-     },
-     {
-      "texte": "Trésorerie nette en baisse de 241 M€ sur le semestre",
-      "effet": "-"
-     }
-    ],
-    "a_surveiller": [
-     "Atteinte des objectifs du second semestre"
-    ],
-    "impact": {
-     "sens": "positif",
-     "ampleur": "moyenne"
-    },
-    "juge": true,
-    "chiffres": {
-     "devise": "EUR",
-     "ca": 839.3,
-     "ca_var_pct": 29.0,
-     "resultat": 77.4,
-     "resultat_var_pct": 81.0
-    },
-    "probabilites": {
-     "etapes": [
-      {
-       "libelle": "Ses 39 publications passées",
-       "p": 0.561,
-       "n": 39
-      },
-      {
-       "libelle": "Perspectives confirmées",
-       "p": 0.548,
-       "n": 1221
-      }
-     ],
-     "p_hausse": 0.548,
-     "non_comptes": [
-      "Pas de consensus comparable : position face aux attentes inconnue"
-     ]
-    },
-    "jour": "2026-09-22",
-    "rendement_pct": 13.68,
-    "indice_pct": 0.2,
-    "ecart_pct": 13.71,
-    "z": 4.15
    }
   ],
   "plus_fortes_reactions": [
