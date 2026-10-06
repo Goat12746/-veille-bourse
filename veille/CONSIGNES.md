@@ -48,6 +48,17 @@ Tout se passe dans le dossier `veille/` du dépôt.
      Un dépôt qui n'est pas une publication de comptes (livraisons,
      production, calendrier, résultats d'une filiale) : `{"type": "autre"}`.
      SEC injoignable : signale-le et continue.
+   - **Consensus de chiffre d'affaires arrivé après coup** : Google Finance
+     relève souvent l'estimation du chiffre d'affaires quelques jours après la
+     publication. Pour chaque avis des 14 derniers jours dont
+     `consensus_raison` dit le consensus de chiffre d'affaires non disponible
+     (`resultats_usa_classes.json`, `resultats_classes.json`) et que
+     `consensus_google.json` couvre désormais, complète l'avis : `chiffres.ca`
+     s'il manque, `consensus_raison` avec le chiffre d'affaires publié face à
+     l'estimation, et `consensus` seulement si l'écart change le jugement
+     d'ensemble. Réintègre-le avec `--integrer` (avis partiel : `type`,
+     `consensus`, `consensus_raison` et `chiffres` en entier, qui remplace
+     l'ancien ; les autres champs de l'avis sont gardés).
 3. **Résultats depuis la dernière clôture** : `python avant_ouverture.py`
    - Pour chaque publication de résultats jugée depuis la dernière clôture
      (17 h 35) : la part de hausse historique selon l'écart au consensus, les
@@ -351,7 +362,11 @@ Mêmes règles et même format pour les publications américaines
     compte l'écart aux attentes.
   Les perspectives et objectifs se jugent à part (`perspectives`,
   `objectifs`), pas ici. Sans consensus comparable ni chiffre cité par la
-  presse : `null`.
+  presse : `null`. Consensus de chiffre d'affaires absent du champ
+  `consensus` (Yahoo) : prends l'estimation de Google Finance pour la même
+  publication (`consensus_google.json`, `rapports` : date, période, devise,
+  BPA publié, BPA estimé, CA publié, CA estimé) avant de conclure qu'il n'est
+  pas disponible.
 - **consensus_raison** : une phrase courte qui justifie `consensus` avec les
   chiffres comparés et, s'ils divergent, lequel prime et pourquoi (« BPA
   +5 % au-dessus, chiffre d'affaires +4 %, marge brute record : au-dessus »).
@@ -363,8 +378,12 @@ Mêmes règles et même format pour les publications américaines
   la devise pour `ca` (chiffre d'affaires, ou produit net bancaire) et
   `resultat` (résultat net part du groupe), par action pour `bpa` ; `bpa` :
   celui qui se compare au consensus (ajusté si l'entreprise en publie un,
-  `bpa_ajuste: true`). Omets ce que le texte ne donne pas ; l'application les
-  compare au consensus de la veille.
+  `bpa_ajuste: true`). **Relève toujours `ca` et `bpa` en valeur** quand le
+  communiqué les donne (pas seulement leur variation, `ca_var_pct`) : la fiche
+  de l'application affiche le chiffre d'affaires et le BPA publiés face au
+  consensus. Omets ce que le texte ne donne pas ; l'application les compare au
+  consensus de la veille, et `jour_j.py` complète ce qui manque (chiffre
+  publié ou consensus) avec Google Finance (`consensus_google.json`).
 - **objectifs** : objectifs chiffrés que l'entreprise annonce (ou confirme)
   pour une période à venir : `periode` (`T1 2027`, `S2 2026`, `2026`),
   `ca` et `bpa` (valeur, ou `[min, max]` pour une fourchette ; `ca` en

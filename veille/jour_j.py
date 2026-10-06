@@ -18,12 +18,24 @@ Un element n'est retenu que s'il compte au moins N_MIN publications dans
 l'historique. Les elements sont supposes independants : c'est une
 estimation, pas une certitude.
 
+Chiffre d'affaires et BPA : publies (avis de Claude) et attendus (consensus
+de la veille) ; quand l'un manque, celui que Google Finance releve pour la
+publication (consensus_google.json, chiffre publie face a l'estimation des
+analystes) le complete pour l'affichage et les ecarts, marque "google"
+(chiffres.sources, estimes.<ca|bpa>_source) ; la position face au consensus
+et la probabilite ne s'appuient que sur l'avis de Claude.
+
 Utilise par etude_amf.py (France) et communiques_usa.py (Etats-Unis).
 Bibliotheque standard uniquement.
 """
 
 import datetime as dt
+import json
 import math
+import os
+
+ICI = os.path.dirname(os.path.abspath(__file__))
+_GOOGLE = None
 
 N_MIN = 20
 SURPRISES = {"superieur": "positive", "conforme": "conforme", "inferieur": "negative"}
@@ -214,6 +226,47 @@ def _ecart(publie, attendu):
     return round((publie - attendu[0]) / abs(attendu[0]) * 100, 2)
 
 
+def rapport_google(ticker, publie_le):
+    """Rapport Google Finance de la publication (date de 1 jour avant a 4
+    jours apres la publication) : {"devise", "bpa", "bpa_estime", "ca",
+    "ca_estime"} (ca en millions), ou None."""
+    global _GOOGLE
+    if _GOOGLE is None:
+        try:
+            with open(os.path.join(ICI, "consensus_google.json"), encoding="utf-8") as f:
+                _GOOGLE = json.load(f).get("entreprises", {})
+        except (OSError, ValueError):
+            _GOOGLE = {}
+    jour = dt.date.fromisoformat(publie_le[:10])
+    for r in reversed((_GOOGLE.get(ticker) or {}).get("rapports") or []):
+        if -1 <= (dt.date.fromisoformat(r[0]) - jour).days <= 4:
+            return {"devise": r[2], "bpa": r[3], "bpa_estime": r[4],
+                    "ca": round(r[5] / 1e6, 1) if r[5] else None, "ca_estime": round(r[6] / 1e6, 1) if r[6] else None}
+    return None
+
+
+def completer_google(ch, est, g):
+    """Complete les chiffres publies (`ch`) et attendus (`est`) avec le
+    rapport Google Finance `g` la ou ils manquent (chiffres de la meme
+    devise seulement). Renvoie (ch, est), copies."""
+    ch, est = dict(ch or {}), dict(est or {})
+    if not g or (ch.get("devise") and g.get("devise") and ch["devise"] != g["devise"]):
+        return ch, est or None
+    sources = dict(ch.get("sources") or {})
+    for k in ("ca", "bpa"):
+        if ch.get(k) is None and g.get(k) is not None:
+            ch[k] = g[k]
+            sources[k] = "google"
+        if not est.get(k) and g.get(k + "_estime") is not None:
+            est[k] = [g[k + "_estime"], None]
+            est[k + "_source"] = "google"
+    if sources:
+        ch["sources"] = sources
+    if g.get("devise") and not ch.get("devise") and (ch.get("ca") is not None or ch.get("bpa") is not None):
+        ch["devise"] = g["devise"]
+    return ch, (est if ("ca" in est or "bpa" in est) else None)
+
+
 def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, secteur=None):
     """Publication du jour pour l'application : `pub` = {id, ticker, nom,
     publie_le, url}, `avis` = avis de Claude (ou None : jugement a venir),
@@ -236,6 +289,13 @@ def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, se
             res["autre"] = True  # pas une publication de resultats (livraisons, calendrier...)
         return {k: v for k, v in res.items() if v is not None}
     ch = avis.get("chiffres") or {}
+    # Chiffre d'affaires et BPA publies et attendus : Google Finance comble
+    # ce que l'avis et le consensus de la veille n'ont pas.
+    bpa_avis = ch.get("bpa")  # la position face au consensus ne s'appuie que sur l'avis
+    ch, est = completer_google(ch, est, rapport_google(pub["ticker"], pub["publie_le"]))
+    if est:
+        res["estimes"] = est
+        res.pop("exercice", None)
     res.update({k: avis.get(k) for k in ("periode", "perspectives", "attentes", "consensus", "consensus_raison",
                                          "exceptionnel", "actionnaires", "objectifs", "resume", "points_cles",
                                          "a_surveiller", "impact")})
@@ -253,7 +313,7 @@ def fiche(pub, avis, releve, p_base, t_marche, surprises=None, perf_12m=None, se
     if surprise:
         res["position_source"] = "claude"
     else:
-        surprise = position_consensus(ch.get("bpa"), ((est or {}).get("bpa") or [None])[0])
+        surprise = position_consensus(bpa_avis, ((est or {}).get("bpa") or [None])[0])
         if surprise:
             res["position_source"] = "bpa"
     if surprise:
