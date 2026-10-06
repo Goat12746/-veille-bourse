@@ -1,7 +1,125 @@
 {
  "version": 1,
- "maj_le": "2026-10-06T06:19:50+00:00",
+ "maj_le": "2026-10-06T11:17:09+00:00",
  "alertes": [
+  {
+   "id": "presse-e059911dfdd38af0",
+   "date": "2026-10-06",
+   "source": "presse",
+   "titre": "Alstom : accord avec Vingroup pour 200 rames de métro à Hanoï",
+   "resume": "Alstom et Vingroup signent un accord pour 200 rames Metropolis GoA4 à Hanoï : jusqu'à 83 rames construites à Valenciennes, les 117 autres assemblées au Vietnam par Vingroup sous licence Alstom, avec composants fournis par Alstom. Le montant n'est pas indiqué dans les sources consultées.",
+   "nouveaute": "Première annonce de la commande de 200 rames pour Hanoï (répartition France / assemblage local).",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNM3ZSMDd0LUJGQlRaaGlzMjFJbVF3c2h1MDk5QzZON0ozaDluWmFkXy1PQktqUGFxdl9jeEdMMnRCckpDZmhxd1pCX2xjTFplby1fSjJxekhmcnY3T3ZTWHM3MjFtNU9pNzNuOXMwLV9QLUx4bm54b0FfNVVFUFBNRXYtS2I1OWNGdEdnMVlla0tSX3FkU3dWUzA5WjQ3RWZ6ZE5yNGZ3ZU54NGY0RUF5S2lkTEg3WUxldDhMMG1NOTkxQm1HZEtENloxSUM5S2Z2OGpZdXpEZXBIVEF0RjhHTzhDb2hQRU81U1Y0alNkMU9oRHJINlZqQlhkYTU4ekEwTk9N?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Grosse commande de matériel roulant (83 rames construites en France) et licence de technologie pour 117 rames ; montant non publié, ampleur estimée d'après le volume.",
+     "extrait": "Alstom embarque dans le grand chantier du métro de Hanoï avec 200 rames à la clé",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Alstom embarque dans le grand chantier du métro de Hanoï avec 200 rames à la clé, la Bourse applaudit - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNM3ZSMDd0LUJGQlRaaGlzMjFJbVF3c2h1MDk5QzZON0ozaDluWmFkXy1PQktqUGFxdl9jeEdMMnRCckpDZmhxd1pCX2xjTFplby1fSjJxekhmcnY3T3ZTWHM3MjFtNU9pNzNuOXMwLV9QLUx4bm54b0FfNVVFUFBNRXYtS2I1OWNGdEdnMVlla0tSX3FkU3dWUzA5WjQ3RWZ6ZE5yNGZ3ZU54NGY0RUF5S2lkTEg3WUxldDhMMG1NOTkxQm1HZEtENloxSUM5S2Z2OGpZdXpEZXBIVEF0RjhHTzhDb2hQRU81U1Y0alNkMU9oRHJINlZqQlhkYTU4ekEwTk9N?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T09:25:04+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Alstom va équiper le métro de Hanoï: Petite-Forêt au cœur de ce gros contrat - L'Observateur.fr",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2TkFQb1dsSzd5Sm9oLVhmVkxGUTNleF9fb0p2TjV1UWFmZ0FQN0Y3dW5QSVBhakF5VUlOejI1b1UzVElGRWhkTmtIRkhlUnVvbDByV0g0eXFKWFVrOHpUOFc5bXVYZGREeE5lR0RnZ1pGN29KRWpMTVoyM3QxUQ?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T09:54:49+00:00",
+     "media": "L'Observateur.fr"
+    },
+    {
+     "titre": "Alstom recherché après la signature d'un important contrat au Vietnam - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRXJQMHgwb0Vtb1hLOTZjRVJWZU5RM0s3QWkxUEVFNlQ4a1Q5ZzF1VldyNnNCRGlQYkQ4a0dsdS1rcG5OeXlab2lKUm9tVlNpejNHMTVybllBZGFiSVh2Smo2bEFOd0pWdXdOeVFMUnpHeFE2QkVXQ0tBaW1QX2NXaV9SNnlReWV6UHUwYU1DbmVSTFAtb2hXcERMaEt4SUhFckJkNHhQeDczUmhubkhJ?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T09:22:56+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Alstom bondit de 5% en Bourse après cet important accord au Vietnam - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcURQTHRVZW1UUTBmSVVURHFCOExSNDNUYmx5NFYtQXFrZzBybG9BWjN6RUlDTng5aldhRkpNT2ZpSHIzQXY1MmZ6bU9yTjQ5QTdWZF9PZGU5VEFJSUNyV3M2VHpId3RRUVpRWXVEMHNTSlBacEZXNjVsaDU1R2NxZk5vcGw5YUcyVVMyNV94YTZVMU9jTGlNdVhhclhfMkRHMTVkclBCY1NnT0E?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T09:06:55+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-06",
+   "publie_a": "2026-10-06T11:17:09+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-6ab0a65dad9f2c01",
+   "date": "2026-10-06",
+   "source": "presse",
+   "titre": "Aperam met en garde contre l'effet des prix de l'énergie sur ses résultats",
+   "resume": "Aperam prévoit des résultats du 3e trimestre prudents et signale l'impact des prix de l'énergie sur ses résultats, selon la presse financière du jour. Chiffres détaillés non lus (titres seuls).",
+   "nouveaute": "Mise en garde nouvelle d'Aperam sur ses résultats du 3e trimestre liée aux prix de l'énergie.",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTGZmYlBBRkY1TEZ5NGdleEFZN05mcF8xSUZHbldUNjRIM29QWUNPNmhOb1pJVHBxLTZxN2FwNzVya1BUd0FQNHRnVlNuZndaTW5YMDZzNnhUREs0c1FUcFAyUGVELVNUcVJiM0FscG85TTNoajdvUlZVVW5OakhhM2FocGZDekJRSV9EZWlQTWZoRy1OX1ZhRGVBSkk1dVN1dU0zbS12UGhOSm5nRUtyOWNXd29US3BReWdNT00xWFpTTXh2WDFwMFlRb2ZMa2ZYY1Z1UXJNUDhxc2JVNHY0bkRQSFFHUQ?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "APAM.AS",
+     "sens": "negatif",
+     "ampleur": "inconnue",
+     "justification": "Avertissement de l'entreprise sur la pression de l'énergie sur ses marges ; ampleur chiffrée non connue.",
+     "extrait": "Aperam met en garde contre l'impact des prix de l'énergie sur ses résultats",
+     "nom": "Aperam"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Aperam met en garde contre l'impact des prix de l'énergie sur ses résultats, le titre chute - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTGZmYlBBRkY1TEZ5NGdleEFZN05mcF8xSUZHbldUNjRIM29QWUNPNmhOb1pJVHBxLTZxN2FwNzVya1BUd0FQNHRnVlNuZndaTW5YMDZzNnhUREs0c1FUcFAyUGVELVNUcVJiM0FscG85TTNoajdvUlZVVW5OakhhM2FocGZDekJRSV9EZWlQTWZoRy1OX1ZhRGVBSkk1dVN1dU0zbS12UGhOSm5nRUtyOWNXd29US3BReWdNT00xWFpTTXh2WDFwMFlRb2ZMa2ZYY1Z1UXJNUDhxc2JVNHY0bkRQSFFHUQ?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T10:23:28+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Aperam avertit et chute en Bourse - L'Agefi",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBFcGJmWERHZzRVd1l0YTVJZVZmTXF0V2tDb2p3OFJtSGtxQXo3bmpuNHJfSS04S1pLcGpHTmZZeWU2Sm9vR0ZlU25QQnJqWElub1VwcGNoNGFIemNzWmc5RlE4Zm1lNTFFaTN6N3VRZTA4Zk9kb1dld0R0aw?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T10:53:43+00:00",
+     "media": "L'Agefi"
+    },
+    {
+     "titre": "Le Bel 20 en vert | Position \"short\" sur Melexis | Argenx en forme | Aperam souffre (+Briefing) - lecho.be",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQb2JWMzNDRHd2RDU5TzhCUjdSdG1wVzhXMWhEV2ZqV0dvdm8zdjNQQnc4ckRFeVFBb1l6RXhQdUlvVFdUbjNMSk4yVmNtaFRRSTI3OGRDWUZVZkxBZkdWZkJ4VkppRUhBclpmdDlTUnhEXzc3cnFYWjdkMXJXV21ld1FDZEU2TDRlZXRFZWhhaVJVVTd1UV82S05JNjRlbVlYYnhjQnZvM0tuaTVUS2Z4Skc4UnVMaFBYQ1ZqeGFzRklaNzNqcWN3QmpkUll6SXdVelIzVzhXZlRPdXVnNnk5dW83YnB0enBZN3c?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T09:27:06+00:00",
+     "media": "lecho.be"
+    },
+    {
+     "titre": "Aperam chute après des prévisions prudentes pour le 3e trimestre - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaVBIcEN0VVZ6RHhNMUoxNC1idVplLTlhTkxYRFhpUi1xYklGaEZ1UFhoQ0dpWkZQSWRWcjB1ZXRmM3p5aVFVLTlGTUdMalMyUnFCQ1U1cUdCSF9xS3V3cTFMdnhoWTZheW1sWEZfVXE4RzRrUTZLbEI2ZDAwbWZXeDhyeWtvVnpRTzREZ09DT3ZBRXlpOEQxR0RxV1dPSUhnRDV5ZHh1UG9GY0NPOGJ1c2llNTVtaXI2cFB0M1VaaTJ4azA?oc=5",
+     "date": "2026-10-06",
+     "publie_le": "2026-10-06T08:01:24+00:00",
+     "media": "Zonebourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-06",
+   "publie_a": "2026-10-06T11:17:09+00:00",
+   "initial": {
+    "etape": "information",
+    "probabilite": 1
+   }
+  },
   {
    "id": "amf-083331_20261005",
    "date": "2026-10-05",
