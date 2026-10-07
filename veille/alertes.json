@@ -1,21 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-06T11:17:09+00:00",
+ "genere_le": "2026-10-07T06:20:31+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 19,
-   "nouveaux": 3
+   "trouves": 25,
+   "nouveaux": 6
   },
   "presse": {
    "ok": true,
-   "trouves": 311,
-   "nouveaux": 180
+   "trouves": 355,
+   "nouveaux": 231
   },
   "assemblee": {
    "ok": true,
-   "trouves": 21,
-   "nouveaux": 0
+   "trouves": 255,
+   "nouveaux": 3
   },
   "agenda": {
    "ok": true,
@@ -1573,7 +1573,7 @@
    "date": "2026-10-13",
    "heure": "15:00",
    "type": "budget",
-   "titre": "Sous réserve de son dépôt, discussion du projet de loi de finances pour 2027 (première partie)",
+   "titre": "Discussion du projet de loi de finances pour 2027 (première partie)",
    "tickers": [
     "DG.PA",
     "FGR.PA",
@@ -1650,7 +1650,7 @@
    "date": "2026-10-20",
    "heure": "15:00",
    "type": "budget",
-   "titre": "Vote solennel sur le projet de loi de finances pour 2027 (première partie). • Sous réserve de son dépôt, discussion du projet de loi de financement de la sécurité sociale pour 2027",
+   "titre": "Vote solennel sur le projet de loi de finances pour 2027 (première partie). • Discussion du projet de loi de financement de la sécurité sociale pour 2027",
    "tickers": [
     "DG.PA",
     "FGR.PA",
