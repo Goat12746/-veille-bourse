@@ -1,21 +1,20 @@
 {
  "version": 1,
- "genere_le": "2026-10-07T06:20:31+00:00",
+ "genere_le": "2026-10-07T11:23:47+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 25,
-   "nouveaux": 6
+   "trouves": 11,
+   "nouveaux": 2
   },
   "presse": {
    "ok": true,
-   "trouves": 355,
-   "nouveaux": 231
+   "trouves": 290,
+   "nouveaux": 166
   },
   "assemblee": {
-   "ok": true,
-   "trouves": 255,
-   "nouveaux": 3
+   "ok": false,
+   "erreur": "IncompleteRead(186482325 bytes read, 123762629 more expected)"
   },
   "agenda": {
    "ok": true,
@@ -27,6 +26,157 @@
   }
  },
  "alertes": [
+  {
+   "id": "amf-083379_20261007",
+   "date": "2026-10-07",
+   "source": "amf",
+   "titre": "Eurazeo acquiert Miya Water, spécialiste des solutions d'efficacité des réseaux d'eau",
+   "resume": "Eurazeo annonce par communiqué (information privilégiée) l'acquisition de Miya Water, spécialiste mondial de la réduction des pertes des réseaux d'eau. Les conditions financières ne sont pas précisées dans le titre du communiqué.",
+   "nouveaute": "Première annonce officielle de cette acquisition par Eurazeo.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083379_20261007.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "RF.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Montant et part d'Eurazeo non lus dans le communiqué : effet sur le résultat non évaluable à ce stade.",
+     "extrait": "",
+     "nom": "Eurazeo"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Eurazeo : EURAZEO ACQUIERT MIYA WATER, SPECIALISTE MONDIAL DES SOLUTIONS D’EFFICACITE DES RESEAUX D’EAU",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083379_20261007.pdf",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T06:14:46+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Eurazeo fait l'acquisition d'un spécialiste des solutions d'efficacité des réseaux d'eau - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVE9oQWpNMjlLWTh0cGRDTjM3SFpqRkVVbE52NkR6ODRNeFk1MTlpSEs3V1JGMWRJMVlKTk4zbERSaGV3MFJxMXkzZEFib1FBei1YSnYzYmgyUy1qbWpIc09WaENkVWJUX0l5d3RYdDAwUGYyUlprRVVpU2wwcDAwYkdSalVjUHc5Z05WRzFiVkh6WHIyMzVSN1puY0Y2ejRRaE5uSE1VSmNqYzRUODR5WWc5akNwRTJka0QyTVpPT0owT216X1p4M1dzSXZRUGx2WHF4b1VtNXNzeGZZaEl5M3AtSQ?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T06:46:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Eurazeo a conclu un accord pour prendre une participation majoritaire dans Miya Water, spécialiste de la lutte contre les pertes d'eau - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNWE8tTkVGOHU4QUNSRjMtbjRvdS1SUW9TaTQyMlg0N3pabkl6OE5ZNThhNXpBbXZmbjhQX0ptMUpOSF9wUENQdi1VSHV4REVITDhUTTBaNzYyemxSMjBteWU5N1p3c25lUkw5LXJqX0NZMXNRX3R6VHdNd0VZSHU3T2FiVl8tSjRYMDh2eGlFU3hSOUVNZFZPVjh2NHYxTHRmcXRzbXN0UE9IRnZ2TEY2c2ZnempTakdaUnRteER4cVFFM0JyMUlVR2tFd0MwYVRMOHFzWXdHelJ4UWR3c1ltUTZ4MjIyMXllWjNSR0ptMXRTOHNIYWpTbkRvQk1Pc2IxRWlGMWNueWxZbXR6ZlczVlZFYUsyUQ?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T06:46:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "Eurazeo investit dans Miya Water pour lutter contre les pertes d'eau potable... - Fortuneo",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPN0FXMmtMVGRKSG1PRUp5NVRJNkJfOUFSZHEzd2ltc3BWNi1LV2Z0ODZORFFhX3ZSekRIOVdTb0JQNk1fN0wzbVdpeWdFVXo2Ti1aU1JmNjhwQjVUalNrbjZkS1FraXE0YUhjRjZIUmFUcU9URm1RYmdnOEs1S3Y0QjFibXN0YzRNeWowM25xQjh3RkNWSVIyc3VSU0FCaTVpMWJXZVQxMnBUUDhnU2xKSGR4TDhOYUNFRlpmQmk2UdIBxAFBVV95cUxQM3Q3MXpjTTJfc181QXoyOEFlb2FnWG9XWDhLcnF0dW42X3V4dlZOU3J0RE9ETTVDcldycjlxUHZ2bTIxRTB2bnFkTEE1YmZMOERJNlN2MlcyTDNEN183YkhnTXhmZlpESGRDdXJNdXVyanJLQW5KSHpRR1ZMeEZ6WHpvNUc4Z2FzOFNwRC1MRGlLbHJ0UHJYMjYtR1BCZkpGcU1WM0RwYmVJWkk1UzhqeDY2LVZKdlZ4UThJX3NpdlZ3ODFI?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T06:36:00+00:00",
+     "media": "Fortuneo"
+    },
+    {
+     "titre": "Eurazeo acquiert MIYA Water, spécialiste mondial des solutions d'efficacité des réseaux d'eau - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNcnBOSHBzZkRDT19GSlRaMG93ODFQd0FuNWJST0VWXzBlUXFud2RscEJlclRXZ2oyNEcwZDZNWXpfWE82VXY0eU1Zd3BIRkUzdkdUdDE1bU5HMlVSaGRZNURxUFpLTncwOUw5RFcwQ3pVUEI0b0ExN1RTaDBtSk4tR1VkODcySWJFRDd2T3pDYTZZX0htbm1aNmtVT1ZhRHVTWm5iX3ktV3NaTFpUZGtoVmV3c3FJcS1iSFlUamJFOUhxOENNdW9YbTJ2V0s5SmV4Y1cxMHBqQ3E2bmFIWmhLYkZvZXhuR00?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T06:20:25+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-07",
+   "publie_a": "2026-10-07T11:23:47+00:00"
+  },
+  {
+   "id": "amf-136594_20261007",
+   "date": "2026-10-07",
+   "source": "amf",
+   "titre": "Elis : OCEANEs 2029 converties, 377 M€ de dette effacés pour 2,3 % de dilution",
+   "resume": "Elis annonce les résultats de la période de conversion et d'échange de ses OCEANEs 2029 : l'essentiel est converti en actions, le reliquat sera remboursé. Selon la presse, la dette diminue de 377 M€ pour environ 2,3 % de dilution.",
+   "nouveaute": "Résultat de l'opération de conversion connu aujourd'hui : désendettement chiffré et dilution limitée.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW136594_20261007.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ELIS.PA",
+     "sens": "neutre",
+     "ampleur": "faible",
+     "justification": "Désendettement de 377 M€ compensé par une dilution d'environ 2,3 % du capital.",
+     "extrait": "Elis annonce les résultats de la période de conversion et d’échange de ses OCEANEs 2029",
+     "nom": "Elis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Elis : Elis annonce les résultats de la période de conversion et d’échange de ses OCEANEs 2029",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW136594_20261007.pdf",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T05:00:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Comment Elis a effacé 377 millions de dette avec 2,3% de dilution - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQalJFLWdVY2s1N2hObFRrY0U4Q1VJelRKY1pLZTJZVGlRcVhKM3phUUkyN25rUlVWNE00dGd4MkRPTXRrZmtmZkdVWi1BU19MVnoxYTlCUzQ2SG14em9kZDlUWjVQd25iX3NLSWMxMVVmOFljS0NQYU1tNkJHWVptVUN6X05UMDJYbnpVZUpsdUlLX2J6bEE1Vkx5Um94RnB4R0UybEFyRjJSTDhHZWItSHFYQzRHMmpnWllDcm9keVNyQQ?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T10:10:25+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Elis transférera des actions lors de la conversion de ses obligations 2029 et remboursera sa dette en circulation - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNcjhpX1ZyelQ4N216M1lpOF9nZGlwWWFLOGJnalZvUEVrTWQ0eGRWSlpBVVRtcEFmUldRbVlMQS10clhNWGRVbUFncXMwRGpjYm9qNFhmZFR2QjBKNzM2bVI0V2xYbmktVEZwZXNMZW9ZRXpkREh2WUNzNGZsVFVhUTRwNlpRNUc2cllLSVJvZmZ0UFNrZ0hxeEFiSkYzMWp4UXZka252TFNtNUs3eW42NXg5cXE1QjRLeWZfd3FwbmNFcEdJQk05Q3p6elpxZ3BhZUl1dVliLVRRZWptdTBsMTJDVmQyVG1pbVNqMWJYVFYxbm8?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T05:37:19+00:00",
+     "media": "Zonebourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-07",
+   "publie_a": "2026-10-07T11:23:47+00:00"
+  },
+  {
+   "id": "presse-79e6d4717d552a34",
+   "date": "2026-10-07",
+   "source": "presse",
+   "titre": "Rumeur : plafond européen sur les hybrides chinoises évoqué, constructeurs européens concernés",
+   "resume": "Des informations de presse évoquent un plafond européen visant les voitures hybrides chinoises (l'UE a demandé à Pékin de limiter leur part vers 15 % du marché). Rien n'est confirmé officiellement.",
+   "nouveaute": "Première information sur un plafond européen visant spécifiquement les hybrides chinoises.",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdTh5RERPTTJKc0VxQlN0b0k3UDB5V2VrWlJ1ZEZUNWcwajNyNGN6S1hRQkNlTDZWQlRWMDdaRmQ2bVpoSy1uOUMwZDNCVXdjQXhicS1qMDBnMlVnOWdhZlBDRVJlZEFURllZU09FNVllS2xkWEd5TnZEdDVQNld5N2JLaE4ta01zMDFkcFcxb1pXbV9NQjZUbW53M2pWc0hjN3VhUkNERm1PbENVOEs0TFgybi02YU9LZlJKMUhJbFdKd1pkeGNOUmhabmtrZUw1TTZ5aURFSnlpV2Mwb0NMY0pLZ1dEY085VU9xZkh2MA?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.3,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "STLAP.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Un plafond limiterait la concurrence chinoise sur les hybrides, segment où Stellantis détient 15,2 % de part de marché.",
+     "extrait": "",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Bourse de Milan : Stellantis en forte hausse avec les constructeurs automobiles européens après des informations sur un plafond européen visant les hybrides chinoises - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdTh5RERPTTJKc0VxQlN0b0k3UDB5V2VrWlJ1ZEZUNWcwajNyNGN6S1hRQkNlTDZWQlRWMDdaRmQ2bVpoSy1uOUMwZDNCVXdjQXhicS1qMDBnMlVnOWdhZlBDRVJlZEFURllZU09FNVllS2xkWEd5TnZEdDVQNld5N2JLaE4ta01zMDFkcFcxb1pXbV9NQjZUbW53M2pWc0hjN3VhUkNERm1PbENVOEs0TFgybi02YU9LZlJKMUhJbFdKd1pkeGNOUmhabmtrZUw1TTZ5aURFSnlpV2Mwb0NMY0pLZ1dEY085VU9xZkh2MA?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T10:38:24+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Pourquoi l’action Stellantis est-elle en hausse aujourd’hui ? - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaXhZa0xxOHhacjRUQ2ktdGZlanRuNm5YRU5faGpoNjJBS0pTX1p1bTlsYWJWVlNidEdkRlQ3LVdTaVVxWThsUFZhLW5MSl9MQXZHRTkxOUszdVJsdDk4R3BGNUNjSTJxSHFlWHptWUhvWDNYSVdCc01rblJhQVVRU2hCMmttbmtPQzlpRU8xUHRGOXRFcDJRU0w1bjFtOGduaDZ1NVZjaXpFbHlid1NldVdFV0ZwQnYxM3c?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T07:41:00+00:00",
+     "media": "Investing.com France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-07",
+   "publie_a": "2026-10-07T11:23:47+00:00"
+  },
   {
    "id": "presse-e059911dfdd38af0",
    "date": "2026-10-06",
