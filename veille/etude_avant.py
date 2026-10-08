@@ -17,7 +17,8 @@ l'application additionne a l'historique FMP :
     P(hausse | tranche) = hausses / publications ; meme chose depuis la
     publication precedente (seances 0) ;
   - "ensuite" (zone et chaque entreprise) : rendement moyen des 20 seances
-    avant la reaction et de la seance de reaction, selon le sens du jour ;
+    avant la reaction (face a l'indice) et de la seance de reaction (brut),
+    selon le sens du jour ;
   - "consensus" : P(hausse) selon l'ecart du BPA (lignes) et du chiffre
     d'affaires (colonnes) au consensus, grille detaillee (bornes +-2, 5, 10 et
     15 %) puis une grille 3 x 3 par seuil.
@@ -188,11 +189,14 @@ def etudier(entreprises, indice=None, par_entreprise=False):
                 couples.append((ev["surprise_bpa_pct"], ev["surprise_ca_pct"], int(hausse)))
             total["n"] += 1
             total["hausses"] += hausse
-            if s - 1 - AVANT >= 0:
+            # Encadre Avant / jour J : 20 seances avant face a l'indice, jour
+            # J brut.
+            ind20 = variation_indice(indice, dates[s - 1 - AVANT], dates[s - 1]) if s - 1 - AVANT >= 0 else None
+            if ind20 is not None:
                 for cumul in (ensuite, locale):
                     x = cumul["hausse" if hausse else "baisse"]
                     x["n"] += 1
-                    x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100
+                    x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100 - ind20
                     x["jour"] += rea
             # Horizons : rendement avant face a l'indice, hausse brute du jour.
             if s - 1 - HORIZON >= 0:
