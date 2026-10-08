@@ -9,24 +9,22 @@ stade en est la mesure.
 
 Tout se passe dans le dossier `veille/` du dépôt.
 
-## Étapes
+## Deux routines
+
+- **Veille alertes** (8 h 15 et 13 h 12, en semaine) : les étapes « Veille
+  alertes » ci-dessous, rien d'autre. Elle doit publier vite : les alertes,
+  dont les alertes de résultats avant l'ouverture de 9 h.
+- **Statistiques et résultats** (14 h 30, en semaine) : les étapes
+  « Statistiques et résultats » plus bas. Attentes du marché, scores,
+  résultats américains et européens. Elle ne touche pas aux alertes.
+
+## Étapes de la veille alertes
 
 1. **Collecte** : `python collecte.py --jours 3`
    - Produit `sortie/candidats.json`. Si une source est en erreur (`sources`),
      continue avec les autres et signale-le dans ton compte rendu.
-2. **Attentes du marché et communiqués AMF** : `python consensus.py`,
-   `python google_finance.py`, `python objectifs.py`,
-   `python communiques.py` puis `python communiques.py --a-classer`
-   - `consensus.py` relève le consensus des analystes (Yahoo),
-     `google_finance.py` le chiffre d'affaires (et le BPA) publié face à
-     l'estimation des analystes pour les publications des 12 derniers jours
-     (Google Finance, `consensus_google.json`),
-     `objectifs.py` leurs objectifs de cours (Yahoo) : sans IA, ne les
-     modifie pas à la main. Une source en erreur n'arrête rien (le fichier
-     précédent est gardé) : signale-le. Lance-les à chaque veille : ils ne
-     font rien s'il n'y a rien de nouveau (consensus déjà relevé le jour même).
-     Ne lance plus `positions.py` (ventes à découvert : sans effet mesurable,
-     retiré le 2026-10-08).
+2. **Communiqués AMF** : `python communiques.py` puis
+   `python communiques.py --a-classer`
    - Ajoute les communiqués des derniers jours à `communiques.json`, puis liste
      dans `sortie/resultats_a_classer.json` les publications de résultats et
      révisions d'objectifs que tu n'as pas encore jugées.
@@ -35,30 +33,10 @@ Tout se passe dans le dossier `veille/` du dépôt.
      `python communiques.py --integrer sortie/avis_resultats.json`.
    - Relance `--a-classer` : il doit afficher 0 publication (un avis « autre »
      sur un document joint peut faire apparaître le vrai communiqué du jour).
-   - **Résultats américains du jour** (à chaque veille) :
-     `python communiques_usa.py --a-classer` liste dans
-     `sortie/resultats_usa_a_classer.json` les publications de résultats des
-     entreprises américaines suivies (dépôts à la SEC des derniers jours) que
-     tu n'as pas encore jugées, avec un extrait du communiqué (en anglais), le
-     consensus de la veille et un repérage des perspectives par mots-clés
-     (`perspectives_mots`, à vérifier : ne le recopie pas sans lire le texte).
-     Juge chacune avec les mêmes règles (« Publications de résultats » plus
-     bas), écris tes avis dans `sortie/avis_resultats_usa.json` et lance
-     `python communiques_usa.py --integrer sortie/avis_resultats_usa.json`.
-     Un dépôt qui n'est pas une publication de comptes (livraisons,
-     production, calendrier, résultats d'une filiale) : `{"type": "autre"}`.
-     SEC injoignable : signale-le et continue.
-   - **Consensus de chiffre d'affaires arrivé après coup** : Google Finance
-     relève souvent l'estimation du chiffre d'affaires quelques jours après la
-     publication. Pour chaque avis des 14 derniers jours dont
-     `consensus_raison` dit le consensus de chiffre d'affaires non disponible
-     (`resultats_usa_classes.json`, `resultats_classes.json`) et que
-     `consensus_google.json` couvre désormais, complète l'avis : `chiffres.ca`
-     s'il manque, `consensus_raison` avec le chiffre d'affaires publié face à
-     l'estimation, et `consensus` seulement si l'écart change le jugement
-     d'ensemble. Réintègre-le avec `--integrer` (avis partiel : `type`,
-     `consensus`, `consensus_raison` et `chiffres` en entier, qui remplace
-     l'ancien ; les autres champs de l'avis sont gardés).
+   - Le consensus de la veille (`consensus.json`, `consensus_google.json`)
+     est relevé par la routine « Statistiques et résultats » : ne lance ni
+     `consensus.py`, ni `google_finance.py`, ni `objectifs.py`, ni
+     `positions.py` (retiré le 2026-10-08).
 3. **Résultats depuis la dernière clôture** : `python avant_ouverture.py`
    - Pour chaque publication de résultats jugée depuis la dernière clôture
      (17 h 35) : la part de hausse historique selon l'écart au consensus, les
@@ -76,33 +54,72 @@ Tout se passe dans le dossier `veille/` du dépôt.
 6. **Statistiques** : `python statistiques.py`
    - Mesure la réaction des cours aux alertes (clôtures de la veille comprises)
      et aux communiqués AMF, et écrit `statistiques.json` (onglet Statistiques
-     de l'application).
+     de l'application), dont la fiche des résultats français du jour
+     (`publications_recentes` : consensus, chiffres publiés, probabilité de
+     hausse) : indispensable aux alertes de résultats, ne la saute pas.
    - Sans IA ni analyse de ta part : ne modifie pas ce fichier à la main.
-   - Puis `python scores.py` : compare les objectifs de cours à 12 mois au
-     cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
-   `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json`, `consensus_google.json`,
-   `objectifs.json`, `scores.json`, `resultats_usa_classes.json` et
-   `resultats_usa_jour.json` uniquement, message :
-   `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
-   - **Résultats américains, veille de 13 h 12 seulement** (après 12 h,
-     heure de Paris), une fois ce push vérifié : `python edgar.py`,
-     `python perspectives_usa.py`, `python consensus.py --zone usa`,
-     `python etude_usa.py` puis `python communiques_usa.py --jour`.
-     Publications de résultats des entreprises américaines déposées à la SEC,
-     position face au consensus des analystes et réaction face au S&P 500 (`communiques_usa.json`, onglet Statistiques > Communiqués >
-     États-Unis). Sans IA, ne modifie pas ces fichiers à la main. Si un
-     script échoue (SEC ou Yahoo injoignable), lance quand même les suivants
-     (le fichier précédent est gardé) et signale-le.
-   - **Résultats européens (STOXX 600), même veille de 13 h 12**, ensuite :
-     `pip install -q yfinance` (s'il manque), `python stoxx_collecte.py --recent`,
-     puis les perspectives (ci-dessous), puis `python etude_stoxx.py`. Annonces
-     de résultats des 14 derniers jours (calendrier Yahoo, Investegate pour le
-     Royaume-Uni, Nasdaq Nordic pour la Suède, le Danemark et la Finlande),
-     position face au consensus et réaction face au STOXX 600
-     (`communiques_stoxx.json`, onglet Statistiques > Communiqués > Europe).
-     Une source injoignable n'arrête rien, signale-la.
+   `statistiques.json`, `communiques.json` et `resultats_classes.json`
+   uniquement, message : `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans
+   le commit).
+8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
+   importantes, sources en erreur, publications de résultats jugées (et
+   alertes de résultats publiées), et les lignes de résultat de
+   `statistiques.py` (points, sens juste).
+
+## Étapes de la routine « Statistiques et résultats »
+
+Commence par `git pull` (la veille de 13 h 12 vient de pousser). Sans IA
+pour les scripts : n'en modifie pas les fichiers à la main. Une source ou un
+script en erreur n'arrête rien (le fichier précédent est gardé) : lance les
+suivants et signale-le.
+
+1. **Attentes du marché et scores** : `python consensus.py`,
+   `python google_finance.py`, `python objectifs.py` puis `python scores.py`
+   - `consensus.py` relève le consensus des analystes (Yahoo),
+     `google_finance.py` le chiffre d'affaires (et le BPA) publié face à
+     l'estimation des analystes pour les publications des 12 derniers jours
+     (Google Finance, `consensus_google.json`), `objectifs.py` leurs
+     objectifs de cours (Yahoo), `scores.py` compare les objectifs de cours à
+     12 mois au cours à l'échéance (`scores.json`, onglet Statistiques >
+     Scores). Ils ne font rien s'il n'y a rien de nouveau.
+   - **Consensus de chiffre d'affaires arrivé après coup** : Google Finance
+     relève souvent l'estimation du chiffre d'affaires quelques jours après la
+     publication. Pour chaque avis des 14 derniers jours dont
+     `consensus_raison` dit le consensus de chiffre d'affaires non disponible
+     (`resultats_usa_classes.json`, `resultats_classes.json`) et que
+     `consensus_google.json` couvre désormais, complète l'avis : `chiffres.ca`
+     s'il manque, `consensus_raison` avec le chiffre d'affaires publié face à
+     l'estimation, et `consensus` seulement si l'écart change le jugement
+     d'ensemble. Réintègre-le avec `--integrer` (`communiques.py` ou
+     `communiques_usa.py` ; avis partiel : `type`, `consensus`,
+     `consensus_raison` et `chiffres` en entier, qui remplace l'ancien ; les
+     autres champs de l'avis sont gardés). Si un avis français change, relance
+     `python statistiques.py`.
+2. **Résultats américains** : `python edgar.py`, `python perspectives_usa.py`,
+   `python consensus.py --zone usa`, puis `python communiques_usa.py --a-classer`
+   - Il liste dans `sortie/resultats_usa_a_classer.json` les publications de
+     résultats des entreprises américaines suivies (dépôts à la SEC des
+     derniers jours) que tu n'as pas encore jugées, avec un extrait du
+     communiqué (en anglais), le consensus de la veille et un repérage des
+     perspectives par mots-clés (`perspectives_mots`, à vérifier : ne le
+     recopie pas sans lire le texte). Juge chacune avec les règles de
+     « Publications de résultats » plus bas, écris tes avis dans
+     `sortie/avis_resultats_usa.json` et lance
+     `python communiques_usa.py --integrer sortie/avis_resultats_usa.json`.
+     Un dépôt qui n'est pas une publication de comptes (livraisons,
+     production, calendrier, résultats d'une filiale) : `{"type": "autre"}`.
+   - Puis `python etude_usa.py` et `python communiques_usa.py --jour`
+     (position face au consensus et réaction face au S&P 500,
+     `communiques_usa.json`, onglet Statistiques > Communiqués > États-Unis ;
+     fiches du jour, `resultats_usa_jour.json`).
+3. **Résultats européens (STOXX 600)** : `pip install -q yfinance` (s'il
+   manque), `python stoxx_collecte.py --recent`, puis les perspectives
+   (ci-dessous), puis `python etude_stoxx.py`. Annonces de résultats des 14
+   derniers jours (calendrier Yahoo, Investegate pour le Royaume-Uni, Nasdaq
+   Nordic pour la Suède, le Danemark et la Finlande), position face au
+   consensus et réaction face au STOXX 600 (`communiques_stoxx.json`, onglet
+   Statistiques > Communiqués > Europe).
    - **Perspectives des publications européennes** (avant `etude_stoxx.py`) :
      `python relecture_stoxx.py --recent --communiques --oslo --nordique --presse --a-lire sortie/stoxx_a_lire.json`.
      Le script relève, pour les publications des 14 derniers jours, le texte
@@ -116,24 +133,25 @@ Tout se passe dans le dossier `veille/` du dépôt.
      (`{id: valeur ou null}`, un verdict pour chaque extrait lu) puis
      `python relecture_stoxx.py --integrer sortie/avis_stoxx.json`. Aucun
      extrait : rien à faire.
-   - Puis un second commit des seuls `resultats_usa.json`,
-     `resultats_usa_perspectives.json`, `consensus_usa.json`,
-     `communiques_usa.json`, `resultats_usa_jour.json`, `resultats_stoxx.json`,
-     `stoxx/yahoo.json`, `stoxx/uk.json`, `stoxx/nordique.json`,
-     `relecture_stoxx/perspectives_claude.json`,
-     `relecture_stoxx/extraits_communiques.json`,
-     `relecture_stoxx/extraits_presse.json`,
-     `communiques_stoxx.json` et `test_avant.json` (onglet Test, recalculé par
-     `etude_usa.py` et `etude_stoxx.py`), message
-     `veille : AAAA-MM-JJ, résultats américains et européens`, et push (même
-     vérification du hash). Rien à commiter : signale-le simplement.
-8. **Compte rendu** en quelques lignes : nombre d'alertes publiées, les 3 plus
-   importantes, sources en erreur, publications de résultats jugées (et
-   alertes de résultats publiées), et les lignes de résultat de
-   `statistiques.py` (points, sens juste) et de `scores.py` (et, à 13 h 12,
-   d'`edgar.py`, d'`etude_usa.py`, de `stoxx_collecte.py --recent`, le nombre
-   de perspectives européennes jugées (et non nulles) et la ligne
-   d'`etude_stoxx.py`).
+4. **Commit et push** des seuls `consensus.json`, `consensus_google.json`,
+   `objectifs.json`, `scores.json`, `resultats_classes.json`,
+   `statistiques.json`, `resultats_usa.json`,
+   `resultats_usa_perspectives.json`, `consensus_usa.json`,
+   `resultats_usa_classes.json`, `communiques_usa.json`,
+   `resultats_usa_jour.json`, `resultats_stoxx.json`, `stoxx/yahoo.json`,
+   `stoxx/uk.json`, `stoxx/nordique.json`,
+   `relecture_stoxx/perspectives_claude.json`,
+   `relecture_stoxx/extraits_communiques.json`,
+   `relecture_stoxx/extraits_presse.json`, `communiques_stoxx.json` et
+   `test_avant.json` (onglet Test, recalculé par `etude_usa.py` et
+   `etude_stoxx.py`), message
+   `veille : AAAA-MM-JJ, statistiques et résultats américains et européens`.
+   Rien à commiter : signale-le simplement.
+5. **Compte rendu** en quelques lignes : publications américaines jugées,
+   perspectives européennes jugées (et non nulles), avis complétés par
+   Google Finance, sources en erreur, et les lignes de résultat de
+   `scores.py`, `edgar.py`, `etude_usa.py`, `stoxx_collecte.py --recent` et
+   `etude_stoxx.py`.
 
 ## Alertes de résultats (avant l'ouverture)
 
@@ -308,7 +326,7 @@ ne peut pas la vérifier.
 **En cas de doute** sur le sens ou l'ampleur : `incertain` / `inconnue` plutôt
 qu'une affirmation. Une alerte prudente vaut mieux qu'une alerte fausse.
 
-## Publications de résultats (étape 2)
+## Publications de résultats (veille alertes, étape 2 ; États-Unis : routine « Statistiques et résultats », étape 2)
 
 Chaque entrée de `sortie/resultats_a_classer.json` donne le titre et un
 extrait du communiqué (chiffres clés, perspectives). Ton avis :
