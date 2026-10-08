@@ -404,7 +404,7 @@ def croise(v, cle, valeurs):
         suites = [x["suite_pct"] for x in w if x.get("suite_pct") is not None]
         res.append({"valeur": val, "n": len(w),
                     "part_hausse": _part(sum(1 for x in w if x["reaction"] == "hausse"), len(w)),
-                    "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2) if w else None,
+                    "ecart_moyen_pct": arrondi(moyenne([x["rendement_pct"] for x in w]), 2) if w else None,
                     "suite_moyenne_pct": arrondi(moyenne(suites), 2) if suites else None,
                     "par_surprise": par_surprise})
     return res
@@ -525,8 +525,8 @@ def sens_reaction(v):
             "hausse_si_positif": _part(h, len(pos)), "baisse_si_negatif": _part(b, len(neg)),
             "concordance": _part(h + b, len(pos) + len(neg)),
             "p": arrondi(p_binomiale(h + b, len(pos) + len(neg)), 4),
-            "ecart_moyen_positif_pct": arrondi(moyenne([x["ecart_pct"] for x in pos]), 2),
-            "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
+            "ecart_moyen_positif_pct": arrondi(moyenne([x["rendement_pct"] for x in pos]), 2),
+            "ecart_moyen_negatif_pct": arrondi(moyenne([x["rendement_pct"] for x in neg]), 2)}
 
 
 def concordance_consensus(v, cle="surprise"):
@@ -541,8 +541,8 @@ def concordance_consensus(v, cle="surprise"):
             "hausse_si_positif": _part(h, len(pos)), "baisse_si_negatif": _part(b, len(neg)),
             "concordance": _part(h + b, len(pos) + len(neg)),
             "p": arrondi(p_binomiale(h + b, len(pos) + len(neg)), 4),
-            "ecart_moyen_positif_pct": arrondi(moyenne([x["ecart_pct"] for x in pos]), 2),
-            "ecart_moyen_negatif_pct": arrondi(moyenne([x["ecart_pct"] for x in neg]), 2)}
+            "ecart_moyen_positif_pct": arrondi(moyenne([x["rendement_pct"] for x in pos]), 2),
+            "ecart_moyen_negatif_pct": arrondi(moyenne([x["rendement_pct"] for x in neg]), 2)}
 
 
 SEUILS_AUTRES = (2, 10, 15)  # autres matrices : meme etude avec un ecart de plus de 2, 10 ou 15 %
@@ -578,7 +578,7 @@ def matrice(v, cle="surprise", valeurs=POSITIONS_CONSENSUS):
             w = [x for x in v if x.get(cle) == s and x["reaction"] == r]
             ligne[r] = {"n": len(w),
                         "avant_moyen_pct": arrondi(moyenne([x["avant_pct"] for x in w if "avant_pct" in x]), 2),
-                        "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2),
+                        "ecart_moyen_pct": arrondi(moyenne([x["rendement_pct"] for x in w]), 2),
                         "suite_moyenne_pct": arrondi(moyenne([x["suite_pct"] for x in w if "suite_pct" in x]), 2)}
         n = ligne["hausse"]["n"] + ligne["baisse"]["n"]
         ligne["n"] = n
@@ -595,7 +595,7 @@ def par_valeur(v, cle, valeurs):
         if w:
             res.append({"valeur": val, "n": len(w),
                         "part_hausse": _part(sum(1 for x in w if x["reaction"] == "hausse"), len(w)),
-                        "ecart_moyen_pct": arrondi(moyenne([x["ecart_pct"] for x in w]), 2),
+                        "ecart_moyen_pct": arrondi(moyenne([x["rendement_pct"] for x in w]), 2),
                         "z_abs_moyen": arrondi(moyenne([abs(x["z"]) for x in w]), 2)})
     return res
 
