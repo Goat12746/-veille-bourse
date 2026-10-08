@@ -1,24 +1,25 @@
 {
  "version": 1,
- "genere_le": "2026-10-07T11:23:47+00:00",
+ "genere_le": "2026-10-08T06:21:37+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 11,
-   "nouveaux": 2
+   "trouves": 31,
+   "nouveaux": 4
   },
   "presse": {
    "ok": true,
-   "trouves": 290,
-   "nouveaux": 166
+   "trouves": 438,
+   "nouveaux": 298
   },
   "assemblee": {
-   "ok": false,
-   "erreur": "IncompleteRead(186482325 bytes read, 123762629 more expected)"
+   "ok": true,
+   "trouves": 122,
+   "nouveaux": 12
   },
   "agenda": {
    "ok": true,
-   "trouves": 8
+   "trouves": 7
   },
   "calendrier": {
    "ok": true,
@@ -26,6 +27,164 @@
   }
  },
  "alertes": [
+  {
+   "id": "amf-136807_20261007",
+   "date": "2026-10-08",
+   "source": "amf",
+   "titre": "Valneva : autorisation d'IXCHIQ révoquée au Royaume-Uni, selon la presse",
+   "resume": "Valneva a publié une information privilégiée sur l'utilisation d'IXCHIQ au Royaume-Uni ; la presse indique que l'autorisation de mise sur le marché britannique est révoquée et le vaccin retiré à la demande des autorités. Le vaccin était déjà restreint au Royaume-Uni et suspendu aux États-Unis.",
+   "nouveaute": "Retrait du vaccin du marché britannique, après les restrictions d'usage déjà connues.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW136807_20261007.pdf",
+   "etape": "annonce",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "VLA.PA",
+     "sens": "negatif",
+     "ampleur": "inconnue",
+     "justification": "Perte d'un marché pour le vaccin chikungunya, déjà restreint ; poids du Royaume-Uni dans les ventes non chiffré.",
+     "extrait": "Valneva fait un point sur l’utilisation d’IXCHIQ® au Royaume-Uni",
+     "nom": "Valneva"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Valneva : Valneva fait un point sur l’utilisation d’IXCHIQ® au Royaume-Uni",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW136807_20261007.pdf",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T20:00:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Valneva : l'autorisation de mise sur le marché d'IXCHIQ révoquée au Royaume-Uni! - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOM3VFaXB3bDdsd3BRV3ItbWVjZVE1MEtUaF8taTAzYzlXWHZTTTRraEZyRkdkakxwVW5PVzlRYmY2QnZiZ01xX2ZvWUFLQVFZZEZjMmxoR2ZkTVFrUXQwYk11Q0FweVJNSldUbjJqWU02YjM3dXdVaFVXMWxnWDRIU3kydzMtWDNPTEVhcHJDT0VqbklmMFhDUTlVN0ItYTBxUmtPbEtqWHRSYXBaaDA2RUdyLVVkMzFwMTcxbUUtUmpKSGI2cXczSHJJcTVjeWYtMGdVaA?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T05:56:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Valneva : le vaccin Ixchiq retiré du marché britannique à la demande des autorités - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOV29GdWNSekgwbC1NV1hNc0VhLWZJam1LNjBqd2c5T016REJydVNSay1YQzJ4dXpTdEQ3YlZpNURXWVBfOUh4UXlQSGVrSHp5cEZPRFdkVXRiWlV3bklaWGN6TkhtM3BuX1pMUkVBUWF0ZUlkZzlkbGlWeWdTZ2d0SW9HQ1VySTlDTU54dTktd1BvZFBKa1Vnb0FjUHRjMzBMZnlmc0JrMlVtSFJZQzM1ME9TaHo4RUotR0dzM2txRU9lZF9PQkROcHJ2WFdYOUt2MjVKV0pqRFJscElEMWtXZC1LRWJNM0xF?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T21:23:00+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Pourquoi l’action Valneva chute-t-elle aujourd’hui ? - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYXZpeGN0ZmFmV0NnV2diU0gwY1N4SjI0S0RIbE1iaTBQRndNNlRRMFV0NXRjSDcyUERDazhVcTZQSE93MDVKMVlaZFQ5SUFYWkg0c2luM3FoMGo1RWxDdlo5OXIyNUNMTERJMkxSbGl3dXdRZ2R0YW1qT2t2VDFmRklwSG9nc2lrZThjbXVQRUhMUE5IN1dIRWpCcE9nTGhnWnlzSUlicXREUlNI?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T21:05:00+00:00",
+     "media": "Investing.com France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-08",
+   "publie_a": "2026-10-08T06:21:37+00:00"
+  },
+  {
+   "id": "presse-b3fb1ebc28b9df0f",
+   "date": "2026-10-08",
+   "source": "presse",
+   "titre": "TotalEnergies : appel de la CGT à la grève ce jeudi dans les stations-service et raffineries",
+   "resume": "La CGT appelle les salariés des stations-service et des raffineries de TotalEnergies à la grève le 8 octobre pour l'emploi et les salaires ; des fermetures de stations et des tensions d'approvisionnement sont possibles ce jour-là.",
+   "nouveaute": "Appel à la grève daté du jour, avec risque de perturbations de l'activité aval.",
+   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOLWRiZUlPRmJzWU1EVXV3cGZIQ2NQVXJ5d3dEdkx6RTFqTTdheXdhZEFIczBZS0dBcWhZUW9GNFFWQnZwVFUxVnlvRkFhZjB1dEFwUW42NWFaMHYxcGRENFJibXRBR203N1Nta3VoRERTUjJUa0dVakFsU2lma0tVTWh3dEk1elo1LXVHQ1hUZUR5ZFd6Y09YVWJoV3VUZGtrOWJqUl9BWmh1ZVROX3pFRHVHMjlXX3NNYTRZajlvSzg4REZ4ZERLVy1Yd1RLV1B6ellQX3kxemN6bkhVQlFydy1fRG16Mk5KOFBuNEZIR1NJckdBSUNORjA2NkduRWZfemFseFlKQVNKMWM?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.8,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "TTE.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Grève d'une journée : perturbation ponctuelle des ventes en stations et du raffinage, impact limité sauf prolongation.",
+     "extrait": "la CGT appelle les salariés des stations-service et des raffineries à la grève ce jeudi pour l'emploi et les salaires",
+     "nom": "TotalEnergies"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "TotalEnergies : la CGT appelle les salariés des stations-service et des raffineries à la grève ce jeudi pour l'emploi et les salaires - ladepeche.fr",
+     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOLWRiZUlPRmJzWU1EVXV3cGZIQ2NQVXJ5d3dEdkx6RTFqTTdheXdhZEFIczBZS0dBcWhZUW9GNFFWQnZwVFUxVnlvRkFhZjB1dEFwUW42NWFaMHYxcGRENFJibXRBR203N1Nta3VoRERTUjJUa0dVakFsU2lma0tVTWh3dEk1elo1LXVHQ1hUZUR5ZFd6Y09YVWJoV3VUZGtrOWJqUl9BWmh1ZVROX3pFRHVHMjlXX3NNYTRZajlvSzg4REZ4ZERLVy1Yd1RLV1B6ellQX3kxemN6bkhVQlFydy1fRG16Mk5KOFBuNEZIR1NJckdBSUNORjA2NkduRWZfemFseFlKQVNKMWM?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T05:47:00+00:00",
+     "media": "ladepeche.fr"
+    },
+    {
+     "titre": "Grève chez TotalEnergies : risque de fermetures de stations-service et de pénuries de carburant jeudi 8 octobre - Orange Actualités",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZkJCaEZ6eGF0ZjM5el94U1JxT3Z4NXlwZWx0NHNBcmFjLVZnM3N6NnVSLXA3RU5ZN2czb05naXhZcHc1WEFTeDFQTnhaTEo0dlFLZGhHTDBENkExTUY2dUd1bmxvZW9zUzBRQ1VDOVpPY2U1ZlgxS2tyX3daNUhrZmVSU21NRDJKb2ZsejBEZzFQS2tKNktKUVhwS1JLWEZscjh2NXVtcFBoZUtROVJ6ZVM4Y1RwRlFpbTRDSTRROGhQOXlTcHB6M0QyWnJla21Sb25yNXkzOGRvRWlOWWx6djY5U09qMmNOMkExMG5uMzBuWDZHSU5pXw?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T05:03:00+00:00",
+     "media": "Orange Actualités"
+    },
+    {
+     "titre": "L'acte IV dans les lycées, appel à la grève chez les salariés de TotalEnergies, un nouvel entraîneur à l'ASM... L'actu de ce jeudi - La Montagne",
+     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOazVqNDVaWjFJRHNLa05ZYUpieWpJeTE3R1BfalNpaVJZU3FhWG15YjF4QzFuWEVnRVgtUE5fWldhRTB2YlVhVzEzZG1xeG9hR0hMb3VnZkNuOXJqUnhRTVpZZWxjdV94SXdlcDhxam5PNlhaVXV2UjN2M0NhelpaSnEyU3REZzJVTUZXcFB5MUFVc1FSNlUyMzdOWGpmSGdxOWFNMWliVlc3aktWSFBIMm91YXJ2R0Q0cVJ2YWhEc0x2UHU3cGxGRzRtakRHbzh4NUl5SXlxYWRid3RCLVJGZTNWRUpXc3dTOUNhWmtNV1l6dERycmVSRWlmZktpZDBuSmJMdUtWQ1Q5M0NUMVJablJ3ZXk?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T05:17:00+00:00",
+     "media": "La Montagne"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-08",
+   "publie_a": "2026-10-08T06:21:37+00:00"
+  },
+  {
+   "id": "amf-083388_20261007",
+   "date": "2026-10-07",
+   "source": "amf",
+   "titre": "OPmobility : objectifs 2026 abaissés (marge opérationnelle 430-450 M€) et plan d'actions en Europe",
+   "resume": "OPmobility ajuste ses objectifs 2026 face à une dégradation plus marquée qu'anticipé du marché automobile : marge opérationnelle de 430 à 450 M€, cash-flow libre supérieur à 220 M€. Des actions ciblées en Europe (empreinte industrielle, R&D) sont annoncées ; la presse fait état de 770 suppressions de postes (310 en France, 460 en Allemagne).",
+   "nouveaute": "Première révision à la baisse des objectifs 2026 et annonce du plan d'adaptation en Europe, publiées le 7 octobre à 17 h 45.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083388_20261007.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "OPM.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Objectifs 2026 abaissés pour cause de marché automobile dégradé et d'inflation ; plan de restructuration en Europe, dont le coût n'est pas chiffré dans l'extrait.",
+     "extrait": "OPmobility ajuste ses objectifs 2026 tout en confirmant sa priorité donnée à la génération de cash-flow",
+     "nom": "OPmobility"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "OPmobility : Communique´ 7 octobre 2026",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083388_20261007.pdf",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T15:47:40+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "OPmobility revoit ses prévisions financières à la baisse et annonce des suppressions de postes - Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOb2kwWkNfdno2dkdfRl9RTmp5WHo5UVJ2cWlSMS1heGVTMF9nX3RjbWRkMkpkNnZqUWdIRHRSanZrME9lTm9RRDg5RDRleDQ1VzNHZG9rVDUxY1k3UEI3amtURXNYR1Z6akxvS1J1OWhLMmtzN2cxNk5vSkM4NlZRSzctaWJVeDJHeVlkNlJ0bGVBNXVOVXBUd0JKYlBHeG8ybmxqWlFRRDgyUWlObDVpcE5wYlVKSmFGRWt5c1RFTmVLZ01scUE4OG5JYTRvcWpmcDhNQnFod3MxTUIzODVqbzA0bDk2b2tvX1N5Rw?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T17:59:55+00:00",
+     "media": "Les Echos"
+    },
+    {
+     "titre": "France-Allemagne : OPmobility annonce 770 suppressions de postes dans le secteur automobile - Anadolu Ajansı",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOQjNlaXRuMGRiak1lOUVwVElNYWZQaEQxUUhodkdjaWJGNVBVQ3RCdm41c0V4QV9PaXJQSmc1S2laMGl6eEVYUVN4UGMxNV9famQ0d2x1TFVkY1R0ckJBNEs0ZWJjanJXUTc2YUQ0TzVrdGZ2VjRQSUxMT083UVdpUGFQZmd5V1ZxRjRjckpQamZyQU5tbzhLNFhsc3htbXBfUWdWTHRMUzRVaHM0Y0s3cGh3NFRQNl9YQnJMbE9KNEpULWhfTGxPR25lUGlnOUxPQlVzcng1akxGa1B4Rmc?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T19:57:07+00:00",
+     "media": "Anadolu Ajansı"
+    },
+    {
+     "titre": "OPmobility supprime 310 postes en France et 460 en Allemagne - Le Journal des Français",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYy1oa3NHS0Nnd0F0MUF5bkZhUEgwTFdRNUgwV2ppV2IzSjdqT2hUQ1Nmem92XzZRTld4VXpJRzBnbUNBX21JUjI5d0NYSEE5dHZUOVpvZTZPNS1vX19GdjhhbFBDcDlaZVlINlo0MmI4aXlUa2ZoMVAyT1RwaWd4NkNnX2tjcE1SMUhxamxR?oc=5",
+     "date": "2026-10-07",
+     "publie_le": "2026-10-07T18:14:22+00:00",
+     "media": "Le Journal des Français"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-08",
+   "publie_a": "2026-10-08T06:21:37+00:00"
+  },
   {
    "id": "amf-083379_20261007",
    "date": "2026-10-07",
@@ -1536,83 +1695,6 @@
   }
  ],
  "calendrier": [
-  {
-   "date": "2026-10-07",
-   "heure": "09:00",
-   "type": "budget",
-   "titre": "Examen de la première partie du projet de loi de finances pour 2027 (n° 3210) (M. Philippe Juvin, rapporteur général).",
-   "tickers": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "ALO.PA",
-    "AC.PA",
-    "AI.PA",
-    "AIR.PA",
-    "MT.AS",
-    "CS.PA",
-    "BNP.PA",
-    "EN.PA",
-    "BVI.PA",
-    "CAP.PA",
-    "CA.PA",
-    "ACA.PA",
-    "BN.PA",
-    "DSY.PA",
-    "ENGI.PA",
-    "EDEN.PA",
-    "EL.PA",
-    "ERF.PA",
-    "RMS.PA",
-    "KER.PA",
-    "OR.PA",
-    "LR.PA",
-    "MC.PA",
-    "ML.PA",
-    "ORA.PA",
-    "RI.PA",
-    "PUB.PA",
-    "RNO.PA",
-    "SAF.PA",
-    "SGO.PA",
-    "SAN.PA",
-    "SU.PA",
-    "GLE.PA",
-    "STLAP.PA",
-    "STMPA.PA",
-    "TEP.PA",
-    "HO.PA",
-    "TTE.PA",
-    "URW.PA",
-    "VIE.PA"
-   ],
-   "tickers_mots_cles": [],
-   "themes": [],
-   "texte": "PLF 2027",
-   "mesures": [
-    {
-     "alerte_id": "presse-181a5dc8f47983e9",
-     "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-ddc4c15adc3d7a4f",
-     "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-48e3a90f692a8e29",
-     "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
-     "etape": "annonce",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Commission des finances, de l'économie générale et du contrôle budgétaire",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-07#odj-OMC_RUANR5L17S2027IDC461249",
-   "fiable": true
-  },
   {
    "date": "2026-10-08",
    "heure": "09:00",
