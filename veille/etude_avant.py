@@ -9,15 +9,15 @@ DEBUT_SUIVI (France : historique_amf de statistiques.json ; Etats-Unis :
 communiques_usa.json ; STOXX 600 : communiques_stoxx.json), bloc "suivi" que
 l'application additionne a l'historique FMP :
 
-  - R[30] = rendement de l'action (cours ajustes) moins celui de l'indice
-    (INDICES) sur les 30 seances qui precedent la seance de reaction, range
+  - R[30] = rendement de l'action (cours ajustes) moins celui de son ETF
+    sectoriel (secteurs_etf.json ; indice du marche INDICES a defaut) sur les 30 seances qui precedent la seance de reaction, range
     dans l'une des 7 tranches (< -10 %, -10 a -5, -5 a -2, -2 a 2, 2 a 5,
     5 a 10, > 10 %) ; sens de la reaction : hausse ou baisse du cours le
-    jour de la reaction (rendement_pct, brut : pas face a l'indice) ;
+    jour de la reaction (rendement_pct, brut : pas face au secteur) ;
     P(hausse | tranche) = hausses / publications ; meme chose depuis la
     publication precedente (seances 0) ;
   - "ensuite" (zone et chaque entreprise) : rendement moyen des 20 seances
-    avant la reaction (face a l'indice) et de la seance de reaction (brut),
+    avant la reaction (face au secteur) et de la seance de reaction (brut),
     selon le sens du jour ;
   - "consensus" : P(hausse) selon l'ecart du BPA (lignes) et du chiffre
     d'affaires (colonnes) au consensus, grille detaillee (bornes +-2, 5, 10 et
@@ -25,8 +25,9 @@ l'application additionne a l'historique FMP :
 
 Memes tableaux par grand secteur (secteurs.py), sauf "ensuite".
 
-Ecrit test_avant.json. Aucun reseau : lit les cours deja en cache
-(.cache/cours, ecrits par statistiques.py et etude_usa.py).
+Ecrit test_avant.json. Lit les cours en cache (.cache/cours, ecrits par
+statistiques.py et etude_usa.py) ; telecharge sur Yahoo ceux des ETF
+sectoriels qui manquent.
 
 Usage : python etude_avant.py
 Bibliotheque standard uniquement.
@@ -57,8 +58,7 @@ SEUILS_CONSENSUS = (2, 5, 10, 15)
 # anterieures (BPA et chiffre d'affaires face au consensus) et y ajoute celles
 # qui reagissent a partir de cette date (bloc "suivi" de chaque ensemble).
 DEBUT_SUIVI = "2026-10-05"
-# Indice de comparaison de chaque zone (rendement avant et sens du jour J
-# face a l'indice), comme l'onglet Apres.
+# Indice du marche, reference des actions sans ETF sectoriel.
 INDICES = {"france": "^FCHI", "usa": "^GSPC", "stoxx": "^STOXX"}
 
 
@@ -143,6 +143,56 @@ def moyennes(ensuite):
                 "jour_pct": round(x["jour"] / x["n"], 2) if x["n"] else None} for k, x in ensuite.items()}
 
 
+_secteurs = None
+
+
+def cours_reference(ticker, indice):
+    """Cours de reference d'une action : son ETF sectoriel (secteurs_etf.json,
+    ecrit par donnees-fmp/reference.py ; cache .cache/cours, telecharge sur
+    Yahoo au besoin, cours ajustes des dividendes), sinon l'indice du marche."""
+    global _secteurs
+    if _secteurs is None:
+        chemin = os.path.join(ICI, "secteurs_etf.json")
+        try:
+            with open(chemin, encoding="utf-8") as f:
+                _secteurs = json.load(f)["tickers"]
+        except (OSError, ValueError, KeyError):
+            _secteurs = {}
+    etf = _secteurs.get(ticker) or _secteurs.get(ticker.replace("-", "."))
+    if not etf:
+        return indice
+    if etf not in _etf:
+        c = charger_cours(etf)
+        if c is None or c[0][-1] < (dt.date.today() - dt.timedelta(days=5)).isoformat():
+            c = telecharger_etf(etf) or c
+        _etf[etf] = c
+    return _etf[etf] or indice
+
+
+_etf = {}
+
+
+def telecharger_etf(etf):
+    """Clotures ajustees de l'ETF sur 2 ans (Yahoo), ecrites dans .cache/cours."""
+    import urllib.request
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{etf}?range=2y&interval=1d"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            res = json.load(r)["chart"]["result"][0]
+        off = res["meta"].get("gmtoffset", 0)
+        adj = res["indicators"]["adjclose"][0]["adjclose"]
+        seances = {dt.datetime.fromtimestamp(t + off, dt.timezone.utc).date().isoformat(): [None, c]
+                   for t, c in zip(res["timestamp"], adj) if c}
+    except Exception as e:  # reseau ou format : indice du marche a la place
+        print(f"{etf} : cours indisponibles ({e})")
+        return None
+    os.makedirs(COURS, exist_ok=True)
+    with open(os.path.join(COURS, etf.replace("^", "_") + ".json"), "w", encoding="utf-8") as f:
+        json.dump({"seances": seances}, f)
+    return charger_cours(etf)
+
+
 def variation_indice(indice, d0, d1):
     """Rendement de l'indice (%) de la cloture du jour d0 a celle de d1
     (derniere seance connue a ces dates), None sans cours."""
@@ -175,6 +225,7 @@ def etudier(entreprises, indice=None, par_entreprise=False):
             continue
         dates, clo = cours
         index = dates_index(t, dates)
+        ref = cours_reference(t, indice)  # ETF sectoriel de l'action
         locale = nouvelle_ensuite()
         precedente = {}
         jours = sorted({ev["jour"] for ev in e["resultats"]["evenements"]})
@@ -191,7 +242,7 @@ def etudier(entreprises, indice=None, par_entreprise=False):
             total["hausses"] += hausse
             # Encadre Avant / jour J : 20 seances avant face a l'indice, jour
             # J brut.
-            ind20 = variation_indice(indice, dates[s - 1 - AVANT], dates[s - 1]) if s - 1 - AVANT >= 0 else None
+            ind20 = variation_indice(ref, dates[s - 1 - AVANT], dates[s - 1]) if s - 1 - AVANT >= 0 else None
             if ind20 is not None:
                 for cumul in (ensuite, locale):
                     x = cumul["hausse" if hausse else "baisse"]
@@ -200,14 +251,14 @@ def etudier(entreprises, indice=None, par_entreprise=False):
                     x["jour"] += rea
             # Horizons : rendement avant face a l'indice, hausse brute du jour.
             if s - 1 - HORIZON >= 0:
-                ind = variation_indice(indice, dates[s - 1 - HORIZON], dates[s - 1])
+                ind = variation_indice(ref, dates[s - 1 - HORIZON], dates[s - 1])
                 if ind is not None:
                     c = cases[tranche((clo[s - 1] / clo[s - 1 - HORIZON] - 1) * 100 - ind)]
                     c["n"] += 1
                     c["hausses"] += hausse
             sp = index.get(precedente.get(ev["jour"]))
             if sp is not None and 0 < s - 1 - sp <= ECART_MAX_PUB:
-                ind = variation_indice(indice, dates[sp], dates[s - 1])
+                ind = variation_indice(ref, dates[sp], dates[s - 1])
                 if ind is not None:
                     c = cases_pub[tranche_pub((clo[s - 1] / clo[sp] - 1) * 100 - ind)]
                     c["n"] += 1
