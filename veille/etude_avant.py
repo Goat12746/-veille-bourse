@@ -9,11 +9,14 @@ DEBUT_SUIVI (France : historique_amf de statistiques.json ; Etats-Unis :
 communiques_usa.json ; STOXX 600 : communiques_stoxx.json), bloc "suivi" que
 l'application additionne a l'historique FMP :
 
-  - R[30] = rendement de l'action (cours ajustes) sur les 30 seances qui
-    precedent la seance de reaction, range dans l'une des 7 tranches
-    (< -10 %, -10 a -5, -5 a -2, -2 a 2, 2 a 5, 5 a 10, > 10 %) ; sens de la
-    reaction : hausse ou baisse du cours le jour de la reaction (rendement_pct,
-    brut) ; P(hausse | tranche) = hausses / publications ;
+  - R[30] = rendement de l'action (cours ajustes) moins celui de l'indice
+    (INDICES) sur les 30 seances qui precedent la seance de reaction, range
+    dans l'une des 7 tranches (< -10 %, -10 a -5, -5 a -2, -2 a 2, 2 a 5,
+    5 a 10, > 10 %) ; sens de la reaction : l'action fait-elle mieux que
+    l'indice le jour de la reaction (rendement_pct moins celui de l'indice) ;
+    P(hausse | tranche) = hausses / publications ; meme chose depuis la
+    publication precedente (seances 0). Chaque horizon porte sa probabilite
+    de base face a l'indice (n, hausses) ;
   - "ensuite" (zone et chaque entreprise) : rendement moyen des 20 seances
     avant la reaction et de la seance de reaction, selon le sens du jour ;
   - "consensus" : P(hausse) selon l'ecart du BPA (lignes) et du chiffre
@@ -54,11 +57,28 @@ SEUILS_CONSENSUS = (2, 5, 10, 15)
 # anterieures (BPA et chiffre d'affaires face au consensus) et y ajoute celles
 # qui reagissent a partir de cette date (bloc "suivi" de chaque ensemble).
 DEBUT_SUIVI = "2026-10-05"
+# Indice de comparaison de chaque zone (rendement avant et sens du jour J
+# face a l'indice), comme l'onglet Apres.
+INDICES = {"france": "^FCHI", "usa": "^GSPC", "stoxx": "^STOXX"}
 
 
 def tranche(r):
     """Indice de la tranche de R (en %) : bornes basses incluses."""
     return bisect.bisect_right(BORNES, r)
+
+
+# Evolution depuis la publication precedente : de la cloture de sa seance de
+# reaction a la veille de la seance de reaction ("seances": 0 dans horizons).
+DEPUIS_PUB = 0
+BORNES_PUB = (-20, -15, -10, -5, 0, 5, 10, 15, 20)
+LIBELLES_PUB = ("< −20 %", "−20 à −15 %", "−15 à −10 %", "−10 à −5 %", "−5 à 0 %", "0 à 5 %", "5 à 10 %",
+                "10 à 15 %", "15 à 20 %", "> 20 %")
+# Au-dela, la publication precedente manque (trou dans les donnees).
+ECART_MAX_PUB = 160
+
+
+def tranche_pub(r):
+    return bisect.bisect_right(BORNES_PUB, r)
 
 
 def grilles_consensus(couples):
@@ -123,14 +143,28 @@ def moyennes(ensuite):
                 "jour_pct": round(x["jour"] / x["n"], 2) if x["n"] else None} for k, x in ensuite.items()}
 
 
-def etudier(entreprises, par_entreprise=False):
+def variation_indice(indice, d0, d1):
+    """Rendement de l'indice (%) de la cloture du jour d0 a celle de d1
+    (derniere seance connue a ces dates), None sans cours."""
+    if indice is None:
+        return None
+    dates, clo = indice
+    i0, i1 = bisect.bisect_right(dates, d0) - 1, bisect.bisect_right(dates, d1) - 1
+    if i0 < 0 or i1 < 0 or dates[i1] != d1:
+        return None
+    return (clo[i1] / clo[i0] - 1) * 100
+
+
+def etudier(entreprises, indice=None, par_entreprise=False):
     """Bloc "suivi" d'un ensemble d'entreprises : publications depuis
     DEBUT_SUIVI (l'historique fige vient de FMP, communiques_fmp.json, et
     l'application les additionne). Les 7 tranches de R[30] (publications et
     hausses), la grille consensus, l'encadre Avant / jour J, et par entreprise
     si demande."""
     cases = [{"n": 0, "hausses": 0} for _ in LIBELLES]
+    cases_pub = [{"n": 0, "hausses": 0} for _ in LIBELLES_PUB]
     total = {"n": 0, "hausses": 0}
+    base = {"n": 0, "hausses": 0}  # face a l'indice, base des horizons
     ensuite, par_ticker, couples = nouvelle_ensuite(), {}, []
     for e in entreprises:
         t = e["ticker"]
@@ -143,6 +177,10 @@ def etudier(entreprises, par_entreprise=False):
         dates, clo = cours
         index = dates_index(t, dates)
         locale = nouvelle_ensuite()
+        precedente = {}
+        jours = sorted({ev["jour"] for ev in e["resultats"]["evenements"]})
+        for a, b in zip(jours, jours[1:]):
+            precedente[b] = a
         for ev in evs:
             if ev["jour"] not in index:
                 continue
@@ -158,31 +196,49 @@ def etudier(entreprises, par_entreprise=False):
                     x["n"] += 1
                     x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100
                     x["jour"] += rea
+            # Horizons : tout face a l'indice (rendement avant et jour J).
+            ind_j = variation_indice(indice, dates[s - 1], dates[s]) if s >= 1 else None
+            if ind_j is None or rea - ind_j == 0:
+                continue
+            mieux = rea - ind_j > 0
+            base["n"] += 1
+            base["hausses"] += mieux
             if s - 1 - HORIZON >= 0:
-                c = cases[tranche((clo[s - 1] / clo[s - 1 - HORIZON] - 1) * 100)]
-                c["n"] += 1
-                c["hausses"] += hausse
+                ind = variation_indice(indice, dates[s - 1 - HORIZON], dates[s - 1])
+                if ind is not None:
+                    c = cases[tranche((clo[s - 1] / clo[s - 1 - HORIZON] - 1) * 100 - ind)]
+                    c["n"] += 1
+                    c["hausses"] += mieux
+            sp = index.get(precedente.get(ev["jour"]))
+            if sp is not None and 0 < s - 1 - sp <= ECART_MAX_PUB:
+                ind = variation_indice(indice, dates[sp], dates[s - 1])
+                if ind is not None:
+                    c = cases_pub[tranche_pub((clo[s - 1] / clo[sp] - 1) * 100 - ind)]
+                    c["n"] += 1
+                    c["hausses"] += mieux
         if locale["hausse"]["n"] + locale["baisse"]["n"]:
             par_ticker[t] = moyennes(locale)
     res = {"depuis": DEBUT_SUIVI, "n": total["n"], "hausses": total["hausses"],
-           "horizons": [{"seances": HORIZON, "tranches": [{"libelle": LIBELLES[i], **c} for i, c in enumerate(cases)]}],
+           "horizons": [{"seances": HORIZON, **base, "tranches": [{"libelle": LIBELLES[i], **c} for i, c in enumerate(cases)]},
+                        {"seances": DEPUIS_PUB, **base,
+                         "tranches": [{"libelle": LIBELLES_PUB[i], **c} for i, c in enumerate(cases_pub)]}],
            "consensus": grilles_consensus(couples), "ensuite": moyennes(ensuite)}
     if par_entreprise:
         res["entreprises"] = par_ticker
     return res
 
 
-def etudier_zone(histo):
+def etudier_zone(histo, indice=None):
     """Une zone : toutes les entreprises (et chacune), puis chaque grand
     secteur ayant des publications suivies."""
     secteurs = {}
     for nom in SECTEURS:
         membres = [e for e in histo["entreprises"] if grand_secteur(e.get("secteur")) == nom]
-        s = etudier(membres) if membres else None
+        s = etudier(membres, indice) if membres else None
         if s and s["n"]:
             s.pop("ensuite")
             secteurs[nom] = {"suivi": s}
-    return {"suivi": etudier(histo["entreprises"], par_entreprise=True), "secteurs": secteurs}
+    return {"suivi": etudier(histo["entreprises"], indice, par_entreprise=True), "secteurs": secteurs}
 
 
 _index = {}
@@ -199,8 +255,8 @@ def main():
     zones = {}
     for zone, histo in (("france", evenements_france()), ("usa", evenements_usa()), ("stoxx", evenements_stoxx())):
         if histo:
-            zones[zone] = etudier_zone(histo)
-    doc = {"version": 2, "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+            zones[zone] = etudier_zone(histo, charger_cours(INDICES[zone]))
+    doc = {"version": 3, "genere_le": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
            "tranches": list(LIBELLES), "zones": zones}
     with open(SORTIE, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
