@@ -22,8 +22,12 @@ etude_stoxx.py. Les communiques telecharges sont gardes dans .cache/stoxx_textes
 Usage :
   python relecture_stoxx.py --communiques    extraits des communiques (Royaume-Uni, Nordiques) ; reprise possible
   python relecture_stoxx.py --communiques --refaire   recalcule tous les extraits (textes en cache)
+  python relecture_stoxx.py --oslo           communiques norvegiens sans source (Oslo Bors NewsWeb) ; reprise possible
   python relecture_stoxx.py --presse         titres de presse (autres pays) ; reprise possible
   python relecture_stoxx.py --integrer F     ajoute les verdicts {id: valeur} du fichier F
+  python relecture_stoxx.py --recent --communiques --oslo --nordique --presse --a-lire F
+                                             veille de 13 h 12 : publications des 14 derniers jours
+                                             seulement, extraits non relus ecrits dans F
   python relecture_stoxx.py --etat
 Bibliotheque standard uniquement.
 """
@@ -52,6 +56,12 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
                     "Chrome/120.0 Safari/537.36"}
 VALEURS = ("relevees", "confirmees", "abaissees", "nouvelles")
 MAXI = 1000  # caracteres d'extrait
+DEPUIS = None  # --recent : seules les publications depuis cette date (AAAA-MM-JJ)
+JOURS_RECENTS = 14
+
+
+def _garde(p):
+    return DEPUIS is None or p["publie_le"][:10] >= DEPUIS
 
 # Phrases juridiques ou de contact : sans information sur les perspectives.
 _BRUIT = re.compile(r"forward-looking|safe harbo|pursuant to|risks and uncertainties|reconciliation|webcast|"
@@ -204,7 +214,7 @@ def communiques(refaire=False):
     doc = lire_json(os.path.join(ICI, "resultats_stoxx.json"), {"entreprises": {}})
     extraits = lire_json(EXTRAITS_COMMUNIQUES, {})
     a_lire = [(t, f["nom"], p) for t, f in doc["entreprises"].items() for p in f["publications"]
-              if p.get("url") and (refaire or p["id"] not in extraits)]
+              if p.get("url") and (refaire or p["id"] not in extraits) and _garde(p)]
     print(f"{len(a_lire)} communiqué(s) à lire…", file=sys.stderr)
 
     def lire(x):
@@ -229,6 +239,167 @@ def communiques(refaire=False):
                 print(f"  {i}/{len(a_lire)}", file=sys.stderr)
     ecrire_json(EXTRAITS_COMMUNIQUES, extraits)
     print(f"extraits_communiques.json : {len(extraits)} extraits ; {erreurs} communiqué(s) illisible(s).")
+
+
+# ---------------------------------------------------------------------------
+# Oslo Bors (NewsWeb) : publications norvegiennes sans communique
+# ---------------------------------------------------------------------------
+
+OSLO = "https://api3.oslo.oslobors.no/v1/newsreader/"
+# Titres d'un communique de resultats (en anglais : la version norvegienne est ecartee).
+_OSLO_RESULTATS = re.compile(r"result|quarter|interim|half[- ]year|annual report|year[- ]end|\bq[1-4]\b|"
+                             r"first half|preliminary|trading update", re.I)
+_NORVEGIEN = re.compile(r"[æøå]|kvartal|resultat\w*(?<!results)(?<!result)\b|halvår|delårs|vekst|fremgang|"
+                        r"\b(?:og|med|av|til|gir|leverer|rapporterer|foreslår|utbytte|regnskap\w*|driftsinntekter)\b",
+                        re.I)
+# Messages du jour qui ne sont pas le communique de resultats de l'entreprise.
+_OSLO_AUTRES = re.compile(r"jotun|reminder|invitation|program for the publication|presentation|annual report|esef|"
+                          r"20-f|quarterly dividend|key information|notification of trade", re.I)
+
+
+def _oslo_choix(msgs, d):
+    """Communique de resultats en anglais : rapport financier (categorie) d'abord, sinon titre de resultats."""
+    def jours(m):
+        return abs((dt.date.fromisoformat(m["publishedTime"][:10]) - d).days)
+
+    anglais = [m for m in msgs if not _NORVEGIEN.search(m["title"]) and not _OSLO_AUTRES.search(m["title"])]
+    rapports = [m for m in anglais if any("FINANCIAL REPORT" in (c.get("category_en") or "")
+                                          for c in m.get("category") or [])]
+    bons = rapports or [m for m in anglais if _OSLO_RESULTATS.search(m["title"])]
+    # Le plus proche du jour de publication, puis le plus ancien du jour (le communique precede les annexes).
+    return min(bons, key=lambda m: (jours(m), m["publishedTime"])) if bons else None
+
+
+def _oslo_json(chemin):
+    return json.loads(get(OSLO + chemin, 40))["data"]
+
+
+def oslo():
+    doc = lire_json(os.path.join(ICI, "resultats_stoxx.json"), {"entreprises": {}})
+    extraits = lire_json(EXTRAITS_COMMUNIQUES, {})
+    a_lire = [(t, f["nom"], p) for t, f in doc["entreprises"].items() if t.endswith(".OL")
+              for p in f["publications"] if not p.get("url") and p["id"] not in extraits and _garde(p)]
+    print(f"{len(a_lire)} publication(s) norvégienne(s) à chercher sur Oslo Børs…", file=sys.stderr)
+
+    def chercher(x):
+        t, nom, p = x
+        d = dt.date.fromisoformat(p["publie_le"][:10])
+        try:
+            msgs = _oslo_json(f"list?issuer={t[:-3]}&fromDate={(d - dt.timedelta(days=1)).isoformat()}"
+                              f"&toDate={(d + dt.timedelta(days=1)).isoformat()}")["messages"]
+        except (OSError, ValueError, KeyError):
+            return p["id"], None
+        m = _oslo_choix(msgs, d)
+        if m is None:
+            return p["id"], {"entreprise": nom, "publication": None, "source": "oslo", "date": p["publie_le"][:10],
+                             "extrait": ""}
+        chemin = os.path.join(CACHE, f"oslo_{m['messageId']}.txt.gz")
+        if os.path.exists(chemin):
+            with gzip.open(chemin, "rt", encoding="utf-8") as f:
+                corps = f.read()
+        else:
+            try:
+                corps = _oslo_json(f"message?messageId={m['messageId']}")["message"].get("body") or ""
+            except (OSError, ValueError, KeyError):
+                return p["id"], None
+            # Lignes coupees a ~80 caracteres : on recolle les paragraphes.
+            corps = re.sub(r"(?<!\n)\n(?!\n)", " ", corps.replace("\r", ""))
+            os.makedirs(CACHE, exist_ok=True)
+            with gzip.open(chemin, "wt", encoding="utf-8") as f:
+                f.write(corps[:120000])
+        return p["id"], {"entreprise": nom, "publication": m["title"], "source": "oslo",
+                         "date": p["publie_le"][:10], "url": f"https://newsweb.oslobors.no/message/{m['messageId']}",
+                         "extrait": extrait_perspectives(corps, m["title"])}
+
+    erreurs = 0
+    with cf.ThreadPoolExecutor(4) as ex:
+        for i, (id_, r) in enumerate(ex.map(chercher, a_lire), 1):
+            if r is None:
+                erreurs += 1
+            else:
+                extraits[id_] = r
+            if i % 100 == 0:
+                ecrire_json(EXTRAITS_COMMUNIQUES, extraits)
+                print(f"  {i}/{len(a_lire)}", file=sys.stderr)
+    ecrire_json(EXTRAITS_COMMUNIQUES, extraits)
+    print(f"Oslo Børs : {len(a_lire) - erreurs} publication(s) cherchée(s), {erreurs} erreur(s).")
+
+
+# ---------------------------------------------------------------------------
+# Nasdaq Nordic : publications danoises, suedoises, finlandaises sans communique
+# (resultats annuels danois classes « Annual Financial Report », absents de la collecte)
+# ---------------------------------------------------------------------------
+
+NASDAQ = "https://api.news.eu.nasdaq.com/news/query.action?"
+CATEGORIES_COMPLEMENT = ("Annual Financial Report", "Inside information", "Interim report (Q1 and Q3)",
+                         "Half Year financial report", "Financial Statement Release", "Quarterly report")
+SOCIETES_NASDAQ = {"COLO-B.CO": "Coloplast A/S"}
+
+
+def _nasdaq_annonces(societe):
+    out = []
+    for cat in CATEGORIES_COMPLEMENT:
+        for s in range(0, 600, 100):
+            p = {"countResults": "true", "globalGroup": "exchangeNotice", "displayLanguage": "en", "timeZone": "CET",
+                 "dateMask": "yyyy-MM-dd HH:mm:ss", "limit": 100, "start": s, "globalName": "NordicAllMarkets",
+                 "company": societe, "cnscategory": cat}
+            its = json.loads(get(NASDAQ + urllib.parse.urlencode(p), 60))["results"].get("item") or []
+            out += [(i["releaseTime"], i["headline"], cat, i.get("language"), i.get("messageUrl")) for i in its]
+            if len(its) < 100 or its[-1]["releaseTime"] < "2014-12-01":
+                break
+    return out
+
+
+def nordique():
+    doc = lire_json(os.path.join(ICI, "resultats_stoxx.json"), {"entreprises": {}})
+    nord = lire_json(os.path.join(ICI, "stoxx", "nordique.json"), {})
+    extraits = lire_json(EXTRAITS_COMMUNIQUES, {})
+    par_t = {}
+    for t, f in doc["entreprises"].items():
+        if t.rsplit(".", 1)[-1] in ("CO", "ST", "HE"):
+            ps = [p for p in f["publications"] if not p.get("url") and p["id"] not in extraits and _garde(p)]
+            if ps:
+                par_t[t] = (f["nom"], ps)
+    print(f"{sum(len(v[1]) for v in par_t.values())} publication(s) nordique(s) à chercher sur Nasdaq Nordic…",
+          file=sys.stderr)
+
+    def chercher(t):
+        nom, ps = par_t[t]
+        societe = SOCIETES_NASDAQ.get(t) or (nord.get(t) or {}).get("societe")
+        if not societe:
+            return []
+        try:
+            annonces = _nasdaq_annonces(societe)
+        except (OSError, ValueError, KeyError):
+            return []
+        res = []
+        for p in ps:
+            d = dt.date.fromisoformat(p["publie_le"][:10])
+            bons = [a for a in annonces if a[4] and abs((dt.date.fromisoformat(a[0][:10]) - d).days) <= 1
+                    and (a[2] != "Inside information" or _OSLO_RESULTATS.search(a[1])
+                         or re.search(r"outlook|guidance|profit|sales|revenue", a[1], re.I))]
+            if not bons:
+                res.append((p["id"], {"entreprise": nom, "publication": None, "source": "nasdaq",
+                                      "date": p["publie_le"][:10], "extrait": ""}))
+                continue
+            # Anglais d'abord, puis le plus proche du jour, puis le rapport plutot que l'information privilegiee.
+            a = min(bons, key=lambda a: (a[3] != "en", abs((dt.date.fromisoformat(a[0][:10]) - d).days),
+                                         a[2] == "Inside information", a[0]))
+            try:
+                corps = texte_cache({"id": p["id"], "url": a[4], "source": "nasdaq"})
+            except OSError:
+                continue
+            res.append((p["id"], {"entreprise": nom, "publication": a[1], "source": "nasdaq",
+                                  "date": p["publie_le"][:10], "url": a[4],
+                                  "extrait": extrait_perspectives(corps, a[1])}))
+        return res
+
+    with cf.ThreadPoolExecutor(4) as ex:
+        for res in ex.map(chercher, list(par_t)):
+            extraits.update(res)
+    ecrire_json(EXTRAITS_COMMUNIQUES, extraits)
+    print(f"Nasdaq Nordic : {sum(1 for v in par_t.values() for p in v[1] if (extraits.get(p['id']) or {}).get('extrait'))}"
+          f" extrait(s) trouvé(s).")
 
 
 # ---------------------------------------------------------------------------
@@ -270,8 +441,10 @@ def presse(lent=False):
     doc = lire_json(os.path.join(ICI, "resultats_stoxx.json"), {"entreprises": {}})
     noms = lire_json(os.path.join(ICI, "stoxx", "noms.json"), {})
     extraits = lire_json(EXTRAITS_PRESSE, {})
+    deja = lire_json(EXTRAITS_COMMUNIQUES, {})  # communique trouve ailleurs (Oslo Bors)
     a_lire = [(t, f["nom"], p) for t, f in doc["entreprises"].items() for p in f["publications"]
-              if not p.get("url") and p["id"] not in extraits]
+              if not p.get("url") and p["id"] not in extraits and not (deja.get(p["id"]) or {}).get("extrait")
+              and _garde(p)]
     print(f"{len(a_lire)} publication(s) à chercher dans la presse…", file=sys.stderr)
 
     def chercher(x):
@@ -328,8 +501,18 @@ def integrer(fichier):
     print(f"{VERDICTS} : {len(verdicts)} verdicts.")
 
 
+def a_lire(chemin):
+    """Extraits non vides pas encore juges (depuis DEPUIS avec --recent), a juger par Claude."""
+    extraits = dict(lire_json(EXTRAITS_PRESSE, {}), **lire_json(EXTRAITS_COMMUNIQUES, {}))
+    verdicts = lire_json(VERDICTS, {}).get("publications", {})
+    lot = {k: v for k, v in sorted(extraits.items()) if v.get("extrait") and k not in verdicts
+           and (DEPUIS is None or (v.get("date") or "") >= DEPUIS)}
+    ecrire_json(chemin, lot, indent=1)
+    print(f"{chemin} : {len(lot)} extrait(s) a juger.")
+
+
 def etat():
-    extraits = dict(lire_json(EXTRAITS_COMMUNIQUES, {}), **lire_json(EXTRAITS_PRESSE, {}))
+    extraits = dict(lire_json(EXTRAITS_PRESSE, {}), **lire_json(EXTRAITS_COMMUNIQUES, {}))
     verdicts = lire_json(VERDICTS, {}).get("publications", {})
     pr = sum(1 for k in extraits if k in verdicts)
     print(f"{len(extraits)} extraits, {pr} relus, {len(extraits) - pr} restants ; "
@@ -340,17 +523,30 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--communiques", action="store_true")
     p.add_argument("--refaire", action="store_true", help="recalcule les extraits des communiques deja lus")
+    p.add_argument("--oslo", action="store_true")
+    p.add_argument("--nordique", action="store_true")
     p.add_argument("--presse", action="store_true")
     p.add_argument("--lent", action="store_true", help="presse : une requete a la fois, pauses longues")
     p.add_argument("--integrer")
     p.add_argument("--etat", action="store_true")
+    p.add_argument("--recent", action="store_true", help=f"publications des {JOURS_RECENTS} derniers jours")
+    p.add_argument("--a-lire", dest="a_lire", help="ecrit les extraits non juges dans ce fichier")
     a = p.parse_args()
+    global DEPUIS
+    if a.recent:
+        DEPUIS = (dt.date.today() - dt.timedelta(days=JOURS_RECENTS)).isoformat()
     if a.communiques:
         communiques(a.refaire)
+    if a.oslo:
+        oslo()
+    if a.nordique:
+        nordique()
     if a.presse:
         presse(a.lent)
     if a.integrer:
         integrer(a.integrer)
+    if a.a_lire:
+        a_lire(a.a_lire)
     if a.etat:
         etat()
 

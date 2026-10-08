@@ -96,17 +96,33 @@ Tout se passe dans le dossier `veille/` du dépôt.
      script échoue (SEC ou Yahoo injoignable), lance quand même les suivants
      (le fichier précédent est gardé) et signale-le.
    - **Résultats européens (STOXX 600), même veille de 13 h 12**, ensuite :
-     `pip install -q yfinance` (s'il manque), `python stoxx_collecte.py --recent`
-     puis `python etude_stoxx.py`. Annonces de résultats des 14 derniers jours
-     (calendrier Yahoo, Investegate pour le Royaume-Uni, Nasdaq Nordic pour la
-     Suède, le Danemark et la Finlande), position face au consensus et
-     réaction face au STOXX 600 (`communiques_stoxx.json`, onglet
-     Statistiques > Communiqués > STOXX 600). Sans IA, mêmes règles : une
-     source injoignable n'arrête rien, signale-la.
+     `pip install -q yfinance` (s'il manque), `python stoxx_collecte.py --recent`,
+     puis les perspectives (ci-dessous), puis `python etude_stoxx.py`. Annonces
+     de résultats des 14 derniers jours (calendrier Yahoo, Investegate pour le
+     Royaume-Uni, Nasdaq Nordic pour la Suède, le Danemark et la Finlande),
+     position face au consensus et réaction face au STOXX 600
+     (`communiques_stoxx.json`, onglet Statistiques > Communiqués > Europe).
+     Une source injoignable n'arrête rien, signale-la.
+   - **Perspectives des publications européennes** (avant `etude_stoxx.py`) :
+     `python relecture_stoxx.py --recent --communiques --oslo --nordique --presse --a-lire sortie/stoxx_a_lire.json`.
+     Le script relève, pour les publications des 14 derniers jours, le texte
+     du communiqué (Investegate, Oslo Børs, Nasdaq Nordic) ou, à défaut, les
+     titres de presse du jour (Google Actualités), et écrit dans
+     `sortie/stoxx_a_lire.json` les extraits pas encore jugés. Lis chaque
+     extrait et juge les perspectives selon `relecture_stoxx/CONSIGNES.md`
+     (`relevees`, `confirmees`, `abaissees`, `nouvelles`, ou `null` : d'après
+     l'extrait seul ; une prévision d'analyste ou un résultat qui bat les
+     attentes n'est pas une perspective). Écris `sortie/avis_stoxx.json`
+     (`{id: valeur ou null}`, un verdict pour chaque extrait lu) puis
+     `python relecture_stoxx.py --integrer sortie/avis_stoxx.json`. Aucun
+     extrait : rien à faire.
    - Puis un second commit des seuls `resultats_usa.json`,
      `resultats_usa_perspectives.json`, `consensus_usa.json`,
      `communiques_usa.json`, `resultats_usa_jour.json`, `resultats_stoxx.json`,
      `stoxx/yahoo.json`, `stoxx/uk.json`, `stoxx/nordique.json`,
+     `relecture_stoxx/perspectives_claude.json`,
+     `relecture_stoxx/extraits_communiques.json`,
+     `relecture_stoxx/extraits_presse.json`,
      `communiques_stoxx.json` et `test_avant.json` (onglet Test, recalculé par
      `etude_usa.py` et `etude_stoxx.py`), message
      `veille : AAAA-MM-JJ, résultats américains et européens`, et push (même
@@ -115,7 +131,8 @@ Tout se passe dans le dossier `veille/` du dépôt.
    importantes, sources en erreur, publications de résultats jugées (et
    alertes de résultats publiées), et les lignes de résultat de
    `statistiques.py` (points, sens juste) et de `scores.py` (et, à 13 h 12,
-   d'`edgar.py`, d'`etude_usa.py`, de `stoxx_collecte.py --recent` et
+   d'`edgar.py`, d'`etude_usa.py`, de `stoxx_collecte.py --recent`, le nombre
+   de perspectives européennes jugées (et non nulles) et la ligne
    d'`etude_stoxx.py`).
 
 ## Alertes de résultats (avant l'ouverture)
