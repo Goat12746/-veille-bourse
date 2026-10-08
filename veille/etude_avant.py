@@ -12,11 +12,10 @@ l'application additionne a l'historique FMP :
   - R[30] = rendement de l'action (cours ajustes) moins celui de l'indice
     (INDICES) sur les 30 seances qui precedent la seance de reaction, range
     dans l'une des 7 tranches (< -10 %, -10 a -5, -5 a -2, -2 a 2, 2 a 5,
-    5 a 10, > 10 %) ; sens de la reaction : l'action fait-elle mieux que
-    l'indice le jour de la reaction (rendement_pct moins celui de l'indice) ;
+    5 a 10, > 10 %) ; sens de la reaction : hausse ou baisse du cours le
+    jour de la reaction (rendement_pct, brut : pas face a l'indice) ;
     P(hausse | tranche) = hausses / publications ; meme chose depuis la
-    publication precedente (seances 0). Chaque horizon porte sa probabilite
-    de base face a l'indice (n, hausses) ;
+    publication precedente (seances 0) ;
   - "ensuite" (zone et chaque entreprise) : rendement moyen des 20 seances
     avant la reaction et de la seance de reaction, selon le sens du jour ;
   - "consensus" : P(hausse) selon l'ecart du BPA (lignes) et du chiffre
@@ -164,7 +163,6 @@ def etudier(entreprises, indice=None, par_entreprise=False):
     cases = [{"n": 0, "hausses": 0} for _ in LIBELLES]
     cases_pub = [{"n": 0, "hausses": 0} for _ in LIBELLES_PUB]
     total = {"n": 0, "hausses": 0}
-    base = {"n": 0, "hausses": 0}  # face a l'indice, base des horizons
     ensuite, par_ticker, couples = nouvelle_ensuite(), {}, []
     for e in entreprises:
         t = e["ticker"]
@@ -196,31 +194,25 @@ def etudier(entreprises, indice=None, par_entreprise=False):
                     x["n"] += 1
                     x["avant"] += (clo[s - 1] / clo[s - 1 - AVANT] - 1) * 100
                     x["jour"] += rea
-            # Horizons : tout face a l'indice (rendement avant et jour J).
-            ind_j = variation_indice(indice, dates[s - 1], dates[s]) if s >= 1 else None
-            if ind_j is None or rea - ind_j == 0:
-                continue
-            mieux = rea - ind_j > 0
-            base["n"] += 1
-            base["hausses"] += mieux
+            # Horizons : rendement avant face a l'indice, hausse brute du jour.
             if s - 1 - HORIZON >= 0:
                 ind = variation_indice(indice, dates[s - 1 - HORIZON], dates[s - 1])
                 if ind is not None:
                     c = cases[tranche((clo[s - 1] / clo[s - 1 - HORIZON] - 1) * 100 - ind)]
                     c["n"] += 1
-                    c["hausses"] += mieux
+                    c["hausses"] += hausse
             sp = index.get(precedente.get(ev["jour"]))
             if sp is not None and 0 < s - 1 - sp <= ECART_MAX_PUB:
                 ind = variation_indice(indice, dates[sp], dates[s - 1])
                 if ind is not None:
                     c = cases_pub[tranche_pub((clo[s - 1] / clo[sp] - 1) * 100 - ind)]
                     c["n"] += 1
-                    c["hausses"] += mieux
+                    c["hausses"] += hausse
         if locale["hausse"]["n"] + locale["baisse"]["n"]:
             par_ticker[t] = moyennes(locale)
     res = {"depuis": DEBUT_SUIVI, "n": total["n"], "hausses": total["hausses"],
-           "horizons": [{"seances": HORIZON, **base, "tranches": [{"libelle": LIBELLES[i], **c} for i, c in enumerate(cases)]},
-                        {"seances": DEPUIS_PUB, **base,
+           "horizons": [{"seances": HORIZON, "tranches": [{"libelle": LIBELLES[i], **c} for i, c in enumerate(cases)]},
+                        {"seances": DEPUIS_PUB,
                          "tranches": [{"libelle": LIBELLES_PUB[i], **c} for i, c in enumerate(cases_pub)]}],
            "consensus": grilles_consensus(couples), "ensuite": moyennes(ensuite)}
     if par_entreprise:
