@@ -15,18 +15,18 @@ Tout se passe dans le dossier `veille/` du dépôt.
    - Produit `sortie/candidats.json`. Si une source est en erreur (`sources`),
      continue avec les autres et signale-le dans ton compte rendu.
 2. **Attentes du marché et communiqués AMF** : `python consensus.py`,
-   `python google_finance.py`, `python objectifs.py`, `python positions.py`,
+   `python google_finance.py`, `python objectifs.py`,
    `python communiques.py` puis `python communiques.py --a-classer`
    - `consensus.py` relève le consensus des analystes (Yahoo),
      `google_finance.py` le chiffre d'affaires (et le BPA) publié face à
      l'estimation des analystes pour les publications des 12 derniers jours
      (Google Finance, `consensus_google.json`),
-     `objectifs.py` leurs objectifs de cours (Yahoo) et
-     `positions.py` les ventes à découvert déclarées à l'AMF : sans IA, ne les
+     `objectifs.py` leurs objectifs de cours (Yahoo) : sans IA, ne les
      modifie pas à la main. Une source en erreur n'arrête rien (le fichier
      précédent est gardé) : signale-le. Lance-les à chaque veille : ils ne
-     font rien s'il n'y a rien de nouveau (consensus déjà relevé le jour même,
-     export de l'AMF inchangé ; l'AMF publie vers 12 h 30).
+     font rien s'il n'y a rien de nouveau (consensus déjà relevé le jour même).
+     Ne lance plus `positions.py` (ventes à découvert : sans effet mesurable,
+     retiré le 2026-10-08).
    - Ajoute les communiqués des derniers jours à `communiques.json`, puis liste
      dans `sortie/resultats_a_classer.json` les publications de résultats et
      révisions d'objectifs que tu n'as pas encore jugées.
@@ -82,7 +82,7 @@ Tout se passe dans le dossier `veille/` du dépôt.
      cours à l'échéance et écrit `scores.json` (onglet Statistiques > Scores).
 7. **Commit et push** de `alertes.json`, `etat.json`, `historique.json`,
    `statistiques.json`, `communiques.json`, `resultats_classes.json`,
-   `consensus.json`, `consensus_google.json`, `positions_courtes.json`,
+   `consensus.json`, `consensus_google.json`,
    `objectifs.json`, `scores.json`, `resultats_usa_classes.json` et
    `resultats_usa_jour.json` uniquement, message :
    `veille : AAAA-MM-JJ, N alertes` (rien d'autre dans le commit).
