@@ -209,7 +209,9 @@ def mesurer(ev, serie, premier):
         return False
     m = serie.mesure(mod, s, s)
     ev.update({k: m[k] for k in ("rendement_pct", "indice_pct", "ecart_pct", "z", "sigma_pct")})
-    ev["reaction"] = "hausse" if m["ecart_pct"] > 0 else "baisse" if m["ecart_pct"] < 0 else None
+    # Sens de la reaction : rendement brut du jour (2026-10-08, comme l'onglet
+    # Test) ; l'ecart corrige du beta reste mesure (ecart_pct, z).
+    ev["reaction"] = "hausse" if m["rendement_pct"] > 0 else "baisse" if m["rendement_pct"] < 0 else None
     # Cours avant : ecart cumule au CAC 40 sur les 20 seances precedentes,
     # d'apres un modele estime avant cette periode.
     mod_av = serie.modele(s - AVANT) if s - AVANT > 0 else None
