@@ -1,21 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-08T06:21:37+00:00",
+ "genere_le": "2026-10-08T11:17:49+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 31,
+   "trouves": 9,
    "nouveaux": 4
   },
   "presse": {
    "ok": true,
-   "trouves": 438,
-   "nouveaux": 298
+   "trouves": 352,
+   "nouveaux": 159
   },
   "assemblee": {
    "ok": true,
-   "trouves": 122,
-   "nouveaux": 12
+   "trouves": 101,
+   "nouveaux": 0
   },
   "agenda": {
    "ok": true,
@@ -129,6 +129,68 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-08",
    "publie_a": "2026-10-08T06:21:37+00:00"
+  },
+  {
+   "id": "amf-136815_20261008",
+   "date": "2026-10-08",
+   "source": "amf",
+   "titre": "Forvia Hella : deux commandes en série EnergyCore, centaines de M€ de volume",
+   "resume": "Forvia Hella remporte la première commande en série d'un système de gestion de batterie haute tension X-in-1 et un contrat pour un PowerPack 48 V, auprès de deux constructeurs (Amérique et Europe). Volume total dans la fourchette des centaines de millions d'euros.",
+   "nouveaute": "Annonce officielle ce jour de deux commandes en série EnergyCore, volume total de centaines de M€.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW136815_20261008.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "FRVIA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Centaines de M€ de commandes cumulées sur la durée de vie des programmes, faibles face aux quelque 27 Md€ de chiffre d'affaires annuel du groupe.",
+     "extrait": "Le volume total des commandes pour ces deux projets en série se situe dans la fourchette des centaines de millions d’euros",
+     "nom": "Forvia"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Forvia : FORVIA HELLA remporte deux importantes commandes en série pour ses solutions EnergyCore hautement intégrées",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW136815_20261008.pdf",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T06:05:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Forvia décroche deux commandes de systèmes pour véhicules électrifiés - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcG5NY0ZxdXZNTWhVQUF5N0p0OFpKZzlwZmNfOWU2M0JoNG1rT280c0ZYWGJaU2tzV1JJaFNuQ0JlWXE2Wk1ETkJBMkZYLUNnY2lPQnpVQXU5OVJGRTVEYzBESHU2bWRxbVUwby1XcHZEYkRZeC1ISUZMSVlVZlI3LUxMWllwUnVjdldiVVFPdGc1QTVHaUZYbkxteDh1ZzVQRWhNMTJsSFdBdHNTMC1lWTBMcFJHTU0tVFlQMkp2R3QzcjRRaXlrd2xB?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T07:00:34+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Forvia décroche deux commandes majeures en série pour ses solutions EnergyCore - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZFFMcGVkeFVlSk9obVJ0TlljNXZWLS1XMDlQNmJLQWE1eHBCbUd6Z21HbVBvMlRRY01QVERWREk0VGFRY05ycXJ0X1ZCVDRDT3NuWGNoa1dRYmtkb2xSQnJma3JGaWU1dlpIMm1ZU1A1RU5zOXlmRDcxZHR1NnBaS2VPeUxNa01ET1YxdkxsTExjYkhzU1djTzJHMkU3WlptZF8yMHhFcW1EbllsYzI2NzNrRElWMU1ZWWZlUlZaRXZCT1V0NU1FVGJCSk5zeloycHJXeG13?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T06:56:46+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Forvia reçoit des commandes de 500 millions € pour ses solutions EnergyCore - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSElRY3ExWlNaV1RqNW5acTNWN0ZnMmVsV0VkaVdBMkp0c1JWLVdfaF9EMi1fLS1XbnhWT2ZCaWxlNDB1Q00tMktHQUJ2a2RkQVhzWUN5eER0bnJYWFFTNVdFWWQ4el9WaXlqOERodXdxUlRzOHpJR3NlQ2J2Q0RSTnlfNWtmT05jQXliMWFGd1JRdjBhSUt2UDVLeGUwczhUODdLRWtQUy1KQ21EcHE2cmFsaFZ3NElVZlkwd015UUNKSUozOERHNHl6bEFrZmlO?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T06:40:00+00:00",
+     "media": "Investing.com France"
+    },
+    {
+     "titre": "Forvia Hella remporte des commandes de solutions EnergyCore auprès de deux constructeurs automobiles - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPbEVHWmlISnhyUjJsWUR0QTNQTi1nUU1oeUNXd090YUJoajdHeHl2X0dZQmgweU9mWFJMQ2tZZFU0ZFJzZHg0Z0FpTHFEMklnNHlFdXhTYlh4UGdoTkc0bzdVbHEzRVduMkRBeG95VEgtLV9YMlRrTW9INzdWbi1sUFZpd1ZZeXF1Nl9PT25jal9fSDFmendVcFZYZWIydWxVV0w3MVYtQWlMVFVRTWI2Umdmckh2Y1VlcWZlX1JCRUhWaXFVcFV5VXZNeEFYejNMQWJQRjhwdFVGYnRWY29VaU5IMUhWMTZpSnFObTJwV3hjOEU?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T06:27:37+00:00",
+     "media": "Zonebourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-08",
+   "publie_a": "2026-10-08T11:17:49+00:00"
   },
   {
    "id": "amf-083388_20261007",
