@@ -1,21 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-09T06:19:34+00:00",
+ "genere_le": "2026-10-09T11:16:10+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 23,
-   "nouveaux": 5
+   "trouves": 10,
+   "nouveaux": 2
   },
   "presse": {
    "ok": true,
-   "trouves": 441,
-   "nouveaux": 248
+   "trouves": 325,
+   "nouveaux": 150
   },
   "assemblee": {
    "ok": true,
-   "trouves": 490,
-   "nouveaux": 255
+   "trouves": 376,
+   "nouveaux": 1
   },
   "agenda": {
    "ok": true,
@@ -74,6 +74,219 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-09",
    "publie_a": "2026-10-09T06:19:34+00:00"
+  },
+  {
+   "id": "amf-137094_20261009",
+   "date": "2026-10-09",
+   "source": "amf",
+   "titre": "Kering : Anthony Vaccarello quitte la direction artistique de Saint Laurent",
+   "resume": "Saint Laurent annonce le départ de son directeur artistique Anthony Vaccarello. La presse évoque une nouvelle organisation des maisons du groupe.",
+   "nouveaute": "Annonce officielle du départ du directeur artistique de Saint Laurent, une des maisons clés de Kering.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW137094_20261009.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "KER.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Saint Laurent est une maison majeure du groupe ; l'effet dépend du successeur et de la nouvelle organisation, non connus.",
+     "extrait": "Saint Laurent annonce le départ de son directeur artistique, Anthony Vaccarello",
+     "nom": "Kering"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Kering : Kering : Saint Laurent annonce le départ de son directeur artistique, Anthony Vaccarello",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW137094_20261009.pdf",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T06:30:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Le départ d’Anthony Vaccarello de Saint Laurent ouvre une nouvelle phase d’incertitude pour le groupe Kering - Le Monde.fr",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUjNteWhtUWpWajE5aWRsRktqcFFXclBVbVE4SmEzMEk1bmJhSGI1R3BZZW8wMk5Ma0VZUFJJeU5jSW4tLTJNUVhYY1hmbGVKcXRaT1Q2ZE9JWGVRLXRRSE1xODE5eTItb2YzTllpNGhhZF9vZVBoMXJWV01ScElVLVpBSjdDMmNZVGFfMW5TdGU5bjdVNGZ6MzFHX0VsWXhmMmtMd1VfZVkwYWFKdWI1N2txUmR6ODJNaGs1SkZESzJZLTJqTWVLMHNDczFlSUp3UGxDeU9Ianp0Vzd5anV4OUxVYUo5ck41cU8w?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T10:36:05+00:00",
+     "media": "Le Monde.fr"
+    },
+    {
+     "titre": "Kering : le départ d'Anthony Vaccarello bien accueilli - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSjNKQUctVm4xVlpqVmFSbExLQjZ2cExwVDNoWERPZ2s3RngzSmtjd2xXQjZqeEc0bkszbmJ3X0NlTlpUUzlDaGh1cTczVWNHZDMwM1lGYjNiZWtYSWxabjBWazc5R3llLWlFZnViYmJtaEMwTjRGS3pvb3lXcktEMzdZN3REWHVTYW1oWE9DNWRCeFNqd2R0VUZ1ZU5rNmJlM01iekRWMXNsYkh3b28ySEFCaw?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T09:28:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Anthony Vaccarello quitte Saint Laurent alors qu’une nouvelle organisation est en vue chez les maisons du groupe Kering - Libération",
+     "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOMENHUjZrV0JQY2JtazlFWkRkbDJGOTN6QlBsWHotUXhBSzg0Q3o4clBqcUZQcWxzaFhyei1oamhFWDZYYVczNXNlODdCcHczeldYcklZb3loXzQ5ZWY1dmZIZlZ6dmVTUFRPN0NFMnpzT0FOMGhmUjduRi14VTZXaUlPZUlORlh4c3BWTUU1VUhQS04zMVRaTnZjbUh4aFVDeFBuZ2JQbkFGcXpPZVpqNGJnR0VtYjhiNkFiOGs2cmhMdC14RXJoU3lYMHVqclpWMkFsRE1rTGJfN0lDcjJYVUdxYkVJMUk2S3hTb29TcFpVUFBieFJhTWdya0d0bGJZYnNmVTM4bXJieUJrdTNPUmdObk1URGFLcWJnVzFHQmxMZw?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T08:57:42+00:00",
+     "media": "Libération"
+    },
+    {
+     "titre": "Kering: Anthony Vaccarello quitte Saint Laurent - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2RwQ253cUtxczRYUE94WVZrYXBFRm9aZEVzc0oyWmxNYzlBNTc3Ym5PQnQzelcwcHZ2YVlkblBKZDNaUkd4WnhFdU1RMm14SHdhY25VeUQ5MmJiTXg1NWhEQ0NUMkVXM29MN1JWOUZCY2tYeHBUY1MtY1gzMjlfb1h5TVhUTTRzb21jbVBVRDI2OW5IZ0xPc1Z0cXNkYWhEaG9OUlU4RVI1Zw?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T08:42:25+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Bourse : ça bouge chez Saint-Laurent (Kering) et BNP Paribas, SpaceX s'attaque aux opérateurs mobiles - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNeFVVNDJIMnpJd1hhaHdBXzB1R0U3Y0ljbzNYUEE4VE1lUUZTMFJlMUVUWGM1QUJ3eHZkSkVTUkNmYUhuMVVQV2JDMGEtTFlPd3M2NHN4d2pKWkJOZXdFV1Y2c1ItSGVfMTFKVjJ5M2NDUE1HYjlSNFdwU3VhVlhmWnl1Wm55bkhvTW9oY3N5R0E1MUYzemRRemdTOUZxN3o1TlNZS0tKTzQ2ZWlzMnAyYmJlQ3NRVlpjRFVnTEo5NWFTZHBaZUh3WkVIckRyUEJ6VnkyT0U1bmtkOFJIUEVyMzJMbV9NaTZTRUtBZA?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T06:54:39+00:00",
+     "media": "Zonebourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-09",
+   "publie_a": "2026-10-09T11:16:10+00:00"
+  },
+  {
+   "id": "amf-169744_20261009",
+   "date": "2026-10-09",
+   "source": "amf",
+   "titre": "Medincell : cotation suspendue à sa demande dans l'attente d'un communiqué",
+   "resume": "Medincell a demandé la suspension temporaire de la cotation de ses actions sur Euronext Paris, en attendant la publication d'un communiqué dont le contenu n'est pas connu.",
+   "nouveaute": "Suspension de cotation à la demande de la société, signe d'une annonce imminente.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169744_20261009.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "MEDCL.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Contenu du communiqué attendu inconnu : le sens ne peut être jugé.",
+     "extrait": "Medincell annonce la suspension temporaire de la cotation de ses actions",
+     "nom": "MedinCell"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "MedinCell : Informations privilégiées / Autres communiqués",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169744_20261009.pdf",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T07:38:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Medincell annonce la suspension temporaire de la cotation de ses actions sur Euronext Paris - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPN01fTnNTaFZWWjBOR29CNWlINnF5X0lRR3BuRE0yQ3FfX0dQUU5yNHZUTHNJbnJVa1hoTXpFZE55VUhvdnVaNjRNRGdsd2twc0R2RV9tSVFRRUpER0lhU0dGbC00NzByb2dnWnZySVJtOURvT3JxQkNJVGdqa2NpdFJxRWtOVkVILUtHbGlyRkRDQlZHR1A1elJUMllTQW9iMXNzdnk5NElSMzBxNllUM2g5bFhKOUtnRml5enp1VDh1NEpVckxobkthU1hNX0Rya2w2RDNwSXZhM1lRLVN6dnZNZXJ1elVYdkY0NkJpOUlMUVJpNHlrWVJ0TGFWd9IBgwJBVV95cUxNZ045TXZ1VDNTR1VrdWhiS0l2aUdyTzRPM0RrLXFLaVc1bVlFb0lZT3ZGYkdfdUwxVXJuNzM5dlB1R2RnVVlzYTRiUlZnVVg1bGpVNnFNQ0l0amJ0Z0wwUlBfX200aG5DSDRsdjZ2ZjRPX2xjOU4xbWkxdTNsN0ZLaFRfcTQ5RURZRHM1V0RoUmhJSWxVd0JzaFh5V28xSE5JM3JtYnFOX2owR1Rva3hsalZqS21JMEVpUXNvai1xRnZtWGU4SDRhblBWX0tsVXhlenFPaTBMVUx3cW1Vc01PZkVwczNSUlpYamYtU1VsNENtdXJQUFVobC1IenNCSzBGWFY4?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T07:00:00+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Medincell annonce la suspension temporaire de la cotation de ses actions sur Euronext Paris - Business Wire",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1OS3A2cDFXLVI4aFRQZm93RkdFUWgxVExNRVpjMC1GTmJRR0VDa1ZHaTJaLXhzUlplekkxZVh2QUQxV29iR1lncWlvWTAyeEFBOHlIU2Y3b2dwbU92SDA0Y3NtVFptNFk?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T07:37:00+00:00",
+     "media": "Business Wire"
+    },
+    {
+     "titre": "Medincell : cotation suspendue en attente d'un communiqué - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ3RhRkZ5akhhUV94cjBFeHE5bTNrR01VcVZNbGVaUE8xWFZZSU1Md0pnU0hpZ2hhN0dsbzdTbEJMdURRNEd4UVVTaEZmZllRU1hEc0p0T1ZVVkNBT0k0YUZWMFMwdlR2SjN3blUtbjJ5QWRZSF9adDRZLWNDUGZ0R0lmT1VWZ3FUdGczeFhOMHFYSXZRaVJiczBWTTdqeE8wV0JSYTQ2MHBOR0RoZ0E?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T08:56:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "La cotation de Medincell a été suspendue dans l'attente d'un communiqué - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOcHFOOUxycDdfWnVKQVlrY3hic0VmRHFMdkVBMlFPSnkybzZ2d3hUSG1NT2x2VUxGX3J0VmY2T0FENXE4T3hsaWRqTXhWSC1oQ2RhbkpFN0g2TUJwSHFwbGdXUHlZbEJUenFMdTRQVW1POE9Fa0ctdHdXQk9JTUVsTThSY3BjQXZwTUx6NmZ3ZG5pQk5WWmFrSFdxdUQ4N0JMb1dOeVFnNjA4Q0pBSVAxS3Btd2p4dVdvMzlzSzlRMUpHRUM2ekwwU1R2SWI?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T08:10:20+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "La cotation de Medincell a été suspendue dans l'attente d'un communiqué - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU0U2UDBDdy1EQlJHaHNUS2wxa1JrbFNZM3RKN3NUT1c2ZTBsb2hYMUVEczB1Rld6R05kZXhrREJiRWt1ZmxGdkpqVnV6bmdyRXBObGtWTHhOVzI5aDBFOWNqd1hrSFNFNTZWZW5KWmN0cllnaDZNTHNDWGUwVHVlV1pWQ29KTDVCUVd6Z1N6Q2N5TEVLTUU0b21XT2FjMFJrVmtoaHNpa1ZsRWhWRWdKTTlB?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T08:09:16+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Medincell suspend la cotation de ses actions à sa demande en attendant un communiqué - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeDlya2VxbmFXOEpTdDNXZ1RZWE5Id0JoMUxOdGhNeGljVmE4TWplbEtRUmZJSU1QZ3JMUWZfamltazVrZmJMSHZmSWtJUkxqYXltemZteWxuVFhZTWczSTV6RGhKTDV5Wmp3ZGxfS0thRG9Mc1hqY2hreFExYWw5U29NYlJrTWtlLW5QMVBQbGlWV2IzZjFudUFRZGxLX1dnZmxmbVdYb1NrVTRTUDY5bWUxUV9lWkxqZllSRS1R?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T07:50:07+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-09",
+   "publie_a": "2026-10-09T11:16:10+00:00"
+  },
+  {
+   "id": "presse-1497d86110ab5412",
+   "date": "2026-10-09",
+   "source": "presse",
+   "titre": "Alstom : Virgin commande 12 trains pour relier Paris à Londres dès 2030",
+   "resume": "Virgin commande 12 trains à Alstom pour une liaison Paris-Londres à partir de 2030. Montant non précisé dans le titre.",
+   "nouveaute": "Nouvelle commande ferme de 12 trains de Virgin, annoncée aujourd'hui.",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcnNZUG1mR3VFWk52UzNwdXI0d1l3WnV1enpmbU05bElXM09oYzluOFZ0VE1hU24yWUtzNmtqeEpHcm9Pb3JvM0xYSWExQmdicVUyOHlOakRXUU0xWU5HTkNhUUU2LUlBS2d2amJEeUtJWm1rZXg0N21kc1VkQ2JxbDJabmUySHZhd3NkTU02ZXBKZFpOSFRQNDFNWnV0NHkyX3NodFcxa24xT21EYjQwamJB?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Commande de 12 rames, petite face au carnet de commandes record du groupe.",
+     "extrait": "Virgin commande 12 trains à Alstom pour relier Paris à Londres dès 2030",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Virgin commande 12 trains à Alstom pour relier Paris à Londres dès 2030 - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcnNZUG1mR3VFWk52UzNwdXI0d1l3WnV1enpmbU05bElXM09oYzluOFZ0VE1hU24yWUtzNmtqeEpHcm9Pb3JvM0xYSWExQmdicVUyOHlOakRXUU0xWU5HTkNhUUU2LUlBS2d2amJEeUtJWm1rZXg0N21kc1VkQ2JxbDJabmUySHZhd3NkTU02ZXBKZFpOSFRQNDFNWnV0NHkyX3NodFcxa24xT21EYjQwamJB?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T06:30:09+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-09",
+   "publie_a": "2026-10-09T11:16:10+00:00"
+  },
+  {
+   "id": "presse-4524e5671d334a10",
+   "date": "2026-10-09",
+   "source": "presse",
+   "titre": "BNP Paribas : fusion de Floa avec Cetelem dans le paiement fractionné",
+   "resume": "BNP Paribas va fusionner Floa avec Cetelem (BNP Paribas Personal Finance) dans le paiement fractionné.",
+   "nouveaute": "Annonce de la fusion de deux filiales de crédit à la consommation.",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPR1daVVhVQU1ISnRLdDVVWFZvV0JzbXBJVi1sVVR2Nkt0SzRZcEswbnJxNGVGRVVZZmpQckhYMzM3SWZVLVJOMDlIbV9haHF4aFJTTWZRNXo1dms4dnNxUXJzVkh1SEVhaC05VEN3cU9UZGctU2hXeVpGU1JMN2Q4eDB0ZWotMFl5QVZreE1TZDVhWG9XU09kV3EzYVJoWFZ3UHZmOXBhb0ZCYUswNjIxdXRQOFppNlFHS2xaM2laMHJqOEZuYW1R?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "BNP.PA",
+     "sens": "neutre",
+     "ampleur": "faible",
+     "justification": "Réorganisation interne de filiales ; effet attendu sur les coûts limité, chiffres non communiqués.",
+     "extrait": "BNP Paribas va fusionner Floa avec Cetelem",
+     "nom": "BNP Paribas"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Paiement fractionné : BNP Paribas va fusionner Floa avec Cetelem - Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPR1daVVhVQU1ISnRLdDVVWFZvV0JzbXBJVi1sVVR2Nkt0SzRZcEswbnJxNGVGRVVZZmpQckhYMzM3SWZVLVJOMDlIbV9haHF4aFJTTWZRNXo1dms4dnNxUXJzVkh1SEVhaC05VEN3cU9UZGctU2hXeVpGU1JMN2Q4eDB0ZWotMFl5QVZreE1TZDVhWG9XU09kV3EzYVJoWFZ3UHZmOXBhb0ZCYUswNjIxdXRQOFppNlFHS2xaM2laMHJqOEZuYW1R?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T11:07:00+00:00",
+     "media": "Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-09",
+   "publie_a": "2026-10-09T11:16:10+00:00"
   },
   {
    "id": "amf-083403_20261008",
