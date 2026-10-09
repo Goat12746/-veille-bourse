@@ -1,7 +1,99 @@
 {
  "version": 1,
- "maj_le": "2026-10-08T11:17:49+00:00",
+ "maj_le": "2026-10-09T06:19:34+00:00",
  "alertes": [
+  {
+   "id": "presse-634b91bf33e19cd5",
+   "date": "2026-10-09",
+   "source": "presse",
+   "titre": "Airbus : 72 avions livrés en septembre, 17 commandes brutes",
+   "resume": "Airbus a livré 72 appareils en septembre et enregistré 17 commandes brutes. Selon la presse, il reste 323 avions à livrer sur les trois derniers mois pour tenir l'objectif de l'année.",
+   "nouveaute": "Chiffres de livraisons et commandes de septembre publiés après la séance d'hier.",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZVpmNWYtQ1Z0QUxycDFhZGRNazhBakNKcEdwX1E0am9YMm04bWxYV1l4OW1vcFIzVE52dHdDLTlfdlNPOHVZZ3FzU0hzRFBnMmg3eDcxTEIwWk91a2tVUHdkMTE2UjZqT3FRVWpfU3ZaVVZ1b1NhQkhQbzM2eXl5cjgzRFI5RmlXV3ZiME9TNi1IbjlYVThkbHJ2ZzB3ckhOR3c?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AIR.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Rythme de livraisons à comparer à l'objectif annuel : 323 avions restent à livrer sur le dernier trimestre.",
+     "extrait": "il reste 323 avions à livrer en trois mois pour tenir l",
+     "nom": "Airbus"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Airbus : 72 appareils livrés en septembre - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZVpmNWYtQ1Z0QUxycDFhZGRNazhBakNKcEdwX1E0am9YMm04bWxYV1l4OW1vcFIzVE52dHdDLTlfdlNPOHVZZ3FzU0hzRFBnMmg3eDcxTEIwWk91a2tVUHdkMTE2UjZqT3FRVWpfU3ZaVVZ1b1NhQkhQbzM2eXl5cjgzRFI5RmlXV3ZiME9TNi1IbjlYVThkbHJ2ZzB3ckhOR3c?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T05:58:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Airbus : un bon mois de septembre, mais il reste 323 avions à livrer en trois mois pour tenir le cap de 2026 - Air Journal",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRjdTV2hmWEdoNVl3eVF3bjVodm4tNmZGZ2U0X2RJdVMyeDlIRUNGVVhSWjdZcXpQQllMN3c3Q3NGb2Z6a0lidjVWeXFxYTFkc0w0M21zV3ZjQ0FqT2h4T2tZcENYd19HY0tvTjZSN1hrY3BoUkpWSnJ6Y0dzdEhWX2N5Mmoya0x3SThjc21mdmZvRkNjbGpmV2I1OFdCM3Y1SWlwSzdkQTRkR1dqTzJxalAxc0t3U2VYVGR0ZDd5MUMtdmhucENzTWtaVVBCV1RFUEpVM1EyWFF6Sm1zLUhhalJYelNZdTJkOXRrdA?oc=5",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T06:00:25+00:00",
+     "media": "Air Journal"
+    },
+    {
+     "titre": "Airbus a livré 72 avions et reçu 17 commandes brutes en septembre - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTlNtRFpoYVl3aUZOWHdFNTdVUjBlRnlMY1ZPVnFnVDJJNmVLRkZiWkJDanhLdVZkOXRTY05xUkpRX2hsM2xHWEM5Y3l2X0c0Y0hSUHgwdVcxUXpDbUlDdlN0OXYzWlRrc0JqU3haV1N6Zjh3bXNXNmc0S002enFIdzFwQkFOcmFwdkhvYWk0VGh0UXFpNUpyRXZLQ1lWaGVocjJYdjIxRm1sUQ?oc=5",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T16:03:48+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-09",
+   "publie_a": "2026-10-09T06:19:34+00:00",
+   "initial": {
+    "etape": "information",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "amf-083403_20261008",
+   "date": "2026-10-08",
+   "source": "amf",
+   "titre": "Carrefour : cession-bail de 35 magasins (France, Espagne) pour environ 290 M€",
+   "resume": "Carrefour cède 35 magasins (32 en France, 3 hypermarchés en Espagne) à une coentreprise Atrato-GIC pour environ 290 M€ de valeur nette vendeur, et reste locataire (baux de 12 ans dont 10 fermes). Plus-value significative, sans impact matériel sur le résultat opérationnel courant.",
+   "nouveaute": "Première annonce de cette opération de cession-bail : 290 M€ et plus-value significative.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083403_20261008.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [
+    "distribution_alimentaire"
+   ],
+   "entreprises": [
+    {
+     "ticker": "CA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Cristallise la valeur immobilière (~290 M€) avec une plus-value, mais sans effet matériel sur le ROC et avec des loyers futurs.",
+     "extrait": "L’opération, qui générera une plus-value significative pour le Groupe, n'aura pas d'impact matériel sur le Résultat Opérationnel Courant.",
+     "nom": "Carrefour"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Carrefour : Carrefour annonce une opération immobilière de cession-bail (Sale & Leaseback) portant sur 35 magasins en France et en Espagne",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083403_20261008.pdf",
+     "date": "2026-10-08",
+     "publie_le": "2026-10-08T15:44:37+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-09",
+   "publie_a": "2026-10-09T06:19:34+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
   {
    "id": "amf-136807_20261007",
    "date": "2026-10-08",
