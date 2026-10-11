@@ -43,6 +43,7 @@ import urllib.parse
 
 from collecte import _yahoo_get
 from mesures import INDICE, arrondi, limite_cotation, mediane, moyenne
+from secteurs import grand_secteur
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(ICI, ".cache", "cours_bruts")
@@ -335,12 +336,13 @@ def calculer(entreprises, objectifs, indices, limite):
 
 
 def groupes(toutes, fiches):
-    """Tranches de potentiel, annees et secteurs."""
+    """Tranches de potentiel, annees et secteurs (les 11 grands secteurs :
+    les secteurs detailles du SBF 120 y sont regroupes)."""
     tranches = [dict(resume([o for o in toutes if a <= o["potentiel"] * 100 < b]), id=nom)
                 for nom, a, b in TRANCHES]
     annees = [dict(resume([o for o in toutes if o["jour"][:4] == an]), annee=an)
               for an in sorted({o["jour"][:4] for o in toutes})]
-    secteur_de = {f["ticker"]: f.get("secteur") or "" for f in fiches}
+    secteur_de = {f["ticker"]: grand_secteur(f.get("secteur")) or f.get("secteur") or "" for f in fiches}
     secteurs = []
     for s in sorted(set(secteur_de.values())):
         w = [o for o in toutes if secteur_de.get(o["ticker"]) == s]
