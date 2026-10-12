@@ -1,7 +1,198 @@
 {
  "version": 1,
- "maj_le": "2026-10-09T11:16:10+00:00",
+ "maj_le": "2026-10-12T06:18:57+00:00",
  "alertes": [
+  {
+   "id": "presse-e4788772d9a409d1",
+   "date": "2026-10-12",
+   "source": "presse",
+   "titre": "Vallourec : contrat de tubes avec TotalEnergies pour un champ gazier en Azerbaïdjan",
+   "resume": "Vallourec annonce avoir remporté un contrat auprès de TotalEnergies pour fournir des produits tubulaires au développement d'un champ gazier en Azerbaïdjan. Montant non précisé dans les titres de presse relevés.",
+   "nouveaute": "Nouvelle commande annoncée par Vallourec auprès de TotalEnergies pour l'Azerbaïdjan.",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPdkJvbkNQcVRrSXp0RlRGYXpHMXQ4QUlPV3dzTVRZcGxwVzlVZGpOZFVqUTlyWWl1bk9mRWVLUDl1LU5iSjhzT1ZZR2ExaVpNajBUd2xHeEVRNXRTaUhfTXM5VUx6ZlZ3VGp1Vm1lZ1FNTlpGNnQwVUhwUFM5U1ZlT3pNcHZOQkFubnlJNWVLLWhiV1pqd3RCUzlKbGNNd1dyVlJqTVc2X3dtaWlVMEQ4NVpiZ1Y5R0RXdmJTR3BPbkNxN1V6RjhvVm9WSDEtS01aamcyd0NLVjZETERYdEh0SE96WXdLYnZMQnAycXFCTFpzdw?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "VK.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Nouveau contrat de fourniture de tubes pour un grand client pétrolier ; montant non communiqué, ampleur impossible à chiffrer.",
+     "extrait": "Vallourec remporte un contrat auprès de TotalEnergies pour développer un champ gazier en Azerbaïdjan",
+     "nom": "Vallourec"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Vallourec remporte un contrat auprès de TotalEnergies pour développer un champ gazier en Azerbaïdjan - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPdkJvbkNQcVRrSXp0RlRGYXpHMXQ4QUlPV3dzTVRZcGxwVzlVZGpOZFVqUTlyWWl1bk9mRWVLUDl1LU5iSjhzT1ZZR2ExaVpNajBUd2xHeEVRNXRTaUhfTXM5VUx6ZlZ3VGp1Vm1lZ1FNTlpGNnQwVUhwUFM5U1ZlT3pNcHZOQkFubnlJNWVLLWhiV1pqd3RCUzlKbGNNd1dyVlJqTVc2X3dtaWlVMEQ4NVpiZ1Y5R0RXdmJTR3BPbkNxN1V6RjhvVm9WSDEtS01aamcyd0NLVjZETERYdEh0SE96WXdLYnZMQnAycXFCTFpzdw?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:48:30+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Vallourec fournira des produits tubulaires pour le projet de champ gazier de TotalEnergies en Azerbaïdjan - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPelpxWmpzaHBER0pEVGVhWElYV1pibUZvcGZoOUFXU2x3UVZtS3ZpMUxISDlDeFMwcXF5N2JjM3pSWlZ2SDAtRnA0M3RWTWh3MUdRZzQ0aU5NS1VHMHNZUEdaMVhMTjBlS2JxTnF2OXVFbUpjTTI2dUxOUDRJeGRNM0ZMNHIxMU5TclRxdWZJalh0QlpnZVpieC1ibnp4TzZDZHhGbldvbHFrMjJKT0QwRksxWjZta1hia2g1cS1hcUwxNE1YdHIzQ3VWSWtOU0hJWV9DbUdOMjRybFFzR291MDlqSUw0NHJvOUJZZnJSLUNFMzA?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:46:42+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Vallourec va fournir des tubes à TotalEnergies en Azerbaïdjan - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObzQzdzNsczhuZXJQbldlQkNiM1N2R2NfMFotenRWQ0ZIWnZmekR0VUZKNEZRMGR0T3lJNFUwVDhocE1JTHp2cTlSdW9pbDJPbmtWb2k2dDNlbFZOb1VydjB4b1MtWDBxaXVLcUVGYzhXd2NONHJxUXVfa1hTNlFic25lS05QdXJKTGR6RE5PbktDT0I0S2ZQRUx0WUdvV0hCQkpaNWZkbkN3LVVobDhNWlhsc0Z5NmpLNUdGZ0N3?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:46:30+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Vallourec décroche un contrat majeur auprès de TotalEnergies - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaDQxN1B4VjliQmgycnVwWk1EQUlMQkFtamZxUC0ySGkyTVlTSTZkejVNclM4c1RicElBaVNQNll0aWZUSzlGeWluRUxlOF9FdHNPM29JWkZOV2ZxaG1HOXYxODZCYmkySVJDeU14TmtIaklNd3N3bGN2UDVWbklkRHRlY2Z6dE5aNVZPQWJHbTl5NzdqZkFGQkRjcDhzVHBVdlNCRHJHcUdMam5NenR0dDF3dl9MSUhaQnY3Y29R?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:24:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Vallourec remporte un contrat auprès de TotalEnergies pour développer un champ gazier en Azerbaïdjan - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOVXJtbEdPd0hMR1RicjBvSFdmc3Nycm5FeUxvTzI4amxLUjhTdUE1TzQ5UHBmUTh3djlxeEtFSDJRam13NjNOdTRSTzlwYUtBODdzQWlGckd4Z2duYk91RU8tdU1Xd2Z2ZUJUMXNXNFNlbXdlSkk0VDZRRmdfY1E5MjdRN2tIV0NiUjJlemhSbHRLTXZ0OVdCYzZuRVBBWXNrekQ3d1NZNC1GRW4yeVdfWnZQOEtRSnVHM2dlY21sOVhwX0toV201TVM1YWcxYVNaZmJkYWZ3VHdoNnNIczN2cFYwbW5Uem0zNVpMSDIyRWJqc095cHFmVGZPcm5YS053a3NF?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:48:00+00:00",
+     "media": "Investir Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-12",
+   "publie_a": "2026-10-12T06:18:57+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-6967c1d95b170476",
+   "date": "2026-10-12",
+   "source": "presse",
+   "titre": "Technip Energies : contrat EPC avec HPCL pour une raffinerie en Inde",
+   "resume": "Technip Energies remporte un contrat d'ingénierie, d'approvisionnement et de construction (EPC) auprès de HPCL pour une raffinerie en Inde. Montant non précisé dans les titres de presse relevés.",
+   "nouveaute": "Nouveau contrat EPC annoncé avec HPCL en Inde.",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeDU2WF81OHd2cG5FTlBjbUx1QmJnQ0NQc2tibzcwUXllOUpBWXVNdTVBb0tzd3NEY3hEaXp1d1JBMEllcGd4STVaWjhDM0g0d2MwY2tSWEZxaFNTVi1XcWE5eVpPVEx1Y1pPa2s2Z3BPY1RTdGh4SFVYUFh0MUtJRWtFOEtaUmpheEhydDJkaVB0eW9CQVN2Mmx0RmIwVzE0cHdYOEtuYkRlV1EzNVRLSUktZw?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "TE.PA",
+     "sens": "positif",
+     "ampleur": "inconnue",
+     "justification": "Commande d'ingénierie et construction qui alimente le carnet de commandes ; montant non communiqué dans les sources lues.",
+     "extrait": "Technip Energies remporte un contrat dans une raffinerie de HPCL en Inde",
+     "nom": "Technip Energies"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Technip Energies remporte un contrat dans une raffinerie de HPCL en Inde - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeDU2WF81OHd2cG5FTlBjbUx1QmJnQ0NQc2tibzcwUXllOUpBWXVNdTVBb0tzd3NEY3hEaXp1d1JBMEllcGd4STVaWjhDM0g0d2MwY2tSWEZxaFNTVi1XcWE5eVpPVEx1Y1pPa2s2Z3BPY1RTdGh4SFVYUFh0MUtJRWtFOEtaUmpheEhydDJkaVB0eW9CQVN2Mmx0RmIwVzE0cHdYOEtuYkRlV1EzNVRLSUktZw?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:32:37+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Technip Energies remporte un contrat d’ingénierie, d’approvisionnement et de construction (EPC) pour un projet de raffinerie en Inde - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPaDJCS1lJRFotT0ZIUlVxLUl2ZVpfNzlnbUZJZDdSZ1FsSG9naDdiMG5fNVZCN3UtTVMtb3ItM2QxX2tsdE82VTBqTDlWclIxMmIwQnZpOWhNREw0V3RqdjhJb2U5RWNjS28wVGFzaGVGV1otRzlJR2ZLZFY4dk9FVEZpemExRzRYMkRvVURYYWpMdHFVNWJ0NzN0b19WRGxERFJYZFdOVGJkRU0ydnNlRTBBUkU5cHVXSnVwbDNISTQ0Z2VuSmR1azRpQk9kQzUzOGRNcU1NenVjemJHTHdlTXZWYWY2QnAwUVhJ?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:46:31+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Technip Energies : un grand contrat EPC auprès de HPCL en Inde - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORXpFcGVaamFrZmZIWktwcjAzMFpfVGRXTDBmd29QUHg0M05oS3B0VENXQW51eXFHcTYza1hUcENOSElrU2hETzJBWk5NLTJ1UVhyS2oxMVJfZFlYQkg1ckxMRHl4c2hOWTVMTTVGT09mX1pobExIQ19yQjRpMENZRmJfU0NMYTcwSGRhVVNWS084T2M2bHgxZjRJMzBkMGJxT3VnUmNpSFk4czFjdjFFZmI1SlVkd2dqQ1d2OHJB?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:32:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Technip Energies choisie pour moderniser une raffinerie en Inde - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNF85MVBRUzVxTHQwdlhqMFhnbl9DRUZfSFV1SzFfN1ZWOHZYeDQ0dGhQUkwtMWlFTXY5ZmtUaWdrS1FyRXZON2xFX3Y2YkUtOTZwMFhwNDVuSTMxdms3RVNxRmxzVFQ4ZVpDXzJpVy01NzRpTkE5ZlZ0OF8tbE5uSE1ITUdMZUlvay1sUG9wa1RXMnBhNXZVcVAxZzZCNzcwQm9xMjBxTmJnNVN1U0xHeVQxS09JVDhIMzVuN3l3Tlg?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T05:29:22+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-12",
+   "publie_a": "2026-10-12T06:18:57+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "amf-169746_20261009",
+   "date": "2026-10-12",
+   "source": "amf",
+   "titre": "Medincell : la FDA approuve WELTRUZA (olanzapine injectable), royalties et jusqu'à 112 M$ d'étapes",
+   "resume": "Teva annonce l'approbation par la FDA de WELTRUZA, olanzapine injectable mensuelle basée sur la technologie BEPO de Medincell. Medincell percevra des royalties mid- à high-single digit et jusqu'à 112 M$ de paiements d'étapes (4 M$ à l'approbation). Lancement américain prévu dans les prochaines semaines ; la cotation, suspendue le matin, a repris à 14 h 45.",
+   "nouveaute": "Approbation FDA d'un deuxième produit à base de la technologie BEPO, avec royalties et paiements d'étapes chiffrés.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169746_20261009.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "MEDCL.PA",
+     "sens": "positif",
+     "ampleur": "forte",
+     "justification": "Deuxième produit approuvé sur la technologie BEPO : nouveau flux de royalties et jusqu'à 112 M$ d'étapes, pour une société de petite taille.",
+     "extrait": "Medincell percevra des royalties mid- to high-single digit sur les ventes nettes mondiales de WELTRUZA™.",
+     "nom": "MedinCell"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "MedinCell : Informations privilégiées / Autres communiqués",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169746_20261009.pdf",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T11:56:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "MedinCell : Informations privilégiées / Autres communiqués",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169752_20261009.pdf",
+     "date": "2026-10-09",
+     "publie_le": "2026-10-09T12:58:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Medincell : Stifel reste à l'achat avec un objectif de cours relevé de 36,50 à 38,50 EUR. - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa2FyZHdhZ1Nzd0pBX2RkYXYzSGRYNUt0cWlEa05EOHhPU1FGeUI1RGFuclJrbzFXdDhiWUxSX2pIb2xtQkxaTWJjSHFlVXhYVDRXMzh2X0FqanlTVmpUaWltdnREbjNrMFE2OUk2YnF3WVVORjdlZl9rUE42VWJYd1d1aXY1N2lzZWJpdXh0dy1TeFpMM0hONDlzXzlBdnlOVlpSU1o4cVV6U0l4aG12T1RlZzRrM2xXNkx2aDFremtfbXpNcWN3RGpsZWlLWHVSWW9oUnBteEZ3YVYwLThvTg?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T04:25:00+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Medincell : Evercore ISI reste à surperformance avec un objectif de cours relevé de 36 à 40 EUR. - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOdC1RNlRDSElMQ2prak1aazhyQUpJcV8xMVkyQlMyWDNZbjJRNjg2aENHWkdxb2o2NlFITHdmV1Rhc2xEdTdBODVWRjFVZW5uYWY1ZTlEUTNSZkxBX0hkNEJNcFYtbXpnY2NnYTlOOHJnZENJZTJNS0JnTEloRlJxU2ZTaHlWNjFVMkZ3QXQycmdPc1E0YURTU2JRTXptbEJPMEhzWEVGeVlLZEZCRHJ1QjFwZDBidGc0Mm1JSFNuZVJBLXBJeEU1aXI1dVVGSDVGaGF4MHFEUjdoWWNmTWxKa08waU5qbjhCcUE?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T04:14:00+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Medincell +17% : résistance majeure en vue, ces 6 actions santé ont plus de potentiel - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNa3lQSUVRWEdDa2pRWVRTd2RyUzVTMGlnRHRNVWMyTUNyVU5TTFczelJHVmxDc2tBeTE2aWpyaEJhVWQ2S3BQZlNwX2V1cy1XcFBzZUgzRm5PUGRmSXp1YUZndUtkQVFjV1NweERHa3ZwaTVhV3Y5WEc3UndiQ2RXNUdNekZzaHFwek1hUzdRM1Q3aFYzWlp6XzZfVDZGMVJ4T2Q3UnhvNnVPNE5adGNNZjQ2TWkzUF9nb3dGTlN6NWxtU3Rma2hYekgxMnh6N0xPNlFr?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T03:02:00+00:00",
+     "media": "Investing.com France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-12",
+   "publie_a": "2026-10-12T06:18:57+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
   {
    "id": "presse-634b91bf33e19cd5",
    "date": "2026-10-09",
@@ -682,11 +873,11 @@
    "date": "2026-10-07",
    "source": "presse",
    "titre": "Rumeur : plafond européen sur les hybrides chinoises évoqué, constructeurs européens concernés",
-   "resume": "Des informations de presse évoquent un plafond européen visant les voitures hybrides chinoises (l'UE a demandé à Pékin de limiter leur part vers 15 % du marché). Rien n'est confirmé officiellement.",
+   "resume": "Le plafonnement des exportations chinoises de véhicules hybrides vers l'UE n'est plus une rumeur : le commissaire européen Šefčovič annonce une « compréhension commune » avec la Chine pour réduire ces exportations de plus de moitié (accord intérimaire, texte détaillé non publié). Contrepartie : baisse de droits chinois sur des produits européens.",
    "nouveaute": "Première information sur un plafond européen visant spécifiquement les hybrides chinoises.",
    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdTh5RERPTTJKc0VxQlN0b0k3UDB5V2VrWlJ1ZEZUNWcwajNyNGN6S1hRQkNlTDZWQlRWMDdaRmQ2bVpoSy1uOUMwZDNCVXdjQXhicS1qMDBnMlVnOWdhZlBDRVJlZEFURllZU09FNVllS2xkWEd5TnZEdDVQNld5N2JLaE4ta01zMDFkcFcxb1pXbV9NQjZUbW53M2pWc0hjN3VhUkNERm1PbENVOEs0TFgybi02YU9LZlJKMUhJbFdKd1pkeGNOUmhabmtrZUw1TTZ5aURFSnlpV2Mwb0NMY0pLZ1dEY085VU9xZkh2MA?oc=5",
-   "etape": "rumeur",
-   "probabilite": 0.3,
+   "etape": "annonce",
+   "probabilite": 0.7,
    "themes": [],
    "entreprises": [
     {
@@ -717,6 +908,7 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-07",
    "publie_a": "2026-10-07T11:23:47+00:00",
+   "maj_le": "2026-10-12",
    "initial": {
     "etape": "rumeur",
     "probabilite": 0.3
