@@ -188,7 +188,7 @@ def main():
         src = ev.get("source") or ""
         if src.startswith("Assemblée nationale"):
             return "agenda"
-        return "calendrier" if src == "Yahoo Finance" else "claude"
+        return "calendrier" if src == "Yahoo Finance" or src.startswith("Estimation") else "claude"
 
     precedents = [ev for ev in publie.get("calendrier", []) if ev["date"] >= hier]
     evenements = list(analyse.get("calendrier") or [])

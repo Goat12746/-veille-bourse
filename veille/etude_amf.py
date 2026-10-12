@@ -662,7 +662,9 @@ def prochaines_dates(referentiel, resultats, calendrier, aujourd_hui):
     confirmer), sinon meme periode que l'an dernier (estimee)."""
     res = {}
     for ev in calendrier or []:
-        if ev.get("type") != "resultats" or ev["date"] < aujourd_hui:
+        # Les dates estimees du calendrier viennent d'ici (collecte.py) : recalculees.
+        if (ev.get("type") != "resultats" or ev["date"] < aujourd_hui
+                or ev.get("source", "").startswith("Estimation")):
             continue
         for t in ev.get("tickers") or []:
             if t not in res or ev["date"] < res[t]["date"]:

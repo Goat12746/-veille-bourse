@@ -594,7 +594,34 @@ def source_calendrier_yahoo(a):
         evts = sorted((ev for evs in ex.map(un, a.entreprises) for ev in evs), key=lambda e: e["date"])
     if len(echecs) == len(a.entreprises):
         raise RuntimeError(f"aucune action lue sur Yahoo : {echecs[0]}")
-    return evts
+    return sorted(evts + dates_estimees(a, evts), key=lambda e: e["date"])
+
+
+SOURCE_ESTIMEE = "Estimation (même période l'an dernier)"
+
+
+def dates_estimees(a, evts):
+    """Resultats sans date a venir chez Yahoo (souvent un chiffre d'affaires
+    trimestriel : Yahoo garde la date du semestre passe) : date estimee par
+    statistiques.json (meme periode que l'an dernier, etude_amf.py)."""
+    try:
+        with open(os.path.join(ICI, "statistiques.json"), encoding="utf-8") as f:
+            fiches = (json.load(f).get("historique_amf") or {}).get("entreprises") or []
+    except (OSError, ValueError):
+        return []
+    aujourd_hui = dt.date.today().isoformat()
+    noms = {e["ticker"]: e["nom"] for e in a.entreprises}
+    deja = {t for ev in evts if ev["type"] == "resultats" for t in ev["tickers"]}
+    res = []
+    for fiche in fiches:
+        t, p = fiche.get("ticker"), fiche.get("prochaine") or {}
+        if (t in noms and t not in deja and p.get("date", "") >= aujourd_hui
+                and p.get("source") == "même période l'an dernier"):
+            res.append({"date": p["date"], "heure": "", "type": "resultats",
+                        "titre": f"{noms[t]} : publication de résultats (date estimée d'après l'an dernier)",
+                        "tickers": [t], "themes": [], "source": SOURCE_ESTIMEE,
+                        "url": f"https://finance.yahoo.com/quote/{t}", "fiable": False})
+    return res
 
 
 def _yahoo_get(url, opener, essais=4):
