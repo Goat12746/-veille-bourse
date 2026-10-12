@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-12T06:20:09+00:00",
+ "genere_le": "2026-10-12T11:17:12+00:00",
  "derniere_seance": "2026-10-09",
  "methode": {
   "indice": "CAC 40",
@@ -13,10 +13,10 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 43,
-  "n_observations": 97,
+  "n_alertes": 44,
+  "n_observations": 98,
   "statuts": {
-   "attente": 2,
+   "attente": 3,
    "confondu": 9,
    "non_directionnel": 18,
    "note": 28,
@@ -252,6 +252,33 @@
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "amf-169766_20261012",
+    "titre": "Gecina : deux baux fermes de plus de 11 ans signés à La Défense (29 000 m²)",
+    "date": "2026-10-12",
+    "source": "amf",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-12T13:15",
+    "information": "2026-10-12T08:41",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "GFC.PA",
+      "nom": "Gecina",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "presse-6967c1d95b170476",
     "titre": "Technip Energies : contrat EPC avec HPCL pour une raffinerie en Inde",
@@ -2636,10 +2663,10 @@
   "indice": "CAC 40",
   "depuis": "2015-01-01",
   "jusqu_a": "2026-10-09",
-  "n_communiques": 25957,
+  "n_communiques": 25960,
   "n_evenements": 21132,
   "n_entreprises": 115,
-  "en_attente": 2,
+  "en_attente": 5,
   "jour_ordinaire": {
    "n": 312416,
    "z_abs_moyen": 0.67,
@@ -2958,7 +2985,7 @@
     "positive": {
      "hausse": {
       "n": 204,
-      "avant_moyen_pct": 0.36,
+      "avant_moyen_pct": 0.35,
       "ecart_moyen_pct": 3.99,
       "suite_moyenne_pct": 0.42
      },
@@ -12847,7 +12874,7 @@
        "perf_12m_pct": -2.21,
        "rendement_pct": 1.56,
        "ecart_pct": 2.19,
-       "z": 2.03,
+       "z": 2.04,
        "suite_pct": 1.83,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -21368,7 +21395,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.28,
+       "avant_pct": 1.27,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -29474,7 +29501,7 @@
        "z_avant": -0.7,
        "perf_12m_pct": 10.48,
        "rendement_pct": -4.22,
-       "ecart_pct": -4.27,
+       "ecart_pct": -4.28,
        "z": -2.76,
        "suite_pct": -0.79,
        "reaction": "baisse",
@@ -30897,7 +30924,7 @@
        "titre": "Version PDF",
        "avant_pct": 7.79,
        "z_avant": 1.47,
-       "perf_12m_pct": 19.5,
+       "perf_12m_pct": 19.51,
        "rendement_pct": -3.15,
        "ecart_pct": -2.19,
        "z": -1.86,
@@ -36833,7 +36860,7 @@
       "z_abs_moyen": 3.72,
       "part_net": 0.6,
       "part_fort": 0.6,
-      "ecart_abs_median_pct": 4.33,
+      "ecart_abs_median_pct": 4.34,
       "n_positif": 4,
       "n_negatif": 0,
       "hausse_si_positif": 0.25,
@@ -68098,7 +68125,7 @@
        "perf_12m_pct": 57.44,
        "rendement_pct": -0.74,
        "ecart_pct": 0.01,
-       "z": 0.01,
+       "z": 0.0,
        "suite_pct": -0.04,
        "reaction": "baisse",
        "courtes_pct": 0.0,
@@ -86582,7 +86609,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.84,
+       "perf_12m_pct": -2.83,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -86670,7 +86697,7 @@
     "nom": "Gecina",
     "indice": "SBF 120",
     "secteur": "Immobilier de bureaux",
-    "n_communiques": 270,
+    "n_communiques": 271,
     "n_evenements": 235,
     "categories": [
      {
@@ -88895,7 +88922,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.21,
+       "avant_pct": 4.2,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -94417,7 +94444,7 @@
        "jour": "2020-02-27",
        "periode": "annuels",
        "titre": "Ipsos Résultats annuels 2019 : une année dynamique",
-       "avant_pct": -6.67,
+       "avant_pct": -6.66,
        "z_avant": -0.79,
        "perf_12m_pct": 17.04,
        "rendement_pct": 1.58,
@@ -96117,7 +96144,7 @@
       "z_abs_moyen": 1.1,
       "part_net": 1.0,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 1.49,
+      "ecart_abs_median_pct": 1.48,
       "n_positif": 1,
       "n_negatif": 0,
       "hausse_si_positif": 1.0,
@@ -102540,7 +102567,7 @@
        "z_avant": -2.6,
        "perf_12m_pct": -28.92,
        "rendement_pct": 0.07,
-       "ecart_pct": -0.98,
+       "ecart_pct": -0.99,
        "z": -0.53,
        "suite_pct": -2.38,
        "reaction": "hausse",
@@ -103481,7 +103508,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.13,
+       "rendement_pct": 8.12,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -112951,7 +112978,7 @@
        "z_avant": 1.02,
        "perf_12m_pct": -17.87,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.59,
+       "ecart_pct": 7.6,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -113012,7 +113039,7 @@
        "avant_pct": 4.24,
        "z_avant": 0.52,
        "perf_12m_pct": -14.55,
-       "rendement_pct": 9.93,
+       "rendement_pct": 9.94,
        "ecart_pct": 9.62,
        "z": 6.09,
        "suite_pct": 3.94,
@@ -117284,7 +117311,7 @@
     "nom": "Technip Energies",
     "indice": "SBF 120",
     "secteur": "Ingénierie énergétique",
-    "n_communiques": 121,
+    "n_communiques": 122,
     "n_evenements": 94,
     "categories": [
      {
@@ -118036,7 +118063,7 @@
        "titre": "Rapports financiers et d'audit semestriels/examens réduits / Rapport financier semestriel",
        "perspectives": "relevees",
        "attentes": "superieures",
-       "avant_pct": -20.39,
+       "avant_pct": -20.4,
        "z_avant": -1.95,
        "perf_12m_pct": 3.39,
        "rendement_pct": 3.4,
@@ -120069,10 +120096,10 @@
        "titre": "Résultats annuels 2023",
        "avant_pct": 7.71,
        "z_avant": 0.97,
-       "perf_12m_pct": 7.12,
+       "perf_12m_pct": 7.13,
        "rendement_pct": 0.21,
        "ecart_pct": -0.08,
-       "z": -0.04,
+       "z": -0.05,
        "suite_pct": -2.88,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -122195,7 +122222,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122245,7 +122272,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122295,7 +122322,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122345,7 +122372,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122395,7 +122422,7 @@
        "n": 6,
        "part_hausse": 0.5,
        "ecart_moyen_pct": 0.63,
-       "suite_moyenne_pct": 1.78,
+       "suite_moyenne_pct": 1.79,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -122875,7 +122902,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.23,
+       "suite_pct": -0.22,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
@@ -123078,7 +123105,7 @@
     "nom": "Vallourec",
     "indice": "SBF 120",
     "secteur": "Tubes pour l'énergie",
-    "n_communiques": 190,
+    "n_communiques": 191,
     "n_evenements": 159,
     "categories": [
      {
@@ -126179,7 +126206,7 @@
        "periode": "trimestriels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
        "perspectives": "confirmees",
-       "avant_pct": 3.8,
+       "avant_pct": 3.79,
        "z_avant": 0.38,
        "perf_12m_pct": 5.65,
        "rendement_pct": 0.87,
@@ -130287,7 +130314,7 @@
        "jour": "2018-11-16",
        "periode": "chiffre_affaires",
        "titre": "Bonne progression du chiffre d’affaires au 3ème trimestre 2018, en hausse de 5,6 %1",
-       "avant_pct": -3.2,
+       "avant_pct": -3.21,
        "z_avant": -0.56,
        "perf_12m_pct": 1.98,
        "rendement_pct": 3.09,

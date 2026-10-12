@@ -1,6 +1,6 @@
 {
  "version": 1,
- "maj_le": "2026-10-12T06:18:57+00:00",
+ "maj_le": "2026-10-12T11:15:58+00:00",
  "alertes": [
   {
    "id": "presse-e4788772d9a409d1",
@@ -188,6 +188,58 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-12",
    "publie_a": "2026-10-12T06:18:57+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "amf-169766_20261012",
+   "date": "2026-10-12",
+   "source": "amf",
+   "titre": "Gecina : deux baux fermes de plus de 11 ans signés à La Défense (29 000 m²)",
+   "resume": "Gecina loue 100 % du Bâtiment B (21 000 m², bail ferme de 11,5 ans, effet mi-2028) à un leader international du nucléaire, et 8 000 m² d'Adamas (11 ans fermes) à l'occupant actuel du Bâtiment B. Les deux immeubles passent à 100 % d'occupation.",
+   "nouveaute": "Signature annoncée aujourd'hui de deux baux longs portant l'occupation de deux immeubles de La Défense à 100 %.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169766_20261012.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "GFC.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "29 000 m² loués sur plus de 11 ans fermes sécurisent des revenus locatifs, mais le montant des loyers n'est pas communiqué et pèse peu sur le résultat annuel.",
+     "extrait": "Gecina a signé deux nouveaux baux longs d’envergure sur ses actifs à Paris La Défense, le Bâtiment B et Adamas",
+     "nom": "Gecina"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Gecina : Informations privilégiées / Autres communiqués",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169766_20261012.pdf",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T06:41:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Gecina signe deux baux de 11,5 et 11 ans pour 29 000 m² à La Défense - Idéal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONlR2N25qNkM3N0JxWlBJQUhMVVROa09XVk1PZ1lnUHdmZ1U3OW5ZYzVIZXpsZ29zd2dodzRiVm9ISkR3VW5UZjgzU25ZaG9QdXFOM3FUOHNvRUk5eWstaHJuZVplREdZVVE4U3dpN2FldDUtUzdqM1MwOXJScURqZUVLeEx1U3N0cGVLRGRJallRcDFrOEhPRTM5TlRGQkh4Ti14d1YwbFRMOFJ4LUs0UGdlUHV5N0NOVXlIUlVIWQ?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T07:03:00+00:00",
+     "media": "Idéal Investisseur"
+    },
+    {
+     "titre": "Gecina signe deux baux longs d’envergure à La Défense - Business Wire",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE52Q0duY3hMRzNkZDFDREVQQmZHMnJ4Y1FYZjN0U0c3NUxXbFZQalZ1NW5BSTBaVjRpYmphSW1RRXN3V1VyV3lvOTF2akdRNTNnNXVRR1BqUmxJc3RpRk5UV1lxSWlsSkU?oc=5",
+     "date": "2026-10-12",
+     "publie_le": "2026-10-12T06:41:00+00:00",
+     "media": "Business Wire"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-12",
+   "publie_a": "2026-10-12T11:15:58+00:00",
    "initial": {
     "etape": "publie",
     "probabilite": 1
@@ -873,11 +925,11 @@
    "date": "2026-10-07",
    "source": "presse",
    "titre": "Rumeur : plafond européen sur les hybrides chinoises évoqué, constructeurs européens concernés",
-   "resume": "Le plafonnement des exportations chinoises de véhicules hybrides vers l'UE n'est plus une rumeur : le commissaire européen Šefčovič annonce une « compréhension commune » avec la Chine pour réduire ces exportations de plus de moitié (accord intérimaire, texte détaillé non publié). Contrepartie : baisse de droits chinois sur des produits européens.",
+   "resume": "Rumeur d'un plafond européen sur les hybrides chinoises. Le 12 octobre, Pékin dit avoir trouvé un « terrain d'entente » avec l'UE sur les exportations de voitures hybrides, sans en détailler les termes ; aucune confirmation de Bruxelles à ce stade.",
    "nouveaute": "Première information sur un plafond européen visant spécifiquement les hybrides chinoises.",
    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdTh5RERPTTJKc0VxQlN0b0k3UDB5V2VrWlJ1ZEZUNWcwajNyNGN6S1hRQkNlTDZWQlRWMDdaRmQ2bVpoSy1uOUMwZDNCVXdjQXhicS1qMDBnMlVnOWdhZlBDRVJlZEFURllZU09FNVllS2xkWEd5TnZEdDVQNld5N2JLaE4ta01zMDFkcFcxb1pXbV9NQjZUbW53M2pWc0hjN3VhUkNERm1PbENVOEs0TFgybi02YU9LZlJKMUhJbFdKd1pkeGNOUmhabmtrZUw1TTZ5aURFSnlpV2Mwb0NMY0pLZ1dEY085VU9xZkh2MA?oc=5",
    "etape": "annonce",
-   "probabilite": 0.7,
+   "probabilite": 0.6,
    "themes": [],
    "entreprises": [
     {
