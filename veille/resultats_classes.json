@@ -6127,6 +6127,7 @@
   "169254_20260903": {"type":"resultats","sens":"negatif","activite":"-","rentabilite":"-","perspectives":null,"attentes":null,"exceptionnel":true,"actionnaires":false,"par":"claude","le":"2026-10-01"},
   "131488_20260908": {"type":"resultats","sens":"positif","activite":"+","rentabilite":"+","perspectives":"relevees","attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
   "083140_20260909": {"type":"resultats","sens":"negatif","activite":"-","rentabilite":"-","perspectives":null,"attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
+  "083141_20260909": {"type":"autre","par":"claude","le":"2026-10-13"},
   "133069_20260916": {"type":"resultats","sens":"mitige","activite":"+","rentabilite":"-","perspectives":null,"attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
   "113291_20260917": {"type":"resultats","sens":"positif","activite":"+","rentabilite":"+","perspectives":"relevees","attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
   "133296_20260917": {"type":"resultats","sens":"mitige","activite":"+","rentabilite":"-","perspectives":"abaissees","attentes":null,"exceptionnel":false,"actionnaires":false,"par":"claude","le":"2026-10-01"},
@@ -6147,6 +6148,7 @@
   "136402_20261006": {"type":"autre","par":"claude","le":"2026-10-06"},
   "083386_20261007": {"type":"autre","par":"claude","le":"2026-10-08"},
   "083388_20261007": {"type":"revision","sens":"negatif","periode":"2026","perspectives":"abaissees","attentes":null,"consensus":null,"consensus_raison":null,"exceptionnel":false,"actionnaires":false,"objectifs":{"periode":"2026","texte":"marge opérationnelle 430-450 M€, cash-flow libre > 220 M€","vs_consensus":null},"par":"claude","le":"2026-10-08"},
-  "136594_20261007": {"type":"autre","par":"claude","le":"2026-10-07"}
+  "136594_20261007": {"type":"autre","par":"claude","le":"2026-10-07"},
+  "137556_20261012": {"type":"resultats","periode":"T3 2026","perspectives":null,"attentes":null,"consensus":"inferieur","consensus_raison":"Pas de consensus chiffré disponible ; la presse du matin parle d'une déception (Mode & Maroquinerie -5 % en organique au T3, groupe +1 %).","exceptionnel":false,"actionnaires":false,"chiffres":{"devise":"EUR","ca":57148},"par":"claude","le":"2026-10-13"}
  }
 }
