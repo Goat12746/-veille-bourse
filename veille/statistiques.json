@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-13T06:20:13+00:00",
+ "genere_le": "2026-10-13T11:17:33+00:00",
  "derniere_seance": "2026-10-12",
  "methode": {
   "indice": "CAC 40",
@@ -13,10 +13,10 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 48,
-  "n_observations": 102,
+  "n_alertes": 50,
+  "n_observations": 106,
   "statuts": {
-   "attente": 3,
+   "attente": 7,
    "donnees": 4,
    "confondu": 9,
    "non_directionnel": 18,
@@ -253,6 +253,74 @@
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "presse-8763a987dc97cf1b",
+    "titre": "LVMH : ventes du T3 sous les attentes, Mode et Maroquinerie en recul de 5 % organique",
+    "date": "2026-10-13",
+    "source": "presse",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-13T13:16",
+    "information": "2026-10-13T08:45",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 3,
+    "observations": [
+     {
+      "ticker": "MC.PA",
+      "nom": "LVMH",
+      "sens": "negatif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     },
+     {
+      "ticker": "KER.PA",
+      "nom": "Kering",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "statut": "attente"
+     },
+     {
+      "ticker": "RMS.PA",
+      "nom": "Hermès",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-5547687a4fceedbf",
+    "titre": "Stellantis : livraisons consolidées en baisse de 1 % au T3, électriques en hausse en Europe",
+    "date": "2026-10-13",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-13T13:16",
+    "information": "2026-10-13T08:21",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "STLAP.PA",
+      "nom": "Stellantis",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "presse-a1ae938464952fa0",
     "titre": "Publicis : croissance organique de 5 % au T3, perspectives 2026 confirmées",
@@ -2772,10 +2840,10 @@
   "indice": "CAC 40",
   "depuis": "2015-01-01",
   "jusqu_a": "2026-10-12",
-  "n_communiques": 25966,
+  "n_communiques": 25969,
   "n_evenements": 21132,
   "n_entreprises": 115,
-  "en_attente": 3,
+  "en_attente": 6,
   "jour_ordinaire": {
    "n": 312416,
    "z_abs_moyen": 0.67,
@@ -3094,7 +3162,7 @@
     "positive": {
      "hausse": {
       "n": 204,
-      "avant_moyen_pct": 0.36,
+      "avant_moyen_pct": 0.35,
       "ecart_moyen_pct": 3.99,
       "suite_moyenne_pct": 0.42
      },
@@ -16237,7 +16305,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.5,
       "p": 1.0,
-      "ecart_moyen_positif_pct": -0.01,
+      "ecart_moyen_positif_pct": -0.0,
       "ecart_moyen_negatif_pct": null,
       "id": "autre"
      }
@@ -19525,7 +19593,7 @@
     "nom": "Engie",
     "indice": "CAC 40",
     "secteur": "Énergie",
-    "n_communiques": 252,
+    "n_communiques": 253,
     "n_evenements": 185,
     "categories": [
      {
@@ -21504,7 +21572,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.27,
+       "avant_pct": 1.28,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -27002,7 +27070,7 @@
        "titre": "Kering : Résultats semestriels 2023",
        "avant_pct": 5.84,
        "z_avant": 1.15,
-       "perf_12m_pct": -14.02,
+       "perf_12m_pct": -14.03,
        "rendement_pct": -1.15,
        "ecart_pct": -1.27,
        "z": -1.13,
@@ -28617,7 +28685,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.63,
+       "suite_pct": -2.64,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -29958,7 +30026,7 @@
        "z_avant": -0.16,
        "perf_12m_pct": 9.7,
        "rendement_pct": 4.14,
-       "ecart_pct": 3.57,
+       "ecart_pct": 3.56,
        "z": 3.62,
        "suite_pct": 1.41,
        "reaction": "hausse",
@@ -31033,7 +31101,7 @@
        "titre": "Version PDF",
        "avant_pct": 7.79,
        "z_avant": 1.47,
-       "perf_12m_pct": 19.51,
+       "perf_12m_pct": 19.5,
        "rendement_pct": -3.15,
        "ecart_pct": -2.19,
        "z": -1.86,
@@ -32874,7 +32942,7 @@
        "titre": "Orange Résultats financiers au 31 décembre 2018",
        "attentes": "conformes",
        "avant_pct": -2.52,
-       "z_avant": -0.67,
+       "z_avant": -0.68,
        "perf_12m_pct": 5.17,
        "rendement_pct": 0.0,
        "ecart_pct": -0.03,
@@ -34337,7 +34405,7 @@
     "nom": "Publicis",
     "indice": "CAC 40",
     "secteur": "Publicité",
-    "n_communiques": 258,
+    "n_communiques": 259,
     "n_evenements": 223,
     "categories": [
      {
@@ -37726,7 +37794,7 @@
        "z_avant": 0.0,
        "perf_12m_pct": -20.17,
        "rendement_pct": 3.9,
-       "ecart_pct": 7.69,
+       "ecart_pct": 7.7,
        "z": 3.14,
        "suite_pct": 3.63,
        "reaction": "hausse",
@@ -43334,7 +43402,7 @@
     "nom": "STMicroelectronics",
     "indice": "CAC 40",
     "secteur": "Semi-conducteurs",
-    "n_communiques": 489,
+    "n_communiques": 490,
     "n_evenements": 428,
     "categories": [
      {
@@ -43867,7 +43935,7 @@
        "z_avant": -0.19,
        "perf_12m_pct": -12.41,
        "rendement_pct": -14.12,
-       "ecart_pct": -14.41,
+       "ecart_pct": -14.42,
        "z": -5.76,
        "suite_pct": -1.26,
        "reaction": "baisse",
@@ -58994,7 +59062,7 @@
        "avant_pct": -1.44,
        "z_avant": -0.17,
        "perf_12m_pct": 8.03,
-       "rendement_pct": 16.16,
+       "rendement_pct": 16.17,
        "ecart_pct": 15.58,
        "z": 7.83,
        "suite_pct": -11.67,
@@ -76677,7 +76745,7 @@
        "avant_pct": 9.08,
        "z_avant": 1.63,
        "perf_12m_pct": -11.8,
-       "rendement_pct": -2.05,
+       "rendement_pct": -2.04,
        "ecart_pct": -2.86,
        "z": -2.18,
        "suite_pct": 4.67,
@@ -78650,7 +78718,7 @@
        "actionnaires": true,
        "avant_pct": -6.95,
        "z_avant": -1.09,
-       "perf_12m_pct": 19.01,
+       "perf_12m_pct": 19.02,
        "rendement_pct": -4.57,
        "ecart_pct": -5.18,
        "z": -3.66,
@@ -86743,7 +86811,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.83,
+       "perf_12m_pct": -2.84,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -89056,7 +89124,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.2,
+       "avant_pct": 4.21,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -91951,7 +92019,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.28,
+       "suite_pct": 1.29,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -92233,7 +92301,7 @@
        "perf_12m_pct": -30.65,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.55,
+       "z": 1.56,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -92438,7 +92506,7 @@
        "jour": "2015-02-13",
        "periode": "autres",
        "titre": "Une nouvelle progression des résultats en 2014 et des objectifs de croissance du résultat courant net tenus",
-       "avant_pct": 0.68,
+       "avant_pct": 0.69,
        "z_avant": 0.14,
        "perf_12m_pct": -5.35,
        "rendement_pct": 2.46,
@@ -94578,7 +94646,7 @@
        "jour": "2020-02-27",
        "periode": "annuels",
        "titre": "Ipsos Résultats annuels 2019 : une année dynamique",
-       "avant_pct": -6.67,
+       "avant_pct": -6.66,
        "z_avant": -0.79,
        "perf_12m_pct": 17.04,
        "rendement_pct": 1.58,
@@ -96278,7 +96346,7 @@
       "z_abs_moyen": 1.1,
       "part_net": 1.0,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 1.49,
+      "ecart_abs_median_pct": 1.48,
       "n_positif": 1,
       "n_negatif": 0,
       "hausse_si_positif": 1.0,
@@ -99297,7 +99365,7 @@
        "jour": "2022-03-18",
        "periode": "annuels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 28.36,
+       "avant_pct": 28.37,
        "z_avant": 2.73,
        "perf_12m_pct": 57.06,
        "rendement_pct": 1.64,
@@ -101527,7 +101595,7 @@
        "periode": "autres",
        "titre": "Activité à fin septembre 2015",
        "perspectives": "confirmees",
-       "avant_pct": 3.62,
+       "avant_pct": 3.63,
        "z_avant": 0.72,
        "perf_12m_pct": 10.78,
        "rendement_pct": 0.1,
@@ -103642,7 +103710,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.12,
+       "rendement_pct": 8.13,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -113112,7 +113180,7 @@
        "z_avant": 1.02,
        "perf_12m_pct": -17.87,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.6,
+       "ecart_pct": 7.59,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -118197,7 +118265,7 @@
        "titre": "Rapports financiers et d'audit semestriels/examens réduits / Rapport financier semestriel",
        "perspectives": "relevees",
        "attentes": "superieures",
-       "avant_pct": -20.39,
+       "avant_pct": -20.4,
        "z_avant": -1.95,
        "perf_12m_pct": 3.39,
        "rendement_pct": 3.4,
@@ -120230,7 +120298,7 @@
        "titre": "Résultats annuels 2023",
        "avant_pct": 7.71,
        "z_avant": 0.97,
-       "perf_12m_pct": 7.12,
+       "perf_12m_pct": 7.13,
        "rendement_pct": 0.21,
        "ecart_pct": -0.08,
        "z": -0.04,
@@ -122356,7 +122424,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122406,7 +122474,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122456,7 +122524,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122506,7 +122574,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -122556,7 +122624,7 @@
        "n": 6,
        "part_hausse": 0.5,
        "ecart_moyen_pct": 0.63,
-       "suite_moyenne_pct": 1.78,
+       "suite_moyenne_pct": 1.79,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -123036,7 +123104,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.23,
+       "suite_pct": -0.22,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
@@ -130448,7 +130516,7 @@
        "jour": "2018-11-16",
        "periode": "chiffre_affaires",
        "titre": "Bonne progression du chiffre d’affaires au 3ème trimestre 2018, en hausse de 5,6 %1",
-       "avant_pct": -3.21,
+       "avant_pct": -3.2,
        "z_avant": -0.56,
        "perf_12m_pct": 1.98,
        "rendement_pct": 3.09,
@@ -135006,6 +135074,67 @@
    "z_abs_lendemain": 1.15
   },
   "publications_recentes": [
+   {
+    "id": "137636_20261013",
+    "ticker": "PUB.PA",
+    "nom": "Publicis",
+    "publie_le": "2026-10-13T05:30:11+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW137636_20261013.pdf",
+    "titre": "Publicis Groupe : Revenu du troisième trimestre 2026",
+    "type_periode": "trimestriels",
+    "perf_12m_pct": 22.73,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      3752.0,
+      2
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "consensus": "conforme",
+    "consensus_raison": "Revenu net 3 808 M€ contre 3 752 M€ attendus (+1,5 %) : légèrement au-dessus, écart sous le seuil net du chiffre d'affaires ; BPA non publié.",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "croissance organique +4,5 % à +5 %, marge légèrement supérieure à 18,2 %, free cash flow environ 2,2 Md€"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 3808
+    },
+    "ecarts": {
+     "ca_pct": 1.49
+    },
+    "position_source": "claude",
+    "surprise": "conforme",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 43 publications passées",
+       "p": 0.667,
+       "n": 43
+      },
+      {
+       "libelle": "Conforme au consensus (tout le marché ; secteur Communication : 14 cas)",
+       "p": 0.617,
+       "n": 273
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.593,
+       "n": 61
+      },
+      {
+       "libelle": "Conforme au consensus après forte hausse sur 12 mois (+23 % face à l'indice)",
+       "p": 0.601,
+       "n": 49
+      }
+     ],
+     "p_hausse": 0.601
+    }
+   },
    {
     "id": "137556_20261012",
     "ticker": "MC.PA",

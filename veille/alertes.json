@@ -1,20 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-13T06:18:50+00:00",
+ "genere_le": "2026-10-13T11:16:06+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 9,
-   "nouveaux": 6
+   "trouves": 12,
+   "nouveaux": 3
   },
   "presse": {
    "ok": true,
-   "trouves": 345,
-   "nouveaux": 230
+   "trouves": 302,
+   "nouveaux": 145
   },
   "assemblee": {
-   "ok": false,
-   "erreur": "IncompleteRead(325471742 bytes read, 1940536 more expected)"
+   "ok": true,
+   "trouves": 55,
+   "nouveaux": 2
   },
   "agenda": {
    "ok": true,
@@ -252,6 +253,125 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-13",
    "publie_a": "2026-10-13T06:18:50+00:00"
+  },
+  {
+   "id": "presse-8763a987dc97cf1b",
+   "date": "2026-10-13",
+   "source": "presse",
+   "titre": "LVMH : ventes du T3 sous les attentes, Mode et Maroquinerie en recul de 5 % organique",
+   "resume": "LVMH publie 18,5 Md€ de ventes au T3 (+1 % organique, consensus +1,3 %). Mode et Maroquinerie (Louis Vuitton, Dior) recule de 5 % en organique contre environ -1,8 % attendu, la Chine pesant.",
+   "nouveaute": "Chiffres officiels du T3 publiés le 12/10 au soir : Mode et Maroquinerie nettement sous le consensus, reprise du T2 non confirmée.",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPODNJQWJVazhlaHlvNUhHN3B4Nmk2MEg5b0l2a0l1UHdRejVWeC1rcE9CRU4wUEpmcUhjZ0pwN2JpRGtyRzlrUTBweThYMXdtdWxDU1E4RnZDakRlZ2Y4SmdYRDR5ZlVnRnFyeE1OdnNyVlpzZFZJd0htSnF1bjdlU055X0RJV1ZWNkhlaDZBeF9pcV91a3hpTWh6QXAyRW9RZm5TWW9NcTc4ck9iV2VuM29fa2UwRVFqQU1QaWFQcTVxYU5UblRZdjN6cC1BUEhoLVdsbG54VGdGWEdZQ0xqRUZEdjd1MkFw0gHuAUFVX3lxTE5LMFdfMzFFUHVtWGl1MDZPcVZ5SnRJX0piekdvZlNUNDJSSWoxRThneHdvR2dMV04tWGVrNERjMFNsT1EzbDF5aTNPNGEyUE5PdWMteFB4RXctZUhkRnlFMlhYdnVUelZ4NGg4SlExMFlsenM2QVhsRTVxbFNWdlZlZVlNTUIzR2FSVFhjdmkySVlpUDBvZWZBZEY5YjV1aDh1SnptR2R1SWM2bHoyM2lTMVZfOTFmdmhVQnFYVkgtMmhXRC04dTI1NHBvSlBkU2NuWkZ1dGxoR1pTdDJYSloyNkFnaHpWQzNOcWNTaGc?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "MC.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Division qui pèse près de la moitié des ventes à -5 % organique face à -1,8 % attendu ; ventes du groupe légèrement sous le consensus.",
+     "extrait": "",
+     "nom": "LVMH"
+    },
+    {
+     "ticker": "KER.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Même segment du luxe : la demande en Chine moins porteuse peut concerner d'autres maisons, sans chiffre propre à Kering.",
+     "extrait": "",
+     "nom": "Kering"
+    },
+    {
+     "ticker": "RMS.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Même segment du luxe : lecture sectorielle des ventes de LVMH, sans chiffre propre à Hermès.",
+     "extrait": "",
+     "nom": "Hermès"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "LVMH: Les ventes au T3 ravivent les doutes sur la reprise du secteur du luxe - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPODNJQWJVazhlaHlvNUhHN3B4Nmk2MEg5b0l2a0l1UHdRejVWeC1rcE9CRU4wUEpmcUhjZ0pwN2JpRGtyRzlrUTBweThYMXdtdWxDU1E4RnZDakRlZ2Y4SmdYRDR5ZlVnRnFyeE1OdnNyVlpzZFZJd0htSnF1bjdlU055X0RJV1ZWNkhlaDZBeF9pcV91a3hpTWh6QXAyRW9RZm5TWW9NcTc4ck9iV2VuM29fa2UwRVFqQU1QaWFQcTVxYU5UblRZdjN6cC1BUEhoLVdsbG54VGdGWEdZQ0xqRUZEdjd1MkFw0gHuAUFVX3lxTE5LMFdfMzFFUHVtWGl1MDZPcVZ5SnRJX0piekdvZlNUNDJSSWoxRThneHdvR2dMV04tWGVrNERjMFNsT1EzbDF5aTNPNGEyUE5PdWMteFB4RXctZUhkRnlFMlhYdnVUelZ4NGg4SlExMFlsenM2QVhsRTVxbFNWdlZlZVlNTUIzR2FSVFhjdmkySVlpUDBvZWZBZEY5YjV1aDh1SnptR2R1SWM2bHoyM2lTMVZfOTFmdmhVQnFYVkgtMmhXRC04dTI1NHBvSlBkU2NuWkZ1dGxoR1pTdDJYSloyNkFnaHpWQzNOcWNTaGc?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T10:42:33+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "L'action LVMH casse son support à 379,50 € et signe un plus bas de six ans après ses ventes du 3e trimestre - Idéal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZ2tNUVdSUXE0d0FDRGpqcFNjOG9yVllnaFJnRzJjS1oxSjhFdVV5TnRhT1Z0WnlkSW9DYVl2elk2RzNFTW96UE1DWnFsWWphb2JVRF9KMnZGQTUwY2NUaVkza0xhYTctR29WcFVaQURnNy1PRjJaaXpWckJQS0lxTml5R2hoTU1TS1ZWc3JrYzlselJIOVpOSUQzWjRmOEs5OW0zTmt2YVNjLU55SXNMNVV6S2hOVmhEWDJQZlJodWpwMmY3Q3Z2S3FqbGI0endKSUZWT3FvczhETVVqWGZEN2dVQ0hRbWhoOElCaU1NZw?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T10:11:00+00:00",
+     "media": "Idéal Investisseur"
+    },
+    {
+     "titre": "LVMH : Opinion positive de Deutsche Bank - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcWVIUmxoLUdPRHl6ejBwN0FpOEZ2Zmc0TU9aMG9mem8weGtyTlFSU1NqeDlFR1hzd0xfX3hIaEY4NV9vYkE3U2RVRlFjSnBtUGZ1NElFaFZ5UEN1eXMxaFU4TExGUU1ka0xsa21Ba21rUldSWEl3eUl2TElWZERqZnBIeHNhWU11dHU0YlBDSHliYjdRRUpldmoyaXFqcVMw?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T09:59:33+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "LVMH : UBS toujours positif - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWl9fTzE4aGFDWjB4VWh2MktvUF9UM2hOd081ZnRQbXFnR0JhbjlNVHlrbmdIa244NGctSS1kd2pmMWU1T0kwb1NCNWpJSlM2SVlzWmRxYXNINEgycHdXTUpRcVRsaTh5ZEZpOWlLZWV6VFVmeU1zUnFzY0hMVmp6UUFSaXFoUXRSbURLS0NyZw?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T09:58:22+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Avis d'analystes France : ça s'agite fort sur LVMH - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTmJLTWgySFNjVm9rYzhZTjgyVFpTZE5vM0NDcmFxNUdvdmVzalFEQmJLYXpnYTFlMkJvZWJhMnlwbnhmYzdFTzZVVWpkQzd2QVhvVVhURUdJZ21TdnVCNnYwU2pwUDQ3STRabXg0YVFQT1BlZ1pUY2I4WnVEQWFjQ3hXbFBYNmVVNmo2R282M0RnSlAxWkkzQ09NbUE1YkNyeVZZZnhtUVJVZlVYTUlvZlpfV01NSGlBZjM3ekY0NTltLWRQdWFlN2l30gHKAUFVX3lxTFBOYktNaDJIU2NWb2tjOFlOODJUWlNkTm8zQ0NyYXE1R292ZXNqUURCYkthemdhMWUyQm9lYmEyeXBueGZjN0VPNlVVamRDN3ZBWG9VWFRFR0lnbVN2dUI2djBTanBQNDdJNFpteDRhUVBPUGVnWlRjYjhadURBYWNDeFdsUFg2ZVU2ajZHbzYzRGdKUDFaSTNDT01tQTViQ3J5VllmeG1RUlVmVVhNSW9mWl9XTU1IaUFmMzd6RjQ1OW0tZFB1YWU3aXc?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T06:45:00+00:00",
+     "media": "Boursorama"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-13",
+   "publie_a": "2026-10-13T11:16:06+00:00"
+  },
+  {
+   "id": "presse-5547687a4fceedbf",
+   "date": "2026-10-13",
+   "source": "presse",
+   "titre": "Stellantis : livraisons consolidées en baisse de 1 % au T3, électriques en hausse en Europe",
+   "resume": "Les facturations consolidées de Stellantis reculent de 1 % sur un an au troisième trimestre, les véhicules électriques progressant en Europe.",
+   "nouveaute": "Premier chiffre officiel de volumes du T3, après +10 % au T2.",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTERXX2tfSnFOSkRqbWdWQ1E4SUhWOXlOXzJ1MlJ1Z1FzRlFmTU44WVQxQTFfM3pibnEtNUhOWF93QzludkM4enR5TGpETHFva0dkUHJMSDVYbEQyNGZYcjlMdDJRWDdpX2pRWFRwdjRoZVpNUjdjTW1SS0ZCSmtKUnZBZjN1Z1AtNUNEQXdvMHM1ZmdQbkVJRUZxN3VGVHJpY1VfdzRBOXJ2M2VHdmZJcHpCOXF2aE94N213c3FkbThBN2VheDFKNEFBejhFSTdIblRGV2tCVEI2T1NwRG9LRXR3?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "STLAP.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Volumes légèrement en baisse après un T2 en hausse de 10 % : ralentissement sans ampleur chiffrée sur le résultat.",
+     "extrait": "",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Stellantis-Les livraisons baissent de 1% au T3, les BEV progressent en Europe - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTERXX2tfSnFOSkRqbWdWQ1E4SUhWOXlOXzJ1MlJ1Z1FzRlFmTU44WVQxQTFfM3pibnEtNUhOWF93QzludkM4enR5TGpETHFva0dkUHJMSDVYbEQyNGZYcjlMdDJRWDdpX2pRWFRwdjRoZVpNUjdjTW1SS0ZCSmtKUnZBZjN1Z1AtNUNEQXdvMHM1ZmdQbkVJRUZxN3VGVHJpY1VfdzRBOXJ2M2VHdmZJcHpCOXF2aE94N213c3FkbThBN2VheDFKNEFBejhFSTdIblRGV2tCVEI2T1NwRG9LRXR3?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T06:30:07+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Stellantis : les facturations consolidées ont diminué de 1% sur un an au troisième trimestre - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcUFPNmRYMUNBSlUtb1dVczFYX3Q4Mi11ZFppd1F1ZnJKM2NLdlBmTFoyQ1pweEJYVC1aWmc3cFNTRlFwY0QyakxPQjBvSlZtNzd1X2NFVWIxcTd6NVA0bU9HT1JxbXo3VkJ0Y282cXFoQy14LWRlc20tbnNGdDZ0bm1NZXU2Mnh6ZXJFb3k5UzZMRVdIa0JqMlB3bzhMREtndGpsY3d3cFJwZzFSZVU3X1BBcjA2c1V2N3gyY0RkN3VrZUpYUDU3QzRkdlo4LWszMUw2WThXWkZVT3ZiVllCSmROM1VfSElpZ041RHNYbkNJUU9a?oc=5",
+     "date": "2026-10-13",
+     "publie_le": "2026-10-13T06:21:00+00:00",
+     "media": "Investir Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-13",
+   "publie_a": "2026-10-13T11:16:06+00:00"
   },
   {
    "id": "presse-e4788772d9a409d1",
