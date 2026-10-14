@@ -1,29 +1,29 @@
 {
  "version": 1,
- "genere_le": "2026-10-13T11:16:06+00:00",
+ "genere_le": "2026-10-14T06:19:05+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 12,
-   "nouveaux": 3
+   "trouves": 13,
+   "nouveaux": 2
   },
   "presse": {
    "ok": true,
-   "trouves": 302,
-   "nouveaux": 145
+   "trouves": 386,
+   "nouveaux": 240
   },
   "assemblee": {
    "ok": true,
-   "trouves": 55,
-   "nouveaux": 2
+   "trouves": 79,
+   "nouveaux": 8
   },
   "agenda": {
    "ok": true,
-   "trouves": 4
+   "trouves": 3
   },
   "calendrier": {
    "ok": true,
-   "trouves": 117
+   "trouves": 113
   }
  },
  "alertes": [
@@ -2629,155 +2629,6 @@
   }
  ],
  "calendrier": [
-  {
-   "date": "2026-10-13",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Crédit Agricole : détachement du dividende",
-   "tickers": [
-    "ACA.PA"
-   ],
-   "tickers_mots_cles": [
-    "ACA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/ACA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "",
-   "type": "dividende",
-   "titre": "Vinci : détachement du dividende",
-   "tickers": [
-    "DG.PA"
-   ],
-   "tickers_mots_cles": [
-    "DG.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/DG.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "",
-   "type": "dividende",
-   "titre": "SES S.A. : détachement du dividende",
-   "tickers": [
-    "SESG.PA"
-   ],
-   "tickers_mots_cles": [
-    "SESG.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/SESG.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Publicis : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "PUB.PA"
-   ],
-   "tickers_mots_cles": [
-    "PUB.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/PUB.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-13",
-   "heure": "15:00",
-   "type": "budget",
-   "titre": "Discussion du projet de loi de finances pour 2027 (première partie)",
-   "tickers": [
-    "DG.PA",
-    "FGR.PA",
-    "ADP.PA",
-    "ALO.PA",
-    "AC.PA",
-    "AI.PA",
-    "AIR.PA",
-    "MT.AS",
-    "CS.PA",
-    "BNP.PA",
-    "EN.PA",
-    "BVI.PA",
-    "CAP.PA",
-    "CA.PA",
-    "ACA.PA",
-    "BN.PA",
-    "DSY.PA",
-    "ENGI.PA",
-    "EDEN.PA",
-    "EL.PA",
-    "ERF.PA",
-    "RMS.PA",
-    "KER.PA",
-    "OR.PA",
-    "LR.PA",
-    "MC.PA",
-    "ML.PA",
-    "ORA.PA",
-    "RI.PA",
-    "PUB.PA",
-    "RNO.PA",
-    "SAF.PA",
-    "SGO.PA",
-    "SAN.PA",
-    "SU.PA",
-    "GLE.PA",
-    "STLAP.PA",
-    "STMPA.PA",
-    "TEP.PA",
-    "HO.PA",
-    "TTE.PA",
-    "URW.PA",
-    "VIE.PA"
-   ],
-   "tickers_mots_cles": [],
-   "themes": [],
-   "texte": "PLF 2027",
-   "mesures": [
-    {
-     "alerte_id": "presse-181a5dc8f47983e9",
-     "titre": "Budget 2027 : la taxe sur les autoroutes et aéroports portée jusqu'à 12,2 %",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-ddc4c15adc3d7a4f",
-     "titre": "Budget 2027 : la surtaxe d'impôt des grandes entreprises réduite",
-     "etape": "annonce",
-     "article": ""
-    },
-    {
-     "alerte_id": "presse-48e3a90f692a8e29",
-     "titre": "Budget 2027 : hausse des taxes sur les contrats d'assurance",
-     "etape": "annonce",
-     "article": ""
-    }
-   ],
-   "source": "Assemblée nationale — Séance publique",
-   "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas/2026-10-13#odj-OMC_RUANR5L17S2027IDS30940",
-   "fiable": true
-  },
   {
    "date": "2026-10-14",
    "heure": "",
