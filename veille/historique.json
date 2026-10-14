@@ -1,7 +1,230 @@
 {
  "version": 1,
- "maj_le": "2026-10-14T06:19:05+00:00",
+ "maj_le": "2026-10-14T11:16:47+00:00",
  "alertes": [
+  {
+   "id": "presse-684191141e46ac7a",
+   "date": "2026-10-14",
+   "source": "presse",
+   "titre": "Sanofi : Bruxelles n'infligera pas d'amende dans l'enquête sur les vaccins antigrippaux",
+   "resume": "Selon la presse, Sanofi échappe à une sanction de la Commission européenne dans l'enquête sur le dénigrement présumé d'un vaccin concurrent, en contrepartie d'engagements à corriger ses messages. L'amende encourue pouvait atteindre 10 % du chiffre d'affaires.",
+   "nouveaute": "Issue de l'enquête européenne : pas d'amende, contre engagements de Sanofi.",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNN0c0UjVxLTlSNVpkbzlaSFJSZ3JIOWktUjJ0YkE3VkFlLVFNSFVkZkJkd1VwNHp2SExIZk9pc3RxSVFkMndGTVBMTnV0RC0xZXlFVm1mX2Y0WHJPR0FoTkVETTZuREswSlFORHJmZ1Jzd3NqSHpuMEZLQkVLYXRzZjlKaEE3Vk5MLXF4UE1RQUpwNUJLSzE5VzRBYWNYZzVzMW9TNjRrempoSWY2?oc=5",
+   "etape": "information",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SAN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Un risque d'amende pour abus de position dominante est écarté ; les engagements limitent la communication sur ses vaccins antigrippaux, sans effet chiffré connu sur les ventes.",
+     "extrait": "Sanofi évite une amende de l'UE",
+     "nom": "Sanofi"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Sanofi évite une amende de l'UE : le laboratoire échappe à une sanction pouvant atteindre 10 % de son chiffre d'affaires - Le Revenu",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNN0c0UjVxLTlSNVpkbzlaSFJSZ3JIOWktUjJ0YkE3VkFlLVFNSFVkZkJkd1VwNHp2SExIZk9pc3RxSVFkMndGTVBMTnV0RC0xZXlFVm1mX2Y0WHJPR0FoTkVETTZuREswSlFORHJmZ1Jzd3NqSHpuMEZLQkVLYXRzZjlKaEE3Vk5MLXF4UE1RQUpwNUJLSzE5VzRBYWNYZzVzMW9TNjRrempoSWY2?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T10:22:00+00:00",
+     "media": "Le Revenu"
+    },
+    {
+     "titre": "Vaccins antigrippaux : Sanofi échappe à l'amende mais plie face à l'Europe - Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRC1mMEhQQkw1VXVzd3F3aTg1R2RTV1VRdDAtaERMenMxR1lWb1R1bE94WnNCNFNVOTRfYkdjNXpscFFleHpxNmk4YnFzMzJLaXdpUGphcEktMGoxZGdwbVJQMC10RDhBdWJZVXRnZjlGa2hPYTNpdy1WMHBOUm4tbDRZc2ZIc1pYM2RQNW1sbHZXa25jUHRPNHpCUE9fWmxtcmdNc0xQYnRLM3VFekxjenVZYkwyN1ZiZXowU2QzekQ5LTFVTFBXXzJjcWFIeG9zdGhF?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T10:00:23+00:00",
+     "media": "Les Echos"
+    },
+    {
+     "titre": "Sanofi évite l’amende en promettant de corriger ses messages sur le vaccin rival - Le Singulier",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMEpjQTM0UlphT2l4ZGZvQmNNNUEtXzFwUWpXcnMxMFAtRm9JeVc5UzRyTmN6UjlXQUk0RWVacmNiNGdfd2hyYW1vWERSVXNBNlRPdkxmTVJrUzN3bHFsWDJISGJ4WENTNjNEYUNfTDAyUUdINmZXXzdwZDJsMC1EWWNpN1ZzZHdYVGU3MWhOY0VBNlQxMVJad3pVYm9kSHpyVnlzT2VzWUhtc2c?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T09:19:45+00:00",
+     "media": "Le Singulier"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-14",
+   "publie_a": "2026-10-14T11:16:47+00:00",
+   "initial": {
+    "etape": "information",
+    "probabilite": 0.9
+   }
+  },
+  {
+   "id": "presse-5fbcef8b584d7e90",
+   "date": "2026-10-14",
+   "source": "presse",
+   "titre": "Ubisoft : fermeture du studio RedLynx et 70 suppressions de postes sur Skull and Bones",
+   "resume": "Ubisoft ferme RedLynx (Trials) et supprime environ 70 postes dans les équipes de Skull and Bones, avec des licenciements à Singapour, d'après la presse spécialisée.",
+   "nouveaute": "Annonce de la fermeture de RedLynx et des licenciements, non connue la veille.",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSzNHWTVONnRsd3k4OTVsdGMxQTdZbHIyZzdVdTJ3cVM4WlNRMUM4YXVVdTl4X0pUeWcwQU83aXVnd0Z1N0pQYUYyUjVXdHd5dUIwMlR0aFQzZVN1Ml91R0Uxcko1MllEWlJXU25QZWdRZjhLa0VqUkxZakhVRldCWjhMMXdTVjdxZ09xQ29yVlBBMlJPR1RkWjRHQVF3UXFuaGExbWZreFJKSlBXV09scFFFTnB3SndlckpDdzNSMmNaS1EweGxMSkVkM0NiSlY1ckF6bzd2dVFBUlU?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "UBI.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Économies de coûts attendues mais effectifs concernés limités (quelques dizaines de postes), coûts de restructuration inconnus.",
+     "extrait": "Ubisoft licencie 70 employés au sein des équipes de Skull and Bones et ferme le studio RedLynx",
+     "nom": "Ubisoft"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Ubisoft licencie 70 employés au sein des équipes de Skull and Bones et ferme le studio RedLynx, à l'origine des jeux Trials - IGN France",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSzNHWTVONnRsd3k4OTVsdGMxQTdZbHIyZzdVdTJ3cVM4WlNRMUM4YXVVdTl4X0pUeWcwQU83aXVnd0Z1N0pQYUYyUjVXdHd5dUIwMlR0aFQzZVN1Ml91R0Uxcko1MllEWlJXU25QZWdRZjhLa0VqUkxZakhVRldCWjhMMXdTVjdxZ09xQ29yVlBBMlJPR1RkWjRHQVF3UXFuaGExbWZreFJKSlBXV09scFFFTnB3SndlckpDdzNSMmNaS1EweGxMSkVkM0NiSlY1ckF6bzd2dVFBUlU?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T10:12:00+00:00",
+     "media": "IGN France"
+    },
+    {
+     "titre": "Ubisoft se débarasse de Redlynx (Trials) et licencie à Singapour (Black Flag Resynced) - Gamekyo.com",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSGU0MjJ3SFFxRUl4cWpYZjEyNXR6UkpXUXd4cFZKcURHOFlZdmU0MzMzOENqQkQ1T3JEeGdNa3NjQThqa054d3dhM283bll5cEc3ekFzY05hMVA3bm9DcXRJYjJnTVpvbW9wVXpKVzdYYzdtbEtsQTB1dUtZWGxNQkZab1ZGMXlzVlRuZ0lpcklSQUpyODJCMzdyYkdwLXl6aVU4d2UtbWIxbkRoRmI5RFZWMWVRaGc3YkhuQTgtSms?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T10:21:00+00:00",
+     "media": "Gamekyo.com"
+    },
+    {
+     "titre": "Ubisoft est en passe de fermer définitivement RedLynx (Trials) et de licencier chez Ubisoft Singapour - ActuGaming",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQk9xZmhJNFBQb3liOHFab09ZcnFyQVhQdXBKVWp4Z014VmdnVDVoLWJ3SVpfcDdITW5helNJZEpMMVpjQXF4Y0NrWkxVVUIwZVE1bUpjRGdud09tQ3I2RVVocDdUX2RjdnhHRm5HZ0o1NnBpbExDTXpfMnNySnpHOWZFS1huNWd3NF82Y0tsUU9oa1ltZF9TczhBaWdNRElZeklMQ0g3WTdtWXlFcE40?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T09:56:01+00:00",
+     "media": "ActuGaming"
+    },
+    {
+     "titre": "Ubisoft veut fermer RedLynx, le studio derrière Trials - INFINITY AREA",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSzhaU1ZqYWIyeUN5YWZqTkxiVnEzM3FCajZLSXVIMnJSU19OMWdHYUFKdkVibG1lN19SYW9WYUFFdnd1LXc3ZWxRbFFqMDlvVC02VlFPQ3VQTHk4Q1BObXBvdzFVd1l5Ti1oaUVUZERUYzlvcnZ2QzJlelhkeHdDSjVMaVdLMHI4TDJGZDJrTWY?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T09:47:00+00:00",
+     "media": "INFINITY AREA"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-14",
+   "publie_a": "2026-10-14T11:16:47+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.9
+   }
+  },
+  {
+   "id": "presse-4af27348bde237aa",
+   "date": "2026-10-14",
+   "source": "presse",
+   "titre": "Solutions30, sous-traitant d'Orange et Bouygues Telecom : vol de données de 10 millions de lignes",
+   "resume": "Le sous-traitant fibre Solutions30 est visé par un piratage portant sur environ 10 millions de lignes, selon la presse. Orange (et Enedis) sont cités parmi les donneurs d'ordre concernés.",
+   "nouveaute": "Révélation d'un vol de données massif chez un sous-traitant des opérateurs.",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWt1VGNZRlpjYU02T3JTMlU3NzZJNTBXQWZiRkdoYjdlSUw2eElrSmlwVnVwczRGSGJ1NHJhXzJNYlQ1OS1BMUlfcFViUWpEMHpJenRLZGN5eWk3cjVsWlVoS0tpaS15MFgtMnJkVGdmcUNVS3FUWVN4c2gtWTB3eGxzTXJlcTRya0F5cmYyU0FIWnZjNGE4VGt1V3d2SFptaGNjWHVCTk51cUMtVU4wdTBEVjBRUzFUcjc1Rg?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ORA.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Risque de sanction (CNIL) et d'atteinte à l'image, périmètre exact des données d'Orange non précisé.",
+     "extrait": "visé par un vol de 10 millions de lignes",
+     "nom": "Orange"
+    },
+    {
+     "ticker": "EN.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Bouygues Telecom cité comme donneur d'ordre ; impact financier inconnu.",
+     "extrait": "visé par un vol de 10 millions de lignes",
+     "nom": "Bouygues"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Solutions30, sous-traitant fibre d'Orange et Bouygues Telecom, visé par un vol de 10 millions de lignes - Télé Satellite et Numérique",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWt1VGNZRlpjYU02T3JTMlU3NzZJNTBXQWZiRkdoYjdlSUw2eElrSmlwVnVwczRGSGJ1NHJhXzJNYlQ1OS1BMUlfcFViUWpEMHpJenRLZGN5eWk3cjVsWlVoS0tpaS15MFgtMnJkVGdmcUNVS3FUWVN4c2gtWTB3eGxzTXJlcTRya0F5cmYyU0FIWnZjNGE4VGt1V3d2SFptaGNjWHVCTk51cUMtVU4wdTBEVjBRUzFUcjc1Rg?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T09:20:00+00:00",
+     "media": "Télé Satellite et Numérique"
+    },
+    {
+     "titre": "Vol de données : un sous-traitant d'Orange et Enedis piraté - LaboMaison",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNmN4Z1pwbWNzRVRra0duUzBwOUJEaTFLcXI2OUxUQk5XMDhVbUpDT0JGVEJCaUZOM2RWZFp0TWZDS0EwMXFjcE00MTRlQVEyNVlreWtFNlVXNjRpRHRpWnh5TmVYcGJkOE5JTkxHVEdEbUFtb0J3c0oxcjBCaHdETzE2YmZXNU5EUWZkbVNPMHFMT1ZmLS1vcWliUTVrYUp3Y2lHSWtjTnY0TTdXbTdXN20xVnJqMjBKV3BjX2h6YXRaUHJBMkhnUVh3?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T08:14:03+00:00",
+     "media": "LaboMaison"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-14",
+   "publie_a": "2026-10-14T11:16:47+00:00",
+   "initial": {
+    "etape": "information",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-4e683d5c2f1cc850",
+   "date": "2026-10-14",
+   "source": "presse",
+   "titre": "TAP Air Portugal : Lufthansa donnée favorite face à Air France-KLM",
+   "resume": "Selon la presse, Lufthansa serait en passe de l'emporter sur Air France-KLM pour entrer au capital de TAP dans le cadre de la privatisation. Aucune décision officielle.",
+   "nouveaute": "Lufthansa désignée favorite par la presse pour la privatisation de TAP.",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcDVIb1NwVmM5U3oxUURjVmNYZ3A2eHZWMEZYZEpwaVc4MWVZWUo5cEN0ZTJPcTdfaWVWVjRrMkVhZElud1FfanR1RjVKOU15a3h2cnJKeGFwdGRLZktIRWlfUWtYVzJ0ZHNXNlN0VktVZFlIUnBkQ0hhZlJkNHFreVVZZjA5c0VFNlptdGEwOE16LVRJdmczaGNOZUhhRkxPQU1nYWxhbmU1SUE4amVOcWZNNDB2YmFJekZ0WHZ3?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.6,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AF.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Un échec de la candidature écarterait un projet d'expansion, mais le coût évité est du même ordre ; montant non connu.",
+     "extrait": "Lufthansa est en passe de l'emporter face à Air France-KLM",
+     "nom": "Air France-KLM"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Lufthansa est en passe de l'emporter face à Air France-KLM pour entrer au capital de TAP - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcDVIb1NwVmM5U3oxUURjVmNYZ3A2eHZWMEZYZEpwaVc4MWVZWUo5cEN0ZTJPcTdfaWVWVjRrMkVhZElud1FfanR1RjVKOU15a3h2cnJKeGFwdGRLZktIRWlfUWtYVzJ0ZHNXNlN0VktVZFlIUnBkQ0hhZlJkNHFreVVZZjA5c0VFNlptdGEwOE16LVRJdmczaGNOZUhhRkxPQU1nYWxhbmU1SUE4amVOcWZNNDB2YmFJekZ0WHZ3?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T06:36:33+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "TAP Air Portugal : Lufthansa en passe de coiffer Air France-KLM au poteau - Air Journal",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWmVPNGVrU0NkaWYyMmdERWdUSVNCekkwVHpwZ2NjZHZ4Vk1qRE5QYzRzcHpLbzVzN3F0Z0MyY2R1YjlZUE5Lbl91bEZlSjVLOGxhUEx1QlNjblcwdmlDbzg5RDR6Y25Ua2d5NlVJbEtvUVVJcW9fM0t1Z2ZSNDZybDU1em1tZ2NBVTM3cVVyN0NDbW5QdUZGY1JsM19PNm9VSThuRmFhWjBWbWVqaUd1N0owMkxVSmotS0xGT29tQQ?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T10:00:40+00:00",
+     "media": "Air Journal"
+    },
+    {
+     "titre": "Lufthansa donnée favorite pour la reprise de TAP face à Air France-KLM - Air&Cosmos",
+     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNbDVScUY5cm56YXliRjNxenJtV0FTTHMwNWQ5OU5GQ2pFM1VIcU85MHY3NmJ4RVhJbzlIQzIyOC1UM2d5OHhPc2p4SHdTU0tBQUFQQUo3X2s2dXNPWHJNUmpDY2lPNUQ5RHVZRWpyOUpJZHEwM2Y5b3MzbzlQMTMxQ2FXbGxhNnllZkoxYmcxeXZaYmJyNWRqRWZ6aTd5YjVJU0x4M25VV0taRWZuSTdDOXhXcy1uYUZvMEFqQkJZZkdvVDhPZHdlS2Q1WEQtN0E2a0pQZUhIdkhCNXFkSzlKX2c4Qm9kN0dVUFNJMzlsbDRuWWY1?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T09:24:56+00:00",
+     "media": "Air&Cosmos"
+    },
+    {
+     "titre": "Lufthansa se profile comme favorite pour entrer dans le capital de TAP face à Air France-KLM - Demócrata",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRnc5VF9TRzdLMk03UGg3TnlHOURNcmoyTnFOaU1qbWdJQjRjZFBqLWtNTXVHeFY4Q244SVZtTVo2dVJfOGZrQ0h0a1VpUU1CWHNVcTFKZWllNzRVdHZJZE9ScnJfdlF5ZFp2ZnRGU0l5Y2llMnF5b1RFb1V2WW1JZ1hUTnpUVDZyM3ltOWJzSC1nd1ViU2dNWHhkTXhreTZYOFUzcjc3LXYtcVgzR09Nc09tMVQ1WEMtVl85OVgtM01DdDUyek1xX3JaQUNSYTTSAc8BQVVfeXFMT0Z3OVRfU0c3SzJNN1BoN055RzlETXJqMk5xTmlNam1nSUI0Y2RQai1rTU11R3hWOENuOElWbU1aNnVSXzhma0NIdGtVaVFNQlhzVXExSmVpZTc0VXR2SWRPUnJyX3ZReWRadmZ0RlNJeWNpZTJxeW9URW9VdlltSWdYVE56VFQ2cjN5bTlic0gtZ3dVYlNnTVh4ZE14a3k2WDhVM3I3Ny12LXFYM0dPTXNPbTFUNVhDLVZfOTlYLTNNQ3Q1MnpNcV9yWkFDUmE0?oc=5",
+     "date": "2026-10-14",
+     "publie_le": "2026-10-14T09:16:49+00:00",
+     "media": "Demócrata"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-14",
+   "publie_a": "2026-10-14T11:16:47+00:00",
+   "initial": {
+    "etape": "rumeur",
+    "probabilite": 0.6
+   }
+  },
   {
    "id": "amf-137586_20261012",
    "date": "2026-10-13",
