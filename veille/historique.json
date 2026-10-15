@@ -1,6 +1,6 @@
 {
  "version": 1,
- "maj_le": "2026-10-15T06:20:08+00:00",
+ "maj_le": "2026-10-15T11:15:56+00:00",
  "alertes": [
   {
    "id": "presse-612275de2365fd1a",
@@ -61,6 +61,117 @@
    "initial": {
     "etape": "publie",
     "probabilite": 1
+   }
+  },
+  {
+   "id": "amf-083443_20261015",
+   "date": "2026-10-15",
+   "source": "amf",
+   "titre": "Saint-Gobain : accord pour acquérir D.S. Brown (infrastructures, Amérique du Nord), CA 90 M$ attendu en 2026",
+   "resume": "Saint-Gobain signe un accord définitif pour acquérir D.S. Brown (joints de ponts, imperméabilisation, 235 salariés, Ohio et Texas). Finalisation attendue d'ici fin 2026 après autorisation des autorités de concurrence américaines.",
+   "nouveaute": "Première annonce de l'acquisition de D.S. Brown, avec un chiffre d'affaires attendu de 90 M$ en 2026.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083443_20261015.pdf",
+   "etape": "annonce",
+   "probabilite": 0.95,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SGO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Acquisition bolt-on dans la chimie de la construction : 90 M$ de chiffre d'affaires, très petite part des ventes du groupe, synergies de ventes croisées avec GCP, Chryso et Xypex.",
+     "extrait": "Avec un chiffre d'affaires attendu à 90 millions de dollars en 2026, 235 employés et deux sites de production",
+     "nom": "Saint-Gobain"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Saint-Gobain : Saint-Gobain renforce son offre pour le marché des infrastructures en Amérique du Nord avec l’acquisition de D.S. Brown dans la chimie de la construction",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083443_20261015.pdf",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T05:28:17+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Saint-Gobain renforce son ancrage américain avec D.S. Brown selon AlphaValue - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVHVXY0hrT2RUQ2JFdjZaaXhqdFR1aEVpcG5tbGZZaFI1OGpCYzlDSU5qTnlZdkdkUnFrT0RJZkZ3SVhJS2oxZVpuS0tDNHlOZGZGRTBoZjhRaEZTbmhJdWNHRGdxS3JfUmYyOTNpME5TaTlKakh1SHVnODN1RUFuOGIzRkNjQklaMDA3T1lCeDgtOUwwTldEUGxMYTFiZ2hINXpqYW9jMEcxNVlRY05BMXFDajZBUUVUWkpicG04Q094bVZRVENFWE9CNVNteEw0?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T08:46:33+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Saint-Gobain va racheter D.S. Brown, spécialiste américain des ponts et aéroports - Idéal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWU82VnowSUgwVVdUenRIVjJJa3pXT0luQm5zZVhYREFBcHpycENDQm1Fa0VoUmpoV2hLZmdhVXlXVUhtZEJQVUZRNXR1dWEzUWhsa01wQ04wOWJ1TWlxUE02RUhyX29wTUhfcDBsbmRObXRFdWhleFNnb1E0c2FOU2FMN0JfSEg1OU1BS3RYemFKZC1zWTZYN3pJeUg0VGZtNk8tRERJREFYLWZLRjJTNFhfYXNyVVZMQXMyOTk2cF9zOWIxdE1HRGVJdG1Fdw?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T07:15:00+00:00",
+     "media": "Idéal Investisseur"
+    },
+    {
+     "titre": "Saint-Gobain met la main sur D.S. Brown Company aux Etats-Unis - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOM2U3Ym1yX1RvRDYwWjAwVDFKQ0h4OFFrUlpRRU8wenR2SF9icklaTjNwZ3lnRS1Cb19iMGsxLW9sclJycWNyWUpUNm9oVkJLSFBHQ0VtM2hLUW5ZTnU1UURMcWM0WGk5UHhoMjM1YnJLNnVUajlaamZONkMxbnNGS3RwNTQyR3ltcWRObmhlNGFZamlUWHNyeXJ5M19OWVNNbVJSS2ZKckV6TDZhRGVkUHlQQWdINU5HWkppUjB3?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T06:22:23+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-15",
+   "publie_a": "2026-10-15T11:15:56+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.95
+   }
+  },
+  {
+   "id": "presse-d120ea40796d1333",
+   "date": "2026-10-15",
+   "source": "presse",
+   "titre": "Ubisoft : environ 100 suppressions de postes envisagées en Allemagne, dont le studio d'Anno",
+   "resume": "Ubisoft prévoit de supprimer une centaine d'emplois en Allemagne, notamment dans le studio développant Anno, après la fermeture de RedLynx annoncée la veille. Détails et calendrier non précisés par les titres.",
+   "nouveaute": "Nouveau volet de réduction d'effectifs (Allemagne, environ 100 postes), distinct de RedLynx et Skull and Bones.",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORW5rNzhhZ2cwN2VOTFBfcENCNG5lUjBGVmxrczYxaWtXR0s1RVJTR3l1MVVWMFRjLThDTnRmYWlRbE5ab1V5UlhRdmgyYlVPajR1TFBEc3pWOGdySDBsZTZGVmxuNVR2aFhwZVNlc2dGTEJPNFMySXVabHRzSlAtSlowUzJzZDM4S2lnTUVCSE1Lbm1tcXJPTUZhTjJKMGQ0WFBtNERmWk5RUXhVY0hDOVZ6cEx4S2pscFNOV1pHejhiWVhPUl9fb3hNcHh1VzJ6aVVZMjhaOA?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.8,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "UBI.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Économies de coûts attendues sur environ 100 postes, mais coût de restructuration et risque sur la franchise Anno ; effet chiffré non communiqué.",
+     "extrait": "",
+     "nom": "Ubisoft"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Ubisoft veut aussi supprimer une centaine d'emplois en Allemagne, notamment au sein du studio derrière Anno - ActuGaming",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORW5rNzhhZ2cwN2VOTFBfcENCNG5lUjBGVmxrczYxaWtXR0s1RVJTR3l1MVVWMFRjLThDTnRmYWlRbE5ab1V5UlhRdmgyYlVPajR1TFBEc3pWOGdySDBsZTZGVmxuNVR2aFhwZVNlc2dGTEJPNFMySXVabHRzSlAtSlowUzJzZDM4S2lnTUVCSE1Lbm1tcXJPTUZhTjJKMGQ0WFBtNERmWk5RUXhVY0hDOVZ6cEx4S2pscFNOV1pHejhiWVhPUl9fb3hNcHh1VzJ6aVVZMjhaOA?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T09:26:29+00:00",
+     "media": "ActuGaming"
+    },
+    {
+     "titre": "Nouvelles suppressions de postes en vue chez Ubisoft - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWjlraFdMa2I3czlXaEU4dVZ4NGtsaUdqWGx3YU5zOXZZYlhnZ3J4UTJrSnh6SEhtdXFrd3VFdlo3OWJsNG5Gak0wdldwVFBvRnVzWjBiNTJpZ0FfN0Rtc2NhY0FQdGIwR2xaRGxjN3E3Q0ozTzdQcUVxcGtRUnZSRWY1X0F1TDIyUHh2RGtlS2t0QjN1alRnZmVFVVJlZGNPLVhHNFJ0RE5Qdm1BZmZjTktpLVRxNVFMS05JX3pDdHlPUUE?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T08:55:42+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Ubisoft, encore des licenciements avec cette fois-ci l’Allemagne pour cible - JVMag",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRi03ZHdvc2JPSmkwQlBTZEFSMkJaSnZyNm9aOEhIREJIQmtOU2ttRmVlTEFjdG5YMFdDSHo4S0VYdkQzSDB0TlVfVmVBNGloRk93Z1dIOE9fekZSMG9xeUJEM094X2xUcXluNlJJU2VqX1dmV3JjTl9IcWRlRlFkYVE4ZlNXV0VyRWRCWVUzVkxRWEdRb283eklnS0JPa0E4VzN4QdIBrAFBVV95cUxPNW92UUZjRXN0QjJWTHBjTTlmYlE0d0hKcUptMXZaRjB2Y0VhUVlwaGl6bWQwMEJ1SXJSTmRzdnE5MlBNNTB1anUtTGZoWkhEQWFhcjRBWlhENkNPc0Frdk1DN3NKTWI2UEhfUTFYclJvVEFGRXFRRW5WaEpONkwwakdCSkl5dnlxeFlLMFdpVTRSTmc2ampHZHZaRHh2bkRkQW9rQVZMM0dxRENw?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T09:05:22+00:00",
+     "media": "JVMag"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-15",
+   "publie_a": "2026-10-15T11:15:56+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.8
    }
   },
   {
