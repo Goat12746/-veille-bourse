@@ -1,21 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-14T11:16:47+00:00",
+ "genere_le": "2026-10-15T06:20:08+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 6,
-   "nouveaux": 2
+   "trouves": 22,
+   "nouveaux": 7
   },
   "presse": {
    "ok": true,
-   "trouves": 306,
-   "nouveaux": 168
+   "trouves": 443,
+   "nouveaux": 248
   },
   "assemblee": {
    "ok": true,
-   "trouves": 30,
-   "nouveaux": 1
+   "trouves": 156,
+   "nouveaux": 17
   },
   "agenda": {
    "ok": true,
@@ -23,10 +23,67 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 114
+   "trouves": 110
   }
  },
  "alertes": [
+  {
+   "id": "presse-612275de2365fd1a",
+   "date": "2026-10-15",
+   "source": "presse",
+   "titre": "Pernod Ricard : chiffre d'affaires du T1 à 2 234 M€ (-6 %), Chine en recul d'environ 25 %, objectifs maintenus",
+   "resume": "Pernod Ricard publie un chiffre d'affaires de 2 234 M€ au premier trimestre 2026-27, en repli d'environ 6 % (2 384 M€ un an plus tôt), pesé par la Chine (environ -25 %) et les États-Unis. Le groupe maintient ses objectifs annuels.",
+   "nouveaute": "Premier chiffre d'affaires trimestriel 2026-27 publié ce matin, avec objectifs annuels maintenus.",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPRHBVdUVjUzUtZER3b0VxZTY5WHRvbkRRalRXVi11V3ZubGZXdEtJWGxIc0Y5MG56T3Jid0FwQ1d5ZUdqN1I1azdpNnNUR2VWZ3pyem9uTzlZYUxsZFpfS3pUWWFrUXR6SnZsdk9rV2pKNUhJRVVlSFFwejd5eE9IQy0zLTduWTFOUFJrTWkwUDYtdC1LWW9iemNIT1JBZDEwZ3JzdV9RVGktaFduT3Y1QWh0R3lZeThDclVzTlM4ck9LMHhEc3Ffc3pOOVlsaXVJOWYzNl83VkUzVnZC?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RI.PA",
+     "sens": "incertain",
+     "ampleur": "moyenne",
+     "justification": "Repli du chiffre d'affaires porté par la Chine et les États-Unis, mais objectifs maintenus ; consensus de chiffre d'affaires trimestriel non disponible, écart aux attentes non établi.",
+     "extrait": "Pernod Ricard annonce un chiffre d'affaires de 2.234 millions d'euros au T1 2026",
+     "nom": "Pernod Ricard"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Pernod Ricard: repli du chiffre d'affaires de 6% au premier trimestre, marqué en Chine et aux États-Unis - Le Figaro",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPRHBVdUVjUzUtZER3b0VxZTY5WHRvbkRRalRXVi11V3ZubGZXdEtJWGxIc0Y5MG56T3Jid0FwQ1d5ZUdqN1I1azdpNnNUR2VWZ3pyem9uTzlZYUxsZFpfS3pUWWFrUXR6SnZsdk9rV2pKNUhJRVVlSFFwejd5eE9IQy0zLTduWTFOUFJrTWkwUDYtdC1LWW9iemNIT1JBZDEwZ3JzdV9RVGktaFduT3Y1QWh0R3lZeThDclVzTlM4ck9LMHhEc3Ffc3pOOVlsaXVJOWYzNl83VkUzVnZC?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T05:49:51+00:00",
+     "media": "Le Figaro"
+    },
+    {
+     "titre": "Le 1er trimestre de Pernod Ricard plombé par les Etats-Unis et la Chine - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQME1KazJMdDBSS0Y0THlXdkJTcF9BcFFVMlMwYUpLZXhBd3daNG15MUlFTFN4TzFmV2ptNTE4NG9CNllPdFpobmFBMFhhMlhqTGVXNnNLMVhjUG1WQzh0OXFGbW5rQXBHemxKQktiWVlONU5VcnlVY2M3eDRDOUV6eDMxclNCV09WaTZOc3paRmFmd2tfdXNpSy1rV2tzNFNIbEdtNlVIQmtSZnI4a00tWDdyZGI3b0Z6RmtoUngtSmxST1JLeldicXVZMA?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T06:05:40+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Pernod Ricard : les ventes plongent de 25 % en Chine mais le groupe maintient ses objectifs - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZ1ZHVXNJWXplTTN1Uk5UZDhfbGRUbDgwMUp2UkgwV2dFTjA1Tk5hNFFjZDlCak9vcG5xSk1sY2hxUFZJLUNpZFg3bFpTSFl5djZCWV95M1JQOUR6bUk3ZFJHUkFmaTRCUEpDMXZwVl9uOGozREcxcnJETjAtamEyOEJFaWtqblZFQTB2Y3RpdWMySWtndjFsOWg1dGtFa0llUXczTkUzMzk4T0hEYjZWTWY3MkpHa1lS?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T06:02:45+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Pernod Ricard annonce un chiffre d’affaires de 2.234 millions d’euros au T1 2026 - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeHpFX1dQalZjSF9GVHlGM0gzdF9GVG16TFJlTWJpNnRZYjBTX2NhemtMVTZ1YlJSYVpuT1prUFdsY3JRaXYzOVVwU3g5dVExOGpMZjBkRW1fek1ONGY5d19VOGZ0bDU5X1pCTF9LeE1OZVZEemx4WEQ4Y0FqSEdZWUlPM0hkMVFYNjhtT1RncVFHenAzQVI2dW5Zc180RkVDR3Q2NEIyTzVzOTlSYXVxeTlFWFhQTEd5SUE?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T05:45:03+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-15",
+   "publie_a": "2026-10-15T06:20:08+00:00"
+  },
   {
    "id": "presse-684191141e46ac7a",
    "date": "2026-10-14",
@@ -183,12 +240,12 @@
    "id": "presse-4e683d5c2f1cc850",
    "date": "2026-10-14",
    "source": "presse",
-   "titre": "TAP Air Portugal : Lufthansa donnée favorite face à Air France-KLM",
-   "resume": "Selon la presse, Lufthansa serait en passe de l'emporter sur Air France-KLM pour entrer au capital de TAP dans le cadre de la privatisation. Aucune décision officielle.",
+   "titre": "TAP Air Portugal : Lufthansa l'emporte, l'offre d'Air France-KLM est battue",
+   "resume": "Selon la presse du 15 octobre, Lufthansa remporte la privatisation de TAP avec une offre d'environ 1,2 Md€ et devance Air France-KLM, dont l'offre est battue. Air France-KLM ne rachète donc pas la compagnie portugaise.",
    "nouveaute": "Lufthansa désignée favorite par la presse pour la privatisation de TAP.",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcDVIb1NwVmM5U3oxUURjVmNYZ3A2eHZWMEZYZEpwaVc4MWVZWUo5cEN0ZTJPcTdfaWVWVjRrMkVhZElud1FfanR1RjVKOU15a3h2cnJKeGFwdGRLZktIRWlfUWtYVzJ0ZHNXNlN0VktVZFlIUnBkQ0hhZlJkNHFreVVZZjA5c0VFNlptdGEwOE16LVRJdmczaGNOZUhhRkxPQU1nYWxhbmU1SUE4amVOcWZNNDB2YmFJekZ0WHZ3?oc=5",
-   "etape": "rumeur",
-   "probabilite": 0.6,
+   "etape": "annonce",
+   "probabilite": 0.9,
    "themes": [],
    "entreprises": [
     {
@@ -232,7 +289,8 @@
    ],
    "analyse": "claude",
    "ajoute_le": "2026-10-14",
-   "publie_a": "2026-10-14T11:16:47+00:00"
+   "publie_a": "2026-10-14T11:16:47+00:00",
+   "maj_le": "2026-10-15"
   },
   {
    "id": "amf-137586_20261012",
@@ -2837,60 +2895,6 @@
  ],
  "calendrier": [
   {
-   "date": "2026-10-14",
-   "heure": "",
-   "type": "resultats",
-   "titre": "LVMH : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "MC.PA"
-   ],
-   "tickers_mots_cles": [
-    "MC.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/MC.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-14",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Rexel : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "RXL.PA"
-   ],
-   "tickers_mots_cles": [
-    "RXL.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/RXL.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-14",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Gecina : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "GFC.PA"
-   ],
-   "tickers_mots_cles": [
-    "GFC.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/GFC.PA",
-   "fiable": false
-  },
-  {
    "date": "2026-10-15",
    "heure": "",
    "type": "resultats",
@@ -4975,24 +4979,6 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/TTE.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-02",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Publicis : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "PUB.PA"
-   ],
-   "tickers_mots_cles": [
-    "PUB.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/PUB.PA",
    "fiable": false
   },
   {
