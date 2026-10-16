@@ -1,21 +1,20 @@
 {
  "version": 1,
- "genere_le": "2026-10-16T06:22:40+00:00",
+ "genere_le": "2026-10-16T11:16:12+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 22,
-   "nouveaux": 6
+   "trouves": 11,
+   "nouveaux": 2
   },
   "presse": {
    "ok": true,
-   "trouves": 438,
-   "nouveaux": 251
+   "trouves": 331,
+   "nouveaux": 150
   },
   "assemblee": {
-   "ok": true,
-   "trouves": 240,
-   "nouveaux": 26
+   "ok": false,
+   "erreur": "IncompleteRead(24966122 bytes read, 302413873 more expected)"
   },
   "agenda": {
    "ok": true,
@@ -23,7 +22,7 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 109
+   "trouves": 110
   }
  },
  "alertes": [
@@ -200,6 +199,139 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-16",
    "publie_a": "2026-10-16T06:22:40+00:00"
+  },
+  {
+   "id": "presse-acaddde42a9a1ef4",
+   "date": "2026-10-16",
+   "source": "presse",
+   "titre": "Airbus : commande ferme de 75 A320neo du loueur Aviation Capital Group",
+   "resume": "Airbus enregistre une commande ferme de 75 appareils de la famille A320neo auprès du loueur américain ACG, la plus importante de son histoire (valeur catalogue théorique d'environ 8 Md$). Livraisons de 2032 à 2035, avec droits de conversion vers d'autres variantes.",
+   "nouveaute": "Nouvelle commande ferme de 75 avions annoncée le 16 octobre.",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON1RFRkItaVdwVkx6VFVSYmkyTFRxQTdmUG9tVklEVERzMFE5QVQxam1Mb2JfdnFQZFFqQXBRLWZGWjBFNU5uaWtpOXJQY00yRTdUdUJQYnJNSlZCZ2N2dHB3RkRycmtTaTJUYUp1SUExdFJpVHNlaGRfZU1jM2oydEhJLWJLbE9GMEJDeUxWdTY1NWJrdVluVURQR3J2WWhXMERRMzhZN0I?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AIR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Environ 8 Md$ au prix catalogue, livrables entre 2032 et 2035 : carnet de commandes renforcé mais impact étalé sur plusieurs années.",
+     "extrait": "",
+     "nom": "Airbus"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Airbus : une commande de 75 avions A230neo pour Aviation Capital Group - Le Revenu",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON1RFRkItaVdwVkx6VFVSYmkyTFRxQTdmUG9tVklEVERzMFE5QVQxam1Mb2JfdnFQZFFqQXBRLWZGWjBFNU5uaWtpOXJQY00yRTdUdUJQYnJNSlZCZ2N2dHB3RkRycmtTaTJUYUp1SUExdFJpVHNlaGRfZU1jM2oydEhJLWJLbE9GMEJDeUxWdTY1NWJrdVluVURQR3J2WWhXMERRMzhZN0I?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T10:29:00+00:00",
+     "media": "Le Revenu"
+    },
+    {
+     "titre": "Les sites d’Airbus en Loire-Atlantique concernés par une grosse commande américaine - Ouest-France",
+     "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOaHh1eGU2RDlRMDdtQVJMclVfWndlZDR4RzM3dTRFb185Qm5qbEFNOUE5TVVqdTdabjhQTDl3NEV2ZjFVZUxhNHE5MEV1LUFoMjJQOGdrTWlKQ0ZXaHZ1QjNzLVZwYWlPMEpnNkF4NUl5NEowR1E2eUFnWDF2QldnSy1TR0ZCa3EwTnRwU1BIMDd0Z2lsaVdPRWJhNlRDUWdVWXh3bmRWb0FJWFV6clU1ME9KS0NUbzFVUDRCbkhwRUQ0Y1NNTElrbWlFMFVBQ3RGNjNtd3Rybm5TR25mZDhIdUdEcTlJRzRCTk9zSGs5MzlZZnFkM0dRSVRtRnZfQ01vTHBzaGZZbEdqVEJSZGIzRUQ5WHl3TFk?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T10:31:30+00:00",
+     "media": "Ouest-France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T11:16:12+00:00"
+  },
+  {
+   "id": "presse-b7854f8db9685bf0",
+   "date": "2026-10-16",
+   "source": "presse",
+   "titre": "Safran/CFM : protocole d'accord avec Turkish Airlines pour plus de 300 moteurs LEAP-1B",
+   "resume": "CFM International (Safran/GE) et Turkish Airlines signent un protocole d'accord (non contraignant) portant sur plus de 300 moteurs LEAP-1B, pièces de rechange comprises, pour des 737 MAX, et un contrat de services couvrant plus de 600 moteurs. Accord de maintenance associé avec Turkish Technic.",
+   "nouveaute": "Signature du protocole d'accord moteurs et services le 16 octobre, après la commande d'avions annoncée le 23 septembre.",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUHZxQk94dnZVN2FmTlpZbjBxZGM3bUhxWlAwQzRKZmd0MHNVb245VnFCeTc0MFVqSThTMTREYlktMDhnT2VGaXVMVW5Nd1R1STF4WG05LWExUWZRVFJWc3BaZ0MxYzFjVnNTYUI3NElKX0FxdGZvaG1xbjl2UGJ2VlJIdnlyei12WlRHVlZwV2QtaERFRkJFTnNvSHZGT2g0VHMtSVhkeW8wUXNUbDhack9pbjRJaHpob2NNOXZ4OEM1QVZkc0x1ZkFUN1B6LWNUaTNIMEg1ZGtSVW9kSVNhUGxCYlFhd0dOVU530gHwAUFVX3lxTE5Wb3BLUGx2TnA1dzdpdkZjdnhIQ0hzSHQ4WE8wT3ZkSVZpWHVHcEE3WF9oS29jUkxqVHJkVlZEb3lYczUyRHhKd0pqMjF6SGpMTXhvQ0lQSjdZekFSNURCVFVuTWkyV09BTU56NWlsY01mVkp5cndrU1pIVkFCcXVXUTVFanZKak1DTU1oTTNSQ085NGZjREdXZGFrNnVmeE13N2twN0RYVHI2S2dXRUhHNW1oR3YxMy1oeU1rTUVDcUVLZUJGdHpFSV85aWVkU21tUkR1blhFcF9RSGREbGo1bU5iY1pPVndWdmEySEtGQQ?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.7,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SAF.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Plus de 300 moteurs et des services sur plus de 600 moteurs en service : revenus de première monte et d'après-vente, mais accord préliminaire.",
+     "extrait": "",
+     "nom": "Safran"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Safran-Turkish Airlines et CFM signent un MoU sur plus de 600 moteurs LEAP-1B - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUHZxQk94dnZVN2FmTlpZbjBxZGM3bUhxWlAwQzRKZmd0MHNVb245VnFCeTc0MFVqSThTMTREYlktMDhnT2VGaXVMVW5Nd1R1STF4WG05LWExUWZRVFJWc3BaZ0MxYzFjVnNTYUI3NElKX0FxdGZvaG1xbjl2UGJ2VlJIdnlyei12WlRHVlZwV2QtaERFRkJFTnNvSHZGT2g0VHMtSVhkeW8wUXNUbDhack9pbjRJaHpob2NNOXZ4OEM1QVZkc0x1ZkFUN1B6LWNUaTNIMEg1ZGtSVW9kSVNhUGxCYlFhd0dOVU530gHwAUFVX3lxTE5Wb3BLUGx2TnA1dzdpdkZjdnhIQ0hzSHQ4WE8wT3ZkSVZpWHVHcEE3WF9oS29jUkxqVHJkVlZEb3lYczUyRHhKd0pqMjF6SGpMTXhvQ0lQSjdZekFSNURCVFVuTWkyV09BTU56NWlsY01mVkp5cndrU1pIVkFCcXVXUTVFanZKak1DTU1oTTNSQ085NGZjREdXZGFrNnVmeE13N2twN0RYVHI2S2dXRUhHNW1oR3YxMy1oeU1rTUVDcUVLZUJGdHpFSV85aWVkU21tUkR1blhFcF9RSGREbGo1bU5iY1pPVndWdmEySEtGQQ?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T08:41:11+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Safran/GE JV CFM International fournira 300 moteurs à Turkish Airlines - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWEJuVVJBRG1uSVJWNGFBTnVYRGh2RVdfZVYyRUNfYkUzWXNlTHNKN29WZmRNV29hRVdCeXpuQVRqQW5SX3hNWjR3X2I3TGNFQm1XdlhuSExZX2owTlE4Zk8zSzE1eTVHS24zVURkdVllWUVKUjBMOXhfaS1FMFNUNmVuSC1jb25SRTdfRGx2c0xFVlJkcEhlWlF1T29UT21nOF9VNXBjdURUSFRUY2NEdm1oekNTeGRkSndNVFNxcjVtQ28zWGVSY2pR?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T09:34:20+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Safran signe un accord de maintenance avec Turkish Technic - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObnJxYWF1QXJLYTA0aXNQZDcwQkJnRGxjYjlPMGpkaDlqWmNPbzhILVQ5UGNuTm5NeUdWQ3ZhN1VzLVB3S0t0dENyb2pzYkFlV1JZYVhtVlhnbzFZZVlrMmRZaGM5b2hKbllfZG40ZW9IcmJmcmlYcGFRV09LRlBfTFVWZ2paOG9pcno1Q2REZWt6Ujh0cDhDdTV5bzV3VU5vMVItc3VOWWFPYjFEakhKTzB1T1ZJUm9EaVE?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T08:37:20+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T11:16:12+00:00"
+  },
+  {
+   "id": "presse-7db5c8f0b319dde6",
+   "date": "2026-10-16",
+   "source": "presse",
+   "titre": "Automobile : accord provisoire franco-allemand sur le CO2 des voitures et la préférence européenne",
+   "resume": "La France et l'Allemagne s'entendent à titre provisoire : concessions supplémentaires sur les émissions de CO2 des voitures (abandon du tout-électrique en 2035) contre une préférence européenne renforcée pour les composants des entreprises aidées par des fonds publics. L'accord attend encore le feu vert du SPD.",
+   "nouveaute": "Compromis franco-allemand annoncé le 15 octobre sur le CO2 et la préférence européenne, absent jusque-là.",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd1hOWXd0Z3lrRGkyTGVZcnNPanU3WElBVndCNnUwcURPck11N3pyYlM2cEFSeEI3Ql83ZEd2RkowWE1TOHA4SDN0X01HYlJhck5JdlFvdm1Cdng3bng4TXE1RnZzaklONWUtZ19LeVM5c0h5REZYVGh4VV84NE43RnJn?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.5,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RNO.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Assouplissement du CO2 allège les contraintes de la gamme électrique, mais la préférence européenne peut peser sur les coûts d'approvisionnement.",
+     "extrait": "",
+     "nom": "Renault"
+    },
+    {
+     "ticker": "STLAP.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Même mécanisme : calendrier de conformité CO2 assoupli face à un surcoût possible des composants hors Europe.",
+     "extrait": "",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "La France et l'Allemagne parviennent à un accord pour soutenir l'industrie automobile. - Vietnam.vn",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd1hOWXd0Z3lrRGkyTGVZcnNPanU3WElBVndCNnUwcURPck11N3pyYlM2cEFSeEI3Ql83ZEd2RkowWE1TOHA4SDN0X01HYlJhck5JdlFvdm1Cdng3bng4TXE1RnZzaklONWUtZ19LeVM5c0h5REZYVGh4VV84NE43RnJn?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T11:06:42+00:00",
+     "media": "Vietnam.vn"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T11:16:12+00:00"
   },
   {
    "id": "amf-138199_20261015",
@@ -5291,6 +5423,24 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/TTE.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-01-28",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Maurel & Prom : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "MAU.PA"
+   ],
+   "tickers_mots_cles": [
+    "MAU.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/MAU.PA",
    "fiable": false
   },
   {

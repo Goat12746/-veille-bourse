@@ -6154,6 +6154,7 @@
   "169808_20261014": {"type":"resultats","periode":"9 mois 2026","perspectives":"confirmees","attentes":null,"consensus":"conforme","consensus_raison":"Croissance locative à périmètre constant de +1,7 % et guidance 2026 confirmée (résultat récurrent net 6,70-6,75 €/action) face à un consensus BPA 2026 de 6,72 € : en ligne.","exceptionnel":false,"actionnaires":false,"chiffres":{"devise":"EUR"},"objectifs":{"periode":"2026","bpa":[6.7,6.75],"consensus_bpa":6.719,"vs_consensus":"conformes"},"par":"claude","le":"2026-10-15"},
   "169810_20261014": {"type":"autre","par":"claude","le":"2026-10-15"},
   "169816_20261015": {"type":"resultats","periode":"T1 2026/27","perspectives":null,"attentes":null,"consensus":"conforme","consensus_raison":"CA T1 2 234 M€ contre 2 254 M€ attendus (-0,9 %), dans la marge ; pas de BPA trimestriel.","exceptionnel":false,"actionnaires":false,"chiffres":{"devise":"EUR","ca":2234},"par":"claude","le":"2026-10-15"},
-  "169818_20261015": {"type":"autre","par":"claude","le":"2026-10-16"}
+  "169818_20261015": {"type":"autre","par":"claude","le":"2026-10-16"},
+  "083463_20261016": {"type":"resultats","periode":"T3 2026","perspectives":"relevees","attentes":null,"consensus":"superieur","consensus_raison":"Chiffre d'affaires 11,46 Md€ contre 11,14 Md€ attendu (+2,9 %), croissance organique +17 % : au-dessus.","exceptionnel":false,"actionnaires":false,"chiffres":{"devise":"EUR","ca":11460},"objectifs":{"periode":"2026","texte":"objectif d'EBITA ajusté relevé"},"par":"claude","le":"2026-10-16"}
  }
 }
