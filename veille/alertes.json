@@ -1,21 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-15T11:15:56+00:00",
+ "genere_le": "2026-10-16T06:22:40+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 12,
-   "nouveaux": 3
+   "trouves": 22,
+   "nouveaux": 6
   },
   "presse": {
    "ok": true,
-   "trouves": 329,
-   "nouveaux": 162
+   "trouves": 438,
+   "nouveaux": 251
   },
   "assemblee": {
    "ok": true,
-   "trouves": 91,
-   "nouveaux": 0
+   "trouves": 240,
+   "nouveaux": 26
   },
   "agenda": {
    "ok": true,
@@ -23,10 +23,273 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 112
+   "trouves": 109
   }
  },
  "alertes": [
+  {
+   "id": "presse-0d03ad373c7b9964",
+   "date": "2026-10-16",
+   "source": "presse",
+   "titre": "Schneider Electric : ventes du T3 au-dessus du consensus, objectifs 2026 relevés",
+   "resume": "Chiffre d'affaires du T3 2026 de 11,46 Md€, +16,9 % en organique contre +13,8 % attendu (consensus 11,13 Md€). Les objectifs annuels sont relevés, portés par la demande des centres de données.",
+   "nouveaute": "Résultat trimestriel nettement supérieur aux attentes et deuxième relèvement des objectifs 2026.",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX2lUS2E4eVNWeElZYmdhRzA1dmd2SmY2OWpVNTlhMHRoV1hFa05FRmFrV042NkxMbENRcG95dHRyN214RVZqVVpiODhERnhDTDlsakh4Zl9HY1NPRUhJRFJWaDNhVk9DbmtUbW1fWk9jWTFXWGJUNmVtVkhJaWJCM3dIWmsyR3B1ZmxkVzU5dDJ6RGlPS1ZlNlVUYUtVZGc3Vmh4eElLdFdIeXFydVMxWmtlSEhSOG9qeEhiekYtWDBOMG1YQUFSX1ZFQQ?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SU.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Croissance organique 3 points au-dessus du consensus et objectifs relevés : référence historique des objectifs relevés, hausse dans la majorité des cas.",
+     "extrait": "+16,9 % en organique contre +13,8 % attendu",
+     "nom": "Schneider Electric"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Schneider Electric : des revenus records et des objectifs encore relevés ! - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX2lUS2E4eVNWeElZYmdhRzA1dmd2SmY2OWpVNTlhMHRoV1hFa05FRmFrV042NkxMbENRcG95dHRyN214RVZqVVpiODhERnhDTDlsakh4Zl9HY1NPRUhJRFJWaDNhVk9DbmtUbW1fWk9jWTFXWGJUNmVtVkhJaWJCM3dIWmsyR3B1ZmxkVzU5dDJ6RGlPS1ZlNlVUYUtVZGc3Vmh4eElLdFdIeXFydVMxWmtlSEhSOG9qeEhiekYtWDBOMG1YQUFSX1ZFQQ?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T06:05:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Schneider Electric relève ses objectifs annuels - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV2VUMm4xcU1ZYzNjVWxyX240OWE4WWMxMnBCWkczNEVoU2RWa3RZMDctWVpjNGptbTdUcGpCZFFIR2Nsc1ZnX1NyRzlBSjdIMDFjMlYwZW5uSzBuUkdtSWNFQUdiQlpYREhCZTcySmZ5cGRVTEJFZ2xQQ1p3SU9xbmgzbFFfTGZ5S19tVmFUY2RrZUhtUFl4WE85Y2dDaV95WVVPdTdjNnQwUWM?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T06:02:24+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Schneider Electric relève ses objectifs 2026 après des ventes record au T3 - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQWlhSnNTY2NCNVZ0eXROcURUWkdYRVNFOGZJakV1MExkMW1CRERWREZiTG1nT2NEU3V6Zl8yc2NsR1JFUUEyRGN3ZTdfVkNKeTZ2Y0UzUE9lSWxBUDIzSmlTb2tDbmE3X0JKMTYtTnJKTDNidDN2R0NCdmd5RENVVzhqcnUtMW5SbTBoYlhkaHpyMFVnZ0tVNk1yZ0Zob05tY2gwTkNPS0Y0MHdiNTRPZW5XYm5RWlVjeXNnVFlR?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T05:56:00+00:00",
+     "media": "Investing.com France"
+    },
+    {
+     "titre": "Schneider Electric relève ses objectifs après un bon 3e trimestre - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRldmM2QzSnBsa2hWQTlvSmhtZVhNakR5eEU0TDl5R1AyS19HWjN5LWxyUVBzWHNFUTVmc05UNFRiUjFON0tBSEJOVFN6aGgwVlZscjUxX0R5d25Mbm9feTNhdFZqWGN0dVFydGpvck1BWnpGZktDZTFnWDlOeWJjU3NSUWVyOEtTTmpFbVI5a0s2MU4wZDZCc0lEQWtPcnNPWXJ6a0ZkQ2N0TThBZ1JSZ0ZqU3hObldNMFBHYklMMDB2QmM?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T05:51:35+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T06:22:40+00:00"
+  },
+  {
+   "id": "presse-616da785f9126dff",
+   "date": "2026-10-16",
+   "source": "presse",
+   "titre": "Pernod Ricard : ventes du T1 en baisse organique de 0,9 %, mieux qu'attendu, perspectives confirmées",
+   "resume": "Ventes du T1 2026-27 de 2,23 Md€, -0,9 % en organique contre -1,7 % attendu ; -6,3 % en publié. États-Unis -10 %, Chine -25 %, Inde +19 %. Objectif annuel d'un chiffre d'affaires organique globalement stable confirmé.",
+   "nouveaute": "Publication du T1 meilleure que le consensus avec perspectives annuelles confirmées.",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPcjNvNGtidG5FZHRnaTRYVjJRajVNT3owZkpqZlEySDlOVmJUMW1tZC1BMGlGXzZzQ1Fyd01JaHRQWGdmQUFRUkhZUGtvUFFTM3M4VzBvZzhSMzkxTENuYXVVZy1kRzhFbG1rMU45ZkJkMUtHNFA3WXR6aDdBRGVta203Ri1Obnc3d183OEx0bDR5ckFhU0FTczNqVjhPZ3lfdTdCVGkwVG1HVFJocklQVFUySEdrbkIxd2pvMGN3MDhqN0syZDczeGZzWXZIdmVpa0c0Qm5uQmFFV3lBWjBfNjlCNEt4Nk5Ia0xidllrM0xJRWpZblFJbW94bE5KdUFpS3VYU1hKdjHSAYgCQVVfeXFMT3IzbzRrYnRuRWR0Z2k0WFYyUWo1TU96MGZKamZRMkg5TlZiVDFtbWQtQTBpRl82c0NRcndNSWh0UFhnZkFBUVJIWVBrb1BRUzNzOFcwb2c4UjM5MUxDbmF1VWctZEc4RWxtazFOOWZCZDFLRzRQN1l0emg3QURlbWttN0YtTm53N3dfNzhMdGw0eXJBYVNBU3MzalY4T2d5X3U3QlRpMFRtR1RSaHJJUFRVMkhHa25CMXdqbzBjdzA4ajdLMmQ3M3hmc1l2SHZlaWtHNEJubkJhRVd5QVowXzY5QjRLeDZOSGtMYnZZazNMSUVqWW5RSW1veGxOSnVBaUt1WFNYSnYx?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [
+    "douanes_commerce"
+   ],
+   "entreprises": [
+    {
+     "ticker": "RI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Recul organique moindre qu'attendu mais États-Unis et Chine toujours en forte baisse (déstockage) : lecture nuancée.",
+     "extrait": "",
+     "nom": "Pernod Ricard"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Pernod Ricard limite le recul de ses ventes au premier trimestre, mieux qu’attendu, grâce à l’Inde malgré la faiblesse des États-Unis et de la Chine - Vinetur",
+     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPcjNvNGtidG5FZHRnaTRYVjJRajVNT3owZkpqZlEySDlOVmJUMW1tZC1BMGlGXzZzQ1Fyd01JaHRQWGdmQUFRUkhZUGtvUFFTM3M4VzBvZzhSMzkxTENuYXVVZy1kRzhFbG1rMU45ZkJkMUtHNFA3WXR6aDdBRGVta203Ri1Obnc3d183OEx0bDR5ckFhU0FTczNqVjhPZ3lfdTdCVGkwVG1HVFJocklQVFUySEdrbkIxd2pvMGN3MDhqN0syZDczeGZzWXZIdmVpa0c0Qm5uQmFFV3lBWjBfNjlCNEt4Nk5Ia0xidllrM0xJRWpZblFJbW94bE5KdUFpS3VYU1hKdjHSAYgCQVVfeXFMT3IzbzRrYnRuRWR0Z2k0WFYyUWo1TU96MGZKamZRMkg5TlZiVDFtbWQtQTBpRl82c0NRcndNSWh0UFhnZkFBUVJIWVBrb1BRUzNzOFcwb2c4UjM5MUxDbmF1VWctZEc4RWxtazFOOWZCZDFLRzRQN1l0emg3QURlbWttN0YtTm53N3dfNzhMdGw0eXJBYVNBU3MzalY4T2d5X3U3QlRpMFRtR1RSaHJJUFRVMkhHa25CMXdqbzBjdzA4ajdLMmQ3M3hmc1l2SHZlaWtHNEJubkJhRVd5QVowXzY5QjRLeDZOSGtMYnZZazNMSUVqWW5RSW1veGxOSnVBaUt1WFNYSnYx?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T23:11:43+00:00",
+     "media": "Vinetur"
+    },
+    {
+     "titre": "Pernod Ricard limite le recul de ses ventes au premier trimestre, mieux qu’attendu, grâce à l’Inde malgré la faiblesse des États-Unis et de la Chine - Vinetur",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQQURac1B4RGQ3TGNyQXhNZHIwdEw1QkR0RkYzN0NpdlV5VndLbGR2X0xwQTU4WGpyLW1sQllRcG44SDZkTU5IZ1R0dXFhWk1YSTA2OWdycXM5SzdKVlFQQVo1RmhBT2lHeHFGWmV6UWZWUy05OGZMOTh4dFpOUmhnR2FTTm5HT3dBX2lOOElQZzIzRV9xdWxXanpfOW05aGx3aWJXb2JxbWpYOVR3RDF6TGlPNnlYT2M5a0tJNktqNkNBMl8tMkF3TlZRTkNuOVpKZWdfblBxdkZnSE5sNTZQNEhkcWtmSmVmUTZGNktrankzRklLWUFhdGpRVzRYd2NXRWlR0gGIAkFVX3lxTE9yM280a2J0bkVkdGdpNFhWMlFqNU1PejBmSmpmUTJIOU5WYlQxbW1kLUEwaUZfNnNDUXJ3TUlodFBYZ2ZBQVFSSFlQa29QUVMzczhXMG9nOFIzOTFMQ25hdVVnLWRHOEVsbWsxTjlmQmQxS0c0UDdZdHpoN0FEZW1rbTdGLU5udzd3Xzc4THRsNHlyQWFTQVNzM2pWOE9neV91N0JUaTBUbUdUUmhySVBUVTJIR2tuQjF3am8wY3cwOGo3SzJkNzN4ZnNZdkh2ZWlrRzRCbm5CYUVXeUFaMF82OUI0S3g2TkhrTGJ2WWszTElFalluUUltb3hsTkp1QWlLdVhTWEp2MQ?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T23:11:42+00:00",
+     "media": "Vinetur"
+    },
+    {
+     "titre": "Pernod Ricard annonce une baisse de 10 % de ses ventes aux États-Unis après la réduction des stocks par les distributeurs - Vinetur",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQT0RHTHpZcWJzQ1ExeGt2NGlab25YcW5rbWRXQ0JpaDhTT0JFLU5IOHMtRVJfTUJMYzRPYmJKT2JIX0JMRGhTN1JOQUUwSDhkemUwOU0yQUcyZElIM2Z1aWJEVEdpSmw3WFBsZE1BRE4tanJ4aWpDVDVqMlNndUdMcHRaWXd5Qlk1YnE4LWZtOUlNLUZDTFpndjFOelRBYkc0MlRkNDV4c1B6MnhfSmlfMmE0V3c3RGN40gG-AUFVX3lxTFB0dnpfLWxaRTVnUG1jLWxPVUd6R3duS1VpdkJHMUxfSEUwNU5XbWhJa0hleC1rd3M1b3lBRVZHZ1Q3WkdLblVPZGxULTJXM3o1cWxPTlBmSU5xZjhVc29sejlnVkJfSUFSQUo0Sk9OZGpjX0dXTmtLaHJpcXJ6ckU3dEdSeDJ4SURfdXFnMl9WaG9va0RERkY5N2RFVndXcGZhMDh0cVZxUk9HcExfVVFXZUJVUEtHQjRWUVNrT0E?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T23:11:40+00:00",
+     "media": "Vinetur"
+    },
+    {
+     "titre": "Pernod Ricard affiche un recul des ventes de 6,3 %, après une chute de 25 % en Chine - Vinetur",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQnlGWHYzVm15Z0p6YTVKcTNyRTBVTVUxUV84dHk3MXJ3NS1zcGROSGg5d2dfTlN4elFaeUp2M1paeEcxWUhLRlRXSVMtMmdKelhwVnJTVEU3UEVHWTUtMFprcGN1b1Y2eWFJZDkzLXVaY3Y4N0RuX0J4YU9yb3FWd2Rxa0hlOTRJYmZGeG5oNFRmVW5SbVZvaVFENDZSemZxTkQ5ZlJMRnpoYllGcFUwaXViNklIZ9IBuwFBVV95cUxOWlhvRDZmTHBQZE0yTW93eS1jS2MtUGV2c1NIbFRoVkp4ZnA2eEtqXzdPcFRIVnpsSnkxNjExd0JsbEtnTDNKWll4aGxiQV9jNEZpY2lfa2loYWhTY2lqMVkyT3NRLTdGUkYtOWZxNEZ0Yi1RSGc5dkVqaTJYbzJuUFlESWdZMG0xNEhscmJKeFBNekhVMlgtUzVsXzJnRTNBd1ZIUWRvWEdRTWVjSUxNcmdhRE01dG9uWVF3?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T00:42:05+00:00",
+     "media": "Vinetur"
+    },
+    {
+     "titre": "Pernod Ricard : le champagne Perrier-Jouët se distingue dans un premier trimestre en recul - La Champagne de Sophie Claeys",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcFNpQ3h4SmlwRW8yYlhSN1gzTS11eWJsTXV6emxDNnhqcnNCT3ZkU2NLNTdlOFMyLVlKXzh3R09ZQlY0dlFvcWJQMHRmYzZyVnJPUGFuVFd2MjBTTDdiY19FeXNWWnpneEF1VTQwZHN6MDhqdjBGeHIya1FzLXF4aTQzNkpRZEVUN2JzTTNha0Z1aXlYVTIwNV9TZTV4WnB4MjVDbzhiRGdoUVlBTWhHVng3LVFVWTZCTVUweFlsNzVnazZy?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T06:02:47+00:00",
+     "media": "La Champagne de Sophie Claeys"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T06:22:40+00:00"
+  },
+  {
+   "id": "amf-083461_20261015",
+   "date": "2026-10-16",
+   "source": "amf",
+   "titre": "Aéroports de Paris : trafic en baisse sur 9 mois, hypothèses de trafic 2026 révisées",
+   "resume": "ADP publie un trafic de septembre et des 9 premiers mois 2026 en recul (première baisse depuis 2020) et révise ses hypothèses de trafic pour l'année, avec l'impact du prix du kérosène.",
+   "nouveaute": "Révision des hypothèses de trafic 2026 publiée le 15 octobre.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083461_20261015.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ADP.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Le trafic pilote les redevances aéroportuaires et les revenus commerciaux ; hypothèses de trafic abaissées.",
+     "extrait": "Révision des hypothèses de trafic pour l'année 2026",
+     "nom": "Aéroports de Paris (Groupe ADP)"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Aéroports de Paris (Groupe ADP) : Trafic du mois de septembre et des 9 premiers mois de l'année 2026 - Révision des hypothèses de trafic pour l'année 2026",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083461_20261015.pdf",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T16:49:47+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Aéroports de Paris : première baisse du trafic depuis 2020 - Economie Matin",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObUxjaHNWdG5EWndTZkI3bk1BdnJQVE5tdlpOTURkemhsREdGdmxrQnVNQTM0eGpiUXRnQnFZMmpfbTE4bm5uWjNSc3lHTFBMaGhWM2N5bDB2LTdyR3NhZm9DQUVIVEUzUnh0d2FyelhKN3BhVG9JeU83NE14YUlDalpsWDlzQQ?oc=5",
+     "date": "2026-10-16",
+     "publie_le": "2026-10-16T04:18:28+00:00",
+     "media": "Economie Matin"
+    },
+    {
+     "titre": "Trafic en recul en 2026 aux aéroports de Paris, l'impact du kérosène met à l'épreuve le modèle ADP - https://renseignementeconomique.fr/",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQ3Q0UFZLMFU0dk5yZTBNeWF2STdGeWZGREZJaUxSWlZXMmhxSnpsTkQ0NUs5RExOeG9zYTdHTGNzWU1RbkRhV2V2SDVLbkk1UU53bFRvdXoxMWxNQXNJZzhwRmJlRkNXZVJOcV9zY3pKTG0tc2pBRktKM1FXNHVxcnNiQ2diZ212X2ladmR3b0R3Snh3ZGpxdGNNNVdlVUEzWWxMWXNySlJPMzRRS2JkMzJQVkEyUloxTFNMWEI5V3ZYWUxrMnR2S0NuOGw?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T23:41:24+00:00",
+     "media": "https://renseignementeconomique.fr/"
+    },
+    {
+     "titre": "Coup d'arrêt en 2026 pour la croissance du trafic des aéroports de Paris - France 24",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObzNVRXhQQ3ptb1NyQnNlQ0Zic05tZ3JoSGllMjczVG5GejJCOThKLWs4ZEx4V1ppS0JEQzlObFJJeVltbER5TE9INzd3N0prNWpVRU1jeHJLTUtBdEpjME5UUG8yQndRVGFoa0FHOE1EQXFpU3M1VDVTNDNRNXZzTV96YjVoLTFjVUtQcnMwOHJHTjB5Zi1CbURWeGlBd0F6YjdTdk1iSWUxWm9fcTZOWEFQelY2M3pMT3FFVTFtMXIxbnpFZjdCWnpnSzRMRU9h?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T20:45:26+00:00",
+     "media": "France 24"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T06:22:40+00:00"
+  },
+  {
+   "id": "amf-138199_20261015",
+   "date": "2026-10-15",
+   "source": "amf",
+   "titre": "Alstom : contrat de maintenance de 15 ans avec Greater Anglia, près de 1 Md€",
+   "resume": "Alstom signe la prolongation sur 15 ans du contrat de services de Greater Anglia (Royaume-Uni), pour près d'un milliard d'euros (947 M€).",
+   "nouveaute": "Nouveau contrat annoncé le 15 octobre.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138199_20261015.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Environ 1 Md€ sur 15 ans, soit quelques % du carnet de commandes annuel, revenus récurrents de maintenance.",
+     "extrait": "Alstom signe une prolongation de contrat de services de 15 ans, d’une valeur de près de 1 milliard d’euros",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Alstom : ALSTOM S.A : Alstom signe une prolongation de contrat de services de 15 ans, d’une valeur de près de 1 milliard d’euros, avec Greater Anglia, au Royaume-Uni",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138199_20261015.pdf",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T15:45:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Alstom renouvelle un contrat au Royaume-Uni pour près d'un milliard d'euros - Le Figaro",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVEJRUHpINFNpWHRJSVBmMFhaMjlDbk9Xc3FLSXhvNDVwY05Yd3QxbkRYWk41SEIxSXVLNTBYRXo0azcxRDZ5ejBxTS1IYWZ4QnM2dGYxRFFveVgydDZwYzRIa19OYkhOaWJ1eEFUYVYzdXc5QUw3OEFTcjl0ek5rQ19UVEFnTGQtVFpER3k0Nlc2TjNnb1c3YTBWOGhmeVd3eDYxWkpSaHNDWkQ4TzlMUzNleE9RWWxOYXc?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T18:23:38+00:00",
+     "media": "Le Figaro"
+    },
+    {
+     "titre": "Alstom signe un contrat de maintenance de 947 millions d’euros avec Greater Anglia - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORjk1c1FlRy1WUFlJRmRRT2NNOTFnQXlSS3paUHpIcmQ1TkhLMkV3UWdtX09kTWdBd19QUWg3Rjd5c1pST0FCejRweGFuRzR5OU9NZVhrYnYyUnhKRUhUTnhmYnFNSTRDX1V0VGg5RlRJbGhpTVNYWk15MldQcVVreWU2aDhQX3hHbWFRVkZSbWtYeE44U1A1cjdSWWZWZjVWZDAyTF9NaUM0LWxqSWNRdS03R3lTeXVKSWZyNl9DbXk3b3hVZjZiMlgwQk5zVFVqTjVMZEN3?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T17:33:00+00:00",
+     "media": "Investing.com France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T06:22:40+00:00"
+  },
+  {
+   "id": "presse-ebb85c6940c6ea29",
+   "date": "2026-10-15",
+   "source": "presse",
+   "titre": "Lufthansa va acquérir 44,9 % de TAP Air Portugal, Air France-KLM écarté",
+   "resume": "Le Portugal retient Lufthansa pour 44,9 % de TAP ; Air France-KLM, qui était candidat, perd ce dossier et conserve les fonds prévus.",
+   "nouveaute": "Choix de l'acquéreur de TAP annoncé.",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd3ZoNVlraG82VWVCbC1BWF96c0FTQmxSQTZMZWxWUnpLU0Ytb2NLRTRCVGNiMUtYSkFsUUJoUXV2R2x5OTJmX3YyRjlaY1ZPU09ZODJhcV92aHpNZXFCREJjTkluQnZicUVGSHNQRVlVeFB4cS03MUFXZTVPNThZWklIYkFmdnJqZEJWQ1dxUE0zVFlZYW52bDlueWN6VDcwSWRrMzZLV3dWeW40WWQ4cUhNT00zZUJJUFl3RG9PajRLSGJf?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AF.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Perte d'un projet de développement, mais pas de décaissement ; effet à court terme limité.",
+     "extrait": "",
+     "nom": "Air France-KLM"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Portugal : Lufthansa va acquérir 44,9 % de TAP Air Portugal, revers stratégique pour Air France-KLM - Actu Aero",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd3ZoNVlraG82VWVCbC1BWF96c0FTQmxSQTZMZWxWUnpLU0Ytb2NLRTRCVGNiMUtYSkFsUUJoUXV2R2x5OTJmX3YyRjlaY1ZPU09ZODJhcV92aHpNZXFCREJjTkluQnZicUVGSHNQRVlVeFB4cS03MUFXZTVPNThZWklIYkFmdnJqZEJWQ1dxUE0zVFlZYW52bDlueWN6VDcwSWRrMzZLV3dWeW40WWQ4cUhNT00zZUJJUFl3RG9PajRLSGJf?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T11:02:17+00:00",
+     "media": "Actu Aero"
+    },
+    {
+     "titre": "Lufthansa lui souffle TAP sous le nez : que va faire Air France-KLM de l’argent qu’il comptait investir dans la compagnie portugaise ? - Challenges",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNWFozSHdxTmI3UUpNa0lUZXBZS3E1NjgzVy1UZTB3TE9EQ21oOGYtQ3NkenVieU5rOUlNa21FRWJJMUpoTGwzNE1TMjNOTktFOC1JbFZobDlxdkJOZ05vYXdiVHlLcjIxRVpWS1RHQWZZaGFYVnF2SGNjR2FzWnY0T21PLXRQcGRzOWpPQWc5S2t5cm9uTjY2ZHJ0Y19YSXhTZjJ2OGtFNkxhbkdGVDZlRjNHbk9EYWFhTlo5Q25PcDFfZEtvaDltMUNOMlkxNmRESk5qSzZyaGZ6M2dJN3g4a3JrbWYwMG55aTduSGI3UzZadS1fSXdjb0JCOEpBeGRvMk5HWTQ1VnkyUHZ4MGJpdA?oc=5",
+     "date": "2026-10-15",
+     "publie_le": "2026-10-15T16:15:00+00:00",
+     "media": "Challenges"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-16",
+   "publie_a": "2026-10-16T06:22:40+00:00"
+  },
   {
    "id": "presse-612275de2365fd1a",
    "date": "2026-10-15",
@@ -2997,60 +3260,6 @@
   }
  ],
  "calendrier": [
-  {
-   "date": "2026-10-15",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Pernod Ricard : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "RI.PA"
-   ],
-   "tickers_mots_cles": [
-    "RI.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/RI.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-15",
-   "heure": "",
-   "type": "resultats",
-   "titre": "FDJ United : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "FDJU.PA"
-   ],
-   "tickers_mots_cles": [
-    "FDJU.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/FDJU.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-15",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Maurel & Prom : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "MAU.PA"
-   ],
-   "tickers_mots_cles": [
-    "MAU.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/MAU.PA",
-   "fiable": false
-  },
   {
    "date": "2026-10-16",
    "heure": "",
