@@ -1,20 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-19T06:19:35+00:00",
+ "genere_le": "2026-10-19T11:21:52+00:00",
  "sources": {
   "amf": {
    "ok": true,
-   "trouves": 15,
-   "nouveaux": 13
+   "trouves": 3,
+   "nouveaux": 3
   },
   "presse": {
    "ok": true,
-   "trouves": 224,
-   "nouveaux": 198
+   "trouves": 234,
+   "nouveaux": 158
   },
   "assemblee": {
-   "ok": false,
-   "erreur": "IncompleteRead(342864751 bytes read, 859344 more expected)"
+   "ok": true,
+   "trouves": 0,
+   "nouveaux": 0
   },
   "agenda": {
    "ok": true,
@@ -135,6 +136,54 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-19",
    "publie_a": "2026-10-19T06:19:35+00:00"
+  },
+  {
+   "id": "amf-083469_20261019",
+   "date": "2026-10-19",
+   "source": "amf",
+   "titre": "Carrefour : accord pour acquérir Codifrance (proximité), valeur d'entreprise 152 M€",
+   "resume": "Carrefour a conclu avec Colruyt Group un accord pour acquérir Codifrance, distributeur de proximité approvisionnant environ 3 100 clients en France (CA 307 M€ en 2025/26, valeur d'entreprise 152 M€). Opération soumise à l'Autorité de la concurrence, finalisation attendue au S1 2027.",
+   "nouveaute": "Première annonce de l'acquisition de Codifrance : 152 M€ de valeur d'entreprise, 307 M€ de CA, closing attendu au S1 2027.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083469_20261019.pdf",
+   "etape": "annonce",
+   "probabilite": 0.85,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "CA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Renforce le réseau de proximité (Proxi, plus de 1 500 magasins) pour 152 M€, montant modeste au regard du groupe.",
+     "extrait": "Codifrance approvisionne environ 3 100 clients en France.",
+     "nom": "Carrefour"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Carrefour : Carrefour renforce son leadership dans le commerce  de proximité en France avec l’acquisition de Codifrance",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083469_20261019.pdf",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T06:14:46+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Carrefour rachète Codifrance, spécialiste de la distribution de proximité qui approvisionne Coccimarket et Coccinelle - Le Figaro",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQckxTMWlhTXJxVmNyMFBCajJGaDhiMk5UY0dqX3dlUzRQTl9DOTlpVUZod25XNnhvUlc4OGhfemZTQXZmZDg1R1pjUENadm9Ld19OOGlmZjlXd3dZcTZRYkJvWkxZRm5kUGtRWG0yRVRobFN5WEgxYnRRV3NSN2p5RThvUHczdk5uMmlIZWVWMHMxaUlMTXhKVVZCMV9HdGRBNkZYU2tnWHNxUk5DdU9sN05hMDRjTkJ5VmUxRGllZUtDOHJIdUxBOFNDRDZySVlYLTBQaGJwVEszTFUwX09zZTZwdkJnLVRoZGZsX3cxZjM?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T10:57:03+00:00",
+     "media": "Le Figaro"
+    },
+    {
+     "titre": "Carrefour rachète Codifrance, qui approvisionne plus de 3 000 supérettes en France - Yahoo Finance France",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU2RQT1N1TElLZ3owY2VkOVhqc3lDR2U4R1BQb2RBMkNtMW0wSEQ2ZDlFOERPVXNpaE9fcFN3Nmp0b2JRYXNUZ29fWHRGbDJhN1FQWEdVblNGdGMzUTlqVXVPQTlIWGhiWldIeV9nNjZkODVMOW54ZkNuZlVHOVBROFRuUWFzOFdxUHpjOExuTk1KM2R5ZG1xZmxPVnVRR2JpMDJPNThtZw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T10:18:53+00:00",
+     "media": "Yahoo Finance France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-19",
+   "publie_a": "2026-10-19T11:21:52+00:00"
   },
   {
    "id": "presse-0d03ad373c7b9964",
@@ -4621,24 +4670,6 @@
    "date": "2026-10-29",
    "heure": "",
    "type": "resultats",
-   "titre": "Schneider Electric : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "SU.PA"
-   ],
-   "tickers_mots_cles": [
-    "SU.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/SU.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-29",
-   "heure": "",
-   "type": "resultats",
    "titre": "Eramet : publication de résultats (date estimée d'après l'an dernier)",
    "tickers": [
     "ERA.PA"
@@ -5533,6 +5564,24 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/DG.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-11",
+   "heure": "",
+   "type": "resultats",
+   "titre": "EssilorLuxottica : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "EL.PA"
+   ],
+   "tickers_mots_cles": [
+    "EL.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/EL.PA",
    "fiable": false
   },
   {

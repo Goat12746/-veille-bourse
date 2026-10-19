@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-19T06:20:47+00:00",
+ "genere_le": "2026-10-19T11:23:18+00:00",
  "derniere_seance": "2026-10-16",
  "methode": {
   "indice": "CAC 40",
@@ -13,10 +13,10 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 67,
-  "n_observations": 125,
+  "n_alertes": 68,
+  "n_observations": 126,
   "statuts": {
-   "attente": 2,
+   "attente": 3,
    "note": 44,
    "non_directionnel": 30,
    "confondu": 9,
@@ -248,10 +248,37 @@
   ],
   "probabilites": {
    "n_tranchees": 1,
-   "n_en_cours": 36,
+   "n_en_cours": 37,
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "amf-083469_20261019",
+    "titre": "Carrefour : accord pour acquérir Codifrance (proximité), valeur d'entreprise 152 M€",
+    "date": "2026-10-19",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 0.85,
+    "publie_a": "2026-10-19T13:21",
+    "information": "2026-10-19T08:14",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "CA.PA",
+      "nom": "Carrefour",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "presse-731dfdf2d496896c",
     "titre": "Alstom : première commande d'environ 800 M€ au Vietnam",
@@ -3894,10 +3921,10 @@
   "indice": "CAC 40",
   "depuis": "2015-01-01",
   "jusqu_a": "2026-10-16",
-  "n_communiques": 25991,
+  "n_communiques": 25994,
   "n_evenements": 21165,
   "n_entreprises": 115,
-  "en_attente": 0,
+  "en_attente": 3,
   "jour_ordinaire": {
    "n": 312828,
    "z_abs_moyen": 0.67,
@@ -8265,7 +8292,7 @@
     "nom": "Alstom",
     "indice": "SBF 120",
     "secteur": "Matériel ferroviaire",
-    "n_communiques": 446,
+    "n_communiques": 447,
     "n_evenements": 378,
     "categories": [
      {
@@ -14105,7 +14132,7 @@
        "perf_12m_pct": -2.21,
        "rendement_pct": 1.56,
        "ecart_pct": 2.19,
-       "z": 2.03,
+       "z": 2.04,
        "suite_pct": 1.83,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -15999,7 +16026,7 @@
     "nom": "Carrefour",
     "indice": "CAC 40",
     "secteur": "Grande distribution",
-    "n_communiques": 264,
+    "n_communiques": 265,
     "n_evenements": 209,
     "categories": [
      {
@@ -17928,7 +17955,7 @@
        "avant_pct": 5.94,
        "z_avant": 1.06,
        "perf_12m_pct": -6.39,
-       "rendement_pct": -2.53,
+       "rendement_pct": -2.52,
        "ecart_pct": -4.7,
        "z": -3.74,
        "suite_pct": 1.01,
@@ -22621,7 +22648,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.27,
+       "avant_pct": 1.28,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -28119,7 +28146,7 @@
        "titre": "Kering : Résultats semestriels 2023",
        "avant_pct": 5.84,
        "z_avant": 1.15,
-       "perf_12m_pct": -14.02,
+       "perf_12m_pct": -14.03,
        "rendement_pct": -1.15,
        "ecart_pct": -1.27,
        "z": -1.13,
@@ -29734,7 +29761,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.64,
+       "suite_pct": -2.63,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -32165,7 +32192,7 @@
        "titre": "Version PDF",
        "avant_pct": 7.79,
        "z_avant": 1.47,
-       "perf_12m_pct": 19.5,
+       "perf_12m_pct": 19.51,
        "rendement_pct": -3.15,
        "ecart_pct": -2.19,
        "z": -1.86,
@@ -44998,7 +45025,7 @@
        "z_avant": -0.19,
        "perf_12m_pct": -12.41,
        "rendement_pct": -14.12,
-       "ecart_pct": -14.41,
+       "ecart_pct": -14.42,
        "z": -5.76,
        "suite_pct": -1.26,
        "reaction": "baisse",
@@ -47579,7 +47606,7 @@
        "rendement_pct": -3.79,
        "ecart_pct": -4.19,
        "z": -2.27,
-       "suite_pct": 1.34,
+       "suite_pct": 1.35,
        "reaction": "baisse",
        "courtes_pct": 0.0
       },
@@ -52257,7 +52284,7 @@
        "titre": "INFORMATION TRIMESTRIELLE AU 30 SEPTEMBRE 2022",
        "avant_pct": -2.62,
        "z_avant": -0.57,
-       "perf_12m_pct": 8.59,
+       "perf_12m_pct": 8.58,
        "rendement_pct": 2.04,
        "ecart_pct": 1.61,
        "z": 1.52,
@@ -60125,7 +60152,7 @@
        "avant_pct": -1.44,
        "z_avant": -0.17,
        "perf_12m_pct": 8.03,
-       "rendement_pct": 16.16,
+       "rendement_pct": 16.17,
        "ecart_pct": 15.58,
        "z": 7.83,
        "suite_pct": -11.67,
@@ -61151,7 +61178,7 @@
        "periode": "chiffre_affaires",
        "titre": "bioMérieux – Information financière du 1er trimestre 2025",
        "perspectives": "confirmees",
-       "avant_pct": 5.37,
+       "avant_pct": 5.36,
        "z_avant": 0.87,
        "perf_12m_pct": 28.53,
        "rendement_pct": -3.89,
@@ -79776,7 +79803,7 @@
        "actionnaires": true,
        "avant_pct": -6.95,
        "z_avant": -1.09,
-       "perf_12m_pct": 19.01,
+       "perf_12m_pct": 19.02,
        "rendement_pct": -4.57,
        "ecart_pct": -5.18,
        "z": -3.66,
@@ -87869,7 +87896,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.83,
+       "perf_12m_pct": -2.84,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -91320,7 +91347,7 @@
        "jour": "2015-05-06",
        "periode": "chiffre_affaires",
        "titre": "ICADE – ACTIVITÉ DU 1ER TRIMESTRE 2015",
-       "avant_pct": -6.35,
+       "avant_pct": -6.36,
        "z_avant": -1.33,
        "perf_12m_pct": -1.25,
        "rendement_pct": -1.97,
@@ -93083,7 +93110,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.28,
+       "suite_pct": 1.29,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -93365,7 +93392,7 @@
        "perf_12m_pct": -30.65,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.55,
+       "z": 1.56,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -98213,7 +98240,7 @@
        "perf_12m_pct": -11.43,
        "rendement_pct": -2.96,
        "ecart_pct": -3.51,
-       "z": -3.13,
+       "z": -3.14,
        "suite_pct": 2.58,
        "reaction": "baisse",
        "courtes_pct": 0.62,
@@ -100475,7 +100502,7 @@
        "titre": "Activité 9 mois 2021",
        "avant_pct": 36.98,
        "z_avant": 3.42,
-       "perf_12m_pct": 94.93,
+       "perf_12m_pct": 94.92,
        "rendement_pct": -8.28,
        "ecart_pct": -8.01,
        "z": -3.23,
@@ -104780,7 +104807,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.12,
+       "rendement_pct": 8.13,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -109105,7 +109132,7 @@
     "nom": "Rubis",
     "indice": "SBF 120",
     "secteur": "Distribution d'énergie",
-    "n_communiques": 145,
+    "n_communiques": 146,
     "n_evenements": 115,
     "categories": [
      {
@@ -111802,7 +111829,7 @@
        "jour": "2021-07-23",
        "periode": "semestriels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 0.08,
+       "avant_pct": 0.07,
        "z_avant": 0.01,
        "perf_12m_pct": -13.91,
        "rendement_pct": -7.6,
@@ -114250,7 +114277,7 @@
        "z_avant": 1.02,
        "perf_12m_pct": -17.87,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.59,
+       "ecart_pct": 7.6,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -121371,7 +121398,7 @@
        "perf_12m_pct": 7.12,
        "rendement_pct": 0.21,
        "ecart_pct": -0.08,
-       "z": -0.04,
+       "z": -0.05,
        "suite_pct": -2.88,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -121803,7 +121830,7 @@
        "jour": "2017-01-04",
        "periode": "chiffre_affaires",
        "titre": "Chiffre d'affaires du 1er trimestre 2016/2017",
-       "avant_pct": -0.61,
+       "avant_pct": -0.62,
        "z_avant": -0.07,
        "perf_12m_pct": 12.92,
        "rendement_pct": 4.32,
@@ -123494,7 +123521,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123544,7 +123571,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123594,7 +123621,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123644,7 +123671,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123694,7 +123721,7 @@
        "n": 6,
        "part_hausse": 0.5,
        "ecart_moyen_pct": 0.63,
-       "suite_moyenne_pct": 1.79,
+       "suite_moyenne_pct": 1.78,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -124174,7 +124201,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.22,
+       "suite_pct": -0.23,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
