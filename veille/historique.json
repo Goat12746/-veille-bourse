@@ -1,7 +1,125 @@
 {
  "version": 1,
- "maj_le": "2026-10-16T11:16:12+00:00",
+ "maj_le": "2026-10-19T06:19:35+00:00",
  "alertes": [
+  {
+   "id": "presse-731dfdf2d496896c",
+   "date": "2026-10-19",
+   "source": "presse",
+   "titre": "Alstom : première commande d'environ 800 M€ au Vietnam",
+   "resume": "Alstom annonce remporter une première commande d'environ 800 millions d'euros au Vietnam, selon plusieurs médias financiers.",
+   "nouveaute": "Première commande de l'entreprise au Vietnam, annoncée aujourd'hui, pour environ 800 M€.",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWDAxaDJ1QVJtdXJzRDRzUHhZSGlnY2dJRmYzWHZtNm1nSDhTYXRXSFdBbVJSTWZtcnZ4ZFd4TWFzQ2dObXRpV1VlWDY3dHZoU1dHdUZkbGhXeWZkOW9UZTNpdXdEMW42QlJ1TXp5SUpRNEkxeW1RYU1JMDBuMC1HTTluOGotMGVFVUprdVJWcGNma2JVSUlzMWh6akN4UTFGRFVPQ2ZYZ1VvbVpVLVlnaVpqaFU?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ALO.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Commande d'environ 800 M€, à rapporter à un carnet de commandes de dizaines de milliards d'euros : contribution modérée au carnet, étalée sur plusieurs années.",
+     "extrait": "",
+     "nom": "Alstom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Alstom remporte une commande d'environ €800 mlns au Vietnam - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWDAxaDJ1QVJtdXJzRDRzUHhZSGlnY2dJRmYzWHZtNm1nSDhTYXRXSFdBbVJSTWZtcnZ4ZFd4TWFzQ2dObXRpV1VlWDY3dHZoU1dHdUZkbGhXeWZkOW9UZTNpdXdEMW42QlJ1TXp5SUpRNEkxeW1RYU1JMDBuMC1HTTluOGotMGVFVUprdVJWcGNma2JVSUlzMWh6akN4UTFGRFVPQ2ZYZ1VvbVpVLVlnaVpqaFU?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T06:13:55+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Alstom remporte une commande d'environ €800 mlns au Vietnam - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVFh4SDlKY1JwTGo1eEdrQjhHMW54MV9SQ1BrWVJVZFpDVDgxMHBaekdWQVNMeHhJcmNJdWhRTjRMSTZobWZSS19UT20ybVRaLUNNYzZUWFdNRUptSkhMSDBYZS0wMk5lcGk1TTFCUGRhY3R4d2FYMFZTOTVDcHI4N3pqcXZMM05DNGtzdEZHejQwcUJhS3FDdWJKNWdHQl95cnZCSjM3SFBvRkd1R2VsdHVKRkM0RW1vckc3VGM2UEt1WDNZSkxKcGdFMVlIQQ?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T06:12:34+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Alstom : une première commande d'environ 800 millions d'euros au Vietnam - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQUIxbHhnWU1FNGhKRGMxYnJzUGNkOUN1eGFFdjViSFJmRWhObWZ5U1p0VHhoRGZrM2ZQX0g3N0xDS3B2NDhfN3NhcHd1UUpHaTI1NTU5UVhoZE50aWY1UFZNZklBam5FVFpEZ1ZidGtuc0JQS2VOR0hodzlkVlNLOW1US3hEeXRSRGxQeDBCTm54d2RBTzFQNm5VQ2dlTUt4Y1VlaUZNd0E5NkZKcnlTRmdDUGFLTmVWeHU0NjcyTTR6X21kWVdSMUNTQQ?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T06:05:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "ALSTOM S.A : Alstom remporte une première commande d’environ 800 millions d’euros au Vietnam - Le Soleil",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPOEFrZi1oeDlncXNLT25fWk0zc0JHSE1UR2FYYldZNlZkZkl2amgtRnlvWFFiazh0ek9OVHRYT1llcG4tQWxVQl82VFV0eEFfbFE2OVM5S2VWdDgxRGZyYnVtaGhwUHRidWRVUVVsY3R2b3BNaV83clkxSHllYmd1NDNmVTBCOHRUVzAxNWFqV25EVTcxZC15OWpmWHV5bGU4YzNreDIwcU5VeTdXcDRiWmlhQmhHc21DSS1OX1VnWGsyeVRDRGxlWnNPcV9BT3RRU1Jwc19wZ0pJQzUxa2dhX3YzLVhKWWVTb2tLUWdwbmpMTDU0Tmtad1RhWU1QNnh0NERF?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T06:00:13+00:00",
+     "media": "Le Soleil"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-19",
+   "publie_a": "2026-10-19T06:19:35+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-27ae14b39bc4d074",
+   "date": "2026-10-19",
+   "source": "presse",
+   "titre": "Rubis propose de passer de la commandite à la société anonyme",
+   "resume": "Rubis propose de se transformer en société anonyme avec directoire et conseil de surveillance, pour simplifier sa gouvernance. La proposition devra être soumise aux actionnaires.",
+   "nouveaute": "Première proposition formelle de changement de forme juridique de Rubis, abandonnant le modèle de la commandite.",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcHoxRHNyZjJwNGI5TzJoNTlPcWIxLXAwZEhTU3JnZzk3OGVHN05qNE5SR2NDUXN3bm9NLXdVdnQ4bEJZRDhoOUFNVlgzRUZodFRQNC1ERHlibjN1VHo5X1BnNlhGeTE1QTQzTmZWdUlfTnRiLXdkTmFFb0E3TUd6QVVRZlVSbjVsN3ZuMjZDZGhnWFJrWHc4a0VfdmxtVGVQRERRM0EzUGt0aWRMdHBVM0JENWdwNjF0RVo2ZUdXYjJNUmh6UFY3OXZUaU1YQnlTQW1iZ2xsUDA?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.8,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "RUI.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Changement de gouvernance sans effet chiffré direct sur les résultats ; l'effet dépend de la réaction des actionnaires et des détails du dispositif.",
+     "extrait": "",
+     "nom": "Rubis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Rubis propose sa transformation en société anonyme pour simplifier sa gouvernance - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcHoxRHNyZjJwNGI5TzJoNTlPcWIxLXAwZEhTU3JnZzk3OGVHN05qNE5SR2NDUXN3bm9NLXdVdnQ4bEJZRDhoOUFNVlgzRUZodFRQNC1ERHlibjN1VHo5X1BnNlhGeTE1QTQzTmZWdUlfTnRiLXdkTmFFb0E3TUd6QVVRZlVSbjVsN3ZuMjZDZGhnWFJrWHc4a0VfdmxtVGVQRERRM0EzUGt0aWRMdHBVM0JENWdwNjF0RVo2ZUdXYjJNUmh6UFY3OXZUaU1YQnlTQW1iZ2xsUDA?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T05:57:16+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Rubis propose de se transformer en société anonyme avec directoire et conseil de surveillance - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYzE2UjdQcXZ2NWhnQnlPTkIwVF93R2pUVnJ4NXRMT25Hb2p2a3UwUEpZeFpzd0JfRzFPcFRMSlVmQUpVZXdYYmktMzE4dm9hdXlubzhsb05JUGRkcEtyMUFzelpBak8zVE1SN01wbUNDZGRkRWdVcXZ5S2owSjlNTTdHWVpEemt3U1g1S05uUV9VcHVxYl9kUWUtcGdiSFo0anpid1VJT0FSeG9FSEdZX3hzbEl0MzIzaUdSN0lR?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T05:45:04+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Rubis souhaite devenir une société anonyme - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMWRESmlYSnMwWVBZUTdtS3NKV0JUMjE0T0JPazl1NkNSbjVnajJudzZHZlNCc0tlNktTellobHp0ZzROQjQ0bTEtN0V4UXlQVFhTcHV2bXN5LWdwUWh2RXVZdjlSQ0Z6NDlPcUZmajJvc3NLTU1YXzVrR1pBcUJoT0dJbEFmbU56dkpCcHNOYnRXeExGc2xzeUVpVlJFZl9NTHI5NFZR?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T05:42:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Rubis va abandonner le modèle de la commandite pour devenir une société anonyme - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa0xLWktZaTA5VDIxVmdwQWJ4SFpnSnY0b3FNWW44Qm5oanZ3NEZKYkNtOXpZaDZCdFh0UTI0bk1FQm5FdjRyQmJYVnpDU3VCeFMzczhjYXFWX3I2UFh4R1JKTnVzT0FTeHhRY3hSWHRoN0FmNTRiQnlJekRacXcxdlNxQ0JwVDhpZk9hTHN0UEZHU3IxZ05WMW9mSEExMXRiT20xWEp0RDFBR2JuSFVtaGx5NzQ4a1lDN3FSWQ?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T05:35:03+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-19",
+   "publie_a": "2026-10-19T06:19:35+00:00",
+   "initial": {
+    "etape": "annonce",
+    "probabilite": 0.8
+   }
+  },
   {
    "id": "presse-0d03ad373c7b9964",
    "date": "2026-10-16",
