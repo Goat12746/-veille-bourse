@@ -1,16 +1,16 @@
 {
  "version": 1,
- "maj_le": "2026-10-20T06:22:06+00:00",
+ "maj_le": "2026-10-20T11:19:41+00:00",
  "alertes": [
   {
    "id": "presse-2d2a651d719bb6ef",
    "date": "2026-10-20",
    "source": "presse",
    "titre": "Schneider Electric : augmentation de capital de 6 Md€ pour financer le rachat de PTC",
-   "resume": "Schneider Electric lance une augmentation de capital d'environ 6 Md€ pour financer une partie de l'acquisition de PTC (22,6 Md$) annoncée début octobre.",
+   "resume": "Schneider Electric lance une augmentation de capital d'environ 6 Md€ pour financer une partie de l'acquisition de PTC (22,6 Md$). Le succès de l'opération, avec suppression du droit préférentiel de souscription, est annoncé le 20 octobre.",
    "nouveaute": "Le mode de financement est connu : émission d'actions de 6 Md€, avec dilution pour les actionnaires actuels.",
    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWElZYmhLb3NaNllBQmpkRVNVZW9Vc2FUWm8tM0tpejh5am1WNkxpbTdLZ1FKZkhvMjlWTUVSU1N6ekNRWFIwMnNtanB6N2hsX1ltWUhPeVBEYTBQa3hoY2NCMXRNWkk4M0dIYmdwNk5UeE5zTDdQMmMyMjNWRlB3X3JrVzhKOElmaTRDbHZuaElWRUZYNUJSTHJ3clZKd2dqa1RobWxXN1dwV0h0V2FtMDhhZXIxNzB3VWprcjBUeGcwcUNOdVplVDMwSWtxbVNSZ3hvRFBONFFzXzBkay1Hd1dSNE9QblVDenZITEdsbk5CUjA?oc=5",
-   "etape": "annonce",
+   "etape": "publie",
    "probabilite": 1,
    "themes": [],
    "entreprises": [
@@ -56,6 +56,7 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-20",
    "publie_a": "2026-10-20T06:22:06+00:00",
+   "maj_le": "2026-10-20",
    "initial": {
     "etape": "annonce",
     "probabilite": 1
@@ -318,6 +319,58 @@
    "publie_a": "2026-10-20T06:22:06+00:00",
    "initial": {
     "etape": "information",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "amf-138734_20261020",
+   "date": "2026-10-20",
+   "source": "amf",
+   "titre": "Vinci : contrat d'environ 165 M€ pour un data center dans la péninsule Ibérique",
+   "resume": "Vinci annonce avoir remporté un contrat d'environ 165 M€ pour la construction d'un centre de données dans la péninsule Ibérique.",
+   "nouveaute": "Contrat annoncé aujourd'hui par le communiqué de Vinci, ignoré la veille.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138734_20261020.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "DG.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Contrat de 165 M€, très faible face à un chiffre d'affaires annuel de plusieurs dizaines de milliards d'euros ; illustre l'activité data centers.",
+     "extrait": "VINCI remporte un contrat pour un data center dans la péninsule Ibérique",
+     "nom": "Vinci"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Vinci : VINCI remporte un contrat pour un data center dans la péninsule Ibérique",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138734_20261020.pdf",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T06:45:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Vinci remporte un contrat de 165 millions d’euros pour un data center - Le Revenu",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzN3SUV1MWdva2tVLWhJUHM2VTB1MFMyNUl6Q3c2YVBaNl9fZWdIUFFqUHpQTVRraGtCbTJEZVJORlVOTWFORTVZY19tMHVMa2FoT0dFeElHLVdvY3ZFZkxDQldtWHhDTnV1b2NsdnNiS3Z5RHJSSVozRENhQi1GaHpINGVMRldFcmhxWDVGR2JIMU9Cc3ZjVFZlWXpHNFp6WEROaDVLMG1XWllC?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T09:54:00+00:00",
+     "media": "Le Revenu"
+    },
+    {
+     "titre": "Vinci obtient un contrat de 165 millions d'euros pour un centre de données dans la péninsule Ibérique - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPb2thZXJNejNRS1JSclZXdG9HVHhscFNITlZEUVV3RlFqNnF5N2U0OEZaOWJDc1F5UnlobTRvRlAwYS1obVFqRXVzWkpWOWRWdXJEU3UxSWV0UGxISHFNX1A3UlJGUmxYQTVBbU9kOWtTNEdNdHpRNFJZRkVwZ2tRNVJ2aW1mT29KNk9OYXZQSFFiVEotaElmSjhvdGRURW9rRmZ2R2NsaXQwYmpWeWM4N1NlOW5vZnY3bkZCU0Y5bFB4WkJXeUtGWENDQlFBQk4tUGpUVTN3LXhxZHltZUp3OTVGY1A4aWNJLVFSTWxfVGc1cWJzMktQSmM2dk55cHVPU2ln?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T07:02:00+00:00",
+     "media": "Investir Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T11:19:41+00:00",
+   "initial": {
+    "etape": "publie",
     "probabilite": 1
    }
   },
