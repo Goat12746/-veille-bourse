@@ -1,7 +1,7 @@
 {
  "version": 1,
- "genere_le": "2026-10-19T11:23:18+00:00",
- "derniere_seance": "2026-10-16",
+ "genere_le": "2026-10-20T06:23:21+00:00",
+ "derniere_seance": "2026-10-19",
  "methode": {
   "indice": "CAC 40",
   "estimation": 250,
@@ -13,10 +13,11 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 68,
-  "n_observations": 126,
+  "n_alertes": 77,
+  "n_observations": 135,
   "statuts": {
-   "attente": 3,
+   "attente": 8,
+   "donnees": 4,
    "note": 44,
    "non_directionnel": 30,
    "confondu": 9,
@@ -248,19 +249,19 @@
   ],
   "probabilites": {
    "n_tranchees": 1,
-   "n_en_cours": 37,
+   "n_en_cours": 41,
    "brier": 0.09
   },
   "detail": [
    {
-    "id": "amf-083469_20261019",
-    "titre": "Carrefour : accord pour acquérir Codifrance (proximité), valeur d'entreprise 152 M€",
-    "date": "2026-10-19",
-    "source": "amf",
+    "id": "presse-7f4a2bee01f4cecc",
+    "titre": "Stellantis : un second modèle Leapmotor produit en Espagne",
+    "date": "2026-10-20",
+    "source": "presse",
     "etape": "annonce",
-    "probabilite": 0.85,
-    "publie_a": "2026-10-19T13:21",
-    "information": "2026-10-19T08:14",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-20T07:17",
     "reaction": {
      "debut": null,
      "fin": null,
@@ -271,11 +272,254 @@
     "nb_entreprises": 1,
     "observations": [
      {
+      "ticker": "STLAP.PA",
+      "nom": "Stellantis",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-aebf6fb656f12413",
+    "titre": "Société Générale : cession de ses services titres à UniCredit évoquée",
+    "date": "2026-10-20",
+    "source": "presse",
+    "etape": "rumeur",
+    "probabilite": 0.6,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T23:54",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "GLE.PA",
+      "nom": "Société Générale",
+      "sens": "incertain",
+      "ampleur": "inconnue",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-ab5effb238b5e1ce",
+    "titre": "Publicis : accord avec la FTC pour l'acquisition de LiveRamp",
+    "date": "2026-10-20",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T22:15",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "PUB.PA",
+      "nom": "Publicis",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-c54e67e3d7e13165",
+    "titre": "Solvay abaisse ses objectifs annuels 2026",
+    "date": "2026-10-20",
+    "source": "presse",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T19:03",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "SOLB.BR",
+      "nom": "Solvay",
+      "sens": "negatif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-2d2a651d719bb6ef",
+    "titre": "Schneider Electric : augmentation de capital de 6 Md€ pour financer le rachat de PTC",
+    "date": "2026-10-20",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T18:03",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "SU.PA",
+      "nom": "Schneider Electric",
+      "sens": "negatif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-5a1b65f0ed282253",
+    "titre": "Atos : partenariat avec EDF pour l'exploitation des centrales nucléaires",
+    "date": "2026-10-20",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T14:53",
+    "reaction": {
+     "debut": "2026-10-19",
+     "fin": "2026-10-19",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "ATO.PA",
+      "nom": "Atos",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "donnees"
+     }
+    ]
+   },
+   {
+    "id": "presse-793dbfe344aff1d2",
+    "titre": "Vinci : trafic aéroportuaire en baisse en septembre et au T3",
+    "date": "2026-10-19",
+    "source": "presse",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T18:28",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "DG.PA",
+      "nom": "Vinci",
+      "sens": "negatif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-52dcfaffc8c76b41",
+    "titre": "Virbac : chiffre d'affaires du T3 en hausse de 8,8 %, objectifs 2026 confirmés",
+    "date": "2026-10-19",
+    "source": "presse",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T18:21",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "VIRP.PA",
+      "nom": "Virbac",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-bb85f42ee917b35d",
+    "titre": "bioMérieux : autorisation d'urgence de l'OMS pour son test Ebola",
+    "date": "2026-10-19",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-20T08:22",
+    "information": "2026-10-19T18:19",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "BIM.PA",
+      "nom": "bioMérieux",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-083469_20261019",
+    "titre": "Carrefour : accord pour acquérir Codifrance (proximité), valeur d'entreprise 152 M€",
+    "date": "2026-10-19",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 0.85,
+    "publie_a": "2026-10-19T13:21",
+    "information": "2026-10-19T08:14",
+    "reaction": {
+     "debut": "2026-10-19",
+     "fin": "2026-10-19",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
       "ticker": "CA.PA",
       "nom": "Carrefour",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -289,11 +533,11 @@
     "publie_a": "2026-10-19T08:19",
     "information": "2026-10-19T08:00",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-19",
+     "fin": "2026-10-19",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -302,7 +546,7 @@
       "nom": "Alstom",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -316,11 +560,11 @@
     "publie_a": "2026-10-19T08:19",
     "information": "2026-10-19T07:35",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-19",
+     "fin": "2026-10-19",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -329,7 +573,7 @@
       "nom": "Rubis",
       "sens": "incertain",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -3920,11 +4164,11 @@
   "version": 2,
   "indice": "CAC 40",
   "depuis": "2015-01-01",
-  "jusqu_a": "2026-10-16",
-  "n_communiques": 25994,
+  "jusqu_a": "2026-10-19",
+  "n_communiques": 26002,
   "n_evenements": 21165,
   "n_entreprises": 115,
-  "en_attente": 3,
+  "en_attente": 6,
   "jour_ordinaire": {
    "n": 312828,
    "z_abs_moyen": 0.67,
@@ -6668,7 +6912,7 @@
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
-        2,
+        0,
         2,
         1,
         2
@@ -7849,7 +8093,7 @@
       "au": "2022-11-09"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -7862,7 +8106,7 @@
         1
        ],
        "0y": [
-        6.403,
+        6.401,
         17
        ],
        "+1y": [
@@ -7880,7 +8124,7 @@
         2
        ],
        "0y": [
-        28230000000,
+        28220000000,
         18
        ],
        "+1y": [
@@ -7899,7 +8143,7 @@
        "0y": [
         2,
         3,
-        3,
+        2,
         4
        ],
        "+1y": [
@@ -8177,7 +8421,7 @@
       "au": "2022-07-11"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -8204,19 +8448,19 @@
       },
       "ca": {
        "0q": [
-        18350000000,
+        18060000000,
         7
        ],
        "+1q": [
-        28890000000,
+        29110000000,
         5
        ],
        "0y": [
-        80860000000,
+        80810000000,
         22
        ],
        "+1y": [
-        90460000000,
+        90450000000,
         22
        ]
       },
@@ -9510,13 +9754,13 @@
       "revisions": {
        "0y": [
         1,
+        2,
         1,
-        1,
-        0
+        1
        ],
        "+1y": [
         1,
-        0,
+        2,
         1,
         1
        ]
@@ -9789,7 +10033,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -9824,11 +10068,11 @@
         5
        ],
        "0y": [
-        67100000000,
+        67220000000,
         16
        ],
        "+1y": [
-        73070000000,
+        73470000000,
         16
        ]
       },
@@ -9850,7 +10094,7 @@
         0,
         0,
         3,
-        5
+        6
        ],
        "+1y": [
         1,
@@ -12088,7 +12332,7 @@
       "au": "2022-11-02"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -12105,7 +12349,7 @@
         3
        ],
        "0y": [
-        11.54,
+        11.55,
         12
        ],
        "+1y": [
@@ -12123,7 +12367,7 @@
         2
        ],
        "0y": [
-        55140000000,
+        55160000000,
         14
        ],
        "+1y": [
@@ -12140,9 +12384,9 @@
         1
        ],
        "+1q": [
-        1,
         0,
-        2,
+        0,
+        1,
         1
        ],
        "0y": [
@@ -13400,7 +13644,7 @@
       "au": "2026-03-10"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -13409,38 +13653,38 @@
       },
       "bpa": {
        "0q": [
-        1.36,
+        1.337,
         1
        ],
        "+1q": [
-        0.95,
+        0.8999,
         1
        ],
        "0y": [
-        3.345,
-        6
+        3.294,
+        7
        ],
        "+1y": [
-        3.862,
-        6
+        3.814,
+        7
        ]
       },
       "ca": {
        "0q": [
-        15280000000,
-        2
+        15290000000,
+        3
        ],
        "+1q": [
-        15420000000,
-        1
+        15390000000,
+        2
        ],
        "0y": [
-        56830000000,
-        11
+        56840000000,
+        12
        ],
        "+1y": [
-        58370000000,
-        11
+        58360000000,
+        12
        ]
       },
       "revision_30j_pct": null,
@@ -13448,14 +13692,14 @@
        "0q": [
         0,
         0,
-        1,
-        1
+        0,
+        0
        ],
        "+1q": [
         0,
         0,
-        1,
-        1
+        0,
+        0
        ],
        "0y": [
         2,
@@ -14132,7 +14376,7 @@
        "perf_12m_pct": -2.21,
        "rendement_pct": 1.56,
        "ecart_pct": 2.19,
-       "z": 2.04,
+       "z": 2.03,
        "suite_pct": 1.83,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -14659,7 +14903,7 @@
       "au": "2026-09-14"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -14670,7 +14914,7 @@
         13
        ],
        "+1y": [
-        1.642,
+        1.641,
         13
        ]
       },
@@ -14687,9 +14931,9 @@
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
+        1,
         2,
-        2,
-        2,
+        3,
         2
        ],
        "+1y": [
@@ -15946,7 +16190,7 @@
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -15955,21 +16199,21 @@
       },
       "bpa": {
        "0y": [
-        12.88,
-        14
+        12.86,
+        13
        ],
        "+1y": [
-        13.77,
-        14
+        13.74,
+        13
        ]
       },
       "ca": {
        "0q": [
-        6029000000,
+        6014000000,
         2
        ],
        "+1q": [
-        6195000000,
+        6197000000,
         2
        ],
        "0y": [
@@ -15987,7 +16231,7 @@
         1,
         1,
         1,
-        2
+        3
        ],
        "+1y": [
         0,
@@ -17187,7 +17431,7 @@
        "0y": [
         1,
         1,
-        1,
+        2,
         2
        ],
        "+1y": [
@@ -18340,7 +18584,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -18349,19 +18593,19 @@
       },
       "bpa": {
        "0q": [
-        0.5386,
+        0.5542,
         5
        ],
        "+1q": [
-        0.545,
+        0.5498,
         4
        ],
        "0y": [
-        2.298,
+        2.304,
         16
        ],
        "+1y": [
-        2.487,
+        2.489,
         17
        ]
       },
@@ -18393,9 +18637,9 @@
        ],
        "+1q": [
         0,
+        0,
         1,
-        1,
-        1
+        2
        ],
        "0y": [
         0,
@@ -19643,7 +19887,7 @@
         2,
         2,
         8,
-        6
+        7
        ],
        "+1y": [
         5,
@@ -20544,7 +20788,7 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -20571,8 +20815,8 @@
       },
       "ca": {
        "0q": [
-        1519000000,
-        9
+        1520000000,
+        10
        ],
        "+1q": [
         1782000000,
@@ -24274,7 +24518,7 @@
       "au": "2020-03-20"
      },
      "consensus": {
-      "au": "2026-10-12",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -24283,11 +24527,11 @@
       },
       "bpa": {
        "0y": [
-        7.23,
+        7.24,
         21
        ],
        "+1y": [
-        7.877,
+        7.858,
         21
        ]
       },
@@ -24301,11 +24545,11 @@
         1
        ],
        "0y": [
-        30110000000,
+        30080000000,
         20
        ],
        "+1y": [
-        32550000000,
+        32520000000,
         20
        ]
       },
@@ -25072,9 +25316,9 @@
       "revision_30j_pct": -0.9,
       "revisions": {
        "0y": [
-        2,
-        2,
         1,
+        2,
+        0,
         2
        ],
        "+1y": [
@@ -26305,9 +26549,9 @@
         0
        ],
        "+1q": [
+        1,
         0,
-        0,
-        2,
+        1,
         2
        ],
        "0y": [
@@ -26317,9 +26561,9 @@
         1
        ],
        "+1y": [
+        3,
+        5,
         1,
-        4,
-        2,
         1
        ]
       },
@@ -27400,7 +27644,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -27409,29 +27653,29 @@
       },
       "bpa": {
        "0y": [
-        44.13,
+        44.09,
         23
        ],
        "+1y": [
-        48.72,
+        48.65,
         23
        ]
       },
       "ca": {
        "0q": [
-        4130000000,
-        4
+        4125000000,
+        5
        ],
        "+1q": [
-        4458000000,
-        1
+        4382000000,
+        2
        ],
        "0y": [
-        16690000000,
+        16680000000,
         22
        ],
        "+1y": [
-        17950000000,
+        17930000000,
         22
        ]
       },
@@ -27447,7 +27691,7 @@
         1,
         0,
         7,
-        14
+        16
        ]
       },
       "surprises": []
@@ -28615,7 +28859,7 @@
       "au": "2026-09-23"
      },
      "consensus": {
-      "au": "2026-10-14",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -28624,29 +28868,29 @@
       },
       "bpa": {
        "0y": [
-        6.373,
+        6.298,
         23
        ],
        "+1y": [
-        9.725,
+        9.608,
         22
        ]
       },
       "ca": {
        "0q": [
-        3351000000,
-        4
+        3357000000,
+        5
        ],
        "+1q": [
-        4109000000,
-        2
+        4069000000,
+        3
        ],
        "0y": [
-        14580000000,
-        24
+        14550000000,
+        23
        ],
        "+1y": [
-        15470000000,
+        15460000000,
         25
        ]
       },
@@ -28655,13 +28899,13 @@
        "0y": [
         1,
         3,
-        8,
+        10,
         10
        ],
        "+1y": [
         0,
         2,
-        9,
+        10,
         10
        ]
       },
@@ -29761,7 +30005,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.63,
+       "suite_pct": -2.64,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -32192,7 +32436,7 @@
        "titre": "Version PDF",
        "avant_pct": 7.79,
        "z_avant": 1.47,
-       "perf_12m_pct": 19.51,
+       "perf_12m_pct": 19.5,
        "rendement_pct": -3.15,
        "ecart_pct": -2.19,
        "z": -1.86,
@@ -32264,7 +32508,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-12-31",
        "0y": "2026-12-31",
@@ -32286,8 +32530,8 @@
         3
        ],
        "0y": [
-        80460000000,
-        18
+        80450000000,
+        19
        ],
        "+1y": [
         84210000000,
@@ -34153,7 +34397,7 @@
       "au": "2022-05-02"
      },
      "consensus": {
-      "au": "2026-10-14",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -34170,11 +34414,11 @@
         1
        ],
        "0y": [
-        1.367,
+        1.368,
         10
        ],
        "+1y": [
-        1.149,
+        1.152,
         10
        ]
       },
@@ -34188,7 +34432,7 @@
         1
        ],
        "0y": [
-        45360000000,
+        45350000000,
         16
        ],
        "+1y": [
@@ -35415,7 +35659,7 @@
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -35424,12 +35668,12 @@
       },
       "bpa": {
        "0y": [
-        5.642,
-        17
+        5.665,
+        18
        ],
        "+1y": [
-        5.862,
-        17
+        5.904,
+        18
        ]
       },
       "ca": {
@@ -35442,12 +35686,12 @@
         1
        ],
        "0y": [
-        9274000000,
-        11
+        9325000000,
+        16
        ],
        "+1y": [
-        9489000000,
-        18
+        9502000000,
+        19
        ]
       },
       "revision_30j_pct": null,
@@ -35485,7 +35729,7 @@
     "nom": "Publicis",
     "indice": "CAC 40",
     "secteur": "Publicité",
-    "n_communiques": 259,
+    "n_communiques": 260,
     "n_evenements": 224,
     "categories": [
      {
@@ -36686,7 +36930,7 @@
       "au": "2026-09-22"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-12-31",
        "0y": "2026-12-31",
@@ -36694,11 +36938,11 @@
       },
       "bpa": {
        "0y": [
-        7.871,
+        7.866,
         16
        ],
        "+1y": [
-        8.592,
+        8.603,
         16
        ]
       },
@@ -36708,11 +36952,11 @@
         1
        ],
        "0y": [
-        15180000000,
+        15190000000,
         11
        ],
        "+1y": [
-        16300000000,
+        16320000000,
         11
        ]
       },
@@ -36721,7 +36965,7 @@
        "0y": [
         0,
         0,
-        2,
+        0,
         5
        ],
        "+1y": [
@@ -39209,14 +39453,14 @@
         0
        ],
        "0y": [
-        1,
+        2,
         4,
         2,
         3
        ],
        "+1y": [
         1,
-        1,
+        2,
         3,
         5
        ]
@@ -39857,7 +40101,7 @@
        "avant_pct": -0.1,
        "z_avant": -0.02,
        "perf_12m_pct": 34.53,
-       "rendement_pct": 6.87,
+       "rendement_pct": 6.88,
        "ecart_pct": 5.65,
        "z": 5.29,
        "suite_pct": 4.13,
@@ -40422,7 +40666,7 @@
         0,
         0,
         5,
-        5
+        6
        ],
        "+1y": [
         2,
@@ -40461,7 +40705,7 @@
     "nom": "Sanofi",
     "indice": "CAC 40",
     "secteur": "Pharmacie",
-    "n_communiques": 853,
+    "n_communiques": 854,
     "n_evenements": 699,
     "categories": [
      {
@@ -41627,7 +41871,7 @@
       "au": "2022-11-01"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -41636,33 +41880,33 @@
       },
       "bpa": {
        "0q": [
-        2.859,
-        11
+        2.838,
+        12
        ],
        "+1q": [
-        1.876,
-        9
+        1.796,
+        10
        ],
        "0y": [
-        8.586,
+        8.558,
         21
        ],
        "+1y": [
-        9.038,
+        9.019,
         20
        ]
       },
       "ca": {
        "0q": [
-        13270000000,
+        13280000000,
         7
        ],
        "+1q": [
-        12680000000,
+        12790000000,
         6
        ],
        "0y": [
-        47370000000,
+        47450000000,
         14
        ],
        "+1y": [
@@ -41752,7 +41996,7 @@
     "nom": "Schneider Electric",
     "indice": "CAC 40",
     "secteur": "Équipement électrique",
-    "n_communiques": 210,
+    "n_communiques": 211,
     "n_evenements": 168,
     "categories": [
      {
@@ -42929,7 +43173,7 @@
       "au": "2022-11-09"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -42938,11 +43182,11 @@
       },
       "bpa": {
        "0y": [
-        10.42,
+        10.45,
         20
        ],
        "+1y": [
-        12.38,
+        12.34,
         21
        ]
       },
@@ -42956,7 +43200,7 @@
         2
        ],
        "0y": [
-        44930000000,
+        44950000000,
         23
        ],
        "+1y": [
@@ -42976,7 +43220,7 @@
         7,
         7,
         2,
-        1
+        2
        ]
       },
       "surprises": []
@@ -44067,7 +44311,7 @@
       "au": "2024-08-16"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -44076,19 +44320,19 @@
       },
       "bpa": {
        "0q": [
-        2.061,
+        2.065,
         5
        ],
        "+1q": [
-        1.802,
+        1.798,
         4
        ],
        "0y": [
-        7.977,
+        7.979,
         17
        ],
        "+1y": [
-        9.186,
+        9.2,
         17
        ]
       },
@@ -44114,27 +44358,27 @@
       "revisions": {
        "0q": [
         2,
-        2,
+        3,
         0,
         0
        ],
        "+1q": [
-        1,
         2,
-        1,
+        2,
+        0,
         0
        ],
        "0y": [
         3,
-        5,
+        7,
         1,
-        4
+        3
        ],
        "+1y": [
         3,
-        6,
+        8,
         1,
-        4
+        3
        ]
       },
       "surprises": [
@@ -48212,7 +48456,7 @@
       "au": "2013-06-04"
      },
      "consensus": {
-      "au": "2026-10-14",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -48230,8 +48474,8 @@
       },
       "ca": {
        "0q": [
-        5378000000,
-        2
+        5360000000,
+        3
        ],
        "0y": [
         23830000000,
@@ -48247,7 +48491,7 @@
        "0y": [
         1,
         3,
-        2,
+        3,
         4
        ],
        "+1y": [
@@ -49537,7 +49781,7 @@
       "au": "2026-08-26"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -49554,29 +49798,29 @@
         5
        ],
        "0y": [
-        12.1,
-        20
+        12.27,
+        21
        ],
        "+1y": [
-        10.86,
-        20
+        11.0,
+        21
        ]
       },
       "ca": {
        "0q": [
-        56710000000,
+        66980000000,
         4
        ],
        "+1q": [
-        55940000000,
+        63870000000,
         4
        ],
        "0y": [
-        215700000000,
+        221700000000,
         12
        ],
        "+1y": [
-        201700000000,
+        204900000000,
         13
        ]
       },
@@ -49584,9 +49828,9 @@
       "revisions": {
        "0q": [
         2,
-        3,
+        4,
         0,
-        1
+        0
        ],
        "+1q": [
         2,
@@ -49596,7 +49840,7 @@
        ],
        "0y": [
         5,
-        13,
+        14,
         0,
         0
        ],
@@ -50240,44 +50484,44 @@
       "au": "2025-11-10"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        9.271,
-        15
+        9.272,
+        14
        ],
        "+1y": [
-        9.409,
-        15
+        9.419,
+        14
        ]
       },
       "ca": {
        "0y": [
-        2766000000,
-        9
+        2769000000,
+        8
        ],
        "+1y": [
-        2818000000,
-        9
+        2830000000,
+        8
        ]
       },
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
-        0,
+        1,
         1,
         1,
         3
        ],
        "+1y": [
         1,
-        0,
         1,
-        2
+        1,
+        3
        ]
       },
       "surprises": []
@@ -51580,7 +51824,7 @@
     "nom": "Vinci",
     "indice": "CAC 40",
     "secteur": "Concessions, BTP, énergie",
-    "n_communiques": 652,
+    "n_communiques": 653,
     "n_evenements": 557,
     "categories": [
      {
@@ -52787,7 +53031,7 @@
       "au": "2022-11-03"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -52805,12 +53049,12 @@
       },
       "ca": {
        "0q": [
-        19930000000,
-        2
+        20000000000,
+        3
        ],
        "0y": [
-        76560000000,
-        17
+        76590000000,
+        16
        ],
        "+1y": [
         79080000000,
@@ -55452,7 +55696,7 @@
       "au": "2026-09-07"
      },
      "consensus": {
-      "au": "2026-10-12",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -55461,11 +55705,11 @@
       },
       "bpa": {
        "0y": [
-        5.872,
+        5.862,
         8
        ],
        "+1y": [
-        6.839,
+        6.861,
         7
        ]
       },
@@ -55479,11 +55723,11 @@
         1
        ],
        "0y": [
-        6797000000,
+        6805000000,
         14
        ],
        "+1y": [
-        7195000000,
+        7204000000,
         15
        ]
       },
@@ -55493,12 +55737,12 @@
         0,
         0,
         2,
-        1
+        2
        ],
        "+1y": [
         0,
         0,
-        1,
+        2,
         2
        ]
       },
@@ -59429,9 +59673,9 @@
         1
        ],
        "+1y": [
-        0,
         2,
-        1,
+        2,
+        0,
         0
        ]
       },
@@ -60574,9 +60818,9 @@
        ],
        "+1y": [
         2,
-        3,
+        5,
         0,
-        2
+        1
        ]
       },
       "surprises": []
@@ -60609,7 +60853,7 @@
     "nom": "bioMérieux",
     "indice": "SBF 120",
     "secteur": "Diagnostic",
-    "n_communiques": 160,
+    "n_communiques": 161,
     "n_evenements": 128,
     "categories": [
      {
@@ -61178,7 +61422,7 @@
        "periode": "chiffre_affaires",
        "titre": "bioMérieux – Information financière du 1er trimestre 2025",
        "perspectives": "confirmees",
-       "avant_pct": 5.36,
+       "avant_pct": 5.37,
        "z_avant": 0.87,
        "perf_12m_pct": 28.53,
        "rendement_pct": -3.89,
@@ -61678,7 +61922,7 @@
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
-        2,
+        3,
         3,
         0,
         3
@@ -64106,21 +64350,11 @@
      "p": 0.525,
      "n": 38
     },
-    "prochaine": {
-     "date": "2026-10-19",
-     "source": "même période l'an dernier",
-     "estimee": true,
+    "cours_recent": {
      "au": "2026-10-16",
      "avant_pct": 2.47,
      "z_avant": 0.22,
-     "perf_12m_pct": -11.65,
-     "n_historique": 38,
-     "scenarios": {
-      "hausse": 0.525,
-      "baisse": 0.475
-     },
-     "probable": "hausse",
-     "p_hausse": 0.525
+     "perf_12m_pct": -11.65
     }
    },
    {
@@ -66082,7 +66316,7 @@
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
-        1,
+        2,
         1,
         0,
         2
@@ -67299,7 +67533,7 @@
       "au": "2026-07-27"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -68447,7 +68681,7 @@
       "au": "2026-09-14"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -68456,12 +68690,12 @@
       },
       "bpa": {
        "0y": [
-        7.066,
-        10
+        7.181,
+        11
        ],
        "+1y": [
-        9.246,
-        10
+        9.309,
+        11
        ]
       },
       "ca": {
@@ -68474,21 +68708,21 @@
         1
        ],
        "0y": [
-        6705000000,
-        6
+        6713000000,
+        7
        ],
        "+1y": [
-        7285000000,
-        6
+        7287000000,
+        7
        ]
       },
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
         3,
+        3,
         0,
-        0,
-        2
+        0
        ],
        "+1y": [
         3,
@@ -69526,18 +69760,18 @@
       "au": "2026-09-07"
      },
      "consensus": {
-      "au": "2026-10-08",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.414,
+        1.402,
         3
        ],
        "+1y": [
-        1.6,
+        1.59,
         4
        ]
       },
@@ -69547,11 +69781,11 @@
         3
        ],
        "+1y": [
-        1953000000,
+        1952000000,
         3
        ]
       },
-      "revision_30j_pct": -5.3,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         0,
@@ -70660,12 +70894,12 @@
        ],
        "0y": [
         7,
-        5,
+        6,
         1,
-        1
+        2
        ],
        "+1y": [
-        4,
+        6,
         5,
         2,
         3
@@ -72270,7 +72504,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -72305,11 +72539,11 @@
         3
        ],
        "0y": [
-        6608000000,
+        6605000000,
         12
        ],
        "+1y": [
-        7351000000,
+        7350000000,
         12
        ]
       },
@@ -72331,10 +72565,10 @@
         1,
         1,
         3,
-        1
+        2
        ],
        "+1y": [
-        1,
+        3,
         2,
         1,
         1
@@ -73625,29 +73859,29 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        6.019,
-        7
+        6.022,
+        6
        ],
        "+1y": [
-        6.149,
-        7
+        6.144,
+        6
        ]
       },
       "ca": {
        "0y": [
-        221100000,
-        5
+        221000000,
+        4
        ],
        "+1y": [
-        232300000,
-        7
+        232400000,
+        6
        ]
       },
       "revision_30j_pct": null,
@@ -74916,7 +75150,7 @@
         0,
         0,
         2,
-        5
+        6
        ]
       },
       "surprises": [
@@ -78071,7 +78305,7 @@
       "au": "2026-09-01"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -79265,7 +79499,7 @@
     "nom": "Carmila",
     "indice": "SBF 120",
     "secteur": "Immobilier commercial",
-    "n_communiques": 139,
+    "n_communiques": 140,
     "n_evenements": 114,
     "categories": [
      {
@@ -82384,19 +82618,19 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        4.945,
-        6
+        4.944,
+        7
        ],
        "+1y": [
-        5.05,
-        6
+        5.044,
+        7
        ]
       },
       "ca": {
@@ -84171,7 +84405,7 @@
       "au": "2026-09-30"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-09-30",
        "+1y": "2027-09-30"
@@ -84809,7 +85043,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -4.48,
        "z_avant": -0.97,
-       "perf_12m_pct": 11.6,
+       "perf_12m_pct": 11.61,
        "rendement_pct": -0.86,
        "ecart_pct": -1.83,
        "z": -1.74,
@@ -85325,7 +85559,7 @@
         1,
         1,
         5,
-        4
+        5
        ]
       },
       "surprises": []
@@ -85937,11 +86171,21 @@
      "p": 0.727,
      "n": 9
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2027-02-17",
+     "source": "même période l'an dernier",
+     "estimee": true,
      "au": "2026-10-16",
      "avant_pct": -12.75,
      "z_avant": -1.05,
-     "perf_12m_pct": -22.37
+     "perf_12m_pct": -22.37,
+     "n_historique": 9,
+     "scenarios": {
+      "hausse": 0.727,
+      "baisse": 0.273
+     },
+     "probable": "hausse",
+     "p_hausse": 0.727
     }
    },
    {
@@ -87896,7 +88140,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.84,
+       "perf_12m_pct": -2.83,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -87914,7 +88158,7 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -87931,15 +88175,15 @@
       },
       "ca": {
        "0y": [
-        420900000,
-        3
+        440800000,
+        4
        ],
        "+1y": [
         501300000,
         4
        ]
       },
-      "revision_30j_pct": 4.4,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         0,
@@ -89135,29 +89379,29 @@
       "au": "2026-09-21"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        6.719,
+        6.718,
         14
        ],
        "+1y": [
-        6.67,
+        6.667,
         15
        ]
       },
       "ca": {
        "0y": [
-        714300000,
-        12
+        714200000,
+        11
        ],
        "+1y": [
-        726000000,
-        13
+        726100000,
+        12
        ]
       },
       "revision_30j_pct": null,
@@ -90215,7 +90459,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.21,
+       "avant_pct": 4.2,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -90242,7 +90486,7 @@
       "au": "2026-10-01"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -90260,8 +90504,8 @@
       },
       "ca": {
        "0q": [
-        196000000,
-        1
+        194500000,
+        2
        ],
        "0y": [
         768300000,
@@ -90275,9 +90519,9 @@
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
-        1,
-        1,
         0,
+        1,
+        1,
         1
        ],
        "+1y": [
@@ -91347,7 +91591,7 @@
        "jour": "2015-05-06",
        "periode": "chiffre_affaires",
        "titre": "ICADE – ACTIVITÉ DU 1ER TRIMESTRE 2015",
-       "avant_pct": -6.36,
+       "avant_pct": -6.35,
        "z_avant": -1.33,
        "perf_12m_pct": -1.25,
        "rendement_pct": -1.97,
@@ -91389,19 +91633,19 @@
       "au": "2026-09-15"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        2.985,
-        11
+        2.984,
+        10
        ],
        "+1y": [
-        2.837,
-        11
+        2.853,
+        10
        ]
       },
       "ca": {
@@ -91424,9 +91668,9 @@
        ],
        "+1y": [
         0,
-        0,
         1,
-        3
+        1,
+        2
        ]
       },
       "surprises": []
@@ -92530,8 +92774,9 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-13",
+      "au": "2026-10-19",
       "fin": {
+       "0q": "2026-09-30",
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
@@ -92546,6 +92791,10 @@
        ]
       },
       "ca": {
+       "0q": [
+        1094000000,
+        1
+       ],
        "0y": [
         4356000000,
         6
@@ -95753,7 +96002,7 @@
        "jour": "2020-02-27",
        "periode": "annuels",
        "titre": "Ipsos Résultats annuels 2019 : une année dynamique",
-       "avant_pct": -6.67,
+       "avant_pct": -6.66,
        "z_avant": -0.79,
        "perf_12m_pct": 17.04,
        "rendement_pct": 1.58,
@@ -97333,7 +97582,7 @@
       "au": "2020-12-03"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -97352,28 +97601,28 @@
       },
       "ca": {
        "0q": [
-        997500000,
-        2
+        1010000000,
+        1
        ],
        "+1q": [
-        1245000000,
+        1219000000,
         1
        ],
        "0y": [
         4188000000,
-        11
+        10
        ],
        "+1y": [
-        4378000000,
-        11
+        4377000000,
+        10
        ]
       },
       "revision_30j_pct": null,
       "revisions": {
        "0y": [
+        0,
+        0,
         1,
-        0,
-        0,
         2
        ],
        "+1y": [
@@ -98512,29 +98761,29 @@
       "au": "2026-09-01"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        2.804,
-        11
+        2.807,
+        10
        ],
        "+1y": [
-        2.889,
-        11
+        2.893,
+        10
        ]
       },
       "ca": {
        "0y": [
-        1335000000,
-        11
+        1338000000,
+        10
        ],
        "+1y": [
-        1378000000,
-        12
+        1380000000,
+        11
        ]
       },
       "revision_30j_pct": null,
@@ -100472,7 +100721,7 @@
        "jour": "2022-03-18",
        "periode": "annuels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 28.36,
+       "avant_pct": 28.37,
        "z_avant": 2.73,
        "perf_12m_pct": 57.06,
        "rendement_pct": 1.64,
@@ -100502,7 +100751,7 @@
        "titre": "Activité 9 mois 2021",
        "avant_pct": 36.98,
        "z_avant": 3.42,
-       "perf_12m_pct": 94.92,
+       "perf_12m_pct": 94.93,
        "rendement_pct": -8.28,
        "ecart_pct": -8.01,
        "z": -3.23,
@@ -100874,8 +101123,9 @@
       "au": "2017-07-31"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-19",
       "fin": {
+       "0q": "2026-09-30",
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
@@ -100890,6 +101140,10 @@
        ]
       },
       "ca": {
+       "0q": [
+        197800000,
+        1
+       ],
        "0y": [
         672900000,
         3
@@ -100899,7 +101153,7 @@
         5
        ]
       },
-      "revision_30j_pct": 23.2,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         0,
@@ -102792,29 +103046,29 @@
       "au": "2026-09-28"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.312,
-        6
+        1.31,
+        5
        ],
        "+1y": [
-        1.333,
-        6
+        1.328,
+        5
        ]
       },
       "ca": {
        "0y": [
-        188000000,
-        6
+        188100000,
+        5
        ],
        "+1y": [
-        193700000,
-        6
+        194600000,
+        5
        ]
       },
       "revision_30j_pct": null,
@@ -102840,11 +103094,21 @@
      "p": 0.558,
      "n": 41
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2027-02-17",
+     "source": "même période l'an dernier",
+     "estimee": true,
      "au": "2026-10-16",
      "avant_pct": -5.98,
      "z_avant": -1.27,
-     "perf_12m_pct": 2.07
+     "perf_12m_pct": 2.07,
+     "n_historique": 41,
+     "scenarios": {
+      "hausse": 0.558,
+      "baisse": 0.442
+     },
+     "probable": "hausse",
+     "p_hausse": 0.558
     }
    },
    {
@@ -103866,7 +104130,7 @@
        "z_avant": -2.6,
        "perf_12m_pct": -28.92,
        "rendement_pct": 0.07,
-       "ecart_pct": -0.98,
+       "ecart_pct": -0.99,
        "z": -0.53,
        "suite_pct": -2.38,
        "reaction": "hausse",
@@ -107086,13 +107350,13 @@
         0,
         0,
         3,
-        0
+        3
        ],
        "+1y": [
         0,
         0,
-        1,
-        1
+        3,
+        3
        ]
       },
       "surprises": []
@@ -107125,7 +107389,7 @@
     "nom": "Planisware",
     "indice": "SBF 120",
     "secteur": "Logiciels",
-    "n_communiques": 34,
+    "n_communiques": 35,
     "n_evenements": 24,
     "categories": [
      {
@@ -107565,7 +107829,7 @@
       "au": "2025-08-07"
      },
      "consensus": {
-      "au": "2026-10-12",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -107584,8 +107848,8 @@
       },
       "ca": {
        "0q": [
-        56290000,
-        2
+        56530000,
+        3
        ],
        "+1q": [
         59370000,
@@ -107610,9 +107874,9 @@
        ],
        "+1y": [
         1,
-        6,
         1,
-        0
+        1,
+        1
        ]
       },
       "surprises": []
@@ -112218,8 +112482,9 @@
       "au": "2025-09-12"
      },
      "consensus": {
-      "au": "2026-10-08",
+      "au": "2026-10-19",
       "fin": {
+       "0q": "2026-09-30",
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
@@ -112234,6 +112499,10 @@
        ]
       },
       "ca": {
+       "0q": [
+        1981000000,
+        1
+       ],
        "0y": [
         8317000000,
         11
@@ -112243,7 +112512,7 @@
         11
        ]
       },
-      "revision_30j_pct": -3.2,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         1,
@@ -112253,7 +112522,7 @@
        ],
        "+1y": [
         2,
-        1,
+        2,
         2,
         3
        ]
@@ -113474,7 +113743,7 @@
         1
        ],
        "0y": [
-        1,
+        0,
         1,
         0,
         0
@@ -114338,7 +114607,7 @@
        "avant_pct": 4.24,
        "z_avant": 0.52,
        "perf_12m_pct": -14.55,
-       "rendement_pct": 9.94,
+       "rendement_pct": 9.93,
        "ecart_pct": 9.62,
        "z": 6.09,
        "suite_pct": 3.94,
@@ -115883,32 +116152,32 @@
       "au": "2026-10-01"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-19",
       "fin": {
        "0y": "2026-08-31",
        "+1y": "2027-08-31"
       },
       "bpa": {
        "0y": [
-        3.221,
+        3.226,
         16
        ],
        "+1y": [
-        3.353,
+        3.35,
         16
        ]
       },
       "ca": {
        "0y": [
         23830000000,
-        16
+        17
        ],
        "+1y": [
-        24640000000,
+        24660000000,
         17
        ]
       },
-      "revision_30j_pct": -0.1,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         1,
@@ -117388,7 +117657,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -117405,11 +117674,11 @@
         1
        ],
        "0y": [
-        2.325,
+        2.323,
         13
        ],
        "+1y": [
-        2.483,
+        2.477,
         13
        ]
       },
@@ -118571,12 +118840,12 @@
         0,
         1,
         1,
-        2
+        3
        ],
        "+1y": [
         0,
         0,
-        2,
+        1,
         3
        ]
       },
@@ -119506,7 +119775,7 @@
       "revision_30j_pct": null,
       "revisions": {
        "0q": [
-        0,
+        1,
         0,
         0,
         0
@@ -119527,7 +119796,7 @@
         1,
         0,
         0,
-        3
+        2
        ]
       },
       "surprises": [
@@ -121398,7 +121667,7 @@
        "perf_12m_pct": 7.12,
        "rendement_pct": 0.21,
        "ecart_pct": -0.08,
-       "z": -0.05,
+       "z": -0.04,
        "suite_pct": -2.88,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -121830,7 +122099,7 @@
        "jour": "2017-01-04",
        "periode": "chiffre_affaires",
        "titre": "Chiffre d'affaires du 1er trimestre 2016/2017",
-       "avant_pct": -0.62,
+       "avant_pct": -0.61,
        "z_avant": -0.07,
        "perf_12m_pct": 12.92,
        "rendement_pct": 4.32,
@@ -123247,7 +123516,7 @@
       "au": "2026-10-01"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-19",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -123288,13 +123557,13 @@
         0,
         0,
         1,
-        0
+        1
        ],
        "+1y": [
-        0,
-        0,
         1,
-        1
+        1,
+        0,
+        0
        ]
       },
       "surprises": []
@@ -123521,7 +123790,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123571,7 +123840,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123621,7 +123890,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123671,7 +123940,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.21
+        "suite_moyenne_pct": 3.22
        },
        "n": 6,
        "part_hausse": 0.5
@@ -123721,7 +123990,7 @@
        "n": 6,
        "part_hausse": 0.5,
        "ecart_moyen_pct": 0.63,
-       "suite_moyenne_pct": 1.78,
+       "suite_moyenne_pct": 1.79,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -124201,7 +124470,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.23,
+       "suite_pct": -0.22,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
@@ -125339,9 +125608,9 @@
         0
        ],
        "0y": [
-        0,
         1,
-        3,
+        1,
+        0,
         0
        ],
        "+1y": [
@@ -128734,9 +129003,9 @@
       "revisions": {
        "0y": [
         0,
-        3,
+        0,
         1,
-        0
+        1
        ],
        "+1y": [
         1,
@@ -128775,7 +129044,7 @@
     "nom": "Virbac",
     "indice": "SBF 120",
     "secteur": "Santé animale",
-    "n_communiques": 138,
+    "n_communiques": 139,
     "n_evenements": 87,
     "categories": [
      {
@@ -131868,11 +132137,21 @@
      "p": 0.488,
      "n": 41
     },
-    "cours_recent": {
+    "prochaine": {
+     "date": "2026-10-21",
+     "source": "même période l'an dernier",
+     "estimee": true,
      "au": "2026-10-16",
      "avant_pct": 11.43,
      "z_avant": 1.06,
-     "perf_12m_pct": -46.39
+     "perf_12m_pct": -46.39,
+     "n_historique": 41,
+     "scenarios": {
+      "hausse": 0.488,
+      "baisse": 0.512
+     },
+     "probable": "baisse",
+     "p_hausse": 0.488
     }
    },
    {
@@ -132951,10 +133230,10 @@
         0,
         1,
         1,
-        2
+        3
        ],
        "+1y": [
-        2,
+        0,
         2,
         1,
         2
@@ -135047,17 +135326,6 @@
   ],
   "prochaines": [
    {
-    "ticker": "FRVIA.PA",
-    "nom": "Forvia",
-    "date": "2026-10-19",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.525,
-    "p_hausse": 0.525,
-    "z_avant": 0.22,
-    "avant_pct": 2.47
-   },
-   {
     "ticker": "ERF.PA",
     "nom": "Eurofins Scientific",
     "date": "2026-10-20",
@@ -135144,6 +135412,17 @@
     "p_hausse": 0.535,
     "z_avant": -1.81,
     "avant_pct": -14.05
+   },
+   {
+    "ticker": "VIV.PA",
+    "nom": "Vivendi",
+    "date": "2026-10-21",
+    "estimee": true,
+    "probable": "baisse",
+    "p_probable": 0.512,
+    "p_hausse": 0.488,
+    "z_avant": 1.06,
+    "avant_pct": 11.43
    },
    {
     "ticker": "WLN.PA",

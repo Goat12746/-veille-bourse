@@ -1,21 +1,20 @@
 {
  "version": 1,
- "genere_le": "2026-10-19T11:21:52+00:00",
+ "genere_le": "2026-10-20T06:22:06+00:00",
  "sources": {
   "amf": {
-   "ok": true,
-   "trouves": 3,
-   "nouveaux": 3
+   "ok": false,
+   "erreur": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   "presse": {
    "ok": true,
-   "trouves": 234,
-   "nouveaux": 158
+   "trouves": 350,
+   "nouveaux": 253
   },
   "assemblee": {
    "ok": true,
-   "trouves": 0,
-   "nouveaux": 0
+   "trouves": 49,
+   "nouveaux": 34
   },
   "agenda": {
    "ok": true,
@@ -23,10 +22,449 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 107
+   "trouves": 106
   }
  },
  "alertes": [
+  {
+   "id": "presse-2d2a651d719bb6ef",
+   "date": "2026-10-20",
+   "source": "presse",
+   "titre": "Schneider Electric : augmentation de capital de 6 Md€ pour financer le rachat de PTC",
+   "resume": "Schneider Electric lance une augmentation de capital d'environ 6 Md€ pour financer une partie de l'acquisition de PTC (22,6 Md$) annoncée début octobre.",
+   "nouveaute": "Le mode de financement est connu : émission d'actions de 6 Md€, avec dilution pour les actionnaires actuels.",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWElZYmhLb3NaNllBQmpkRVNVZW9Vc2FUWm8tM0tpejh5am1WNkxpbTdLZ1FKZkhvMjlWTUVSU1N6ekNRWFIwMnNtanB6N2hsX1ltWUhPeVBEYTBQa3hoY2NCMXRNWkk4M0dIYmdwNk5UeE5zTDdQMmMyMjNWRlB3X3JrVzhKOElmaTRDbHZuaElWRUZYNUJSTHJ3clZKd2dqa1RobWxXN1dwV0h0V2FtMDhhZXIxNzB3VWprcjBUeGcwcUNOdVplVDMwSWtxbVNSZ3hvRFBONFFzXzBkay1Hd1dSNE9QblVDenZITEdsbk5CUjA?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SU.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Émission d'environ 6 Md€ d'actions nouvelles : dilution du capital pour financer l'acquisition de PTC.",
+     "extrait": "Schneider Electric lance une augmentation de capital de 6 milliards d'euros pour financer une partie du rachat de PTC",
+     "nom": "Schneider Electric"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Schneider Electric lance une augmentation de capital de 6 milliards d'euros pour financer une partie du rachat de PTC - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWElZYmhLb3NaNllBQmpkRVNVZW9Vc2FUWm8tM0tpejh5am1WNkxpbTdLZ1FKZkhvMjlWTUVSU1N6ekNRWFIwMnNtanB6N2hsX1ltWUhPeVBEYTBQa3hoY2NCMXRNWkk4M0dIYmdwNk5UeE5zTDdQMmMyMjNWRlB3X3JrVzhKOElmaTRDbHZuaElWRUZYNUJSTHJ3clZKd2dqa1RobWxXN1dwV0h0V2FtMDhhZXIxNzB3VWprcjBUeGcwcUNOdVplVDMwSWtxbVNSZ3hvRFBONFFzXzBkay1Hd1dSNE9QblVDenZITEdsbk5CUjA?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:09:23+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Schneider Electric cherche à lever 6 milliards d’euros via une émission d’actions - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNV3Y3QUczVFhFQVFFZ045dnA0YWxoNEo2RjZnd0hqdDQ5Z1BiMlBJWFNCbHphWGY5QzJFVXZzb2p1UG4yV2pWU3F5Qk1VZkV2T1UtREFwREh1MEhkSlBwNXY1MENsQkF5bVF5U3JRQm4yYWphNU5Ta0NxZGNfc09JanJfLUlJMUp2Rk8weFFqTm5qclZ6V09saHdsVEtYWFFCZF9aeWVhcEZFVElnRUR1TTd0UVlfdnpjVktQaTcwLVNYcC10MmNqTEppYjdXaHZmcm80b25sQlB4X2M?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T03:27:09+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Schneider Electric lance une augmentation de capital de 6 milliards d'euros pour financer une partie du rachat de PTC - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPakxpb3RwYVhxRExYOF9yMEFEMDV4aG0tVlFieWZmR3FLYWxTUDFqd094N0kwOWpMM1NnY21JM1VYcUpHOWtQSFdESUpVQ1RMRmM1cWktbzZhMTJnRFJzWDV2aXY2b0FZcDVaeVlTZ1ZNZnpsRGJ4UEZiYUVROXlPQ0hBc1NPSkVWU014blV3T3p0dGRVcE5yS2YtaFZESkdVdUZWRUtjOFVHYkw3WEY1bDNFSC1DRXN0TGtOLXgydV83Z1E0TGMzSFNzdGd4bi15bjhVTng5Um55WFpCenVGajkzaTNpY3BVVWU4OVVpR3BqUS1FSXpJT0R0QXlDVm5OVEJiOE1INjNlUkpXNHptQ21QUmZfZ0dM?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:08:00+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Schneider Electric compte lever 6 milliards d'euros pour financer l'acquisition de PTC - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa3lyN1B5eDdlenNPMUNBRzBtMzZkQmo2SmtsRlJUN2gxRmlMbTBXdlVYd1V1Nzh5YWlZdmFYZXNzSDJwNUVzZE5xT0NaZnVPaUQzZ2hVRTJaRW5SWmlCT1Y0ZkdQbUVqU2wyWVBRYkVXc0Nlb3pvWmNfVHRHWUNDNDNGeWNiUmlLZ3NmRjBuS2hDOTZOalNPYUpVclRlc3A2RlN6Qjh5Tk5xOVdGbGNrVDRpbkZaNkwyRHoxUDR6UmNCWmlLZ1dRbVh6b1c4MURVQkNEcjFSWkZhdzFJbXUxag?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:03:23+00:00",
+     "media": "Zonebourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-c54e67e3d7e13165",
+   "date": "2026-10-20",
+   "source": "presse",
+   "titre": "Solvay abaisse ses objectifs annuels 2026",
+   "resume": "Solvay abaisse ses objectifs annuels, le conflit au Moyen-Orient pesant sur son activité.",
+   "nouveaute": "Révision en baisse des objectifs 2026, non connue la veille.",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPek12bUVqMUQ2NDZzd0tGNFFFc3pyMEJ1NmZiTzZ3WkVTWHpoWGtWYkVnNDMyVEdzbktEYVNPRndaU0lOeWQ0dERIUlhxOWtlUElKcGZtcnY3OVh1ZkpiRUFYVTBTUTFNem1IV1pOaTRpVmVzcWtHZkFzNnlTQ01BNGdzYXF6NzFwbFFYWnJJTnp1VzNKNWRfV1RIZ25ra25YRG1WN3VBWXJYcWx4QW12dGxzZmlJOWI3YUJBUjBtZE9JanhGNkFsOFNKLThCOFA2a0ZlRg?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SOLB.BR",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Objectifs annuels abaissés : les attentes de résultats 2026 sont à revoir à la baisse.",
+     "extrait": "Solvay abaisse ses objectifs annuels, le conflit au Moyen-Orient pèse",
+     "nom": "Solvay"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Solvay abaisse ses objectifs annuels, le conflit au Moyen-Orient pèse - L'Echo",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPek12bUVqMUQ2NDZzd0tGNFFFc3pyMEJ1NmZiTzZ3WkVTWHpoWGtWYkVnNDMyVEdzbktEYVNPRndaU0lOeWQ0dERIUlhxOWtlUElKcGZtcnY3OVh1ZkpiRUFYVTBTUTFNem1IV1pOaTRpVmVzcWtHZkFzNnlTQ01BNGdzYXF6NzFwbFFYWnJJTnp1VzNKNWRfV1RIZ25ra25YRG1WN3VBWXJYcWx4QW12dGxzZmlJOWI3YUJBUjBtZE9JanhGNkFsOFNKLThCOFA2a0ZlRg?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T06:03:13+00:00",
+     "media": "L'Echo"
+    },
+    {
+     "titre": "Solvay abaisse ses objectifs annuels, le conflit au Moyen-Orient pèse - Journal Chrétien",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUE9VdmgtT3AxVDNkaEtJejFJUExxaVpYMG1KcXhDdWFmdW5uMGN6Q2JLQnZLcURMTXRtcVgzcmQ5ZWdPVWxVVFc5eURWY2xOc0lXZkNnS0M3dGhyWml0aGx3YjBzSDZJdmc4bTMwLWlqVzdEODAxVEZycVVxcC1aX09GbTMzZw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T22:48:56+00:00",
+     "media": "Journal Chrétien"
+    },
+    {
+     "titre": "Solvay plus pessimiste sur ses objectifs pour 2026, pénalisé par le conflit au Moyen-Orient - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVU1Zem8tNTE5LWFwZ2JWNng3VC1kTWkxVnZKaktadUxQZVNUNXVGT3NLN0RMZ2hubUtXNHUwSW56UHpUWk9Takh4aE9zZHQtRkdlcVRyX0IzSnA3amRNeWdPcFlxSy1yQjE0b1RyWXJKNW5rQl83OEFDNXlwWktnc0ppajZ2bWt5X0ZJZXlDS1BEbGY2VXRqV0FmeHZQdlFLQkdadHNXNWRFSFN5NHh0Nl9yWHZKNDVVSjZoUw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T17:03:24+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-5a1b65f0ed282253",
+   "date": "2026-10-20",
+   "source": "presse",
+   "titre": "Atos : partenariat avec EDF pour l'exploitation des centrales nucléaires",
+   "resume": "EDF choisit Atos pour une plateforme numérique standardisant l'exploitation de ses centrales nucléaires.",
+   "nouveaute": "Partenariat stratégique annoncé avec EDF.",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbHFZOXhwMFIzemp3ZkVJREcyMUt6b0JjMnZvM3pTbFYtT1ZJRmFrNEFVYUR5aFJjUFYwb1J1eHg3MEpmbWxWVW0zOFJzQi1oc1NfVmlxZEUzc2VzTGZyRTR2d0xJMjhIZXFmMzZPMkpWUXNKQ3lxT051aE05a2IyVDJ1ejZadEZYSzVnbG9QUFRkTHdQQ1c4RkFJOXVVS1hmZW9nMGxrNnJYWXJzTWttdG1RVGFMd1RVVmxyQ2ZDcERpR0czMEdYUkFnZUJCYUpTc0JWMmRfUlQxTjNVWDVIVE9ySWcydw?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ATO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Contrat/partenariat avec un grand client, montants non communiqués.",
+     "extrait": "Atos a été choisi par EDF pour accélérer la transformation de l'exploitation des centrales nucléaires",
+     "nom": "Atos"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Atos forme un partenariat stratégique avec EDF dans le domaine de l’exploitation nucléaire - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbHFZOXhwMFIzemp3ZkVJREcyMUt6b0JjMnZvM3pTbFYtT1ZJRmFrNEFVYUR5aFJjUFYwb1J1eHg3MEpmbWxWVW0zOFJzQi1oc1NfVmlxZEUzc2VzTGZyRTR2d0xJMjhIZXFmMzZPMkpWUXNKQ3lxT051aE05a2IyVDJ1ejZadEZYSzVnbG9QUFRkTHdQQ1c4RkFJOXVVS1hmZW9nMGxrNnJYWXJzTWttdG1RVGFMd1RVVmxyQ2ZDcERpR0czMEdYUkFnZUJCYUpTc0JWMmRfUlQxTjNVWDVIVE9ySWcydw?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T03:59:11+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Atos a été choisi par EDF pour accélérer la transformation de l'exploitation des centrales nucléaires - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPNGNoLXhmQkt6WkxJTkRBZXAtSlFWYmN6aWJmeDFxVFIzTlZBakcwMWRBRXZ2aWVKcEhtRWtocEdGQnVZX2tTM1lsUnRmNURVRG9DdFpxdUh0Z3h4aVA2enY5cUd6V0ptMXctSEx4NFVKWUVNYjcySUpKeU5ESTZvVGdnblAtUEh0cFJtNUNZX2Q3OTRtQXh4TW1teTlkV3lxaGZSSS1sYkRlTy1rRjFJRENrb2lweml4MFdZZ2hEZVVkemEwZ0pmNjUzSzVGbDE4N284bzFXUHFiQ1c4NFktQmxDd280cTZZTHU1bkUtMDZhMVFmMVhlY0JsUnN4dUxaOUo4?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T12:53:00+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Atos et EDF lancent une plateforme numérique pour standardiser l’exploitation des centrales nucléaires à l’international - https://renseignementeconomique.fr/",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQZDNEYmNyYU1XbDFjTHJSN2Y3aG1DWHVVR1NVeGlkSWMyTjNMeDB4UVFBRUV6VHc1M3BLcGpkZ3BLWHZfV19FLUtpa1pZdlg1dUpHa0l0SFF2dTduY2lyc3pJYVVvblhYcWJqbU1CdlpxOW8ySUlHb1pRd1NRdzJEYUpKOFJWQ2x2cGp6SGY5emkwR0xBNld2UU9HWmF5b0lPOVd1N1JJUGhUTE9Fd1RmUm1HdFJhTVA2NzRtMzMwOG1MbmQ1dTlqaUJNYjE4NHhzV1hMd29ybjVBZ1Z3VWU1VWVoSEhEVFNxWkVR?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T19:51:16+00:00",
+     "media": "https://renseignementeconomique.fr/"
+    },
+    {
+     "titre": "Atos se dote d'une organisation plus décentralisée et tourne la page de l'ère Breton - La Lettre",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQbl93bWxMQzhNUE9UN2p1UHdVamVvWG5mZ0swRldlRkdIZFIxNDBJZjVaa1RldU1xVGFfdkd6ZHNUSk5Pckk1RFg2ZTFfOEM2d1NrS2wxNWxQMXFJM1djUFBCRkNzYlFxRkxFa0M4eWZCWG5tRDRoUkFIOTdwbll2ZHA0YUZneUtVb3pfUzBSR3NyWG5HYV9wT1BRc2JKVnU0NldOT3RFSUtMN2Z6VEVOMGx1OEY4c2U2OGFuTFlPcmlsNXFjQ05zczdWNFZSRE5TSTNhd0Q5ZTF3bnVKalRrYXVCX1NyWTBwVTVWcDdFdElFOWZCS3RGZw?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T04:20:00+00:00",
+     "media": "La Lettre"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-aebf6fb656f12413",
+   "date": "2026-10-20",
+   "source": "presse",
+   "titre": "Société Générale : cession de ses services titres à UniCredit évoquée",
+   "resume": "UniCredit devrait racheter l'activité de services titres de Société Générale, selon un document.",
+   "nouveaute": "Première évocation d'une cession de l'activité de services titres à UniCredit.",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWVUtN0N3YS1RT1FWWWJieTBQTmMtc1RidnV2SURkcG1vSnBnNF8xOC0yLS1HaE0zYVZ2UWtCcmdtdlFUVmY5OWlFWHVtbXdnMXVmeENyb1o1SERObElFd2FQbGxINkRGM09MdlA4UXlnZklrd0k0UldnTUFwd2hjd0dYLUpDT1lISzV6YXNoT0dHZk5Oa0d2R1BSWUd6RnIzb0k0LVBYdXU3NHdvVkJ3NHdmeUt1Y0EtbWFxWXBIUHZfN3M0aDNJTkszUEhEYTkwUjJCOVVVOWc?oc=5",
+   "etape": "rumeur",
+   "probabilite": 0.6,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "GLE.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Prix et périmètre non connus : effet sur le résultat et les fonds propres à établir.",
+     "extrait": "UniCredit devrait racheter son activité de services titres à Société Générale",
+     "nom": "Société Générale"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "UniCredit devrait racheter son activité de services titres à Société Générale - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWVUtN0N3YS1RT1FWWWJieTBQTmMtc1RidnV2SURkcG1vSnBnNF8xOC0yLS1HaE0zYVZ2UWtCcmdtdlFUVmY5OWlFWHVtbXdnMXVmeENyb1o1SERObElFd2FQbGxINkRGM09MdlA4UXlnZklrd0k0UldnTUFwd2hjd0dYLUpDT1lISzV6YXNoT0dHZk5Oa0d2R1BSWUd6RnIzb0k0LVBYdXU3NHdvVkJ3NHdmeUt1Y0EtbWFxWXBIUHZfN3M0aDNJTkszUEhEYTkwUjJCOVVVOWc?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T06:08:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "UniCredit va racheter son activité de services titres à Société Générale, selon un document - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZVZQQlluQW5fWTBhOFRsUUp0TmNhMFNER0VpRGpfa2paeWJkT0pvNy1vd1FqVDJTWjRzVEc2WENHOVNqRDM1UmlCWDJyT0dIYVJOa1o1Q19kN3B6UkZ5Nndla2czV2liWEQxNExYNHJLajJ6ZFFIbDZFWi1FNWN1ZHlRdXdZQTJxc2lGbm5kdWMwdGxkdUphY0FPaEJ6SlBSUXJ1bmE0SHFod3p1SUhNRk9vMVRqUGpVV0gwWFpyYjNSVXVQU0xfdTFvZEdlZFNuV09mWGFqNE9fMEhXbk52WVc5YnI?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T21:54:17+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-7f4a2bee01f4cecc",
+   "date": "2026-10-20",
+   "source": "presse",
+   "titre": "Stellantis : un second modèle Leapmotor produit en Espagne",
+   "resume": "Stellantis et Leapmotor approfondissent leur partenariat européen avec la production d'un second modèle du constructeur chinois en Espagne.",
+   "nouveaute": "Second modèle Leapmotor annoncé pour la production européenne.",
+   "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPaWZDVVZTWlBKMUxSU3c1MUZPWFcxUm90YmVVN0l2T3FLbE4xdHd1anNiNGJ5RGdCSHFaQ1ExbU5IckVsQVR3alBfWFpGbUpBc2FjWWpmOWpYU2tNTkItSVFXclBENHhjVmhjazg2NDliWl9CcVFCUUtGZFlYelp0N2lLemZ0MkdfMjgtWmZqbnNBVXlnYTZwbjFkd2IwNE9FaFdnZUVSU1VsV0tVX2psN1RSQkx6b0I0c2xONkkxb2JqVnR5RjlyVmNiSmppYkFVUmFfWVM1SG5MMElDWnhfS3FUTGJsb0Yzc0xrNkpkM1NrcWNGTV9td1VhU0ZPWTVBRGM2RnhaVmN1NlN0cmw5WGNLSHd3SG5WNjBSa3l4TmpYbzN2UTUtV1pSdzY?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "STLAP.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Meilleure utilisation d'une usine en surcapacité et accès aux modèles électriques abordables hors droits de douane.",
+     "extrait": "Stellantis et Leapmotor approfondissent leur partenariat européen",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Stellantis et Leapmotor approfondissent leur partenariat européen, avec la production d’un second modèle du constructeur chinois en Espagne - L'Usine Nouvelle",
+     "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPaWZDVVZTWlBKMUxSU3c1MUZPWFcxUm90YmVVN0l2T3FLbE4xdHd1anNiNGJ5RGdCSHFaQ1ExbU5IckVsQVR3alBfWFpGbUpBc2FjWWpmOWpYU2tNTkItSVFXclBENHhjVmhjazg2NDliWl9CcVFCUUtGZFlYelp0N2lLemZ0MkdfMjgtWmZqbnNBVXlnYTZwbjFkd2IwNE9FaFdnZUVSU1VsV0tVX2psN1RSQkx6b0I0c2xONkkxb2JqVnR5RjlyVmNiSmppYkFVUmFfWVM1SG5MMElDWnhfS3FUTGJsb0Yzc0xrNkpkM1NrcWNGTV9td1VhU0ZPWTVBRGM2RnhaVmN1NlN0cmw5WGNLSHd3SG5WNjBSa3l4TmpYbzN2UTUtV1pSdzY?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T06:02:19+00:00",
+     "media": "L'Usine Nouvelle"
+    },
+    {
+     "titre": "De quoi échapper aux droits de douane, en utilisant une usine en surcapacité : le chinois Leapmotor va faire construire un nouveau modèle dans une usine espagnole de Stellantis, à Saragosse - BFM",
+     "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQM3EzOVUyR3JrNmJaMDFfcEZjZzd2T0Y3WVZuTDFYX3NGNE9pVEp4VzBPRW1VN1VNeVN1aGI2MUk2VjI3V2FqZWVpOWpMNkZmVGNXa3RKakVRQjdsTjM0SW5tX1drbmFjN3JMekNucVREOWJBdFNBV3RfMHdDRlRpSFoxVVk3dTBPM0hwZ1JnbFFOSUZzY3RLMDJlX3l2aG9zOUQwNnFfQ0ZodUI3MjBjbjNsQmRzVnNZNldvQm5BZlhrVE1SRDZEdjlOTlI5VzhaVVRxU3dMT2JWU0ZJUTA1U3dPVzh2TUljNjk5bEZYOUU2UXFKUHVaUEpoRlRSQV9ubi1hdnEyYS1TVFFqMjRjcnYyNGNUeEFQbWVPLXNGb2NzcU9YQlBxTlNTX1ZXYmtvbXR5U25rcUppU3RrQ19fb1JlMDJDdi1VVEJ4bjlfOV91ZFg4VXBXQTJxR3M1cmxKZHh3d2N2bnU?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T05:17:06+00:00",
+     "media": "BFM"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-ab5effb238b5e1ce",
+   "date": "2026-10-20",
+   "source": "presse",
+   "titre": "Publicis : accord avec la FTC pour l'acquisition de LiveRamp",
+   "resume": "Publicis conclut un accord avec la Federal Trade Commission, levant un obstacle réglementaire à l'acquisition de LiveRamp.",
+   "nouveaute": "Accord avec la FTC conclu.",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcVk0WWV5TzNQWG1XZEdvbXh0WE9xR1FmenVTWnY4WHZuUzhkOGItaFk2cE80VXNuNDVqR3hON1NHRlRpTmg5QWRfZ2ZES085QWNzdjdsRkV1aXh0X0t3cGwyNWlxekxrSmV2djZlOWZqVXdEaFZYNXhuUXQxRHFpbUlyOVZBTzZfOHBsOXhPMFZLdXl5Mm5wOFJGS2xPclFTTG1zdEhSc0FhVWF2cWxrOWc4QkpPc1NSUjJ6N1c5VXhKcVhfaUM0aE4wX2piMmF1aTZHRGNB?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "PUB.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Levée d'un risque réglementaire sur l'acquisition de LiveRamp.",
+     "extrait": "Publicis signe un accord avec la FTC dans le cadre de l'acquisition de LiveRamp",
+     "nom": "Publicis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Publicis signe un accord avec la FTC dans le cadre de l'acquisition de LiveRamp - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcVk0WWV5TzNQWG1XZEdvbXh0WE9xR1FmenVTWnY4WHZuUzhkOGItaFk2cE80VXNuNDVqR3hON1NHRlRpTmg5QWRfZ2ZES085QWNzdjdsRkV1aXh0X0t3cGwyNWlxekxrSmV2djZlOWZqVXdEaFZYNXhuUXQxRHFpbUlyOVZBTzZfOHBsOXhPMFZLdXl5Mm5wOFJGS2xPclFTTG1zdEhSc0FhVWF2cWxrOWc4QkpPc1NSUjJ6N1c5VXhKcVhfaUM0aE4wX2piMmF1aTZHRGNB?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T04:48:22+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Publicis Groupe conclut un accord avec la Commission fédérale du commerce concernant l’acquisition de LiveRamp - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOb3FJMjhJRzFLN0tCcXVQX0llMHMyTTFhVVBKd2NKeV9oWVVkTndDeS1YVTV0WDN6bUhDc21EbDVRVi1LUDU0ZWNMSUo5MHZ3c1BBYkY4QUlmSmFKTXJ4Mm5PUV9NOF9iU3JqZTFWOXJHT185aWF1UUxack11Vi1vUmVsVmt2ZDc0N0VYYkFXSUdFTTB6TC1KLXJMVkFFdFhEVW5rLTJxdWEtY0dMUHhGMzU0TTU0aURxWEoxT0tDQ0FlS2pOdEF2cTcxWUdEeTJENEx0Vm1XV0Q3RzFrS3NiMWx2ZHg2RGdzU05wV0lGT0I?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T03:46:38+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Publicis conclut un accord avec la FTC dans le cadre de l'acquisition de LiveRamp - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNeVNlTEdGelFxbFZ6REdCRkk1V1ZEWmRtV0FIRTd6b1lOa2puOFdZZXZkNS1CVk5OWlFUeHBZTWVGYVhZR29teWFpWW14dUlaOWt2a2twaUpsTFdEWlNwQ1A1R1Bya05vVVJiQ0hlRHdqcWM1N09tcHgzeEtBN0hSd3hrMmdhdXlETFBZaEg2emFfNFk1ekRfZmlNWWk0d0xVUlRsUEFHcGVDdXJtWVFVY0FwZlROOU40eUhMdzNuUTN3S2R6WXlJT1QtX21sNC1XNERvWTFOMm45Zw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T20:15:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "L’action LiveRamp progresse après l’approbation de l’acquisition par Publicis - Yahoo Finance France",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMVpVeVZZVkdLeWJQNkFzN1Z5Z1RnQ3RmaGpkelBqc3RhaGw2WFhyZVhLYnZscy1PdUxJSDc3TzFKR1p2dUtSZWhxT2tXRnk0ZFg5YXJNVnBpVm5hOFljZkpYNzVLZ283T3lpWWhXbzVtS0lvZ1QyQmVNWFNkS0ZNQ0JTVk1Vd2kwNkJQREh6QW1VS280Y0pPaA?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T20:18:07+00:00",
+     "media": "Yahoo Finance France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-52dcfaffc8c76b41",
+   "date": "2026-10-19",
+   "source": "presse",
+   "titre": "Virbac : chiffre d'affaires du T3 en hausse de 8,8 %, objectifs 2026 confirmés",
+   "resume": "Virbac publie un chiffre d'affaires de T3 en croissance de 8,8 % et confirme ses objectifs annuels 2026.",
+   "nouveaute": "Chiffre d'affaires du T3 publié et objectifs confirmés.",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tVUVHNFJ5ZGJWMmxtekhYT2hobmVRc29VdFRXdlFPSk4zZnV4WUhZY2NESEpadVJ5bGlIVWJldlFhQjRSZnZ4aExCdUcxaUQwbGtiTGZKdUlLTVphMnVsRVNlYTNzNk12a2xCRktlWWtpcmtQa3h3?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "VIRP.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Croissance de 8,8 % et objectifs confirmés, écart au consensus non établi.",
+     "extrait": "Virbac-CA à +8,8% au T3, confirmation de ses objectifs 2026",
+     "nom": "Virbac"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Virbac-CA à +8,8% au T3, confirmation de ses objectifs 2026 - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tVUVHNFJ5ZGJWMmxtekhYT2hobmVRc29VdFRXdlFPSk4zZnV4WUhZY2NESEpadVJ5bGlIVWJldlFhQjRSZnZ4aExCdUcxaUQwbGtiTGZKdUlLTVphMnVsRVNlYTNzNk12a2xCRktlWWtpcmtQa3h3?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:52:11+00:00",
+     "media": "TradingView"
+    },
+    {
+     "titre": "Virbac-CA à +8,8% au T3, confirmation de ses objectifs 2026 - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYktXRmdJNXhXWlhrbEVYcTdfQlBBSTdQZ0t2T1EzeGM5S3A1OTdkbzkwWm5ud01jM2dUWWhWLUJaeVNpSWp2T3ZPYUI2S1J3djU5MEhRRzFVNmNJZVltYzduZERSOVZONnFMT1JSUzVFMnhkTFFfUWxqUUFfdzd5N2lqSEE3VGxlSDVxTzJrajc3eHo5UzI4YkoxbmFwbk5xdUxBbl9zaVRCNV9XR1E4QnhodWdraEVWQ1dfcjNzampVMkhZaEZ5YWsxcnN4dWdyWTB1a9IB1AFBVV95cUxOYktXRmdJNXhXWlhrbEVYcTdfQlBBSTdQZ0t2T1EzeGM5S3A1OTdkbzkwWm5ud01jM2dUWWhWLUJaeVNpSWp2T3ZPYUI2S1J3djU5MEhRRzFVNmNJZVltYzduZERSOVZONnFMT1JSUzVFMnhkTFFfUWxqUUFfdzd5N2lqSEE3VGxlSDVxTzJrajc3eHo5UzI4YkoxbmFwbk5xdUxBbl9zaVRCNV9XR1E4QnhodWdraEVWQ1dfcjNzampVMkhZaEZ5YWsxcnN4dWdyWTB1aw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:52:11+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Virbac-CA à +8,8% au T3, confirmation de ses objectifs 2026 - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTDNEMGd5c240aklwdDFYcnY1T2FrYl9PZmc2TGxlV29QUEl2MDN2YzFpS2dobXBGQlhrMFkzYUVrM0tVYTdHWEVLMnVwVDlYdVZKU2VEakhLdnFNQUYwa0xvdU1Dc1R1TXI1RkNldHZpWFpmaU1xRVJCX2QtVDRSQU5NVW1Qbk1VTGZoM0pnNTNiSEdOLUFfZjRhdHhaWDlXM1Q2Ri1Xay1jbEtURlZtem9xelN0MlRQSFR3d3daQndhbWtmQi1yZjVkeV90Q3hFNllrV9IB1AFBVV95cUxNTDNEMGd5c240aklwdDFYcnY1T2FrYl9PZmc2TGxlV29QUEl2MDN2YzFpS2dobXBGQlhrMFkzYUVrM0tVYTdHWEVLMnVwVDlYdVZKU2VEakhLdnFNQUYwa0xvdU1Dc1R1TXI1RkNldHZpWFpmaU1xRVJCX2QtVDRSQU5NVW1Qbk1VTGZoM0pnNTNiSEdOLUFfZjRhdHhaWDlXM1Q2Ri1Xay1jbEtURlZtem9xelN0MlRQSFR3d3daQndhbWtmQi1yZjVkeV90Q3hFNllrVw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:24:54+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Virbac maintient ses objectifs annuels après une croissance dynamique de son activité au T3 - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQb0JhTVVZbjF3Z0YzY2FRQ0pCWU9NREctUFkwOEgtVjBhVWJFcEE4YTRiazdDbnBueUtNRUNqY3EydzQzS0ptMFRiQlVIS083M3RVVU1SMkpBUmdSeTRjTjhhT2p0dXk3X3hrRWRiZ2gwLWFjcFdlVE1VeldRVjNuM3Fhc01kcEhQYVQyZFVFVUFXQy1uU1Q2eHJvUEVkZFN1VWZjSmZnVXRjcDVLZzVpZmNaenF1LU1ITF9JMkd3?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:21:30+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-bb85f42ee917b35d",
+   "date": "2026-10-19",
+   "source": "presse",
+   "titre": "bioMérieux : autorisation d'urgence de l'OMS pour son test Ebola",
+   "resume": "L'OMS accorde une autorisation d'utilisation d'urgence au test BioFire Global Fever Special Pathogens Panel de bioMérieux.",
+   "nouveaute": "Autorisation d'urgence de l'OMS obtenue.",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZTFxQ0tKZXpBc253M1p5WkdnSl9vNnczNk9LcTZmWGhtN2l3dFZRMGg3S2xObzgySkJzN1dwVXYxZm95OTFkbkVYSHFaMUV3YThwYTFuWldqcjllZlRCSG5vRFp0b1cxWUlPYXJ2Y0FrNnBSaHA2b3A5Y1hGbDZpdS1KdEtlTjl0blNOY2dUcnloZ21VbmVSQlZRbFU1NF94V1o0T0tCQnhra0VrMHZDemV0RUpOVGJZanQ1b2hOV1gtS1FIZERpWm5lRVlfYTVkOFpuTHZMVUR3RVN4dTZDc21uTEczZ9IB5gFBVV95cUxQZTFxQ0tKZXpBc253M1p5WkdnSl9vNnczNk9LcTZmWGhtN2l3dFZRMGg3S2xObzgySkJzN1dwVXYxZm95OTFkbkVYSHFaMUV3YThwYTFuWldqcjllZlRCSG5vRFp0b1cxWUlPYXJ2Y0FrNnBSaHA2b3A5Y1hGbDZpdS1KdEtlTjl0blNOY2dUcnloZ21VbmVSQlZRbFU1NF94V1o0T0tCQnhra0VrMHZDemV0RUpOVGJZanQ1b2hOV1gtS1FIZERpWm5lRVlfYTVkOFpuTHZMVUR3RVN4dTZDc21uTEczZw?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "BIM.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Ouverture de ventes de tests en situation d'urgence sanitaire, volumes probablement limités.",
+     "extrait": "bioMérieux obtient un feu vert d'urgence de l'OMS pour son test Ebola",
+     "nom": "bioMérieux"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "bioMérieux obtient un feu vert d'urgence de l'OMS pour son test Ebola - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZTFxQ0tKZXpBc253M1p5WkdnSl9vNnczNk9LcTZmWGhtN2l3dFZRMGg3S2xObzgySkJzN1dwVXYxZm95OTFkbkVYSHFaMUV3YThwYTFuWldqcjllZlRCSG5vRFp0b1cxWUlPYXJ2Y0FrNnBSaHA2b3A5Y1hGbDZpdS1KdEtlTjl0blNOY2dUcnloZ21VbmVSQlZRbFU1NF94V1o0T0tCQnhra0VrMHZDemV0RUpOVGJZanQ1b2hOV1gtS1FIZERpWm5lRVlfYTVkOFpuTHZMVUR3RVN4dTZDc21uTEczZ9IB5gFBVV95cUxQZTFxQ0tKZXpBc253M1p5WkdnSl9vNnczNk9LcTZmWGhtN2l3dFZRMGg3S2xObzgySkJzN1dwVXYxZm95OTFkbkVYSHFaMUV3YThwYTFuWldqcjllZlRCSG5vRFp0b1cxWUlPYXJ2Y0FrNnBSaHA2b3A5Y1hGbDZpdS1KdEtlTjl0blNOY2dUcnloZ21VbmVSQlZRbFU1NF94V1o0T0tCQnhra0VrMHZDemV0RUpOVGJZanQ1b2hOV1gtS1FIZERpWm5lRVlfYTVkOFpuTHZMVUR3RVN4dTZDc21uTEczZw?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:19:00+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "bioMérieux : l'OMS accorde une autorisation d'utilisation d'urgence au test Biofire Global Fever Special Pathogens - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNdXdmRm1xbHl0dzlJOWVsTW16b1VIbHRwbVIxN1FEYXVvX2VKekJ3NF94eW8tdUQ3UjFSdWJIOVVJbW9jZk83SmlqVVpIUHVDb1BoSG5kb3VFcHFHVFRzQ1lYNHAyN01Tc1dORzNZZzhXbW02cEhWdFdfYjA4T1EzYzJ3LUVtdm4weUNqRkcybGxvZDZWSUN2aGkyYjFmMThsc19VZHktNy16d1lSbkZNUVZHbjVTUWhCV2VQTzRfSmpYTkl5Sl85blY1Z2JHNHFVTXBYMjJRbUltbUxsTzRrNUh2Y3ZMV0hRZkNESHh0ZFdKZmdLZWNCZHBkdHZtamhCMmRR?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T17:28:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "bioMérieux obtient un feu vert d'urgence de l'OMS pour son test Ebola - Bourse Direct",
+     "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQYWJxRFhXcE1qTEtLU1RZOU4xQkhFRjk1czhpTDZjVWwzR1poWTZwOGZ1U1pCZTFCeEhIN1dqN3J0RDdZLVNURDJJOFppZHFnY3NubjZ2NldIS2lnNmg4RElDUkZBVEZKWHhWQks0bTV5VHByVVBHTWJCU013UEhRWTgtQjV2dlgza1hRSVRNb25Ibi14TWMtNkk2Z1ZrM0w4QlhGZUs2T0pzMzY3eUx3QXRTQlFLeURrLXIydHh0M0pFbm5nNDNIQlZNUGxBdURPdkJLSlJVYXRuUTRsRnNZYkowT203Q2c2bFBmSFcxdkFpWnIyNzVmU0ppNHNkU3NYYmNLN21DTTJTMlhIVkxwdGttSEpXMEdwWUE?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:19:00+00:00",
+     "media": "Bourse Direct"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
+  {
+   "id": "presse-793dbfe344aff1d2",
+   "date": "2026-10-19",
+   "source": "presse",
+   "titre": "Vinci : trafic aéroportuaire en baisse en septembre et au T3",
+   "resume": "Vinci Airports publie un trafic en baisse en septembre et sur le troisième trimestre.",
+   "nouveaute": "Chiffres de trafic de septembre et du T3 publiés.",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONE1FLUk2UWYwTkgzaVNjUjA0SGZsMnBpNUNQRWpnZXZtZUZiSWJCWExjV1hWMGZnd19LYWNXZXViWk41ZGVnUTZGdFQ3ZWNYYy1VUHFjZENtdzNfNkhIZWhvTWx0ejVrSGdLTkJMVks3UHhpX0JfOUlTUlAwREItckozWnl2NHdMM0ZmQ1JoYUN0SnlHSGZhQkhiMmoyRl93bk1udWNhMzNnYnZ6bll1UkNIUE9vaWpTZjVxVg?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "DG.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Baisse du trafic aéroportuaire, activité aéroports en recul sur la période.",
+     "extrait": "Vinci: baisse du trafic en septembre et au troisième trimestre dans les aéroports",
+     "nom": "Vinci"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Vinci: baisse du trafic en septembre et au troisième trimestre dans les aéroports - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONE1FLUk2UWYwTkgzaVNjUjA0SGZsMnBpNUNQRWpnZXZtZUZiSWJCWExjV1hWMGZnd19LYWNXZXViWk41ZGVnUTZGdFQ3ZWNYYy1VUHFjZENtdzNfNkhIZWhvTWx0ejVrSGdLTkJMVks3UHhpX0JfOUlTUlAwREItckozWnl2NHdMM0ZmQ1JoYUN0SnlHSGZhQkhiMmoyRl93bk1udWNhMzNnYnZ6bll1UkNIUE9vaWpTZjVxVg?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:28:22+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Vinci: baisse du trafic en septembre et au troisième trimestre dans les aéroports - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQM3JaTDVTRzBhUEt4YUVBNm1abTdna1pGQ25VZ2tkMkJhX2xTa19NejJKclh2dkdTTDMzZTZSNE5MUkFhWW1lY0ctSmNrX1poTjV2R2VaQ25WYldZM3dJcXJhMEs5S2VTdlUtVVE3ckcxMjlzN0xrT3pMcFZKWFRmcmdVS3d1OWJCLUI4Q3NCenJoX2JmZ2NOSWJHZ1BIZHRHLVctazF4UDQtVXlCdERBb1M2YV82UXNYMW5YVFYwWUwxZEtReER6V2JPZDM4YXhoVTNDYnpTQThmM3dxRjRmU1I3TVFTWXFy?oc=5",
+     "date": "2026-10-19",
+     "publie_le": "2026-10-19T16:28:00+00:00",
+     "media": "Investir Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-20",
+   "publie_a": "2026-10-20T06:22:06+00:00"
+  },
   {
    "id": "presse-731dfdf2d496896c",
    "date": "2026-10-19",
@@ -3552,24 +3990,6 @@
  ],
  "calendrier": [
   {
-   "date": "2026-10-19",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Forvia : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "FRVIA.PA"
-   ],
-   "tickers_mots_cles": [
-    "FRVIA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/FRVIA.PA",
-   "fiable": false
-  },
-  {
    "date": "2026-10-20",
    "heure": "",
    "type": "resultats",
@@ -3627,7 +4047,7 @@
    "date": "2026-10-20",
    "heure": "15:00",
    "type": "budget",
-   "titre": "Vote solennel sur le projet de loi de finances pour 2027 (première partie). • Discussion du projet de loi de financement de la sécurité sociale pour 2027",
+   "titre": "Discussion du projet de loi de financement de la sécurité sociale pour 2027 • Vote solennel sur le projet de loi de finances pour 2027 (première partie).",
    "tickers": [
     "DG.PA",
     "FGR.PA",
