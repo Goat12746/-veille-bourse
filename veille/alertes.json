@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-21T06:21:59+00:00",
+ "genere_le": "2026-10-21T11:23:11+00:00",
  "sources": {
   "amf": {
    "ok": false,
@@ -8,13 +8,13 @@
   },
   "presse": {
    "ok": true,
-   "trouves": 422,
-   "nouveaux": 280
+   "trouves": 329,
+   "nouveaux": 186
   },
   "assemblee": {
    "ok": true,
-   "trouves": 70,
-   "nouveaux": 38
+   "trouves": 37,
+   "nouveaux": 0
   },
   "agenda": {
    "ok": true,
@@ -22,7 +22,7 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 106
+   "trouves": 109
   }
  },
  "alertes": [
@@ -272,6 +272,163 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-21",
    "publie_a": "2026-10-21T06:21:59+00:00"
+  },
+  {
+   "id": "presse-0b38ae691ceb0a1a",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Bouygues : Colas rachète l'américain Suit-Kote pour 480 M$",
+   "resume": "Colas, filiale de Bouygues, acquiert Suit-Kote (matériaux routiers, États-Unis) pour 480 millions de dollars, selon la presse financière.",
+   "nouveaute": "Première annonce du rachat et de son prix, 480 M$.",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ2hBRklraThORTQ5bUVMNjlYcW9UYVBuUUdlajV6SnZ0MWZYczlsaEU0ZHJ1MDNONHZ0bEVHUUlJeGNBczBMNVdpQmFzbDVWbEw5djlHMnNOWnh5aWlwUXVwVGRmX3VqUWQ0X2lreFdlTFYyRm53MVJfT2w3T29JZDlDakdwclpNOW5fRkgyZGtrX3RMRy1OVV90QUxiOEZDS0hVTzBKYTVldUNa?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.9,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "EN.PA",
+     "sens": "incertain",
+     "ampleur": "faible",
+     "justification": "Acquisition d'environ 480 M$ rapportée à la capitalisation du groupe Bouygues : effet probablement limité sur le résultat, sans détail sur le CA ni les synergies.",
+     "extrait": "Colas rachète Suit-Kote pour 480 millions de dollars",
+     "nom": "Bouygues"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Bouygues : Colas rachète Suit-Kote pour 480 millions de dollars - Le Revenu",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ2hBRklraThORTQ5bUVMNjlYcW9UYVBuUUdlajV6SnZ0MWZYczlsaEU0ZHJ1MDNONHZ0bEVHUUlJeGNBczBMNVdpQmFzbDVWbEw5djlHMnNOWnh5aWlwUXVwVGRmX3VqUWQ0X2lreFdlTFYyRm53MVJfT2w3T29JZDlDakdwclpNOW5fRkgyZGtrX3RMRy1OVV90QUxiOEZDS0hVTzBKYTVldUNa?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T10:19:00+00:00",
+     "media": "Le Revenu"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T11:23:11+00:00"
+  },
+  {
+   "id": "presse-6c7ff832c96d2bce",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Klépierre : acquisition de 50 % d'un portefeuille italien pour 196 M€",
+   "resume": "Klépierre acquiert 50 % d'un portefeuille de centres commerciaux en Italie pour 196 M€, publié en marge de ses revenus locatifs du 3e trimestre.",
+   "nouveaute": "Annonce de l'acquisition et de son montant, 196 M€.",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVXRQMjJMNGxqcUQwejQ5N1BYYVdSenc3UDJWdkplTThMTWlTWjRRUmtSUzRKNG5hbXFEWE1QUElWcENPTEVya1hqaEJpM0hqWE5NUU5SUzJRVHJUWG16WmhCSFQzS0ZpbnNtS0QyeHRuZWhmelhkSDRQRjRDRXk3bUdPa3owSFFRdnlzR1NLcEhtSnd3T3ZrU01zZ1QxU3I4eWp4cF9CQ1NNZHNQdzRsMEw5Nm9RYXpHeGc?oc=5",
+   "etape": "annonce",
+   "probabilite": 0.95,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "LI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Investissement de 196 M€ pour la moitié d'un portefeuille : renforce l'exposition à l'Italie, effet modéré sur les revenus locatifs, rendement non précisé.",
+     "extrait": "acquisition de 50 % d'un portefeuille italien pour 196 M€",
+     "nom": "Klépierre"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Klépierre : acquisition de 50 % d'un portefeuille italien pour 196 M€ - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVXRQMjJMNGxqcUQwejQ5N1BYYVdSenc3UDJWdkplTThMTWlTWjRRUmtSUzRKNG5hbXFEWE1QUElWcENPTEVya1hqaEJpM0hqWE5NUU5SUzJRVHJUWG16WmhCSFQzS0ZpbnNtS0QyeHRuZWhmelhkSDRQRjRDRXk3bUdPa3owSFFRdnlzR1NLcEhtSnd3T3ZrU01zZ1QxU3I4eWp4cF9CQ1NNZHNQdzRsMEw5Nm9RYXpHeGc?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T08:38:00+00:00",
+     "media": "Ideal Investisseur"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T11:23:11+00:00"
+  },
+  {
+   "id": "presse-692ecef4937310cc",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Imerys obtient la concession de la mine de lithium de Beauvoir jusqu'en 2075",
+   "resume": "L'État accorde officiellement à Imerys la concession de la mine de lithium de Beauvoir (Allier) jusqu'en 2075, étape clé de son projet EMILI.",
+   "nouveaute": "Octroi officiel de la concession jusqu'en 2075, jusque-là en attente.",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNX2JxRDFYQ29sMUlHY0lVd3E4Nl9SZGlYMVluSzl3UllwN3I5TFNPeURCS1hGR2VOSGh2aFVNRm1RUnM5NzB3Q1FpeWhYeUJhamxuTU9yV3hPUEtVa2xZTDhBTHk3b3Bma011VjdiS2RzeTl1TEREeXp3VkYyNlZwZlo4VE9rMU5QeWZ0N0lQRmY3aVJ6cXdwOFU4RHRoYkZWNzdLa2JqWHJ2cHIyQUVnTGJnbUJBempqZmJsNEZGU1lac1k5cDhjZy04MlZQYXBCWmYyd1JRWXQ5Vkxna3c?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "NK.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Lève une incertitude administrative sur le projet lithium (environ 700 000 véhicules électriques par an visés) ; la production reste lointaine et dépend encore du financement.",
+     "extrait": "Imerys obtient officiellement la concession jusqu'en 2075",
+     "nom": "Imerys"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Mine de lithium dans l'Allier : Imerys obtient officiellement la concession jusqu'en 2075 - ici.fr",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNX2JxRDFYQ29sMUlHY0lVd3E4Nl9SZGlYMVluSzl3UllwN3I5TFNPeURCS1hGR2VOSGh2aFVNRm1RUnM5NzB3Q1FpeWhYeUJhamxuTU9yV3hPUEtVa2xZTDhBTHk3b3Bma011VjdiS2RzeTl1TEREeXp3VkYyNlZwZlo4VE9rMU5QeWZ0N0lQRmY3aVJ6cXdwOFU4RHRoYkZWNzdLa2JqWHJ2cHIyQUVnTGJnbUJBempqZmJsNEZGU1lac1k5cDhjZy04MlZQYXBCWmYyd1JRWXQ5Vkxna3c?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T09:52:33+00:00",
+     "media": "ici.fr"
+    },
+    {
+     "titre": "Imerys obtient la concession de la mine de Beauvoir jusqu’en 2075 - Le Journal des Français",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVnRXVUxXTGIxYnhxQUdWdXBFNmQ0S08tNEFsYWF1T0M2T2tGeENxcnQtd01FNmgxMExtRDFmUnBCamVqYWZkb09obHRjQkFrdHBuSmd4XzZWU0xGTEQ4Y21xOTV0QTdFZFg4LW1MN3piZmJpNWFEdk84aE41LTl5M2NpQS0yeE1VUU5HaE94dmNJUnpl?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T10:11:39+00:00",
+     "media": "Le Journal des Français"
+    },
+    {
+     "titre": "Il veut extraire en Auvergne du lithium pour alimenter 700.000 véhicules électriques par an: le spécialiste des minerais Imerys obtient la concession de la mine de Beauvoir jusqu'en 2075 - BFM",
+     "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxNNXQtOGNhUDlUNXFyM0JGbmt2eFBkeW9YMGpFOVRNeDdpUHBkWkJzZzQ2T1JRUm41djloamY5UjQ4QUtXQVpyT1FyRDZHMW16d1NfMFkxcEhOMlFpSU5meC1tTS1qMXBnd0hZUjl3NDZjU0ppTU1tbHA3UmtZUWY4Mzl2WElqLUFsMDFzXzF2YXdiU3k1VVIzUVRYeW9lRDR3Z3F3bG1PVGVGQ2tNWmY3UWFXbEF0YlRLWjh3ZjJsT09meDRHWWJoOWRORDNGdmM5Ri13X3lrZnhITVdud2hGajhCY1dYTExqY1BQcGx4NVE0WENEOGRqUmlZNHgtTFp2dWdZR1UwdFU0RHBoY3A4bjNkQkl6WmttR1ltaTYydk5tY2NDaFdma19oR2lScElmM29MVG00SDBWcjhjbkRpTlowUlp2bFUxV3hkeHp2elVmSVlJemdZbjNqZlB1bUh4czEyTDVWbnJjMURRR3JlM202enZIVTQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T09:40:10+00:00",
+     "media": "BFM"
+    },
+    {
+     "titre": "Lithium : la concession de la mine de Beauvoir octroyée à Imerys jusqu'en 2075 - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBrZDU3bUJuUFBaeVBUTEdpQXBON2VnT1lJa2o3SjdocnIybnMwdVdjd3l1X3Z6VENDSjYyVWtnWWV3UTdhUWtHc1Z3Qmg3LUFjUmgtTWVDOHJvZFJaTGozODZB?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T08:48:46+00:00",
+     "media": "TradingView"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T11:23:11+00:00"
+  },
+  {
+   "id": "presse-3f1b2bb6f07eee31",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Sanofi et Teva : duvakitug, jusqu'à 58 % de rémission à 44 semaines",
+   "resume": "Nouvelles données de phase 2 du duvakitug (maladies inflammatoires de l'intestin) co-développé par Sanofi et Teva : jusqu'à 58 % de rémission à 44 semaines.",
+   "nouveaute": "Publication des données d'efficacité à 44 semaines.",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONEdXa0tEem9NczhFblpIZU93Wnp4bUV0UWM0aTFQbW5iUDVTTWl6NG81ZVAtVXg0OUpiaG9wZmJFcl82MEJwN2tiTjhhMWJEeUJ1cnI4ZmV1a1o1ZXpidk9fSW9tLUM2blhDMEFZR0ZRR2dPWmlHV3Z1RU5jcUQwMFhBZ1JiRWhOaUJtemt1WFVrVWpPazc0LXhOaVdON2dPUGVGaTJpcnpOVGhVbmNKTVRzZVdDb0dzLUh5RlppRjljQQ?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SAN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Données d'efficacité favorables sur un candidat en phase 2 ; la mise sur le marché reste lointaine (phase 3 à mener).",
+     "extrait": "jusqu'à 58 % de rémission avec le duvakitug à 44 semaines",
+     "nom": "Sanofi"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Sanofi et Teva : jusqu'à 58 % de rémission avec le duvakitug à 44 semaines - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONEdXa0tEem9NczhFblpIZU93Wnp4bUV0UWM0aTFQbW5iUDVTTWl6NG81ZVAtVXg0OUpiaG9wZmJFcl82MEJwN2tiTjhhMWJEeUJ1cnI4ZmV1a1o1ZXpidk9fSW9tLUM2blhDMEFZR0ZRR2dPWmlHV3Z1RU5jcUQwMFhBZ1JiRWhOaUJtemt1WFVrVWpPazc0LXhOaVdON2dPUGVGaTJpcnpOVGhVbmNKTVRzZVdDb0dzLUh5RlppRjljQQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T08:13:00+00:00",
+     "media": "Ideal Investisseur"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T11:23:11+00:00"
   },
   {
    "id": "presse-2d2a651d719bb6ef",
@@ -6187,6 +6344,42 @@
    "fiable": false
   },
   {
+   "date": "2027-01-21",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Getlink : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "GET.PA"
+   ],
+   "tickers_mots_cles": [
+    "GET.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/GET.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-01-28",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Eurofins Scientific : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "ERF.PA"
+   ],
+   "tickers_mots_cles": [
+    "ERF.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/ERF.PA",
+   "fiable": false
+  },
+  {
    "date": "2027-01-28",
    "heure": "",
    "type": "resultats",
@@ -6292,6 +6485,24 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/MERY.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-18",
+   "heure": "",
+   "type": "resultats",
+   "titre": "FDJ United : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "FDJU.PA"
+   ],
+   "tickers_mots_cles": [
+    "FDJU.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/FDJU.PA",
    "fiable": false
   }
  ]

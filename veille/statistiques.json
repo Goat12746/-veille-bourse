@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-21T06:23:18+00:00",
+ "genere_le": "2026-10-21T11:24:30+00:00",
  "derniere_seance": "2026-10-20",
  "methode": {
   "indice": "CAC 40",
@@ -13,62 +13,61 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 83,
-  "n_observations": 141,
+  "n_alertes": 87,
+  "n_observations": 145,
   "statuts": {
-   "attente": 5,
-   "donnees": 9,
-   "note": 47,
-   "non_directionnel": 31,
-   "confondu": 9,
+   "attente": 9,
+   "note": 52,
+   "non_directionnel": 33,
+   "confondu": 11,
    "macro": 40
   },
   "synthese": {
-   "n": 47,
+   "n": 52,
    "points": {
-    "total": 2,
-    "moyenne": 0.04,
+    "total": 5,
+    "moyenne": 0.1,
     "repartition": {
-     "2": 2,
-     "1": 12,
-     "0": 20,
+     "2": 3,
+     "1": 13,
+     "0": 23,
      "-1": 12,
      "-2": 1
     }
    },
    "sens": {
-    "justes": 14,
+    "justes": 16,
     "faux": 7,
-    "bruit": 26,
-    "taux": 0.667,
-    "p": 0.1892
+    "bruit": 29,
+    "taux": 0.696,
+    "p": 0.0931
    },
-   "ecart_moyen_pct": 0.82,
-   "z_moyen": 0.46,
-   "t": 1.49,
-   "p_t": 0.143,
+   "ecart_moyen_pct": 0.87,
+   "z_moyen": 0.5,
+   "t": 1.76,
+   "p_t": 0.084,
    "signe": {
-    "positifs": 26,
-    "p": 0.5601
+    "positifs": 30,
+    "p": 0.3317
    },
    "rang": {
-    "moyen": 0.563,
-    "p": 0.134
+    "moyen": 0.576,
+    "p": 0.0575
    },
    "ampleur": {
-    "n": 39,
+    "n": 44,
     "matrice": {
      "faible": {
       "contraire": 6,
-      "bruit": 17,
+      "bruit": 20,
       "net": 4,
       "fort": 0
      },
      "moyenne": {
       "contraire": 1,
       "bruit": 5,
-      "net": 1,
-      "fort": 2
+      "net": 2,
+      "fort": 3
      },
      "forte": {
       "contraire": 0,
@@ -78,66 +77,66 @@
      }
     },
     "z_abs_moyen": {
-     "faible": 0.9,
-     "moyenne": 2.32,
+     "faible": 0.83,
+     "moyenne": 2.27,
      "forte": 1.25
     },
-    "spearman": 0.124,
-    "p": 0.4502
+    "spearman": 0.221,
+    "p": 0.1487
    },
    "apres_publication": {
-    "n": 32,
-    "ecart_moyen_pct": 0.26,
+    "n": 34,
+    "ecart_moyen_pct": 0.29,
     "z_moyen": 0.03,
-    "p": 0.8925
+    "p": 0.8764
    }
   },
   "avant_reaction": {
-   "n": 13,
+   "n": 18,
    "points": {
-    "total": -3,
-    "moyenne": -0.23,
+    "total": 0,
+    "moyenne": 0.0,
     "repartition": {
-     "2": 0,
-     "1": 4,
-     "0": 3,
+     "2": 1,
+     "1": 5,
+     "0": 6,
      "-1": 5,
      "-2": 1
     }
    },
    "sens": {
-    "justes": 4,
+    "justes": 6,
     "faux": 4,
-    "bruit": 5,
-    "taux": 0.5,
-    "p": 1.0
+    "bruit": 8,
+    "taux": 0.6,
+    "p": 0.7539
    },
-   "ecart_moyen_pct": 2.0,
-   "z_moyen": 0.89,
-   "t": 0.94,
-   "p_t": 0.3648,
+   "ecart_moyen_pct": 1.83,
+   "z_moyen": 0.88,
+   "t": 1.28,
+   "p_t": 0.2162,
    "signe": {
-    "positifs": 8,
-    "p": 0.5811
+    "positifs": 12,
+    "p": 0.2379
    },
    "rang": {
-    "moyen": 0.561,
-    "p": 0.4484
+    "moyen": 0.599,
+    "p": 0.1468
    },
    "ampleur": {
-    "n": 9,
+    "n": 14,
     "matrice": {
      "faible": {
       "contraire": 3,
-      "bruit": 1,
+      "bruit": 4,
       "net": 1,
       "fort": 0
      },
      "moyenne": {
       "contraire": 1,
       "bruit": 2,
-      "net": 0,
-      "fort": 1
+      "net": 1,
+      "fort": 2
      },
      "forte": {
       "contraire": 0,
@@ -147,12 +146,12 @@
      }
     },
     "z_abs_moyen": {
-     "faible": 1.14,
-     "moyenne": 3.38,
+     "faible": 0.81,
+     "moyenne": 2.94,
      "forte": null
     },
-    "spearman": 0.0,
-    "p": 1.0
+    "spearman": 0.358,
+    "p": 0.2087
    },
    "apres_publication": {
     "n": 8,
@@ -163,11 +162,11 @@
   },
   "par_source": [
    {
-    "n": 32,
-    "points_moyen": 0.09,
-    "justes": 9,
+    "n": 37,
+    "points_moyen": 0.16,
+    "justes": 11,
     "faux": 3,
-    "z_moyen": 0.19,
+    "z_moyen": 0.28,
     "cle": "presse"
    },
    {
@@ -181,27 +180,27 @@
   ],
   "par_etape": [
    {
-    "n": 21,
-    "points_moyen": 0.24,
-    "justes": 8,
+    "n": 23,
+    "points_moyen": 0.3,
+    "justes": 9,
     "faux": 2,
-    "z_moyen": 0.53,
+    "z_moyen": 0.56,
     "cle": "annonce"
    },
    {
-    "n": 12,
-    "points_moyen": -0.17,
+    "n": 14,
+    "points_moyen": -0.14,
     "justes": 3,
     "faux": 3,
-    "z_moyen": -0.05,
+    "z_moyen": -0.04,
     "cle": "information"
    },
    {
-    "n": 8,
-    "points_moyen": -0.25,
-    "justes": 2,
+    "n": 9,
+    "points_moyen": -0.11,
+    "justes": 3,
     "faux": 2,
-    "z_moyen": 1.42,
+    "z_moyen": 1.54,
     "cle": "publie"
    },
    {
@@ -215,19 +214,19 @@
   ],
   "par_ampleur": [
    {
-    "n": 27,
+    "n": 30,
     "points_moyen": -0.07,
     "justes": 4,
     "faux": 6,
-    "z_moyen": -0.28,
+    "z_moyen": -0.24,
     "cle": "faible"
    },
    {
-    "n": 9,
-    "points_moyen": -0.33,
-    "justes": 3,
+    "n": 11,
+    "points_moyen": 0.0,
+    "justes": 5,
     "faux": 1,
-    "z_moyen": 1.78,
+    "z_moyen": 1.83,
     "cle": "moyenne"
    },
    {
@@ -249,10 +248,118 @@
   ],
   "probabilites": {
    "n_tranchees": 1,
-   "n_en_cours": 41,
+   "n_en_cours": 43,
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "presse-0b38ae691ceb0a1a",
+    "titre": "Bouygues : Colas rachète l'américain Suit-Kote pour 480 M$",
+    "date": "2026-10-21",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 0.9,
+    "publie_a": "2026-10-21T13:23",
+    "information": "2026-10-21T12:19",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "EN.PA",
+      "nom": "Bouygues",
+      "sens": "incertain",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-692ecef4937310cc",
+    "titre": "Imerys obtient la concession de la mine de lithium de Beauvoir jusqu'en 2075",
+    "date": "2026-10-21",
+    "source": "presse",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-21T13:23",
+    "information": "2026-10-21T10:48",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "NK.PA",
+      "nom": "Imerys",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-6c7ff832c96d2bce",
+    "titre": "Klépierre : acquisition de 50 % d'un portefeuille italien pour 196 M€",
+    "date": "2026-10-21",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 0.95,
+    "publie_a": "2026-10-21T13:23",
+    "information": "2026-10-21T10:38",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "LI.PA",
+      "nom": "Klépierre",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-3f1b2bb6f07eee31",
+    "titre": "Sanofi et Teva : duvakitug, jusqu'à 58 % de rémission à 44 semaines",
+    "date": "2026-10-21",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-21T13:23",
+    "information": "2026-10-21T10:13",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "SAN.PA",
+      "nom": "Sanofi",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "presse-53ebd38b5744d8df",
     "titre": "Carrefour : objectifs 2026 abaissés après un T3 à +2,3 % en comparable",
@@ -411,7 +518,19 @@
       "nom": "Vinci",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -0.14,
+      "indice_pct": -0.38,
+      "beta": 1.08,
+      "sigma_pct": 1.15,
+      "ecart_pct": 0.28,
+      "z": 0.24,
+      "rang": 0.647,
+      "avant_pct": -0.27,
+      "statut": "confondu",
+      "confondu_avec": [
+       "presse-793dbfe344aff1d2"
+      ],
+      "niveau": "bruit"
      }
     ]
    },
@@ -438,7 +557,29 @@
       "nom": "Stellantis",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -0.48,
+      "indice_pct": -0.38,
+      "beta": 1.46,
+      "sigma_pct": 2.83,
+      "ecart_pct": 0.32,
+      "z": 0.11,
+      "rang": 0.54,
+      "avant_pct": -2.23,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.26,
+       "ecart_pct": -0.19,
+       "z": -0.09
+      },
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
      }
     ]
    },
@@ -465,7 +606,24 @@
       "nom": "Société Générale",
       "sens": "incertain",
       "ampleur": "inconnue",
-      "statut": "donnees"
+      "rendement_pct": -0.34,
+      "indice_pct": -0.38,
+      "beta": 1.76,
+      "sigma_pct": 1.58,
+      "ecart_pct": 0.21,
+      "z": 0.13,
+      "rang": 0.556,
+      "avant_pct": -4.33,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 0.29,
+       "ecart_pct": 0.38,
+       "z": 0.34
+      },
+      "statut": "non_directionnel",
+      "niveau": "bruit"
      }
     ]
    },
@@ -492,7 +650,29 @@
       "nom": "Publicis",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -0.59,
+      "indice_pct": -0.38,
+      "beta": 0.53,
+      "sigma_pct": 1.74,
+      "ecart_pct": -0.48,
+      "z": -0.28,
+      "rang": 0.349,
+      "avant_pct": 2.23,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.74,
+       "ecart_pct": -0.71,
+       "z": -0.58
+      },
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
      }
     ]
    },
@@ -519,7 +699,29 @@
       "nom": "Solvay",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": -3.94,
+      "indice_pct": -0.38,
+      "beta": 0.68,
+      "sigma_pct": 1.48,
+      "ecart_pct": -3.7,
+      "z": -2.51,
+      "rang": 0.016,
+      "avant_pct": -0.26,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 3.55,
+       "ecart_pct": 3.58,
+       "z": 3.43
+      },
+      "statut": "note",
+      "niveau": "fort",
+      "points": {
+       "sens": 1,
+       "ampleur": 0,
+       "total": 1
+      }
      }
     ]
    },
@@ -546,7 +748,29 @@
       "nom": "Schneider Electric",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": -3.29,
+      "indice_pct": -0.38,
+      "beta": 1.62,
+      "sigma_pct": 1.68,
+      "ecart_pct": -2.75,
+      "z": -1.64,
+      "rang": 0.052,
+      "avant_pct": -5.99,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 0.74,
+       "ecart_pct": 0.82,
+       "z": 0.69
+      },
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 1,
+       "total": 2
+      }
      }
     ]
    },
@@ -581,6 +805,14 @@
       "z": -0.13,
       "rang": 0.46,
       "avant_pct": 6.01,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 3.25,
+       "ecart_pct": 3.29,
+       "z": 1.45
+      },
       "statut": "note",
       "niveau": "bruit",
       "points": {
@@ -614,7 +846,27 @@
       "nom": "Vinci",
       "sens": "negatif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -0.14,
+      "indice_pct": -0.38,
+      "beta": 1.08,
+      "sigma_pct": 1.15,
+      "ecart_pct": 0.28,
+      "z": 0.24,
+      "rang": 0.647,
+      "avant_pct": -0.27,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 1.28,
+       "ecart_pct": 1.34,
+       "z": 1.64
+      },
+      "statut": "confondu",
+      "confondu_avec": [
+       "amf-138734_20261020"
+      ],
+      "niveau": "bruit"
      }
     ]
    },
@@ -641,7 +893,24 @@
       "nom": "Virbac",
       "sens": "incertain",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": 2.37,
+      "indice_pct": -0.38,
+      "beta": 0.66,
+      "sigma_pct": 1.46,
+      "ecart_pct": 2.61,
+      "z": 1.79,
+      "rang": 0.948,
+      "avant_pct": 5.84,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.43,
+       "ecart_pct": -0.4,
+       "z": -0.39
+      },
+      "statut": "non_directionnel",
+      "niveau": "net"
      }
     ]
    },
@@ -668,7 +937,29 @@
       "nom": "bioMérieux",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": 0.4,
+      "indice_pct": -0.38,
+      "beta": 0.29,
+      "sigma_pct": 1.89,
+      "ecart_pct": 0.64,
+      "z": 0.34,
+      "rang": 0.667,
+      "avant_pct": 3.59,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.06,
+       "ecart_pct": -0.04,
+       "z": -0.03
+      },
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
      }
     ]
    },
@@ -703,6 +994,14 @@
       "z": -1.4,
       "rang": 0.056,
       "avant_pct": 2.81,
+      "apres": {
+       "debut": "2026-10-20",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.09,
+       "ecart_pct": -0.08,
+       "z": -0.08
+      },
       "statut": "note",
       "niveau": "contraire",
       "points": {
@@ -746,11 +1045,11 @@
       "avant_pct": 2.71,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": -1.63,
-       "ecart_pct": -1.48,
-       "z": -0.8
+       "rendement_pct": -2.8,
+       "ecart_pct": -2.3,
+       "z": -0.72
       },
       "statut": "note",
       "niveau": "bruit",
@@ -795,11 +1094,11 @@
       "avant_pct": 1.02,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": 1.57,
-       "ecart_pct": 1.68,
-       "z": 1.94
+       "rendement_pct": -1.01,
+       "ecart_pct": -0.74,
+       "z": -0.5
       },
       "statut": "non_directionnel",
       "niveau": "fort"
@@ -839,11 +1138,11 @@
       "avant_pct": 0.27,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": -0.22,
-       "ecart_pct": 0.01,
-       "z": 0.0
+       "rendement_pct": 1.46,
+       "ecart_pct": 2.15,
+       "z": 0.96
       },
       "statut": "non_directionnel",
       "niveau": "net"
@@ -863,11 +1162,11 @@
       "avant_pct": -5.26,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": -1.03,
-       "ecart_pct": -0.69,
-       "z": -0.35
+       "rendement_pct": -1.5,
+       "ecart_pct": -0.32,
+       "z": -0.09
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -907,11 +1206,11 @@
       "avant_pct": 0.51,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": -1.7,
-       "ecart_pct": -1.41,
-       "z": -1.4
+       "rendement_pct": -2.08,
+       "ecart_pct": -1.29,
+       "z": -0.74
       },
       "statut": "note",
       "niveau": "net",
@@ -956,11 +1255,11 @@
       "avant_pct": -2.78,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": 0.86,
-       "ecart_pct": 1.24,
-       "z": 1.2
+       "rendement_pct": 0.1,
+       "ecart_pct": 1.04,
+       "z": 0.58
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1005,11 +1304,11 @@
       "avant_pct": -5.8,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -4.01,
-       "ecart_pct": -2.3,
-       "z": -1.19
+       "rendement_pct": -7.16,
+       "ecart_pct": -5.1,
+       "z": -2.04
       },
       "statut": "note",
       "niveau": "contraire",
@@ -1054,11 +1353,11 @@
       "avant_pct": 7.52,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 1.63,
-       "ecart_pct": 2.53,
-       "z": 1.15
+       "rendement_pct": 0.87,
+       "ecart_pct": 2.13,
+       "z": 0.75
       },
       "statut": "note",
       "niveau": "net",
@@ -1103,11 +1402,11 @@
       "avant_pct": 2.09,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 1.3,
-       "ecart_pct": 2.58,
-       "z": 1.16
+       "rendement_pct": 3.53,
+       "ecart_pct": 5.19,
+       "z": 1.8
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1152,11 +1451,11 @@
       "avant_pct": 0.07,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -0.87,
-       "ecart_pct": 0.03,
-       "z": 0.01
+       "rendement_pct": -2.04,
+       "ecart_pct": -0.78,
+       "z": -0.19
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1201,11 +1500,11 @@
       "avant_pct": -10.08,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -2.45,
-       "ecart_pct": -0.2,
-       "z": -0.06
+       "rendement_pct": -1.23,
+       "ecart_pct": 1.75,
+       "z": 0.41
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1245,11 +1544,11 @@
       "avant_pct": -0.63,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -1.19,
-       "ecart_pct": -0.37,
-       "z": -0.07
+       "rendement_pct": -3.23,
+       "ecart_pct": -2.09,
+       "z": -0.29
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1289,11 +1588,11 @@
       "avant_pct": 7.98,
       "apres": {
        "debut": "2026-10-15",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -0.38,
-       "ecart_pct": -0.28,
-       "z": -0.1
+       "rendement_pct": -1.12,
+       "ecart_pct": -0.69,
+       "z": -0.2
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1333,11 +1632,11 @@
       "avant_pct": -0.3,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -0.9,
-       "ecart_pct": 1.0,
-       "z": 0.62
+       "rendement_pct": 0.18,
+       "ecart_pct": 2.76,
+       "z": 1.32
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1382,11 +1681,11 @@
       "avant_pct": -0.33,
       "apres": {
        "debut": "2026-10-15",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -0.4,
-       "ecart_pct": -0.26,
-       "z": -0.04
+       "rendement_pct": -2.46,
+       "ecart_pct": -1.97,
+       "z": -0.23
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1426,11 +1725,11 @@
       "avant_pct": 0.65,
       "apres": {
        "debut": "2026-10-15",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -1.78,
-       "ecart_pct": -1.79,
-       "z": -0.85
+       "rendement_pct": 1.77,
+       "ecart_pct": 2.04,
+       "z": 0.82
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1475,11 +1774,11 @@
       "avant_pct": -1.38,
       "apres": {
        "debut": "2026-10-15",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -0.11,
-       "ecart_pct": -0.19,
-       "z": -0.08
+       "rendement_pct": 0.53,
+       "ecart_pct": 0.47,
+       "z": 0.17
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1504,11 +1803,11 @@
       "avant_pct": -1.78,
       "apres": {
        "debut": "2026-10-15",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": 1.42,
-       "ecart_pct": 1.1,
-       "z": 0.62
+       "rendement_pct": 0.92,
+       "ecart_pct": 0.91,
+       "z": 0.43
       },
       "statut": "note",
       "niveau": "net",
@@ -1553,11 +1852,11 @@
       "avant_pct": -7.54,
       "apres": {
        "debut": "2026-10-15",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -0.53,
-       "ecart_pct": -0.99,
-       "z": -0.23
+       "rendement_pct": 0.72,
+       "ecart_pct": 0.97,
+       "z": 0.19
       },
       "statut": "non_directionnel",
       "niveau": "net"
@@ -1595,13 +1894,14 @@
       "z": 0.07,
       "rang": 0.544,
       "avant_pct": 1.52,
+      "j5_pct": 1.16,
       "apres": {
        "debut": "2026-10-14",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": 0.92,
-       "ecart_pct": 0.98,
-       "z": 0.38
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": 0.08,
+       "ecart_pct": 0.82,
+       "z": 0.28
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1624,13 +1924,14 @@
       "z": -0.55,
       "rang": 0.242,
       "avant_pct": 2.26,
+      "j5_pct": 1.86,
       "apres": {
        "debut": "2026-10-14",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": 1.87,
-       "ecart_pct": 1.76,
-       "z": 0.41
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": 2.56,
+       "ecart_pct": 3.1,
+       "z": 0.63
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1648,13 +1949,14 @@
       "z": -1.1,
       "rang": 0.071,
       "avant_pct": 2.69,
+      "j5_pct": 3.09,
       "apres": {
        "debut": "2026-10-14",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": 3.48,
-       "ecart_pct": 3.63,
-       "z": 1.27
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": 3.64,
+       "ecart_pct": 4.54,
+       "z": 1.4
       },
       "statut": "non_directionnel",
       "niveau": "net"
@@ -1692,13 +1994,14 @@
       "z": -0.2,
       "rang": 0.401,
       "avant_pct": 1.03,
+      "j5_pct": -1.8,
       "apres": {
        "debut": "2026-10-14",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -3.45,
-       "ecart_pct": -2.81,
-       "z": -0.53
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -3.91,
+       "ecart_pct": -2.47,
+       "z": -0.41
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1741,6 +2044,7 @@
       "z": 1.26,
       "rang": 0.925,
       "avant_pct": 4.31,
+      "j5_pct": 1.73,
       "apres": {
        "debut": "2026-10-13",
        "seances": 5,
@@ -1785,6 +2089,7 @@
       "z": 1.01,
       "rang": 0.861,
       "avant_pct": -3.8,
+      "j5_pct": -3.69,
       "apres": {
        "debut": "2026-10-13",
        "seances": 5,
@@ -1829,6 +2134,7 @@
       "z": -4.25,
       "rang": 0.008,
       "avant_pct": -2.8,
+      "j5_pct": -16.99,
       "apres": {
        "debut": "2026-10-13",
        "seances": 5,
@@ -4431,17 +4737,17 @@
   "depuis": "2015-01-01",
   "jusqu_a": "2026-10-20",
   "n_communiques": 26014,
-  "n_evenements": 21169,
+  "n_evenements": 21176,
   "n_entreprises": 115,
   "en_attente": 8,
   "jour_ordinaire": {
-   "n": 312877,
+   "n": 312968,
    "z_abs_moyen": 0.67,
    "part_net": 0.218,
    "part_fort": 0.04
   },
   "tous": {
-   "n": 21169,
+   "n": 21176,
    "z_abs_moyen": 1.17,
    "part_net": 0.367,
    "part_fort": 0.157,
@@ -4517,12 +4823,12 @@
     "libelle": "Juridique et réglementaire"
    },
    {
-    "n": 3787,
+    "n": 3789,
     "z_abs_moyen": 0.94,
     "part_net": 0.305,
     "part_fort": 0.093,
     "ecart_abs_median_pct": 0.81,
-    "n_positif": 1961,
+    "n_positif": 1962,
     "n_negatif": 22,
     "hausse_si_positif": 0.56,
     "baisse_si_negatif": 0.682,
@@ -4551,7 +4857,7 @@
     "libelle": "Autres communiqués"
    },
    {
-    "n": 3279,
+    "n": 3281,
     "z_abs_moyen": 0.81,
     "part_net": 0.261,
     "part_fort": 0.073,
@@ -4568,9 +4874,9 @@
     "libelle": "Contrats, produits et essais cliniques"
    },
    {
-    "n": 1587,
+    "n": 1588,
     "z_abs_moyen": 0.8,
-    "part_net": 0.26,
+    "part_net": 0.259,
     "part_fort": 0.064,
     "ecart_abs_median_pct": 0.86,
     "n_positif": 625,
@@ -4602,7 +4908,7 @@
     "libelle": "Dividendes et rachats d'actions"
    },
    {
-    "n": 2106,
+    "n": 2107,
     "z_abs_moyen": 0.77,
     "part_net": 0.276,
     "part_fort": 0.057,
@@ -4619,17 +4925,17 @@
     "libelle": "Financement et capital"
    },
    {
-    "n": 372,
+    "n": 373,
     "z_abs_moyen": 0.72,
-    "part_net": 0.261,
+    "part_net": 0.26,
     "part_fort": 0.051,
-    "ecart_abs_median_pct": 0.65,
-    "n_positif": 231,
+    "ecart_abs_median_pct": 0.64,
+    "n_positif": 232,
     "n_negatif": 33,
-    "hausse_si_positif": 0.563,
+    "hausse_si_positif": 0.56,
     "baisse_si_negatif": 0.606,
-    "concordance": 0.568,
-    "p": 0.031,
+    "concordance": 0.566,
+    "p": 0.0365,
     "ecart_moyen_positif_pct": 0.24,
     "ecart_moyen_negatif_pct": -0.43,
     "id": "trafic",
@@ -4670,7 +4976,7 @@
       "n": 134,
       "avant_moyen_pct": 0.94,
       "ecart_moyen_pct": 3.38,
-      "suite_moyenne_pct": 0.25
+      "suite_moyenne_pct": 0.24
      },
      "baisse": {
       "n": 142,
@@ -4692,7 +4998,7 @@
       "n": 146,
       "avant_moyen_pct": -0.5,
       "ecart_moyen_pct": -4.18,
-      "suite_moyenne_pct": 0.11
+      "suite_moyenne_pct": 0.12
      },
      "n": 260,
      "part_hausse": 0.438
@@ -5339,7 +5645,7 @@
        "n": 370,
        "part_hausse": 0.554,
        "ecart_moyen_pct": 0.8,
-       "suite_moyenne_pct": 1.09,
+       "suite_moyenne_pct": 1.08,
        "par_surprise": {
         "positive": {
          "n": 22,
@@ -5409,7 +5715,7 @@
        "n": 260,
        "part_hausse": 0.438,
        "ecart_moyen_pct": -0.56,
-       "suite_moyenne_pct": -0.29,
+       "suite_moyenne_pct": -0.28,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -5477,7 +5783,7 @@
        "n": 2,
        "part_hausse": 0.0,
        "ecart_moyen_pct": -1.01,
-       "suite_moyenne_pct": 1.27,
+       "suite_moyenne_pct": 1.17,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -5554,7 +5860,7 @@
        "n": 9,
        "avant_moyen_pct": 0.7,
        "ecart_moyen_pct": 4.67,
-       "suite_moyenne_pct": 0.98
+       "suite_moyenne_pct": 0.83
       },
       "baisse": {
        "n": 6,
@@ -5676,7 +5982,7 @@
        "n": 12,
        "avant_moyen_pct": -1.54,
        "ecart_moyen_pct": -3.38,
-       "suite_moyenne_pct": 1.16
+       "suite_moyenne_pct": 1.15
       },
       "n": 22,
       "part_hausse": 0.455
@@ -7201,10 +7507,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 1.86,
-     "z_avant": 0.31,
-     "perf_12m_pct": 7.99,
+     "au": "2026-10-20",
+     "avant_pct": 5.13,
+     "z_avant": 0.85,
+     "perf_12m_pct": 10.37,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.535,
@@ -8430,10 +8736,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 6.38,
-     "z_avant": 1.45,
-     "perf_12m_pct": 17.29,
+     "au": "2026-10-20",
+     "avant_pct": 4.63,
+     "z_avant": 1.05,
+     "perf_12m_pct": 17.14,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.568,
@@ -8789,10 +9095,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 4.42,
-     "z_avant": 0.7,
-     "perf_12m_pct": -0.7,
+     "au": "2026-10-20",
+     "avant_pct": 4.84,
+     "z_avant": 0.76,
+     "perf_12m_pct": -0.62,
      "n_historique": 0
     }
    },
@@ -10042,10 +10348,10 @@
      "date": "2026-11-17",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 11.06,
-     "z_avant": 0.96,
-     "perf_12m_pct": -22.71,
+     "au": "2026-10-20",
+     "avant_pct": 8.25,
+     "z_avant": 0.71,
+     "perf_12m_pct": -22.77,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.578,
@@ -10401,10 +10707,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -10.06,
-     "z_avant": -1.1,
-     "perf_12m_pct": 74.6,
+     "au": "2026-10-20",
+     "avant_pct": -11.19,
+     "z_avant": -1.23,
+     "perf_12m_pct": 72.57,
      "n_historique": 0
     }
    },
@@ -11568,10 +11874,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -4.08,
-     "z_avant": -0.99,
-     "perf_12m_pct": 18.46,
+     "au": "2026-10-20",
+     "avant_pct": -0.51,
+     "z_avant": -0.12,
+     "perf_12m_pct": 19.52,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -12704,10 +13010,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -8.53,
-     "z_avant": -1.52,
-     "perf_12m_pct": 40.03,
+     "au": "2026-10-20",
+     "avant_pct": -8.28,
+     "z_avant": -1.48,
+     "perf_12m_pct": 38.57,
      "n_historique": 32,
      "scenarios": {
       "hausse": 0.529,
@@ -14016,10 +14322,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -4.29,
-     "z_avant": -0.84,
-     "perf_12m_pct": 7.93,
+     "au": "2026-10-20",
+     "avant_pct": -4.5,
+     "z_avant": -0.88,
+     "perf_12m_pct": 8.9,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.643,
@@ -15220,10 +15526,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 5.3,
-     "z_avant": 0.89,
-     "perf_12m_pct": 5.2,
+     "au": "2026-10-20",
+     "avant_pct": 2.06,
+     "z_avant": 0.35,
+     "perf_12m_pct": 4.78,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.659,
@@ -16517,10 +16823,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 18.04,
-     "z_avant": 1.68,
-     "perf_12m_pct": 4.36,
+     "au": "2026-10-20",
+     "avant_pct": 17.2,
+     "z_avant": 1.61,
+     "perf_12m_pct": 3.93,
      "n_historique": 46,
      "scenarios": {
       "hausse": 0.604,
@@ -17718,10 +18024,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -2.85,
-     "z_avant": -0.47,
-     "perf_12m_pct": 38.92,
+     "au": "2026-10-20",
+     "avant_pct": -2.36,
+     "z_avant": -0.39,
+     "perf_12m_pct": 40.27,
      "n_historique": 47,
      "scenarios": {
       "hausse": 0.571,
@@ -18956,10 +19262,10 @@
      "date": "2026-10-30",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -11.41,
-     "z_avant": -2.57,
-     "perf_12m_pct": 8.12,
+     "au": "2026-10-20",
+     "avant_pct": -10.51,
+     "z_avant": -2.36,
+     "perf_12m_pct": 8.32,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.4,
@@ -20173,10 +20479,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.87,
-     "z_avant": 0.46,
-     "perf_12m_pct": -15.02,
+     "au": "2026-10-20",
+     "avant_pct": 2.48,
+     "z_avant": 0.39,
+     "perf_12m_pct": -14.22,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.636,
@@ -21160,10 +21466,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 14.44,
-     "z_avant": 1.25,
-     "perf_12m_pct": -3.77,
+     "au": "2026-10-20",
+     "avant_pct": 13.82,
+     "z_avant": 1.2,
+     "perf_12m_pct": -2.65,
      "n_historique": 21,
      "scenarios": {
       "hausse": 0.435,
@@ -22470,10 +22776,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -4.56,
-     "z_avant": -0.77,
-     "perf_12m_pct": 25.79,
+     "au": "2026-10-20",
+     "avant_pct": -4.39,
+     "z_avant": -0.74,
+     "perf_12m_pct": 26.97,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.591,
@@ -23157,7 +23463,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.27,
+       "avant_pct": 1.28,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -23695,10 +24001,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 6.03,
-     "z_avant": 0.46,
-     "perf_12m_pct": 27.63,
+     "au": "2026-10-20",
+     "avant_pct": 3.11,
+     "z_avant": 0.24,
+     "perf_12m_pct": 27.34,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.605,
@@ -24845,10 +25151,10 @@
      "date": "2027-02-11",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 15.84,
-     "z_avant": 2.03,
-     "perf_12m_pct": -45.99,
+     "au": "2026-10-20",
+     "avant_pct": 13.05,
+     "z_avant": 1.68,
+     "perf_12m_pct": -46.46,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.488,
@@ -25605,10 +25911,10 @@
      "date": "2027-01-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.76,
-     "z_avant": 0.39,
-     "perf_12m_pct": 31.29,
+     "au": "2026-10-20",
+     "avant_pct": 2.02,
+     "z_avant": 0.29,
+     "perf_12m_pct": 34.67,
      "n_historique": 21,
      "scenarios": {
       "hausse": 0.261,
@@ -26869,10 +27175,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 4.89,
-     "z_avant": 0.78,
-     "perf_12m_pct": 39.49,
+     "au": "2026-10-20",
+     "avant_pct": 5.38,
+     "z_avant": 0.86,
+     "perf_12m_pct": 40.56,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.707,
@@ -27971,10 +28277,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 8.33,
-     "z_avant": 1.23,
-     "perf_12m_pct": -34.1,
+     "au": "2026-10-20",
+     "avant_pct": 8.78,
+     "z_avant": 1.29,
+     "perf_12m_pct": -33.85,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.614,
@@ -28655,7 +28961,7 @@
        "titre": "Kering : Résultats semestriels 2023",
        "avant_pct": 5.84,
        "z_avant": 1.15,
-       "perf_12m_pct": -14.02,
+       "perf_12m_pct": -14.03,
        "rendement_pct": -1.15,
        "ecart_pct": -1.27,
        "z": -1.13,
@@ -29186,10 +29492,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.61,
-     "z_avant": -0.06,
-     "perf_12m_pct": -29.85,
+     "au": "2026-10-20",
+     "avant_pct": -0.32,
+     "z_avant": -0.03,
+     "perf_12m_pct": -28.13,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.545,
@@ -30270,7 +30576,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.64,
+       "suite_pct": -2.63,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -30370,10 +30676,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 8.66,
-     "z_avant": 1.43,
-     "perf_12m_pct": 14.18,
+     "au": "2026-10-20",
+     "avant_pct": 7.85,
+     "z_avant": 1.29,
+     "perf_12m_pct": 14.51,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -31611,7 +31917,7 @@
        "z_avant": -0.16,
        "perf_12m_pct": 9.7,
        "rendement_pct": 4.14,
-       "ecart_pct": 3.57,
+       "ecart_pct": 3.56,
        "z": 3.62,
        "suite_pct": 1.41,
        "reaction": "hausse",
@@ -31798,10 +32104,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.97,
-     "z_avant": -0.14,
-     "perf_12m_pct": -5.71,
+     "au": "2026-10-20",
+     "avant_pct": -4.56,
+     "z_avant": -0.65,
+     "perf_12m_pct": -8.37,
      "n_historique": 47,
      "scenarios": {
       "hausse": 0.429,
@@ -31978,7 +32284,7 @@
         "n": 2,
         "avant_moyen_pct": -1.14,
         "ecart_moyen_pct": -0.59,
-        "suite_moyenne_pct": 0.63
+        "suite_moyenne_pct": 0.85
        },
        "n": 3,
        "part_hausse": 0.333
@@ -32157,7 +32463,7 @@
        "n": 3,
        "part_hausse": 0.333,
        "ecart_moyen_pct": -0.15,
-       "suite_moyenne_pct": 0.13,
+       "suite_moyenne_pct": 0.44,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -32186,6 +32492,7 @@
        "rendement_pct": -0.12,
        "ecart_pct": 0.09,
        "z": 0.07,
+       "suite_pct": 1.07,
        "reaction": "baisse",
        "courtes_pct": 0.0,
        "surprise": "negative",
@@ -32827,10 +33134,10 @@
      "n": 39
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 2.6,
-     "z_avant": 0.41,
-     "perf_12m_pct": -30.38
+     "au": "2026-10-20",
+     "avant_pct": 3.69,
+     "z_avant": 0.59,
+     "perf_12m_pct": -30.3
     }
    },
    {
@@ -33576,10 +33883,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 1.27,
-     "z_avant": 0.23,
-     "perf_12m_pct": 27.78,
+     "au": "2026-10-20",
+     "avant_pct": 0.68,
+     "z_avant": 0.12,
+     "perf_12m_pct": 27.84,
      "n_historique": 17,
      "scenarios": {
       "hausse": 0.526,
@@ -34744,10 +35051,10 @@
      "date": "2026-10-27",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -6.13,
-     "z_avant": -0.94,
-     "perf_12m_pct": 11.24,
+     "au": "2026-10-20",
+     "avant_pct": -1.36,
+     "z_avant": -0.21,
+     "perf_12m_pct": 12.98,
      "n_historique": 36,
      "scenarios": {
       "hausse": 0.579,
@@ -34763,7 +35070,7 @@
     "indice": "CAC 40",
     "secteur": "Spiritueux",
     "n_communiques": 248,
-    "n_evenements": 211,
+    "n_evenements": 212,
     "categories": [
      {
       "n": 2,
@@ -34830,11 +35137,11 @@
       "id": "juridique"
      },
      {
-      "n": 6,
-      "z_abs_moyen": 1.25,
-      "part_net": 0.333,
-      "part_fort": 0.167,
-      "ecart_abs_median_pct": 0.53,
+      "n": 7,
+      "z_abs_moyen": 1.11,
+      "part_net": 0.286,
+      "part_fort": 0.143,
+      "ecart_abs_median_pct": 0.51,
       "n_positif": 5,
       "n_negatif": 0,
       "hausse_si_positif": 0.6,
@@ -35673,7 +35980,7 @@
        "perf_12m_pct": 23.91,
        "rendement_pct": 3.09,
        "ecart_pct": 1.96,
-       "z": 2.13,
+       "z": 2.14,
        "suite_pct": -0.51,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -35983,10 +36290,10 @@
      "n": 43
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 17.45,
-     "z_avant": 2.19,
-     "perf_12m_pct": -13.93
+     "au": "2026-10-20",
+     "avant_pct": 15.4,
+     "z_avant": 1.93,
+     "perf_12m_pct": -12.6
     }
    },
    {
@@ -35995,7 +36302,7 @@
     "indice": "CAC 40",
     "secteur": "Publicité",
     "n_communiques": 260,
-    "n_evenements": 224,
+    "n_evenements": 225,
     "categories": [
      {
       "n": 44,
@@ -36014,10 +36321,10 @@
       "id": "resultats"
      },
      {
-      "n": 50,
-      "z_abs_moyen": 0.81,
-      "part_net": 0.28,
-      "part_fort": 0.06,
+      "n": 51,
+      "z_abs_moyen": 0.8,
+      "part_net": 0.275,
+      "part_fort": 0.059,
       "ecart_abs_median_pct": 0.81,
       "n_positif": 19,
       "n_negatif": 0,
@@ -36166,7 +36473,7 @@
         "n": 3,
         "avant_moyen_pct": -1.6,
         "ecart_moyen_pct": 3.63,
-        "suite_moyenne_pct": 2.25
+        "suite_moyenne_pct": 1.35
        },
        "baisse": {
         "n": 1,
@@ -36388,7 +36695,7 @@
        "n": 4,
        "part_hausse": 0.75,
        "ecart_moyen_pct": 1.06,
-       "suite_moyenne_pct": 2.02,
+       "suite_moyenne_pct": 1.41,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -36468,6 +36775,7 @@
        "rendement_pct": 2.24,
        "ecart_pct": 2.18,
        "z": 1.26,
+       "suite_pct": -0.45,
        "reaction": "hausse",
        "courtes_pct": 4.16,
        "surprise": "conforme"
@@ -37249,10 +37557,10 @@
      "n": 44
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 4.3,
-     "z_avant": 0.56,
-     "perf_12m_pct": 27.24
+     "au": "2026-10-20",
+     "avant_pct": 3.99,
+     "z_avant": 0.52,
+     "perf_12m_pct": 26.3
     }
    },
    {
@@ -38525,10 +38833,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 5.31,
-     "z_avant": 0.66,
-     "perf_12m_pct": -10.25,
+     "au": "2026-10-20",
+     "avant_pct": 6.78,
+     "z_avant": 0.84,
+     "perf_12m_pct": -6.33,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.511,
@@ -39742,10 +40050,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.13,
-     "z_avant": 0.02,
-     "perf_12m_pct": 9.06,
+     "au": "2026-10-20",
+     "avant_pct": -0.09,
+     "z_avant": -0.01,
+     "perf_12m_pct": 9.08,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.605,
@@ -40952,10 +41260,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.14,
-     "z_avant": 0.36,
-     "perf_12m_pct": -19.91,
+     "au": "2026-10-20",
+     "avant_pct": 2.52,
+     "z_avant": 0.43,
+     "perf_12m_pct": -18.38,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.619,
@@ -41631,7 +41939,7 @@
        "rendement_pct": -18.93,
        "ecart_pct": -18.61,
        "z": -15.34,
-       "suite_pct": 3.18,
+       "suite_pct": 3.17,
        "reaction": "baisse",
        "courtes_pct": 0.0,
        "surprise": "conforme",
@@ -42243,10 +42551,10 @@
      "date": "2026-10-30",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -3.0,
-     "z_avant": -0.47,
-     "perf_12m_pct": -11.21,
+     "au": "2026-10-20",
+     "avant_pct": 1.15,
+     "z_avant": 0.18,
+     "perf_12m_pct": -6.98,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.429,
@@ -42262,7 +42570,7 @@
     "indice": "CAC 40",
     "secteur": "Équipement électrique",
     "n_communiques": 212,
-    "n_evenements": 168,
+    "n_evenements": 169,
     "categories": [
      {
       "n": 43,
@@ -42297,18 +42605,18 @@
       "id": "trafic"
      },
      {
-      "n": 38,
-      "z_abs_moyen": 0.81,
-      "part_net": 0.263,
-      "part_fort": 0.053,
-      "ecart_abs_median_pct": 0.52,
-      "n_positif": 15,
+      "n": 39,
+      "z_abs_moyen": 0.84,
+      "part_net": 0.282,
+      "part_fort": 0.051,
+      "ecart_abs_median_pct": 0.53,
+      "n_positif": 16,
       "n_negatif": 1,
-      "hausse_si_positif": 0.467,
+      "hausse_si_positif": 0.438,
       "baisse_si_negatif": 0.0,
-      "concordance": 0.438,
-      "p": 0.8036,
-      "ecart_moyen_positif_pct": -0.55,
+      "concordance": 0.412,
+      "p": 0.6291,
+      "ecart_moyen_positif_pct": -0.73,
       "ecart_moyen_negatif_pct": 1.33,
       "id": "operation"
      },
@@ -43497,10 +43805,10 @@
      "n": 43
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": -11.04,
-     "z_avant": -1.61,
-     "perf_12m_pct": 5.49
+     "au": "2026-10-20",
+     "avant_pct": -13.56,
+     "z_avant": -1.98,
+     "perf_12m_pct": 0.76
     }
    },
    {
@@ -44683,10 +44991,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -11.38,
-     "z_avant": -1.63,
-     "perf_12m_pct": 23.34,
+     "au": "2026-10-20",
+     "avant_pct": -8.27,
+     "z_avant": -1.19,
+     "perf_12m_pct": 23.63,
      "n_historique": 34,
      "scenarios": {
       "hausse": 0.667,
@@ -44989,10 +45297,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.05,
-     "z_avant": -0.0,
-     "perf_12m_pct": -54.89,
+     "au": "2026-10-20",
+     "avant_pct": 0.75,
+     "z_avant": 0.06,
+     "perf_12m_pct": -54.51,
      "n_historique": 0
     }
    },
@@ -45534,7 +45842,7 @@
        "z_avant": -0.19,
        "perf_12m_pct": -12.41,
        "rendement_pct": -14.12,
-       "ecart_pct": -14.42,
+       "ecart_pct": -14.41,
        "z": -5.76,
        "suite_pct": -1.26,
        "reaction": "baisse",
@@ -46388,10 +46696,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -8.63,
-     "z_avant": -0.61,
-     "perf_12m_pct": 97.56,
+     "au": "2026-10-20",
+     "avant_pct": -12.16,
+     "z_avant": -0.85,
+     "perf_12m_pct": 95.35,
      "n_historique": 44,
      "scenarios": {
       "hausse": 0.609,
@@ -47538,10 +47846,10 @@
      "date": "2026-11-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 7.62,
-     "z_avant": 0.57,
-     "perf_12m_pct": 26.51,
+     "au": "2026-10-20",
+     "avant_pct": 6.94,
+     "z_avant": 0.52,
+     "perf_12m_pct": 29.61,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -48778,10 +49086,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.86,
-     "z_avant": 0.1,
-     "perf_12m_pct": -2.45,
+     "au": "2026-10-20",
+     "avant_pct": 0.88,
+     "z_avant": 0.11,
+     "perf_12m_pct": -2.03,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.488,
@@ -50153,10 +50461,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -1.08,
-     "z_avant": -0.17,
-     "perf_12m_pct": 61.34,
+     "au": "2026-10-20",
+     "avant_pct": -1.43,
+     "z_avant": -0.22,
+     "perf_12m_pct": 61.11,
      "n_historique": 45,
      "scenarios": {
       "hausse": 0.426,
@@ -50801,10 +51109,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -4.01,
-     "z_avant": -1.0,
-     "perf_12m_pct": 5.94,
+     "au": "2026-10-20",
+     "avant_pct": -4.31,
+     "z_avant": -1.08,
+     "perf_12m_pct": 7.9,
      "n_historique": 13,
      "scenarios": {
       "hausse": 0.467,
@@ -52071,10 +52379,10 @@
      "date": "2026-11-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.83,
-     "z_avant": 0.62,
-     "perf_12m_pct": 16.93,
+     "au": "2026-10-20",
+     "avant_pct": 3.64,
+     "z_avant": 0.79,
+     "perf_12m_pct": 18.26,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -52090,7 +52398,7 @@
     "indice": "CAC 40",
     "secteur": "Concessions, BTP, énergie",
     "n_communiques": 654,
-    "n_evenements": 557,
+    "n_evenements": 558,
     "categories": [
      {
       "n": 1,
@@ -52125,18 +52433,18 @@
       "id": "resultats"
      },
      {
-      "n": 82,
+      "n": 83,
       "z_abs_moyen": 0.75,
-      "part_net": 0.317,
+      "part_net": 0.313,
       "part_fort": 0.024,
-      "ecart_abs_median_pct": 0.59,
-      "n_positif": 37,
+      "ecart_abs_median_pct": 0.58,
+      "n_positif": 38,
       "n_negatif": 4,
-      "hausse_si_positif": 0.622,
+      "hausse_si_positif": 0.605,
       "baisse_si_negatif": 0.75,
-      "concordance": 0.634,
-      "p": 0.1173,
-      "ecart_moyen_positif_pct": 0.2,
+      "concordance": 0.619,
+      "p": 0.1641,
+      "ecart_moyen_positif_pct": 0.19,
       "ecart_moyen_negatif_pct": -0.76,
       "id": "trafic"
      },
@@ -53353,10 +53661,10 @@
      "date": "2027-02-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.26,
-     "z_avant": 0.05,
-     "perf_12m_pct": -3.5,
+     "au": "2026-10-20",
+     "avant_pct": 0.36,
+     "z_avant": 0.07,
+     "perf_12m_pct": -2.8,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.644,
@@ -54805,10 +55113,10 @@
      "date": "2026-11-12",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -3.62,
-     "z_avant": -0.68,
-     "perf_12m_pct": -2.39,
+     "au": "2026-10-20",
+     "avant_pct": -4.97,
+     "z_avant": -0.93,
+     "perf_12m_pct": -1.65,
      "n_historique": 57,
      "scenarios": {
       "hausse": 0.644,
@@ -54966,7 +55274,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.75,
       "p": 0.625,
-      "ecart_moyen_positif_pct": 0.51,
+      "ecart_moyen_positif_pct": 0.5,
       "ecart_moyen_negatif_pct": null,
       "id": "gouvernance"
      },
@@ -56023,10 +56331,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 6.0,
-     "z_avant": 0.75,
-     "perf_12m_pct": -2.84,
+     "au": "2026-10-20",
+     "avant_pct": 4.43,
+     "z_avant": 0.55,
+     "perf_12m_pct": -0.12,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.439,
@@ -56807,10 +57115,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -2.51,
-     "z_avant": -0.21,
-     "perf_12m_pct": -3.75,
+     "au": "2026-10-20",
+     "avant_pct": -6.12,
+     "z_avant": -0.51,
+     "perf_12m_pct": -0.94,
      "n_historique": 12,
      "scenarios": {
       "hausse": 0.643,
@@ -58108,10 +58416,10 @@
      "date": "2027-01-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.45,
-     "z_avant": 0.58,
-     "perf_12m_pct": 30.61,
+     "au": "2026-10-20",
+     "avant_pct": 4.18,
+     "z_avant": 0.99,
+     "perf_12m_pct": 33.71,
      "n_historique": 51,
      "scenarios": {
       "hausse": 0.547,
@@ -58730,10 +59038,10 @@
      "n": 10
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 6.34,
-     "z_avant": 0.77,
-     "perf_12m_pct": 13.52
+     "au": "2026-10-20",
+     "avant_pct": 7.19,
+     "z_avant": 0.88,
+     "perf_12m_pct": 13.79
     }
    },
    {
@@ -59981,10 +60289,10 @@
      "date": "2026-10-30",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.46,
-     "z_avant": 0.38,
-     "perf_12m_pct": 22.36,
+     "au": "2026-10-20",
+     "avant_pct": 4.68,
+     "z_avant": 0.72,
+     "perf_12m_pct": 21.86,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.585,
@@ -60661,7 +60969,7 @@
        "avant_pct": -1.44,
        "z_avant": -0.17,
        "perf_12m_pct": 8.03,
-       "rendement_pct": 16.17,
+       "rendement_pct": 16.16,
        "ecart_pct": 15.58,
        "z": 7.83,
        "suite_pct": -11.67,
@@ -61100,10 +61408,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -1.24,
-     "z_avant": -0.15,
-     "perf_12m_pct": 27.48,
+     "au": "2026-10-20",
+     "avant_pct": -0.38,
+     "z_avant": -0.04,
+     "perf_12m_pct": 33.33,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.512,
@@ -61119,7 +61427,7 @@
     "indice": "SBF 120",
     "secteur": "Diagnostic",
     "n_communiques": 161,
-    "n_evenements": 128,
+    "n_evenements": 129,
     "categories": [
      {
       "n": 4,
@@ -61234,10 +61542,10 @@
       "id": "strategie"
      },
      {
-      "n": 46,
-      "z_abs_moyen": 0.83,
-      "part_net": 0.261,
-      "part_fort": 0.087,
+      "n": 47,
+      "z_abs_moyen": 0.82,
+      "part_net": 0.255,
+      "part_fort": 0.085,
       "ecart_abs_median_pct": 1.04,
       "n_positif": 21,
       "n_negatif": 0,
@@ -62211,10 +62519,10 @@
      "date": "2026-11-04",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 23.12,
-     "z_avant": 2.78,
-     "perf_12m_pct": -17.95,
+     "au": "2026-10-20",
+     "avant_pct": 22.4,
+     "z_avant": 2.69,
+     "perf_12m_pct": -16.91,
      "n_historique": 32,
      "scenarios": {
       "hausse": 0.353,
@@ -63477,10 +63785,10 @@
      "date": "2026-11-25",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 21.29,
-     "z_avant": 2.25,
-     "perf_12m_pct": 6.17,
+     "au": "2026-10-20",
+     "avant_pct": 17.77,
+     "z_avant": 1.88,
+     "perf_12m_pct": 8.7,
      "n_historique": 51,
      "scenarios": {
       "hausse": 0.453,
@@ -64616,10 +64924,10 @@
      "n": 38
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 6.17,
-     "z_avant": 0.55,
-     "perf_12m_pct": -14.59
+     "au": "2026-10-20",
+     "avant_pct": 7.2,
+     "z_avant": 0.64,
+     "perf_12m_pct": -13.63
     }
    },
    {
@@ -64658,7 +64966,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.625,
       "p": 0.7266,
-      "ecart_moyen_positif_pct": -2.32,
+      "ecart_moyen_positif_pct": -2.31,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -65544,10 +65852,10 @@
      "date": "2027-02-18",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -1.23,
-     "z_avant": -0.21,
-     "perf_12m_pct": -7.56,
+     "au": "2026-10-20",
+     "avant_pct": -0.51,
+     "z_avant": -0.09,
+     "perf_12m_pct": -6.48,
      "n_historique": 26,
      "scenarios": {
       "hausse": 0.536,
@@ -66615,10 +66923,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.72,
-     "z_avant": -0.12,
-     "perf_12m_pct": -7.44,
+     "au": "2026-10-20",
+     "avant_pct": -5.28,
+     "z_avant": -0.86,
+     "perf_12m_pct": -6.75,
      "n_historique": 37,
      "scenarios": {
       "hausse": 0.692,
@@ -67865,10 +68173,10 @@
      "date": "2027-02-11",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -7.55,
-     "z_avant": -1.23,
-     "perf_12m_pct": 20.08,
+     "au": "2026-10-20",
+     "avant_pct": -13.32,
+     "z_avant": -2.15,
+     "perf_12m_pct": 16.6,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.558,
@@ -69018,10 +69326,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -10.95,
-     "z_avant": -1.15,
-     "perf_12m_pct": 6.93,
+     "au": "2026-10-20",
+     "avant_pct": -15.35,
+     "z_avant": -1.62,
+     "perf_12m_pct": 4.59,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.558,
@@ -70087,10 +70395,10 @@
      "date": "2026-11-02",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -7.06,
-     "z_avant": -1.72,
-     "perf_12m_pct": 14.79,
+     "au": "2026-10-20",
+     "avant_pct": -8.15,
+     "z_avant": -1.98,
+     "perf_12m_pct": 13.48,
      "n_historique": 34,
      "scenarios": {
       "hausse": 0.528,
@@ -71217,10 +71525,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -6.15,
-     "z_avant": -1.15,
-     "perf_12m_pct": 43.5,
+     "au": "2026-10-20",
+     "avant_pct": -5.3,
+     "z_avant": -0.98,
+     "perf_12m_pct": 43.21,
      "n_historique": 31,
      "scenarios": {
       "hausse": 0.545,
@@ -72521,10 +72829,10 @@
      "n": 58
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 20.11,
-     "z_avant": 1.62,
-     "perf_12m_pct": 21.37
+     "au": "2026-10-20",
+     "avant_pct": 19.25,
+     "z_avant": 1.55,
+     "perf_12m_pct": 20.27
     }
    },
    {
@@ -72857,10 +73165,10 @@
      "date": "2026-11-06",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -17.05,
-     "z_avant": -1.6,
-     "perf_12m_pct": 24.08,
+     "au": "2026-10-20",
+     "avant_pct": -16.04,
+     "z_avant": -1.5,
+     "perf_12m_pct": 25.14,
      "n_historique": 0
     }
    },
@@ -74183,10 +74491,10 @@
      "n": 57
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": -4.38,
-     "z_avant": -0.69,
-     "perf_12m_pct": 8.8
+     "au": "2026-10-20",
+     "avant_pct": -4.09,
+     "z_avant": -0.64,
+     "perf_12m_pct": 10.55
     }
    },
    {
@@ -75465,10 +75773,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 1.9,
-     "z_avant": 0.22,
-     "perf_12m_pct": 15.47,
+     "au": "2026-10-20",
+     "avant_pct": -0.81,
+     "z_avant": -0.09,
+     "perf_12m_pct": 16.05,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.6,
@@ -76521,10 +76829,10 @@
      "n": 34
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 1.38,
-     "z_avant": 0.09,
-     "perf_12m_pct": -53.49
+     "au": "2026-10-20",
+     "avant_pct": 3.57,
+     "z_avant": 0.24,
+     "perf_12m_pct": -50.54
     }
    },
    {
@@ -77588,10 +77896,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -12.43,
-     "z_avant": -1.65,
-     "perf_12m_pct": 1.85,
+     "au": "2026-10-20",
+     "avant_pct": -11.73,
+     "z_avant": -1.55,
+     "perf_12m_pct": 2.05,
      "n_historique": 30,
      "scenarios": {
       "hausse": 0.469,
@@ -78339,7 +78647,7 @@
        "avant_pct": 9.08,
        "z_avant": 1.63,
        "perf_12m_pct": -11.8,
-       "rendement_pct": -2.05,
+       "rendement_pct": -2.04,
        "ecart_pct": -2.86,
        "z": -2.18,
        "suite_pct": 4.67,
@@ -78629,10 +78937,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 0.23,
-     "z_avant": 0.04,
-     "perf_12m_pct": 8.65
+     "au": "2026-10-20",
+     "avant_pct": 0.71,
+     "z_avant": 0.12,
+     "perf_12m_pct": 10.36
     }
    },
    {
@@ -79763,10 +80071,10 @@
      "n": 44
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": -0.54,
-     "z_avant": -0.08,
-     "perf_12m_pct": -37.26
+     "au": "2026-10-20",
+     "avant_pct": -1.16,
+     "z_avant": -0.17,
+     "perf_12m_pct": -37.2
     }
    },
    {
@@ -79775,7 +80083,7 @@
     "indice": "SBF 120",
     "secteur": "Immobilier commercial",
     "n_communiques": 140,
-    "n_evenements": 114,
+    "n_evenements": 115,
     "categories": [
      {
       "n": 28,
@@ -79874,11 +80182,11 @@
       "id": "strategie"
      },
      {
-      "n": 5,
-      "z_abs_moyen": 0.83,
-      "part_net": 0.2,
-      "part_fort": 0.2,
-      "ecart_abs_median_pct": 0.51,
+      "n": 6,
+      "z_abs_moyen": 0.75,
+      "part_net": 0.167,
+      "part_fort": 0.167,
+      "ecart_abs_median_pct": 0.43,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -80312,7 +80620,7 @@
        "actionnaires": true,
        "avant_pct": -6.95,
        "z_avant": -1.09,
-       "perf_12m_pct": 19.02,
+       "perf_12m_pct": 19.01,
        "rendement_pct": -4.57,
        "ecart_pct": -5.18,
        "z": -3.66,
@@ -80631,10 +80939,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -2.07,
-     "z_avant": -0.45,
-     "perf_12m_pct": -3.71,
+     "au": "2026-10-20",
+     "avant_pct": -1.46,
+     "z_avant": -0.32,
+     "perf_12m_pct": -2.19,
      "n_historique": 28,
      "scenarios": {
       "hausse": 0.667,
@@ -81816,9 +82124,9 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -13.68,
-     "z_avant": -1.4,
+     "au": "2026-10-20",
+     "avant_pct": -14.73,
+     "z_avant": -1.5,
      "perf_12m_pct": -22.24,
      "n_historique": 47,
      "scenarios": {
@@ -82945,10 +83253,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -4.68,
-     "z_avant": -0.9,
-     "perf_12m_pct": -14.69,
+     "au": "2026-10-20",
+     "avant_pct": -4.71,
+     "z_avant": -0.91,
+     "perf_12m_pct": -14.01,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.45,
@@ -83752,10 +84060,10 @@
      "date": "2026-12-04",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -12.6,
-     "z_avant": -1.4,
-     "perf_12m_pct": 33.29,
+     "au": "2026-10-20",
+     "avant_pct": -12.88,
+     "z_avant": -1.44,
+     "perf_12m_pct": 33.96,
      "n_historique": 22,
      "scenarios": {
       "hausse": 0.542,
@@ -84732,10 +85040,10 @@
      "date": "2026-11-19",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -2.98,
-     "z_avant": -0.27,
-     "perf_12m_pct": -33.48,
+     "au": "2026-10-20",
+     "avant_pct": 0.66,
+     "z_avant": 0.06,
+     "perf_12m_pct": -31.82,
      "n_historique": 31,
      "scenarios": {
       "hausse": 0.455,
@@ -85849,10 +86157,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 8.54,
-     "z_avant": 1.59,
-     "perf_12m_pct": -5.91,
+     "au": "2026-10-20",
+     "avant_pct": 1.77,
+     "z_avant": 0.33,
+     "perf_12m_pct": -6.4,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.622,
@@ -86450,10 +86758,10 @@
      "date": "2027-02-17",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -16.31,
-     "z_avant": -1.34,
-     "perf_12m_pct": -25.88,
+     "au": "2026-10-20",
+     "avant_pct": -14.64,
+     "z_avant": -1.2,
+     "perf_12m_pct": -26.84,
      "n_historique": 9,
      "scenarios": {
       "hausse": 0.727,
@@ -87472,10 +87780,10 @@
      "date": "2026-10-29",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -18.11,
-     "z_avant": -1.19,
-     "perf_12m_pct": -36.84,
+     "au": "2026-10-20",
+     "avant_pct": -17.02,
+     "z_avant": -1.13,
+     "perf_12m_pct": -35.39,
      "n_historique": 37,
      "scenarios": {
       "hausse": 0.41,
@@ -88485,10 +88793,10 @@
      "date": "2026-11-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.2,
-     "z_avant": 0.03,
-     "perf_12m_pct": -15.14,
+     "au": "2026-10-20",
+     "avant_pct": -1.55,
+     "z_avant": -0.21,
+     "perf_12m_pct": -14.64,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.45,
@@ -89703,10 +90011,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": -1.26,
-     "z_avant": -0.28,
-     "perf_12m_pct": -14.41
+     "au": "2026-10-20",
+     "avant_pct": -1.98,
+     "z_avant": -0.44,
+     "perf_12m_pct": -14.25
     }
    },
    {
@@ -90734,7 +91042,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.21,
+       "avant_pct": 4.2,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -90818,10 +91126,10 @@
      "date": "2026-11-02",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -10.43,
-     "z_avant": -1.48,
-     "perf_12m_pct": 35.06,
+     "au": "2026-10-20",
+     "avant_pct": -12.63,
+     "z_avant": -1.79,
+     "perf_12m_pct": 31.11,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.585,
@@ -91960,10 +92268,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -11.22,
+     "au": "2026-10-20",
+     "avant_pct": -11.18,
      "z_avant": -1.99,
-     "perf_12m_pct": -21.44,
+     "perf_12m_pct": -20.3,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.372,
@@ -93106,10 +93414,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 9.37,
-     "z_avant": 1.42,
-     "perf_12m_pct": -11.98,
+     "au": "2026-10-20",
+     "avant_pct": 8.9,
+     "z_avant": 1.35,
+     "perf_12m_pct": -10.9,
      "n_historique": 54,
      "scenarios": {
       "hausse": 0.643,
@@ -93634,7 +93942,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.28,
+       "suite_pct": 1.29,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -93916,7 +94224,7 @@
        "perf_12m_pct": -30.65,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.56,
+       "z": 1.55,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -94201,10 +94509,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.42,
-     "z_avant": 0.32,
-     "perf_12m_pct": 7.4,
+     "au": "2026-10-20",
+     "avant_pct": -0.14,
+     "z_avant": -0.02,
+     "perf_12m_pct": 7.53,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.571,
@@ -95502,10 +95810,10 @@
      "n": 54
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 11.71,
-     "z_avant": 1.56,
-     "perf_12m_pct": 24.18
+     "au": "2026-10-20",
+     "avant_pct": 9.4,
+     "z_avant": 1.25,
+     "perf_12m_pct": 25.71
     }
    },
    {
@@ -96582,10 +96890,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 4.38,
-     "z_avant": 0.41,
-     "perf_12m_pct": 16.48,
+     "au": "2026-10-20",
+     "avant_pct": 4.96,
+     "z_avant": 0.47,
+     "perf_12m_pct": 19.2,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -97919,10 +98227,10 @@
      "date": "2026-11-06",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.39,
-     "z_avant": -0.05,
-     "perf_12m_pct": 71.14,
+     "au": "2026-10-20",
+     "avant_pct": -0.65,
+     "z_avant": -0.08,
+     "perf_12m_pct": 71.94,
      "n_historique": 52,
      "scenarios": {
       "hausse": 0.426,
@@ -99088,10 +99396,10 @@
      "date": "2026-10-22",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -3.94,
-     "z_avant": -0.9,
-     "perf_12m_pct": 14.04,
+     "au": "2026-10-20",
+     "avant_pct": -4.0,
+     "z_avant": -0.92,
+     "perf_12m_pct": 16.13,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.571,
@@ -100232,10 +100540,10 @@
      "date": "2026-10-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -11.16,
-     "z_avant": -1.86,
-     "perf_12m_pct": -2.92,
+     "au": "2026-10-20",
+     "avant_pct": -8.16,
+     "z_avant": -1.37,
+     "perf_12m_pct": -2.65,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.489,
@@ -100996,7 +101304,7 @@
        "jour": "2022-03-18",
        "periode": "annuels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 28.37,
+       "avant_pct": 28.36,
        "z_avant": 2.73,
        "perf_12m_pct": 57.06,
        "rendement_pct": 1.64,
@@ -101455,10 +101763,10 @@
      "date": "2027-01-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -6.94,
-     "z_avant": -0.6,
-     "perf_12m_pct": 86.35,
+     "au": "2026-10-20",
+     "avant_pct": -9.74,
+     "z_avant": -0.84,
+     "perf_12m_pct": 83.34,
      "n_historique": 53,
      "scenarios": {
       "hausse": 0.509,
@@ -102133,10 +102441,10 @@
      "date": "2026-12-09",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 23.69,
+     "au": "2026-10-20",
+     "avant_pct": 23.58,
      "z_avant": 1.55,
-     "perf_12m_pct": -22.6,
+     "perf_12m_pct": -20.19,
      "n_historique": 14,
      "scenarios": {
       "hausse": 0.375,
@@ -103373,10 +103681,10 @@
      "date": "2027-02-17",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -8.94,
-     "z_avant": -1.88,
-     "perf_12m_pct": 0.72,
+     "au": "2026-10-20",
+     "avant_pct": -7.98,
+     "z_avant": -1.68,
+     "perf_12m_pct": 2.76,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.558,
@@ -104532,10 +104840,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.38,
-     "z_avant": 0.21,
-     "perf_12m_pct": 75.32,
+     "au": "2026-10-20",
+     "avant_pct": -9.71,
+     "z_avant": -0.87,
+     "perf_12m_pct": 71.82,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.622,
@@ -105346,7 +105654,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.12,
+       "rendement_pct": 8.13,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -105650,10 +105958,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.03,
-     "z_avant": -0.0,
-     "perf_12m_pct": -45.99,
+     "au": "2026-10-20",
+     "avant_pct": -0.92,
+     "z_avant": -0.09,
+     "perf_12m_pct": -44.23,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.651,
@@ -106475,10 +106783,10 @@
      "n": 32
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": -33.67,
-     "z_avant": -2.16,
-     "perf_12m_pct": 102.96
+     "au": "2026-10-20",
+     "avant_pct": -34.37,
+     "z_avant": -2.2,
+     "perf_12m_pct": 104.04
     }
    },
    {
@@ -107646,10 +107954,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -15.4,
-     "z_avant": -1.99,
-     "perf_12m_pct": -28.21,
+     "au": "2026-10-20",
+     "avant_pct": -14.48,
+     "z_avant": -1.87,
+     "perf_12m_pct": -26.49,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.535,
@@ -107665,7 +107973,7 @@
     "indice": "SBF 120",
     "secteur": "Logiciels",
     "n_communiques": 35,
-    "n_evenements": 24,
+    "n_evenements": 25,
     "categories": [
      {
       "n": 8,
@@ -107698,6 +108006,22 @@
       "ecart_moyen_positif_pct": 2.01,
       "ecart_moyen_negatif_pct": null,
       "id": "strategie"
+     },
+     {
+      "n": 1,
+      "z_abs_moyen": 0.02,
+      "part_net": 0.0,
+      "part_fort": 0.0,
+      "ecart_abs_median_pct": 0.05,
+      "n_positif": 0,
+      "n_negatif": 0,
+      "hausse_si_positif": null,
+      "baisse_si_negatif": null,
+      "concordance": null,
+      "p": null,
+      "ecart_moyen_positif_pct": null,
+      "ecart_moyen_negatif_pct": null,
+      "id": "commercial"
      },
      {
       "n": 14,
@@ -108163,10 +108487,10 @@
      "n": 8
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 12.34,
-     "z_avant": 1.07,
-     "perf_12m_pct": 29.77
+     "au": "2026-10-20",
+     "avant_pct": 13.04,
+     "z_avant": 1.13,
+     "perf_12m_pct": 28.58
     }
    },
    {
@@ -108205,7 +108529,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.6,
       "p": 1.0,
-      "ecart_moyen_positif_pct": 15.96,
+      "ecart_moyen_positif_pct": 16.46,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -108765,10 +109089,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 5.06,
-     "z_avant": 0.51,
-     "perf_12m_pct": -1.52,
+     "au": "2026-10-20",
+     "avant_pct": 3.12,
+     "z_avant": 0.32,
+     "perf_12m_pct": -1.17,
      "n_historique": 8,
      "scenarios": {
       "hausse": 0.7,
@@ -109650,10 +109974,10 @@
      "n": 31
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 4.71,
-     "z_avant": 0.74,
-     "perf_12m_pct": -3.85
+     "au": "2026-10-20",
+     "avant_pct": 2.99,
+     "z_avant": 0.47,
+     "perf_12m_pct": -4.16
     }
    },
    {
@@ -110649,10 +110973,10 @@
      "n": 36
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 1.62,
-     "z_avant": 0.29,
-     "perf_12m_pct": 25.71
+     "au": "2026-10-20",
+     "avant_pct": 0.51,
+     "z_avant": 0.1,
+     "perf_12m_pct": 23.15
     }
    },
    {
@@ -111579,10 +111903,10 @@
      "date": "2026-10-22",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 8.52,
-     "z_avant": 0.8,
-     "perf_12m_pct": 4.85,
+     "au": "2026-10-20",
+     "avant_pct": 8.25,
+     "z_avant": 0.78,
+     "perf_12m_pct": 7.56,
      "n_historique": 19,
      "scenarios": {
       "hausse": 0.571,
@@ -112801,10 +113125,10 @@
      "n": 48
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 4.64,
-     "z_avant": 0.42,
-     "perf_12m_pct": 24.67
+     "au": "2026-10-20",
+     "avant_pct": 6.55,
+     "z_avant": 0.59,
+     "perf_12m_pct": 28.41
     }
    },
    {
@@ -114045,10 +114369,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -7.49,
-     "z_avant": -0.54,
-     "perf_12m_pct": -26.06,
+     "au": "2026-10-20",
+     "avant_pct": -5.1,
+     "z_avant": -0.37,
+     "perf_12m_pct": -26.16,
      "n_historique": 37,
      "scenarios": {
       "hausse": 0.41,
@@ -114811,7 +115135,7 @@
        "z_avant": 1.02,
        "perf_12m_pct": -17.87,
        "rendement_pct": 7.67,
-       "ecart_pct": 7.6,
+       "ecart_pct": 7.59,
        "z": 5.68,
        "suite_pct": 4.85,
        "reaction": "hausse",
@@ -115259,10 +115583,10 @@
      "date": "2026-10-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.55,
-     "z_avant": -0.09,
-     "perf_12m_pct": 33.06,
+     "au": "2026-10-20",
+     "avant_pct": -1.63,
+     "z_avant": -0.27,
+     "perf_12m_pct": 30.96,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -116469,10 +116793,10 @@
      "date": "2026-10-23",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.51,
-     "z_avant": 0.07,
-     "perf_12m_pct": 20.39,
+     "au": "2026-10-20",
+     "avant_pct": 1.16,
+     "z_avant": 0.15,
+     "perf_12m_pct": 24.09,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -117666,10 +117990,10 @@
      "date": "2026-11-18",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -29.02,
-     "z_avant": -1.0,
-     "perf_12m_pct": 201.07,
+     "au": "2026-10-20",
+     "avant_pct": -30.38,
+     "z_avant": -1.05,
+     "perf_12m_pct": 194.51,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -118021,10 +118345,10 @@
      "date": "2026-11-04",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.41,
-     "z_avant": 0.06,
-     "perf_12m_pct": 0.37,
+     "au": "2026-10-20",
+     "avant_pct": -3.53,
+     "z_avant": -0.54,
+     "perf_12m_pct": -1.85,
      "n_historique": 0
     }
    },
@@ -119126,10 +119450,10 @@
      "date": "2026-10-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 9.96,
-     "z_avant": 0.81,
-     "perf_12m_pct": 34.96,
+     "au": "2026-10-20",
+     "avant_pct": 9.33,
+     "z_avant": 0.76,
+     "perf_12m_pct": 35.76,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.625,
@@ -119970,7 +120294,7 @@
        "rendement_pct": 5.79,
        "ecart_pct": 6.88,
        "z": 3.23,
-       "suite_pct": 7.72,
+       "suite_pct": 7.71,
        "reaction": "hausse",
        "courtes_pct": 0.92,
        "surprise": "negative",
@@ -120101,10 +120425,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 9.7,
-     "z_avant": 1.08,
-     "perf_12m_pct": -10.69,
+     "au": "2026-10-20",
+     "avant_pct": 10.09,
+     "z_avant": 1.12,
+     "perf_12m_pct": -11.02,
      "n_historique": 21,
      "scenarios": {
       "hausse": 0.478,
@@ -121317,10 +121641,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -9.87,
-     "z_avant": -1.83,
-     "perf_12m_pct": -18.89,
+     "au": "2026-10-20",
+     "avant_pct": -6.91,
+     "z_avant": -1.29,
+     "perf_12m_pct": -18.87,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.556,
@@ -121932,7 +122256,7 @@
        "perf_12m_pct": 7.12,
        "rendement_pct": 0.21,
        "ecart_pct": -0.08,
-       "z": -0.05,
+       "z": -0.04,
        "suite_pct": -2.88,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -122599,10 +122923,10 @@
      "date": "2026-11-23",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -0.97,
-     "z_avant": -0.12,
-     "perf_12m_pct": -8.92,
+     "au": "2026-10-20",
+     "avant_pct": 0.23,
+     "z_avant": 0.03,
+     "perf_12m_pct": -8.71,
      "n_historique": 54,
      "scenarios": {
       "hausse": 0.643,
@@ -123843,10 +124167,10 @@
      "date": "2026-11-19",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -1.58,
-     "z_avant": -0.08,
-     "perf_12m_pct": -33.31,
+     "au": "2026-10-20",
+     "avant_pct": -5.02,
+     "z_avant": -0.25,
+     "perf_12m_pct": -33.73,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.667,
@@ -124055,7 +124379,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -124105,7 +124429,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -124155,7 +124479,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -124205,7 +124529,7 @@
         "n": 3,
         "avant_moyen_pct": -0.1,
         "ecart_moyen_pct": -3.94,
-        "suite_moyenne_pct": 3.22
+        "suite_moyenne_pct": 3.21
        },
        "n": 6,
        "part_hausse": 0.5
@@ -124255,7 +124579,7 @@
        "n": 6,
        "part_hausse": 0.5,
        "ecart_moyen_pct": 0.63,
-       "suite_moyenne_pct": 1.79,
+       "suite_moyenne_pct": 1.78,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -124735,7 +125059,7 @@
        "rendement_pct": -1.98,
        "ecart_pct": -0.81,
        "z": -0.31,
-       "suite_pct": -0.22,
+       "suite_pct": -0.23,
        "reaction": "baisse",
        "courtes_pct": 6.25,
        "surprise": "negative",
@@ -124920,10 +125244,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -5.61,
-     "z_avant": -0.45,
-     "perf_12m_pct": 19.64,
+     "au": "2026-10-20",
+     "avant_pct": -5.01,
+     "z_avant": -0.4,
+     "perf_12m_pct": 22.63,
      "n_historique": 32,
      "scenarios": {
       "hausse": 0.382,
@@ -125922,10 +126246,10 @@
      "date": "2026-11-20",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.84,
-     "z_avant": 0.09,
-     "perf_12m_pct": 24.47,
+     "au": "2026-10-20",
+     "avant_pct": -2.09,
+     "z_avant": -0.22,
+     "perf_12m_pct": 21.64,
      "n_historique": 22,
      "scenarios": {
       "hausse": 0.542,
@@ -127279,10 +127603,10 @@
      "date": "2026-11-19",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -11.62,
-     "z_avant": -0.62,
-     "perf_12m_pct": -36.06,
+     "au": "2026-10-20",
+     "avant_pct": -6.66,
+     "z_avant": -0.36,
+     "perf_12m_pct": -31.63,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.444,
@@ -128154,10 +128478,10 @@
      "date": "2026-10-27",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 6.96,
-     "z_avant": 0.92,
-     "perf_12m_pct": -9.1,
+     "au": "2026-10-20",
+     "avant_pct": 3.94,
+     "z_avant": 0.52,
+     "perf_12m_pct": -8.88,
      "n_historique": 24,
      "scenarios": {
       "hausse": 0.5,
@@ -129291,10 +129615,10 @@
      "date": "2026-11-03",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 2.28,
-     "z_avant": 0.28,
-     "perf_12m_pct": -2.65,
+     "au": "2026-10-20",
+     "avant_pct": 1.83,
+     "z_avant": 0.23,
+     "perf_12m_pct": -1.64,
      "n_historique": 45,
      "scenarios": {
       "hausse": 0.511,
@@ -130599,10 +130923,10 @@
      "n": 56
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 11.94,
-     "z_avant": 1.83,
-     "perf_12m_pct": -2.41
+     "au": "2026-10-20",
+     "avant_pct": 14.46,
+     "z_avant": 2.24,
+     "perf_12m_pct": 0.59
     }
    },
    {
@@ -131227,10 +131551,10 @@
      "date": "2026-11-03",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": -14.05,
-     "z_avant": -0.73,
-     "perf_12m_pct": 19.24,
+     "au": "2026-10-20",
+     "avant_pct": -14.62,
+     "z_avant": -0.76,
+     "perf_12m_pct": 20.53,
      "n_historique": 8,
      "scenarios": {
       "hausse": 0.5,
@@ -132147,7 +132471,7 @@
        "jour": "2018-11-16",
        "periode": "chiffre_affaires",
        "titre": "Bonne progression du chiffre d’affaires au 3ème trimestre 2018, en hausse de 5,6 %1",
-       "avant_pct": -3.21,
+       "avant_pct": -3.2,
        "z_avant": -0.56,
        "perf_12m_pct": 1.98,
        "rendement_pct": 3.09,
@@ -132406,10 +132730,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 11.13,
-     "z_avant": 1.04,
-     "perf_12m_pct": -45.32,
+     "au": "2026-10-20",
+     "avant_pct": 13.24,
+     "z_avant": 1.23,
+     "perf_12m_pct": -44.43,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.488,
@@ -133518,10 +133842,10 @@
      "n": 40
     },
     "cours_recent": {
-     "au": "2026-10-19",
-     "avant_pct": 12.37,
-     "z_avant": 0.84,
-     "perf_12m_pct": -43.08
+     "au": "2026-10-20",
+     "avant_pct": -2.49,
+     "z_avant": -0.17,
+     "perf_12m_pct": -42.92
     }
    },
    {
@@ -134449,10 +134773,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 0.86,
-     "z_avant": 0.16,
-     "perf_12m_pct": 10.54,
+     "au": "2026-10-20",
+     "avant_pct": 0.27,
+     "z_avant": 0.05,
+     "perf_12m_pct": 9.52,
      "n_historique": 34,
      "scenarios": {
       "hausse": 0.472,
@@ -135580,10 +135904,10 @@
      "date": "2026-10-21",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-19",
-     "avant_pct": 6.55,
-     "z_avant": 0.31,
-     "perf_12m_pct": -51.05,
+     "au": "2026-10-20",
+     "avant_pct": 2.05,
+     "z_avant": 0.1,
+     "perf_12m_pct": -52.15,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.488,
@@ -135603,8 +135927,8 @@
     "probable": "hausse",
     "p_probable": 0.605,
     "p_hausse": 0.605,
-    "z_avant": 0.46,
-    "avant_pct": 6.03
+    "z_avant": 0.24,
+    "avant_pct": 3.11
    },
    {
     "ticker": "RMS.PA",
@@ -135614,8 +135938,8 @@
     "probable": "hausse",
     "p_probable": 0.614,
     "p_hausse": 0.614,
-    "z_avant": 1.23,
-    "avant_pct": 8.33
+    "z_avant": 1.29,
+    "avant_pct": 8.78
    },
    {
     "ticker": "IPN.PA",
@@ -135625,8 +135949,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": -0.15,
-    "avant_pct": -1.24
+    "z_avant": -0.04,
+    "avant_pct": -0.38
    },
    {
     "ticker": "OR.PA",
@@ -135636,8 +135960,8 @@
     "probable": "hausse",
     "p_probable": 0.628,
     "p_hausse": 0.628,
-    "z_avant": 1.43,
-    "avant_pct": 8.66
+    "z_avant": 1.29,
+    "avant_pct": 7.85
    },
    {
     "ticker": "OPM.PA",
@@ -135647,8 +135971,8 @@
     "probable": "hausse",
     "p_probable": 0.535,
     "p_hausse": 0.535,
-    "z_avant": -1.99,
-    "avant_pct": -15.4
+    "z_avant": -1.87,
+    "avant_pct": -14.48
    },
    {
     "ticker": "VIV.PA",
@@ -135658,8 +135982,8 @@
     "probable": "baisse",
     "p_probable": 0.512,
     "p_hausse": 0.488,
-    "z_avant": 1.04,
-    "avant_pct": 11.13
+    "z_avant": 1.23,
+    "avant_pct": 13.24
    },
    {
     "ticker": "WLN.PA",
@@ -135669,8 +135993,8 @@
     "probable": "baisse",
     "p_probable": 0.512,
     "p_hausse": 0.488,
-    "z_avant": 0.31,
-    "avant_pct": 6.55
+    "z_avant": 0.1,
+    "avant_pct": 2.05
    },
    {
     "ticker": "BVI.PA",
@@ -135680,8 +136004,8 @@
     "probable": "hausse",
     "p_probable": 0.659,
     "p_hausse": 0.659,
-    "z_avant": 0.89,
-    "avant_pct": 5.3
+    "z_avant": 0.35,
+    "avant_pct": 2.06
    },
    {
     "ticker": "CA.PA",
@@ -135691,8 +136015,8 @@
     "probable": "hausse",
     "p_probable": 0.571,
     "p_hausse": 0.571,
-    "z_avant": -0.47,
-    "avant_pct": -2.85
+    "z_avant": -0.39,
+    "avant_pct": -2.36
    },
    {
     "ticker": "COV.PA",
@@ -135702,8 +136026,8 @@
     "probable": "baisse",
     "p_probable": 0.55,
     "p_hausse": 0.45,
-    "z_avant": -0.9,
-    "avant_pct": -4.68
+    "z_avant": -0.91,
+    "avant_pct": -4.71
    },
    {
     "ticker": "IDL.PA",
@@ -135713,8 +136037,8 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": 1.42,
-    "avant_pct": 9.37
+    "z_avant": 1.35,
+    "avant_pct": 8.9
    },
    {
     "ticker": "ICAD.PA",
@@ -135725,7 +136049,7 @@
     "p_probable": 0.628,
     "p_hausse": 0.372,
     "z_avant": -1.99,
-    "avant_pct": -11.22
+    "avant_pct": -11.18
    },
    {
     "ticker": "IPS.PA",
@@ -135735,8 +136059,8 @@
     "probable": "hausse",
     "p_probable": 0.628,
     "p_hausse": 0.628,
-    "z_avant": 0.41,
-    "avant_pct": 4.38
+    "z_avant": 0.47,
+    "avant_pct": 4.96
    },
    {
     "ticker": "KER.PA",
@@ -135746,8 +136070,8 @@
     "probable": "hausse",
     "p_probable": 0.545,
     "p_hausse": 0.545,
-    "z_avant": -0.06,
-    "avant_pct": -0.61
+    "z_avant": -0.03,
+    "avant_pct": -0.32
    },
    {
     "ticker": "LI.PA",
@@ -135757,8 +136081,8 @@
     "probable": "hausse",
     "p_probable": 0.571,
     "p_hausse": 0.571,
-    "z_avant": -0.9,
-    "avant_pct": -3.94
+    "z_avant": -0.92,
+    "avant_pct": -4.0
    },
    {
     "ticker": "ML.PA",
@@ -135768,8 +136092,8 @@
     "probable": "hausse",
     "p_probable": 0.526,
     "p_hausse": 0.526,
-    "z_avant": 0.23,
-    "avant_pct": 1.27
+    "z_avant": 0.12,
+    "avant_pct": 0.68
    },
    {
     "ticker": "NEX.PA",
@@ -135779,8 +136103,8 @@
     "probable": "hausse",
     "p_probable": 0.558,
     "p_hausse": 0.558,
-    "z_avant": -1.15,
-    "avant_pct": -10.95
+    "z_avant": -1.62,
+    "avant_pct": -15.35
    },
    {
     "ticker": "RNO.PA",
@@ -135790,8 +136114,8 @@
     "probable": "hausse",
     "p_probable": 0.511,
     "p_hausse": 0.511,
-    "z_avant": 0.66,
-    "avant_pct": 5.31
+    "z_avant": 0.84,
+    "avant_pct": 6.78
    },
    {
     "ticker": "DIM.PA",
@@ -135801,8 +136125,8 @@
     "probable": "hausse",
     "p_probable": 0.571,
     "p_hausse": 0.571,
-    "z_avant": 0.8,
-    "avant_pct": 8.52
+    "z_avant": 0.78,
+    "avant_pct": 8.25
    },
    {
     "ticker": "HO.PA",
@@ -135812,8 +136136,8 @@
     "probable": "baisse",
     "p_probable": 0.512,
     "p_hausse": 0.488,
-    "z_avant": 0.1,
-    "avant_pct": 0.86
+    "z_avant": 0.11,
+    "avant_pct": 0.88
    },
    {
     "ticker": "AC.PA",
@@ -135823,8 +136147,8 @@
     "probable": "hausse",
     "p_probable": 0.535,
     "p_hausse": 0.535,
-    "z_avant": 0.31,
-    "avant_pct": 1.86
+    "z_avant": 0.85,
+    "avant_pct": 5.13
    },
    {
     "ticker": "ADP.PA",
@@ -135834,8 +136158,8 @@
     "probable": "baisse",
     "p_probable": 0.561,
     "p_hausse": 0.439,
-    "z_avant": 0.75,
-    "avant_pct": 6.0
+    "z_avant": 0.55,
+    "avant_pct": 4.43
    },
    {
     "ticker": "CARM.PA",
@@ -135845,8 +136169,8 @@
     "probable": "hausse",
     "p_probable": 0.667,
     "p_hausse": 0.667,
-    "z_avant": -0.45,
-    "avant_pct": -2.07
+    "z_avant": -0.32,
+    "avant_pct": -1.46
    },
    {
     "ticker": "MRN.PA",
@@ -135856,8 +136180,8 @@
     "probable": "hausse",
     "p_probable": 0.622,
     "p_hausse": 0.622,
-    "z_avant": 0.21,
-    "avant_pct": 2.38
+    "z_avant": -0.87,
+    "avant_pct": -9.71
    },
    {
     "ticker": "NXI.PA",
@@ -135867,8 +136191,8 @@
     "probable": "hausse",
     "p_probable": 0.651,
     "p_hausse": 0.651,
-    "z_avant": -0.0,
-    "avant_pct": -0.03
+    "z_avant": -0.09,
+    "avant_pct": -0.92
    },
    {
     "ticker": "SAF.PA",
@@ -135878,8 +136202,8 @@
     "probable": "hausse",
     "p_probable": 0.605,
     "p_hausse": 0.605,
-    "z_avant": 0.02,
-    "avant_pct": 0.13
+    "z_avant": -0.01,
+    "avant_pct": -0.09
    },
    {
     "ticker": "SW.PA",
@@ -135889,8 +136213,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": 0.07,
-    "avant_pct": 0.51
+    "z_avant": 0.15,
+    "avant_pct": 1.16
    },
    {
     "ticker": "URW.PA",
@@ -135900,8 +136224,8 @@
     "probable": "baisse",
     "p_probable": 0.533,
     "p_hausse": 0.467,
-    "z_avant": -1.0,
-    "avant_pct": -4.01
+    "z_avant": -1.08,
+    "avant_pct": -4.31
    },
    {
     "ticker": "FR.PA",
@@ -135911,8 +136235,8 @@
     "probable": "baisse",
     "p_probable": 0.618,
     "p_hausse": 0.382,
-    "z_avant": -0.45,
-    "avant_pct": -5.61
+    "z_avant": -0.4,
+    "avant_pct": -5.01
    },
    {
     "ticker": "MF.PA",
@@ -135922,8 +136246,8 @@
     "probable": "baisse",
     "p_probable": 0.528,
     "p_hausse": 0.472,
-    "z_avant": 0.16,
-    "avant_pct": 0.86
+    "z_avant": 0.05,
+    "avant_pct": 0.27
    },
    {
     "ticker": "AI.PA",
@@ -135933,8 +136257,8 @@
     "probable": "hausse",
     "p_probable": 0.568,
     "p_hausse": 0.568,
-    "z_avant": 1.45,
-    "avant_pct": 6.38
+    "z_avant": 1.05,
+    "avant_pct": 4.63
    },
    {
     "ticker": "CAP.PA",
@@ -135944,8 +136268,8 @@
     "probable": "hausse",
     "p_probable": 0.604,
     "p_hausse": 0.604,
-    "z_avant": 1.68,
-    "avant_pct": 18.04
+    "z_avant": 1.61,
+    "avant_pct": 17.2
    },
    {
     "ticker": "CLARI.PA",
@@ -135955,8 +136279,8 @@
     "probable": "baisse",
     "p_probable": 0.51,
     "p_hausse": 0.49,
-    "z_avant": -1.4,
-    "avant_pct": -13.68
+    "z_avant": -1.5,
+    "avant_pct": -14.73
    },
    {
     "ticker": "BN.PA",
@@ -135966,8 +136290,8 @@
     "probable": "hausse",
     "p_probable": 0.636,
     "p_hausse": 0.636,
-    "z_avant": 0.46,
-    "avant_pct": 2.87
+    "z_avant": 0.39,
+    "avant_pct": 2.48
    },
    {
     "ticker": "ORA.PA",
@@ -135977,8 +136301,8 @@
     "probable": "hausse",
     "p_probable": 0.579,
     "p_hausse": 0.579,
-    "z_avant": -0.94,
-    "avant_pct": -6.13
+    "z_avant": -0.21,
+    "avant_pct": -1.36
    },
    {
     "ticker": "VRLA.PA",
@@ -135988,16 +136312,16 @@
     "probable": "hausse",
     "p_probable": 0.5,
     "p_hausse": 0.5,
-    "z_avant": 0.92,
-    "avant_pct": 6.96
+    "z_avant": 0.52,
+    "avant_pct": 3.94
    },
    {
     "ticker": "AIR.PA",
     "nom": "Airbus",
     "date": "2026-10-28",
     "estimee": true,
-    "z_avant": 0.7,
-    "avant_pct": 4.42
+    "z_avant": 0.76,
+    "avant_pct": 4.84
    },
    {
     "ticker": "BNP.PA",
@@ -136007,8 +136331,8 @@
     "probable": "hausse",
     "p_probable": 0.529,
     "p_hausse": 0.529,
-    "z_avant": -1.52,
-    "avant_pct": -8.53
+    "z_avant": -1.48,
+    "avant_pct": -8.28
    },
    {
     "ticker": "DSY.PA",
@@ -136018,8 +136342,8 @@
     "probable": "baisse",
     "p_probable": 0.565,
     "p_hausse": 0.435,
-    "z_avant": 1.25,
-    "avant_pct": 14.44
+    "z_avant": 1.2,
+    "avant_pct": 13.82
    },
    {
     "ticker": "MMT.PA",
@@ -136029,8 +136353,8 @@
     "probable": "baisse",
     "p_probable": 0.511,
     "p_hausse": 0.489,
-    "z_avant": -1.86,
-    "avant_pct": -11.16
+    "z_avant": -1.37,
+    "avant_pct": -8.16
    },
    {
     "ticker": "BB.PA",
@@ -136040,8 +136364,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": -0.09,
-    "avant_pct": -0.55
+    "z_avant": -0.27,
+    "avant_pct": -1.63
    },
    {
     "ticker": "SOP.PA",
@@ -136051,16 +136375,16 @@
     "probable": "hausse",
     "p_probable": 0.625,
     "p_hausse": 0.625,
-    "z_avant": 0.81,
-    "avant_pct": 9.96
+    "z_avant": 0.76,
+    "avant_pct": 9.33
    },
    {
     "ticker": "STLAP.PA",
     "nom": "Stellantis",
     "date": "2026-10-28",
     "estimee": true,
-    "z_avant": -0.0,
-    "avant_pct": -0.05
+    "z_avant": 0.06,
+    "avant_pct": 0.75
    },
    {
     "ticker": "AMUN.PA",
@@ -136070,8 +136394,8 @@
     "probable": "hausse",
     "p_probable": 0.545,
     "p_hausse": 0.545,
-    "z_avant": -1.15,
-    "avant_pct": -6.15
+    "z_avant": -0.98,
+    "avant_pct": -5.3
    },
    {
     "ticker": "AYV.PA",
@@ -136081,8 +136405,8 @@
     "probable": "baisse",
     "p_probable": 0.531,
     "p_hausse": 0.469,
-    "z_avant": -1.65,
-    "avant_pct": -12.43
+    "z_avant": -1.55,
+    "avant_pct": -11.73
    },
    {
     "ticker": "ERA.PA",
@@ -136092,8 +136416,8 @@
     "probable": "baisse",
     "p_probable": 0.59,
     "p_hausse": 0.41,
-    "z_avant": -1.19,
-    "avant_pct": -18.11
+    "z_avant": -1.13,
+    "avant_pct": -17.02
    },
    {
     "ticker": "NK.PA",
@@ -136103,8 +136427,8 @@
     "probable": "hausse",
     "p_probable": 0.571,
     "p_hausse": 0.571,
-    "z_avant": 0.32,
-    "avant_pct": 2.42
+    "z_avant": -0.02,
+    "avant_pct": -0.14
    },
    {
     "ticker": "PLX.PA",
@@ -136114,8 +136438,8 @@
     "probable": "hausse",
     "p_probable": 0.7,
     "p_hausse": 0.7,
-    "z_avant": 0.51,
-    "avant_pct": 5.06
+    "z_avant": 0.32,
+    "avant_pct": 3.12
    },
    {
     "ticker": "STMPA.PA",
@@ -136125,8 +136449,8 @@
     "probable": "hausse",
     "p_probable": 0.609,
     "p_hausse": 0.609,
-    "z_avant": -0.61,
-    "avant_pct": -8.63
+    "z_avant": -0.85,
+    "avant_pct": -12.16
    },
    {
     "ticker": "GLE.PA",
@@ -136136,8 +136460,8 @@
     "probable": "hausse",
     "p_probable": 0.667,
     "p_hausse": 0.667,
-    "z_avant": -1.63,
-    "avant_pct": -11.38
+    "z_avant": -1.19,
+    "avant_pct": -8.27
    },
    {
     "ticker": "TFI.PA",
@@ -136147,8 +136471,8 @@
     "probable": "hausse",
     "p_probable": 0.556,
     "p_hausse": 0.556,
-    "z_avant": -1.83,
-    "avant_pct": -9.87
+    "z_avant": -1.29,
+    "avant_pct": -6.91
    },
    {
     "ticker": "TE.PA",
@@ -136158,8 +136482,8 @@
     "probable": "baisse",
     "p_probable": 0.522,
     "p_hausse": 0.478,
-    "z_avant": 1.08,
-    "avant_pct": 9.7
+    "z_avant": 1.12,
+    "avant_pct": 10.09
    },
    {
     "ticker": "TTE.PA",
@@ -136169,8 +136493,8 @@
     "probable": "baisse",
     "p_probable": 0.574,
     "p_hausse": 0.426,
-    "z_avant": -0.17,
-    "avant_pct": -1.08
+    "z_avant": -0.22,
+    "avant_pct": -1.43
    },
    {
     "ticker": "CS.PA",
@@ -136180,8 +136504,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": -0.99,
-    "avant_pct": -4.08
+    "z_avant": -0.12,
+    "avant_pct": -0.51
    },
    {
     "ticker": "ACA.PA",
@@ -136191,8 +136515,8 @@
     "probable": "baisse",
     "p_probable": 0.6,
     "p_hausse": 0.4,
-    "z_avant": -2.57,
-    "avant_pct": -11.41
+    "z_avant": -2.36,
+    "avant_pct": -10.51
    },
    {
     "ticker": "ELIS.PA",
@@ -136202,8 +136526,8 @@
     "probable": "hausse",
     "p_probable": 0.622,
     "p_hausse": 0.622,
-    "z_avant": 1.59,
-    "avant_pct": 8.54
+    "z_avant": 0.33,
+    "avant_pct": 1.77
    },
    {
     "ticker": "SCR.PA",
@@ -136213,8 +136537,8 @@
     "probable": "hausse",
     "p_probable": 0.585,
     "p_hausse": 0.585,
-    "z_avant": 0.38,
-    "avant_pct": 2.46
+    "z_avant": 0.72,
+    "avant_pct": 4.68
    },
    {
     "ticker": "SPIE.PA",
@@ -136224,8 +136548,8 @@
     "probable": "hausse",
     "p_probable": 0.692,
     "p_hausse": 0.692,
-    "z_avant": -0.12,
-    "avant_pct": -0.72
+    "z_avant": -0.86,
+    "avant_pct": -5.28
    },
    {
     "ticker": "SGO.PA",
@@ -136235,8 +136559,8 @@
     "probable": "hausse",
     "p_probable": 0.619,
     "p_hausse": 0.619,
-    "z_avant": 0.36,
-    "avant_pct": 2.14
+    "z_avant": 0.43,
+    "avant_pct": 2.52
    },
    {
     "ticker": "SAN.PA",
@@ -136246,8 +136570,8 @@
     "probable": "baisse",
     "p_probable": 0.571,
     "p_hausse": 0.429,
-    "z_avant": -0.47,
-    "avant_pct": -3.0
+    "z_avant": 0.18,
+    "avant_pct": 1.15
    },
    {
     "ticker": "COFA.PA",
@@ -136257,8 +136581,8 @@
     "probable": "hausse",
     "p_probable": 0.528,
     "p_hausse": 0.528,
-    "z_avant": -1.72,
-    "avant_pct": -7.06
+    "z_avant": -1.98,
+    "avant_pct": -8.15
    },
    {
     "ticker": "GTT.PA",
@@ -136268,8 +136592,8 @@
     "probable": "hausse",
     "p_probable": 0.585,
     "p_hausse": 0.585,
-    "z_avant": -1.48,
-    "avant_pct": -10.43
+    "z_avant": -1.79,
+    "avant_pct": -12.63
    },
    {
     "ticker": "VCT.PA",
@@ -136279,8 +136603,8 @@
     "probable": "hausse",
     "p_probable": 0.511,
     "p_hausse": 0.511,
-    "z_avant": 0.28,
-    "avant_pct": 2.28
+    "z_avant": 0.23,
+    "avant_pct": 1.83
    },
    {
     "ticker": "VIRI.PA",
@@ -136290,16 +136614,16 @@
     "probable": "hausse",
     "p_probable": 0.5,
     "p_hausse": 0.5,
-    "z_avant": -0.73,
-    "avant_pct": -14.05
+    "z_avant": -0.76,
+    "avant_pct": -14.62
    },
    {
     "ticker": "SOLB.BR",
     "nom": "Solvay",
     "date": "2026-11-04",
     "estimee": true,
-    "z_avant": 0.06,
-    "avant_pct": 0.41
+    "z_avant": -0.54,
+    "avant_pct": -3.53
    },
    {
     "ticker": "BIM.PA",
@@ -136309,8 +136633,8 @@
     "probable": "baisse",
     "p_probable": 0.647,
     "p_hausse": 0.353,
-    "z_avant": 2.78,
-    "avant_pct": 23.12
+    "z_avant": 2.69,
+    "avant_pct": 22.4
    },
    {
     "ticker": "AF.PA",
@@ -136320,16 +136644,16 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": -0.21,
-    "avant_pct": -2.51
+    "z_avant": -0.51,
+    "avant_pct": -6.12
    },
    {
     "ticker": "MT.AS",
     "nom": "ArcelorMittal",
     "date": "2026-11-05",
     "estimee": true,
-    "z_avant": -1.1,
-    "avant_pct": -10.06
+    "z_avant": -1.23,
+    "avant_pct": -11.19
    },
    {
     "ticker": "AKE.PA",
@@ -136339,8 +136663,8 @@
     "probable": "hausse",
     "p_probable": 0.6,
     "p_hausse": 0.6,
-    "z_avant": 0.22,
-    "avant_pct": 1.9
+    "z_avant": -0.09,
+    "avant_pct": -0.81
    },
    {
     "ticker": "EN.PA",
@@ -136350,8 +136674,8 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": -0.84,
-    "avant_pct": -4.29
+    "z_avant": -0.88,
+    "avant_pct": -4.5
    },
    {
     "ticker": "ENGI.PA",
@@ -136361,8 +136685,8 @@
     "probable": "hausse",
     "p_probable": 0.591,
     "p_hausse": 0.591,
-    "z_avant": -0.77,
-    "avant_pct": -4.56
+    "z_avant": -0.74,
+    "avant_pct": -4.39
    },
    {
     "ticker": "RF.PA",
@@ -136372,8 +136696,8 @@
     "probable": "baisse",
     "p_probable": 0.55,
     "p_hausse": 0.45,
-    "z_avant": 0.03,
-    "avant_pct": 0.2
+    "z_avant": -0.21,
+    "avant_pct": -1.55
    },
    {
     "ticker": "ENX.PA",
@@ -136383,8 +136707,8 @@
     "probable": "hausse",
     "p_probable": 0.707,
     "p_hausse": 0.707,
-    "z_avant": 0.78,
-    "avant_pct": 4.89
+    "z_avant": 0.86,
+    "avant_pct": 5.38
    },
    {
     "ticker": "LR.PA",
@@ -136394,8 +136718,8 @@
     "probable": "baisse",
     "p_probable": 0.571,
     "p_hausse": 0.429,
-    "z_avant": -0.14,
-    "avant_pct": -0.97
+    "z_avant": -0.65,
+    "avant_pct": -4.56
    },
    {
     "ticker": "SESG.PA",
@@ -136405,8 +136729,8 @@
     "probable": "baisse",
     "p_probable": 0.59,
     "p_hausse": 0.41,
-    "z_avant": -0.54,
-    "avant_pct": -7.49
+    "z_avant": -0.37,
+    "avant_pct": -5.1
    },
    {
     "ticker": "TEP.PA",
@@ -136416,8 +136740,8 @@
     "probable": "hausse",
     "p_probable": 0.628,
     "p_hausse": 0.628,
-    "z_avant": 0.57,
-    "avant_pct": 7.62
+    "z_avant": 0.52,
+    "avant_pct": 6.94
    },
    {
     "ticker": "VIE.PA",
@@ -136427,16 +136751,16 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": 0.62,
-    "avant_pct": 2.83
+    "z_avant": 0.79,
+    "avant_pct": 3.64
    },
    {
     "ticker": "APAM.AS",
     "nom": "Aperam",
     "date": "2026-11-06",
     "estimee": true,
-    "z_avant": -1.6,
-    "avant_pct": -17.05
+    "z_avant": -1.5,
+    "avant_pct": -16.04
    },
    {
     "ticker": "DEC.PA",
@@ -136446,8 +136770,8 @@
     "probable": "baisse",
     "p_probable": 0.574,
     "p_hausse": 0.426,
-    "z_avant": -0.05,
-    "avant_pct": -0.39
+    "z_avant": -0.08,
+    "avant_pct": -0.65
    },
    {
     "ticker": "FGR.PA",
@@ -136457,8 +136781,8 @@
     "probable": "hausse",
     "p_probable": 0.644,
     "p_hausse": 0.644,
-    "z_avant": -0.68,
-    "avant_pct": -3.62
+    "z_avant": -0.93,
+    "avant_pct": -4.97
    },
    {
     "ticker": "ALO.PA",
@@ -136468,8 +136792,8 @@
     "probable": "hausse",
     "p_probable": 0.578,
     "p_hausse": 0.578,
-    "z_avant": 0.96,
-    "avant_pct": 11.06
+    "z_avant": 0.71,
+    "avant_pct": 8.25
    },
    {
     "ticker": "SOI.PA",
@@ -136479,8 +136803,8 @@
     "probable": "hausse",
     "p_probable": 0.628,
     "p_hausse": 0.628,
-    "z_avant": -1.0,
-    "avant_pct": -29.02
+    "z_avant": -1.05,
+    "avant_pct": -30.38
    },
    {
     "ticker": "ELIOR.PA",
@@ -136490,8 +136814,8 @@
     "probable": "baisse",
     "p_probable": 0.545,
     "p_hausse": 0.455,
-    "z_avant": -0.27,
-    "avant_pct": -2.98
+    "z_avant": 0.06,
+    "avant_pct": 0.66
    },
    {
     "ticker": "UBI.PA",
@@ -136501,8 +136825,8 @@
     "probable": "hausse",
     "p_probable": 0.667,
     "p_hausse": 0.667,
-    "z_avant": -0.08,
-    "avant_pct": -1.58
+    "z_avant": -0.25,
+    "avant_pct": -5.02
    },
    {
     "ticker": "VLA.PA",
@@ -136512,8 +136836,8 @@
     "probable": "baisse",
     "p_probable": 0.556,
     "p_hausse": 0.444,
-    "z_avant": -0.62,
-    "avant_pct": -11.62
+    "z_avant": -0.36,
+    "avant_pct": -6.66
    },
    {
     "ticker": "VK.PA",
@@ -136523,8 +136847,8 @@
     "probable": "hausse",
     "p_probable": 0.542,
     "p_hausse": 0.542,
-    "z_avant": 0.09,
-    "avant_pct": 0.84
+    "z_avant": -0.22,
+    "avant_pct": -2.09
    },
    {
     "ticker": "TRI.PA",
@@ -136534,8 +136858,8 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": -0.12,
-    "avant_pct": -0.97
+    "z_avant": 0.03,
+    "avant_pct": 0.23
    },
    {
     "ticker": "RCO.PA",
@@ -136545,8 +136869,8 @@
     "probable": "baisse",
     "p_probable": 0.547,
     "p_hausse": 0.453,
-    "z_avant": 2.25,
-    "avant_pct": 21.29
+    "z_avant": 1.88,
+    "avant_pct": 17.77
    },
    {
     "ticker": "DBG.PA",
@@ -136556,8 +136880,8 @@
     "probable": "hausse",
     "p_probable": 0.542,
     "p_hausse": 0.542,
-    "z_avant": -1.4,
-    "avant_pct": -12.6
+    "z_avant": -1.44,
+    "avant_pct": -12.88
    },
    {
     "ticker": "MEDCL.PA",
@@ -136568,11 +136892,11 @@
     "p_probable": 0.625,
     "p_hausse": 0.375,
     "z_avant": 1.55,
-    "avant_pct": 23.69
+    "avant_pct": 23.58
    }
   ],
   "apres_cloture": {
-   "n": 10209,
+   "n": 10215,
    "z_abs_jour_publication": 0.74,
    "z_abs_lendemain": 1.15
   },
@@ -136585,7 +136909,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169886_20261020.pdf",
     "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
     "type_periode": "trimestriels",
-    "perf_12m_pct": -45.32,
+    "perf_12m_pct": -44.43,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
@@ -136625,7 +136949,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138946_20261020.pdf",
     "titre": "EssilorLuxottica: Chiffre d'affaires T3 - Chiffre d’affaires en croissance de +9,0 % au T3, +7,2 % à taux de change constants",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": -45.99,
+    "perf_12m_pct": -46.46,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -136671,7 +136995,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083497_20261020.pdf",
     "titre": "ICADE – CP – ACTIVITE AU 30 SEPTEMBRE 2026",
     "type_periode": "autres",
-    "perf_12m_pct": -21.44,
+    "perf_12m_pct": -20.3,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
@@ -136723,7 +137047,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138954_20261020.pdf",
     "titre": "Michelin : Le chiffre d'affaires du Groupe progresse de 1,0 % hors effet de change et 0,1 % à iso-périmètre et change, tiré par la marque MICHELIN, un mix favorable et des acquisitions ciblées en PCS. Guidance annuelle confirmée.",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 27.78,
+    "perf_12m_pct": 27.84,
     "estimes": {
      "fin": "2026-06-30",
      "periode": "trimestre",
@@ -136769,7 +137093,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083495_20261020.pdf",
     "titre": "CP_Carrefour CA T3 2026",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 38.92,
+    "perf_12m_pct": 40.27,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
