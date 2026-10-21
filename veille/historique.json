@@ -1,7 +1,274 @@
 {
  "version": 1,
- "maj_le": "2026-10-20T11:19:41+00:00",
+ "maj_le": "2026-10-21T06:21:59+00:00",
  "alertes": [
+  {
+   "id": "presse-53ebd38b5744d8df",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Carrefour : objectifs 2026 abaissés après un T3 à +2,3 % en comparable",
+   "resume": "Carrefour publie un chiffre d'affaires T3 en hausse de 2,3 % en comparable et abaisse ses objectifs 2026 : marge de ROC en progression de 0 à 15 pb (contre +25 pb), résultat net ajusté par action stable ou en légère croissance, cash-flow libre net en léger repli, en raison de la dégradation de la situation sociale et sécuritaire en France.",
+   "nouveaute": "Premier abaissement des objectifs annuels 2026 (marge, résultat net ajusté par action, cash-flow libre).",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUThDMmVoRl9vMnVJOHE0a041b2xwbUxrdmFuUHRHQnI5NTM4cEFrZUhsSTRCR0RhbXRMQ1I4OHNxSmJtb25nUnhqQjF3VzZLbmo5UERhdmVvUGdqdURCRUZnNWFrODk1aHpuYnF1RHczUzRTNHlDNXdFWDlGaDFLVFRzYTAxc29jNjIxVjZGMmpJb3dqanBaZmU4Zll2YXJKZkRTTXRVVGFWdm4zeVB1WjBSdGFpT0VkT2Z2NWVlT0RibFJPbWxwNDZUajZWbEFPUC03ZHhLTQ?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "CA.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Perspectives abaissées : hausse du cours dans 33 % des 126 cas depuis 2019 ; objectif de résultat net ajusté par action ramené de la fourchette haute à stable ou légère croissance.",
+     "extrait": "Ajustement des objectifs financiers pour l’exercice 2026",
+     "nom": "Carrefour"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Émeutes : Carrefour réduit ses objectifs 2026 - BFM",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUThDMmVoRl9vMnVJOHE0a041b2xwbUxrdmFuUHRHQnI5NTM4cEFrZUhsSTRCR0RhbXRMQ1I4OHNxSmJtb25nUnhqQjF3VzZLbmo5UERhdmVvUGdqdURCRUZnNWFrODk1aHpuYnF1RHczUzRTNHlDNXdFWDlGaDFLVFRzYTAxc29jNjIxVjZGMmpJb3dqanBaZmU4Zll2YXJKZkRTTXRVVGFWdm4zeVB1WjBSdGFpT0VkT2Z2NWVlT0RibFJPbWxwNDZUajZWbEFPUC03ZHhLTQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T06:11:59+00:00",
+     "media": "BFM"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T06:21:59+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-1e81d083f8e21647",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Eurofins : objectif de croissance organique 2026 abaissé, objectifs 2027 confirmés",
+   "resume": "Eurofins annonce un chiffre d'affaires T3 en hausse de 3,7 %, abaisse son objectif de croissance organique pour 2026 et confirme ceux de 2027.",
+   "nouveaute": "Abaissement de l'objectif de croissance organique 2026, jusqu'ici confirmé.",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMW55Y01EcWtCUGw4VGNNTldpeHEydGxjeGljX3MteWFOTUQ5cDloNVYyNklDN0VBM2RSZm11dkVRTHNOaXg0dFRxRVU0bGNiWnZWQ19aXzZFTXpEREdaTjk5XzRPd0d1Xy1kS2pqMGJEaEpjc29mOUNQWEQ2d1BQMkhfV1pzX1FpSE5kc3BGRGhsQXNrbXhRMW9OYmdwaW4zeFB4Q3pDQW43SWM0eVlNeUtxcW9LS1RKbE9YWFlfc2FmNm5qbGRWbDBB?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ERF.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Objectif annuel de croissance organique abaissé ; effet sur le résultat à préciser à la lecture du communiqué complet.",
+     "extrait": "Eurofins Scientific abaisse son objectif de croissance organique pour l’exercice 2026",
+     "nom": "Eurofins Scientific"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Eurofins Scientific ajuste ses objectifs 2026, CA au T3 +3,7% - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMW55Y01EcWtCUGw4VGNNTldpeHEydGxjeGljX3MteWFOTUQ5cDloNVYyNklDN0VBM2RSZm11dkVRTHNOaXg0dFRxRVU0bGNiWnZWQ19aXzZFTXpEREdaTjk5XzRPd0d1Xy1kS2pqMGJEaEpjc29mOUNQWEQ2d1BQMkhfV1pzX1FpSE5kc3BGRGhsQXNrbXhRMW9OYmdwaW4zeFB4Q3pDQW43SWM0eVlNeUtxcW9LS1RKbE9YWFlfc2FmNm5qbGRWbDBB?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:54:28+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Eurofins Scientific abaisse son objectif de croissance organique pour l’exercice 2026 ; objectifs pour 2027 confirmés - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQLTdYSVBQeGtLZm1jUkpUbGFpczZXc2dNYUlTSWNWS3l4ZWdQOVJHSkQ5T3djZ3ZCaTJIc3JmQlRmMUhhVklBTUlycjRFSDc1Qm9fYlBmSTRjTDNISkpCZFBhd2NEanZFRFJkRUJzVmI2dEVod2ZBdGc0TnBOSnFwSGtEQU9fQ1Z2ZE4yd3lRdnpiYjNwdnp0dXNDTVN2RUNZMVJ4RDY0NG8wVGlVVldreWhEbE01UUxjUUhneVA1VGVxLUNZdVlLZUItM3RTbHgzcWRoV0wtaklYNG1PRm1uUUp4ODIyUHVFdmUwZjJR?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:52:41+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Eurofins Scientific ajuste à la baisse un objectif financier annuel - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRzJRLWFtU1VZUU5NQml1U2VJNjVXcXRaZVBOOTZfMjVPXzQxaFQ0ejdOem5FSklwaUhGSFlKOFNxYUswQ3cwQ3ZlaE5ISXFoYkFLS1QwSXFjM29TYmZ0eklwd2xnMU9ObUJzcUFXNG1CN19QZHpuSWpOTFNEUUlmLUVCX25ZeE4tOFJZWXVFR2diUHN2Z0JaaTRmNkV5WmRROHRiMnBXUjFzVGUteE10akZfUTk4Smk0YlN1OXp2R1FxYldsRmc?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:39:29+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T06:21:59+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-df11a6f8b84acd66",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Klépierre : objectifs 2026 relevés après des revenus locatifs en hausse de 4,6 %",
+   "resume": "Klépierre relève ses objectifs annuels après un troisième trimestre solide, avec des revenus locatifs en hausse de 4,6 %.",
+   "nouveaute": "Relèvement des objectifs annuels 2026 avec les chiffres du T3.",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQzkwdFNTTHB4TnZpaXZCVHNnek83M1RrUjdqWWlJV1Y2TWhhR3hTdktOTUZlbHQ1Wlh1VVdGMXByN0hRU29VaE83T1NyQTA3MmcxUGt2MFRabVdzSXdBc2drNndlY1RkUW5SdTQyamtzeFV4bW8taExzTGlzR3hCZmxWWE9UbldzZDNXWlQ1VkRLc2o3UGdSajEtekxmWnVHX2c1YkRiaEZDczEtUGpncWFxOC1mZzhIM1lncGU2YlAtT2J4U3pJcjR5cUVTM3FuODExSk1nd0ZSbUpNZFcxcm1VR0tWNFcwdXNv?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "LI.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Objectifs relevés : hausse du cours dans 69 % des cas depuis 2019 (référence générale) ; ampleur du relèvement à lire dans le communiqué.",
+     "extrait": "Klépierre relève ses objectifs annuels après une hausse de 4,6% des revenus locatifs",
+     "nom": "Klépierre"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Klépierre relève ses objectifs annuels après une hausse de 4,6% des revenus locatifs - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQzkwdFNTTHB4TnZpaXZCVHNnek83M1RrUjdqWWlJV1Y2TWhhR3hTdktOTUZlbHQ1Wlh1VVdGMXByN0hRU29VaE83T1NyQTA3MmcxUGt2MFRabVdzSXdBc2drNndlY1RkUW5SdTQyamtzeFV4bW8taExzTGlzR3hCZmxWWE9UbldzZDNXWlQ1VkRLc2o3UGdSajEtekxmWnVHX2c1YkRiaEZDczEtUGpncWFxOC1mZzhIM1lncGU2YlAtT2J4U3pJcjR5cUVTM3FuODExSk1nd0ZSbUpNZFcxcm1VR0tWNFcwdXNv?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:29:34+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "Klépierre relève ses prévisions 2026 après un solide troisième trimestre - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSllUU0EzN3VsVXlUM0kwUWs4VkVMM1BuUWNvcUExa2ZGbTY0cEZiZlQzdzNHRnQyY00wRmlLTEZ2bjJqMkV6bVVoRTVTb0tJX2NoUTRmR2dhU1R0VnZpcHlabWMweHdnSzBjRGh2WXNMU1FRWXRsVC1BWUhzRHlaZDVTamxyV3VwUVhqOGwyUXh3RFhMVUN1MUc3UFFtc2haZEJmSVRHaGJ2RzJ0ekNRSXV2eUlvTDBPMC1WRWlRSXFROGNXSHFDSUpwRlFCQQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:59:00+00:00",
+     "media": "Investing.com France"
+    },
+    {
+     "titre": "Klépierre : révision des objectifs à la hausse - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcU04RzRlOEExZDZNaW1TZkctLWxZR3NvVEE0T0Rjc3BtMEUwS0VRQl9VcFB0TU1KdEhFci1NSTdPRThPZnNHZWJPb2JiVDlxdTY3VHdjcW9VVlBMSjNocHpOM0tPU3hKdkhSdDh5U1ZlSlowSEZDN1ktRTJ6ZzRsb0d2TmlPN3NHY2dpY0EwbzMwTjJQOFFMMjhINmQxY0pERDJFSVR0N1Y?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:31:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Klépierre relève ses objectifs annuels après une hausse de 4,6% des revenus locatifs - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbHlKTllBYTRJNmN6WTFkc3ZqNzJJWFV6UmUzVmMyQWF5SUFCZXpTaUNWeHJwc0tMa25SRmg3Y2d0NkNTR3VXcFpCQVRZc2ZRSTkyTDR1S3R6Z1h3eXVsLWN2UWJ5SzVvTjhaTnhWRGd4Zzh4eDNDNTdpYy1Oam9KbHRSTlU5U2lsV09EblMtYlRmMHRyTlkzVUxhOU0xQjhRdFZZNEItZWdNNk55aGs4aEYxemZNZjZ0UUs0cWdFOHA4bDBrY2VZYmVXa2NXY3o5dUJjaUNoaE1uSjQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:30:29+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T06:21:59+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-41b1425255e73a97",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Interparfums : T3 en hausse de 4,8 %, objectif annuel visé en haut de fourchette",
+   "resume": "Interparfums affiche une croissance de 4,8 % au troisième trimestre et vise désormais le haut de ses objectifs annuels.",
+   "nouveaute": "Passage au haut de fourchette des objectifs annuels.",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnhTSzlSZk1SOUozdDZqUmJSUkFDNVU4cEhtQkw4emNvdHYyNHg5cWVYSFA5R2lNRnhveGxWWUhXMkZsZm5hVFhqUFFqZDBuZnNwVDJ6NXVtdVRoVVdtTWoxSE1mMUF6aDhsbWdBTnE1SlNadEZadllqTndndHpPdTFYVVh1QnlGNnFyWjljUFZVUEJfX0RvR3ZuMjBXcDUxaFJlMDdLTXZkNkx0RHhDMmVXZW1IRTNaQXc?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ITP.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Objectif visé en haut de fourchette : signal favorable modeste sur l'exercice 2026.",
+     "extrait": "vise désormais le haut de ses objectifs a",
+     "nom": "Interparfums"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Interparfums affiche une croissance de 4,8 % au T3 et vise désormais le haut de ses objectifs annuels - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnhTSzlSZk1SOUozdDZqUmJSUkFDNVU4cEhtQkw4emNvdHYyNHg5cWVYSFA5R2lNRnhveGxWWUhXMkZsZm5hVFhqUFFqZDBuZnNwVDJ6NXVtdVRoVVdtTWoxSE1mMUF6aDhsbWdBTnE1SlNadEZadllqTndndHpPdTFYVVh1QnlGNnFyWjljUFZVUEJfX0RvR3ZuMjBXcDUxaFJlMDdLTXZkNkx0RHhDMmVXZW1IRTNaQXc?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T06:06:02+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Interparfums retrouve un dynamique plus favorable - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONTM4RlZiN2hnU0IxRnNVUGFHTnFuLVU5Rk5CNjlWMm5WZm5CTHZlUnZvVGNQa0VPbEY4OGkzMEZDV0ZtMnY4X0ZJQ1Y1SGxTby13d1o2RS05eHI4RmhBdm5CTUZzUTB1YV85amRjazBpMHlEM3dJeWdxOF9GaHFKTlRqbWs2Snp1Z1Y0S25FX015d3pBZ01jYWRxdmRPQkl6NGdQcVA4NzFJOXhpLVBJ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:41:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Interparfums vise le haut de son objectif annuel après un T3 en hausse de 4,8% - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOV1lCRVItNE9TTnZ4bUduVWt6R1BtZThlUHZxSEo0X0tReDAzMlUzdk1pVWhRdVkxbkJIQXpiRndvTEVuV3ljcGlvdmFNX29TZ18zeHpKRUJjcXpET04yZmZuSGZzYTBUNEtrODZnaUs5WnlBdW03SnZXcG1xV1VGVWhMbTc2Yjh2Nl9kNzZ1MzZDVFg1c2FRNEFsRGoxd0NRZ3A3QkpOeGFZTEdwMGcwd0pYRzlVVi12dm1fQU5CZ0syYnI5TTZHRFBhRUZCSnYzaUF2STB0SUhrczJqMUpoYXRNQQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:20:15+00:00",
+     "media": "Investir Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T06:21:59+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
+  {
+   "id": "presse-b277bb044e0d3c08",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Edenred : chiffre d'affaires T3 au-dessus des attentes, objectifs 2026 confirmés",
+   "resume": "Edenred publie un chiffre d'affaires du troisième trimestre jugé supérieur aux attentes, porté par la Mobilité, et confirme ses objectifs 2026.",
+   "nouveaute": "Chiffre d'affaires T3 supérieur aux attentes selon la presse financière ; objectifs confirmés.",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTVY5dlFSV3BGOHJ1TzliU05kc0FLUS02ZUtLZ05uc3FJTFdXaW5zWmd1WHVNVjFXMFhvR2FZMXlGU1Rlc1lzT1ZHVkZoZDdqVnpRbVFPc0NtOVoxc2RwQWNNRVJlb200NEZHMEJFdGttUEtBVzc4LVlfTmlnYmp3elczSURMd1I5VlFKQ214SEM2WGpfSy1ubWhtWUpwLVUwWWJuRVFtRmNGaXlhUktoZE9zXzhzMW9jZU84?oc=5",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "EDEN.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Chiffre d'affaires au-dessus des attentes et objectifs confirmés ; écart au consensus non chiffré ici.",
+     "extrait": "Edenred dépasse les attentes au T3 avec l'activité \"Mobilité\"",
+     "nom": "Edenred"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Edenred dépasse les attentes au T3 avec l'activité \"Mobilité\" - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTVY5dlFSV3BGOHJ1TzliU05kc0FLUS02ZUtLZ05uc3FJTFdXaW5zWmd1WHVNVjFXMFhvR2FZMXlGU1Rlc1lzT1ZHVkZoZDdqVnpRbVFPc0NtOVoxc2RwQWNNRVJlb200NEZHMEJFdGttUEtBVzc4LVlfTmlnYmp3elczSURMd1I5VlFKQ214SEM2WGpfSy1ubWhtWUpwLVUwWWJuRVFtRmNGaXlhUktoZE9zXzhzMW9jZU84?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:13:18+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Chiffre d’affaires du troisième trimestre 2026 - Edenred.com",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbkpHbWliclY0MG9XamtoQUd3aEFTWnZiblh2TkFSY1NJTUJBZVZEczlraGFyeXF4LUlVdFNLVDZ2aVdnSFJxeWZEQUl0NFFWQXVDcWI0dHowbnRZTFlyY1ZsczlmZHM0SGlzRFVHVllkSE9pMk5fU3lKN2pMRzBuM19acU1GenM?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:05:22+00:00",
+     "media": "Edenred.com"
+    },
+    {
+     "titre": "Edenred confirme ses objectifs 2026 après un chiffre d’affaires opérationnel de - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWmFaMTZaMmo4S0VXVTh0SU9qU2pYNGxqSWNIdzN3WEZZcG4xSFFZVFFDeXZUdTVqV2dNUDg3UFQyQnZGT2FOd1IyeGxmRGRXVjYwUEVpa0hva2ppejl3TnhaYlZERVI0T1pZcjVEdUVrYTc4bmVaYTFIYUhtV3ZxMTBObFFKT2tGV3k4Y28zYUxWZXpVeFZxMFlqcGRyNWFUTUI0ekFwY2ttNDhhZ3VoT1h4bGFWSEwyWDMw?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:45:03+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Edenred confirme ses objectifs 2026 - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOd05lbUg3ZkhZX1VkZ091VU0wR1ZFWFhVcmtOU01qc3BBd0VEU2puZ0ltRGFWclo1NkVPUFA0LU4xbTdRY0MxQ1ZLbDR0SUROTW9hWTRscHdXNWJnVzFQWlRKOEgzQVlVM0VQSmNSbnJTanFDX3htc2x2YlRnTEZMWGNOMVZJQjRkQ2h6N1NvVm51ODMwc2pkOFlOeTc?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T05:25:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Edenred : chiffre d'affaires stable au 3e trimestre, objectifs confirmés - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HMFVWS2VBeTdOd01ZSUhWeUtmRXd5WG1zNmRuUTJzdEJiQkJZREMwTm5ocjZZZkIxRDQ3Y2UwLUF5cTZTNTlYNzdwMC1TeGZTVVZ6cnhyaExmTnRCYmxOMlRB?oc=5",
+     "date": "2026-10-20",
+     "publie_le": "2026-10-20T22:15:00+00:00",
+     "media": "TradingView"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-21",
+   "publie_a": "2026-10-21T06:21:59+00:00",
+   "initial": {
+    "etape": "publie",
+    "probabilite": 1
+   }
+  },
   {
    "id": "presse-2d2a651d719bb6ef",
    "date": "2026-10-20",
