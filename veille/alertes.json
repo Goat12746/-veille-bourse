@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-22T06:23:22+00:00",
+ "genere_le": "2026-10-22T11:23:50+00:00",
  "sources": {
   "amf": {
    "ok": false,
@@ -8,13 +8,13 @@
   },
   "presse": {
    "ok": true,
-   "trouves": 452,
-   "nouveaux": 255
+   "trouves": 336,
+   "nouveaux": 172
   },
   "assemblee": {
    "ok": true,
-   "trouves": 214,
-   "nouveaux": 139
+   "trouves": 149,
+   "nouveaux": 0
   },
   "agenda": {
    "ok": true,
@@ -22,7 +22,7 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 102
+   "trouves": 105
   }
  },
  "alertes": [
@@ -478,6 +478,61 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-22",
    "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-abfc25d79def0710",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Wendel : ANR par action en hausse de 5,1 % à 167 € au T3, cessions de Stahl et d'IHS",
+   "resume": "L'ANR par action de Wendel atteint 167 € au 30 septembre 2026 (158,9 € fin juin), porté par le rebond des multiples de marché et l'effet relutif des rachats d'actions. Les cessions de Stahl (finalisée) et d'IHS (en cours) apportent environ 1,6 Md€ de liquidités, avec une prime d'environ 20 % sur l'ANR.",
+   "nouveaute": "Première publication de l'ANR du 30 septembre 2026 : 167 €, +5,1 % sur le trimestre, avec les produits de cession de Stahl et d'IHS.",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNendGNHY5LUxDRk5Fdm1SNDJFaGd6MTJVN3NINUwxZEZZSHFDLXJSaVdhOUFCODB5LTFaMnhjTlZaUDVLSFk4SHJ0S3ZtSmxpQWkydnJHenFDQUprRF9qQmJkTGN1anpnaURjUXZ6SnNfRjRORjFMNEJqekZIRWhNbkhZYkRIaFVMb0tFWnlaX00yNUVKd2hlT3Zjc0lpeVlVUUZhOGZKbi1UdGNWa0hfcWtPVDE?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "MF.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "L'ANR par action progresse de 5,1 % sur le trimestre (+3,9 % depuis le début de l'année) et les cessions se font à environ 20 % au-dessus de leur valorisation dans l'ANR.",
+     "extrait": "Wendel accroît de 5% son ANR par action au 3e trimestre",
+     "nom": "Wendel"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Wendel accroît de 5% son ANR par action au 3e trimestre - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNendGNHY5LUxDRk5Fdm1SNDJFaGd6MTJVN3NINUwxZEZZSHFDLXJSaVdhOUFCODB5LTFaMnhjTlZaUDVLSFk4SHJ0S3ZtSmxpQWkydnJHenFDQUprRF9qQmJkTGN1anpnaURjUXZ6SnNfRjRORjFMNEJqekZIRWhNbkhZYkRIaFVMb0tFWnlaX00yNUVKd2hlT3Zjc0lpeVlVUUZhOGZKbi1UdGNWa0hfcWtPVDE?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T07:12:30+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Wendel – Rebond de l’ANR au troisième trimestre - News Asset Pro",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQLWlYMDg1MjhmaE85aURKekpVTDNxaDc5dDJuY3BINXFXaTJmTGJwdHdRQ0RDc3dwcjNpZ1BSRGo2UGlwd2xCN1I0QTdVSFhPRlg4V2xjOXcweTZiTTNQOVRxdEd0QXN1VTdZYTkxOC1TTEx0c0hmZTZRdUplcmJvLXEzMWlnLTMyd1Zj?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T09:45:00+00:00",
+     "media": "News Asset Pro"
+    },
+    {
+     "titre": "Wendel : l'ANR progresse de 5,1 % au troisième trimestre, à 167 € par action - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNG1WLVpvWnBVYm9aSjM1dzZlS21lXzBoNkI3ckZ1S0ExbnZIWXZnSlpEanF5c2RHY3VOcUpDUVM1VDNzZGNBT2xyeVF2UW5MWnNCb1hnYjVNRDFLV2VNTWxfOTVhOUMyQ29rcUFqdUk2aHM4eFBKT2I4aW5ZZGVCR3FwUlJLZFpTWW5GaFdaMUdnWExJVkF1YnQwS1JUTmg0Z1J5aFdUSVNhUksyRUtMQlBYNUNPV3J6Z2h1Y0dNZw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T07:32:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "Wendel : valeur des participations en hausse au 3e trimestre, objectifs confirmés pour 2026 - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42Q04ySkNPbFFmLTQwelRQMnZ2S1luMmY5LThfYjk3LThVbUY5TEZMMDgzUXRnb09LQ2dFdzFGZmFyakItN3NqM3FiOENnLTR3RmxwVDhCbHI4NFVtaUJFZnZB?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T07:11:55+00:00",
+     "media": "TradingView"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T11:23:50+00:00"
   },
   {
    "id": "presse-79c72c5695c446f5",
@@ -7000,6 +7055,42 @@
    "date": "2027-02-11",
    "heure": "",
    "type": "resultats",
+   "titre": "Hermès : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "RMS.PA"
+   ],
+   "tickers_mots_cles": [
+    "RMS.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/RMS.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-11",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Ipsen : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "IPN.PA"
+   ],
+   "tickers_mots_cles": [
+    "IPN.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/IPN.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-11",
+   "heure": "",
+   "type": "resultats",
    "titre": "Rexel : publication de résultats (date estimée d'après l'an dernier)",
    "tickers": [
     "RXL.PA"
@@ -7012,6 +7103,24 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/RXL.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-12",
+   "heure": "",
+   "type": "resultats",
+   "titre": "L'Oréal : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "OR.PA"
+   ],
+   "tickers_mots_cles": [
+    "OR.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/OR.PA",
    "fiable": false
   },
   {
