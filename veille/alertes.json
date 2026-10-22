@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-21T11:23:11+00:00",
+ "genere_le": "2026-10-22T06:23:22+00:00",
  "sources": {
   "amf": {
    "ok": false,
@@ -8,13 +8,13 @@
   },
   "presse": {
    "ok": true,
-   "trouves": 329,
-   "nouveaux": 186
+   "trouves": 452,
+   "nouveaux": 255
   },
   "assemblee": {
    "ok": true,
-   "trouves": 37,
-   "nouveaux": 0
+   "trouves": 214,
+   "nouveaux": 139
   },
   "agenda": {
    "ok": true,
@@ -22,10 +22,699 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 109
+   "trouves": 102
   }
  },
  "alertes": [
+  {
+   "id": "presse-67b00f8c713fb0bf",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Thales : prévisions de ventes relevées après des neuf mois supérieurs aux attentes",
+   "resume": "Thales publie 16,4 Md€ de chiffre d'affaires sur neuf mois (+7,6 %) et relève ses prévisions de ventes annuelles, selon la presse financière.",
+   "nouveaute": "Chiffre d'affaires à neuf mois publié ce matin, au-dessus des attentes, avec prévisions de ventes relevées.",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbm0xXzFrblNKdDNfQjQ2Nm1hbE1kQUJpUVFmV3dDallKQ2xkVlBKTTNxdHZaa1Z5NERXbkN4cUg1dUlhUDhfR1JGWVlJQ2lSUmNPRkxzeUxtbGVhQ1VVdmFCTWtxUm52NnpKR1lJQlJMMmhBZ3ktX0FaVXNSWlVxNWZpajBVREJjZzc3aVp5c2YzVjMwSkJ5b3NmZFlIYk9LYnFLaGY2OHFuN01pRjNnVVZ4dHlJLXBhRzk2aXFJNXJTZUtKanV1cWNvTUtOQU05MnZYRWYzMUY?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "HO.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Prévisions de ventes relevées et neuf mois au-dessus des attentes, portés par les dépenses d'armement.",
+     "extrait": "Thales relève ses prévisions de ventes après des résultats à neuf mois supérieurs aux attentes",
+     "nom": "Thales"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Thales relève ses prévisions de ventes après des résultats à neuf mois supérieurs aux attentes - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPbm0xXzFrblNKdDNfQjQ2Nm1hbE1kQUJpUVFmV3dDallKQ2xkVlBKTTNxdHZaa1Z5NERXbkN4cUg1dUlhUDhfR1JGWVlJQ2lSUmNPRkxzeUxtbGVhQ1VVdmFCTWtxUm52NnpKR1lJQlJMMmhBZ3ktX0FaVXNSWlVxNWZpajBVREJjZzc3aVp5c2YzVjMwSkJ5b3NmZFlIYk9LYnFLaGY2OHFuN01pRjNnVVZ4dHlJLXBhRzk2aXFJNXJTZUtKanV1cWNvTUtOQU05MnZYRWYzMUY?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:29:00+00:00",
+     "media": "Investing.com France"
+    },
+    {
+     "titre": "Le français Thales fait état d’une hausse de 8 % de ses ventes sur 9 mois, portée par les dépenses d’armement - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZ3p6Q1MyNUNZZVBKdlhwLXpsbnZuZzd1RjhWTGNITlVnaDdpSUthdDdZMHF3TmV4LXEwSUlCR09yREFtZlhzVVdSRmZ1dXNKZEdYalV1bVJ0YlBjWjdvUzJhZkNyS0NiV19JRkozTUhpY0ZRcFYxVTlwOE4yNXJvVzVMamVjY3BoSV9USk5Hb1pZWUtOM3lTeFkyN3RQNHdkY0hVcWJGRm81QVlrWm9MVmxWWGc0ZC1aS2R6WTBQTWtWRU1FTlVUeXg5OEZGRlZzZndRUTd3b0JoN3FqY3Z5dXdPOXowS0JLSzBUa3Jn?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:07:40+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "Thales-Ventes en hausse de 8% sur les trois premiers trimestres, portées par la défense - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSGNna0wyc0ZTMU5nZGdua2o5YlJLQl9wVkkxWGh5ODZWcVFCZVJ2ZU1LY3hLTFJyVlZHSXFMcEkyRFNoZi1fOWM4UnBIeHB2YjRWdXVBTjVjYV92R0Jxd1R2VHA3bV9jYnhkTWZrdHd0bE9KX3NfUFRHaWdrOU94R2tSeWxLQWVVSExTOFZJRTVyU0QzYy01aW1LTUx1eHVBdjhoSW1Ka3hqS2ZsSW1aX0dLYWc5RkV6dWFZMFBIVGpZT1lob05zRWF3dTBINGp2SURYeGt6LTc1cE9ORFE?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:06:46+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Thales : chiffre d'affaires de 16,4 milliards d'euros sur neuf mois, +7,6% sur un an - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDgzMEhIS2FTaTlIbmNOSFYybWl1WjctN3lWNUppa01WNHpsRTAyYzlZWmtnZ2pwZHpUcHA4emY4Tkdta0x4V2ZXeXRBNlJaSS1YSnJSU085d21pbGNEUGVjNFhSZHVST01aWHRGem9DV2FvaDFrNmRuRmtMXzFTNkZ4MWNMZW1WQnB5ODNQU1FnSnhSajBKZE1SNDk4Tzk4WEQ4RU80WW1uZkd4ckdSc1RMVERoeTJyZHkxQUdlMl91RW41S3oxM0ZXVmswNnFlTk1rZkpB?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:05:09+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-59fed264ec8b837f",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Ipsen : objectifs 2026 relevés une seconde fois après un T3 en forte hausse",
+   "resume": "Ipsen relève pour la deuxième fois consécutive ses objectifs 2026 après un bond de son chiffre d'affaires au troisième trimestre.",
+   "nouveaute": "Deuxième relèvement des objectifs annuels, publié ce matin avec le chiffre d'affaires du T3.",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNXRtWFhUckNXWHpmaksyUmo1MXNwV1pvY2l6OUswVUVvOW1VMk1qVEtVX3M3UEpteGVEWVhLdDdnbzdieFlqSU9NOHdVWko4YTdrVlFVc2pXYXItUzZtUC1EWlItc1d5N2cyeG1YR3JzNlc1Nklpdnc1Uks5R2k0WE1lTnVFT3I3UF9aMEk1SGxLQXJkaE5CTHJCb2ZWcTd2NENncFBmV1NHOWZXeldTTEdPcmNyM2hfeUtDZXI0ZXhvUFhRWHJLdlJR0gHPAUFVX3lxTE9yTnUxMHpmMjlVUnV6a2dJWnVHN2xEOWFjOUVReU9wbFU2RWxFZ0tzWE0tVk5RbTFDSGtTSE1Xb284N0JWd2h5YjQ1aVM5Nkg3U3pxcFNyNTZ3YnVIRUNSQ0tkeGU5S2RnbDBKWkdWNkR6ME5xSWVJOVVLY3pLYUFDZUhWcjE3U21Ec2JZWll4dkEzUVNHQzVtTzJaNjBLZ1FkdEZQdjVKalYxTHVRTklnWjNUeVltbXhjeTQzekV1VFViOFVXTkpmS1JtV2xJVQ?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "IPN.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Objectifs relevés pour la seconde fois ;.",
+     "extrait": "Ipsen relève ses objectifs après un bond du CA au T3",
+     "nom": "Ipsen"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Ipsen relève ses objectifs après un bond du CA au T3 - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNXRtWFhUckNXWHpmaksyUmo1MXNwV1pvY2l6OUswVUVvOW1VMk1qVEtVX3M3UEpteGVEWVhLdDdnbzdieFlqSU9NOHdVWko4YTdrVlFVc2pXYXItUzZtUC1EWlItc1d5N2cyeG1YR3JzNlc1Nklpdnc1Uks5R2k0WE1lTnVFT3I3UF9aMEk1SGxLQXJkaE5CTHJCb2ZWcTd2NENncFBmV1NHOWZXeldTTEdPcmNyM2hfeUtDZXI0ZXhvUFhRWHJLdlJR0gHPAUFVX3lxTE9yTnUxMHpmMjlVUnV6a2dJWnVHN2xEOWFjOUVReU9wbFU2RWxFZ0tzWE0tVk5RbTFDSGtTSE1Xb284N0JWd2h5YjQ1aVM5Nkg3U3pxcFNyNTZ3YnVIRUNSQ0tkeGU5S2RnbDBKWkdWNkR6ME5xSWVJOVVLY3pLYUFDZUhWcjE3U21Ec2JZWll4dkEzUVNHQzVtTzJaNjBLZ1FkdEZQdjVKalYxTHVRTklnWjNUeVltbXhjeTQzekV1VFViOFVXTkpmS1JtV2xJVQ?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:14:32+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Ipsen : relève encore sa guidance annuelle - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR2tjNjY2YVgwNjNRVlZRdUQyNVZyWGFMeWt3d1pEbF91SUxqWjlTR2JFdVFTV0R1VXcxc2pfb2hXWkZlMlRETjhEbFFnbHBnTDZ5YUNMQVNzd1AxclVwUEkzMTZfTDAxMFJta1VKN0UxNXZzV2hOU1VjOHFxWUt2c1ltNGlFSGxEa0RCT1pWUTFLYlN6eXV6NE1tS3BaZlJiRktJ?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:10:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Ipsen relève à nouveau ses objectifs pour 2026 - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUHp1SEFmUDRLWVdRcDQxNl9TR1BKSUFnME5CWml5TmtEbWRDUEhNUkQ1ZldLeG1HaTFIQkFsckNQRXdEOU1BU3Bidkx2R2V1WmZ5TG1ZVGdWbDhWakNrWjZVb25hUmh3empjeGtrY0lmWXFvc0doMlAxNm8xdVFnM3hUbVBWWGlXaDF6T2tNbm9waWpWNEhhaExicWFlSnRaZ0RTOGtFRGw0Zw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:45:22+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Pharmacie: Ipsen relève pour la 2e fois consécutive ses objectifs 2026 - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVWZod2ZYR3pIalZ5eFp6eEdrQzZYTGxZSVpPMjNLWmpyZFo2N1l1UHdmN3JIaDdtZWhRUWpwVUZGMXR5cWMyeElaVUVlM0doNWVGc0ZpbktQcUJZbU1RN3FCMjFTMGYtUk1pY2VTTTdWdkxqbFptczgzcld5Z2M2OXJzTWFXelgzck1oSC1EdzBPTVlycnFZZjV6OFZxeXZxVktRajBVNEVqMy1uZnBFRmhEYWliZmRQS3hJRS10a29weWVvZWtWR2xYRV9zNTJXVjZSbjhqZzdVZjEzRGRYNdIB5gFBVV95cUxQUFRSSVdodm9adW41LVlIM3hKekVaME5aZl94RUdBS19QVjgwS3hkMXhoNXBQVnBiV1ZPZGpfRHlOUk1wZjBGdFFuQUpaVFdwRWRlenM1OXJGYUhoeDB3c2VTeUZ2bUJFU1Y0OHZTSjBWTTVJMm5IUHVmQUUtZGNzaExjeFlDckI4Q085TDRNYUFXN1VybTVXdnBLaTc3ZUtVZkFweU1uMk96LVFzOXVrczBBZDk1eHVKVUFaZk1KdFBTTFNhWk50WDFpQXdhM2RJbVZyd0JFUHNtZFViLXhhUkZ0bU1FQQ?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:37:50+00:00",
+     "media": "Boursorama"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-981e9efd342bb774",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Nexans : T3 au-dessus des attentes, objectifs 2026 confirmés",
+   "resume": "Nexans publie un chiffre d'affaires standard en hausse de 10 % sur neuf mois (+3,9 % en organique), porté par les réseaux électriques et les centres de données, et confirme ses objectifs 2026.",
+   "nouveaute": "Chiffres des neuf mois publiés ce matin, au-dessus des attentes selon ABC Bourse.",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdjBHNVBrTWgyS2hpamJuWTV4WkJWTlJPaDNsM1g0dlByUXpLaGxsb2tfYUJEYlFlblhxdUJXMEYtQlN4amItU0lDeHlzMEFFel81Y0ZJMlBTQ3dtZTcyQVlJN3ZkdnFwZzkxaHh1azNjZGYzWUZ6dmg2Q0JCZGp1ek9fa1NfeXlHbHc2d0p3LU9YV0xnNUJLT2ZDUk1aUzJZSkdHWDhnRjc4MUM3Tmpz?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "NEX.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Trimestre au-dessus des attentes mais objectifs seulement confirmés.",
+     "extrait": "Nexans dépasse les attentes au T3 et confirme ses objectifs pour 2026",
+     "nom": "Nexans"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Nexans dépasse les attentes au T3 et confirme ses objectifs pour 2026 - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdjBHNVBrTWgyS2hpamJuWTV4WkJWTlJPaDNsM1g0dlByUXpLaGxsb2tfYUJEYlFlblhxdUJXMEYtQlN4amItU0lDeHlzMEFFel81Y0ZJMlBTQ3dtZTcyQVlJN3ZkdnFwZzkxaHh1azNjZGYzWUZ6dmg2Q0JCZGp1ek9fa1NfeXlHbHc2d0p3LU9YV0xnNUJLT2ZDUk1aUzJZSkdHWDhnRjc4MUM3Tmpz?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:05:54+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Nexans-Hausse organique du CA à neuf mois de 3,9%, objectifs confirmés - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWHd2RGQ2UF9SZk9JR1NTSGtvVUY4OEhfWl9TV0NVdzdqd2dvWlo3WU02cXNfRmYwN19iN3V6Y1hST19KME5pMFhPOE5HeUN2VG9UQU1SVFc2a2Y2UlphblRpdmZoWEJHQUREbEJRdXcxMHdoYTRHNEh2QjhkN0JzMkNubnlkdW4zQkNYVnZaNm1XOU1GNGVLR3Fnb0ZXTXp0MG9NN3VJQjZwVGlid0xRTi1FZjZRaDhtRWZaM1lCbGk1d09WUER2MkNhZWpwb1N0cWNvc0pXckMtODhiUTc00gHkAUFVX3lxTE50SXJlaU94RnJGVjBjTE94OFRHc2tQYzBQaEtDUkotSjZ4aFBYbENnNkZYb25yWUlTbHlNYmJ0NGRQMm5UM05HcVJFU3hpVnVEMXZyS2luY3dqVmZUVE91bmVCOU1NbG8zbGh5ZnJheHRfbDNucVhWTWZHbEdvZXkweDFOMVZUZDVsSnlMakZNTlF4REZFY19naGVReXZyeVZqOVBibkgyamNyeGliRF9ad0ZBT194THROY1JsU2FrSk9LdWlNTkJYLUNVTWU4cWlRdXhYZ1NMT1dFSm9Tc1pkSHBjOQ?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:09:36+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Nexans augmente de 10% son CA standard sur neuf mois - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdzBmTkxjSnlneGtGUTFNNjRjT3FqR3pHUTZPVG9BUmVIdmQxdl85MVE3enAzOExYYmlHLXhvb29ueVNvUFhnbFVoc0FBdHFxMElDMmZMYThjVHhJWEs3ZHhkZG91MWFPZm1JdmlkNXZWSHo5Wms4X3E0MTAteEtqTm9IazhvbDJxelZjSC12cVVmRFdfMGtEM3Blc1RTdS0tZndwUkYxUkRDakNZNUJabw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:02:27+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Les ventes de Nexans progressent au T3, portées par la demande des réseaux électriques et des centres de données ; le groupe confirme ses perspectives - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPa0dIQko0dTV0eUNSQkp5dEFCNUVTZmM4VTk5UlEwYkZHNmdLMFRTSkl2MEJUMmZCZWcydHliclJYOXZJWmxPZXVHTzhBcGdscVhqRGE3NkFmcUNsNU9LMy1wXzNQN2tVenlUS0xjNGR3Z2R6Z1ZrNS1paldsTjJSWF9mSDVBcUVhb3E0QWFIczhFQlFKRHlmVzlWb3VPTXlJTkN0M2pObUFsVWgzSlgzc0p2SDNQWmZKT3E0S0pyWEFLdHowUUJ3cVRpZGcta3gyQVZaeHRJRzVmWUk5VVdYYTJ0TmVCVHVaeGp0cG9iVkY?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:38:06+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-61abbf8685d92994",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Hermès : croissance organique de 4,3 % au T3, ralentissement et prêt-à-porter en recul",
+   "resume": "Hermès publie une croissance organique de 4,3 % au troisième trimestre, pénalisée par la Chine ; le prêt-à-porter recule. Consensus du chiffre d'affaires non disponible ici.",
+   "nouveaute": "Ventes du T3 publiées ce matin : net ralentissement par rapport au rythme précédent.",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUDdaQUVMcGpiWXVRaVpWc0VaVkNWd2ZBckV4dFc4Tnh3eTlsQ2pMWEZ3NHhVZHRkZUhYNm93SDdGN1pGdGs5Zm1ZZmJXZG1WWW9hbWZwN3RqLS1SMG5WNmczQjZFTFJQT2EwSU9zbEpfUGhrN01FSmZ1SHhNaF9mbzUxMW14bnRqOG94QVJ3azQ0d1JMeE1IdmVoVl9haWhrNVlSRFNTTW14RXBjal9WOVJiZkpFbUVBUk5IZmxOeU5zUzNzOTFQSy1RMnVWaTlBNzNkOW5YTzJZUzQ?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "RMS.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Ralentissement marqué de la croissance organique avec la Chine en cause ; écart au consensus non vérifié, sens à confirmer à l'ouverture.",
+     "extrait": "Hermès : croissance organique de 4,3% au 3e trimestre sur un an, pénalisée par la Chine",
+     "nom": "Hermès"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Hermès : croissance organique de 4,3% au 3e trimestre sur un an, pénalisée par la Chine - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUDdaQUVMcGpiWXVRaVpWc0VaVkNWd2ZBckV4dFc4Tnh3eTlsQ2pMWEZ3NHhVZHRkZUhYNm93SDdGN1pGdGs5Zm1ZZmJXZG1WWW9hbWZwN3RqLS1SMG5WNmczQjZFTFJQT2EwSU9zbEpfUGhrN01FSmZ1SHhNaF9mbzUxMW14bnRqOG94QVJ3azQ0d1JMeE1IdmVoVl9haWhrNVlSRFNTTW14RXBjal9WOVJiZkpFbUVBUk5IZmxOeU5zUzNzOTFQSy1RMnVWaTlBNzNkOW5YTzJZUzQ?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:07:27+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Hermès-La croissance ralentit au T3, le prêt-à-porter passe dans le rouge - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWmN5TU16bXB3djd0TXdOSEJ0M3QyWUJ4azdtbktNcnZ6UDFHQ1VjSzYwV3k5SDIxSmF0ZlBCOW8zdTB6ZDg2bG14Sk5RWHUtQ1VVQjNyQnJtZzA5MkpwUmJmWUpwMi1LLTJ3Q1poQ0NDSDVQby1aNnpYUElJYWVkZU92d3V4UnZXSEV1SDE5TlRnRWt2Yk1YRFNUdjZDVjNPTnprVGZSZVJEb3VHdFMtZzN3X1UxLTMzb2dSRUFFZDZ3ZlhSZVlCTTRENXA?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:08:25+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Hermès-La croissance ralentit au T3, le prêt-à-porter passe dans le rouge - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQndOTUNmWU9HQmV5V29JMjRUcVBXNmpUS3c4bjA4VTlCWmpuMVRocXhyTU9pY2FuV3RWNklvZGpxWk12c25NZFgtdkk5dFNjU2RtbUtLb2NqeWlIaFhqVExrWHQzT19zMVFWN0M3ek85MTlqS3paVWJrdEZBUllHY2R0MmtHRXZ0Z2J6SDNPRXpkSzRvQnZHblJTazdDeW5JMjd1RENuY3RVekxKeTRVWC1rRTdwenlrYkZXcGZOcG9Fb1BIbVVSX0pIQm1sYmxjVV9HcDc3bUpTNFBNdk9BekdqeHPSAeoBQVVfeXFMUEVmUnNOZU16OXJrM1kxX1U5Rnh3Z3JBdWVFNlNteEM5NGgzLTFWQzBmUHNMZGxvTWtWbFhhaVNtY0xOemhDaHR2UEZoWDRrV0lBNE5KOXhZS1RiZVNjWEdLSVVyQ2xlTTVRNGE3bWNlOWJwWWxzWVBQWWhTY0h4Q0s5SDUtMTI2cGVEeW1qTWM2M0pDQU82RUdkMjNKamZ6SG93STE1ckZnY3ROWHdNcTQ1ZG9xMnNRbXphUmUyelR5LWVZSlg1bnNNd05CUUUxODRmdE1HMVVjVklHdzZUaGRmNlA1TTNkQ25B?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:04:45+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Hermès International : Chiffre d'affaires du 3ème trimestre 2026 - Le Soleil",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZmJmQTE5ejhVUGwtMDU0VHRBSzJuLWJYVVBlVHoxQzZBYXZEYmNldzhfTWpTOTN4LXRPZlNFbG1OVldFWmluWExzX0RqOWI4by1JekkzbWxERXZUZUxEa3BFVlpEcV9KU1pzd0FpakZJUkZQUDd4SUxZZnlMR3JpeVYyY25SdzY5ZHR4bFJBR1gxVkhGZ0FETVdDc1BpVDJwajBhTnBDTWlTUlVRWURqUk1ZQkdOYW1kM0ZFaHJZUEpJRlIzdGZJUUZTOFNQZktzTjJHejdUenFZQmw4ZW9INw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:00:13+00:00",
+     "media": "Le Soleil"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-a532995ac5b2482c",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Getlink : chiffre d'affaires T3 +10 % à 521 M€, objectif d'Ebitda 2026 confirmé",
+   "resume": "Getlink affiche 521 M€ de chiffre d'affaires au T3 2026 (+10 %) et confirme son objectif d'Ebitda 2026.",
+   "nouveaute": "Chiffre d'affaires du T3 publié ce matin avec objectif confirmé.",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSGJOM3dVam5uVVJrQ2xYUnp3OFVKQ3pITERCRk1FbERWTUFsRHRoeWlSdElHU0YxYlRyaFowZDlhVHlMdk1FdVFIaTRnSW1EVWlfS3NLSGZ0X05FcWV2Z19pTzRJc04zUDhlQjFadVlXa1NCVzVqa1JRaE95NGxrWEZ0b2ZEYUdpZVdhN0ZTbjgzWFdMNzFUT29hU0Y3RlJCR3FNN2p1a25WNXZxbHlkcEhFQkl0YXZ5OHVteTcxUUhVZw?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "GET.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Croissance de 10 % mais objectif seulement confirmé ; consensus non vérifié.",
+     "extrait": "Getlink affiche 521 millions d’euros de chiffre d’affaires au T3 2026 et confirme son objectif d’EBITDA 2026",
+     "nom": "Getlink"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Getlink-Hausse de 10% du CA au T3, objectif d'Ebitda 2026 confirmé - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSGJOM3dVam5uVVJrQ2xYUnp3OFVKQ3pITERCRk1FbERWTUFsRHRoeWlSdElHU0YxYlRyaFowZDlhVHlMdk1FdVFIaTRnSW1EVWlfS3NLSGZ0X05FcWV2Z19pTzRJc04zUDhlQjFadVlXa1NCVzVqa1JRaE95NGxrWEZ0b2ZEYUdpZVdhN0ZTbjgzWFdMNzFUT29hU0Y3RlJCR3FNN2p1a25WNXZxbHlkcEhFQkl0YXZ5OHVteTcxUUhVZw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:55:40+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Getlink-Hausse de 10% du CA au T3, objectif d'Ebitda 2026 confirmé - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZU0zd2ZYdDVsRkR6VEFFdmMzRklBSTRBUEI3Vlh0MlVFdUd6Wlp0YWZsbzJ6RUtnNE1ndmY5OUdvTEcyWXhHdm96b2FxSWkxamVDRDUyRDNFazZFbGN4ZEdFejZaY3BDdGxJNm5jTjU2N3RfNDJFR0xqaDNKX2lEWWFNWjlNbVh5MjhJZVJCZE9WaEllZFNmaEI1bjBaUVE3NHVWdENKRUtFYXdMVnVSSk9Fd2l0Mk0wWmRmbWRYQm9xRWlPd3d1WVJhVmI0WkR6MC1aM0JYUkZ1Zw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:52:59+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Getlink affiche 521 millions d’euros de chiffre d’affaires au T3 2026 et confirme son objectif d’EBITDA 2026 - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbnVib0d1RHUwVEJOM1JGc2hEZXpqM01tbzl1Ny1kNTdwb1hQRHBSaTk4QmticzBndzNOdWFhdGRRUi1NZHBOTVlDMjJhWVBGcnF0a0FYUzRlNWI0ZjBOYlhyOGRkb2tVTjZxWWdNNV9vZVYyUHBKMFZEWGNpOThrS1QxSU5XTk1McHNsd3F5dW5yZVN1YldDYTVWb2dxZ2dRc1Jib2l3SzlaZ1h1bDlWVDV1blgyYkx0M1FV?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:45:03+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Getlink confirme son objectif d'Ebitda pour 2026 après une hausse de ses ventes au 3e trimestre - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOLVFtcUZPejcyMXNzeVA4dEljVzJWSW1WSVBDZm01aVMtdzNPY1RjcVNoemwtTVI3cV9lU2pBYWJNSlZTa015U1Vpa1RBM3ZfYm9XcXdKcUpNdEZpcGlpUnRIem1EYWJuS2VHMy1fbk10ekc0dmdrdm53X254bFhnRzZTcVhiWFhoYXpnUDB6dG1qVXRPODdfQVlBS0kyLVp4RG5JNmN0Uk5fMnRzMGl3WFFSMzhRWW1jaWZKcWpOeGdhQkZGajg4Q0tQdG1VNmtMTWdBRGJDOHd4ZDRqUFNQWmtoNlRCa0s5NkZr?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:41:23+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-8c0895eb6c3d0133",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Sartorius Stedim Biotech : objectifs ajustés face aux droits de douane, perspectives globalement confirmées",
+   "resume": "Sartorius Stedim Biotech ajuste ses objectifs pour tenir compte des droits de douane, tout en confirmant ses perspectives selon la presse.",
+   "nouveaute": "Chiffres des neuf mois publiés avec ajustement des objectifs lié aux droits de douane.",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPME81UXljMlU4aktKc1VBRUt4ZWd3Zm4xMXZMZ3paT09rWkJDMTJxZ1VVOWVkTzI1YUFXZjZLeU0wZWRQdEpxTGRvQXZCWHMyaE5hSmhLTHExcjNlTEtpeEp5YlZHd0JPWHNIX1hSM2RGTWZNTUkxdjNxajBzX0xibUNPN2ZQNUtGOXNkWFVMVWpoYnltR0N1NTRtZkpabTFuOWRzdnhQVWxyVjZGVnBmbmI4b2VwSm10dWdVb2pMcVZ1UDh4MU9nbnZJVUFUb0Jfeklld1lrMEJSeVlGaHFES3ZMVdIB6AFBVV95cUxOUWZXNDFNQ2hSeVdBMlp6ZXlHUHEwc1VqQ3FUSnVCY21CTVpfRFBkZTlkQWFtb0VjQ2VFa0FLZUJJaFk2dnJ2X0dSaTNSbGlFdTlaby1fYUpZOW5pRDBub193bjdYOTI3ZVNGOXFJaGpYeEN5TjRnUlNaNnBoQTZwWHhWS2xLWU11bDhTeUUzVjFIam9TUnlyZFlIeWhCb19nU0dGNVBwdk84UXJ1bjA5aWdPVFBXTXFtSUduUVBXTnNMWFlsMTc3bTZCTEdPdnZiNlRpQ1BZbWZzVWJ3NFJqbVgzZGN3cm1r?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "DIM.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Ajustement des objectifs lié aux droits de douane, ampleur non précisée dans les titres consultés.",
+     "extrait": "Sartorius Stedim Biotech ajuste ses objectifs face aux droits de douane",
+     "nom": "Sartorius Stedim Biotech"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Sartorius Stedim Biotech ajuste ses objectifs face aux droits de douane - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPME81UXljMlU4aktKc1VBRUt4ZWd3Zm4xMXZMZ3paT09rWkJDMTJxZ1VVOWVkTzI1YUFXZjZLeU0wZWRQdEpxTGRvQXZCWHMyaE5hSmhLTHExcjNlTEtpeEp5YlZHd0JPWHNIX1hSM2RGTWZNTUkxdjNxajBzX0xibUNPN2ZQNUtGOXNkWFVMVWpoYnltR0N1NTRtZkpabTFuOWRzdnhQVWxyVjZGVnBmbmI4b2VwSm10dWdVb2pMcVZ1UDh4MU9nbnZJVUFUb0Jfeklld1lrMEJSeVlGaHFES3ZMVdIB6AFBVV95cUxOUWZXNDFNQ2hSeVdBMlp6ZXlHUHEwc1VqQ3FUSnVCY21CTVpfRFBkZTlkQWFtb0VjQ2VFa0FLZUJJaFk2dnJ2X0dSaTNSbGlFdTlaby1fYUpZOW5pRDBub193bjdYOTI3ZVNGOXFJaGpYeEN5TjRnUlNaNnBoQTZwWHhWS2xLWU11bDhTeUUzVjFIam9TUnlyZFlIeWhCb19nU0dGNVBwdk84UXJ1bjA5aWdPVFBXTXFtSUduUVBXTnNMWFlsMTc3bTZCTEdPdnZiNlRpQ1BZbWZzVWJ3NFJqbVgzZGN3cm1r?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:34:19+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Sartorius Stedim Biotech confirme ses perspectives - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYTZvOTB3V2h6eWRfb0hLNmUydHdHSUpCaWdIOW1qYlNDNU9TUUlPSmRoblhYZGt5Y0ZlalFnSWktX2VDV0ptRlBMdGtiZXl0N2dINDNUQnFwd3B5aTZqRHMtaXJ5ckR5VHgtdUlhVjRRa1N1dFdBSVhyN2FHLUJ4QXpFMmJZRUlvN0ZPQ2lsVGJqUy1Tc3dtMXYtbmkxMnVhT0FEVkVFb1p2NHZTMWZFag?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:10:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Sartorius Stedim Biotech ajuste ses objectifs face aux droits de douane - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBJbml0Y0Y2aWswREdDVlJrX19xQ0Z5a2EyakpsYUdBUk5xWmZZblUzdnc5ZjNZNHIwSGtJOWM0amlfOU9QUWF1ajRmejBXWEYzWG1pVXRTNVpJdW41dV95aFZhTEExVUFkR2JPOVpUcEVwcXJpcmpN?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T22:34:00+00:00",
+     "media": "TradingView"
+    },
+    {
+     "titre": "Sartorius Stedim Biotech enregistre une forte croissance opérationnelle et une rentabilité robuste - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBtTmFoWktoYnJmUEp6MGRUZG9SSWx4SXZxTnpWTExQSll2ZW9tc0N0RHQwMmVETEU0WnJHcGt3bFY3b1hBcEotSEYyckdhR2VXakFzRHh5b2dxMkc1YWxSRWl3?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T22:00:00+00:00",
+     "media": "TradingView"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-cb1ca902a2e8cda5",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Maurel & Prom : chiffre d'affaires consolidé en hausse de 17 % sur neuf mois",
+   "resume": "Maurel & Prom publie un chiffre d'affaires consolidé en hausse de 17 % sur neuf mois 2026.",
+   "nouveaute": "Activité des neuf mois publiée ce matin.",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdVBjYmdMVzE5Nl9wa0pmM1A5RjRCaDJQVW8xX0kyazRpWHUxcFRTY2FTYUZvR1Zhc055Rkg2cGhUNm1IajZRT1NHcGlpdzBOYUMyM3Q5SUJoclZ2NzV4b0F6R3RNOF9OX3RPMzlZci1aWUlYY3lOTmY2MzRxdEJDXzNYZHppaGgwM3YzXy1qQk8xLUJBX0x1alp5MlQ0dUU1eVMyalRqQmdScGNvOWJfenBPcUwteHI0MUZ3QmI3LU5FNXdhanB2Qk4xNjJIODRNVmNtQ0Y1TdIB3AFBVV95cUxQRi1PUzlldURycHlKY2xhMGxDTXA3eEhiWG4yNFBjc204QnJGMWxuWERvYzF1SW9McHBRLWZrZnNiR3k1dkFmLTF2aGR0RUtkakR6MHNNNFlWOFdqSkstWFgzdGhYenBsenAyVFhFbzlwU04xVDhBcl9iNk5HNXVHRVlwQ0tSZkRwZHpFQkJNZ2c1UTlFWGFaVjhLMEVJVW5qYmVPUGttNENweEw5a3hJWFBLcDB5Ym85Snc5TlZfaWY1XzFXOHRNRTFVblExZ01WRGo3b0RROUVXenV5?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "MAU.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Hausse de 17 % du chiffre d'affaires à neuf mois ; consensus non vérifié.",
+     "extrait": "Le CA consolidé à neuf mois grimpe de 17% sur un an",
+     "nom": "Maurel & Prom"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Maurel & Prom-Le CA consolidé à neuf mois grimpe de 17% sur un an - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdVBjYmdMVzE5Nl9wa0pmM1A5RjRCaDJQVW8xX0kyazRpWHUxcFRTY2FTYUZvR1Zhc055Rkg2cGhUNm1IajZRT1NHcGlpdzBOYUMyM3Q5SUJoclZ2NzV4b0F6R3RNOF9OX3RPMzlZci1aWUlYY3lOTmY2MzRxdEJDXzNYZHppaGgwM3YzXy1qQk8xLUJBX0x1alp5MlQ0dUU1eVMyalRqQmdScGNvOWJfenBPcUwteHI0MUZ3QmI3LU5FNXdhanB2Qk4xNjJIODRNVmNtQ0Y1TdIB3AFBVV95cUxQRi1PUzlldURycHlKY2xhMGxDTXA3eEhiWG4yNFBjc204QnJGMWxuWERvYzF1SW9McHBRLWZrZnNiR3k1dkFmLTF2aGR0RUtkakR6MHNNNFlWOFdqSkstWFgzdGhYenBsenAyVFhFbzlwU04xVDhBcl9iNk5HNXVHRVlwQ0tSZkRwZHpFQkJNZ2c1UTlFWGFaVjhLMEVJVW5qYmVPUGttNENweEw5a3hJWFBLcDB5Ym85Snc5TlZfaWY1XzFXOHRNRTFVblExZ01WRGo3b0RROUVXenV5?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:46:39+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Maurel & Prom - Activité 9 mois 2026 - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYm0tMEthTGQwUk5PeUg2Z1ZnUW1zc2NLTmhqTE5OdGFJekZmaHgwMVZIVl82LWdfZDhTa0JMeTFxM1NxZmpUcVhRWjg3QnlXNXo2dkJFdmw3LUlBNDhTNy1DUTF1TWR1Y09EQ21hbWJTanBWLWt5TTFhbFUxenM0eDNXMTd0WmlwRGo5eF85WVI2Wm9fUjBHcjZWQlZNY2tYOFN1ZGRJb2FJQlg1YnR30gG0AUFVX3lxTE1kX2Q0bl9KY2hhMGI2NHFRYk5lTnV3VC1fZXIzdTFnRDFRdkk1Yks4NU5LeXFoUTVWU3FpOWNMWEREN2ZIVnd4SV9qc1kzRjRpRDhEMU54dmM2MmxGUTdXaHRHMGhUckdWYkRDeXE4VHFxdEZPYWI3NFN3VTVPRDdlckNDTHltWUwxU0kxMUtnUEZwVlczc1JRaVRTUk5Id1daTFFfcmhJc2Q0cC1HTzhPUEU5Ng?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:52:00+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Maurel & Prom-Le CA consolidé à neuf mois grimpe de 17% sur un an - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9GelhNNGV3eGNOQUVWb2NtR0o5RWplQ3VFNDJuUzNma0tvazVnSkJSOWdrNDZpQlRCdTZNWGdlNWpSaDNBcXh2Znk0eFFqX3lFNGhZaXQ2NnpSZzdMekFVSVdqZlQ2YlhDN29aZzZwY1hleUVKa05F?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T22:46:00+00:00",
+     "media": "TradingView"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-b33cab0fd48b2d2f",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Orange : la panne nationale attribuée à un équipement du cœur de réseau mobile",
+   "resume": "Orange attribue sa panne mobile nationale à un équipement de son cœur de réseau ; la question des remboursements aux clients est posée.",
+   "nouveaute": "Cause officielle de la panne donnée ce matin par Orange.",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNYmlvazFaMnpWVlFpNmlCMzkzcE9aX1RlQ09ZMzRDWmlZdTNYMzBINkNwTndXcklyVVIwaG54WUNJY3N5TmZibV82V2VrLUkxMmdJR3M3SzlSNEFnOGU5R0FUSjF3eUFkREhuMkxHQ0sxOGJzVU52cjItR3lROS1PamFwZWtyUU5HNjB3UWF2QkVBZ2ljbnZQVWd2Mi1PT0NOdkxVcFlOR3hlSDFDZG1LWlg0MDQ5aUtkMDNlOG5OOEVHaXo4OExqM0xnZ1Y1TjJ0NXkwM0pfLW92R3YwanZRNzlHT1JMaWxXUmo5blhvVW54dw?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "ORA.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Incident de réseau avec possible geste commercial ; coût non chiffré.",
+     "extrait": "Orange attribue sa panne nationale à un équipement de son cœur de réseau mobile",
+     "nom": "Orange"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Orange attribue sa panne nationale à un équipement de son cœur de réseau mobile - it social",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNYmlvazFaMnpWVlFpNmlCMzkzcE9aX1RlQ09ZMzRDWmlZdTNYMzBINkNwTndXcklyVVIwaG54WUNJY3N5TmZibV82V2VrLUkxMmdJR3M3SzlSNEFnOGU5R0FUSjF3eUFkREhuMkxHQ0sxOGJzVU52cjItR3lROS1PamFwZWtyUU5HNjB3UWF2QkVBZ2ljbnZQVWd2Mi1PT0NOdkxVcFlOR3hlSDFDZG1LWlg0MDQ5aUtkMDNlOG5OOEVHaXo4OExqM0xnZ1Y1TjJ0NXkwM0pfLW92R3YwanZRNzlHT1JMaWxXUmo5blhvVW54dw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T06:00:35+00:00",
+     "media": "it social"
+    },
+    {
+     "titre": "Panne massive chez Orange : peut-on demander un remboursement après l'incident chez l'opérateur ? - Actu.fr",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSUQxcklQbkh6NVdFRjZBVVRzYXQ3R0dsQ2FqQlFOcFM5M1pRa0NGckl2YjgzM01LbXBfS1RoREF0SlBFYWJvdG50LUd2akw5MHh4ZlRGQXNWa0l0UE4yck9oOFhsNENUVHZ2dHpqdWF0SXRyQ19IWjEzcmVfN2Vsb2NhTTFnYURGc3dXRGlfdGxvRkhWTzdvbjJvbDVHZmhZVXdVczJ2d2lEM2RESEJKM1B0OXdLUHNBb2dqSVp2WmMxMXdwWkVGUW5RUXk?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:59:00+00:00",
+     "media": "Actu.fr"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-a32a482258715fca",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Stellantis : 9 000 salariés au Canada votent la grève contre les mises à pied",
+   "resume": "Les travailleurs de Stellantis au Canada votent massivement pour la grève contre les mises à pied et la menace de vente d'une usine.",
+   "nouveaute": "Vote de grève des salariés canadiens connu cette nuit.",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TclRNeXRhZnV2UllxeTRUdUx5XzdHS25GN3J2dGNMMWdfREg0aTlYREsxd1lLSWdKZExkNXlZYThlSU8xdktPX2FMdFc0TFp5Q3pxYWpiZ0E0dGt2RE5YbGR1bVphTzQ2?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "STLAP.PA",
+     "sens": "negatif",
+     "ampleur": "faible",
+     "justification": "Risque d'arrêt de production au Canada si la grève est déclenchée ; date non précisée.",
+     "extrait": "votent massivement pour la grève contre les mises à pied et la menace de vente d’une usine",
+     "nom": "Stellantis"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "9 000 travailleurs de Stellantis au Canada votent massivement pour la grève contre les mises à pied et la menace de vente d’une usine - World Socialist Web Site",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TclRNeXRhZnV2UllxeTRUdUx5XzdHS25GN3J2dGNMMWdfREg0aTlYREsxd1lLSWdKZExkNXlZYThlSU8xdktPX2FMdFc0TFp5Q3pxYWpiZ0E0dGt2RE5YbGR1bVphTzQ2?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T03:13:59+00:00",
+     "media": "World Socialist Web Site"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-79c72c5695c446f5",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "FDJ United : chiffre d'affaires -5,6 % à fin septembre, objectifs 2026 abaissés",
+   "resume": "FDJ United publie un chiffre d'affaires en baisse de 5,6 % à fin septembre et abaisse ses objectifs annuels (aléas des jeux, fréquentation, fiscalité).",
+   "nouveaute": "Chiffre d'affaires à fin septembre et nouvel abaissement des objectifs, publiés le 21 octobre.",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOFBiVUx4WHpHa2QyQ2NMQnlkUzlMR2VpR2tXTXJZNVN0Z3lYU05QSjRpcUtsajFXeVZORlBHVnJtdDBZUGZBNU84bGMwLW9mVUlBdVpsLWJJa2Z3c0dldkRSY0R0TVRUXzZjaU5ybWtNZktmWHB3SFFOOFBoRUoyaGUwNGxPSkZsRXk2VDYyWnJRZzdGNjFCY0JFN0t0YTFkUC1BMlNZQzhrX2JOSXpEZmN3dHYxaTZyMFE?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [
+    "jeux"
+   ],
+   "entreprises": [
+    {
+     "ticker": "FDJU.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Objectifs annuels abaissés pour la seconde fois, chiffre d'affaires en recul.",
+     "extrait": "FDJ United annonce un chiffre d’affaires en baisse de 5,6% à fin septembre 2026 et ajuste ses objectifs annuels",
+     "nom": "FDJ United"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "FDJ UNITED annonce un chiffre d’affaires en baisse de 5,6% à fin septembre 2026 et ajuste ses objectifs annuels - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOFBiVUx4WHpHa2QyQ2NMQnlkUzlMR2VpR2tXTXJZNVN0Z3lYU05QSjRpcUtsajFXeVZORlBHVnJtdDBZUGZBNU84bGMwLW9mVUlBdVpsLWJJa2Z3c0dldkRSY0R0TVRUXzZjaU5ybWtNZktmWHB3SFFOOFBoRUoyaGUwNGxPSkZsRXk2VDYyWnJRZzdGNjFCY0JFN0t0YTFkUC1BMlNZQzhrX2JOSXpEZmN3dHYxaTZyMFE?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T15:55:06+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "FDJ UNITED : Chiffre d’affaires à fin septembre impacté par des aléas propres aux jeux d’argent, une baisse de fréquentation des points de vente dans un contexte conjoncturel défavorable et des hausses de fiscalité - Yahoo Finance France",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUlFfdVJHMUM1a3J3N2JrTmNiSGhIbVFBSkhuY0U4cXhiV0dQSlNJcmd1QkRHMmFrRl93Nmk1bkhNTC13NkdKZE5EMl9aMUxaX0loODBmUzdQX19adGdZQVprbE9EOV9zNUNKMzlDeEdKcW15QXRZVkQwWXF2UzdOSWxURjl1ZHVKRkwzSg?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T15:45:00+00:00",
+     "media": "Yahoo Finance France"
+    },
+    {
+     "titre": "FDJ UNITED : le chiffre d'affaires chute de 5,6 % en 2026 et les prévisions se dégradent - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZ1NNeEJDSC1GVURrZlBOeFlXQjhFaEU0eUpOTDRxU2ZFTWQyMlBfamVvbUhFRThFV2hvanNsNkd1RWczNzJqZHd0TllfdEV4MURTenQxdHNxbmhSVk5rQ2Vsb1RweWpqdUFTbUlPS3ZBRDFHeHF4SW1lTjN6QVhLRzBrTGRHcDZfMHhlNjhrRC1YZ3pKNEoxdG5WWWZwWkJvUFZGSkpLREVjTU1RUHlCS0p6QkplM1pz?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T15:55:06+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "FDJ United : rien ne va plus - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUGFBdjZiMFBFWTNMQXJFZTVlbmJqZXVpR0tWdE45aGxsWFV4RVdHb1JRRHEwRUZxbXhkWHNRV1ZZVFRVdWFvY3MyM3NjaWluMFhzS255bVNlV2ZWbm9qWGptM3BBVTRGRHJjc25vRUxwYmVpbzNlWkd0UnNpSGIyZHRWcnR5NnlvS3NuQlMwWFdfc19QcHVHdTEzXy1GWEhaYm0yVlJGQTBMOEEw0gGsAUFVX3lxTE5QYUF2NmIwUEVZM0xBckVlNWVuYmpldWlHS1Z0TjlobGxYVXhFV0dvUlFEcTBFRnFteGRYc1FXVllUVFV1YW9jczIzc2NpaW4wWHNLbnltU2VXZlZub2pYam0zcEFVNEZEcmNzbm9FTHBiZWlvM2VaR3RSc2lIYjJkdFZydHk2eW9Lc25CUzBYV19zX1BwdUd1MTNfLUZYSFpibTJWUkZBMEw4QTA?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:06:00+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "FDJ United plombé par \"des aléas\", la baisse de fréquentation et la fiscalité - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQkg4RDY4UjV0Tm9OaWRNRkRxTzhtdGhXYTRkcUt4aktCT29FdHNxV3hDWTFYUlRKaS1uQlo4OHVEY3BoTlhqOXNrZWcxcFViQjdSNnZOT0pval9tUHRXM2RFMDg5QmFIWU9wQlQyQzRMYjFiZzVlc2VVYzJ0eG54WXpEY1JxbjVSQmxQbjFOVEpGX3ZOT3RsUkU0aEhuWEdaemtuWmJYMDdmbFlBWHNaRHZEZkg3ZWFocDRfZXVnTmdGY2pOR1pZQkUxT3RYRHNY?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:11:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "FDJ United : chiffre d'affaires en recul de 5,6 % sur neuf mois, objectif 2026 abaissé - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYjJnTDFmejF6ZjJDR0NycVdwbkxYa19JN0d3OEplZVpjb2k0ekhvSlcxY2VMWkduTnVRdVVTYmdmRVlibjByWXRGbi1mVVhxaS1tY0VneE5KS2VlWWMxTGR6NGtLV1dNTE40Rk9yajRUdGNSM1V3T3pWX0ZxY005cUxQWFBLc1pwLVF1ZTV3UlJSWlVJNFU4b3ZmekpsMFNicVliLUZhUXByWW1ObVRlSkVVOGp5ZW9Mc3V1QjBmVlZsWmcwZUdKWUFSWUREZFU?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T18:21:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "FDJ United revoit encore ses ambitions à la baisse - Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOS2l6YUthY3lHNVFyTFhGTEVacXBROXIydFVrMWc4YmVreWl1NFQ0Y0dsN0dEM2JranlZZ29oN2JDX0VHOWtCZWxkV0Y5SWROSHloUVpUTU5uQmlZODNfb1lQQ2x0UWZYbU5XXzhTSWtzUUVYT1FlbW5PblZYWmlLeGZaYUd5QVdNVHRQNUNSakNOeUhuSlVqbmxuNHhBaEdGdF9KTjRVU2lPQ0lqM2c4cjI4aks4NkhyNkdaUA?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T18:16:21+00:00",
+     "media": "Les Echos"
+    },
+    {
+     "titre": "FDJ United abaisse encore ses objectifs après un chiffre d'affaires en net recul au troisième trimestre - Le Figaro",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaFlycVFDSzdsajZwWGw4dHdhTUtsdmRrMzR0UTFwZDcxNmxKYUFmdVVWeTZ0YUZWeG14YjF2bmRNYkxYTzJpc00zWktKMWNFYVJGSXlFMHhUVWNJTnZOellqWVpaNnhGTlBzWlFoNGFYQ1lkamJqUXRhcnV6b3QweF9wUERwYk9UaEhqY0kzbE5yZ3hSa3h6TzluYTlkQWhvdDBRdjhpMmt5TzlwS25MejMtaHB5cF9JYVVodkl6ZGl0UThaVHhLdS1WRG1oTDRraU1PQ0NfZktXLW9tcmtj?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T17:23:22+00:00",
+     "media": "Le Figaro"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-abcd1fb1a088dcee",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "ID Logistics : chiffre d'affaires du T3 en hausse de 25,6 %",
+   "resume": "ID Logistics publie une croissance de 25,6 % de son chiffre d'affaires au T3 2026, soutenue par toutes les régions.",
+   "nouveaute": "Chiffre d'affaires du T3 publié le 21 octobre.",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR2JjOWhRYlNyTHZiNVpndE53QWkydHJDOEdJbVh2MFlKX1RiVVBMbjVGLXdqWmhJYjhzbWxxeDFad0dlRnA1MEJlRS1WTFFoX1VWV2tHalJMSzFSM3VXeXNDQnBGOUZmdW1GelNrRkJLMktHN3M2UGU2dWJZcUpoSnNmVGgzbno0WHI4MDctbEhYUm83WDdvS1B0X2ttYlJFVk9BZHJrbV9jMGpFeWI0NWVYR2dlcXc4ZERWa0FxOA?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "IDL.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Croissance de 25,6 % portée par toutes les régions ; consensus non vérifié.",
+     "extrait": "ID Logistics accélère : croissance de 25,6 % au troisième trimestre 2026",
+     "nom": "ID Logistics"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "ID Logistics accélère : croissance de 25,6 % au troisième trimestre 2026 - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR2JjOWhRYlNyTHZiNVpndE53QWkydHJDOEdJbVh2MFlKX1RiVVBMbjVGLXdqWmhJYjhzbWxxeDFad0dlRnA1MEJlRS1WTFFoX1VWV2tHalJMSzFSM3VXeXNDQnBGOUZmdW1GelNrRkJLMktHN3M2UGU2dWJZcUpoSnNmVGgzbno0WHI4MDctbEhYUm83WDdvS1B0X2ttYlJFVk9BZHJrbV9jMGpFeWI0NWVYR2dlcXc4ZERWa0FxOA?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T18:24:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "ID Logistics : Information financière trimestrielle / Information financière du troisième trimestre - Zonebourse",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPX0NPaXNHQ25MSVl3bzlrc3EzVGtOdkh0M09kc1VpOWZsdlVGZU5CSXc5WVozMHFoMWJNOTZnMHRMOG9aNFdUMFlxRTJwb0RzSlVTLUdmWDhqZFJnTHo2eXQ3U21lUDJYM0xRQTlrU3pROTFYN1AzQmZSYUJMQkFrTk1KOWtYNWRSWXVOZHRWa1M5Y3hRWUpsc085UEV2R0JTZU1sb3ZsVEZaWGRKTTI5RDV5dUlmdTVwUEZHWkVDYk50OUVtaDJKVy1VMkZiZGRfQ0FuVDl4THVJT3NhamVBeUFWa05ZYzZhZnZJYg?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T17:15:15+00:00",
+     "media": "Zonebourse"
+    },
+    {
+     "titre": "ID Logistics : L'Amérique du Nord continue de soutenir la croissance au troisième trimestre - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbGJESTJEN3Q5LVFucUxmNzdmVjhsVWpQUmkyQzZ4T0ZKSGYxSjhJdl8xUmU5TnlaV01LYkhUZHQta3U3bEFiQnBjR0FkR3ZUb3pUMHoyYU4wdXdFMHl3WHB4YkJTYjlMc1UyZjZIc1llUzVwT2RfSDZaYmUwM3NKazU5TFFiRXdhVl83MkYtSmc3NjQ5di1KNFVmTmZRRkhpRUJFWnZEb2VmbGlWVmNwUVRCNmozc0RLOTI4?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:36:51+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "ID Logistics - Le CA progresse de 25,6% au T3, soutenu par toutes les régions - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSk9USGswRGR4a2RILXJzTE52QzZaZzlyTnJKckhHQ0Znc1BBY1UtNThHTC1Rci1rTEVBeUhkNFVHSTVXRnFKWlFRSC1QN3dQZ0Zjc1lxYjFJTklyOHJFM2Iya3duMjlkV21wcklVRDJoSEIzSG1FbUxFNXdyT0hMVUVxVTA3Qi12SnJLelkzcmdiWFRuaVdZSVh3MXJIYTM0SW1qWU11U3ZfWmlLNkhCZ3pOSWVabWlfMlhNM1NfZVdjTkZ4Nlh4QUI3Wjh4QQ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:13:21+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-c38b42f2559d6df9",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "EssilorLuxottica : T3 au-dessus des attentes",
+   "resume": "EssilorLuxottica publie un troisième trimestre au-dessus des attentes selon BFM.",
+   "nouveaute": "Chiffre d'affaires du T3 publié le 21 octobre.",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdF9WRTB1UmNBazliTENCdkEtSWpMU1BydVB4TXNTMEFpa3lQVU1KX0V6WEY1QnhrU0tGUWVZb1VNQ2tuVDJNWlkyTDk4TVJiaGl3eG00Xy1hLXdtZEYwRFlZNzN2Q0pSUDJ3eXRHcGhaTEhheXppdEFCdDB1bzZZd1dZT3RVeS1rcmxPSmJ5UUxfU0ZkNGliOVp2Y2RnXzUydXBWZW5NQmZfbHp1Z2MyZldULXZmZw?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "EL.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Trimestre supérieur aux attentes des analystes.",
+     "extrait": "Essilorluxottica dépasse les attentes sur le 3e trimestre",
+     "nom": "EssilorLuxottica"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Essilorluxottica dépasse les attentes sur le 3e trimestre - BFM",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdF9WRTB1UmNBazliTENCdkEtSWpMU1BydVB4TXNTMEFpa3lQVU1KX0V6WEY1QnhrU0tGUWVZb1VNQ2tuVDJNWlkyTDk4TVJiaGl3eG00Xy1hLXdtZEYwRFlZNzN2Q0pSUDJ3eXRHcGhaTEhheXppdEFCdDB1bzZZd1dZT3RVeS1rcmxPSmJ5UUxfU0ZkNGliOVp2Y2RnXzUydXBWZW5NQmZfbHp1Z2MyZldULXZmZw?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T17:10:00+00:00",
+     "media": "BFM"
+    },
+    {
+     "titre": "Le géant des lunettes EssilorLuxottica s'envole à Paris - La Libre.be",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSGhWajV5anRRUWdRbGxOUGFmM1pSb1pEN20teHFrWDFDQUpSZG1fZi1TUU1NQ0g4cTNpVzdUTnJhQjB4U0drTVhoOFpwVDd4bXNoR012WjRVQll3VExzNDBmREgzWFNua09xSzlwamVGVnh3bUVDRlRzNVFwYWxjbGdmcGtXaWViT2JkcTNUTXIxQkhkMExtNjVCVk04aG5YRk5GV1QxWWVkazRsVE5zSHBVYTNpdXVMOWpmTkQxSHJWRmZQaEhSTklidHdRVU1DdVE?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:30:00+00:00",
+     "media": "La Libre.be"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
+  {
+   "id": "presse-db25de304dd54967",
+   "date": "2026-10-21",
+   "source": "presse",
+   "titre": "Covivio : revenus de 530,7 M€ sur neuf mois, objectif 2026 confirmé",
+   "resume": "Covivio publie des revenus stables à 530,7 M€ sur neuf mois et confirme son objectif 2026.",
+   "nouveaute": "Revenus à fin septembre publiés le 21 octobre.",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZTJONmNoNVhReUNNWXRVX1hlb3hHQUtNMG9pLW95T0IzZVZlTzBab0ZPbE5VQ1MyT0gtdEpIZ0std01HSkxvZklvR3ljSkxCOXE0LVNJYktDWVJhQVdsWW9tRVNzR1M1NExWYktGZE8tU1IzQlMwN25WY09pYUFvMmNfSDVtUlVFSFBTQkI0ZE51Y09Uc1F3TEFzaC1tUjVhRUxTLXQzLXloZXM4aGFkWlZQZXVDdGZOMmNDZGY4WUtCdw?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "COV.PA",
+     "sens": "neutre",
+     "ampleur": "faible",
+     "justification": "Revenus stables, objectif confirmé.",
+     "extrait": "revenus stables à 530,7 M€ sur neuf mois, objectif 2026 confirmé",
+     "nom": "Covivio"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Covivio : revenus stables à 530,7 M€ sur neuf mois, objectif 2026 confirmé - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZTJONmNoNVhReUNNWXRVX1hlb3hHQUtNMG9pLW95T0IzZVZlTzBab0ZPbE5VQ1MyT0gtdEpIZ0std01HSkxvZklvR3ljSkxCOXE0LVNJYktDWVJhQVdsWW9tRVNzR1M1NExWYktGZE8tU1IzQlMwN25WY09pYUFvMmNfSDVtUlVFSFBTQkI0ZE51Y09Uc1F3TEFzaC1tUjVhRUxTLXQzLXloZXM4aGFkWlZQZXVDdGZOMmNDZGY4WUtCdw?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T18:27:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "Forte activité locative dans les bureaux pour Covivio - Business Immo",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTFpuMDFEanMwN0xSYU41OC1jcEtHdlI0TElLdERfTFM1SEtjUTFGYWRKNFQ4OG4taVJBUzY3R2JJREw1MEc3Y2VmbnpkbjNFYWNZZDRqUTFMMzczdnZ4NVh2cElZQVVhVXdLdGlWbS1NcXNQMVJPcGctUzY1dWhmcl9XQklPNVhrQjhXUjJKeW9WSEt0dFF2SDNoYmpyLThwOUdtSEhpWHJEZ2FYQ3Z6RkJR?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:59:00+00:00",
+     "media": "Business Immo"
+    },
+    {
+     "titre": "Covivio: accélération de la croissance à fin septembre, objectifs 2026 confirmés - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSVBDRDlTeDV6b05YdHdwYVNLbnFJdlNteXRYeDJTQjNpWWFWTWY1Qm5vVnBXM2RMM055dUlwQUdMaUlVWExlc0s2WnR6bXhaZTJkcTBRMUtHTGZEWC1Ca0JsdC0xZDZrM3F0aXhRUUZIM0pKMFNGZFliV2hjWUpldXlPY0dXbTNzLWZsVHJFOFhpSG5YQ0lLRWxaWGhqMkpxNkRJS2ZDYXYtSHotcmFCaTJmd1BnTHR1QVlv?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:53:34+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Covivio voit ses revenus reculer malgré des loyers en hausse - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV3cyNXVzaWpuWE1kNThoR0UtNnUtQlVVVzhQWVpuWHdXTDE5VWUtbGk5TlhBNjl3Q3RWc0VWaHloRXB1X2l5SkZQU29BUkQ4b1hfX3JHb1AyR1pTQVVnMWNlT2EtaXJZTE9mNW5WcGNhTWo1VHlnNFRwNi01Mm1RYTFhYUxZU0RZWXBRQjQxTFZtVy1wOE5CbjU1WlBHak5OUDhZ?oc=5",
+     "date": "2026-10-21",
+     "publie_le": "2026-10-21T16:15:06+00:00",
+     "media": "ABC Bourse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-22",
+   "publie_a": "2026-10-22T06:23:22+00:00"
+  },
   {
    "id": "presse-53ebd38b5744d8df",
    "date": "2026-10-21",
@@ -4442,132 +5131,6 @@
   }
  ],
  "calendrier": [
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Edenred : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "EDEN.PA"
-   ],
-   "tickers_mots_cles": [
-    "EDEN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/EDEN.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Hermès : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "RMS.PA"
-   ],
-   "tickers_mots_cles": [
-    "RMS.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/RMS.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "L'Oréal : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "OR.PA"
-   ],
-   "tickers_mots_cles": [
-    "OR.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/OR.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Ipsen : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "IPN.PA"
-   ],
-   "tickers_mots_cles": [
-    "IPN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/IPN.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "OPmobility : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "OPM.PA"
-   ],
-   "tickers_mots_cles": [
-    "OPM.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/OPM.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Vivendi : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "VIV.PA"
-   ],
-   "tickers_mots_cles": [
-    "VIV.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/VIV.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-21",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Worldline : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "WLN.PA"
-   ],
-   "tickers_mots_cles": [
-    "WLN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/WLN.PA",
-   "fiable": false
-  },
   {
    "date": "2026-10-22",
    "heure": "",
