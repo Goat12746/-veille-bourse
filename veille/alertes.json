@@ -1,20 +1,21 @@
 {
  "version": 1,
- "genere_le": "2026-10-23T06:22:22+00:00",
+ "genere_le": "2026-10-23T11:24:32+00:00",
  "sources": {
   "amf": {
-   "ok": false,
-   "erreur": "<urlopen error [Errno 104] Connection reset by peer>"
+   "ok": true,
+   "trouves": 28,
+   "nouveaux": 28
   },
   "presse": {
    "ok": true,
-   "trouves": 286,
-   "nouveaux": 192
+   "trouves": 215,
+   "nouveaux": 142
   },
   "assemblee": {
    "ok": true,
-   "trouves": 317,
-   "nouveaux": 129
+   "trouves": 121,
+   "nouveaux": 0
   },
   "agenda": {
    "ok": true,
@@ -22,7 +23,7 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 91
+   "trouves": 96
   }
  },
  "alertes": [
@@ -178,6 +179,467 @@
    "publie_a": "2026-10-23T06:22:22+00:00"
   },
   {
+   "id": "amf-139489_20261023",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Sodexo : croissance interne de 2,0 % sur l'exercice 2026, perspectives 2027 confirmées",
+   "resume": "Croissance interne de +2,0 %, marge d'exploitation de 3,4 %, résultat net ajusté de 508 M€ (BPA ajusté 3,48 € contre environ 3,23 € attendus). Pour 2027 : croissance interne de +2 % à +3 % et marge globalement stable ; dividende proposé de 1,74 €.",
+   "nouveaute": "Résultats annuels publiés ce matin : BPA ajusté et activité du quatrième trimestre au-dessus des attentes, perspectives 2027 confirmées.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139489_20261023.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SW.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "BPA ajusté supérieur d'environ 8 % au consensus et activité du T4 au-dessus des attentes, perspectives 2027 confirmées.",
+     "extrait": "croissance interne au-dessus des objectifs ; perspectives confirmées pour l'exercice 2027",
+     "nom": "Sodexo"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Sodexo : Sodexo - Résultats de l’exercice 2026 : croissance interne au-dessus des objectifs ; perspectives confirmées pour l'exercice 2027",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139489_20261023.pdf",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:00:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Sodexo : bénéfice divisé par sur son exercice 2026 mais croissance interne meilleure qu'attendue - HR-Infos",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNT0h1X0RuSU5PWGR3MWh5YXJxM0ZZWHBhZTZydEw5bWtpVkNjZUFOYlNGeFhIVTlKS3UtSlRrVzBRN20tVWozMHJpcGh6X3hERXhMWFRCYlBCcUNzTE82V2FGa1VLbjhoTWt1Mm9DWFJmam1PNTJjV1ZnVzFIVFNVd3dtMjR4T0cySGxfZHdTQUxNVGVFSkMwMExOb2pSSGJCSlpfOWNlMWlYYTlKMUxZbVNQclE?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T10:49:41+00:00",
+     "media": "HR-Infos"
+    },
+    {
+     "titre": "Sodexo monte en Bourse alors que le redressement de l'activité est enclenché - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUXpSY0RSMUxPaTRLMXhXZmdmVVQ1S0lUU3Y2RFRuQzVLY09KeUx5VG1VMXNQSlEwS3M4MkZBdnpwZzNPLVRpMndGNy1uOHhpbFJUU1FPUVA3SVM1Y2hSemtSNDZMUC1fMURvemY3Y1Ayb0VxSTZZV3ota2ZSdUF2eEVFa01pcmx3UnY5dUpueHltY0prb3gtaEplZlpEWWVnRk11czJSY1BFSUJ4VmR0YTJDSnN5SkE0?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T09:41:05+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "\"Transformation en marche\" chez Sodexo avec des résultats annuels meilleurs qu'attendu - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zc1VWSmNQYkM5LW0wbEllSk5WU3ZuRG1SMTJlLU5fOTFCRE5rbmp1Snc5SnZwdkpzZTl3YmI2czF4ZGkwSVMtM2hPN25FVlJRak9OeXdDUmJEQkpHQmVELUdB?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T09:11:04+00:00",
+     "media": "TradingView"
+    },
+    {
+     "titre": "Le plus dur semble avoir été passé pour Sodexo - Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSFh4aWpRajlYM0JlZjB6RDFGZ1NVTE00MXZnMEpWMERsdTZ0UnNnLVdPVHBia1dQLVFTNUFqWTd1bFc5QUV1S2tnUnp2UV9xRnp4bUtTalhsMHM2T3VNWWhvME1Kd2xYR0ZCNG40dFY5RmtwNVl3SC00ZmFfZEN1ckdsR0tXczdheXZ1S0dqWWxzOTVFWkp0aDVIUTdWdm5zOXR1c3FTOHZ5eXNGbGc4QnlZeVRLWmRPWTFn?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T08:31:43+00:00",
+     "media": "Les Echos"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-139440_20261022",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Valeo : chiffre d'affaires du T3 en recul de 2,6 %, objectifs 2026 maintenus",
+   "resume": "Le chiffre d'affaires du troisième trimestre 2026 recule de 2,6 % ; le groupe maintient ses objectifs 2026.",
+   "nouveaute": "Chiffre d'affaires du T3 publié, en recul, avec objectifs annuels maintenus.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139440_20261022.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "FR.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Activité en baisse au T3 mais objectifs annuels maintenus : l'effet dépend de l'écart au consensus, non vérifié ici.",
+     "extrait": "Valeo maintient ses objectifs 2026 malgré un chiffre d'affaires en recul de 2,6 % au troisième trimestre",
+     "nom": "Valeo"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Valeo : Valeo - Chiffre d'affaires du 3ème trimestre 2026",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139440_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T16:02:38+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Valeo maintient ses objectifs 2026 malgré un chiffre d'affaires en recul de 2,6 % au troisième trimestre - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWmVMa24tMFJDN3JVTXpvcURwWmhaRkJBanZLLTNnbmlidVlaV3BzTFlYem5XQUx4MUg5aGNPTjRQaEN4R1ZqRS1aYVpJc0JGN1dMQ2NsQkJqVnJ6MFVMZlptMG93U1BXT1ZKcEE4bTgwNE4wOVhLNEJydUlpQ2lkVEk5b2paVFZZSk03SmhPR3JHMkIyRjFBbVNPWEs2VDhjNGQtNEJ5VTFTUGNEZXZnVkNLSkM2Y1ZLbC1kbUU5b1IycmdPeTF5UmpfZ0pJenN3VHpVV0wtSnp2VUxTaTJvUGgwdWpDNTU1UHVr?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T09:14:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "L'action Valeo enfonce son plus bas de 30 séances après son chiffre d'affaires - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQd2tUWi00Q1B1MHdrV0hIT3V4dEFxaXU3WmhrUXlLV2o5YWt1bUhNMHJzVHpkQ29KRy12SGkyN1JBa3R5bDM3OHVtc3dzdU1qZkRoRk50SXZrak81Sm8zd3V5N0lmaTV2Z2Y3eGM3dmJSdTR4MWptenB0MU5VNUpmejFmQU5BRjlGNnQ1TVpFWGxrU2xHd2VoWlpERUtnWU8xc3RmeEVETTRDaGFmNnQzSzFmeUNNMGRQMkJWdGVfanByV1lSOWxrVUs5VQ?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T10:32:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "Valeo décroche en Bourse après une publication trimestrielle plus préoccupante qu'il n'y paraît - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUThrbFNVWGNNaDZYXzM2WEZSeG5PZ21oUzNhRGJ4MkE2NjVFMWxMZ0JvUjQwTUJVVjNJanhaVXlpUFFaVEo4alZmaXJqU1B5MnE2UlBHMkVFUTI0RXh2elVERXlKUTJuSEJUQnpjQS1VVnQxUFQtdl8xOGZiTHdCaHl3Mm15VTJtMFEtWjhQd1hOMWE1S19MdkVmSDNHY2FFQk9lR0NDbmtOQTRCVTBCQUFZTlRRMVBlOWxDbGV3?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T10:04:11+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Valeo chute lourdement, les analystes peu enthousiastes - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV1FVazVzLTNfMTExMlhBTDBSelpZZF92OWNlVnhvQzk0b3hTLXVwQXM5NXQzVExrZlg1QTh5WmdoaTZnclZxQ0U3SXZJdkYyVHVTNlpIbmJ1cWhQNEdiXzlIaXFuSFZndV9kUlRIcC1CYjhlck45ci1ZdUpwSU54bjl1elg3M0RaT0g4dzJ0Uk1JY3JjbFJjLXJRdTJxVE9PTkZjZU5QZnJNY1BxREpwcUd5N20?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T09:11:35+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-139395_20261022",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Vinci : nouvelles hausses du chiffre d'affaires et des prises de commandes à neuf mois",
+   "resume": "Vinci publie des chiffres d'activité à neuf mois 2026 en hausse, avec de nouvelles hausses du chiffre d'affaires et des prises de commandes, tirées par l'énergie et l'international.",
+   "nouveaute": "Chiffres d'activité à neuf mois publiés : chiffre d'affaires et carnet en hausse.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139395_20261022.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "DG.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Activité et prises de commandes en hausse à neuf mois, sans écart au consensus vérifié.",
+     "extrait": "NOUVELLES HAUSSES DU CHIFFRE D'AFFAIRES ET DES PRISES DE COMMANDES",
+     "nom": "Vinci"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Vinci : VINCI - 9M 2026 - NOUVELLES HAUSSES DU CHIFFRE D’AFFAIRES ET DES PRISES DE COMMANDES",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139395_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T15:45:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Le groupe Vinci est en croissance, tiré par l'énergie et l'international - Batiactu",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVUhQb1RmaXlVaDZ4WkZaTVVzZ0Z2bFVTLWVoQUFjM3dDb1o1TmpiaXFVdl95NnJhU21zaGRrZU9jcHRrVlRmbWJEOFJ2eExCMEF0aGpsbmtlbThEQVVKMzg1RThBd2d3NTRhWkFHWHpPbGxpcUJwTWZ2cFlKcWNESG9mU05vMGNEbkN5cEtqeWhNREhLdGRfa1hkMTBBSkxsSnNMeA?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T10:44:00+00:00",
+     "media": "Batiactu"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-119441_20261022",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Unibail-Rodamco-Westfield : loyers +4,4 % à périmètre constant au T3, objectif 2026 confirmé",
+   "resume": "Point d'activité du troisième trimestre 2026 : loyers en hausse de 4,4 % à périmètre constant, objectif 2026 confirmé.",
+   "nouveaute": "Trading update du T3 : loyers en hausse, objectif confirmé.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW119441_20261022.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "URW.PA",
+     "sens": "neutre",
+     "ampleur": "faible",
+     "justification": "Objectif 2026 confirmé, loyers à périmètre constant en hausse de 4,4 %.",
+     "extrait": "loyers en hausse de 4,4 % à périmètre constant, objectif 2026 confirmé",
+     "nom": "Unibail-Rodamco-Westfield"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Unibail-Rodamco-Westfield : UNIBAIL-RODAMCO-WESTFIELD Q3-2026 TRADING UPDATE - CONTINUED OPERATING MOMENTUM SUPPORTS 2026 OUTLOOK",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW119441_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T16:04:05+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Unibail-Rodamco-Westfield : loyers en hausse de 4,4 % à périmètre constant, objectif 2026 confirmé - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNnRvdU96dmMzelJpaFprdXVCRzVfWXJHZzA2MmRsbXlUS284MUtFU3A4Y2RNZzlJLU9DMjVuUGN1b01mVHpZT0F1Zm5rQUJRN3UxbXlNcW5hdHpxZWVLMzFtaUJTQWd3d2Z5QU9nbkxZV2Roa1JJRkhLSFE4T1ZOMnFNR2dieGdRR2RTdmhqdEFVSElwZlpUM2cxMVgtUzk1M1NrODJubTlBa3RQUzBhT1AyYVpleGtzNEg2c2FKUUJzaXlnNnlRQzFtYWVsbER5elAzODJNeHFEYzZyaWhZeg?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T09:34:00+00:00",
+     "media": "Ideal Investisseur"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-139452_20261023",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Planisware : chiffre d'affaires du T3 de 57,4 M€ (+15,6 %), objectifs 2026 confirmés",
+   "resume": "Chiffre d'affaires de 57,4 M€ (+14,9 % à taux constants) contre environ 56,5 M€ attendus ; objectifs 2026 confirmés (croissance d'au moins 13 % à taux constants, marge d'EBITDA ajusté d'au moins 37,4 %).",
+   "nouveaute": "Chiffre d'affaires du T3 publié ce matin, légèrement au-dessus du consensus, objectifs confirmés.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139452_20261023.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "PLNW.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Chiffre d'affaires supérieur d'environ 1,5 % au consensus, objectifs annuels confirmés.",
+     "extrait": "Objectifs 2026 confirmés",
+     "nom": "Planisware"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Planisware : Planisware: forte croissance au T3 2026 portée par l'accélération du chiffre d'affaires récurrent et une dynamique commerciale soutenue",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139452_20261023.pdf",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:00:00+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-139504_20261023",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Ipsos : croissance organique de 2,0 % au T3, objectif de croissance 2026 actualisé",
+   "resume": "Chiffre d'affaires de 636,2 M€ au T3, croissance organique de 2,0 % (0,8 % au S1), 1,2 % sur neuf mois. Le groupe actualise son objectif de croissance organique 2026 et accélère le plan Horizons sous la nouvelle directrice générale.",
+   "nouveaute": "Chiffre d'affaires du T3 publié ce matin, accélération de la croissance organique et objectif 2026 actualisé.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139504_20261023.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "IPS.PA",
+     "sens": "incertain",
+     "ampleur": "inconnue",
+     "justification": "Accélération au T3 mais sens de l'actualisation de l'objectif 2026 non lu dans l'extrait.",
+     "extrait": "Actualisation de l'objectif de croissance organique 2026",
+     "nom": "Ipsos SA"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Ipsos SA : Ipsos : Croissance organique de 2,0 % au troisième trimestre",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139504_20261023.pdf",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:49:36+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "presse-f483c8514f9b09dd",
+   "date": "2026-10-23",
+   "source": "presse",
+   "titre": "Renault cède son usine historique de Viry-Châtillon à un groupe belge",
+   "resume": "Renault se sépare de son site de Viry-Châtillon (moteurs de Formule 1) au profit d'un groupe belge.",
+   "nouveaute": "Cession du site annoncée.",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTkVNbll5Uzl2dm5mTjBKTGpGdFRFMVRhNGZBT2xWV2pHaHJibHlMZndwVDRTS21BOC1RTENNaGtSZ0VwMW1Ka3JsOVR0Tm5aS1ZXeUxiUk1YNUFPdWhfLWtKdDhPTVctTjN2ZVg1eURNOGZESHptNVhsMG9UYWk1VDJaUTFidl9jYkQyMEpSdTRSYXRWM3hyd3ZUOW1MQ2Jvb0gyTUZn?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "RNO.PA",
+     "sens": "neutre",
+     "ampleur": "faible",
+     "justification": "Cession d'un site spécialisé en sport automobile, montant non communiqué, poids très limité sur le résultat.",
+     "extrait": "Renault vend son usine historique à un groupe belge",
+     "nom": "Renault"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Renault vend son usine historique à un groupe belge - Motorsport.com France",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTkVNbll5Uzl2dm5mTjBKTGpGdFRFMVRhNGZBT2xWV2pHaHJibHlMZndwVDRTS21BOC1RTENNaGtSZ0VwMW1Ka3JsOVR0Tm5aS1ZXeUxiUk1YNUFPdWhfLWtKdDhPTVctTjN2ZVg1eURNOGZESHptNVhsMG9UYWk1VDJaUTFidl9jYkQyMEpSdTRSYXRWM3hyd3ZUOW1MQ2Jvb0gyTUZn?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T10:16:39+00:00",
+     "media": "Motorsport.com France"
+    },
+    {
+     "titre": "Viry-Châtillon, un autre fleuron technologique français mis de côté - Confidential-Renault",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSXNRQktnQi1kSlZkdzgtWDlweHhtN3I4dlp6WDFCT1E1TzUtZlRCbXRQc3BPdnpLMTFUNDdEeC1tcWd4UFgwRmhrbVV5SHp0OGZodGNFc2ZKRFoyVVVsLWFLYXdQVnFObEE4MHVfeHMxUVA2MXlTXzN4QTBVcXloR2tsTHNvSG42ajRPU0tMYmlfTUNDdFU3alRzcFhXU3NkcmlDYjlld1Z6U1NBXzhIR0hWUkpWcW5RVVJqYlVCWXBQV2UzelVZ?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T10:23:42+00:00",
+     "media": "Confidential-Renault"
+    },
+    {
+     "titre": "Fin d’une époque : Renault se sépare de son usine de moteurs de Formule 1 - Auto Plus",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdTJqTVJOQ2t3NU1OdHRqWk1aaFduUC1NS25RSWNnY1ZQdTdDTHVBMUFBdllmWDJOZmhORE4xTG1Kb2QyQTBubF9pUFRaeDJWLW1PYmpPaF81Rm10U3F6TmdIZHk4MTNtcHppdU5DTWFtN21GXzNYcDZaU044Q2JJdUVPTU10SWlHWG1XeDA3eHJUdDBXTzNhRGtzYlhjYlJ4MjJfSk9QSWp4dWxYMjhJbVQ1eG8yX2Nh?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T09:35:00+00:00",
+     "media": "Auto Plus"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-139414_20261022",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Forvia et Great Wall Motor étendent leur alliance à l'international",
+   "resume": "Forvia et Great Wall Motor consolident leur alliance stratégique et l'étendent à l'international pour soutenir leur croissance mondiale.",
+   "nouveaute": "Accord de coopération stratégique mondial signé avec Great Wall Motor.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139414_20261022.pdf",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "FRVIA.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Partenariat commercial étendu à l'international avec un constructeur chinois, montants non communiqués.",
+     "extrait": "FORVIA et Great Wall Motor consolident leur alliance stratégique",
+     "nom": "Forvia"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Forvia : FORVIA et Great Wall Motor consolident leur alliance stratégique pour soutenir leur croissance mondiale et les technologies de mobilité de demain",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139414_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T15:45:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Forvia étend à l'international son partenariat avec Great Wall Motor - Ideal Investisseur",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZUNpY3J1YjZDeXozQ0hlYTBVbUxkZmZZT1RDbk9NbzFzNUlEVFFhNURWUXB0WUFNZTZRVllMdVhwUlloUHF2ZWRWbllXWDdXQ0xWWW8waFNpYlgzLUtEQUVjRkEwcFNIcVE0TDdFOWdVSnlNTjI5bW1KX01hejFDM1BZb1g5Q01rVFI1U1B3TF9sX0JZUjB6VGZkVVNDVEZIWW82VzIycmt1eU43SXZRTUlQYWhJXzlidUpVQUoyWQ?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T08:36:00+00:00",
+     "media": "Ideal Investisseur"
+    },
+    {
+     "titre": "FORVIA signe un accord de coopération stratégique mondial avec Great Wall Motor - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNHpMT3BRbE05QnZ5YW5UZTVmUFAwRWxRYUFIZ3pST25zRGtpSEZ6NHJsTHpUUjliOWpKQXpJY1RTa1M0XzRGcUZNcU95UEh1TUFNVElBTk03OUY2U2RCUmpQZkZLT2xEOEI5cWNDYi1XM1JhTmtyaGx5VkdjWVp0TmdoSkcxc2llclhNbkUxSVFYR3M5YnFzX3Jhd1FyS0xrVzhvSE9mUkpoV1lTU05xaUdfdUYtSWlfMW1sUExPb1hhU0x5Q0NsYlYwZmRnX2pYbzQ0?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T17:35:00+00:00",
+     "media": "Investing.com France"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-169916_20261022",
+   "date": "2026-10-23",
+   "source": "amf",
+   "titre": "Carmila : objectifs 2026 confirmés après son point à fin septembre",
+   "resume": "Carmila confirme ses objectifs 2026 avec des loyers en hausse à fin septembre.",
+   "nouveaute": "Point d'activité à fin septembre : objectifs confirmés.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169916_20261022.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "CARM.PA",
+     "sens": "neutre",
+     "ampleur": "faible",
+     "justification": "Objectifs confirmés, loyers en hausse.",
+     "extrait": "Carmila : objectifs 2026 confirmés",
+     "nom": "Carmila"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Carmila : Informations privilégiées / Communiqué sur comptes, résultats",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169916_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T15:40:00+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "Carmila : objectifs 2026 confirmés - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVUM1RWRhREhrMVFTMkVzVFpnaHo2SXBSSHhSRjlkbjZSU2wyWW9EQUhPVXcwTUNzWmhjUExFaHdfcGdJWE1FWjlKX0dHYzl4dUlGV1ZnM01JQS1kMnNlMGJWMmRSdldVR3dRaG5fcE5DWmRIOHpvcnJWMWNCNW4zV05MSk04c0ctYlZsMGtLaGJDRU03cEROUA?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T06:32:00+00:00",
+     "media": "Boursier.com"
+    },
+    {
+     "titre": "Carmila en légère hausse après son point à fin septembre - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNLXN2TWNIMmltQnBHNGNJXzVZaWRYNV9xT0w2MmZaWEJMcDhaUFlmSnlfN1pib3pBMGZFQ3hCMkhBbUZ5VjlFN1dkTXFCNUk3OGRxRnliQTE5bXdsM2NTQ2wtdVZyTjNqMlR4a1pQOW9JQWJ4eVZqWU41bmVCMDlkbEZIZW85QmZzWi03WDJESExhX204RTgwMFlBWHpPSlctLU5kak1oM2laUHlkRXktb3B5VkpGVVk?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T07:09:26+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Des loyers en hausse pour Carmila et une transaction finalisée - Business Immo",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmJlMGFLbnljcW5UYmJPUnpsbVg2eG55M2dncFZiM2RnSk80MEpacGNtMmJUWVRtU01JdV92VEw1YmFPdWRiUEltXzJ0TUdFdzQ2YWlIeXJ0OHdXbHZ1MG9ETFhJdEFCZnp2ZjJTaVNVcWJjeDVrejAybGx3Tl9SelhiY3lBTFRhM0t3bXNlTEFLNEFmLXE1Y0JXQ0tmeTlfU3ZlaGQ2UVhvRENnQ3dGS1cyXzhOVDZ6V2MtaQ?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T06:27:00+00:00",
+     "media": "Business Immo"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "presse-13f991afd61d8a4c",
+   "date": "2026-10-23",
+   "source": "presse",
+   "titre": "La DGA commande quatre systèmes SAMP/T NG supplémentaires",
+   "resume": "La Direction générale de l'armement commande quatre systèmes de défense sol-air SAMP/T NG supplémentaires.",
+   "nouveaute": "Commande additionnelle de quatre systèmes annoncée.",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5DSmI5VEVtSF9hekZhLXc0X0duanVJNXVPbE9ETEpBWWF6U0VWRjlpMXdhUkxrbkhocFpZNkVkaDVXbGRwX2VXbnV5YUkwM3U1QTJzYkdpR3ZZS1lncHF3cm81SmkxQmRHZExTbk1zMFdKNW9NN1BfWmR3?oc=5",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [
+    "defense"
+   ],
+   "entreprises": [
+    {
+     "ticker": "HO.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Commande additionnelle pour un système dont Thales fournit le radar, montant non précisé.",
+     "extrait": "La DGA commande quatre systèmes SAMP/T NG supplémentaires",
+     "nom": "Thales"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "La DGA commande quatre systèmes SAMP/T NG supplémentaires - Economie Matin",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5DSmI5VEVtSF9hekZhLXc0X0duanVJNXVPbE9ETEpBWWF6U0VWRjlpMXdhUkxrbkhocFpZNkVkaDVXbGRwX2VXbnV5YUkwM3U1QTJzYkdpR3ZZS1lncHF3cm81SmkxQmRHZExTbk1zMFdKNW9NN1BfWmR3?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T08:20:27+00:00",
+     "media": "Economie Matin"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
    "id": "presse-2e5cd5604bc672ec",
    "date": "2026-10-22",
    "source": "presse",
@@ -272,6 +734,115 @@
    "analyse": "claude",
    "ajoute_le": "2026-10-23",
    "publie_a": "2026-10-23T06:22:22+00:00"
+  },
+  {
+   "id": "amf-083529_20261022",
+   "date": "2026-10-22",
+   "source": "amf",
+   "titre": "Accor : objectif de résultat 2026 revu à la hausse après le T3",
+   "resume": "Accor publie son chiffre d'affaires du troisième trimestre 2026 et relève son objectif de résultat.",
+   "nouveaute": "Relèvement de l'objectif de résultat annuel annoncé avec le chiffre d'affaires du T3.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083529_20261022.pdf",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "AC.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Objectif de résultat relevé : révision haussière des attentes de résultat 2026.",
+     "extrait": "Accor revoit à la hausse son objectif de résultat",
+     "nom": "Accor"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Accor : Chiffre d’affaires du 3ème trimestre 2026 : Accor revoit à la hausse son objectif de résultat",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083529_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T15:45:59+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-139146_20261022",
+   "date": "2026-10-22",
+   "source": "amf",
+   "titre": "Nexans choisi fournisseur privilégié pour l'interconnexion Majorque-Minorque (Red Eléctrica)",
+   "resume": "Nexans est sélectionné comme fournisseur privilégié par Red Eléctrica pour l'interconnexion électrique entre Majorque et Minorque.",
+   "nouveaute": "Sélection comme fournisseur privilégié annoncée.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139146_20261022.pdf",
+   "etape": "annonce",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "NEX.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Contrat de câbles sous-marins, montant non communiqué, attribution encore à finaliser.",
+     "extrait": "sélectionné comme fournisseur privilégié",
+     "nom": "Nexans"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Nexans : Nexans sélectionné comme fournisseur privilégié pour l’interconnexion entre Majorque et Minorque avec Red Eléctrica",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139146_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T05:00:00+00:00",
+     "media": "amf"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
+  },
+  {
+   "id": "amf-083539_20261022",
+   "date": "2026-10-22",
+   "source": "amf",
+   "titre": "bioMérieux : autorisation 510(k) de la FDA pour son test BIOFIRE SPOTFIRE Vaginitis Panel",
+   "resume": "La FDA accorde l'autorisation 510(k) et la dérogation CLIA au panel BIOFIRE SPOTFIRE Vaginitis de bioMérieux.",
+   "nouveaute": "Autorisation réglementaire américaine obtenue.",
+   "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083539_20261022.pdf",
+   "etape": "publie",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "BIM.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Nouveau test autorisé aux États-Unis, élargit la gamme SPOTFIRE.",
+     "extrait": "autorisation 510(k) et la dérogation CLIA de la FDA",
+     "nom": "bioMérieux"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "bioMérieux : bioMérieux obtient l’autorisation 510(k) et la dérogation CLIA de la FDA pour son test BIOFIRE® SPOTFIRE® Vaginitis Panel : une avancée pour améliorer la santé des femmes grâce au diagnostic moléculaire rapide",
+     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083539_20261022.pdf",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T16:02:03+00:00",
+     "media": "amf"
+    },
+    {
+     "titre": "BioMérieux obtient le feu vert de la FDA pour son test de diagnostic de la vaginite - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQLWJ0X2JOb2VUYXl0bHJySVpsMk9wQXNZRXlOMHk5SlN0UkNNdUROaHl3NVhWTGVSd1FRV0lONnBOcWtPLUpNNXBVaU5Md25NQ2pLSUFjazR0VVgxY0FPM3RDY0tQTzh0bEhtUmNnajZ3NnpVbjdxTDFMRTVKeUV5UkU1ek5UYXR4cFBFLU9HdkRudG04N09ldm9DT1o1X2FMNUFob2FtWUo4SE81eUdTRWFaREVYelhVWE9qajFjZl9YU2R1WEJJREFDYmQ0emNuUTF3UVRMYWJTNDQ?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T16:15:35+00:00",
+     "media": "Zonebourse Suisse"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T11:24:32+00:00"
   },
   {
    "id": "presse-67b00f8c713fb0bf",
@@ -6993,21 +7564,21 @@
    "fiable": false
   },
   {
-   "date": "2027-01-28",
+   "date": "2027-01-26",
    "heure": "",
    "type": "resultats",
-   "titre": "Eurofins Scientific : publication de résultats (date estimée d'après l'an dernier)",
+   "titre": "ID Logistics : publication de résultats (date estimée d'après l'an dernier)",
    "tickers": [
-    "ERF.PA"
+    "IDL.PA"
    ],
    "tickers_mots_cles": [
-    "ERF.PA"
+    "IDL.PA"
    ],
    "themes": [],
    "texte": "",
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/ERF.PA",
+   "url": "https://finance.yahoo.com/quote/IDL.PA",
    "fiable": false
   },
   {
@@ -7029,6 +7600,24 @@
    "fiable": false
   },
   {
+   "date": "2027-02-02",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Sartorius Stedim Biotech : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "DIM.PA"
+   ],
+   "tickers_mots_cles": [
+    "DIM.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/DIM.PA",
+   "fiable": false
+  },
+  {
    "date": "2027-02-05",
    "heure": "",
    "type": "resultats",
@@ -7044,6 +7633,24 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/DG.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-09",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Kering : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "KER.PA"
+   ],
+   "tickers_mots_cles": [
+    "KER.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/KER.PA",
    "fiable": false
   },
   {
@@ -7158,6 +7765,24 @@
    "date": "2027-02-18",
    "heure": "",
    "type": "resultats",
+   "titre": "Renault : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "RNO.PA"
+   ],
+   "tickers_mots_cles": [
+    "RNO.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/RNO.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-18",
+   "heure": "",
+   "type": "resultats",
    "titre": "FDJ United : publication de résultats (date estimée d'après l'an dernier)",
    "tickers": [
     "FDJU.PA"
@@ -7170,6 +7795,42 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/FDJU.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-18",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Nexans : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "NEX.PA"
+   ],
+   "tickers_mots_cles": [
+    "NEX.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/NEX.PA",
+   "fiable": false
+  },
+  {
+   "date": "2027-02-18",
+   "heure": "",
+   "type": "resultats",
+   "titre": "Covivio : publication de résultats (date estimée d'après l'an dernier)",
+   "tickers": [
+    "COV.PA"
+   ],
+   "tickers_mots_cles": [
+    "COV.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Estimation (même période l'an dernier)",
+   "url": "https://finance.yahoo.com/quote/COV.PA",
    "fiable": false
   }
  ]

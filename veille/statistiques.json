@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-23T06:23:42+00:00",
+ "genere_le": "2026-10-23T11:25:48+00:00",
  "derniere_seance": "2026-10-22",
  "methode": {
   "indice": "CAC 40",
@@ -13,62 +13,61 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 106,
-  "n_observations": 164,
+  "n_alertes": 119,
+  "n_observations": 177,
   "statuts": {
-   "attente": 5,
-   "donnees": 14,
-   "note": 58,
-   "confondu": 13,
-   "non_directionnel": 34,
+   "attente": 17,
+   "confondu": 15,
+   "note": 69,
+   "non_directionnel": 36,
    "macro": 40
   },
   "synthese": {
-   "n": 58,
+   "n": 69,
    "points": {
-    "total": 4,
-    "moyenne": 0.07,
+    "total": 9,
+    "moyenne": 0.13,
     "repartition": {
-     "2": 3,
-     "1": 14,
-     "0": 26,
-     "-1": 14,
+     "2": 6,
+     "1": 17,
+     "0": 27,
+     "-1": 18,
      "-2": 1
     }
    },
    "sens": {
-    "justes": 18,
-    "faux": 8,
-    "bruit": 32,
-    "taux": 0.692,
-    "p": 0.0755
+    "justes": 24,
+    "faux": 10,
+    "bruit": 35,
+    "taux": 0.706,
+    "p": 0.0243
    },
-   "ecart_moyen_pct": 0.91,
-   "z_moyen": 0.6,
-   "t": 1.86,
-   "p_t": 0.0679,
+   "ecart_moyen_pct": 0.95,
+   "z_moyen": 0.66,
+   "t": 2.27,
+   "p_t": 0.0263,
    "signe": {
-    "positifs": 32,
-    "p": 0.5118
+    "positifs": 39,
+    "p": 0.3356
    },
    "rang": {
-    "moyen": 0.564,
-    "p": 0.0906
+    "moyen": 0.576,
+    "p": 0.0277
    },
    "ampleur": {
-    "n": 50,
+    "n": 61,
     "matrice": {
      "faible": {
-      "contraire": 7,
-      "bruit": 22,
-      "net": 4,
+      "contraire": 9,
+      "bruit": 23,
+      "net": 6,
       "fort": 1
      },
      "moyenne": {
       "contraire": 1,
-      "bruit": 6,
-      "net": 2,
-      "fort": 4
+      "bruit": 8,
+      "net": 5,
+      "fort": 5
      },
      "forte": {
       "contraire": 0,
@@ -78,66 +77,66 @@
      }
     },
     "z_abs_moyen": {
-     "faible": 0.97,
-     "moyenne": 2.79,
+     "faible": 1.01,
+     "moyenne": 2.56,
      "forte": 1.25
     },
-    "spearman": 0.217,
-    "p": 0.1302
+    "spearman": 0.196,
+    "p": 0.1297
    },
    "apres_publication": {
-    "n": 37,
-    "ecart_moyen_pct": 0.35,
-    "z_moyen": 0.06,
-    "p": 0.7422
+    "n": 42,
+    "ecart_moyen_pct": 0.23,
+    "z_moyen": 0.03,
+    "p": 0.8771
    }
   },
   "avant_reaction": {
-   "n": 22,
+   "n": 32,
    "points": {
-    "total": -1,
-    "moyenne": -0.05,
+    "total": 3,
+    "moyenne": 0.09,
     "repartition": {
-     "2": 1,
-     "1": 6,
-     "0": 7,
-     "-1": 7,
+     "2": 4,
+     "1": 8,
+     "0": 8,
+     "-1": 11,
      "-2": 1
     }
    },
    "sens": {
-    "justes": 8,
-    "faux": 5,
-    "bruit": 9,
-    "taux": 0.615,
-    "p": 0.5811
+    "justes": 13,
+    "faux": 7,
+    "bruit": 12,
+    "taux": 0.65,
+    "p": 0.2632
    },
-   "ecart_moyen_pct": 1.88,
-   "z_moyen": 1.15,
-   "t": 1.52,
-   "p_t": 0.1427,
+   "ecart_moyen_pct": 1.63,
+   "z_moyen": 1.08,
+   "t": 1.91,
+   "p_t": 0.0652,
    "signe": {
-    "positifs": 14,
-    "p": 0.2863
+    "positifs": 20,
+    "p": 0.2153
    },
    "rang": {
-    "moyen": 0.586,
-    "p": 0.1605
+    "moyen": 0.594,
+    "p": 0.0667
    },
    "ampleur": {
-    "n": 18,
+    "n": 28,
     "matrice": {
      "faible": {
-      "contraire": 4,
-      "bruit": 4,
-      "net": 1,
+      "contraire": 6,
+      "bruit": 5,
+      "net": 2,
       "fort": 1
      },
      "moyenne": {
       "contraire": 1,
-      "bruit": 3,
-      "net": 1,
-      "fort": 3
+      "bruit": 5,
+      "net": 4,
+      "fort": 4
      },
      "forte": {
       "contraire": 0,
@@ -147,27 +146,27 @@
      }
     },
     "z_abs_moyen": {
-     "faible": 1.35,
-     "moyenne": 3.61,
+     "faible": 1.32,
+     "moyenne": 2.94,
      "forte": null
     },
-    "spearman": 0.215,
-    "p": 0.3904
+    "spearman": 0.146,
+    "p": 0.4587
    },
    "apres_publication": {
-    "n": 8,
-    "ecart_moyen_pct": 3.2,
-    "z_moyen": 0.67,
-    "p": 0.1725
+    "n": 12,
+    "ecart_moyen_pct": 1.65,
+    "z_moyen": 0.29,
+    "p": 0.4716
    }
   },
   "par_source": [
    {
-    "n": 43,
-    "points_moyen": 0.12,
-    "justes": 13,
-    "faux": 4,
-    "z_moyen": 0.44,
+    "n": 54,
+    "points_moyen": 0.19,
+    "justes": 19,
+    "faux": 6,
+    "z_moyen": 0.56,
     "cle": "presse"
    },
    {
@@ -181,20 +180,20 @@
   ],
   "par_etape": [
    {
-    "n": 23,
-    "points_moyen": 0.3,
+    "n": 25,
+    "points_moyen": 0.12,
     "justes": 9,
-    "faux": 2,
-    "z_moyen": 0.56,
-    "cle": "annonce"
+    "faux": 5,
+    "z_moyen": 0.42,
+    "cle": "information"
    },
    {
-    "n": 15,
-    "points_moyen": -0.13,
-    "justes": 3,
-    "faux": 3,
-    "z_moyen": -0.06,
-    "cle": "information"
+    "n": 24,
+    "points_moyen": 0.29,
+    "justes": 9,
+    "faux": 2,
+    "z_moyen": 0.51,
+    "cle": "annonce"
    },
    {
     "n": 14,
@@ -215,19 +214,19 @@
   ],
   "par_ampleur": [
    {
-    "n": 34,
-    "points_moyen": -0.09,
-    "justes": 5,
-    "faux": 7,
-    "z_moyen": -0.24,
+    "n": 39,
+    "points_moyen": -0.08,
+    "justes": 7,
+    "faux": 9,
+    "z_moyen": -0.23,
     "cle": "faible"
    },
    {
-    "n": 13,
-    "points_moyen": 0.0,
-    "justes": 6,
+    "n": 19,
+    "points_moyen": 0.26,
+    "justes": 10,
     "faux": 1,
-    "z_moyen": 2.27,
+    "z_moyen": 2.17,
     "cle": "moyenne"
    },
    {
@@ -249,10 +248,64 @@
   ],
   "probabilites": {
    "n_tranchees": 1,
-   "n_en_cours": 44,
+   "n_en_cours": 48,
    "brier": 0.09
   },
   "detail": [
+   {
+    "id": "presse-f483c8514f9b09dd",
+    "titre": "Renault cède son usine historique de Viry-Châtillon à un groupe belge",
+    "date": "2026-10-23",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-23T11:35",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "RNO.PA",
+      "nom": "Renault",
+      "sens": "neutre",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-13f991afd61d8a4c",
+    "titre": "La DGA commande quatre systèmes SAMP/T NG supplémentaires",
+    "date": "2026-10-23",
+    "source": "presse",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-23T10:20",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "HO.PA",
+      "nom": "Thales",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
    {
     "id": "presse-cba15182271d8a5f",
     "titre": "Safran : ventes T3 en hausse de 13 %, objectifs 2026 jugés sous le consensus",
@@ -276,6 +329,87 @@
       "nom": "Safran",
       "sens": "incertain",
       "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-139504_20261023",
+    "titre": "Ipsos : croissance organique de 2,0 % au T3, objectif de croissance 2026 actualisé",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-23T07:49",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "IPS.PA",
+      "nom": "Ipsos SA",
+      "sens": "incertain",
+      "ampleur": "inconnue",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-139489_20261023",
+    "titre": "Sodexo : croissance interne de 2,0 % sur l'exercice 2026, perspectives 2027 confirmées",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-23T07:00",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "SW.PA",
+      "nom": "Sodexo",
+      "sens": "positif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-139452_20261023",
+    "titre": "Planisware : chiffre d'affaires du T3 de 57,4 M€ (+15,6 %), objectifs 2026 confirmés",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-23T07:00",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "PLNW.PA",
+      "nom": "Planisware",
+      "sens": "positif",
+      "ampleur": "faible",
       "statut": "attente"
      }
     ]
@@ -335,6 +469,141 @@
     ]
    },
    {
+    "id": "amf-119441_20261022",
+    "titre": "Unibail-Rodamco-Westfield : loyers +4,4 % à périmètre constant au T3, objectif 2026 confirmé",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T18:04",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "URW.PA",
+      "nom": "Unibail-Rodamco-Westfield",
+      "sens": "neutre",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-139440_20261022",
+    "titre": "Valeo : chiffre d'affaires du T3 en recul de 2,6 %, objectifs 2026 maintenus",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T18:02",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "FR.PA",
+      "nom": "Valeo",
+      "sens": "incertain",
+      "ampleur": "inconnue",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-139395_20261022",
+    "titre": "Vinci : nouvelles hausses du chiffre d'affaires et des prises de commandes à neuf mois",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T17:45",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "DG.PA",
+      "nom": "Vinci",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-139414_20261022",
+    "titre": "Forvia et Great Wall Motor étendent leur alliance à l'international",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T17:45",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "FRVIA.PA",
+      "nom": "Forvia",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-169916_20261022",
+    "titre": "Carmila : objectifs 2026 confirmés après son point à fin septembre",
+    "date": "2026-10-23",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T17:40",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "CARM.PA",
+      "nom": "Carmila",
+      "sens": "neutre",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
     "id": "presse-2e5cd5604bc672ec",
     "titre": "Nexity : chiffre d'affaires -17 % à 1,6 Md€ sur neuf mois, guidance 2026 confirmée",
     "date": "2026-10-22",
@@ -357,6 +626,33 @@
       "nom": "Nexity",
       "sens": "negatif",
       "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "amf-083539_20261022",
+    "titre": "bioMérieux : autorisation 510(k) de la FDA pour son test BIOFIRE SPOTFIRE Vaginitis Panel",
+    "date": "2026-10-22",
+    "source": "amf",
+    "etape": "publie",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T18:02",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "BIM.PA",
+      "nom": "bioMérieux",
+      "sens": "positif",
+      "ampleur": "faible",
       "statut": "attente"
      }
     ]
@@ -389,6 +685,33 @@
     ]
    },
    {
+    "id": "amf-083529_20261022",
+    "titre": "Accor : objectif de résultat 2026 revu à la hausse après le T3",
+    "date": "2026-10-22",
+    "source": "amf",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T17:45",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "AC.PA",
+      "nom": "Accor",
+      "sens": "positif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
     "id": "presse-abfc25d79def0710",
     "titre": "Wendel : ANR par action en hausse de 5,1 % à 167 € au T3, cessions de Stahl et d'IHS",
     "date": "2026-10-22",
@@ -411,7 +734,21 @@
       "nom": "Wendel",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": 0.85,
+      "indice_pct": -1.39,
+      "beta": 0.83,
+      "sigma_pct": 1.23,
+      "ecart_pct": 1.98,
+      "z": 1.6,
+      "rang": 0.964,
+      "avant_pct": 1.13,
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 0,
+       "total": 1
+      }
      }
     ]
    },
@@ -438,7 +775,29 @@
       "nom": "Hermès",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": -4.94,
+      "indice_pct": -1.39,
+      "beta": 1.58,
+      "sigma_pct": 1.53,
+      "ecart_pct": -2.58,
+      "z": -1.69,
+      "rang": 0.028,
+      "avant_pct": 4.43,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 0.94,
+       "ecart_pct": 1.86,
+       "z": 1.72
+      },
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 1,
+       "total": 2
+      }
      }
     ]
    },
@@ -465,7 +824,29 @@
       "nom": "Orange",
       "sens": "negatif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": 1.88,
+      "indice_pct": -1.39,
+      "beta": 0.17,
+      "sigma_pct": 1.53,
+      "ecart_pct": 2.07,
+      "z": 1.35,
+      "rang": 0.933,
+      "avant_pct": 0.34,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 0.98,
+       "ecart_pct": 1.08,
+       "z": 1.0
+      },
+      "statut": "note",
+      "niveau": "contraire",
+      "points": {
+       "sens": -1,
+       "ampleur": 0,
+       "total": -1
+      }
      }
     ]
    },
@@ -492,7 +873,29 @@
       "nom": "Getlink",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": 0.83,
+      "indice_pct": -1.39,
+      "beta": 0.4,
+      "sigma_pct": 0.93,
+      "ecart_pct": 1.28,
+      "z": 1.38,
+      "rang": 0.913,
+      "avant_pct": 0.94,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 0.83,
+       "ecart_pct": 1.06,
+       "z": 1.61
+      },
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 0,
+       "total": 1
+      }
      }
     ]
    },
@@ -519,7 +922,27 @@
       "nom": "Nexans",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -5.82,
+      "indice_pct": -1.39,
+      "beta": 1.08,
+      "sigma_pct": 2.04,
+      "ecart_pct": -4.38,
+      "z": -2.15,
+      "rang": 0.028,
+      "avant_pct": -6.65,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -5.82,
+       "ecart_pct": -5.19,
+       "z": -3.6
+      },
+      "statut": "confondu",
+      "confondu_avec": [
+       "amf-139146_20261022"
+      ],
+      "niveau": "contraire"
      }
     ]
    },
@@ -546,7 +969,29 @@
       "nom": "Ipsen",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": 0.0,
+      "indice_pct": -1.39,
+      "beta": 0.24,
+      "sigma_pct": 1.89,
+      "ecart_pct": 0.22,
+      "z": 0.11,
+      "rang": 0.571,
+      "avant_pct": 3.73,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.98,
+       "ecart_pct": -0.84,
+       "z": -0.62
+      },
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": -1,
+       "total": -1
+      }
      }
     ]
    },
@@ -573,7 +1018,68 @@
       "nom": "Thales",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": -1.43,
+      "indice_pct": -1.39,
+      "beta": 0.56,
+      "sigma_pct": 1.86,
+      "ecart_pct": -0.61,
+      "z": -0.33,
+      "rang": 0.349,
+      "avant_pct": 2.24,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.79,
+       "ecart_pct": -0.46,
+       "z": -0.35
+      },
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": -1,
+       "total": -1
+      }
+     }
+    ]
+   },
+   {
+    "id": "amf-139146_20261022",
+    "titre": "Nexans choisi fournisseur privilégié pour l'interconnexion Majorque-Minorque (Red Eléctrica)",
+    "date": "2026-10-22",
+    "source": "amf",
+    "etape": "annonce",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T13:24",
+    "information": "2026-10-22T07:00",
+    "reaction": {
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "NEX.PA",
+      "nom": "Nexans",
+      "sens": "positif",
+      "ampleur": "faible",
+      "rendement_pct": -5.82,
+      "indice_pct": -1.39,
+      "beta": 1.08,
+      "sigma_pct": 2.04,
+      "ecart_pct": -4.38,
+      "z": -2.15,
+      "rang": 0.028,
+      "avant_pct": -6.65,
+      "statut": "confondu",
+      "confondu_avec": [
+       "presse-981e9efd342bb774"
+      ],
+      "niveau": "contraire"
      }
     ]
    },
@@ -600,7 +1106,29 @@
       "nom": "Stellantis",
       "sens": "negatif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -0.75,
+      "indice_pct": -1.39,
+      "beta": 1.43,
+      "sigma_pct": 2.82,
+      "ecart_pct": 1.48,
+      "z": 0.52,
+      "rang": 0.746,
+      "avant_pct": -0.27,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 1.31,
+       "ecart_pct": 2.15,
+       "z": 1.08
+      },
+      "statut": "note",
+      "niveau": "bruit",
+      "points": {
+       "sens": 0,
+       "ampleur": 0,
+       "total": 0
+      }
      }
     ]
    },
@@ -627,7 +1155,29 @@
       "nom": "Maurel & Prom",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": -2.95,
+      "indice_pct": -1.39,
+      "beta": -0.98,
+      "sigma_pct": 2.56,
+      "ecart_pct": -4.56,
+      "z": -1.78,
+      "rang": 0.052,
+      "avant_pct": -2.47,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -4.36,
+       "ecart_pct": -4.93,
+       "z": -2.72
+      },
+      "statut": "note",
+      "niveau": "contraire",
+      "points": {
+       "sens": -1,
+       "ampleur": 0,
+       "total": -1
+      }
      }
     ]
    },
@@ -654,7 +1204,24 @@
       "nom": "Sartorius Stedim Biotech",
       "sens": "incertain",
       "ampleur": "inconnue",
-      "statut": "donnees"
+      "rendement_pct": -2.88,
+      "indice_pct": -1.39,
+      "beta": 1.08,
+      "sigma_pct": 2.35,
+      "ecart_pct": -1.48,
+      "z": -0.63,
+      "rang": 0.206,
+      "avant_pct": -1.64,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -3.42,
+       "ecart_pct": -2.79,
+       "z": -1.68
+      },
+      "statut": "non_directionnel",
+      "niveau": "bruit"
      }
     ]
    },
@@ -681,7 +1248,29 @@
       "nom": "EssilorLuxottica",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": 1.93,
+      "indice_pct": -1.39,
+      "beta": 0.98,
+      "sigma_pct": 1.8,
+      "ecart_pct": 3.51,
+      "z": 1.94,
+      "rang": 0.968,
+      "avant_pct": 17.63,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 1.58,
+       "ecart_pct": 2.15,
+       "z": 1.68
+      },
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 1,
+       "total": 2
+      }
      }
     ]
    },
@@ -708,7 +1297,24 @@
       "nom": "Covivio",
       "sens": "neutre",
       "ampleur": "faible",
-      "statut": "donnees"
+      "rendement_pct": 0.69,
+      "indice_pct": -1.39,
+      "beta": 0.86,
+      "sigma_pct": 1.15,
+      "ecart_pct": 1.95,
+      "z": 1.7,
+      "rang": 0.952,
+      "avant_pct": -0.64,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.18,
+       "ecart_pct": 0.32,
+       "z": 0.39
+      },
+      "statut": "non_directionnel",
+      "niveau": "net"
      }
     ]
    },
@@ -735,7 +1341,29 @@
       "nom": "ID Logistics",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": 8.88,
+      "indice_pct": -1.39,
+      "beta": 0.97,
+      "sigma_pct": 1.48,
+      "ecart_pct": 10.28,
+      "z": 6.96,
+      "rang": 0.996,
+      "avant_pct": 4.25,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 3.37,
+       "ecart_pct": 3.94,
+       "z": 3.77
+      },
+      "statut": "note",
+      "niveau": "fort",
+      "points": {
+       "sens": 1,
+       "ampleur": 0,
+       "total": 1
+      }
      }
     ]
    },
@@ -762,7 +1390,29 @@
       "nom": "FDJ United",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "statut": "donnees"
+      "rendement_pct": -2.09,
+      "indice_pct": -1.39,
+      "beta": 0.26,
+      "sigma_pct": 1.32,
+      "ecart_pct": -1.67,
+      "z": -1.27,
+      "rang": 0.048,
+      "avant_pct": -0.93,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 4.05,
+       "ecart_pct": 4.2,
+       "z": 4.5
+      },
+      "statut": "note",
+      "niveau": "net",
+      "points": {
+       "sens": 1,
+       "ampleur": 1,
+       "total": 2
+      }
      }
     ]
    },
@@ -797,6 +1447,14 @@
       "z": -1.21,
       "rang": 0.103,
       "avant_pct": 0.07,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -0.89,
+       "ecart_pct": -0.32,
+       "z": -0.4
+      },
       "statut": "non_directionnel",
       "niveau": "net"
      }
@@ -833,6 +1491,14 @@
       "z": -0.5,
       "rang": 0.278,
       "avant_pct": -0.93,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": -1.38,
+       "ecart_pct": -0.68,
+       "z": -0.56
+      },
       "statut": "note",
       "niveau": "bruit",
       "points": {
@@ -874,6 +1540,14 @@
       "z": 0.54,
       "rang": 0.758,
       "avant_pct": -1.27,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 0.17,
+       "ecart_pct": 0.41,
+       "z": 0.58
+      },
       "statut": "confondu",
       "confondu_avec": [
        "presse-df11a6f8b84acd66"
@@ -913,6 +1587,14 @@
       "z": -0.31,
       "rang": 0.365,
       "avant_pct": 4.15,
+      "apres": {
+       "debut": "2026-10-22",
+       "seances": 1,
+       "complet": false,
+       "rendement_pct": 2.03,
+       "ecart_pct": 2.27,
+       "z": 2.37
+      },
       "statut": "note",
       "niveau": "bruit",
       "points": {
@@ -956,11 +1638,11 @@
       "avant_pct": 0.93,
       "apres": {
        "debut": "2026-10-21",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": -5.04,
-       "ecart_pct": -5.38,
-       "z": -5.5
+       "rendement_pct": -7.5,
+       "ecart_pct": -7.66,
+       "z": -4.53
       },
       "statut": "note",
       "niveau": "fort",
@@ -1005,11 +1687,11 @@
       "avant_pct": 0.09,
       "apres": {
        "debut": "2026-10-21",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": 3.98,
-       "ecart_pct": 3.21,
-       "z": 2.79
+       "rendement_pct": 7.02,
+       "ecart_pct": 7.0,
+       "z": 3.51
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1054,11 +1736,11 @@
       "avant_pct": -1.27,
       "apres": {
        "debut": "2026-10-21",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": 0.46,
-       "ecart_pct": 0.01,
-       "z": 0.01
+       "rendement_pct": 0.23,
+       "ecart_pct": 0.28,
+       "z": 0.23
       },
       "statut": "confondu",
       "confondu_avec": [
@@ -1101,11 +1783,11 @@
       "avant_pct": 2.58,
       "apres": {
        "debut": "2026-10-21",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": 7.27,
-       "ecart_pct": 5.98,
-       "z": 4.96
+       "rendement_pct": 6.28,
+       "ecart_pct": 6.58,
+       "z": 3.15
       },
       "statut": "note",
       "niveau": "fort",
@@ -1150,11 +1832,11 @@
       "avant_pct": -0.88,
       "apres": {
        "debut": "2026-10-21",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": -9.2,
-       "ecart_pct": -9.89,
-       "z": -4.82
+       "rendement_pct": -8.82,
+       "ecart_pct": -8.79,
+       "z": -2.47
       },
       "statut": "note",
       "niveau": "contraire",
@@ -1199,11 +1881,11 @@
       "avant_pct": -0.27,
       "apres": {
        "debut": "2026-10-21",
-       "seances": 1,
+       "seances": 2,
        "complet": false,
-       "rendement_pct": 0.85,
-       "ecart_pct": -0.36,
-       "z": -0.44
+       "rendement_pct": -0.14,
+       "ecart_pct": 0.19,
+       "z": 0.13
       },
       "statut": "confondu",
       "confondu_avec": [
@@ -1246,11 +1928,11 @@
       "avant_pct": -2.23,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -0.86,
-       "ecart_pct": -2.08,
-       "z": -0.6
+       "rendement_pct": -1.6,
+       "ecart_pct": -0.54,
+       "z": -0.12
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1295,11 +1977,11 @@
       "avant_pct": -4.33,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 1.08,
-       "ecart_pct": -0.82,
-       "z": -0.42
+       "rendement_pct": -3.49,
+       "ecart_pct": -3.01,
+       "z": -1.2
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1339,11 +2021,11 @@
       "avant_pct": 2.23,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -0.88,
-       "ecart_pct": -1.51,
-       "z": -0.71
+       "rendement_pct": -0.2,
+       "ecart_pct": -0.17,
+       "z": -0.06
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1388,11 +2070,11 @@
       "avant_pct": -0.26,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 2.08,
-       "ecart_pct": 1.41,
-       "z": 0.78
+       "rendement_pct": 1.47,
+       "ecart_pct": 1.75,
+       "z": 0.75
       },
       "statut": "note",
       "niveau": "fort",
@@ -1437,11 +2119,11 @@
       "avant_pct": -5.99,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 2.72,
-       "ecart_pct": 0.99,
-       "z": 0.48
+       "rendement_pct": -2.78,
+       "ecart_pct": -2.18,
+       "z": -0.82
       },
       "statut": "note",
       "niveau": "net",
@@ -1486,11 +2168,11 @@
       "avant_pct": 6.01,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 17.54,
-       "ecart_pct": 16.57,
-       "z": 4.22
+       "rendement_pct": 7.87,
+       "ecart_pct": 9.76,
+       "z": 1.93
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1535,11 +2217,11 @@
       "avant_pct": -0.27,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": 1.76,
-       "ecart_pct": 0.67,
-       "z": 0.47
+       "rendement_pct": 0.76,
+       "ecart_pct": 1.21,
+       "z": 0.67
       },
       "statut": "confondu",
       "confondu_avec": [
@@ -1582,11 +2264,11 @@
       "avant_pct": 5.84,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -0.29,
-       "ecart_pct": -0.97,
-       "z": -0.54
+       "rendement_pct": 1.01,
+       "ecart_pct": 1.25,
+       "z": 0.54
       },
       "statut": "non_directionnel",
       "niveau": "net"
@@ -1626,11 +2308,11 @@
       "avant_pct": 3.59,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -1.15,
-       "ecart_pct": -1.31,
-       "z": -0.57
+       "rendement_pct": 1.15,
+       "ecart_pct": 1.54,
+       "z": 0.51
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1675,11 +2357,11 @@
       "avant_pct": 2.81,
       "apres": {
        "debut": "2026-10-20",
-       "seances": 2,
+       "seances": 3,
        "complet": false,
-       "rendement_pct": -13.88,
-       "ecart_pct": -14.31,
-       "z": -8.48
+       "rendement_pct": -16.12,
+       "ecart_pct": -16.59,
+       "z": -7.61
       },
       "statut": "note",
       "niveau": "contraire",
@@ -1724,11 +2406,11 @@
       "avant_pct": 2.71,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -1.97,
-       "ecart_pct": -2.03,
-       "z": -0.49
+       "rendement_pct": -2.21,
+       "ecart_pct": -1.23,
+       "z": -0.25
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1773,11 +2455,11 @@
       "avant_pct": 1.02,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -0.62,
-       "ecart_pct": -0.93,
-       "z": -0.48
+       "rendement_pct": -1.96,
+       "ecart_pct": -1.67,
+       "z": -0.73
       },
       "statut": "non_directionnel",
       "niveau": "fort"
@@ -1817,11 +2499,11 @@
       "avant_pct": 0.27,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -1.5,
-       "ecart_pct": -1.78,
-       "z": -0.62
+       "rendement_pct": -2.45,
+       "ecart_pct": -1.24,
+       "z": -0.36
       },
       "statut": "non_directionnel",
       "niveau": "net"
@@ -1841,11 +2523,11 @@
       "avant_pct": -5.26,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": -2.09,
-       "ecart_pct": -2.23,
-       "z": -0.5
+       "rendement_pct": -2.83,
+       "ecart_pct": -0.58,
+       "z": -0.11
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -1885,11 +2567,11 @@
       "avant_pct": 0.51,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": 0.55,
-       "ecart_pct": -0.01,
-       "z": -0.01
+       "rendement_pct": -1.48,
+       "ecart_pct": -0.16,
+       "z": -0.06
       },
       "statut": "note",
       "niveau": "net",
@@ -1934,11 +2616,11 @@
       "avant_pct": -2.78,
       "apres": {
        "debut": "2026-10-19",
-       "seances": 3,
+       "seances": 4,
        "complet": false,
-       "rendement_pct": 0.42,
-       "ecart_pct": -0.5,
-       "z": -0.22
+       "rendement_pct": -3.39,
+       "ecart_pct": -2.0,
+       "z": -0.73
       },
       "statut": "note",
       "niveau": "bruit",
@@ -1983,11 +2665,11 @@
       "avant_pct": -5.8,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -5.34,
-       "ecart_pct": -4.9,
-       "z": -1.66
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -10.41,
+       "ecart_pct": -8.18,
+       "z": -2.44
       },
       "statut": "note",
       "niveau": "contraire",
@@ -2032,11 +2714,11 @@
       "avant_pct": 7.52,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -1.18,
-       "ecart_pct": -0.5,
-       "z": -0.15
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": 1.84,
+       "ecart_pct": 3.57,
+       "z": 0.94
       },
       "statut": "note",
       "niveau": "net",
@@ -2081,11 +2763,11 @@
       "avant_pct": 2.09,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": 0.65,
-       "ecart_pct": 1.2,
-       "z": 0.35
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -0.56,
+       "ecart_pct": 1.54,
+       "z": 0.4
       },
       "statut": "note",
       "niveau": "bruit",
@@ -2130,11 +2812,11 @@
       "avant_pct": 0.07,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -1.21,
-       "ecart_pct": -0.53,
-       "z": -0.11
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -1.46,
+       "ecart_pct": 0.28,
+       "z": 0.05
       },
       "statut": "note",
       "niveau": "bruit",
@@ -2177,13 +2859,14 @@
       "z": -0.15,
       "rang": 0.452,
       "avant_pct": -10.08,
+      "j5_pct": 0.0,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -0.24,
-       "ecart_pct": 0.6,
-       "z": 0.12
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -3.02,
+       "ecart_pct": 0.53,
+       "z": 0.09
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -2221,13 +2904,14 @@
       "z": -0.03,
       "rang": 0.468,
       "avant_pct": -0.63,
+      "j5_pct": -6.26,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -1.59,
-       "ecart_pct": -0.88,
-       "z": -0.1
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -8.2,
+       "ecart_pct": -6.65,
+       "z": -0.69
       },
       "statut": "non_directionnel",
       "niveau": "bruit"
@@ -2265,6 +2949,7 @@
       "z": 0.19,
       "rang": 0.607,
       "avant_pct": 7.98,
+      "j5_pct": 3.4,
       "apres": {
        "debut": "2026-10-15",
        "seances": 5,
@@ -2309,13 +2994,14 @@
       "z": 0.18,
       "rang": 0.591,
       "avant_pct": -0.3,
+      "j5_pct": 2.87,
       "apres": {
        "debut": "2026-10-16",
-       "seances": 4,
-       "complet": false,
-       "rendement_pct": -0.98,
-       "ecart_pct": 0.03,
-       "z": 0.01
+       "seances": 5,
+       "complet": true,
+       "rendement_pct": -0.93,
+       "ecart_pct": 2.34,
+       "z": 0.84
       },
       "statut": "note",
       "niveau": "bruit",
@@ -5420,18 +6106,18 @@
   "indice": "CAC 40",
   "depuis": "2015-01-01",
   "jusqu_a": "2026-10-22",
-  "n_communiques": 26049,
-  "n_evenements": 21189,
+  "n_communiques": 26053,
+  "n_evenements": 21201,
   "n_entreprises": 115,
-  "en_attente": 14,
+  "en_attente": 18,
   "jour_ordinaire": {
-   "n": 313268,
+   "n": 313611,
    "z_abs_moyen": 0.67,
    "part_net": 0.218,
    "part_fort": 0.04
   },
   "tous": {
-   "n": 21189,
+   "n": 21201,
    "z_abs_moyen": 1.17,
    "part_net": 0.367,
    "part_fort": 0.157,
@@ -5456,10 +6142,10 @@
     "libelle": "Révisions d'objectifs, avertissements"
    },
    {
-    "n": 4341,
+    "n": 4351,
     "z_abs_moyen": 2.28,
     "part_net": 0.672,
-    "part_fort": 0.434,
+    "part_fort": 0.433,
     "ecart_abs_median_pct": 2.5,
     "n_positif": 0,
     "n_negatif": 0,
@@ -5507,10 +6193,10 @@
     "libelle": "Juridique et réglementaire"
    },
    {
-    "n": 3789,
+    "n": 3791,
     "z_abs_moyen": 0.94,
     "part_net": 0.305,
-    "part_fort": 0.093,
+    "part_fort": 0.094,
     "ecart_abs_median_pct": 0.81,
     "n_positif": 1962,
     "n_negatif": 22,
@@ -5627,23 +6313,23 @@
    }
   ],
   "resultats": {
-   "n": 4341,
-   "n_avis_claude": 4201,
-   "n_consensus": 963,
+   "n": 4351,
+   "n_avis_claude": 4211,
+   "n_consensus": 967,
    "part_hausse": 0.55,
    "mouvements": {
-    "n": 4341,
+    "n": 4351,
     "z_abs_moyen": 2.28,
     "part_net": 0.672,
-    "part_fort": 0.434,
+    "part_fort": 0.433,
     "ecart_abs_median_pct": 2.5
    },
    "matrice_consensus": {
     "positive": {
      "hausse": {
-      "n": 267,
-      "avant_moyen_pct": 0.27,
-      "ecart_moyen_pct": 3.87,
+      "n": 269,
+      "avant_moyen_pct": 0.31,
+      "ecart_moyen_pct": 3.88,
       "suite_moyenne_pct": 0.34
      },
      "baisse": {
@@ -5652,24 +6338,24 @@
       "ecart_moyen_pct": -3.39,
       "suite_moyenne_pct": 0.02
      },
-     "n": 422,
-     "part_hausse": 0.633
+     "n": 424,
+     "part_hausse": 0.634
     },
     "conforme": {
      "hausse": {
       "n": 135,
       "avant_moyen_pct": 1.03,
       "ecart_moyen_pct": 3.47,
-      "suite_moyenne_pct": 0.24
+      "suite_moyenne_pct": 0.26
      },
      "baisse": {
-      "n": 142,
-      "avant_moyen_pct": -0.52,
-      "ecart_moyen_pct": -3.53,
-      "suite_moyenne_pct": 0.01
+      "n": 143,
+      "avant_moyen_pct": -0.46,
+      "ecart_moyen_pct": -3.54,
+      "suite_moyenne_pct": 0.03
      },
-     "n": 277,
-     "part_hausse": 0.487
+     "n": 278,
+     "part_hausse": 0.486
     },
     "negative": {
      "hausse": {
@@ -5839,13 +6525,13 @@
     }
    },
    "concordance": {
-    "n_positif": 422,
+    "n_positif": 424,
     "n_negatif": 260,
-    "hausse_si_positif": 0.633,
+    "hausse_si_positif": 0.634,
     "baisse_si_negatif": 0.562,
-    "concordance": 0.606,
+    "concordance": 0.607,
     "p": 0.0,
-    "ecart_moyen_positif_pct": 1.2,
+    "ecart_moyen_positif_pct": 1.22,
     "ecart_moyen_negatif_pct": -0.56
    },
    "n_consensus_ca": 1321,
@@ -6063,8 +6749,8 @@
    "par_periode": [
     {
      "valeur": "annuels",
-     "n": 881,
-     "part_hausse": 0.586,
+     "n": 882,
+     "part_hausse": 0.585,
      "ecart_moyen_pct": 0.59,
      "z_abs_moyen": 2.6
     },
@@ -6077,14 +6763,14 @@
     },
     {
      "valeur": "trimestriels",
-     "n": 600,
-     "part_hausse": 0.515,
-     "ecart_moyen_pct": 0.32,
+     "n": 601,
+     "part_hausse": 0.514,
+     "ecart_moyen_pct": 0.31,
      "z_abs_moyen": 2.24
     },
     {
      "valeur": "chiffre_affaires",
-     "n": 1531,
+     "n": 1538,
      "part_hausse": 0.562,
      "ecart_moyen_pct": 0.55,
      "z_abs_moyen": 2.07
@@ -6100,15 +6786,15 @@
    "par_perspectives": [
     {
      "valeur": "relevees",
-     "n": 405,
-     "part_hausse": 0.704,
-     "ecart_moyen_pct": 2.21,
+     "n": 406,
+     "part_hausse": 0.702,
+     "ecart_moyen_pct": 2.2,
      "z_abs_moyen": 2.32
     },
     {
      "valeur": "confirmees",
-     "n": 1217,
-     "part_hausse": 0.54,
+     "n": 1220,
+     "part_hausse": 0.539,
      "ecart_moyen_pct": 0.43,
      "z_abs_moyen": 2.17
     },
@@ -6130,9 +6816,9 @@
    "par_perspectives_surprise": [
     {
      "valeur": "relevees",
-     "n": 405,
-     "part_hausse": 0.704,
-     "ecart_moyen_pct": 2.21,
+     "n": 406,
+     "part_hausse": 0.702,
+     "ecart_moyen_pct": 2.2,
      "suite_moyenne_pct": -0.45,
      "par_surprise": {
       "positive": {
@@ -6151,14 +6837,14 @@
     },
     {
      "valeur": "confirmees",
-     "n": 1217,
-     "part_hausse": 0.54,
+     "n": 1220,
+     "part_hausse": 0.539,
      "ecart_moyen_pct": 0.43,
      "suite_moyenne_pct": 0.46,
      "par_surprise": {
       "positive": {
-       "n": 91,
-       "part_hausse": 0.626
+       "n": 92,
+       "part_hausse": 0.63
       },
       "conforme": {
        "n": 63,
@@ -6240,7 +6926,7 @@
      "n": 2,
      "part_hausse": 0.5,
      "ecart_moyen_pct": 0.4,
-     "suite_moyenne_pct": null,
+     "suite_moyenne_pct": 3.42,
      "par_surprise": {
       "positive": {
        "n": 0,
@@ -6280,22 +6966,22 @@
    ],
    "attentes_marche": {
     "positions_courtes": {
-     "n": 4341,
+     "n": 4351,
      "par_tranche": [
       {
        "valeur": "aucune",
-       "n": 3125,
+       "n": 3131,
        "part_hausse": 0.551,
        "ecart_moyen_pct": 0.54,
        "suite_moyenne_pct": -0.21,
        "par_surprise": {
         "positive": {
-         "n": 332,
-         "part_hausse": 0.605
+         "n": 334,
+         "part_hausse": 0.608
         },
         "conforme": {
-         "n": 218,
-         "part_hausse": 0.463
+         "n": 219,
+         "part_hausse": 0.461
         },
         "negative": {
          "n": 172,
@@ -6305,10 +6991,10 @@
       },
       {
        "valeur": "moderees",
-       "n": 812,
-       "part_hausse": 0.543,
-       "ecart_moyen_pct": 0.19,
-       "suite_moyenne_pct": -0.09,
+       "n": 815,
+       "part_hausse": 0.542,
+       "ecart_moyen_pct": 0.18,
+       "suite_moyenne_pct": -0.08,
        "par_surprise": {
         "positive": {
          "n": 68,
@@ -6350,18 +7036,18 @@
     "consensus": {
      "n_entreprises": 118,
      "releve_depuis": "2026-10-01",
-     "n_surprises": 963,
+     "n_surprises": 967,
      "par_surprise": [
       {
        "valeur": "positive",
-       "n": 422,
-       "part_hausse": 0.633,
-       "ecart_moyen_pct": 1.2,
+       "n": 424,
+       "part_hausse": 0.634,
+       "ecart_moyen_pct": 1.22,
        "suite_moyenne_pct": 0.22,
        "par_surprise": {
         "positive": {
-         "n": 422,
-         "part_hausse": 0.633
+         "n": 424,
+         "part_hausse": 0.634
         },
         "conforme": {
          "n": 0,
@@ -6375,18 +7061,18 @@
       },
       {
        "valeur": "conforme",
-       "n": 277,
-       "part_hausse": 0.487,
-       "ecart_moyen_pct": -0.12,
-       "suite_moyenne_pct": 0.12,
+       "n": 278,
+       "part_hausse": 0.486,
+       "ecart_moyen_pct": -0.13,
+       "suite_moyenne_pct": 0.14,
        "par_surprise": {
         "positive": {
          "n": 0,
          "part_hausse": null
         },
         "conforme": {
-         "n": 277,
-         "part_hausse": 0.487
+         "n": 278,
+         "part_hausse": 0.486
         },
         "negative": {
          "n": 0,
@@ -6416,9 +7102,9 @@
        }
       }
      ],
-     "concordance": 0.606,
+     "concordance": 0.607,
      "p": 0.0,
-     "n_revisions": 19,
+     "n_revisions": 20,
      "par_revision": [
       {
        "valeur": "hausse",
@@ -6464,9 +7150,9 @@
       },
       {
        "valeur": "baisse",
-       "n": 3,
-       "part_hausse": 0.333,
-       "ecart_moyen_pct": -0.33,
+       "n": 4,
+       "part_hausse": 0.5,
+       "ecart_moyen_pct": -0.03,
        "suite_moyenne_pct": 1.17,
        "par_surprise": {
         "positive": {
@@ -6491,18 +7177,18 @@
     "par_surprise": {
      "positive": {
       "tous": {
-       "n": 420,
-       "part_hausse": 0.631
+       "n": 422,
+       "part_hausse": 0.633
       },
       "haut": {
-       "n": 94,
-       "part_hausse": 0.553
+       "n": 95,
+       "part_hausse": 0.558
       }
      },
      "conforme": {
       "tous": {
-       "n": 276,
-       "part_hausse": 0.486
+       "n": 277,
+       "part_hausse": 0.484
       },
       "haut": {
        "n": 50,
@@ -6594,7 +7280,7 @@
        "n": 5,
        "avant_moyen_pct": 2.67,
        "ecart_moyen_pct": 0.87,
-       "suite_moyenne_pct": -0.44
+       "suite_moyenne_pct": 0.26
       },
       "baisse": {
        "n": 4,
@@ -6647,13 +7333,13 @@
        "suite_moyenne_pct": 1.67
       },
       "baisse": {
-       "n": 5,
-       "avant_moyen_pct": 2.29,
-       "ecart_moyen_pct": -3.21,
+       "n": 6,
+       "avant_moyen_pct": 3.27,
+       "ecart_moyen_pct": -3.5,
        "suite_moyenne_pct": -1.76
       },
-      "n": 11,
-      "part_hausse": 0.545
+      "n": 12,
+      "part_hausse": 0.5
      },
      "negative": {
       "hausse": {
@@ -6750,7 +7436,7 @@
        "n": 6,
        "avant_moyen_pct": 0.25,
        "ecart_moyen_pct": -1.1,
-       "suite_moyenne_pct": 0.45
+       "suite_moyenne_pct": 0.95
       },
       "n": 11,
       "part_hausse": 0.455
@@ -6775,9 +7461,9 @@
     "Industrie": {
      "positive": {
       "hausse": {
-       "n": 54,
-       "avant_moyen_pct": 0.91,
-       "ecart_moyen_pct": 3.76,
+       "n": 56,
+       "avant_moyen_pct": 1.09,
+       "ecart_moyen_pct": 3.8,
        "suite_moyenne_pct": -0.19
       },
       "baisse": {
@@ -6786,8 +7472,8 @@
        "ecart_moyen_pct": -2.49,
        "suite_moyenne_pct": -0.23
       },
-      "n": 82,
-      "part_hausse": 0.659
+      "n": 84,
+      "part_hausse": 0.667
      },
      "conforme": {
       "hausse": {
@@ -8191,10 +8877,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 4.26,
-     "z_avant": 0.71,
-     "perf_12m_pct": 9.86,
+     "au": "2026-10-22",
+     "avant_pct": 5.8,
+     "z_avant": 0.96,
+     "perf_12m_pct": 10.04,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.535,
@@ -9420,10 +10106,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 4.18,
-     "z_avant": 0.94,
-     "perf_12m_pct": 15.78,
+     "au": "2026-10-22",
+     "avant_pct": 4.77,
+     "z_avant": 1.07,
+     "perf_12m_pct": 19.73,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.568,
@@ -9779,10 +10465,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 5.3,
-     "z_avant": 0.84,
-     "perf_12m_pct": 1.04,
+     "au": "2026-10-22",
+     "avant_pct": 4.74,
+     "z_avant": 0.75,
+     "perf_12m_pct": -0.06,
      "n_historique": 0
     }
    },
@@ -11032,10 +11718,10 @@
      "date": "2026-11-17",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 11.07,
-     "z_avant": 0.96,
-     "perf_12m_pct": -24.28,
+     "au": "2026-10-22",
+     "avant_pct": 13.68,
+     "z_avant": 1.18,
+     "perf_12m_pct": -23.4,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.578,
@@ -11391,10 +12077,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -13.31,
-     "z_avant": -1.45,
-     "perf_12m_pct": 70.81,
+     "au": "2026-10-22",
+     "avant_pct": -13.42,
+     "z_avant": -1.46,
+     "perf_12m_pct": 67.7,
      "n_historique": 0
     }
    },
@@ -12558,10 +13244,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.85,
-     "z_avant": 0.21,
-     "perf_12m_pct": 18.93,
+     "au": "2026-10-22",
+     "avant_pct": -3.09,
+     "z_avant": -0.75,
+     "perf_12m_pct": 18.28,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -13694,10 +14380,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -9.61,
-     "z_avant": -1.71,
-     "perf_12m_pct": 41.98,
+     "au": "2026-10-22",
+     "avant_pct": -14.93,
+     "z_avant": -2.66,
+     "perf_12m_pct": 35.99,
      "n_historique": 32,
      "scenarios": {
       "hausse": 0.529,
@@ -15006,10 +15692,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -5.45,
-     "z_avant": -1.07,
-     "perf_12m_pct": 8.27,
+     "au": "2026-10-22",
+     "avant_pct": -5.03,
+     "z_avant": -0.99,
+     "perf_12m_pct": 9.49,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.643,
@@ -15866,7 +16552,7 @@
        "rendement_pct": 6.53,
        "ecart_pct": 5.49,
        "z": 3.57,
-       "suite_pct": -2.63,
+       "suite_pct": -2.64,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -16221,10 +16907,10 @@
      "n": 43
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 6.66,
-     "z_avant": 1.11,
-     "perf_12m_pct": 7.0
+     "au": "2026-10-22",
+     "avant_pct": 10.85,
+     "z_avant": 1.81,
+     "perf_12m_pct": 11.58
     }
    },
    {
@@ -17511,10 +18197,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 19.03,
-     "z_avant": 1.78,
-     "perf_12m_pct": 2.84,
+     "au": "2026-10-22",
+     "avant_pct": 23.02,
+     "z_avant": 2.15,
+     "perf_12m_pct": 3.45,
      "n_historique": 46,
      "scenarios": {
       "hausse": 0.604,
@@ -18730,10 +19416,10 @@
      "n": 48
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -15.12,
-     "z_avant": -2.48,
-     "perf_12m_pct": 19.32
+     "au": "2026-10-22",
+     "avant_pct": -17.28,
+     "z_avant": -2.84,
+     "perf_12m_pct": 17.56
     }
    },
    {
@@ -19961,10 +20647,10 @@
      "date": "2026-10-30",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -11.78,
-     "z_avant": -2.64,
-     "perf_12m_pct": 7.46,
+     "au": "2026-10-22",
+     "avant_pct": -13.01,
+     "z_avant": -2.92,
+     "perf_12m_pct": 5.94,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.4,
@@ -21178,10 +21864,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 2.91,
-     "z_avant": 0.46,
-     "perf_12m_pct": -15.78,
+     "au": "2026-10-22",
+     "avant_pct": 6.22,
+     "z_avant": 0.98,
+     "perf_12m_pct": -11.43,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.636,
@@ -22165,10 +22851,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 13.88,
-     "z_avant": 1.21,
-     "perf_12m_pct": -0.71,
+     "au": "2026-10-22",
+     "avant_pct": 16.5,
+     "z_avant": 1.43,
+     "perf_12m_pct": 4.16,
      "n_historique": 21,
      "scenarios": {
       "hausse": 0.435,
@@ -23475,10 +24161,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -3.53,
-     "z_avant": -0.6,
-     "perf_12m_pct": 26.11,
+     "au": "2026-10-22",
+     "avant_pct": -2.27,
+     "z_avant": -0.39,
+     "perf_12m_pct": 25.41,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.591,
@@ -24176,7 +24862,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.28,
+       "avant_pct": 1.27,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -24711,10 +25397,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -6.13,
-     "z_avant": -0.47,
-     "perf_12m_pct": 11.03
+     "au": "2026-10-22",
+     "avant_pct": -4.07,
+     "z_avant": -0.31,
+     "perf_12m_pct": 13.18
     }
    },
    {
@@ -25886,10 +26572,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 23.31,
-     "z_avant": 3.0,
-     "perf_12m_pct": -40.38
+     "au": "2026-10-22",
+     "avant_pct": 29.82,
+     "z_avant": 3.84,
+     "perf_12m_pct": -38.28
     }
    },
    {
@@ -26651,10 +27337,10 @@
      "n": 22
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 6.85,
-     "z_avant": 0.97,
-     "perf_12m_pct": 37.78
+     "au": "2026-10-22",
+     "avant_pct": 8.34,
+     "z_avant": 1.18,
+     "perf_12m_pct": 43.77
     }
    },
    {
@@ -27908,10 +28594,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 7.07,
-     "z_avant": 1.13,
-     "perf_12m_pct": 44.99,
+     "au": "2026-10-22",
+     "avant_pct": 9.63,
+     "z_avant": 1.53,
+     "perf_12m_pct": 52.22,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.707,
@@ -27927,13 +28613,13 @@
     "indice": "CAC 40",
     "secteur": "Luxe",
     "n_communiques": 84,
-    "n_evenements": 65,
+    "n_evenements": 66,
     "categories": [
      {
-      "n": 42,
+      "n": 43,
       "z_abs_moyen": 1.8,
-      "part_net": 0.667,
-      "part_fort": 0.286,
+      "part_net": 0.674,
+      "part_fort": 0.279,
       "ecart_abs_median_pct": 1.57,
       "n_positif": 0,
       "n_negatif": 0,
@@ -27995,7 +28681,7 @@
      }
     ],
     "resultats": {
-     "n": 42,
+     "n": 43,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -28021,13 +28707,13 @@
         "suite_moyenne_pct": 0.79
        },
        "baisse": {
-        "n": 2,
-        "avant_moyen_pct": -2.15,
-        "ecart_moyen_pct": -1.38,
+        "n": 3,
+        "avant_moyen_pct": 1.29,
+        "ecart_moyen_pct": -2.56,
         "suite_moyenne_pct": -1.88
        },
-       "n": 4,
-       "part_hausse": 0.5
+       "n": 5,
+       "part_hausse": 0.4
       },
       "negative": {
        "hausse": {
@@ -28207,10 +28893,10 @@
       "ecart_moyen_negatif_pct": 2.55
      },
      "mouvements": {
-      "n": 42,
+      "n": 43,
       "z_abs_moyen": 1.8,
-      "part_net": 0.667,
-      "part_fort": 0.286,
+      "part_net": 0.674,
+      "part_fort": 0.279,
       "ecart_abs_median_pct": 1.57
      },
      "par_surprise": [
@@ -28237,9 +28923,9 @@
       },
       {
        "valeur": "conforme",
-       "n": 4,
-       "part_hausse": 0.5,
-       "ecart_moyen_pct": -0.35,
+       "n": 5,
+       "part_hausse": 0.4,
+       "ecart_moyen_pct": -1.27,
        "suite_moyenne_pct": -0.54,
        "par_surprise": {
         "positive": {
@@ -28247,8 +28933,8 @@
          "part_hausse": null
         },
         "conforme": {
-         "n": 4,
-         "part_hausse": 0.5
+         "n": 5,
+         "part_hausse": 0.4
         },
         "negative": {
          "n": 0,
@@ -28295,6 +28981,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Hermès International : Chiffre d'affaires du 3ème trimestre 2026",
+       "avant_pct": 8.18,
+       "z_avant": 1.2,
+       "perf_12m_pct": -34.16,
+       "rendement_pct": -4.94,
+       "ecart_pct": -2.58,
+       "z": -1.69,
+       "reaction": "baisse",
+       "courtes_pct": 0.0,
+       "surprise": "conforme"
+      },
       {
        "jour": "2026-07-29",
        "periode": "semestriels",
@@ -28934,9 +29634,9 @@
     },
     "marche": {
      "habitude": {
-      "n": 7,
+      "n": 8,
       "n_positive": 2,
-      "n_conforme": 4,
+      "n_conforme": 5,
       "n_negative": 1,
       "n_bpa": 0,
       "bpa_mediane_pct": null
@@ -29003,24 +29703,14 @@
     },
     "grand_secteur": "Consommation discrétionnaire",
     "p_hausse_passee": {
-     "p": 0.614,
-     "n": 42
+     "p": 0.6,
+     "n": 43
     },
-    "prochaine": {
-     "date": "2027-02-11",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 8.18,
-     "z_avant": 1.2,
-     "perf_12m_pct": -34.16,
-     "n_historique": 42,
-     "scenarios": {
-      "hausse": 0.614,
-      "baisse": 0.386
-     },
-     "probable": "hausse",
-     "p_hausse": 0.614
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": 4.29,
+     "z_avant": 0.63,
+     "perf_12m_pct": -35.56
     }
    },
    {
@@ -29694,7 +30384,7 @@
        "titre": "Kering : Résultats semestriels 2023",
        "avant_pct": 5.84,
        "z_avant": 1.15,
-       "perf_12m_pct": -14.02,
+       "perf_12m_pct": -14.03,
        "rendement_pct": -1.15,
        "ecart_pct": -1.27,
        "z": -1.13,
@@ -30225,10 +30915,10 @@
      "date": "2027-02-09",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.04,
-     "z_avant": 0.0,
-     "perf_12m_pct": -29.45,
+     "au": "2026-10-22",
+     "avant_pct": 0.89,
+     "z_avant": 0.09,
+     "perf_12m_pct": -28.74,
      "n_historique": 42,
      "scenarios": {
       "hausse": 0.545,
@@ -31409,10 +32099,10 @@
      "date": "2027-02-12",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 8.92,
-     "z_avant": 1.47,
-     "perf_12m_pct": 15.26,
+     "au": "2026-10-22",
+     "avant_pct": 10.63,
+     "z_avant": 1.76,
+     "perf_12m_pct": 19.09,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -32837,10 +33527,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.45,
-     "z_avant": -0.21,
-     "perf_12m_pct": -6.86,
+     "au": "2026-10-22",
+     "avant_pct": -3.63,
+     "z_avant": -0.51,
+     "perf_12m_pct": -10.74,
      "n_historique": 47,
      "scenarios": {
       "hausse": 0.429,
@@ -33867,10 +34557,10 @@
      "n": 39
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 3.52,
-     "z_avant": 0.57,
-     "perf_12m_pct": -31.6
+     "au": "2026-10-22",
+     "avant_pct": 4.76,
+     "z_avant": 0.76,
+     "perf_12m_pct": -31.01
     }
    },
    {
@@ -34628,10 +35318,10 @@
      "n": 18
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -6.73,
-     "z_avant": -1.24,
-     "perf_12m_pct": 17.84
+     "au": "2026-10-22",
+     "avant_pct": -3.5,
+     "z_avant": -0.65,
+     "perf_12m_pct": 21.68
     }
    },
    {
@@ -35789,10 +36479,10 @@
      "date": "2026-10-27",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -0.57,
-     "z_avant": -0.09,
-     "perf_12m_pct": 9.96,
+     "au": "2026-10-22",
+     "avant_pct": 1.58,
+     "z_avant": 0.24,
+     "perf_12m_pct": 14.5,
      "n_historique": 36,
      "scenarios": {
       "hausse": 0.579,
@@ -35808,7 +36498,7 @@
     "indice": "CAC 40",
     "secteur": "Spiritueux",
     "n_communiques": 249,
-    "n_evenements": 212,
+    "n_evenements": 213,
     "categories": [
      {
       "n": 2,
@@ -35843,11 +36533,11 @@
       "id": "resultats"
      },
      {
-      "n": 60,
-      "z_abs_moyen": 0.94,
-      "part_net": 0.3,
-      "part_fort": 0.117,
-      "ecart_abs_median_pct": 0.64,
+      "n": 61,
+      "z_abs_moyen": 0.96,
+      "part_net": 0.311,
+      "part_fort": 0.131,
+      "ecart_abs_median_pct": 0.65,
       "n_positif": 41,
       "n_negatif": 0,
       "hausse_si_positif": 0.61,
@@ -35995,7 +36685,7 @@
         "n": 2,
         "avant_moyen_pct": 7.86,
         "ecart_moyen_pct": 0.99,
-        "suite_moyenne_pct": -1.66
+        "suite_moyenne_pct": 0.7
        },
        "baisse": {
         "n": 0,
@@ -36217,7 +36907,7 @@
        "n": 2,
        "part_hausse": 1.0,
        "ecart_moyen_pct": 0.99,
-       "suite_moyenne_pct": -1.66,
+       "suite_moyenne_pct": 0.7,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -36296,6 +36986,7 @@
        "rendement_pct": 0.76,
        "ecart_pct": 0.34,
        "z": 0.19,
+       "suite_pct": 3.06,
        "reaction": "hausse",
        "courtes_pct": 1.76,
        "surprise": "conforme"
@@ -37028,10 +37719,10 @@
      "n": 43
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 14.09,
-     "z_avant": 1.77,
-     "perf_12m_pct": -15.99
+     "au": "2026-10-22",
+     "avant_pct": 17.89,
+     "z_avant": 2.25,
+     "perf_12m_pct": -11.01
     }
    },
    {
@@ -38295,10 +38986,10 @@
      "n": 44
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 3.25,
-     "z_avant": 0.42,
-     "perf_12m_pct": 23.11
+     "au": "2026-10-22",
+     "avant_pct": 4.27,
+     "z_avant": 0.55,
+     "perf_12m_pct": 26.23
     }
    },
    {
@@ -39268,7 +39959,7 @@
        "perf_12m_pct": -32.51,
        "rendement_pct": 0.15,
        "ecart_pct": -0.45,
-       "z": -0.28,
+       "z": -0.29,
        "suite_pct": -4.8,
        "reaction": "hausse",
        "courtes_pct": 0.0,
@@ -39571,10 +40262,10 @@
      "date": "2027-02-18",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 4.95,
-     "z_avant": 0.62,
-     "perf_12m_pct": -11.68,
+     "au": "2026-10-22",
+     "avant_pct": 6.66,
+     "z_avant": 0.83,
+     "perf_12m_pct": -10.5,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.511,
@@ -39589,7 +40280,7 @@
     "nom": "Safran",
     "indice": "CAC 40",
     "secteur": "Aéronautique, défense",
-    "n_communiques": 136,
+    "n_communiques": 137,
     "n_evenements": 109,
     "categories": [
      {
@@ -39677,7 +40368,7 @@
       "z_abs_moyen": 3.72,
       "part_net": 0.6,
       "part_fort": 0.6,
-      "ecart_abs_median_pct": 4.33,
+      "ecart_abs_median_pct": 4.34,
       "n_positif": 4,
       "n_negatif": 0,
       "hausse_si_positif": 0.25,
@@ -40788,10 +41479,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -3.39,
-     "z_avant": -0.52,
-     "perf_12m_pct": 7.56,
+     "au": "2026-10-22",
+     "avant_pct": -5.32,
+     "z_avant": -0.81,
+     "perf_12m_pct": 5.34,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.605,
@@ -41998,10 +42689,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.0,
-     "z_avant": 0.0,
-     "perf_12m_pct": -19.53,
+     "au": "2026-10-22",
+     "avant_pct": 2.6,
+     "z_avant": 0.44,
+     "perf_12m_pct": -17.51,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.619,
@@ -43289,10 +43980,10 @@
      "date": "2026-10-30",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 2.07,
-     "z_avant": 0.33,
-     "perf_12m_pct": -7.38,
+     "au": "2026-10-22",
+     "avant_pct": 5.9,
+     "z_avant": 0.93,
+     "perf_12m_pct": -5.23,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.429,
@@ -44543,10 +45234,10 @@
      "n": 43
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -13.33,
-     "z_avant": -1.95,
-     "perf_12m_pct": 2.4
+     "au": "2026-10-22",
+     "avant_pct": -16.12,
+     "z_avant": -2.36,
+     "perf_12m_pct": -2.23
     }
    },
    {
@@ -45729,10 +46420,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -10.53,
-     "z_avant": -1.51,
-     "perf_12m_pct": 21.84,
+     "au": "2026-10-22",
+     "avant_pct": -10.33,
+     "z_avant": -1.48,
+     "perf_12m_pct": 16.21,
      "n_historique": 34,
      "scenarios": {
       "hausse": 0.667,
@@ -46035,10 +46726,10 @@
      "date": "2026-10-28",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -0.02,
-     "z_avant": -0.0,
-     "perf_12m_pct": -56.66,
+     "au": "2026-10-22",
+     "avant_pct": 4.83,
+     "z_avant": 0.37,
+     "perf_12m_pct": -56.26,
      "n_historique": 0
     }
    },
@@ -47434,10 +48125,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -10.97,
-     "z_avant": -0.77,
-     "perf_12m_pct": 97.87,
+     "au": "2026-10-22",
+     "avant_pct": -11.62,
+     "z_avant": -0.81,
+     "perf_12m_pct": 92.84,
      "n_historique": 44,
      "scenarios": {
       "hausse": 0.609,
@@ -48584,10 +49275,10 @@
      "date": "2026-11-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 5.16,
-     "z_avant": 0.39,
-     "perf_12m_pct": 34.35,
+     "au": "2026-10-22",
+     "avant_pct": 9.05,
+     "z_avant": 0.68,
+     "perf_12m_pct": 37.99,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -48603,7 +49294,7 @@
     "indice": "CAC 40",
     "secteur": "Défense, électronique",
     "n_communiques": 176,
-    "n_evenements": 136,
+    "n_evenements": 137,
     "categories": [
      {
       "n": 3,
@@ -48622,11 +49313,11 @@
       "id": "revision"
      },
      {
-      "n": 41,
-      "z_abs_moyen": 2.31,
-      "part_net": 0.659,
-      "part_fort": 0.463,
-      "ecart_abs_median_pct": 2.4,
+      "n": 42,
+      "z_abs_moyen": 2.26,
+      "part_net": 0.643,
+      "part_fort": 0.452,
+      "ecart_abs_median_pct": 2.13,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -48767,7 +49458,7 @@
      }
     ],
     "resultats": {
-     "n": 41,
+     "n": 42,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -48979,11 +49670,11 @@
       "ecart_moyen_negatif_pct": 0.15
      },
      "mouvements": {
-      "n": 41,
-      "z_abs_moyen": 2.31,
-      "part_net": 0.659,
-      "part_fort": 0.463,
-      "ecart_abs_median_pct": 2.4
+      "n": 42,
+      "z_abs_moyen": 2.26,
+      "part_net": 0.643,
+      "part_fort": 0.452,
+      "ecart_abs_median_pct": 2.13
      },
      "par_surprise": [
       {
@@ -49053,10 +49744,10 @@
      "par_perspectives": [
       {
        "valeur": "relevees",
-       "n": 8,
-       "part_hausse": 0.5,
-       "ecart_moyen_pct": 0.22,
-       "z_abs_moyen": 2.65
+       "n": 9,
+       "part_hausse": 0.444,
+       "ecart_moyen_pct": 0.04,
+       "z_abs_moyen": 2.39
       },
       {
        "valeur": "confirmees",
@@ -49081,6 +49772,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Thales publie ses prises de commandes et son chiffre d'affaires au 30 septembre 2026 - Communiqué de presse - 22 octobre 2026",
+       "perspectives": "relevees",
+       "avant_pct": -1.09,
+       "z_avant": -0.13,
+       "perf_12m_pct": -3.75,
+       "rendement_pct": -1.43,
+       "ecart_pct": -0.61,
+       "z": -0.33,
+       "reaction": "baisse",
+       "courtes_pct": 0.0
+      },
       {
        "jour": "2026-04-21",
        "periode": "chiffre_affaires",
@@ -49817,14 +50522,14 @@
     },
     "grand_secteur": "Industrie",
     "p_hausse_passee": {
-     "p": 0.488,
-     "n": 41
+     "p": 0.477,
+     "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -1.09,
-     "z_avant": -0.13,
-     "perf_12m_pct": -3.75
+     "au": "2026-10-22",
+     "avant_pct": 0.63,
+     "z_avant": 0.08,
+     "perf_12m_pct": -1.66
     }
    },
    {
@@ -51189,10 +51894,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.75,
-     "z_avant": -0.27,
-     "perf_12m_pct": 62.57,
+     "au": "2026-10-22",
+     "avant_pct": -5.07,
+     "z_avant": -0.79,
+     "perf_12m_pct": 60.01,
      "n_historique": 45,
      "scenarios": {
       "hausse": 0.426,
@@ -51762,7 +52467,7 @@
        "titre": "Unibail-Rodamco-Westfield Q1-2023 Trading Update",
        "rendement_pct": -3.3,
        "ecart_pct": -3.57,
-       "z": -2.71,
+       "z": -2.72,
        "suite_pct": -5.06,
        "reaction": "baisse",
        "courtes_pct": 0.0
@@ -51837,10 +52542,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -2.23,
-     "z_avant": -0.56,
-     "perf_12m_pct": 6.36,
+     "au": "2026-10-22",
+     "avant_pct": -0.4,
+     "z_avant": -0.1,
+     "perf_12m_pct": 8.9,
      "n_historique": 13,
      "scenarios": {
       "hausse": 0.467,
@@ -52213,7 +52918,7 @@
       "concordance": 0.6,
       "p": 0.6072,
       "ecart_moyen_positif_pct": -0.0,
-      "ecart_moyen_negatif_pct": -0.54
+      "ecart_moyen_negatif_pct": -0.53
      },
      "mouvements": {
       "n": 42,
@@ -52269,7 +52974,7 @@
        "valeur": "negative",
        "n": 8,
        "part_hausse": 0.375,
-       "ecart_moyen_pct": -0.54,
+       "ecart_moyen_pct": -0.53,
        "suite_moyenne_pct": -1.79,
        "par_surprise": {
         "positive": {
@@ -52895,7 +53600,7 @@
        "avant_pct": 3.64,
        "z_avant": 0.65,
        "perf_12m_pct": -14.4,
-       "rendement_pct": -0.45,
+       "rendement_pct": -0.44,
        "ecart_pct": -0.15,
        "z": -0.12,
        "suite_pct": -0.49,
@@ -53107,10 +53812,10 @@
      "date": "2026-11-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 3.27,
+     "au": "2026-10-22",
+     "avant_pct": 3.26,
      "z_avant": 0.71,
-     "perf_12m_pct": 17.11,
+     "perf_12m_pct": 18.56,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -53829,7 +54534,7 @@
        "titre": "INFORMATION TRIMESTRIELLE AU 30 SEPTEMBRE 2022",
        "avant_pct": -2.62,
        "z_avant": -0.57,
-       "perf_12m_pct": 8.58,
+       "perf_12m_pct": 8.59,
        "rendement_pct": 2.04,
        "ecart_pct": 1.61,
        "z": 1.52,
@@ -54389,10 +55094,10 @@
      "date": "2027-02-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.53,
-     "z_avant": 0.1,
-     "perf_12m_pct": -1.59,
+     "au": "2026-10-22",
+     "avant_pct": 0.83,
+     "z_avant": 0.16,
+     "perf_12m_pct": -0.35,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.644,
@@ -54408,7 +55113,7 @@
     "indice": "SBF 120",
     "secteur": "Concessions, BTP",
     "n_communiques": 333,
-    "n_evenements": 281,
+    "n_evenements": 282,
     "categories": [
      {
       "n": 58,
@@ -54443,11 +55148,11 @@
       "id": "trafic"
      },
      {
-      "n": 52,
-      "z_abs_moyen": 0.93,
-      "part_net": 0.385,
-      "part_fort": 0.077,
-      "ecart_abs_median_pct": 0.88,
+      "n": 53,
+      "z_abs_moyen": 0.92,
+      "part_net": 0.377,
+      "part_fort": 0.075,
+      "ecart_abs_median_pct": 0.82,
       "n_positif": 20,
       "n_negatif": 1,
       "hausse_si_positif": 0.5,
@@ -55841,10 +56546,10 @@
      "date": "2026-11-12",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -4.45,
-     "z_avant": -0.83,
-     "perf_12m_pct": -1.48,
+     "au": "2026-10-22",
+     "avant_pct": -3.68,
+     "z_avant": -0.69,
+     "perf_12m_pct": -0.11,
      "n_historique": 57,
      "scenarios": {
       "hausse": 0.644,
@@ -57059,10 +57764,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 2.14,
-     "z_avant": 0.27,
-     "perf_12m_pct": -3.12,
+     "au": "2026-10-22",
+     "avant_pct": 2.95,
+     "z_avant": 0.37,
+     "perf_12m_pct": -0.71,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.439,
@@ -57843,10 +58548,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -4.43,
-     "z_avant": -0.37,
-     "perf_12m_pct": -0.1,
+     "au": "2026-10-22",
+     "avant_pct": -3.89,
+     "z_avant": -0.33,
+     "perf_12m_pct": -1.46,
      "n_historique": 12,
      "scenarios": {
       "hausse": 0.643,
@@ -57862,14 +58567,14 @@
     "indice": "SBF 120",
     "secteur": "Tunnel sous la Manche",
     "n_communiques": 418,
-    "n_evenements": 395,
+    "n_evenements": 396,
     "categories": [
      {
-      "n": 52,
-      "z_abs_moyen": 1.05,
-      "part_net": 0.5,
-      "part_fort": 0.173,
-      "ecart_abs_median_pct": 1.06,
+      "n": 53,
+      "z_abs_moyen": 1.06,
+      "part_net": 0.509,
+      "part_fort": 0.17,
+      "ecart_abs_median_pct": 1.08,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -58026,13 +58731,13 @@
      }
     ],
     "resultats": {
-     "n": 52,
+     "n": 53,
      "matrice_consensus": {
       "positive": {
        "hausse": {
-        "n": 0,
-        "avant_moyen_pct": null,
-        "ecart_moyen_pct": null,
+        "n": 1,
+        "avant_moyen_pct": 3.31,
+        "ecart_moyen_pct": 0.83,
         "suite_moyenne_pct": null
        },
        "baisse": {
@@ -58041,8 +58746,8 @@
         "ecart_moyen_pct": null,
         "suite_moyenne_pct": null
        },
-       "n": 0,
-       "part_hausse": null
+       "n": 1,
+       "part_hausse": 1.0
       },
       "conforme": {
        "hausse": {
@@ -58228,23 +58933,44 @@
       }
      },
      "concordance": {
-      "n_positif": 0,
+      "n_positif": 1,
       "n_negatif": 4,
-      "hausse_si_positif": null,
+      "hausse_si_positif": 1.0,
       "baisse_si_negatif": 0.75,
-      "concordance": 0.75,
-      "p": 0.625,
-      "ecart_moyen_positif_pct": null,
+      "concordance": 0.8,
+      "p": 0.375,
+      "ecart_moyen_positif_pct": 0.83,
       "ecart_moyen_negatif_pct": -0.62
      },
      "mouvements": {
-      "n": 52,
-      "z_abs_moyen": 1.05,
-      "part_net": 0.5,
-      "part_fort": 0.173,
-      "ecart_abs_median_pct": 1.06
+      "n": 53,
+      "z_abs_moyen": 1.06,
+      "part_net": 0.509,
+      "part_fort": 0.17,
+      "ecart_abs_median_pct": 1.08
      },
      "par_surprise": [
+      {
+       "valeur": "positive",
+       "n": 1,
+       "part_hausse": 1.0,
+       "ecart_moyen_pct": 0.83,
+       "suite_moyenne_pct": null,
+       "par_surprise": {
+        "positive": {
+         "n": 1,
+         "part_hausse": 1.0
+        },
+        "conforme": {
+         "n": 0,
+         "part_hausse": null
+        },
+        "negative": {
+         "n": 0,
+         "part_hausse": null
+        }
+       }
+      },
       {
        "valeur": "negative",
        "n": 4,
@@ -58277,10 +59003,10 @@
       },
       {
        "valeur": "confirmees",
-       "n": 7,
-       "part_hausse": 0.714,
-       "ecart_moyen_pct": 0.6,
-       "z_abs_moyen": 1.42
+       "n": 8,
+       "part_hausse": 0.75,
+       "ecart_moyen_pct": 0.62,
+       "z_abs_moyen": 1.41
       },
       {
        "valeur": "nouvelles",
@@ -58291,6 +59017,21 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
+       "perspectives": "confirmees",
+       "avant_pct": 3.31,
+       "z_avant": 0.78,
+       "perf_12m_pct": 34.88,
+       "rendement_pct": 0.83,
+       "ecart_pct": 1.28,
+       "z": 1.38,
+       "reaction": "hausse",
+       "courtes_pct": 0.0,
+       "surprise": "positive"
+      },
       {
        "jour": "2026-07-23",
        "periode": "semestriels",
@@ -58924,7 +59665,7 @@
        "jour": "2016-10-19",
        "periode": "chiffre_affaires",
        "titre": "Troisième trimestre 2016 : Chiffre d’affaires +4%,",
-       "avant_pct": -12.7,
+       "avant_pct": -12.69,
        "z_avant": -1.58,
        "perf_12m_pct": -21.49,
        "rendement_pct": 0.44,
@@ -59073,8 +59814,8 @@
     },
     "marche": {
      "habitude": {
-      "n": 4,
-      "n_positive": 0,
+      "n": 5,
+      "n_positive": 1,
       "n_conforme": 0,
       "n_negative": 4,
       "n_bpa": 0,
@@ -59137,24 +59878,14 @@
     },
     "grand_secteur": "Industrie",
     "p_hausse_passee": {
-     "p": 0.547,
-     "n": 51
+     "p": 0.556,
+     "n": 52
     },
-    "prochaine": {
-     "date": "2027-01-21",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 3.31,
-     "z_avant": 0.78,
-     "perf_12m_pct": 34.88,
-     "n_historique": 51,
-     "scenarios": {
-      "hausse": 0.547,
-      "baisse": 0.453
-     },
-     "probable": "hausse",
-     "p_hausse": 0.547
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": 4.78,
+     "z_avant": 1.14,
+     "perf_12m_pct": 37.47
     }
    },
    {
@@ -59766,10 +60497,10 @@
      "n": 10
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 4.78,
-     "z_avant": 0.59,
-     "perf_12m_pct": 12.13
+     "au": "2026-10-22",
+     "avant_pct": 5.54,
+     "z_avant": 0.68,
+     "perf_12m_pct": 15.93
     }
    },
    {
@@ -61017,10 +61748,10 @@
      "date": "2026-10-30",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 3.89,
-     "z_avant": 0.6,
-     "perf_12m_pct": 22.57,
+     "au": "2026-10-22",
+     "avant_pct": 1.99,
+     "z_avant": 0.31,
+     "perf_12m_pct": 24.01,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.585,
@@ -61036,14 +61767,14 @@
     "indice": "SBF 120",
     "secteur": "Pharmacie",
     "n_communiques": 319,
-    "n_evenements": 286,
+    "n_evenements": 287,
     "categories": [
      {
-      "n": 39,
-      "z_abs_moyen": 2.64,
-      "part_net": 0.641,
-      "part_fort": 0.538,
-      "ecart_abs_median_pct": 4.36,
+      "n": 40,
+      "z_abs_moyen": 2.57,
+      "part_net": 0.625,
+      "part_fort": 0.525,
+      "ecart_abs_median_pct": 3.79,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -61184,7 +61915,7 @@
      }
     ],
     "resultats": {
-     "n": 39,
+     "n": 40,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -61396,11 +62127,11 @@
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 39,
-      "z_abs_moyen": 2.64,
-      "part_net": 0.641,
-      "part_fort": 0.538,
-      "ecart_abs_median_pct": 4.36
+      "n": 40,
+      "z_abs_moyen": 2.57,
+      "part_net": 0.625,
+      "part_fort": 0.525,
+      "ecart_abs_median_pct": 3.79
      },
      "par_surprise": [],
      "par_perspectives": [
@@ -61434,6 +62165,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Ipsen réalise une croissance remarquable des ventes au cours des neuf premiers mois de 2026 et relève à nouveau ses prévisions pour l’exerc…",
+       "perspectives": "relevees",
+       "avant_pct": 0.95,
+       "z_avant": 0.11,
+       "perf_12m_pct": 32.31,
+       "rendement_pct": 0.0,
+       "ecart_pct": 0.22,
+       "z": 0.11,
+       "courtes_pct": 0.0,
+       "surprise": "positive"
+      },
       {
        "jour": "2026-07-30",
        "periode": "annuels",
@@ -61697,7 +62442,7 @@
        "avant_pct": -1.44,
        "z_avant": -0.17,
        "perf_12m_pct": 8.03,
-       "rendement_pct": 16.16,
+       "rendement_pct": 16.17,
        "ecart_pct": 15.58,
        "z": 7.83,
        "suite_pct": -11.67,
@@ -62067,6 +62812,14 @@
      ]
     },
     "marche": {
+     "habitude": {
+      "n": 1,
+      "n_positive": 1,
+      "n_conforme": 0,
+      "n_negative": 0,
+      "n_bpa": 0,
+      "bpa_mediane_pct": null
+     },
      "courtes": {
       "pct": 0.0,
       "n": 0,
@@ -62132,21 +62885,11 @@
      "p": 0.512,
      "n": 39
     },
-    "prochaine": {
-     "date": "2027-02-11",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.95,
-     "z_avant": 0.11,
-     "perf_12m_pct": 32.31,
-     "n_historique": 39,
-     "scenarios": {
-      "hausse": 0.512,
-      "baisse": 0.488
-     },
-     "probable": "hausse",
-     "p_hausse": 0.512
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": 0.54,
+     "z_avant": 0.07,
+     "perf_12m_pct": 30.83
     }
    },
    {
@@ -63247,10 +63990,10 @@
      "date": "2026-11-04",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 18.5,
-     "z_avant": 2.22,
-     "perf_12m_pct": -19.31,
+     "au": "2026-10-22",
+     "avant_pct": 18.13,
+     "z_avant": 2.18,
+     "perf_12m_pct": -15.37,
      "n_historique": 32,
      "scenarios": {
       "hausse": 0.353,
@@ -64513,10 +65256,10 @@
      "date": "2026-11-25",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 18.07,
-     "z_avant": 1.91,
-     "perf_12m_pct": 7.11,
+     "au": "2026-10-22",
+     "avant_pct": 23.58,
+     "z_avant": 2.5,
+     "perf_12m_pct": 17.26,
      "n_historique": 51,
      "scenarios": {
       "hausse": 0.453,
@@ -65652,10 +66395,10 @@
      "n": 38
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 4.59,
-     "z_avant": 0.41,
-     "perf_12m_pct": -20.26
+     "au": "2026-10-22",
+     "avant_pct": 4.39,
+     "z_avant": 0.39,
+     "perf_12m_pct": -24.22
     }
    },
    {
@@ -65694,7 +66437,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.625,
       "p": 0.7266,
-      "ecart_moyen_positif_pct": -2.17,
+      "ecart_moyen_positif_pct": -1.96,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -66575,10 +67318,10 @@
      "date": "2027-02-18",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.51,
-     "z_avant": -0.26,
-     "perf_12m_pct": -7.76,
+     "au": "2026-10-22",
+     "avant_pct": -0.44,
+     "z_avant": -0.08,
+     "perf_12m_pct": -7.02,
      "n_historique": 26,
      "scenarios": {
       "hausse": 0.536,
@@ -67646,10 +68389,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -3.46,
-     "z_avant": -0.56,
-     "perf_12m_pct": -5.63,
+     "au": "2026-10-22",
+     "avant_pct": -2.5,
+     "z_avant": -0.41,
+     "perf_12m_pct": -5.83,
      "n_historique": 37,
      "scenarios": {
       "hausse": 0.692,
@@ -68896,10 +69639,10 @@
      "date": "2027-02-11",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -11.69,
-     "z_avant": -1.9,
-     "perf_12m_pct": 18.65,
+     "au": "2026-10-22",
+     "avant_pct": -10.43,
+     "z_avant": -1.68,
+     "perf_12m_pct": 14.3,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.558,
@@ -68915,14 +69658,14 @@
     "indice": "SBF 120",
     "secteur": "Câbles",
     "n_communiques": 246,
-    "n_evenements": 209,
+    "n_evenements": 210,
     "categories": [
      {
-      "n": 41,
+      "n": 42,
       "z_abs_moyen": 2.46,
-      "part_net": 0.78,
-      "part_fort": 0.537,
-      "ecart_abs_median_pct": 4.22,
+      "part_net": 0.786,
+      "part_fort": 0.548,
+      "ecart_abs_median_pct": 4.3,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -69063,7 +69806,7 @@
      }
     ],
     "resultats": {
-     "n": 41,
+     "n": 42,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -69275,11 +70018,11 @@
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 41,
+      "n": 42,
       "z_abs_moyen": 2.46,
-      "part_net": 0.78,
-      "part_fort": 0.537,
-      "ecart_abs_median_pct": 4.22
+      "part_net": 0.786,
+      "part_fort": 0.548,
+      "ecart_abs_median_pct": 4.3
      },
      "par_surprise": [
       {
@@ -69314,10 +70057,10 @@
       },
       {
        "valeur": "confirmees",
-       "n": 11,
-       "part_hausse": 0.545,
-       "ecart_moyen_pct": 0.55,
-       "z_abs_moyen": 1.99
+       "n": 12,
+       "part_hausse": 0.5,
+       "ecart_moyen_pct": 0.02,
+       "z_abs_moyen": 2.01
       },
       {
        "valeur": "nouvelles",
@@ -69335,6 +70078,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "annuels",
+       "titre": "Nexans 9M 2026: Dynamique exceptionnelle de PWR-Grid et PWR-Connect, poursuite de la normalisation de la croissance de PWR-Transmission, pe…",
+       "perspectives": "confirmees",
+       "avant_pct": -12.09,
+       "z_avant": -1.27,
+       "perf_12m_pct": 6.69,
+       "rendement_pct": -5.82,
+       "ecart_pct": -4.38,
+       "z": -2.15,
+       "reaction": "baisse",
+       "courtes_pct": 0.5
+      },
       {
        "jour": "2026-07-29",
        "periode": "annuels",
@@ -70042,24 +70799,14 @@
     },
     "grand_secteur": "Industrie",
     "p_hausse_passee": {
-     "p": 0.558,
-     "n": 41
+     "p": 0.545,
+     "n": 42
     },
-    "prochaine": {
-     "date": "2027-02-18",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -12.09,
-     "z_avant": -1.27,
-     "perf_12m_pct": 6.69,
-     "n_historique": 41,
-     "scenarios": {
-      "hausse": 0.558,
-      "baisse": 0.442
-     },
-     "probable": "hausse",
-     "p_hausse": 0.558
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": -13.74,
+     "z_avant": -1.45,
+     "perf_12m_pct": 0.81
     }
    },
    {
@@ -71118,10 +71865,10 @@
      "date": "2026-11-02",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -6.99,
-     "z_avant": -1.7,
-     "perf_12m_pct": 13.6,
+     "au": "2026-10-22",
+     "avant_pct": -4.39,
+     "z_avant": -1.07,
+     "perf_12m_pct": 13.29,
      "n_historique": 34,
      "scenarios": {
       "hausse": 0.528,
@@ -72248,10 +72995,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -4.44,
-     "z_avant": -0.83,
-     "perf_12m_pct": 53.14,
+     "au": "2026-10-22",
+     "avant_pct": -3.49,
+     "z_avant": -0.65,
+     "perf_12m_pct": 49.92,
      "n_historique": 31,
      "scenarios": {
       "hausse": 0.545,
@@ -73552,10 +74299,10 @@
      "n": 58
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 19.77,
-     "z_avant": 1.59,
-     "perf_12m_pct": 24.82
+     "au": "2026-10-22",
+     "avant_pct": 23.31,
+     "z_avant": 1.87,
+     "perf_12m_pct": 28.64
     }
    },
    {
@@ -73888,10 +74635,10 @@
      "date": "2026-11-06",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -19.82,
-     "z_avant": -1.85,
-     "perf_12m_pct": 23.15,
+     "au": "2026-10-22",
+     "avant_pct": -21.19,
+     "z_avant": -1.97,
+     "perf_12m_pct": 23.1,
      "n_historique": 0
     }
    },
@@ -75214,10 +75961,10 @@
      "n": 57
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -3.49,
-     "z_avant": -0.55,
-     "perf_12m_pct": 9.27
+     "au": "2026-10-22",
+     "avant_pct": -3.01,
+     "z_avant": -0.47,
+     "perf_12m_pct": 9.2
     }
    },
    {
@@ -76496,10 +77243,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.81,
-     "z_avant": -0.21,
-     "perf_12m_pct": 15.39,
+     "au": "2026-10-22",
+     "avant_pct": -0.5,
+     "z_avant": -0.06,
+     "perf_12m_pct": 16.18,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.6,
@@ -77547,10 +78294,10 @@
      "n": 34
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 17.14,
-     "z_avant": 1.16,
-     "perf_12m_pct": -46.72
+     "au": "2026-10-22",
+     "avant_pct": 14.19,
+     "z_avant": 0.96,
+     "perf_12m_pct": -50.21
     }
    },
    {
@@ -78614,10 +79361,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -11.86,
-     "z_avant": -1.58,
-     "perf_12m_pct": 1.97,
+     "au": "2026-10-22",
+     "avant_pct": -11.6,
+     "z_avant": -1.53,
+     "perf_12m_pct": 2.86,
      "n_historique": 30,
      "scenarios": {
       "hausse": 0.469,
@@ -79655,10 +80402,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 1.27,
-     "z_avant": 0.21,
-     "perf_12m_pct": 9.67
+     "au": "2026-10-22",
+     "avant_pct": 1.06,
+     "z_avant": 0.18,
+     "perf_12m_pct": 11.42
     }
    },
    {
@@ -80789,10 +81536,10 @@
      "n": 44
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -0.51,
-     "z_avant": -0.07,
-     "perf_12m_pct": -38.71
+     "au": "2026-10-22",
+     "avant_pct": -8.02,
+     "z_avant": -1.17,
+     "perf_12m_pct": -36.07
     }
    },
    {
@@ -81338,7 +82085,7 @@
        "actionnaires": true,
        "avant_pct": -6.95,
        "z_avant": -1.09,
-       "perf_12m_pct": 19.01,
+       "perf_12m_pct": 19.02,
        "rendement_pct": -4.57,
        "ecart_pct": -5.18,
        "z": -3.66,
@@ -81657,10 +82404,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.88,
-     "z_avant": -0.41,
-     "perf_12m_pct": -3.99,
+     "au": "2026-10-22",
+     "avant_pct": -0.79,
+     "z_avant": -0.17,
+     "perf_12m_pct": 2.84,
      "n_historique": 28,
      "scenarios": {
       "hausse": 0.667,
@@ -82842,10 +83589,10 @@
      "date": "2026-10-27",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -16.64,
-     "z_avant": -1.69,
-     "perf_12m_pct": -13.04,
+     "au": "2026-10-22",
+     "avant_pct": -17.75,
+     "z_avant": -1.81,
+     "perf_12m_pct": -16.78,
      "n_historique": 47,
      "scenarios": {
       "hausse": 0.49,
@@ -82861,14 +83608,14 @@
     "indice": "SBF 120",
     "secteur": "Immobilier de bureaux et hôtels",
     "n_communiques": 212,
-    "n_evenements": 163,
+    "n_evenements": 164,
     "categories": [
      {
-      "n": 38,
-      "z_abs_moyen": 1.23,
-      "part_net": 0.474,
-      "part_fort": 0.263,
-      "ecart_abs_median_pct": 1.09,
+      "n": 39,
+      "z_abs_moyen": 1.24,
+      "part_net": 0.487,
+      "part_fort": 0.256,
+      "ecart_abs_median_pct": 1.1,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -83009,7 +83756,7 @@
      }
     ],
     "resultats": {
-     "n": 38,
+     "n": 39,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -83221,11 +83968,11 @@
       "ecart_moyen_negatif_pct": -0.18
      },
      "mouvements": {
-      "n": 38,
-      "z_abs_moyen": 1.23,
-      "part_net": 0.474,
-      "part_fort": 0.263,
-      "ecart_abs_median_pct": 1.09
+      "n": 39,
+      "z_abs_moyen": 1.24,
+      "part_net": 0.487,
+      "part_fort": 0.256,
+      "ecart_abs_median_pct": 1.1
      },
      "par_surprise": [
       {
@@ -83316,6 +84063,19 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Covivio - Activité du T3 2026 : Accélération de la croissance des revenus à périmètre constant,  soutenue par une solide performance opérat…",
+       "avant_pct": -2.9,
+       "z_avant": -0.56,
+       "perf_12m_pct": -13.82,
+       "rendement_pct": 0.69,
+       "ecart_pct": 1.95,
+       "z": 1.7,
+       "reaction": "hausse",
+       "courtes_pct": 1.0
+      },
       {
        "jour": "2026-07-21",
        "periode": "semestriels",
@@ -83964,24 +84724,14 @@
     },
     "grand_secteur": "Immobilier",
     "p_hausse_passee": {
-     "p": 0.45,
-     "n": 38
+     "p": 0.463,
+     "n": 39
     },
-    "prochaine": {
-     "date": "2027-02-18",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -2.9,
-     "z_avant": -0.56,
-     "perf_12m_pct": -13.82,
-     "n_historique": 38,
-     "scenarios": {
-      "hausse": 0.45,
-      "baisse": 0.55
-     },
-     "probable": "baisse",
-     "p_hausse": 0.45
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": -1.51,
+     "z_avant": -0.29,
+     "perf_12m_pct": -11.95
     }
    },
    {
@@ -84778,10 +85528,10 @@
      "date": "2026-12-04",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -11.73,
-     "z_avant": -1.3,
-     "perf_12m_pct": 32.52,
+     "au": "2026-10-22",
+     "avant_pct": -10.93,
+     "z_avant": -1.21,
+     "perf_12m_pct": 32.74,
      "n_historique": 22,
      "scenarios": {
       "hausse": 0.542,
@@ -85758,10 +86508,10 @@
      "date": "2026-11-19",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.07,
-     "z_avant": 0.01,
-     "perf_12m_pct": -32.62,
+     "au": "2026-10-22",
+     "avant_pct": 5.59,
+     "z_avant": 0.51,
+     "perf_12m_pct": -30.65,
      "n_historique": 31,
      "scenarios": {
       "hausse": 0.455,
@@ -86875,10 +87625,10 @@
      "date": "2026-10-30",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.44,
-     "z_avant": 0.08,
-     "perf_12m_pct": -6.19,
+     "au": "2026-10-22",
+     "avant_pct": 1.49,
+     "z_avant": 0.28,
+     "perf_12m_pct": -4.1,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.622,
@@ -87476,10 +88226,10 @@
      "date": "2027-02-17",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -17.43,
-     "z_avant": -1.43,
-     "perf_12m_pct": -27.45,
+     "au": "2026-10-22",
+     "avant_pct": -14.06,
+     "z_avant": -1.15,
+     "perf_12m_pct": -33.03,
      "n_historique": 9,
      "scenarios": {
       "hausse": 0.727,
@@ -88498,10 +89248,10 @@
      "date": "2026-10-29",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -15.73,
-     "z_avant": -1.04,
-     "perf_12m_pct": -34.46,
+     "au": "2026-10-22",
+     "avant_pct": -20.39,
+     "z_avant": -1.35,
+     "perf_12m_pct": -38.64,
      "n_historique": 37,
      "scenarios": {
       "hausse": 0.41,
@@ -89441,7 +90191,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.83,
+       "perf_12m_pct": -2.84,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -89511,10 +90261,10 @@
      "date": "2026-11-05",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.98,
-     "z_avant": 0.13,
-     "perf_12m_pct": -13.81,
+     "au": "2026-10-22",
+     "avant_pct": 4.23,
+     "z_avant": 0.58,
+     "perf_12m_pct": -12.3,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.45,
@@ -89707,7 +90457,7 @@
         "n": 4,
         "avant_moyen_pct": -0.5,
         "ecart_moyen_pct": -1.22,
-        "suite_moyenne_pct": -0.2
+        "suite_moyenne_pct": 0.7
        },
        "n": 5,
        "part_hausse": 0.2
@@ -89923,7 +90673,7 @@
        "n": 5,
        "part_hausse": 0.2,
        "ecart_moyen_pct": -0.07,
-       "suite_moyenne_pct": 1.0,
+       "suite_moyenne_pct": 1.49,
        "par_surprise": {
         "positive": {
          "n": 0,
@@ -89996,6 +90746,7 @@
        "rendement_pct": -0.24,
        "ecart_pct": -0.65,
        "z": -0.67,
+       "suite_pct": 3.42,
        "reaction": "baisse",
        "courtes_pct": 1.91,
        "surprise": "conforme",
@@ -90729,10 +91480,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -0.29,
-     "z_avant": -0.06,
-     "perf_12m_pct": -13.61
+     "au": "2026-10-22",
+     "avant_pct": 3.95,
+     "z_avant": 0.89,
+     "perf_12m_pct": -10.38
     }
    },
    {
@@ -91760,7 +92511,7 @@
        "periode": "annuels",
        "titre": "Version PDF",
        "perspectives": "relevees",
-       "avant_pct": 4.21,
+       "avant_pct": 4.2,
        "z_avant": 0.67,
        "rendement_pct": 2.24,
        "ecart_pct": 1.97,
@@ -91844,10 +92595,10 @@
      "date": "2026-11-02",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -12.26,
-     "z_avant": -1.74,
-     "perf_12m_pct": 31.69,
+     "au": "2026-10-22",
+     "avant_pct": -14.63,
+     "z_avant": -2.08,
+     "perf_12m_pct": 27.06,
      "n_historique": 39,
      "scenarios": {
       "hausse": 0.585,
@@ -92996,10 +93747,10 @@
      "n": 41
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -10.33,
-     "z_avant": -1.83,
-     "perf_12m_pct": -20.79
+     "au": "2026-10-22",
+     "avant_pct": -9.78,
+     "z_avant": -1.74,
+     "perf_12m_pct": -19.25
     }
    },
    {
@@ -93008,14 +93759,14 @@
     "indice": "SBF 120",
     "secteur": "Logistique",
     "n_communiques": 98,
-    "n_evenements": 71,
+    "n_evenements": 72,
     "categories": [
      {
-      "n": 55,
-      "z_abs_moyen": 1.49,
-      "part_net": 0.527,
-      "part_fort": 0.291,
-      "ecart_abs_median_pct": 1.69,
+      "n": 56,
+      "z_abs_moyen": 1.59,
+      "part_net": 0.536,
+      "part_fort": 0.304,
+      "ecart_abs_median_pct": 1.7,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -93076,13 +93827,13 @@
      }
     ],
     "resultats": {
-     "n": 55,
+     "n": 56,
      "matrice_consensus": {
       "positive": {
        "hausse": {
-        "n": 0,
-        "avant_moyen_pct": null,
-        "ecart_moyen_pct": null,
+        "n": 1,
+        "avant_moyen_pct": 8.62,
+        "ecart_moyen_pct": 8.88,
         "suite_moyenne_pct": null
        },
        "baisse": {
@@ -93091,8 +93842,8 @@
         "ecart_moyen_pct": null,
         "suite_moyenne_pct": null
        },
-       "n": 0,
-       "part_hausse": null
+       "n": 1,
+       "part_hausse": 1.0
       },
       "conforme": {
        "hausse": {
@@ -93278,25 +94029,61 @@
       }
      },
      "concordance": {
-      "n_positif": 0,
+      "n_positif": 1,
       "n_negatif": 0,
-      "hausse_si_positif": null,
+      "hausse_si_positif": 1.0,
       "baisse_si_negatif": null,
-      "concordance": null,
-      "p": null,
-      "ecart_moyen_positif_pct": null,
+      "concordance": 1.0,
+      "p": 1.0,
+      "ecart_moyen_positif_pct": 8.88,
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 55,
-      "z_abs_moyen": 1.49,
-      "part_net": 0.527,
-      "part_fort": 0.291,
-      "ecart_abs_median_pct": 1.69
+      "n": 56,
+      "z_abs_moyen": 1.59,
+      "part_net": 0.536,
+      "part_fort": 0.304,
+      "ecart_abs_median_pct": 1.7
      },
-     "par_surprise": [],
+     "par_surprise": [
+      {
+       "valeur": "positive",
+       "n": 1,
+       "part_hausse": 1.0,
+       "ecart_moyen_pct": 8.88,
+       "suite_moyenne_pct": null,
+       "par_surprise": {
+        "positive": {
+         "n": 1,
+         "part_hausse": 1.0
+        },
+        "conforme": {
+         "n": 0,
+         "part_hausse": null
+        },
+        "negative": {
+         "n": 0,
+         "part_hausse": null
+        }
+       }
+      }
+     ],
      "par_perspectives": [],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
+       "avant_pct": 8.62,
+       "z_avant": 1.31,
+       "perf_12m_pct": -10.95,
+       "rendement_pct": 8.88,
+       "ecart_pct": 10.28,
+       "z": 6.96,
+       "reaction": "hausse",
+       "courtes_pct": 0.0,
+       "surprise": "positive"
+      },
       {
        "jour": "2026-08-27",
        "periode": "semestriels",
@@ -94071,6 +94858,14 @@
      ]
     },
     "marche": {
+     "habitude": {
+      "n": 1,
+      "n_positive": 1,
+      "n_conforme": 0,
+      "n_negative": 0,
+      "n_bpa": 0,
+      "bpa_mediane_pct": null
+     },
      "courtes": {
       "pct": 0.0,
       "n": 0,
@@ -94128,24 +94923,14 @@
     },
     "grand_secteur": "Industrie",
     "p_hausse_passee": {
-     "p": 0.643,
-     "n": 54
+     "p": 0.649,
+     "n": 55
     },
-    "prochaine": {
-     "date": "2027-01-26",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 8.62,
-     "z_avant": 1.31,
-     "perf_12m_pct": -10.95,
-     "n_historique": 54,
-     "scenarios": {
-      "hausse": 0.643,
-      "baisse": 0.357
-     },
-     "probable": "hausse",
-     "p_hausse": 0.643
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": 19.25,
+     "z_avant": 2.92,
+     "perf_12m_pct": -1.25
     }
    },
    {
@@ -94945,7 +95730,7 @@
        "perf_12m_pct": -30.65,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.56,
+       "z": 1.55,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -95230,10 +96015,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -0.93,
-     "z_avant": -0.12,
-     "perf_12m_pct": 10.81,
+     "au": "2026-10-22",
+     "avant_pct": -0.02,
+     "z_avant": -0.0,
+     "perf_12m_pct": 9.83,
      "n_historique": 40,
      "scenarios": {
       "hausse": 0.571,
@@ -96531,10 +97316,10 @@
      "n": 54
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 15.46,
-     "z_avant": 2.05,
-     "perf_12m_pct": 35.54
+     "au": "2026-10-22",
+     "avant_pct": 16.07,
+     "z_avant": 2.13,
+     "perf_12m_pct": 37.87
     }
    },
    {
@@ -96542,7 +97327,7 @@
     "nom": "Ipsos SA",
     "indice": "SBF 120",
     "secteur": "Études de marché",
-    "n_communiques": 162,
+    "n_communiques": 163,
     "n_evenements": 141,
     "categories": [
      {
@@ -97306,7 +98091,7 @@
        "jour": "2020-02-27",
        "periode": "annuels",
        "titre": "Ipsos Résultats annuels 2019 : une année dynamique",
-       "avant_pct": -6.66,
+       "avant_pct": -6.67,
        "z_avant": -0.79,
        "perf_12m_pct": 17.04,
        "rendement_pct": 1.58,
@@ -97608,10 +98393,10 @@
      "n": 41
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 5.91,
-     "z_avant": 0.56,
-     "perf_12m_pct": 19.38
+     "au": "2026-10-22",
+     "avant_pct": 6.9,
+     "z_avant": 0.65,
+     "perf_12m_pct": 22.29
     }
    },
    {
@@ -98938,10 +99723,10 @@
      "date": "2026-11-06",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.51,
-     "z_avant": -0.19,
-     "perf_12m_pct": 70.58,
+     "au": "2026-10-22",
+     "avant_pct": -0.38,
+     "z_avant": -0.05,
+     "perf_12m_pct": 74.29,
      "n_historique": 52,
      "scenarios": {
       "hausse": 0.426,
@@ -98996,7 +99781,7 @@
       "z_abs_moyen": 1.1,
       "part_net": 1.0,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 1.48,
+      "ecart_abs_median_pct": 1.49,
       "n_positif": 1,
       "n_negatif": 0,
       "hausse_si_positif": 1.0,
@@ -100119,10 +100904,10 @@
      "n": 41
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -3.21,
-     "z_avant": -0.74,
-     "perf_12m_pct": 15.46
+     "au": "2026-10-22",
+     "avant_pct": -2.67,
+     "z_avant": -0.62,
+     "perf_12m_pct": 16.3
     }
    },
    {
@@ -101256,10 +102041,10 @@
      "date": "2026-10-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -8.26,
-     "z_avant": -1.38,
-     "perf_12m_pct": -4.11,
+     "au": "2026-10-22",
+     "avant_pct": -7.39,
+     "z_avant": -1.24,
+     "perf_12m_pct": -1.6,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.489,
@@ -101275,14 +102060,14 @@
     "indice": "SBF 120",
     "secteur": "Pétrole",
     "n_communiques": 208,
-    "n_evenements": 179,
+    "n_evenements": 180,
     "categories": [
      {
-      "n": 53,
-      "z_abs_moyen": 1.11,
-      "part_net": 0.453,
-      "part_fort": 0.189,
-      "ecart_abs_median_pct": 1.6,
+      "n": 54,
+      "z_abs_moyen": 1.12,
+      "part_net": 0.463,
+      "part_fort": 0.185,
+      "ecart_abs_median_pct": 1.69,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -101423,7 +102208,7 @@
      }
     ],
     "resultats": {
-     "n": 53,
+     "n": 54,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -101635,11 +102420,11 @@
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 53,
-      "z_abs_moyen": 1.11,
-      "part_net": 0.453,
-      "part_fort": 0.189,
-      "ecart_abs_median_pct": 1.6
+      "n": 54,
+      "z_abs_moyen": 1.12,
+      "part_net": 0.463,
+      "part_fort": 0.185,
+      "ecart_abs_median_pct": 1.69
      },
      "par_surprise": [],
      "par_perspectives": [
@@ -101659,6 +102444,19 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "trimestriels",
+       "titre": "Activité 9 mois 2026",
+       "avant_pct": -7.68,
+       "z_avant": -0.66,
+       "perf_12m_pct": 90.86,
+       "rendement_pct": -2.95,
+       "ecart_pct": -4.56,
+       "z": -1.78,
+       "reaction": "baisse",
+       "courtes_pct": 0.0
+      },
       {
        "jour": "2026-08-06",
        "periode": "semestriels",
@@ -102472,24 +103270,14 @@
     },
     "grand_secteur": "Énergie",
     "p_hausse_passee": {
-     "p": 0.509,
-     "n": 53
+     "p": 0.5,
+     "n": 54
     },
-    "prochaine": {
-     "date": "2027-01-28",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -7.68,
-     "z_avant": -0.66,
-     "perf_12m_pct": 90.86,
-     "n_historique": 53,
-     "scenarios": {
-      "hausse": 0.509,
-      "baisse": 0.491
-     },
-     "probable": "hausse",
-     "p_hausse": 0.509
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": -11.77,
+     "z_avant": -1.02,
+     "perf_12m_pct": 83.91
     }
    },
    {
@@ -103157,10 +103945,10 @@
      "date": "2026-12-09",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 14.94,
-     "z_avant": 0.98,
-     "perf_12m_pct": -26.69,
+     "au": "2026-10-22",
+     "avant_pct": 16.18,
+     "z_avant": 1.07,
+     "perf_12m_pct": -23.26,
      "n_historique": 14,
      "scenarios": {
       "hausse": 0.375,
@@ -104397,10 +105185,10 @@
      "date": "2027-02-17",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -7.35,
-     "z_avant": -1.55,
-     "perf_12m_pct": 0.17,
+     "au": "2026-10-22",
+     "avant_pct": -6.08,
+     "z_avant": -1.28,
+     "perf_12m_pct": 2.22,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.558,
@@ -105556,10 +106344,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -11.32,
-     "z_avant": -1.01,
-     "perf_12m_pct": 71.4,
+     "au": "2026-10-22",
+     "avant_pct": -13.84,
+     "z_avant": -1.23,
+     "perf_12m_pct": 65.74,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.622,
@@ -106370,7 +107158,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.13,
+       "rendement_pct": 8.12,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -106674,10 +107462,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.29,
-     "z_avant": -0.12,
-     "perf_12m_pct": -44.39,
+     "au": "2026-10-22",
+     "avant_pct": -3.25,
+     "z_avant": -0.3,
+     "perf_12m_pct": -45.54,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.651,
@@ -107499,10 +108287,10 @@
      "n": 32
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -41.95,
-     "z_avant": -2.66,
-     "perf_12m_pct": 97.8
+     "au": "2026-10-22",
+     "avant_pct": -48.58,
+     "z_avant": -3.06,
+     "perf_12m_pct": 91.47
     }
    },
    {
@@ -108667,10 +109455,10 @@
      "n": 41
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": -16.89,
-     "z_avant": -2.17,
-     "perf_12m_pct": -31.86
+     "au": "2026-10-22",
+     "avant_pct": -16.56,
+     "z_avant": -2.15,
+     "perf_12m_pct": -31.81
     }
    },
    {
@@ -108678,7 +109466,7 @@
     "nom": "Planisware",
     "indice": "SBF 120",
     "secteur": "Logiciels",
-    "n_communiques": 35,
+    "n_communiques": 36,
     "n_evenements": 25,
     "categories": [
      {
@@ -109193,10 +109981,10 @@
      "n": 8
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 11.61,
-     "z_avant": 1.01,
-     "perf_12m_pct": 32.98
+     "au": "2026-10-22",
+     "avant_pct": 15.88,
+     "z_avant": 1.38,
+     "perf_12m_pct": 39.31
     }
    },
    {
@@ -109235,7 +110023,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.6,
       "p": 1.0,
-      "ecart_moyen_positif_pct": 16.89,
+      "ecart_moyen_positif_pct": 16.73,
       "ecart_moyen_negatif_pct": null,
       "id": "operation"
      },
@@ -109795,10 +110583,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 3.03,
-     "z_avant": 0.31,
-     "perf_12m_pct": -6.18,
+     "au": "2026-10-22",
+     "avant_pct": 5.1,
+     "z_avant": 0.52,
+     "perf_12m_pct": -5.28,
      "n_historique": 8,
      "scenarios": {
       "hausse": 0.7,
@@ -110680,10 +111468,10 @@
      "n": 31
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 3.27,
-     "z_avant": 0.52,
-     "perf_12m_pct": -4.26
+     "au": "2026-10-22",
+     "avant_pct": 6.4,
+     "z_avant": 1.01,
+     "perf_12m_pct": -0.36
     }
    },
    {
@@ -111679,10 +112467,10 @@
      "n": 36
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 1.09,
-     "z_avant": 0.21,
-     "perf_12m_pct": 22.27
+     "au": "2026-10-22",
+     "avant_pct": 0.09,
+     "z_avant": 0.02,
+     "perf_12m_pct": 22.64
     }
    },
    {
@@ -111691,7 +112479,7 @@
     "indice": "SBF 120",
     "secteur": "Équipements biopharmaceutiques",
     "n_communiques": 106,
-    "n_evenements": 78,
+    "n_evenements": 79,
     "categories": [
      {
       "n": 2,
@@ -111710,11 +112498,11 @@
       "id": "revision"
      },
      {
-      "n": 19,
-      "z_abs_moyen": 3.57,
-      "part_net": 0.947,
-      "part_fort": 0.789,
-      "ecart_abs_median_pct": 7.02,
+      "n": 20,
+      "z_abs_moyen": 3.42,
+      "part_net": 0.9,
+      "part_fort": 0.75,
+      "ecart_abs_median_pct": 6.46,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -111823,7 +112611,7 @@
      }
     ],
     "resultats": {
-     "n": 19,
+     "n": 20,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -112035,11 +112823,11 @@
       "ecart_moyen_negatif_pct": 2.26
      },
      "mouvements": {
-      "n": 19,
-      "z_abs_moyen": 3.57,
-      "part_net": 0.947,
-      "part_fort": 0.789,
-      "ecart_abs_median_pct": 7.02
+      "n": 20,
+      "z_abs_moyen": 3.42,
+      "part_net": 0.9,
+      "part_fort": 0.75,
+      "ecart_abs_median_pct": 6.46
      },
      "par_surprise": [
       {
@@ -112116,10 +112904,10 @@
       },
       {
        "valeur": "confirmees",
-       "n": 5,
-       "part_hausse": 0.6,
-       "ecart_moyen_pct": -1.43,
-       "z_abs_moyen": 3.07
+       "n": 6,
+       "part_hausse": 0.5,
+       "ecart_moyen_pct": -1.67,
+       "z_abs_moyen": 2.66
       },
       {
        "valeur": "nouvelles",
@@ -112137,6 +112925,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "Sartorius Stedim Biotech enregistre une forte  croissance opérationnelle et une rentabilité robuste",
+       "perspectives": "confirmees",
+       "avant_pct": 7.08,
+       "z_avant": 0.66,
+       "perf_12m_pct": 7.02,
+       "rendement_pct": -2.88,
+       "ecart_pct": -1.48,
+       "z": -0.63,
+       "reaction": "baisse",
+       "courtes_pct": 0.5
+      },
       {
        "jour": "2026-07-23",
        "periode": "semestriels",
@@ -112602,24 +113404,14 @@
     },
     "grand_secteur": "Santé",
     "p_hausse_passee": {
-     "p": 0.571,
-     "n": 19
+     "p": 0.545,
+     "n": 20
     },
-    "prochaine": {
-     "date": "2027-02-02",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 7.08,
-     "z_avant": 0.66,
-     "perf_12m_pct": 7.02,
-     "n_historique": 19,
-     "scenarios": {
-      "hausse": 0.571,
-      "baisse": 0.429
-     },
-     "probable": "hausse",
-     "p_hausse": 0.571
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": 0.55,
+     "z_avant": 0.05,
+     "perf_12m_pct": 5.3
     }
    },
    {
@@ -113831,10 +114623,10 @@
      "n": 48
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 4.98,
-     "z_avant": 0.45,
-     "perf_12m_pct": 27.54
+     "au": "2026-10-22",
+     "avant_pct": 4.04,
+     "z_avant": 0.36,
+     "perf_12m_pct": 25.61
     }
    },
    {
@@ -115075,10 +115867,10 @@
      "date": "2026-11-05",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -3.13,
-     "z_avant": -0.23,
-     "perf_12m_pct": -27.04,
+     "au": "2026-10-22",
+     "avant_pct": 0.83,
+     "z_avant": 0.06,
+     "perf_12m_pct": -30.04,
      "n_historique": 37,
      "scenarios": {
       "hausse": 0.41,
@@ -116289,10 +117081,10 @@
      "date": "2026-10-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -2.01,
-     "z_avant": -0.34,
-     "perf_12m_pct": 31.82,
+     "au": "2026-10-22",
+     "avant_pct": -1.71,
+     "z_avant": -0.29,
+     "perf_12m_pct": 43.52,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -116307,7 +117099,7 @@
     "nom": "Sodexo",
     "indice": "SBF 120",
     "secteur": "Restauration collective",
-    "n_communiques": 189,
+    "n_communiques": 190,
     "n_evenements": 163,
     "categories": [
      {
@@ -117499,10 +118291,10 @@
      "date": "2026-10-23",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -0.23,
-     "z_avant": -0.03,
-     "perf_12m_pct": 22.71,
+     "au": "2026-10-22",
+     "avant_pct": 1.73,
+     "z_avant": 0.23,
+     "perf_12m_pct": 25.37,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.512,
@@ -118696,10 +119488,10 @@
      "date": "2026-11-18",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -28.12,
-     "z_avant": -0.97,
-     "perf_12m_pct": 226.27,
+     "au": "2026-10-22",
+     "avant_pct": -31.92,
+     "z_avant": -1.1,
+     "perf_12m_pct": 181.8,
      "n_historique": 41,
      "scenarios": {
       "hausse": 0.628,
@@ -119051,10 +119843,10 @@
      "date": "2026-11-04",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -6.23,
-     "z_avant": -0.95,
-     "perf_12m_pct": 0.22,
+     "au": "2026-10-22",
+     "avant_pct": -4.37,
+     "z_avant": -0.67,
+     "perf_12m_pct": 0.95,
      "n_historique": 0
     }
    },
@@ -120156,10 +120948,10 @@
      "date": "2026-10-28",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 10.53,
-     "z_avant": 0.86,
-     "perf_12m_pct": 39.09,
+     "au": "2026-10-22",
+     "avant_pct": 13.61,
+     "z_avant": 1.11,
+     "perf_12m_pct": 46.36,
      "n_historique": 38,
      "scenarios": {
       "hausse": 0.625,
@@ -121131,10 +121923,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 9.69,
-     "z_avant": 1.08,
-     "perf_12m_pct": -9.92,
+     "au": "2026-10-22",
+     "avant_pct": 7.74,
+     "z_avant": 0.86,
+     "perf_12m_pct": -12.52,
      "n_historique": 21,
      "scenarios": {
       "hausse": 0.478,
@@ -122347,10 +123139,10 @@
      "date": "2026-10-29",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -6.85,
-     "z_avant": -1.27,
-     "perf_12m_pct": -19.56,
+     "au": "2026-10-22",
+     "avant_pct": -5.59,
+     "z_avant": -1.04,
+     "perf_12m_pct": -17.38,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.556,
@@ -123629,10 +124421,10 @@
      "date": "2026-11-23",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -1.44,
-     "z_avant": -0.18,
-     "perf_12m_pct": -9.92,
+     "au": "2026-10-22",
+     "avant_pct": 1.1,
+     "z_avant": 0.14,
+     "perf_12m_pct": -6.9,
      "n_historique": 54,
      "scenarios": {
       "hausse": 0.643,
@@ -124873,10 +125665,10 @@
      "date": "2026-11-19",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -4.92,
-     "z_avant": -0.24,
-     "perf_12m_pct": -33.87,
+     "au": "2026-10-22",
+     "avant_pct": -10.57,
+     "z_avant": -0.52,
+     "perf_12m_pct": -35.73,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.667,
@@ -125950,10 +126742,10 @@
      "date": "2026-10-23",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -9.12,
-     "z_avant": -0.73,
-     "perf_12m_pct": 16.17,
+     "au": "2026-10-22",
+     "avant_pct": -9.08,
+     "z_avant": -0.74,
+     "perf_12m_pct": 12.35,
      "n_historique": 32,
      "scenarios": {
       "hausse": 0.382,
@@ -126952,10 +127744,10 @@
      "date": "2026-11-20",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -2.35,
-     "z_avant": -0.25,
-     "perf_12m_pct": 21.05,
+     "au": "2026-10-22",
+     "avant_pct": -10.17,
+     "z_avant": -1.07,
+     "perf_12m_pct": 16.02,
      "n_historique": 22,
      "scenarios": {
       "hausse": 0.542,
@@ -128309,10 +129101,10 @@
      "date": "2026-11-19",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -8.15,
-     "z_avant": -0.44,
-     "perf_12m_pct": -33.03,
+     "au": "2026-10-22",
+     "avant_pct": -5.19,
+     "z_avant": -0.28,
+     "perf_12m_pct": -34.64,
      "n_historique": 43,
      "scenarios": {
       "hausse": 0.444,
@@ -129184,10 +129976,10 @@
      "date": "2026-10-27",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 2.37,
-     "z_avant": 0.31,
-     "perf_12m_pct": -9.68,
+     "au": "2026-10-22",
+     "avant_pct": 9.27,
+     "z_avant": 1.23,
+     "perf_12m_pct": -10.3,
      "n_historique": 24,
      "scenarios": {
       "hausse": 0.5,
@@ -130321,10 +131113,10 @@
      "date": "2026-11-03",
      "source": "même période l'an dernier",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.89,
-     "z_avant": 0.11,
-     "perf_12m_pct": -2.75,
+     "au": "2026-10-22",
+     "avant_pct": 2.95,
+     "z_avant": 0.36,
+     "perf_12m_pct": -3.57,
      "n_historique": 45,
      "scenarios": {
       "hausse": 0.511,
@@ -131629,10 +132421,10 @@
      "n": 56
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 14.67,
-     "z_avant": 2.27,
-     "perf_12m_pct": 0.52
+     "au": "2026-10-22",
+     "avant_pct": 17.48,
+     "z_avant": 2.7,
+     "perf_12m_pct": 3.92
     }
    },
    {
@@ -132257,10 +133049,10 @@
      "date": "2026-11-03",
      "source": "Yahoo Finance",
      "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": -11.27,
-     "z_avant": -0.59,
-     "perf_12m_pct": 24.57,
+     "au": "2026-10-22",
+     "avant_pct": -16.62,
+     "z_avant": -0.86,
+     "perf_12m_pct": 22.0,
      "n_historique": 8,
      "scenarios": {
       "hausse": 0.5,
@@ -133447,10 +134239,10 @@
      "n": 42
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 13.76,
-     "z_avant": 1.28,
-     "perf_12m_pct": -45.07
+     "au": "2026-10-22",
+     "avant_pct": 16.29,
+     "z_avant": 1.52,
+     "perf_12m_pct": -42.14
     }
    },
    {
@@ -134552,10 +135344,10 @@
      "n": 40
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 0.4,
-     "z_avant": 0.03,
-     "perf_12m_pct": -41.84
+     "au": "2026-10-22",
+     "avant_pct": 4.77,
+     "z_avant": 0.34,
+     "perf_12m_pct": -39.42
     }
    },
    {
@@ -134564,14 +135356,14 @@
     "indice": "SBF 120",
     "secteur": "Investissement",
     "n_communiques": 274,
-    "n_evenements": 232,
+    "n_evenements": 233,
     "categories": [
      {
-      "n": 34,
-      "z_abs_moyen": 1.65,
-      "part_net": 0.529,
-      "part_fort": 0.206,
-      "ecart_abs_median_pct": 1.23,
+      "n": 35,
+      "z_abs_moyen": 1.64,
+      "part_net": 0.543,
+      "part_fort": 0.2,
+      "ecart_abs_median_pct": 1.26,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -134712,7 +135504,7 @@
      }
     ],
     "resultats": {
-     "n": 34,
+     "n": 35,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -134924,11 +135716,11 @@
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 34,
-      "z_abs_moyen": 1.65,
-      "part_net": 0.529,
-      "part_fort": 0.206,
-      "ecart_abs_median_pct": 1.23
+      "n": 35,
+      "z_abs_moyen": 1.64,
+      "part_net": 0.543,
+      "part_fort": 0.2,
+      "ecart_abs_median_pct": 1.26
      },
      "par_surprise": [],
      "par_perspectives": [
@@ -134941,6 +135733,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-22",
+       "periode": "chiffre_affaires",
+       "titre": "WENDEL : Activité du 3e trimestre 2026",
+       "avant_pct": 0.85,
+       "z_avant": 0.16,
+       "perf_12m_pct": 9.21,
+       "rendement_pct": 0.85,
+       "ecart_pct": 1.98,
+       "z": 1.6,
+       "reaction": "hausse",
+       "courtes_pct": 0.0,
+       "revision_30j_pct": -22.6
+      },
       {
        "jour": "2026-07-30",
        "periode": "annuels",
@@ -135476,24 +136282,14 @@
     },
     "grand_secteur": "Finance",
     "p_hausse_passee": {
-     "p": 0.472,
-     "n": 34
+     "p": 0.486,
+     "n": 35
     },
-    "prochaine": {
-     "date": "2026-10-23",
-     "source": "même période l'an dernier",
-     "estimee": true,
-     "au": "2026-10-21",
-     "avant_pct": 0.85,
-     "z_avant": 0.16,
-     "perf_12m_pct": 9.21,
-     "n_historique": 34,
-     "scenarios": {
-      "hausse": 0.472,
-      "baisse": 0.528
-     },
-     "probable": "baisse",
-     "p_hausse": 0.472
+    "cours_recent": {
+     "au": "2026-10-22",
+     "avant_pct": 4.32,
+     "z_avant": 0.8,
+     "perf_12m_pct": 12.05
     }
    },
    {
@@ -136611,10 +137407,10 @@
      "n": 41
     },
     "cours_recent": {
-     "au": "2026-10-21",
-     "avant_pct": 3.08,
-     "z_avant": 0.14,
-     "perf_12m_pct": -50.46
+     "au": "2026-10-22",
+     "avant_pct": 5.46,
+     "z_avant": 0.26,
+     "perf_12m_pct": -47.12
     }
    }
   ],
@@ -136627,8 +137423,8 @@
     "probable": "hausse",
     "p_probable": 0.535,
     "p_hausse": 0.535,
-    "z_avant": 0.71,
-    "avant_pct": 4.26
+    "z_avant": 0.96,
+    "avant_pct": 5.8
    },
    {
     "ticker": "ADP.PA",
@@ -136638,8 +137434,8 @@
     "probable": "baisse",
     "p_probable": 0.561,
     "p_hausse": 0.439,
-    "z_avant": 0.27,
-    "avant_pct": 2.14
+    "z_avant": 0.37,
+    "avant_pct": 2.95
    },
    {
     "ticker": "CARM.PA",
@@ -136649,8 +137445,8 @@
     "probable": "hausse",
     "p_probable": 0.667,
     "p_hausse": 0.667,
-    "z_avant": -0.41,
-    "avant_pct": -1.88
+    "z_avant": -0.17,
+    "avant_pct": -0.79
    },
    {
     "ticker": "MRN.PA",
@@ -136660,8 +137456,8 @@
     "probable": "hausse",
     "p_probable": 0.622,
     "p_hausse": 0.622,
-    "z_avant": -1.01,
-    "avant_pct": -11.32
+    "z_avant": -1.23,
+    "avant_pct": -13.84
    },
    {
     "ticker": "NXI.PA",
@@ -136671,8 +137467,8 @@
     "probable": "hausse",
     "p_probable": 0.651,
     "p_hausse": 0.651,
-    "z_avant": -0.12,
-    "avant_pct": -1.29
+    "z_avant": -0.3,
+    "avant_pct": -3.25
    },
    {
     "ticker": "SAF.PA",
@@ -136682,8 +137478,8 @@
     "probable": "hausse",
     "p_probable": 0.605,
     "p_hausse": 0.605,
-    "z_avant": -0.52,
-    "avant_pct": -3.39
+    "z_avant": -0.81,
+    "avant_pct": -5.32
    },
    {
     "ticker": "SW.PA",
@@ -136693,8 +137489,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": -0.03,
-    "avant_pct": -0.23
+    "z_avant": 0.23,
+    "avant_pct": 1.73
    },
    {
     "ticker": "URW.PA",
@@ -136704,8 +137500,8 @@
     "probable": "baisse",
     "p_probable": 0.533,
     "p_hausse": 0.467,
-    "z_avant": -0.56,
-    "avant_pct": -2.23
+    "z_avant": -0.1,
+    "avant_pct": -0.4
    },
    {
     "ticker": "FR.PA",
@@ -136715,19 +137511,8 @@
     "probable": "baisse",
     "p_probable": 0.618,
     "p_hausse": 0.382,
-    "z_avant": -0.73,
-    "avant_pct": -9.12
-   },
-   {
-    "ticker": "MF.PA",
-    "nom": "Wendel",
-    "date": "2026-10-23",
-    "estimee": true,
-    "probable": "baisse",
-    "p_probable": 0.528,
-    "p_hausse": 0.472,
-    "z_avant": 0.16,
-    "avant_pct": 0.85
+    "z_avant": -0.74,
+    "avant_pct": -9.08
    },
    {
     "ticker": "AI.PA",
@@ -136737,8 +137522,8 @@
     "probable": "hausse",
     "p_probable": 0.568,
     "p_hausse": 0.568,
-    "z_avant": 0.94,
-    "avant_pct": 4.18
+    "z_avant": 1.07,
+    "avant_pct": 4.77
    },
    {
     "ticker": "CAP.PA",
@@ -136748,8 +137533,8 @@
     "probable": "hausse",
     "p_probable": 0.604,
     "p_hausse": 0.604,
-    "z_avant": 1.78,
-    "avant_pct": 19.03
+    "z_avant": 2.15,
+    "avant_pct": 23.02
    },
    {
     "ticker": "CLARI.PA",
@@ -136759,8 +137544,8 @@
     "probable": "baisse",
     "p_probable": 0.51,
     "p_hausse": 0.49,
-    "z_avant": -1.69,
-    "avant_pct": -16.64
+    "z_avant": -1.81,
+    "avant_pct": -17.75
    },
    {
     "ticker": "BN.PA",
@@ -136770,8 +137555,8 @@
     "probable": "hausse",
     "p_probable": 0.636,
     "p_hausse": 0.636,
-    "z_avant": 0.46,
-    "avant_pct": 2.91
+    "z_avant": 0.98,
+    "avant_pct": 6.22
    },
    {
     "ticker": "ORA.PA",
@@ -136781,8 +137566,8 @@
     "probable": "hausse",
     "p_probable": 0.579,
     "p_hausse": 0.579,
-    "z_avant": -0.09,
-    "avant_pct": -0.57
+    "z_avant": 0.24,
+    "avant_pct": 1.58
    },
    {
     "ticker": "VRLA.PA",
@@ -136792,16 +137577,16 @@
     "probable": "hausse",
     "p_probable": 0.5,
     "p_hausse": 0.5,
-    "z_avant": 0.31,
-    "avant_pct": 2.37
+    "z_avant": 1.23,
+    "avant_pct": 9.27
    },
    {
     "ticker": "AIR.PA",
     "nom": "Airbus",
     "date": "2026-10-28",
     "estimee": true,
-    "z_avant": 0.84,
-    "avant_pct": 5.3
+    "z_avant": 0.75,
+    "avant_pct": 4.74
    },
    {
     "ticker": "BNP.PA",
@@ -136811,8 +137596,8 @@
     "probable": "hausse",
     "p_probable": 0.529,
     "p_hausse": 0.529,
-    "z_avant": -1.71,
-    "avant_pct": -9.61
+    "z_avant": -2.66,
+    "avant_pct": -14.93
    },
    {
     "ticker": "DSY.PA",
@@ -136822,8 +137607,8 @@
     "probable": "baisse",
     "p_probable": 0.565,
     "p_hausse": 0.435,
-    "z_avant": 1.21,
-    "avant_pct": 13.88
+    "z_avant": 1.43,
+    "avant_pct": 16.5
    },
    {
     "ticker": "MMT.PA",
@@ -136833,8 +137618,8 @@
     "probable": "baisse",
     "p_probable": 0.511,
     "p_hausse": 0.489,
-    "z_avant": -1.38,
-    "avant_pct": -8.26
+    "z_avant": -1.24,
+    "avant_pct": -7.39
    },
    {
     "ticker": "BB.PA",
@@ -136844,8 +137629,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": -0.34,
-    "avant_pct": -2.01
+    "z_avant": -0.29,
+    "avant_pct": -1.71
    },
    {
     "ticker": "SOP.PA",
@@ -136855,16 +137640,16 @@
     "probable": "hausse",
     "p_probable": 0.625,
     "p_hausse": 0.625,
-    "z_avant": 0.86,
-    "avant_pct": 10.53
+    "z_avant": 1.11,
+    "avant_pct": 13.61
    },
    {
     "ticker": "STLAP.PA",
     "nom": "Stellantis",
     "date": "2026-10-28",
     "estimee": true,
-    "z_avant": -0.0,
-    "avant_pct": -0.02
+    "z_avant": 0.37,
+    "avant_pct": 4.83
    },
    {
     "ticker": "AMUN.PA",
@@ -136874,8 +137659,8 @@
     "probable": "hausse",
     "p_probable": 0.545,
     "p_hausse": 0.545,
-    "z_avant": -0.83,
-    "avant_pct": -4.44
+    "z_avant": -0.65,
+    "avant_pct": -3.49
    },
    {
     "ticker": "AYV.PA",
@@ -136885,8 +137670,8 @@
     "probable": "baisse",
     "p_probable": 0.531,
     "p_hausse": 0.469,
-    "z_avant": -1.58,
-    "avant_pct": -11.86
+    "z_avant": -1.53,
+    "avant_pct": -11.6
    },
    {
     "ticker": "ERA.PA",
@@ -136896,8 +137681,8 @@
     "probable": "baisse",
     "p_probable": 0.59,
     "p_hausse": 0.41,
-    "z_avant": -1.04,
-    "avant_pct": -15.73
+    "z_avant": -1.35,
+    "avant_pct": -20.39
    },
    {
     "ticker": "NK.PA",
@@ -136907,8 +137692,8 @@
     "probable": "hausse",
     "p_probable": 0.571,
     "p_hausse": 0.571,
-    "z_avant": -0.12,
-    "avant_pct": -0.93
+    "z_avant": -0.0,
+    "avant_pct": -0.02
    },
    {
     "ticker": "PLX.PA",
@@ -136918,8 +137703,8 @@
     "probable": "hausse",
     "p_probable": 0.7,
     "p_hausse": 0.7,
-    "z_avant": 0.31,
-    "avant_pct": 3.03
+    "z_avant": 0.52,
+    "avant_pct": 5.1
    },
    {
     "ticker": "STMPA.PA",
@@ -136929,8 +137714,8 @@
     "probable": "hausse",
     "p_probable": 0.609,
     "p_hausse": 0.609,
-    "z_avant": -0.77,
-    "avant_pct": -10.97
+    "z_avant": -0.81,
+    "avant_pct": -11.62
    },
    {
     "ticker": "GLE.PA",
@@ -136940,8 +137725,8 @@
     "probable": "hausse",
     "p_probable": 0.667,
     "p_hausse": 0.667,
-    "z_avant": -1.51,
-    "avant_pct": -10.53
+    "z_avant": -1.48,
+    "avant_pct": -10.33
    },
    {
     "ticker": "TFI.PA",
@@ -136951,8 +137736,8 @@
     "probable": "hausse",
     "p_probable": 0.556,
     "p_hausse": 0.556,
-    "z_avant": -1.27,
-    "avant_pct": -6.85
+    "z_avant": -1.04,
+    "avant_pct": -5.59
    },
    {
     "ticker": "TE.PA",
@@ -136962,8 +137747,8 @@
     "probable": "baisse",
     "p_probable": 0.522,
     "p_hausse": 0.478,
-    "z_avant": 1.08,
-    "avant_pct": 9.69
+    "z_avant": 0.86,
+    "avant_pct": 7.74
    },
    {
     "ticker": "TTE.PA",
@@ -136973,8 +137758,8 @@
     "probable": "baisse",
     "p_probable": 0.574,
     "p_hausse": 0.426,
-    "z_avant": -0.27,
-    "avant_pct": -1.75
+    "z_avant": -0.79,
+    "avant_pct": -5.07
    },
    {
     "ticker": "CS.PA",
@@ -136984,8 +137769,8 @@
     "probable": "hausse",
     "p_probable": 0.512,
     "p_hausse": 0.512,
-    "z_avant": 0.21,
-    "avant_pct": 0.85
+    "z_avant": -0.75,
+    "avant_pct": -3.09
    },
    {
     "ticker": "ACA.PA",
@@ -136995,8 +137780,8 @@
     "probable": "baisse",
     "p_probable": 0.6,
     "p_hausse": 0.4,
-    "z_avant": -2.64,
-    "avant_pct": -11.78
+    "z_avant": -2.92,
+    "avant_pct": -13.01
    },
    {
     "ticker": "ELIS.PA",
@@ -137006,8 +137791,8 @@
     "probable": "hausse",
     "p_probable": 0.622,
     "p_hausse": 0.622,
-    "z_avant": 0.08,
-    "avant_pct": 0.44
+    "z_avant": 0.28,
+    "avant_pct": 1.49
    },
    {
     "ticker": "SCR.PA",
@@ -137017,8 +137802,8 @@
     "probable": "hausse",
     "p_probable": 0.585,
     "p_hausse": 0.585,
-    "z_avant": 0.6,
-    "avant_pct": 3.89
+    "z_avant": 0.31,
+    "avant_pct": 1.99
    },
    {
     "ticker": "SPIE.PA",
@@ -137028,8 +137813,8 @@
     "probable": "hausse",
     "p_probable": 0.692,
     "p_hausse": 0.692,
-    "z_avant": -0.56,
-    "avant_pct": -3.46
+    "z_avant": -0.41,
+    "avant_pct": -2.5
    },
    {
     "ticker": "SGO.PA",
@@ -137039,8 +137824,8 @@
     "probable": "hausse",
     "p_probable": 0.619,
     "p_hausse": 0.619,
-    "z_avant": 0.0,
-    "avant_pct": 0.0
+    "z_avant": 0.44,
+    "avant_pct": 2.6
    },
    {
     "ticker": "SAN.PA",
@@ -137050,8 +137835,8 @@
     "probable": "baisse",
     "p_probable": 0.571,
     "p_hausse": 0.429,
-    "z_avant": 0.33,
-    "avant_pct": 2.07
+    "z_avant": 0.93,
+    "avant_pct": 5.9
    },
    {
     "ticker": "COFA.PA",
@@ -137061,8 +137846,8 @@
     "probable": "hausse",
     "p_probable": 0.528,
     "p_hausse": 0.528,
-    "z_avant": -1.7,
-    "avant_pct": -6.99
+    "z_avant": -1.07,
+    "avant_pct": -4.39
    },
    {
     "ticker": "GTT.PA",
@@ -137072,8 +137857,8 @@
     "probable": "hausse",
     "p_probable": 0.585,
     "p_hausse": 0.585,
-    "z_avant": -1.74,
-    "avant_pct": -12.26
+    "z_avant": -2.08,
+    "avant_pct": -14.63
    },
    {
     "ticker": "VCT.PA",
@@ -137083,8 +137868,8 @@
     "probable": "hausse",
     "p_probable": 0.511,
     "p_hausse": 0.511,
-    "z_avant": 0.11,
-    "avant_pct": 0.89
+    "z_avant": 0.36,
+    "avant_pct": 2.95
    },
    {
     "ticker": "VIRI.PA",
@@ -137094,16 +137879,16 @@
     "probable": "hausse",
     "p_probable": 0.5,
     "p_hausse": 0.5,
-    "z_avant": -0.59,
-    "avant_pct": -11.27
+    "z_avant": -0.86,
+    "avant_pct": -16.62
    },
    {
     "ticker": "SOLB.BR",
     "nom": "Solvay",
     "date": "2026-11-04",
     "estimee": true,
-    "z_avant": -0.95,
-    "avant_pct": -6.23
+    "z_avant": -0.67,
+    "avant_pct": -4.37
    },
    {
     "ticker": "BIM.PA",
@@ -137113,8 +137898,8 @@
     "probable": "baisse",
     "p_probable": 0.647,
     "p_hausse": 0.353,
-    "z_avant": 2.22,
-    "avant_pct": 18.5
+    "z_avant": 2.18,
+    "avant_pct": 18.13
    },
    {
     "ticker": "AF.PA",
@@ -137124,16 +137909,16 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": -0.37,
-    "avant_pct": -4.43
+    "z_avant": -0.33,
+    "avant_pct": -3.89
    },
    {
     "ticker": "MT.AS",
     "nom": "ArcelorMittal",
     "date": "2026-11-05",
     "estimee": true,
-    "z_avant": -1.45,
-    "avant_pct": -13.31
+    "z_avant": -1.46,
+    "avant_pct": -13.42
    },
    {
     "ticker": "AKE.PA",
@@ -137143,8 +137928,8 @@
     "probable": "hausse",
     "p_probable": 0.6,
     "p_hausse": 0.6,
-    "z_avant": -0.21,
-    "avant_pct": -1.81
+    "z_avant": -0.06,
+    "avant_pct": -0.5
    },
    {
     "ticker": "EN.PA",
@@ -137154,8 +137939,8 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": -1.07,
-    "avant_pct": -5.45
+    "z_avant": -0.99,
+    "avant_pct": -5.03
    },
    {
     "ticker": "ENGI.PA",
@@ -137165,8 +137950,8 @@
     "probable": "hausse",
     "p_probable": 0.591,
     "p_hausse": 0.591,
-    "z_avant": -0.6,
-    "avant_pct": -3.53
+    "z_avant": -0.39,
+    "avant_pct": -2.27
    },
    {
     "ticker": "RF.PA",
@@ -137176,8 +137961,8 @@
     "probable": "baisse",
     "p_probable": 0.55,
     "p_hausse": 0.45,
-    "z_avant": 0.13,
-    "avant_pct": 0.98
+    "z_avant": 0.58,
+    "avant_pct": 4.23
    },
    {
     "ticker": "ENX.PA",
@@ -137187,8 +137972,8 @@
     "probable": "hausse",
     "p_probable": 0.707,
     "p_hausse": 0.707,
-    "z_avant": 1.13,
-    "avant_pct": 7.07
+    "z_avant": 1.53,
+    "avant_pct": 9.63
    },
    {
     "ticker": "LR.PA",
@@ -137198,8 +137983,8 @@
     "probable": "baisse",
     "p_probable": 0.571,
     "p_hausse": 0.429,
-    "z_avant": -0.21,
-    "avant_pct": -1.45
+    "z_avant": -0.51,
+    "avant_pct": -3.63
    },
    {
     "ticker": "SESG.PA",
@@ -137209,8 +137994,8 @@
     "probable": "baisse",
     "p_probable": 0.59,
     "p_hausse": 0.41,
-    "z_avant": -0.23,
-    "avant_pct": -3.13
+    "z_avant": 0.06,
+    "avant_pct": 0.83
    },
    {
     "ticker": "TEP.PA",
@@ -137220,8 +138005,8 @@
     "probable": "hausse",
     "p_probable": 0.628,
     "p_hausse": 0.628,
-    "z_avant": 0.39,
-    "avant_pct": 5.16
+    "z_avant": 0.68,
+    "avant_pct": 9.05
    },
    {
     "ticker": "VIE.PA",
@@ -137232,15 +138017,15 @@
     "p_probable": 0.512,
     "p_hausse": 0.512,
     "z_avant": 0.71,
-    "avant_pct": 3.27
+    "avant_pct": 3.26
    },
    {
     "ticker": "APAM.AS",
     "nom": "Aperam",
     "date": "2026-11-06",
     "estimee": true,
-    "z_avant": -1.85,
-    "avant_pct": -19.82
+    "z_avant": -1.97,
+    "avant_pct": -21.19
    },
    {
     "ticker": "DEC.PA",
@@ -137250,8 +138035,8 @@
     "probable": "baisse",
     "p_probable": 0.574,
     "p_hausse": 0.426,
-    "z_avant": -0.19,
-    "avant_pct": -1.51
+    "z_avant": -0.05,
+    "avant_pct": -0.38
    },
    {
     "ticker": "FGR.PA",
@@ -137261,8 +138046,8 @@
     "probable": "hausse",
     "p_probable": 0.644,
     "p_hausse": 0.644,
-    "z_avant": -0.83,
-    "avant_pct": -4.45
+    "z_avant": -0.69,
+    "avant_pct": -3.68
    },
    {
     "ticker": "ALO.PA",
@@ -137272,8 +138057,8 @@
     "probable": "hausse",
     "p_probable": 0.578,
     "p_hausse": 0.578,
-    "z_avant": 0.96,
-    "avant_pct": 11.07
+    "z_avant": 1.18,
+    "avant_pct": 13.68
    },
    {
     "ticker": "SOI.PA",
@@ -137283,8 +138068,8 @@
     "probable": "hausse",
     "p_probable": 0.628,
     "p_hausse": 0.628,
-    "z_avant": -0.97,
-    "avant_pct": -28.12
+    "z_avant": -1.1,
+    "avant_pct": -31.92
    },
    {
     "ticker": "ELIOR.PA",
@@ -137294,8 +138079,8 @@
     "probable": "baisse",
     "p_probable": 0.545,
     "p_hausse": 0.455,
-    "z_avant": 0.01,
-    "avant_pct": 0.07
+    "z_avant": 0.51,
+    "avant_pct": 5.59
    },
    {
     "ticker": "UBI.PA",
@@ -137305,8 +138090,8 @@
     "probable": "hausse",
     "p_probable": 0.667,
     "p_hausse": 0.667,
-    "z_avant": -0.24,
-    "avant_pct": -4.92
+    "z_avant": -0.52,
+    "avant_pct": -10.57
    },
    {
     "ticker": "VLA.PA",
@@ -137316,8 +138101,8 @@
     "probable": "baisse",
     "p_probable": 0.556,
     "p_hausse": 0.444,
-    "z_avant": -0.44,
-    "avant_pct": -8.15
+    "z_avant": -0.28,
+    "avant_pct": -5.19
    },
    {
     "ticker": "VK.PA",
@@ -137327,8 +138112,8 @@
     "probable": "hausse",
     "p_probable": 0.542,
     "p_hausse": 0.542,
-    "z_avant": -0.25,
-    "avant_pct": -2.35
+    "z_avant": -1.07,
+    "avant_pct": -10.17
    },
    {
     "ticker": "TRI.PA",
@@ -137338,8 +138123,8 @@
     "probable": "hausse",
     "p_probable": 0.643,
     "p_hausse": 0.643,
-    "z_avant": -0.18,
-    "avant_pct": -1.44
+    "z_avant": 0.14,
+    "avant_pct": 1.1
    },
    {
     "ticker": "RCO.PA",
@@ -137349,8 +138134,8 @@
     "probable": "baisse",
     "p_probable": 0.547,
     "p_hausse": 0.453,
-    "z_avant": 1.91,
-    "avant_pct": 18.07
+    "z_avant": 2.5,
+    "avant_pct": 23.58
    },
    {
     "ticker": "DBG.PA",
@@ -137360,8 +138145,8 @@
     "probable": "hausse",
     "p_probable": 0.542,
     "p_hausse": 0.542,
-    "z_avant": -1.3,
-    "avant_pct": -11.73
+    "z_avant": -1.21,
+    "avant_pct": -10.93
    },
    {
     "ticker": "MEDCL.PA",
@@ -137371,16 +138156,230 @@
     "probable": "baisse",
     "p_probable": 0.625,
     "p_hausse": 0.375,
-    "z_avant": 0.98,
-    "avant_pct": 14.94
+    "z_avant": 1.07,
+    "avant_pct": 16.18
    }
   ],
   "apres_cloture": {
-   "n": 10223,
+   "n": 10226,
    "z_abs_jour_publication": 0.74,
    "z_abs_lendemain": 1.15
   },
   "publications_recentes": [
+   {
+    "id": "139504_20261023",
+    "ticker": "IPS.PA",
+    "nom": "Ipsos SA",
+    "publie_le": "2026-10-23T05:49:36+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139504_20261023.pdf",
+    "titre": "Ipsos : Croissance organique de 2,0 % au troisième trimestre",
+    "type_periode": "trimestriels",
+    "perf_12m_pct": 22.29,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      5.198,
+      7
+     ],
+     "ca": [
+      2557.0,
+      7
+     ]
+    },
+    "periode": "T3 2026",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 636.2
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.628,
+       "n": 41
+      }
+     ],
+     "p_hausse": 0.628,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139452_20261023",
+    "ticker": "PLNW.PA",
+    "nom": "Planisware",
+    "publie_le": "2026-10-23T05:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139452_20261023.pdf",
+    "titre": "Planisware: forte croissance au T3 2026 portée par l'accélération du chiffre d'affaires récurrent et une dynamique commerciale soutenue",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 39.31,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      56.5,
+      3
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "consensus": "conforme",
+    "consensus_raison": "Chiffre d'affaires 57,4 M€ contre 56,5 M€ attendus (+1,5 %), objectifs 2026 confirmés : en ligne, légèrement au-dessus.",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 57.4
+    },
+    "ecarts": {
+     "ca_pct": 1.59
+    },
+    "position_source": "claude",
+    "surprise": "conforme",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 8 publications passées",
+       "p": 0.5,
+       "n": 8
+      },
+      {
+       "libelle": "Conforme au consensus (secteur Technologie)",
+       "p": 0.444,
+       "n": 28
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.419,
+       "n": 63
+      },
+      {
+       "libelle": "Conforme au consensus après forte hausse sur 12 mois (+39 % face à l'indice)",
+       "p": 0.435,
+       "n": 50
+      }
+     ],
+     "p_hausse": 0.435
+    }
+   },
+   {
+    "id": "139489_20261023",
+    "ticker": "SW.PA",
+    "nom": "Sodexo",
+    "publie_le": "2026-10-23T05:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139489_20261023.pdf",
+    "titre": "Sodexo - Résultats de l’exercice 2026 : croissance interne au-dessus des objectifs ; perspectives confirmées pour l'exercice 2027",
+    "type_periode": "annuels",
+    "perf_12m_pct": 25.37,
+    "estimes": {
+     "fin": "2026-08-31",
+     "periode": "exercice",
+     "ca": [
+      23830.0,
+      17
+     ],
+     "bpa": [
+      3.226,
+      16
+     ]
+    },
+    "periode": "2026",
+    "perspectives": "confirmees",
+    "attentes": "superieures",
+    "consensus": "superieur",
+    "consensus_raison": "BPA ajusté 3,48 € contre 3,23 € attendus (+8 %), chiffre d'affaires 23 963 M€ contre 23 830 M€ (+0,6 %) : au-dessus.",
+    "objectifs": {
+     "periode": "2027",
+     "texte": "croissance interne +2 % à +3 %, marge d'exploitation autour de 3,4 %"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 23963,
+     "resultat": 304,
+     "bpa": 3.48,
+     "bpa_ajuste": true
+    },
+    "ecarts": {
+     "ca_pct": 0.56,
+     "bpa_pct": 7.87
+    },
+    "position_source": "claude",
+    "surprise": "positive",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.512,
+       "n": 41
+      },
+      {
+       "libelle": "Au-dessus du consensus (tout le marché ; secteur Consommation discrétionnaire : 13 cas)",
+       "p": 0.609,
+       "n": 424
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.605,
+       "n": 92
+      }
+     ],
+     "p_hausse": 0.605
+    }
+   },
+   {
+    "id": "083541_20261023",
+    "ticker": "SAF.PA",
+    "nom": "Safran",
+    "publie_le": "2026-10-23T04:59:55+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083541_20261023.pdf",
+    "titre": "Safran publie son chiffre d’affaires du 3e trimestre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 5.34,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      8920.0,
+      4
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "consensus": "conforme",
+    "consensus_raison": "Chiffre d'affaires ajusté 9 003 M€ contre 8 920 M€ attendus (+0,9 %) : en ligne.",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 9003
+    },
+    "ecarts": {
+     "ca_pct": 0.93
+    },
+    "position_source": "claude",
+    "surprise": "conforme",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.605,
+       "n": 41
+      },
+      {
+       "libelle": "Conforme au consensus (secteur Industrie)",
+       "p": 0.584,
+       "n": 69
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.559,
+       "n": 63
+      }
+     ],
+     "p_hausse": 0.559
+    }
+   },
    {
     "id": "119441_20261022",
     "ticker": "URW.PA",
@@ -137389,7 +138388,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW119441_20261022.pdf",
     "titre": "UNIBAIL-RODAMCO-WESTFIELD Q3-2026 TRADING UPDATE - CONTINUED OPERATING MOMENTUM SUPPORTS 2026 OUTLOOK",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 6.36,
+    "perf_12m_pct": 8.9,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
@@ -137423,11 +138422,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.457,
-       "n": 1217
+       "p": 0.456,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.457,
+     "p_hausse": 0.456,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue",
       "Objectifs conformes au consensus : historique encore trop court (2 cas)"
@@ -137442,7 +138441,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139440_20261022.pdf",
     "titre": "Valeo - Chiffre d'affaires du 3ème trimestre 2026",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 16.17,
+    "perf_12m_pct": 12.35,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137475,11 +138474,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.373,
-       "n": 1217
+       "p": 0.372,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.373,
+     "p_hausse": 0.372,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -137493,7 +138492,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139422_20261022.pdf",
     "titre": "Communiqué de presse - Activité au 30 septembre 2026",
     "type_periode": "autres",
-    "perf_12m_pct": -44.39,
+    "perf_12m_pct": -45.54,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
@@ -137521,11 +138520,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.642,
-       "n": 1217
+       "p": 0.641,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.642,
+     "p_hausse": 0.641,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -137539,7 +138538,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139433_20261022.pdf",
     "titre": "Chiffre d’affaires au 30 septembre 2026",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 15.26,
+    "perf_12m_pct": 19.09,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137579,7 +138578,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083533_20261022.pdf",
     "titre": "Aéroports de Paris SA - Chiffre d'affaires des 9 premiers mois 2026",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": -3.12,
+    "perf_12m_pct": -0.71,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137629,7 +138628,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083529_20261022.pdf",
     "titre": "Chiffre d’affaires du 3ème trimestre 2026 : Accor revoit à la hausse son objectif de résultat",
     "type_periode": "trimestriels",
-    "perf_12m_pct": 9.86,
+    "perf_12m_pct": 10.04,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
@@ -137661,11 +138660,11 @@
       },
       {
        "libelle": "Perspectives relevées",
-       "p": 0.691,
-       "n": 405
+       "p": 0.689,
+       "n": 406
       }
      ],
-     "p_hausse": 0.691,
+     "p_hausse": 0.689,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -137679,7 +138678,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139395_20261022.pdf",
     "titre": "VINCI - 9M 2026 - NOUVELLES HAUSSES DU CHIFFRE D’AFFAIRES ET DES PRISES DE COMMANDES",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": -1.59,
+    "perf_12m_pct": -0.35,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137707,11 +138706,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.635,
-       "n": 1217
+       "p": 0.634,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.635,
+     "p_hausse": 0.634,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -137725,7 +138724,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139421_20261022.pdf",
     "titre": "REXEL : Ventes du T3 2026",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 18.65,
+    "perf_12m_pct": 14.3,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137761,16 +138760,16 @@
       },
       {
        "libelle": "Au-dessus du consensus (secteur Industrie)",
-       "p": 0.65,
-       "n": 82
+       "p": 0.654,
+       "n": 84
       },
       {
        "libelle": "Perspectives relevées",
-       "p": 0.745,
+       "p": 0.748,
        "n": 52
       }
      ],
-     "p_hausse": 0.745
+     "p_hausse": 0.748
     }
    },
    {
@@ -137781,7 +138780,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169918_20261022.pdf",
     "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": 27.54,
+    "perf_12m_pct": 25.61,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137816,9 +138815,9 @@
        "n": 48
       },
       {
-       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 11 cas)",
-       "p": 0.571,
-       "n": 277
+       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 12 cas)",
+       "p": 0.569,
+       "n": 278
       },
       {
        "libelle": "Perspectives confirmées",
@@ -137826,12 +138825,12 @@
        "n": 63
       },
       {
-       "libelle": "Conforme au consensus après forte hausse sur 12 mois (+28 % face à l'indice)",
-       "p": 0.558,
+       "libelle": "Conforme au consensus après forte hausse sur 12 mois (+26 % face à l'indice)",
+       "p": 0.559,
        "n": 50
       }
      ],
-     "p_hausse": 0.558
+     "p_hausse": 0.559
     }
    },
    {
@@ -137842,7 +138841,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139427_20261022.pdf",
     "titre": "Kering : Chiffre d'affaires du troisième trimestre 2026",
     "type_periode": "chiffre_affaires",
-    "perf_12m_pct": -29.45,
+    "perf_12m_pct": -28.74,
     "estimes": {
      "fin": "2026-09-30",
      "periode": "trimestre",
@@ -137873,9 +138872,9 @@
        "n": 42
       },
       {
-       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 11 cas)",
-       "p": 0.494,
-       "n": 277
+       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 12 cas)",
+       "p": 0.493,
+       "n": 278
       },
       {
        "libelle": "Perspectives confirmées",
@@ -137894,7 +138893,7 @@
     "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169916_20261022.pdf",
     "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
     "type_periode": "autres",
-    "perf_12m_pct": -3.99,
+    "perf_12m_pct": 2.84,
     "exercice": {
      "fin": "2026-12-31",
      "bpa": [
@@ -137925,11 +138924,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.658,
-       "n": 1217
+       "p": 0.657,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.658,
+     "p_hausse": 0.657,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue",
       "Objectifs conformes au consensus : historique encore trop court (2 cas)"
@@ -137974,7 +138973,12 @@
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
-    }
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": -2.95,
+    "indice_pct": -1.39,
+    "ecart_pct": -4.56,
+    "z": -1.78
    },
    {
     "id": "139207_20261022",
@@ -138014,13 +139018,18 @@
        "n": 42
       },
       {
-       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 11 cas)",
-       "p": 0.565,
-       "n": 277
+       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 12 cas)",
+       "p": 0.563,
+       "n": 278
       }
      ],
-     "p_hausse": 0.565
-    }
+     "p_hausse": 0.563
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": -4.94,
+    "indice_pct": -1.39,
+    "ecart_pct": -2.58,
+    "z": -1.69
    },
    {
     "id": "169900_20261022",
@@ -138066,17 +139075,22 @@
       },
       {
        "libelle": "Au-dessus du consensus (secteur Industrie)",
-       "p": 0.64,
-       "n": 82
+       "p": 0.644,
+       "n": 84
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.633,
-       "n": 91
+       "p": 0.64,
+       "n": 92
       }
      ],
-     "p_hausse": 0.633
-    }
+     "p_hausse": 0.64
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": 0.83,
+    "indice_pct": -1.39,
+    "ecart_pct": 1.28,
+    "z": 1.38
    },
    {
     "id": "651356_20261022",
@@ -138119,15 +139133,20 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.561,
-       "n": 1217
+       "p": 0.56,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.561,
+     "p_hausse": 0.56,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
-    }
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": -2.88,
+    "indice_pct": -1.39,
+    "ecart_pct": -1.48,
+    "z": -0.63
    },
    {
     "id": "139203_20261022",
@@ -138165,15 +139184,20 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.548,
-       "n": 1217
+       "p": 0.547,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.548,
+     "p_hausse": 0.547,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
-    }
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": -5.82,
+    "indice_pct": -1.39,
+    "ecart_pct": -4.38,
+    "z": -2.15
    },
    {
     "id": "139204_20261022",
@@ -138220,12 +139244,17 @@
       },
       {
        "libelle": "Perspectives relevées",
-       "p": 0.708,
+       "p": 0.707,
        "n": 52
       }
      ],
-     "p_hausse": 0.708
-    }
+     "p_hausse": 0.707
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": 0.0,
+    "indice_pct": -1.39,
+    "ecart_pct": 0.22,
+    "z": 0.11
    },
    {
     "id": "139260_20261022",
@@ -138261,7 +139290,12 @@
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
-    }
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": 0.85,
+    "indice_pct": -1.39,
+    "ecart_pct": 1.98,
+    "z": 1.6
    },
    {
     "id": "083519_20261022",
@@ -138299,15 +139333,20 @@
       },
       {
        "libelle": "Perspectives relevées",
-       "p": 0.65,
-       "n": 405
+       "p": 0.648,
+       "n": 406
       }
      ],
-     "p_hausse": 0.65,
+     "p_hausse": 0.648,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
-    }
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": -1.43,
+    "indice_pct": -1.39,
+    "ecart_pct": -0.61,
+    "z": -0.33
    },
    {
     "id": "169894_20261021",
@@ -138348,12 +139387,17 @@
       },
       {
        "libelle": "Au-dessus du consensus (secteur Industrie)",
-       "p": 0.726,
-       "n": 82
+       "p": 0.73,
+       "n": 84
       }
      ],
-     "p_hausse": 0.726
-    }
+     "p_hausse": 0.73
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": 8.88,
+    "indice_pct": -1.39,
+    "ecart_pct": 10.28,
+    "z": 6.96
    },
    {
     "id": "083513_20261021",
@@ -138389,7 +139433,12 @@
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
-    }
+    },
+    "jour": "2026-10-22",
+    "rendement_pct": 0.69,
+    "indice_pct": -1.39,
+    "ecart_pct": 1.95,
+    "z": 1.7
    },
    {
     "id": "138957_20261021",
@@ -138427,11 +139476,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.65,
-       "n": 1217
+       "p": 0.649,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.65,
+     "p_hausse": 0.649,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -138479,7 +139528,7 @@
       {
        "libelle": "Perspectives confirmées",
        "p": 0.253,
-       "n": 1217
+       "n": 1220
       }
      ],
      "p_hausse": 0.253,
@@ -138522,11 +139571,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.595,
-       "n": 1217
+       "p": 0.594,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.595,
+     "p_hausse": 0.594,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -138576,11 +139625,11 @@
       },
       {
        "libelle": "Perspectives relevées",
-       "p": 0.721,
-       "n": 405
+       "p": 0.72,
+       "n": 406
       }
      ],
-     "p_hausse": 0.721,
+     "p_hausse": 0.72,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue",
       "Objectifs conformes au consensus : historique encore trop court (2 cas)"
@@ -138730,11 +139779,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.363,
-       "n": 1217
+       "p": 0.362,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.363,
+     "p_hausse": 0.362,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -138781,11 +139830,11 @@
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.516,
-       "n": 1217
+       "p": 0.515,
+       "n": 1220
       }
      ],
-     "p_hausse": 0.516,
+     "p_hausse": 0.515,
      "non_comptes": [
       "Pas de consensus comparable : position face aux attentes inconnue"
      ]
@@ -138895,16 +139944,16 @@
       },
       {
        "libelle": "Au-dessus du consensus (secteur Industrie)",
-       "p": 0.851,
-       "n": 82
+       "p": 0.853,
+       "n": 84
       },
       {
        "libelle": "Perspectives relevées",
-       "p": 0.9,
+       "p": 0.901,
        "n": 52
       }
      ],
-     "p_hausse": 0.9
+     "p_hausse": 0.901
     },
     "jour": "2026-10-16",
     "rendement_pct": -1.82,
@@ -138951,11 +140000,11 @@
       },
       {
        "libelle": "Conforme au consensus (tout le marché ; secteur Consommation de base : 9 cas)",
-       "p": 0.494,
-       "n": 277
+       "p": 0.493,
+       "n": 278
       }
      ],
-     "p_hausse": 0.494
+     "p_hausse": 0.493
     },
     "jour": "2026-10-15",
     "rendement_pct": 0.76,
@@ -139011,16 +140060,16 @@
       },
       {
        "libelle": "Conforme au consensus (tout le marché ; secteur Immobilier : 11 cas)",
-       "p": 0.415,
-       "n": 277
+       "p": 0.413,
+       "n": 278
       },
       {
        "libelle": "Perspectives confirmées",
-       "p": 0.389,
+       "p": 0.388,
        "n": 63
       }
      ],
-     "p_hausse": 0.389,
+     "p_hausse": 0.388,
      "non_comptes": [
       "Objectifs conformes au consensus : historique encore trop court (2 cas)"
      ]
@@ -139075,8 +140124,8 @@
       },
       {
        "libelle": "Conforme au consensus (tout le marché ; secteur Communication : 15 cas)",
-       "p": 0.62,
-       "n": 277
+       "p": 0.619,
+       "n": 278
       },
       {
        "libelle": "Perspectives confirmées",
@@ -139085,11 +140134,11 @@
       },
       {
        "libelle": "Conforme au consensus après forte hausse sur 12 mois (+24 % face à l'indice)",
-       "p": 0.608,
+       "p": 0.609,
        "n": 50
       }
      ],
-     "p_hausse": 0.608
+     "p_hausse": 0.609
     },
     "jour": "2026-10-13",
     "rendement_pct": 2.24,
@@ -139136,11 +140185,11 @@
       },
       {
        "libelle": "Sous le consensus (secteur Consommation discrétionnaire)",
-       "p": 0.462,
+       "p": 0.473,
        "n": 22
       }
      ],
-     "p_hausse": 0.462
+     "p_hausse": 0.473
     },
     "jour": "2026-10-13",
     "rendement_pct": -0.12,
