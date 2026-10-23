@@ -1,6 +1,6 @@
 {
  "version": 1,
- "genere_le": "2026-10-22T11:23:50+00:00",
+ "genere_le": "2026-10-23T06:22:22+00:00",
  "sources": {
   "amf": {
    "ok": false,
@@ -8,13 +8,13 @@
   },
   "presse": {
    "ok": true,
-   "trouves": 336,
-   "nouveaux": 172
+   "trouves": 286,
+   "nouveaux": 192
   },
   "assemblee": {
    "ok": true,
-   "trouves": 149,
-   "nouveaux": 0
+   "trouves": 317,
+   "nouveaux": 129
   },
   "agenda": {
    "ok": true,
@@ -22,10 +22,257 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 105
+   "trouves": 91
   }
  },
  "alertes": [
+  {
+   "id": "presse-bf56a1324b77d272",
+   "date": "2026-10-23",
+   "source": "presse",
+   "titre": "Rexel : ventes T3 +11,4 % à jours constants, objectifs 2026 relevés pour la deuxième fois",
+   "resume": "Ventes de 5 453 M€ au T3 (+11,4 % à jours constants), portées par les États-Unis et les data centers. Objectifs 2026 relevés : ventes ~+7 % à jours constants, marge d'EBITA ajustée d'au moins 6,4 %.",
+   "nouveaute": "Ventes T3 environ 5 % au-dessus du consensus (5 186 M€) et deuxième relèvement des objectifs 2026, publiés après la clôture du 22/10.",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNS25QSG1ISVl2NEVrXzU2Y21wdU83OTVwU1pwaWpPZndYbDZkNVFZeTNJV1p5eVRnVFlyZ0w5anVDSS1tbElBZTFlQ1kzT3NiSzQzQlF6NUVxTFh6MllhOHNRa2lScTdOVTBCUGhmclBDb2xxTUhJM2R2M09wLXd1djZpR25zWEw3N2ZKS0lDRWNWQkFKeVJkeEJzeXFnbUFhTWY3eVZoNldMRUpkRXdNS2J1Y05mUjlvOVJHTXBLRkNWWUt0aW52ekRnQ0c2U29WOEVWTi03c0hDc1JyazA3ZnNNcURaU1E0SExrTmduYXM?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "RXL.PA",
+     "sens": "positif",
+     "ampleur": "moyenne",
+     "justification": "Objectifs relevés : hausse dans 70 % des cas historiques ; résultats supérieurs au consensus : hausse dans 63 % des 422 cas.",
+     "extrait": "Objectifs 2026 rehaussés pour la deuxième fois",
+     "nom": "Rexel"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Rexel relève une nouvelle fois ses perspectives, porté par la demande des centres de données aux États-Unis et l’électrification en Europe - Zonebourse Suisse",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNS25QSG1ISVl2NEVrXzU2Y21wdU83OTVwU1pwaWpPZndYbDZkNVFZeTNJV1p5eVRnVFlyZ0w5anVDSS1tbElBZTFlQ1kzT3NiSzQzQlF6NUVxTFh6MllhOHNRa2lScTdOVTBCUGhmclBDb2xxTUhJM2R2M09wLXd1djZpR25zWEw3N2ZKS0lDRWNWQkFKeVJkeEJzeXFnbUFhTWY3eVZoNldMRUpkRXdNS2J1Y05mUjlvOVJHTXBLRkNWWUt0aW52ekRnQ0c2U29WOEVWTi03c0hDc1JyazA3ZnNNcURaU1E0SExrTmduYXM?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T17:38:27+00:00",
+     "media": "Zonebourse Suisse"
+    },
+    {
+     "titre": "Rexel remonte encore ses prévisions, porté par les data centers et l’électrification - Le Singulier",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYndhZU1GamVLSTYyYlZoNFJta3hWRlVyUWdSUm10dzh5UHBJQVhuRW5sbUdvOHd4bkYtc2swLVZpYmo0aHJFZU80d3hWWlRPR3NzMlUwR1JlajZjMGhlWW1acHVoY1U5SGNKYWpzZWxMZXhtSnpkcDZFTVYtaFI2Q01nVnQweWRrTXlxWVQxRlE2aEpuaUdETl9RQ2pVREx6YWJjb0VDblhyOHE5Mkxr?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T06:12:49+00:00",
+     "media": "Le Singulier"
+    },
+    {
+     "titre": "Rexel relève à nouveau ses objectifs avec les États-Unis et l'électrification en Europe - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUU5SeWlFRExiakRJLTZ2Q20zbThfSThQLXVOUGw5TkxxRnE3cTFsS1p2Z3M0VXoycDRNUnNSN3llanlQeTJCVjd4VktReUlaTFFaVXBMQVZ0UDJhWUFPRnhPZ0lpUHJwbEI1MVJNUU1jbXVJNEVoVXVGRDhkUGpsN1FNTUdPYjljZGNfU3lDbFN4aDBDZzNfcUZJWnEzTXdXN3ZMcGktb2ZsVGIyXzNCSVUtZW55dFJyMHZrV0pjZnVCQk5OS1N5bHVFOFlOSlkxdFpkTDFIUElxOWc?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:25:15+00:00",
+     "media": "Boursier.com"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T06:22:22+00:00"
+  },
+  {
+   "id": "presse-f3a684228fa1435d",
+   "date": "2026-10-23",
+   "source": "presse",
+   "titre": "Kering : chiffre d'affaires T3 de 3 345 M€ en ligne, Gucci -6 % en comparable",
+   "resume": "Chiffre d'affaires de 3 345 M€, stable en publié et -1 % en comparable ; Gucci -6 %, Saint Laurent, Bottega Veneta, Jewelry et Eyewear en progression. Plus de 125 fermetures nettes de magasins prévues en 2026.",
+   "nouveaute": "Chiffres du T3 publiés après la clôture du 22/10, en ligne avec le consensus (3 350 M€) mais avec Gucci encore en recul.",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOa2d4LV93TnBNWEttOVY1dmp4bHV4WTVOU3ZIcFBEWVpzZkpsTHo5TkRXOUV2MUJ3ZGVUYTE1Z0tsaWw0MWxRQ3kzbzhRWi1yeU02QURrdE1wLXhrN1VlWmEtcENYVHM0Q2xKVnQ4WE9rc2s0dHJocFJxNGJvUmJpc1BjRUd3SkRPZ0VkSEhIUWpXa1dGN3p0R1BmMXFaM1ZMMkNEZnQ3eHVOQzN3SDVyQ3QzU3BESW80SU52a1RHOGxVamdKaGZPd2trOEEwVzhIZnRua1lGQ05qdnpMSnRPRTVwekhqekNjQ2k4VQ?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "KER.PA",
+     "sens": "incertain",
+     "ampleur": "moyenne",
+     "justification": "Résultats conformes au consensus : hausse dans 49 % des 277 cas historiques, sens non tranché ; Gucci reste en baisse.",
+     "extrait": "Le redressement de Gucci demeure notre priorité absolue.",
+     "nom": "Kering"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Kering annonce des résultats mitigés au troisième trimestre - BFM",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOa2d4LV93TnBNWEttOVY1dmp4bHV4WTVOU3ZIcFBEWVpzZkpsTHo5TkRXOUV2MUJ3ZGVUYTE1Z0tsaWw0MWxRQ3kzbzhRWi1yeU02QURrdE1wLXhrN1VlWmEtcENYVHM0Q2xKVnQ4WE9rc2s0dHJocFJxNGJvUmJpc1BjRUd3SkRPZ0VkSEhIUWpXa1dGN3p0R1BmMXFaM1ZMMkNEZnQ3eHVOQzN3SDVyQ3QzU3BESW80SU52a1RHOGxVamdKaGZPd2trOEEwVzhIZnRua1lGQ05qdnpMSnRPRTVwekhqekNjQ2k4VQ?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:39:14+00:00",
+     "media": "BFM"
+    },
+    {
+     "titre": "Kering: Le recul des ventes de Gucci au T3 pèse sur les espoirs de relance - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOMG1KMDQ2TFNyUzhtRXNyS2FaNXIwSlZfQ003VlgyWlRfNldNV1Vra3lTUUdUZUl5RVFSTEk3bUdCUTVQVjU0b2hsTEktdHdyYnhpVnpFdjQteWtKTG9QT0dzV2hVZ1N5UGdFd1JmbXFRbmhrdUZCQVltOXotRTg4RmxzNDZDRVMzZjYycWdXYkdHX216b1JyTHpXdXU1cm9qdndpZkZkRkp5MG9uZV9KQTBaY1R2cU02ek8ydnh0clRFbjQwRFByekhHeGxNdGlQRXQ4cWV5bEhFQXR3UmFjenZiNU9hRmVuT1VN0gHrAUFVX3lxTE4wbUowNDZMU3JTOG1Fc3JLYVo1cjBKVl9DTTdWWDJaVF82V01XVWtreVNRR1RlSXlFUVJMSTdtR0JRNVBWNTRvaGxMSS10d3JieGlWekV2NC15a0pMb1BPR3NXaFVnU3lQZ0V3UmZtcVFuaGt1RkJBWW05ei1FODhGbHM0NkNFUzNmNjJxZ1diR0dfbXpvUnJMeld1dTVyb2p2d2lmRmRGSnkwb25lX0pBMFpjVHZxTTZ6TzJ2eHRyVEVuNDBEUHJ6SEd4bE10aVBFdDhxZXlsSEVBdHdSYWN6dmI1T2FGZW5PVU0?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:20:07+00:00",
+     "media": "Boursorama"
+    },
+    {
+     "titre": "Les ventes de Kering restent stables au 3e trimestre mais Gucci pèse - Boursorama",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQR0RmbFlVNFRRc0hZWU1nZmZpWDdlYWhhYm85di1iUGZGa3lKTkFOUTdvXzhtQTVsdnFCZWQzVUs2M3dKT2JYeFBkeGh0MGRvMUlWdUdYMk1rX0hCbXN1ck1qci1mdHNwdzI3WlVCY2ZVa0txeWlRVDBkdk16S1lKeWxnT3h3ZFg3ejhmYkl5eVhpV3gzSG5BMVBTZzNReUQ5bkp3R0ZoRFl5R3dlTE5NUk5wTGRmd3ViQ0MwQ0Z1dzRUSlJDWTFTcVFYd0lya1BQM19qSFY2cVl1dVBDYTUyWjR6aFHSAeQBQVVfeXFMUEdEZmxZVTRUUXNIWVlNZ2ZmaVg3ZWFoYWJvOXYtYlBmRmt5Sk5BTlE3b184bUE1bHZxQmVkM1VLNjN3Sk9iWHhQZHhodDBkbzFJVnVHWDJNa19IQm1zdXJNanItZnRzcHcyN1pVQmNmVWtLcXlpUVQwZHZNektZSnlsZ094d2RYN3o4ZmJJeXlYaVd4M0huQTFQU2czUXlEOW5Kd0dGaERZeUd3ZUxOTVJOcExkZnd1YkNDMENGdXc0VEpSQ1kxU3FRWHdJcmtQUDNfakhWNnFZdXVQQ2E1Mlo0emhR?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T16:15:34+00:00",
+     "media": "Boursorama"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T06:22:22+00:00"
+  },
+  {
+   "id": "presse-cba15182271d8a5f",
+   "date": "2026-10-23",
+   "source": "presse",
+   "titre": "Safran : ventes T3 en hausse de 13 %, objectifs 2026 jugés sous le consensus",
+   "resume": "Chiffre d'affaires du 3e trimestre d'environ 9 Md€ (+13 %), selon la presse en ligne avec ou au-dessus des prévisions ; objectifs 2026 maintenus mais perçus sous le consensus.",
+   "nouveaute": "Chiffres du T3 et objectifs 2026 publiés ce matin ; lecture des médias divergente face aux attentes.",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcWtwbVhLbnN5TXRoVDE4SWhVQnJqS1E1R2N3amkxd0ZpdGxYWl9RZFNhVVdYOVZKZ29DcTkxa1ZNMnJJYkNMR2szNlNEOVkxOGpDTUNILVRSdExsSWNKMi1qSzg3UTlORVRJbk1ESlJ4S01TcEFkMVozcXBXd1FIZGYwUm5tUmg2MWg0aHliVmhhVEN6eVgtc0VQQ3VUMUhwc0FKZUpxU2lITnFVUUhfRENRUjRhWEJweFFDRUFudUc?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "SAF.PA",
+     "sens": "incertain",
+     "ampleur": "moyenne",
+     "justification": "Ventes en forte hausse mais objectifs 2026 décrits sous le consensus ; communiqué non lu, lecture à confirmer.",
+     "extrait": "",
+     "nom": "Safran"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Safran : chiffre d’affaires T3 conforme, objectifs 2026 sous le consensus - Investing.com France",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcWtwbVhLbnN5TXRoVDE4SWhVQnJqS1E1R2N3amkxd0ZpdGxYWl9RZFNhVVdYOVZKZ29DcTkxa1ZNMnJJYkNMR2szNlNEOVkxOGpDTUNILVRSdExsSWNKMi1qSzg3UTlORVRJbk1ESlJ4S01TcEFkMVozcXBXd1FIZGYwUm5tUmg2MWg0aHliVmhhVEN6eVgtc0VQQ3VUMUhwc0FKZUpxU2lITnFVUUhfRENRUjRhWEJweFFDRUFudUc?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:52:00+00:00",
+     "media": "Investing.com France"
+    },
+    {
+     "titre": "Safran performe au troisième trimestre avec 9 Mds de chiffre d’affaires - BFM",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSzJ4TWcxMkluYXpEeFlBWXk0Y1ZzTi1WeDFYdzlwa3h2RDRuaWwtX0E1bm1xOGhrb0NnbDdPR1FzcnV1SmpSaEFjZngtbTVnRzFOZUVOcVpfbVJfM1IxYnR2YWFDX3JwaTlfcTUtdkVlYkRPb2tmVFZIVklHSmZ5R05ZOGtSQXpyUWRtS0lndEhPX0ZxbmNtalVEUTN3bFZYSjkyZG9VcXRKM0dWVlJrTWh3Z0tPLVlORkVNMGNnSmZNU2w1X0RWVEpEQzJDU2JvdnI4R0ptRndqRG9pSHVPOFNPbGxIZGNUOTgzemZkbkJkSVZheDNMUU84STU?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T06:12:23+00:00",
+     "media": "BFM"
+    },
+    {
+     "titre": "Safran : Les ventes bondissent de 13 % au troisième trimestre et dépassent les prévisions - ABC Bourse",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVGppVE9zaGZKNEVzZ2tTTXdXV0tnMDFfN2t3OXMwSWRvMGQxN3ZkS3Z3ZDd3cUhuSVp1dXA0bGlYX1FVa1JxN2daM2ZkTWhhcUFyVXJKU1V0SUdFVWZDQ2phWDdaRXNzb0Z1VGtRZkg5SjFTSUZhOTBvZmpRaTV5c3J3R3J6N3dvTV82bS1TeUtTbXU1WXBtZEpod2cyN2gzQWpJZWtZUVlQajEtRGVwUVN0Yk80bGJS?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T06:03:43+00:00",
+     "media": "ABC Bourse"
+    },
+    {
+     "titre": "Safran : croissance soutenue du chiffre d'affaires et objectifs maintenus - Boursier.com",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSkgzVFlyYi1wTDg2WWhZYjlYaE9NMVNOUEY2Rjh4MVpvS0JHanZfazZXMTZ5NXBIUlhWNjBCb3BwbHQ2QVo0N3FoeXFOSGRnSTdOSkxwQk1iN1BZY1BxU1hqWlJUbDBtcVZtZ01CT1RmekdMMlJYOXdtVlVuQUFRaERTN01MYnBrcThrVzRNVG5FWnNFSUlhYkZiQkZLdHV4YzJSTER0cjN6OWpsRGpjSjJaYzZ5YlFXaUhQV0s3NmJkeElvd0hNejc5Nkw?oc=5",
+     "date": "2026-10-23",
+     "publie_le": "2026-10-23T05:49:00+00:00",
+     "media": "Boursier.com"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T06:22:22+00:00"
+  },
+  {
+   "id": "presse-2e5cd5604bc672ec",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "Nexity : chiffre d'affaires -17 % à 1,6 Md€ sur neuf mois, guidance 2026 confirmée",
+   "resume": "Chiffre d'affaires de 1,6 Md€ (-17 %), 5 394 réservations, backlog de 3,5 Md€. La guidance 2026 est confirmée mais le groupe décrit un bas de cycle plus long (inflation, OAT 10 ans vers 5 %).",
+   "nouveaute": "Chiffres 9 mois publiés après la clôture du 22/10, avec un constat de marché du logement neuf durablement bas.",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWVZ3aVQwRWdOZkFWbDFBS0pjX3ppcG9fUUVoOVZucUYwcnhSZ2hraVZXa1RHX0FnWkhjVm4ya055MU5mWUhCOTBzZTJSOGlrUldHZFdEMmZVdl8wdHROYkpLRmowUVZEVnM3QnpYUER2Z2t4UFMtaHVLaVFJOWJZajhhSE13UTZwYllCcHh3VmpnLWxhVVlNbHgwOFhFQnZxMTY2Q0xoZkdOUDBU?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "NXI.PA",
+     "sens": "negatif",
+     "ampleur": "moyenne",
+     "justification": "Perspectives confirmées (hausse dans 54 % des 1 214 cas) mais activité en recul de 17 % et marché durablement bas.",
+     "extrait": "un bas de cycle dont l'ampleur et la durée s'accentuent",
+     "nom": "Nexity"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Immobilier : La hausse des taux fait chuter les ventes de Nexity de 17% - MySweetImmo",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWVZ3aVQwRWdOZkFWbDFBS0pjX3ppcG9fUUVoOVZucUYwcnhSZ2hraVZXa1RHX0FnWkhjVm4ya055MU5mWUhCOTBzZTJSOGlrUldHZFdEMmZVdl8wdHROYkpLRmowUVZEVnM3QnpYUER2Z2t4UFMtaHVLaVFJOWJZajhhSE13UTZwYllCcHh3VmpnLWxhVVlNbHgwOFhFQnZxMTY2Q0xoZkdOUDBU?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T21:22:25+00:00",
+     "media": "MySweetImmo"
+    },
+    {
+     "titre": "« Le nombre de refus de prêt immobilier augmente » : les ventes de Nexity subissent la remontée des taux - MoneyVox",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQeEJ4Skl4azNfZVQ4TlB2MHI5ZGZjTmlCbHkwZWFJMGFfR1JMSmxqem9iMTVyZEd4cC0xdU4zLVJiVEdLZE4xMGQ2ZTk3eEwwQ2FOejFTMHNsZlBHSmNRVFJLOTdsMTJvXzQ3OGNkOVk5anY1SzI2aG9VX2JVVk9qSjBNanBBd1BuWDVITU91ajhkREZmMTZuVnZqZDM5Zy1hS0tFVGM3eXpaazZaY0hpZEZVOXBlNDE1bTAxa2xzVTdfRHdidXBGeVFjOW4xLVZQemwzajBhXzFiS2RSYm5EMw?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T20:56:24+00:00",
+     "media": "MoneyVox"
+    },
+    {
+     "titre": "Un chiffre d’affaires en baisse de 17 % pour Nexity - Business Immo",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWDdfVDN5bWpWM3o0NEVIVUhIeDIwaUx1NDdTQVhPT0l6NFAzcGVVYmtoVENKTGZYYTJKYWRUakQxZWhVbEo1Y2c5UFY0eThoV0htV212bGl1RjBpdVByUHZnY042T1o5bUZaN0JTSS1CU1BhcVJEc24tZHhNMUtrQU4yel9xMWdqMmhBdG8wVTIyUWxHNnktVTBMbjZjczVxejRJd1lxbzBHa00?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T17:29:00+00:00",
+     "media": "Business Immo"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T06:22:22+00:00"
+  },
+  {
+   "id": "presse-4c4cb083e34178d1",
+   "date": "2026-10-22",
+   "source": "presse",
+   "titre": "L'Oréal : croissance comparable de +6,9 % sur neuf mois, accélération au T3 (+7,7 %)",
+   "resume": "Chiffre d'affaires de 35,33 Md€ sur neuf mois (+6,9 % à données comparables), troisième trimestre à +7,7 % ; croissance dans toutes les divisions et zones, e-commerce +17 %. La presse le juge supérieur aux attentes.",
+   "nouveaute": "Accélération de la croissance au T3 publiée après la clôture du 22/10 ; consensus trimestriel détaillé non comparé ici.",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcXRQUVA5OWs4X2RDd0doLUloSXdRN3VuMkEwclhOOUtWdDhXazNGbF9zYmhOR29UMTFCaWFUeXBVVTFfazN1Z3FkbVJ0SUlmQkNsSUdEeURxV1czRlU5Ql91NlZTVW84UWFxcVk2VG1mUUpZQVhtU3pIZlBRRlByLTJ0OW5KX1JjcHFLQWZOd19fd25JMWp5WEVaeXRkYzVwZ1UwUTI2bFcwLTdSazNGeDYteDJkTGs?oc=5",
+   "etape": "information",
+   "probabilite": 1,
+   "themes": [],
+   "entreprises": [
+    {
+     "ticker": "OR.PA",
+     "sens": "positif",
+     "ampleur": "faible",
+     "justification": "Accélération de la croissance comparable et presse évoquant des chiffres supérieurs aux attentes ; comparaison chiffrée au consensus non établie.",
+     "extrait": "L'Oréal réalise un troisième trimestre exceptionnel",
+     "nom": "L'Oréal"
+    }
+   ],
+   "sources": [
+    {
+     "titre": "L'Oréal: croissance des ventes à deux chiffres au troisième trimestre - FashionNetwork France",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcXRQUVA5OWs4X2RDd0doLUloSXdRN3VuMkEwclhOOUtWdDhXazNGbF9zYmhOR29UMTFCaWFUeXBVVTFfazN1Z3FkbVJ0SUlmQkNsSUdEeURxV1czRlU5Ql91NlZTVW84UWFxcVk2VG1mUUpZQVhtU3pIZlBRRlByLTJ0OW5KX1JjcHFLQWZOd19fd25JMWp5WEVaeXRkYzVwZ1UwUTI2bFcwLTdSazNGeDYteDJkTGs?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T17:36:25+00:00",
+     "media": "FashionNetwork France"
+    },
+    {
+     "titre": "L'Oréal dépasse les attentes avec le rebond de la demande en Chine - Investir Les Echos",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV3FsckppOVdjaXhVVWhia2JUaU45cVVCdWxJZ1pXUFhRZWZxNV9oTUFfVy05SDJCQ2MwbnFfLWROM3NYVzVzOVZObnJxMUpDRWtfWVVmTml5TUxSNDJ4VkJ0WE80eGxTenpCWVZSb2JLam1BdW0tTTVDRy1JYkI0R3dtRXZ4YWJPeWM3WnptLWpXdjRtak1qMGkwc3lXSWMwODE0RFVtNU9ma01vYS1TTHBUbkd3UnYyWGdMcUlRckdpc2loOUFucy04VjZzRFRaVDU0ZzBseFY1VEpN?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T16:00:03+00:00",
+     "media": "Investir Les Echos"
+    },
+    {
+     "titre": "L’Oréal : la vente de cosmétiques en ligne aiguillon de la croissance - La Revue du Digital",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbll5M2JCemVZUE1zQ1hLdVNzV3A3S0ZNY1kzLWxLazVKZXdKQXZYd2Q1N3NyLVk1b0pQeENSWnc0STBieWdUUzhtUkpvbzR0ZXNDUVVkSnRvYlg5YWlTNUFuQVM5eU1jOFI2cFJVUWdWa2RFbGIza2JPUVl0RGVENVE2NDh2OWV2eFU4c08zbkp4blVmZi1fd3hTZnVVb19SdlE?oc=5",
+     "date": "2026-10-22",
+     "publie_le": "2026-10-22T20:03:05+00:00",
+     "media": "La Revue du Digital"
+    }
+   ],
+   "analyse": "claude",
+   "ajoute_le": "2026-10-23",
+   "publie_a": "2026-10-23T06:22:22+00:00"
+  },
   {
    "id": "presse-67b00f8c713fb0bf",
    "date": "2026-10-22",
@@ -5187,240 +5434,6 @@
  ],
  "calendrier": [
   {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Sartorius Stedim Biotech : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "DIM.PA"
-   ],
-   "tickers_mots_cles": [
-    "DIM.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/DIM.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Bureau Veritas : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "BVI.PA"
-   ],
-   "tickers_mots_cles": [
-    "BVI.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/BVI.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Carrefour : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "CA.PA"
-   ],
-   "tickers_mots_cles": [
-    "CA.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/CA.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Kering : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "KER.PA"
-   ],
-   "tickers_mots_cles": [
-    "KER.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/KER.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Michelin : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "ML.PA"
-   ],
-   "tickers_mots_cles": [
-    "ML.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/ML.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Renault : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "RNO.PA"
-   ],
-   "tickers_mots_cles": [
-    "RNO.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/RNO.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Thales : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "HO.PA"
-   ],
-   "tickers_mots_cles": [
-    "HO.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/HO.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Nexans : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "NEX.PA"
-   ],
-   "tickers_mots_cles": [
-    "NEX.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/NEX.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Covivio : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "COV.PA"
-   ],
-   "tickers_mots_cles": [
-    "COV.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/COV.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Icade : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "ICAD.PA"
-   ],
-   "tickers_mots_cles": [
-    "ICAD.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/ICAD.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "ID Logistics : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "IDL.PA"
-   ],
-   "tickers_mots_cles": [
-    "IDL.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/IDL.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Ipsos SA : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "IPS.PA"
-   ],
-   "tickers_mots_cles": [
-    "IPS.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/IPS.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-22",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Klépierre : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "LI.PA"
-   ],
-   "tickers_mots_cles": [
-    "LI.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/LI.PA",
-   "fiable": false
-  },
-  {
    "date": "2026-10-23",
    "heure": "",
    "type": "resultats",
@@ -7031,24 +7044,6 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/DG.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-11",
-   "heure": "",
-   "type": "resultats",
-   "titre": "EssilorLuxottica : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "EL.PA"
-   ],
-   "tickers_mots_cles": [
-    "EL.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/EL.PA",
    "fiable": false
   },
   {

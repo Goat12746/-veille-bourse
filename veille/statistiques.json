@@ -1,7 +1,7 @@
 {
  "version": 1,
- "genere_le": "2026-10-22T11:25:06+00:00",
- "derniere_seance": "2026-10-21",
+ "genere_le": "2026-10-23T06:23:42+00:00",
+ "derniere_seance": "2026-10-22",
  "methode": {
   "indice": "CAC 40",
   "estimation": 250,
@@ -13,10 +13,11 @@
  },
  "cours_indisponibles": [],
  "alertes": {
-  "n_alertes": 101,
-  "n_observations": 159,
+  "n_alertes": 106,
+  "n_observations": 164,
   "statuts": {
-   "attente": 14,
+   "attente": 5,
+   "donnees": 14,
    "note": 58,
    "confondu": 13,
    "non_directionnel": 34,
@@ -253,14 +254,14 @@
   },
   "detail": [
    {
-    "id": "presse-abfc25d79def0710",
-    "titre": "Wendel : ANR par action en hausse de 5,1 % à 167 € au T3, cessions de Stahl et d'IHS",
-    "date": "2026-10-22",
+    "id": "presse-cba15182271d8a5f",
+    "titre": "Safran : ventes T3 en hausse de 13 %, objectifs 2026 jugés sous le consensus",
+    "date": "2026-10-23",
     "source": "presse",
     "etape": "information",
     "probabilite": 1,
-    "publie_a": "2026-10-22T13:23",
-    "information": "2026-10-22T09:11",
+    "publie_a": "2026-10-23T08:22",
+    "information": "2026-10-23T07:49",
     "reaction": {
      "debut": null,
      "fin": null,
@@ -271,11 +272,146 @@
     "nb_entreprises": 1,
     "observations": [
      {
+      "ticker": "SAF.PA",
+      "nom": "Safran",
+      "sens": "incertain",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-bf56a1324b77d272",
+    "titre": "Rexel : ventes T3 +11,4 % à jours constants, objectifs 2026 relevés pour la deuxième fois",
+    "date": "2026-10-23",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T08:22",
+    "information": "2026-10-22T19:38",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "RXL.PA",
+      "nom": "Rexel",
+      "sens": "positif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-f3a684228fa1435d",
+    "titre": "Kering : chiffre d'affaires T3 de 3 345 M€ en ligne, Gucci -6 % en comparable",
+    "date": "2026-10-23",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T08:22",
+    "information": "2026-10-22T18:15",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "KER.PA",
+      "nom": "Kering",
+      "sens": "incertain",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-2e5cd5604bc672ec",
+    "titre": "Nexity : chiffre d'affaires -17 % à 1,6 Md€ sur neuf mois, guidance 2026 confirmée",
+    "date": "2026-10-22",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T08:22",
+    "information": "2026-10-22T19:29",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "NXI.PA",
+      "nom": "Nexity",
+      "sens": "negatif",
+      "ampleur": "moyenne",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-4c4cb083e34178d1",
+    "titre": "L'Oréal : croissance comparable de +6,9 % sur neuf mois, accélération au T3 (+7,7 %)",
+    "date": "2026-10-22",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-23T08:22",
+    "information": "2026-10-22T18:00",
+    "reaction": {
+     "debut": null,
+     "fin": null,
+     "seances": null
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
+      "ticker": "OR.PA",
+      "nom": "L'Oréal",
+      "sens": "positif",
+      "ampleur": "faible",
+      "statut": "attente"
+     }
+    ]
+   },
+   {
+    "id": "presse-abfc25d79def0710",
+    "titre": "Wendel : ANR par action en hausse de 5,1 % à 167 € au T3, cessions de Stahl et d'IHS",
+    "date": "2026-10-22",
+    "source": "presse",
+    "etape": "information",
+    "probabilite": 1,
+    "publie_a": "2026-10-22T13:23",
+    "information": "2026-10-22T09:11",
+    "reaction": {
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
+    },
+    "avant_reaction": false,
+    "macro": false,
+    "nb_entreprises": 1,
+    "observations": [
+     {
       "ticker": "MF.PA",
       "nom": "Wendel",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -289,11 +425,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T08:00",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -302,7 +438,7 @@
       "nom": "Hermès",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -316,11 +452,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T07:59",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -329,7 +465,7 @@
       "nom": "Orange",
       "sens": "negatif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -343,11 +479,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T07:41",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -356,7 +492,7 @@
       "nom": "Getlink",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -370,11 +506,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T07:38",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -383,7 +519,7 @@
       "nom": "Nexans",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -397,11 +533,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T07:14",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -410,7 +546,7 @@
       "nom": "Ipsen",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -424,11 +560,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T07:05",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -437,7 +573,7 @@
       "nom": "Thales",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -451,11 +587,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T05:13",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -464,7 +600,7 @@
       "nom": "Stellantis",
       "sens": "negatif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -478,11 +614,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T00:46",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -491,7 +627,7 @@
       "nom": "Maurel & Prom",
       "sens": "positif",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -505,11 +641,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-22T00:00",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -518,7 +654,7 @@
       "nom": "Sartorius Stedim Biotech",
       "sens": "incertain",
       "ampleur": "inconnue",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -532,11 +668,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-21T18:30",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -545,7 +681,7 @@
       "nom": "EssilorLuxottica",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -559,11 +695,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-21T18:15",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -572,7 +708,7 @@
       "nom": "Covivio",
       "sens": "neutre",
       "ampleur": "faible",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -586,11 +722,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-21T18:13",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -599,7 +735,7 @@
       "nom": "ID Logistics",
       "sens": "positif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -613,11 +749,11 @@
     "publie_a": "2026-10-22T08:23",
     "information": "2026-10-21T17:45",
     "reaction": {
-     "debut": null,
-     "fin": null,
-     "seances": null
+     "debut": "2026-10-22",
+     "fin": "2026-10-22",
+     "seances": 1
     },
-    "avant_reaction": false,
+    "avant_reaction": true,
     "macro": false,
     "nb_entreprises": 1,
     "observations": [
@@ -626,7 +762,7 @@
       "nom": "FDJ United",
       "sens": "negatif",
       "ampleur": "moyenne",
-      "statut": "attente"
+      "statut": "donnees"
      }
     ]
    },
@@ -5283,19 +5419,19 @@
   "version": 2,
   "indice": "CAC 40",
   "depuis": "2015-01-01",
-  "jusqu_a": "2026-10-21",
-  "n_communiques": 26014,
-  "n_evenements": 21184,
+  "jusqu_a": "2026-10-22",
+  "n_communiques": 26049,
+  "n_evenements": 21189,
   "n_entreprises": 115,
-  "en_attente": 0,
+  "en_attente": 14,
   "jour_ordinaire": {
-   "n": 313174,
+   "n": 313268,
    "z_abs_moyen": 0.67,
    "part_net": 0.218,
    "part_fort": 0.04
   },
   "tous": {
-   "n": 21184,
+   "n": 21189,
    "z_abs_moyen": 1.17,
    "part_net": 0.367,
    "part_fort": 0.157,
@@ -5320,7 +5456,7 @@
     "libelle": "Révisions d'objectifs, avertissements"
    },
    {
-    "n": 4337,
+    "n": 4341,
     "z_abs_moyen": 2.28,
     "part_net": 0.672,
     "part_fort": 0.434,
@@ -5409,7 +5545,7 @@
     "z_abs_moyen": 0.81,
     "part_net": 0.261,
     "part_fort": 0.073,
-    "ecart_abs_median_pct": 0.83,
+    "ecart_abs_median_pct": 0.82,
     "n_positif": 1499,
     "n_negatif": 38,
     "hausse_si_positif": 0.556,
@@ -5456,7 +5592,7 @@
     "libelle": "Dividendes et rachats d'actions"
    },
    {
-    "n": 2108,
+    "n": 2109,
     "z_abs_moyen": 0.77,
     "part_net": 0.276,
     "part_fort": 0.057,
@@ -5491,12 +5627,12 @@
    }
   ],
   "resultats": {
-   "n": 4337,
-   "n_avis_claude": 4197,
+   "n": 4341,
+   "n_avis_claude": 4201,
    "n_consensus": 963,
    "part_hausse": 0.55,
    "mouvements": {
-    "n": 4337,
+    "n": 4341,
     "z_abs_moyen": 2.28,
     "part_net": 0.672,
     "part_fort": 0.434,
@@ -5927,10 +6063,10 @@
    "par_periode": [
     {
      "valeur": "annuels",
-     "n": 880,
-     "part_hausse": 0.585,
+     "n": 881,
+     "part_hausse": 0.586,
      "ecart_moyen_pct": 0.59,
-     "z_abs_moyen": 2.61
+     "z_abs_moyen": 2.6
     },
     {
      "valeur": "semestriels",
@@ -5941,14 +6077,14 @@
     },
     {
      "valeur": "trimestriels",
-     "n": 599,
-     "part_hausse": 0.514,
+     "n": 600,
+     "part_hausse": 0.515,
      "ecart_moyen_pct": 0.32,
      "z_abs_moyen": 2.24
     },
     {
      "valeur": "chiffre_affaires",
-     "n": 1529,
+     "n": 1531,
      "part_hausse": 0.562,
      "ecart_moyen_pct": 0.55,
      "z_abs_moyen": 2.07
@@ -5964,16 +6100,16 @@
    "par_perspectives": [
     {
      "valeur": "relevees",
-     "n": 404,
-     "part_hausse": 0.703,
+     "n": 405,
+     "part_hausse": 0.704,
      "ecart_moyen_pct": 2.21,
-     "z_abs_moyen": 2.33
+     "z_abs_moyen": 2.32
     },
     {
      "valeur": "confirmees",
-     "n": 1214,
+     "n": 1217,
      "part_hausse": 0.54,
-     "ecart_moyen_pct": 0.44,
+     "ecart_moyen_pct": 0.43,
      "z_abs_moyen": 2.17
     },
     {
@@ -5994,8 +6130,8 @@
    "par_perspectives_surprise": [
     {
      "valeur": "relevees",
-     "n": 404,
-     "part_hausse": 0.703,
+     "n": 405,
+     "part_hausse": 0.704,
      "ecart_moyen_pct": 2.21,
      "suite_moyenne_pct": -0.45,
      "par_surprise": {
@@ -6015,9 +6151,9 @@
     },
     {
      "valeur": "confirmees",
-     "n": 1214,
+     "n": 1217,
      "part_hausse": 0.54,
-     "ecart_moyen_pct": 0.44,
+     "ecart_moyen_pct": 0.43,
      "suite_moyenne_pct": 0.46,
      "par_surprise": {
       "positive": {
@@ -6101,9 +6237,9 @@
     },
     {
      "valeur": "conformes",
-     "n": 1,
-     "part_hausse": 0.0,
-     "ecart_moyen_pct": -0.24,
+     "n": 2,
+     "part_hausse": 0.5,
+     "ecart_moyen_pct": 0.4,
      "suite_moyenne_pct": null,
      "par_surprise": {
       "positive": {
@@ -6144,7 +6280,7 @@
    ],
    "attentes_marche": {
     "positions_courtes": {
-     "n": 4337,
+     "n": 4341,
      "par_tranche": [
       {
        "valeur": "aucune",
@@ -6169,9 +6305,9 @@
       },
       {
        "valeur": "moderees",
-       "n": 808,
-       "part_hausse": 0.542,
-       "ecart_moyen_pct": 0.2,
+       "n": 812,
+       "part_hausse": 0.543,
+       "ecart_moyen_pct": 0.19,
        "suite_moyenne_pct": -0.09,
        "par_surprise": {
         "positive": {
@@ -6282,7 +6418,7 @@
      ],
      "concordance": 0.606,
      "p": 0.0,
-     "n_revisions": 18,
+     "n_revisions": 19,
      "par_revision": [
       {
        "valeur": "hausse",
@@ -6307,9 +6443,9 @@
       },
       {
        "valeur": "stable",
-       "n": 11,
-       "part_hausse": 0.364,
-       "ecart_moyen_pct": -0.08,
+       "n": 12,
+       "part_hausse": 0.417,
+       "ecart_moyen_pct": 0.12,
        "suite_moyenne_pct": 0.97,
        "par_surprise": {
         "positive": {
@@ -6959,7 +7095,7 @@
     "nom": "Accor",
     "indice": "CAC 40",
     "secteur": "Hôtellerie",
-    "n_communiques": 212,
+    "n_communiques": 213,
     "n_evenements": 169,
     "categories": [
      {
@@ -8003,7 +8139,7 @@
       "au": "2026-09-25"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -10835,7 +10971,7 @@
      "courtes": {
       "pct": 5.07,
       "n": 6,
-      "variation_30j": 0.55,
+      "variation_30j": 0.5,
       "au": "2026-09-29"
      },
      "consensus": {
@@ -13451,7 +13587,7 @@
       "au": "2022-11-02"
      },
      "consensus": {
-      "au": "2026-10-19",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -13468,7 +13604,7 @@
         3
        ],
        "0y": [
-        11.55,
+        11.54,
         12
        ],
        "+1y": [
@@ -13486,11 +13622,11 @@
         2
        ],
        "0y": [
-        55160000000,
+        55150000000,
         14
        ],
        "+1y": [
-        57500000000,
+        57510000000,
         14
        ]
       },
@@ -14763,7 +14899,7 @@
       "au": "2026-03-10"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -14888,15 +15024,15 @@
     "nom": "Bureau Veritas",
     "indice": "CAC 40",
     "secteur": "Certification",
-    "n_communiques": 218,
-    "n_evenements": 167,
+    "n_communiques": 219,
+    "n_evenements": 168,
     "categories": [
      {
-      "n": 42,
-      "z_abs_moyen": 2.99,
-      "part_net": 0.786,
-      "part_fort": 0.571,
-      "ecart_abs_median_pct": 2.56,
+      "n": 43,
+      "z_abs_moyen": 2.97,
+      "part_net": 0.791,
+      "part_fort": 0.581,
+      "ecart_abs_median_pct": 2.62,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -15021,7 +15157,7 @@
      }
     ],
     "resultats": {
-     "n": 42,
+     "n": 43,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -15233,11 +15369,11 @@
       "ecart_moyen_negatif_pct": 0.7
      },
      "mouvements": {
-      "n": 42,
-      "z_abs_moyen": 2.99,
-      "part_net": 0.786,
-      "part_fort": 0.571,
-      "ecart_abs_median_pct": 2.56
+      "n": 43,
+      "z_abs_moyen": 2.97,
+      "part_net": 0.791,
+      "part_fort": 0.581,
+      "ecart_abs_median_pct": 2.62
      },
      "par_surprise": [
       {
@@ -15314,9 +15450,9 @@
       },
       {
        "valeur": "confirmees",
-       "n": 20,
-       "part_hausse": 0.75,
-       "ecart_moyen_pct": 0.77,
+       "n": 21,
+       "part_hausse": 0.762,
+       "ecart_moyen_pct": 0.91,
        "z_abs_moyen": 2.27
       },
       {
@@ -15335,6 +15471,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-21",
+       "periode": "chiffre_affaires",
+       "titre": "BUREAU VERITAS - Croissance totale du chiffre d’affaires à deux chiffres au troisième trimestre 2026 ;  Amélioration séquentielle de la cro…",
+       "perspectives": "confirmees",
+       "avant_pct": 2.06,
+       "z_avant": 0.35,
+       "perf_12m_pct": 4.78,
+       "rendement_pct": 3.64,
+       "ecart_pct": 2.92,
+       "z": 2.14,
+       "reaction": "hausse",
+       "courtes_pct": 0.51
+      },
       {
        "jour": "2026-07-29",
        "periode": "semestriels",
@@ -16022,28 +16172,28 @@
       "au": "2026-09-14"
      },
      "consensus": {
-      "au": "2026-10-19",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.537,
+        1.541,
         13
        ],
        "+1y": [
-        1.641,
+        1.65,
         13
        ]
       },
       "ca": {
        "0y": [
-        6723000000,
+        6737000000,
         12
        ],
        "+1y": [
-        7055000000,
+        7089000000,
         12
        ]
       },
@@ -16067,24 +16217,14 @@
     },
     "grand_secteur": "Industrie",
     "p_hausse_passee": {
-     "p": 0.659,
-     "n": 42
+     "p": 0.667,
+     "n": 43
     },
-    "prochaine": {
-     "date": "2026-10-22",
-     "source": "même période l'an dernier",
-     "estimee": true,
+    "cours_recent": {
      "au": "2026-10-21",
      "avant_pct": 6.66,
      "z_avant": 1.11,
-     "perf_12m_pct": 7.0,
-     "n_historique": 42,
-     "scenarios": {
-      "hausse": 0.659,
-      "baisse": 0.341
-     },
-     "probable": "hausse",
-     "p_hausse": 0.659
+     "perf_12m_pct": 7.0
     }
    },
    {
@@ -18541,28 +18681,28 @@
       "au": "2026-09-28"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.715,
+        1.624,
         14
        ],
        "+1y": [
-        1.873,
+        1.813,
         14
        ]
       },
       "ca": {
        "0y": [
-        82420000000,
+        82230000000,
         12
        ],
        "+1y": [
-        84150000000,
+        84400000000,
         12
        ]
       },
@@ -18601,8 +18741,8 @@
     "nom": "Crédit Agricole",
     "indice": "CAC 40",
     "secteur": "Banque",
-    "n_communiques": 503,
-    "n_evenements": 392,
+    "n_communiques": 505,
+    "n_evenements": 393,
     "categories": [
      {
       "n": 1,
@@ -18669,10 +18809,10 @@
       "id": "juridique"
      },
      {
-      "n": 255,
+      "n": 256,
       "z_abs_moyen": 0.67,
-      "part_net": 0.275,
-      "part_fort": 0.024,
+      "part_net": 0.277,
+      "part_fort": 0.023,
       "ecart_abs_median_pct": 0.61,
       "n_positif": 70,
       "n_negatif": 0,
@@ -19714,7 +19854,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -19731,11 +19871,11 @@
         4
        ],
        "0y": [
-        2.295,
-        16
+        2.293,
+        17
        ],
        "+1y": [
-        2.485,
+        2.497,
         17
        ]
       },
@@ -19749,11 +19889,11 @@
         2
        ],
        "0y": [
-        28600000000,
-        13
+        28570000000,
+        14
        ],
        "+1y": [
-        29610000000,
+        29700000000,
         15
        ]
       },
@@ -20981,7 +21121,7 @@
       "au": "2025-08-19"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -20989,12 +21129,12 @@
       },
       "bpa": {
        "0y": [
-        3.923,
-        19
+        3.925,
+        20
        ],
        "+1y": [
-        4.217,
-        19
+        4.218,
+        20
        ]
       },
       "ca": {
@@ -21003,12 +21143,12 @@
         1
        ],
        "0y": [
-        28120000000,
-        18
+        28130000000,
+        19
        ],
        "+1y": [
-        29440000000,
-        18
+        29450000000,
+        19
        ]
       },
       "revision_30j_pct": null,
@@ -23253,7 +23393,7 @@
       "au": "2025-02-28"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -23262,37 +23402,37 @@
       },
       "bpa": {
        "0q": [
-        0.27,
+        0.28,
         1
        ],
        "+1q": [
-        0.44,
+        0.51,
         1
        ],
        "0y": [
-        2.053,
+        2.059,
         15
        ],
        "+1y": [
-        2.113,
+        2.116,
         16
        ]
       },
       "ca": {
        "0q": [
-        15270000000,
+        15350000000,
         1
        ],
        "+1q": [
-        22890000000,
+        23190000000,
         1
        ],
        "0y": [
-        79050000000,
+        79080000000,
         13
        ],
        "+1y": [
-        81510000000,
+        81540000000,
         13
        ]
       },
@@ -23353,15 +23493,15 @@
     "nom": "Edenred",
     "indice": "CAC 40",
     "secteur": "Titres-restaurant, paiements",
-    "n_communiques": 251,
-    "n_evenements": 194,
+    "n_communiques": 252,
+    "n_evenements": 195,
     "categories": [
      {
-      "n": 41,
-      "z_abs_moyen": 2.22,
-      "part_net": 0.707,
-      "part_fort": 0.463,
-      "ecart_abs_median_pct": 2.55,
+      "n": 42,
+      "z_abs_moyen": 2.25,
+      "part_net": 0.714,
+      "part_fort": 0.476,
+      "ecart_abs_median_pct": 2.61,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -23502,7 +23642,7 @@
      }
     ],
     "resultats": {
-     "n": 41,
+     "n": 42,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -23714,11 +23854,11 @@
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 41,
-      "z_abs_moyen": 2.22,
-      "part_net": 0.707,
-      "part_fort": 0.463,
-      "ecart_abs_median_pct": 2.55
+      "n": 42,
+      "z_abs_moyen": 2.25,
+      "part_net": 0.714,
+      "part_fort": 0.476,
+      "ecart_abs_median_pct": 2.61
      },
      "par_surprise": [
       {
@@ -23774,10 +23914,10 @@
       },
       {
        "valeur": "confirmees",
-       "n": 19,
-       "part_hausse": 0.684,
-       "ecart_moyen_pct": 0.69,
-       "z_abs_moyen": 2.12
+       "n": 20,
+       "part_hausse": 0.65,
+       "ecart_moyen_pct": 0.18,
+       "z_abs_moyen": 2.19
       },
       {
        "valeur": "nouvelles",
@@ -23795,6 +23935,20 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-21",
+       "periode": "chiffre_affaires",
+       "titre": "Edenred affiche une croissance solide sur les neuf premiers mois de 2026 et confirme ses objectifs pour l’année",
+       "perspectives": "confirmees",
+       "avant_pct": 3.11,
+       "z_avant": 0.24,
+       "perf_12m_pct": 27.34,
+       "rendement_pct": -9.45,
+       "ecart_pct": -10.3,
+       "z": -3.54,
+       "reaction": "baisse",
+       "courtes_pct": 1.5
+      },
       {
        "jour": "2026-07-23",
        "periode": "annuels",
@@ -24022,7 +24176,7 @@
        "periode": "annuels",
        "titre": "Edenred : Résultats annuels 2022",
        "perspectives": "confirmees",
-       "avant_pct": 1.27,
+       "avant_pct": 1.28,
        "z_avant": 0.21,
        "perf_12m_pct": 16.61,
        "rendement_pct": 1.22,
@@ -24498,7 +24652,7 @@
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-16",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -24511,7 +24665,7 @@
         14
        ],
        "+1y": [
-        2.444,
+        2.436,
         14
        ]
       },
@@ -24525,8 +24679,8 @@
         1
        ],
        "0y": [
-        2962000000,
-        14
+        2964000000,
+        10
        ],
        "+1y": [
         3148000000,
@@ -24553,8 +24707,8 @@
     },
     "grand_secteur": "Finance",
     "p_hausse_passee": {
-     "p": 0.605,
-     "n": 41
+     "p": 0.591,
+     "n": 42
     },
     "cours_recent": {
      "au": "2026-10-21",
@@ -25673,7 +25827,7 @@
       "au": "2020-03-20"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -25682,29 +25836,29 @@
       },
       "bpa": {
        "0y": [
-        7.264,
-        21
+        7.285,
+        20
        ],
        "+1y": [
-        7.884,
-        21
+        7.928,
+        20
        ]
       },
       "ca": {
        "0q": [
-        7331000000,
-        4
+        7373000000,
+        3
        ],
        "+1q": [
-        7911000000,
+        7785000000,
         1
        ],
        "0y": [
-        30120000000,
-        20
+        30170000000,
+        16
        ],
        "+1y": [
-        32560000000,
+        32620000000,
         20
        ]
       },
@@ -25743,8 +25897,8 @@
     "nom": "Eurofins Scientific",
     "indice": "CAC 40",
     "secteur": "Laboratoires d'analyses",
-    "n_communiques": 110,
-    "n_evenements": 102,
+    "n_communiques": 111,
+    "n_evenements": 103,
     "categories": [
      {
       "n": 3,
@@ -25763,11 +25917,11 @@
       "id": "revision"
      },
      {
-      "n": 22,
-      "z_abs_moyen": 3.03,
-      "part_net": 0.818,
-      "part_fort": 0.636,
-      "ecart_abs_median_pct": 5.19,
+      "n": 23,
+      "z_abs_moyen": 2.94,
+      "part_net": 0.783,
+      "part_fort": 0.609,
+      "ecart_abs_median_pct": 5.16,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -25844,7 +25998,7 @@
      }
     ],
     "resultats": {
-     "n": 22,
+     "n": 23,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -26056,11 +26210,11 @@
       "ecart_moyen_negatif_pct": null
      },
      "mouvements": {
-      "n": 22,
-      "z_abs_moyen": 3.03,
-      "part_net": 0.818,
-      "part_fort": 0.636,
-      "ecart_abs_median_pct": 5.19
+      "n": 23,
+      "z_abs_moyen": 2.94,
+      "part_net": 0.783,
+      "part_fort": 0.609,
+      "ecart_abs_median_pct": 5.16
      },
      "par_surprise": [],
      "par_perspectives": [
@@ -26073,13 +26227,28 @@
       },
       {
        "valeur": "confirmees",
-       "n": 11,
-       "part_hausse": 0.182,
-       "ecart_moyen_pct": -3.98,
-       "z_abs_moyen": 3.65
+       "n": 12,
+       "part_hausse": 0.25,
+       "ecart_moyen_pct": -3.45,
+       "z_abs_moyen": 3.42
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-21",
+       "periode": "trimestriels",
+       "titre": "Inside Information / News release on accounts, results",
+       "perspectives": "confirmees",
+       "avant_pct": 2.02,
+       "z_avant": 0.29,
+       "perf_12m_pct": 34.67,
+       "rendement_pct": 2.41,
+       "ecart_pct": 1.56,
+       "z": 0.96,
+       "reaction": "hausse",
+       "courtes_pct": 0.5,
+       "revision_30j_pct": -0.9
+      },
       {
        "jour": "2026-07-23",
        "periode": "semestriels",
@@ -26429,36 +26598,36 @@
      "courtes": {
       "pct": 0.5,
       "n": 1,
-      "variation_30j": 0.5,
+      "variation_30j": 0.0,
       "au": "2026-09-22"
      },
      "consensus": {
-      "au": "2026-10-08",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        4.106,
+        4.141,
         12
        ],
        "+1y": [
-        4.644,
+        4.701,
         12
        ]
       },
       "ca": {
        "0y": [
-        7535000000,
+        7559000000,
         13
        ],
        "+1y": [
-        7944000000,
+        7987000000,
         13
        ]
       },
-      "revision_30j_pct": -0.9,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         1,
@@ -26478,24 +26647,14 @@
     },
     "grand_secteur": "Santé",
     "p_hausse_passee": {
-     "p": 0.261,
-     "n": 21
+     "p": 0.292,
+     "n": 22
     },
-    "prochaine": {
-     "date": "2027-01-28",
-     "source": "même période l'an dernier",
-     "estimee": true,
+    "cours_recent": {
      "au": "2026-10-21",
      "avant_pct": 6.85,
      "z_avant": 0.97,
-     "perf_12m_pct": 37.78,
-     "n_historique": 21,
-     "scenarios": {
-      "hausse": 0.261,
-      "baisse": 0.739
-     },
-     "probable": "baisse",
-     "p_hausse": 0.261
+     "perf_12m_pct": 37.78
     }
    },
    {
@@ -27767,7 +27926,7 @@
     "nom": "Hermès",
     "indice": "CAC 40",
     "secteur": "Luxe",
-    "n_communiques": 83,
+    "n_communiques": 84,
     "n_evenements": 65,
     "categories": [
      {
@@ -28789,7 +28948,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -28816,8 +28975,8 @@
         2
        ],
        "0y": [
-        16680000000,
-        22
+        16740000000,
+        1
        ],
        "+1y": [
         17930000000,
@@ -28869,7 +29028,7 @@
     "nom": "Kering",
     "indice": "CAC 40",
     "secteur": "Luxe",
-    "n_communiques": 214,
+    "n_communiques": 215,
     "n_evenements": 174,
     "categories": [
      {
@@ -30004,7 +30163,7 @@
       "au": "2026-09-23"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -30023,8 +30182,8 @@
       },
       "ca": {
        "0q": [
-        3350000000,
-        5
+        3344000000,
+        6
        ],
        "+1q": [
         4069000000,
@@ -30063,7 +30222,7 @@
      "n": 42
     },
     "prochaine": {
-     "date": "2026-10-22",
+     "date": "2027-02-09",
      "source": "même période l'an dernier",
      "estimee": true,
      "au": "2026-10-21",
@@ -30084,7 +30243,7 @@
     "nom": "L'Oréal",
     "indice": "CAC 40",
     "secteur": "Cosmétiques",
-    "n_communiques": 134,
+    "n_communiques": 135,
     "n_evenements": 108,
     "categories": [
      {
@@ -31150,7 +31309,7 @@
        "rendement_pct": 0.54,
        "ecart_pct": 0.34,
        "z": 0.49,
-       "suite_pct": -2.64,
+       "suite_pct": -2.63,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -32571,7 +32730,7 @@
       "au": "2024-11-19"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -32584,15 +32743,15 @@
         3
        ],
        "+1q": [
-        1.683,
+        1.676,
         3
        ],
        "0y": [
-        6.011,
+        6.009,
         16
        ],
        "+1y": [
-        6.911,
+        6.927,
         16
        ]
       },
@@ -32602,7 +32761,7 @@
         9
        ],
        "+1q": [
-        2986000000,
+        2985000000,
         5
        ],
        "0y": [
@@ -32610,7 +32769,7 @@
         17
        ],
        "+1y": [
-        12350000000,
+        12360000000,
         17
        ]
       },
@@ -33654,7 +33813,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-12-31",
        "0y": "2026-12-31",
@@ -33662,11 +33821,11 @@
       },
       "bpa": {
        "0y": [
-        22.26,
+        22.25,
         18
        ],
        "+1y": [
-        24.14,
+        24.12,
         18
        ]
       },
@@ -33676,11 +33835,11 @@
         3
        ],
        "0y": [
-        80450000000,
+        80470000000,
         19
        ],
        "+1y": [
-        84210000000,
+        84270000000,
         25
        ]
       },
@@ -35548,7 +35707,7 @@
       "au": "2022-05-02"
      },
      "consensus": {
-      "au": "2026-10-19",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -35575,8 +35734,8 @@
       },
       "ca": {
        "0q": [
-        12040000000,
-        2
+        12060000000,
+        3
        ],
        "+1q": [
         12480000000,
@@ -35648,7 +35807,7 @@
     "nom": "Pernod Ricard",
     "indice": "CAC 40",
     "secteur": "Spiritueux",
-    "n_communiques": 248,
+    "n_communiques": 249,
     "n_evenements": 212,
     "categories": [
      {
@@ -36559,7 +36718,7 @@
        "perf_12m_pct": 23.91,
        "rendement_pct": 3.09,
        "ecart_pct": 1.96,
-       "z": 2.14,
+       "z": 2.13,
        "suite_pct": -0.51,
        "reaction": "hausse",
        "courtes_pct": 0.0
@@ -36806,42 +36965,42 @@
      "courtes": {
       "pct": 1.76,
       "n": 3,
-      "variation_30j": 0.0,
+      "variation_30j": 0.01,
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
-       "0q": "2026-09-30",
-       "+1q": "2026-12-31",
+       "0q": "2026-12-31",
+       "+1q": "2027-03-31",
        "0y": "2027-06-30",
        "+1y": "2028-06-30"
       },
       "bpa": {
        "0y": [
-        5.68,
+        5.688,
         18
        ],
        "+1y": [
-        5.916,
+        5.926,
         18
        ]
       },
       "ca": {
        "0q": [
-        2254000000,
-        3
-       ],
-       "+1q": [
         2850000000,
         1
        ],
+       "+1q": [
+        1953000000,
+        1
+       ],
        "0y": [
-        9329000000,
+        9337000000,
         17
        ],
        "+1y": [
-        9517000000,
+        9525000000,
         19
        ]
       },
@@ -38078,7 +38237,7 @@
      "courtes": {
       "pct": 4.16,
       "n": 6,
-      "variation_30j": 0.5,
+      "variation_30j": 0.0,
       "au": "2026-09-22"
      },
      "consensus": {
@@ -39351,11 +39510,11 @@
      "courtes": {
       "pct": 10.02,
       "n": 9,
-      "variation_30j": 0.19,
+      "variation_30j": 0.86,
       "au": "2026-10-01"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -39373,8 +39532,8 @@
       },
       "ca": {
        "0q": [
-        11490000000,
-        2
+        11480000000,
+        3
        ],
        "0y": [
         61210000000,
@@ -39409,7 +39568,7 @@
      "n": 43
     },
     "prochaine": {
-     "date": "2026-10-22",
+     "date": "2027-02-18",
      "source": "même période l'an dernier",
      "estimee": true,
      "au": "2026-10-21",
@@ -40557,7 +40716,7 @@
       "au": "2022-10-28"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -40580,8 +40739,8 @@
       },
       "ca": {
        "0q": [
-        8914000000,
-        3
+        8920000000,
+        4
        ],
        "+1q": [
         18750000000,
@@ -40592,7 +40751,7 @@
         19
        ],
        "+1y": [
-        40330000000,
+        40310000000,
         19
        ]
       },
@@ -40647,7 +40806,7 @@
     "nom": "Saint-Gobain",
     "indice": "CAC 40",
     "secteur": "Matériaux de construction",
-    "n_communiques": 415,
+    "n_communiques": 416,
     "n_evenements": 348,
     "categories": [
      {
@@ -42518,7 +42677,7 @@
        "rendement_pct": -18.93,
        "ecart_pct": -18.61,
        "z": -15.34,
-       "suite_pct": 3.17,
+       "suite_pct": 3.18,
        "reaction": "baisse",
        "courtes_pct": 0.0,
        "surprise": "conforme",
@@ -43023,7 +43182,7 @@
       "au": "2022-11-01"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -43040,12 +43199,12 @@
         10
        ],
        "0y": [
-        8.564,
-        21
+        8.562,
+        22
        ],
        "+1y": [
-        9.05,
-        20
+        9.046,
+        21
        ]
       },
       "ca": {
@@ -44325,39 +44484,39 @@
       "au": "2022-11-09"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
-       "0q": "2026-09-30",
-       "+1q": "2026-12-31",
+       "0q": "2026-12-31",
+       "+1q": "2027-03-31",
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        10.48,
-        20
+        10.58,
+        13
        ],
        "+1y": [
-        12.36,
-        21
+        12.64,
+        16
        ]
       },
       "ca": {
        "0q": [
-        11140000000,
-        8
-       ],
-       "+1q": [
         12690000000,
         1
        ],
+       "+1q": [
+        11170000000,
+        1
+       ],
        "0y": [
-        45340000000,
-        16
+        45370000000,
+        17
        ],
        "+1y": [
-        50050000000,
-        23
+        50250000000,
+        18
        ]
       },
       "revision_30j_pct": null,
@@ -45463,7 +45622,7 @@
       "au": "2024-08-16"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -45818,7 +45977,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -45837,8 +45996,8 @@
       },
       "ca": {
        "0q": [
-        35750000000,
-        4
+        35970000000,
+        5
        ],
        "+1q": [
         42060000000,
@@ -47168,7 +47327,7 @@
       "au": "2019-07-17"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -47177,8 +47336,8 @@
       },
       "bpa": {
        "0q": [
-        0.4085,
-        6
+        0.403,
+        7
        ],
        "+1q": [
         0.5567,
@@ -47195,8 +47354,8 @@
       },
       "ca": {
        "0q": [
-        3723000000,
-        10
+        3722000000,
+        11
        ],
        "+1q": [
         4119000000,
@@ -48369,7 +48528,7 @@
      "courtes": {
       "pct": 6.11,
       "n": 7,
-      "variation_30j": -1.65,
+      "variation_30j": -1.47,
       "au": "2026-10-01"
      },
      "consensus": {
@@ -48443,7 +48602,7 @@
     "nom": "Thales",
     "indice": "CAC 40",
     "secteur": "Défense, électronique",
-    "n_communiques": 175,
+    "n_communiques": 176,
     "n_evenements": 136,
     "categories": [
      {
@@ -49608,7 +49767,7 @@
       "au": "2013-06-04"
      },
      "consensus": {
-      "au": "2026-10-19",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -49626,8 +49785,8 @@
       },
       "ca": {
        "0q": [
-        5360000000,
-        3
+        5376000000,
+        4
        ],
        "0y": [
         23830000000,
@@ -49661,21 +49820,11 @@
      "p": 0.488,
      "n": 41
     },
-    "prochaine": {
-     "date": "2026-10-22",
-     "source": "même période l'an dernier",
-     "estimee": true,
+    "cours_recent": {
      "au": "2026-10-21",
      "avant_pct": -1.09,
      "z_avant": -0.13,
-     "perf_12m_pct": -3.75,
-     "n_historique": 41,
-     "scenarios": {
-      "hausse": 0.488,
-      "baisse": 0.512
-     },
-     "probable": "baisse",
-     "p_hausse": 0.488
+     "perf_12m_pct": -3.75
     }
    },
    {
@@ -50933,7 +51082,7 @@
       "au": "2026-08-26"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -50942,37 +51091,37 @@
       },
       "bpa": {
        "0q": [
-        3.854,
-        6
+        3.969,
+        7
        ],
        "+1q": [
-        3.724,
+        3.69,
         5
        ],
        "0y": [
-        12.41,
+        12.42,
         21
        ],
        "+1y": [
-        11.16,
+        11.19,
         21
        ]
       },
       "ca": {
        "0q": [
-        66980000000,
+        67930000000,
         4
        ],
        "+1q": [
-        63870000000,
+        63780000000,
         4
        ],
        "0y": [
-        219400000000,
+        219600000000,
         13
        ],
        "+1y": [
-        206400000000,
+        206800000000,
         13
        ]
       },
@@ -51058,7 +51207,7 @@
     "nom": "Unibail-Rodamco-Westfield",
     "indice": "CAC 40",
     "secteur": "Immobilier commercial",
-    "n_communiques": 148,
+    "n_communiques": 149,
     "n_evenements": 33,
     "categories": [
      {
@@ -52976,7 +53125,7 @@
     "nom": "Vinci",
     "indice": "CAC 40",
     "secteur": "Concessions, BTP, énergie",
-    "n_communiques": 654,
+    "n_communiques": 655,
     "n_evenements": 558,
     "categories": [
      {
@@ -54183,7 +54332,7 @@
       "au": "2022-11-03"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -54258,7 +54407,7 @@
     "nom": "Eiffage",
     "indice": "SBF 120",
     "secteur": "Concessions, BTP",
-    "n_communiques": 332,
+    "n_communiques": 333,
     "n_evenements": 281,
     "categories": [
      {
@@ -55710,7 +55859,7 @@
     "nom": "Aéroports de Paris (Groupe ADP)",
     "indice": "SBF 120",
     "secteur": "Aéroports",
-    "n_communiques": 308,
+    "n_communiques": 309,
     "n_evenements": 264,
     "categories": [
      {
@@ -55853,7 +56002,7 @@
       "baisse_si_negatif": null,
       "concordance": 0.75,
       "p": 0.625,
-      "ecart_moyen_positif_pct": 0.5,
+      "ecart_moyen_positif_pct": 0.51,
       "ecart_moyen_negatif_pct": null,
       "id": "gouvernance"
      },
@@ -56848,7 +56997,7 @@
       "au": "2026-09-07"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -56867,19 +57016,19 @@
       },
       "ca": {
        "0q": [
-        1951000000,
-        3
+        1940000000,
+        4
        ],
        "+1q": [
         1777000000,
         1
        ],
        "0y": [
-        6810000000,
+        6808000000,
         14
        ],
        "+1y": [
-        7206000000,
+        7211000000,
         15
        ]
       },
@@ -57583,7 +57732,7 @@
      "courtes": {
       "pct": 1.68,
       "n": 3,
-      "variation_30j": 0.1,
+      "variation_30j": 0.0,
       "au": "2026-09-22"
      },
      "consensus": {
@@ -57712,7 +57861,7 @@
     "nom": "Getlink",
     "indice": "SBF 120",
     "secteur": "Tunnel sous la Manche",
-    "n_communiques": 417,
+    "n_communiques": 418,
     "n_evenements": 395,
     "categories": [
      {
@@ -60886,7 +61035,7 @@
     "nom": "Ipsen",
     "indice": "SBF 120",
     "secteur": "Pharmacie",
-    "n_communiques": 318,
+    "n_communiques": 319,
     "n_evenements": 286,
     "categories": [
      {
@@ -61548,7 +61697,7 @@
        "avant_pct": -1.44,
        "z_avant": -0.17,
        "perf_12m_pct": 8.03,
-       "rendement_pct": 16.17,
+       "rendement_pct": 16.16,
        "ecart_pct": 15.58,
        "z": 7.83,
        "suite_pct": -11.67,
@@ -61925,7 +62074,7 @@
       "au": "2022-05-19"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -61952,12 +62101,12 @@
         1
        ],
        "0y": [
-        4586000000,
+        4566000000,
         11
        ],
        "+1y": [
-        4718000000,
-        11
+        4721000000,
+        10
        ]
       },
       "revision_30j_pct": null,
@@ -62005,7 +62154,7 @@
     "nom": "bioMérieux",
     "indice": "SBF 120",
     "secteur": "Diagnostic",
-    "n_communiques": 161,
+    "n_communiques": 162,
     "n_evenements": 129,
     "categories": [
      {
@@ -64298,7 +64447,7 @@
      "courtes": {
       "pct": 4.46,
       "n": 4,
-      "variation_30j": 0.5,
+      "variation_30j": 0.0,
       "au": "2026-09-22"
      },
      "consensus": {
@@ -64382,7 +64531,7 @@
     "nom": "Forvia",
     "indice": "SBF 120",
     "secteur": "Équipement automobile",
-    "n_communiques": 156,
+    "n_communiques": 157,
     "n_evenements": 120,
     "categories": [
      {
@@ -66374,33 +66523,28 @@
       "au": "2026-09-30"
      },
      "consensus": {
-      "au": "2026-10-15",
+      "au": "2026-10-22",
       "fin": {
-       "0q": "2026-09-30",
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        2.242,
+        2.216,
         10
        ],
        "+1y": [
-        2.63,
+        2.602,
         10
        ]
       },
       "ca": {
-       "0q": [
-        839000000,
-        1
-       ],
        "0y": [
-        3609000000,
-        9
+        3562000000,
+        8
        ],
        "+1y": [
-        3744000000,
+        3710000000,
         9
        ]
       },
@@ -67520,7 +67664,7 @@
     "nom": "Rexel",
     "indice": "SBF 120",
     "secteur": "Distribution électrique",
-    "n_communiques": 211,
+    "n_communiques": 212,
     "n_evenements": 160,
     "categories": [
      {
@@ -68695,7 +68839,7 @@
       "au": "2026-07-27"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -68770,7 +68914,7 @@
     "nom": "Nexans",
     "indice": "SBF 120",
     "secteur": "Câbles",
-    "n_communiques": 244,
+    "n_communiques": 246,
     "n_evenements": 209,
     "categories": [
      {
@@ -69843,7 +69987,7 @@
       "au": "2026-09-14"
      },
      "consensus": {
-      "au": "2026-10-19",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -69870,8 +70014,8 @@
         1
        ],
        "0y": [
-        6713000000,
-        7
+        6694000000,
+        5
        ],
        "+1y": [
         7287000000,
@@ -69902,7 +70046,7 @@
      "n": 41
     },
     "prochaine": {
-     "date": "2026-10-22",
+     "date": "2027-02-18",
      "source": "même période l'an dernier",
      "estimee": true,
      "au": "2026-10-21",
@@ -70922,7 +71066,7 @@
       "au": "2026-09-07"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -75021,7 +75165,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -77349,38 +77493,33 @@
       "au": "2024-12-19"
      },
      "consensus": {
-      "au": "2026-10-12",
+      "au": "2026-10-22",
       "fin": {
-       "0q": "2026-09-30",
-       "+1q": "2026-12-31",
+       "0q": "2026-12-31",
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        -0.63,
-        1
+        -11.41,
+        2
        ],
        "+1y": [
-        3.881,
-        2
+        4.944,
+        3
        ]
       },
       "ca": {
        "0q": [
-        1609000000,
-        1
-       ],
-       "+1q": [
-        1832000000,
+        1803000000,
         1
        ],
        "0y": [
-        6729000000,
+        6757000000,
         5
        ],
        "+1y": [
-        6757000000,
+        6800000000,
         5
        ]
       },
@@ -78372,7 +78511,7 @@
      "courtes": {
       "pct": 1.11,
       "n": 1,
-      "variation_30j": 0.49,
+      "variation_30j": 0.22,
       "au": "2026-09-25"
      },
      "consensus": {
@@ -80661,7 +80800,7 @@
     "nom": "Carmila",
     "indice": "SBF 120",
     "secteur": "Immobilier commercial",
-    "n_communiques": 140,
+    "n_communiques": 141,
     "n_evenements": 115,
     "categories": [
      {
@@ -82721,7 +82860,7 @@
     "nom": "Covivio",
     "indice": "SBF 120",
     "secteur": "Immobilier de bureaux et hôtels",
-    "n_communiques": 211,
+    "n_communiques": 212,
     "n_evenements": 163,
     "categories": [
      {
@@ -83829,7 +83968,7 @@
      "n": 38
     },
     "prochaine": {
-     "date": "2026-10-22",
+     "date": "2027-02-18",
      "source": "même période l'an dernier",
      "estimee": true,
      "au": "2026-10-21",
@@ -86675,7 +86814,7 @@
      "courtes": {
       "pct": 5.01,
       "n": 5,
-      "variation_30j": 0.2,
+      "variation_30j": 0.12,
       "au": "2026-09-30"
      },
      "consensus": {
@@ -88307,19 +88446,19 @@
       "au": "2026-08-04"
      },
      "consensus": {
-      "au": "2026-10-08",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        -5.644,
-        4
+        -5.969,
+        3
        ],
        "+1y": [
-        2.07,
-        4
+        2.023,
+        3
        ]
       },
       "ca": {
@@ -88332,7 +88471,7 @@
         5
        ]
       },
-      "revision_30j_pct": 19.2,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         1,
@@ -89302,7 +89441,7 @@
        "perspectives": "nouvelles",
        "avant_pct": -2.17,
        "z_avant": -0.35,
-       "perf_12m_pct": -2.84,
+       "perf_12m_pct": -2.83,
        "rendement_pct": -2.24,
        "ecart_pct": -1.61,
        "z": -1.15,
@@ -89316,7 +89455,7 @@
      "courtes": {
       "pct": 0.0,
       "n": 0,
-      "variation_30j": 0.0,
+      "variation_30j": -0.5,
       "au": "2026-09-29"
      },
      "consensus": {
@@ -91644,7 +91783,7 @@
      "courtes": {
       "pct": 2.53,
       "n": 4,
-      "variation_30j": 0.64,
+      "variation_30j": 0.54,
       "au": "2026-10-01"
      },
      "consensus": {
@@ -92766,7 +92905,7 @@
        "jour": "2015-05-06",
        "periode": "chiffre_affaires",
        "titre": "ICADE – ACTIVITÉ DU 1ER TRIMESTRE 2015",
-       "avant_pct": -6.35,
+       "avant_pct": -6.36,
        "z_avant": -1.33,
        "perf_12m_pct": -1.25,
        "rendement_pct": -1.97,
@@ -92868,7 +93007,7 @@
     "nom": "ID Logistics",
     "indice": "SBF 120",
     "secteur": "Logistique",
-    "n_communiques": 97,
+    "n_communiques": 98,
     "n_evenements": 71,
     "categories": [
      {
@@ -93993,7 +94132,7 @@
      "n": 54
     },
     "prochaine": {
-     "date": "2026-10-22",
+     "date": "2027-01-26",
      "source": "même période l'an dernier",
      "estimee": true,
      "au": "2026-10-21",
@@ -94524,7 +94663,7 @@
        "rendement_pct": 3.61,
        "ecart_pct": 3.21,
        "z": 1.73,
-       "suite_pct": 1.29,
+       "suite_pct": 1.28,
        "reaction": "hausse",
        "courtes_pct": 0.0
       },
@@ -94806,7 +94945,7 @@
        "perf_12m_pct": -30.65,
        "rendement_pct": 2.85,
        "ecart_pct": 3.26,
-       "z": 1.55,
+       "z": 1.56,
        "suite_pct": -0.81,
        "reaction": "hausse",
        "courtes_pct": 1.3
@@ -95109,7 +95248,7 @@
     "nom": "Interparfums",
     "indice": "SBF 120",
     "secteur": "Parfums",
-    "n_communiques": 128,
+    "n_communiques": 129,
     "n_evenements": 95,
     "categories": [
      {
@@ -96333,7 +96472,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-08",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -96342,11 +96481,11 @@
       },
       "bpa": {
        "0y": [
-        1.35,
-        7
+        1.341,
+        8
        ],
        "+1y": [
-        1.451,
+        1.458,
         8
        ]
       },
@@ -96360,15 +96499,15 @@
         1
        ],
        "0y": [
-        862100000,
+        869400000,
         9
        ],
        "+1y": [
-        943100000,
+        952000000,
         9
        ]
       },
-      "revision_30j_pct": 2.5,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         1,
@@ -97468,21 +97607,11 @@
      "p": 0.628,
      "n": 41
     },
-    "prochaine": {
-     "date": "2026-10-22",
-     "source": "même période l'an dernier",
-     "estimee": true,
+    "cours_recent": {
      "au": "2026-10-21",
      "avant_pct": 5.91,
      "z_avant": 0.56,
-     "perf_12m_pct": 19.38,
-     "n_historique": 41,
-     "scenarios": {
-      "hausse": 0.628,
-      "baisse": 0.372
-     },
-     "probable": "hausse",
-     "p_hausse": 0.628
+     "perf_12m_pct": 19.38
     }
    },
    {
@@ -98747,7 +98876,7 @@
       "au": "2020-12-03"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -98827,15 +98956,15 @@
     "nom": "Klépierre",
     "indice": "SBF 120",
     "secteur": "Immobilier commercial",
-    "n_communiques": 163,
-    "n_evenements": 139,
+    "n_communiques": 164,
+    "n_evenements": 140,
     "categories": [
      {
-      "n": 41,
-      "z_abs_moyen": 1.12,
-      "part_net": 0.488,
-      "part_fort": 0.171,
-      "ecart_abs_median_pct": 1.41,
+      "n": 42,
+      "z_abs_moyen": 1.11,
+      "part_net": 0.476,
+      "part_fort": 0.167,
+      "ecart_abs_median_pct": 1.27,
       "n_positif": 0,
       "n_negatif": 0,
       "hausse_si_positif": null,
@@ -98867,7 +98996,7 @@
       "z_abs_moyen": 1.1,
       "part_net": 1.0,
       "part_fort": 0.0,
-      "ecart_abs_median_pct": 1.49,
+      "ecart_abs_median_pct": 1.48,
       "n_positif": 1,
       "n_negatif": 0,
       "hausse_si_positif": 1.0,
@@ -98976,7 +99105,7 @@
      }
     ],
     "resultats": {
-     "n": 41,
+     "n": 42,
      "matrice_consensus": {
       "positive": {
        "hausse": {
@@ -99188,11 +99317,11 @@
       "ecart_moyen_negatif_pct": 0.69
      },
      "mouvements": {
-      "n": 41,
-      "z_abs_moyen": 1.12,
-      "part_net": 0.488,
-      "part_fort": 0.171,
-      "ecart_abs_median_pct": 1.41
+      "n": 42,
+      "z_abs_moyen": 1.11,
+      "part_net": 0.476,
+      "part_fort": 0.167,
+      "ecart_abs_median_pct": 1.27
      },
      "par_surprise": [
       {
@@ -99241,10 +99370,10 @@
      "par_perspectives": [
       {
        "valeur": "relevees",
-       "n": 11,
-       "part_hausse": 0.818,
-       "ecart_moyen_pct": 1.57,
-       "z_abs_moyen": 1.01
+       "n": 12,
+       "part_hausse": 0.833,
+       "ecart_moyen_pct": 1.53,
+       "z_abs_moyen": 0.97
       },
       {
        "valeur": "confirmees",
@@ -99269,6 +99398,21 @@
       }
      ],
      "evenements": [
+      {
+       "jour": "2026-10-21",
+       "periode": "annuels",
+       "titre": "DYNAMIQUE D’ACTIVITÉ SOUTENUE ET RÉVISION DES OBJECTIFS À LA HAUSSE",
+       "perspectives": "relevees",
+       "avant_pct": -4.0,
+       "z_avant": -0.92,
+       "perf_12m_pct": 16.13,
+       "rendement_pct": 1.03,
+       "ecart_pct": 0.54,
+       "z": 0.54,
+       "reaction": "hausse",
+       "courtes_pct": 0.81,
+       "objectifs_vs": "conformes"
+      },
       {
        "jour": "2026-07-30",
        "titre": "KLÉPIERRE: DANS UN MARCHÉ DU RETAIL DYNAMIQUE, UNE SOLIDE EXÉCUTION EN SOUTIEN À LA CROISSANCE ORGANIQUE",
@@ -99926,18 +100070,18 @@
       "au": "2026-09-01"
      },
      "consensus": {
-      "au": "2026-10-19",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        2.807,
+        2.808,
         10
        ],
        "+1y": [
-        2.893,
+        2.897,
         10
        ]
       },
@@ -99947,7 +100091,7 @@
         10
        ],
        "+1y": [
-        1380000000,
+        1382000000,
         11
        ]
       },
@@ -99971,24 +100115,14 @@
     },
     "grand_secteur": "Immobilier",
     "p_hausse_passee": {
-     "p": 0.571,
-     "n": 40
+     "p": 0.581,
+     "n": 41
     },
-    "prochaine": {
-     "date": "2026-10-22",
-     "source": "même période l'an dernier",
-     "estimee": true,
+    "cours_recent": {
      "au": "2026-10-21",
      "avant_pct": -3.21,
      "z_avant": -0.74,
-     "perf_12m_pct": 15.46,
-     "n_historique": 40,
-     "scenarios": {
-      "hausse": 0.571,
-      "baisse": 0.429
-     },
-     "probable": "hausse",
-     "p_hausse": 0.571
+     "perf_12m_pct": 15.46
     }
    },
    {
@@ -101140,7 +101274,7 @@
     "nom": "Maurel & Prom",
     "indice": "SBF 120",
     "secteur": "Pétrole",
-    "n_communiques": 207,
+    "n_communiques": 208,
     "n_evenements": 179,
     "categories": [
      {
@@ -101886,7 +102020,7 @@
        "jour": "2022-03-18",
        "periode": "annuels",
        "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
-       "avant_pct": 28.37,
+       "avant_pct": 28.36,
        "z_avant": 2.73,
        "perf_12m_pct": 57.06,
        "rendement_pct": 1.64,
@@ -102966,7 +103100,7 @@
      "courtes": {
       "pct": 1.2,
       "n": 2,
-      "variation_30j": 0.51,
+      "variation_30j": 0.0,
       "au": "2026-09-22"
      },
      "consensus": {
@@ -104211,7 +104345,7 @@
       "au": "2026-09-28"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -105440,7 +105574,7 @@
     "nom": "Nexity",
     "indice": "SBF 120",
     "secteur": "Promotion immobilière",
-    "n_communiques": 136,
+    "n_communiques": 137,
     "n_evenements": 119,
     "categories": [
      {
@@ -106236,7 +106370,7 @@
        "avant_pct": 9.41,
        "z_avant": 1.27,
        "perf_12m_pct": -6.41,
-       "rendement_pct": 8.12,
+       "rendement_pct": 8.13,
        "ecart_pct": 6.96,
        "z": 3.99,
        "suite_pct": -10.23,
@@ -106484,7 +106618,7 @@
      "courtes": {
       "pct": 2.43,
       "n": 2,
-      "variation_30j": -0.24,
+      "variation_30j": 0.19,
       "au": "2026-09-30"
      },
      "consensus": {
@@ -107376,7 +107510,7 @@
     "nom": "OPmobility",
     "indice": "SBF 120",
     "secteur": "Équipement automobile",
-    "n_communiques": 241,
+    "n_communiques": 242,
     "n_evenements": 194,
     "categories": [
      {
@@ -108484,28 +108618,28 @@
       "au": "2025-03-20"
      },
      "consensus": {
-      "au": "2026-10-12",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        1.304,
-        4
+        1.072,
+        5
        ],
        "+1y": [
-        1.74,
-        4
+        1.571,
+        5
        ]
       },
       "ca": {
        "0y": [
-        10070000000,
+        10090000000,
         9
        ],
        "+1y": [
-        10330000000,
+        10350000000,
         9
        ]
       },
@@ -109000,7 +109134,7 @@
       "au": "2025-08-07"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -111556,7 +111690,7 @@
     "nom": "Sartorius Stedim Biotech",
     "indice": "SBF 120",
     "secteur": "Équipements biopharmaceutiques",
-    "n_communiques": 105,
+    "n_communiques": 106,
     "n_evenements": 78,
     "categories": [
      {
@@ -112472,8 +112606,8 @@
      "n": 19
     },
     "prochaine": {
-     "date": "2026-10-22",
-     "source": "Yahoo Finance",
+     "date": "2027-02-02",
+     "source": "même période l'an dernier",
      "estimee": true,
      "au": "2026-10-21",
      "avant_pct": 7.08,
@@ -112493,7 +112627,7 @@
     "nom": "SEB",
     "indice": "SBF 120",
     "secteur": "Petit électroménager",
-    "n_communiques": 175,
+    "n_communiques": 176,
     "n_evenements": 138,
     "categories": [
      {
@@ -118491,7 +118625,7 @@
      "courtes": {
       "pct": 0.6,
       "n": 1,
-      "variation_30j": 0.6,
+      "variation_30j": 0.06,
       "au": "2026-09-28"
      },
      "consensus": {
@@ -118818,7 +118952,7 @@
       "au": null
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -118835,11 +118969,11 @@
         1
        ],
        "0y": [
-        2.264,
+        2.208,
         13
        ],
        "+1y": [
-        2.42,
+        2.362,
         13
        ]
       },
@@ -118849,11 +118983,11 @@
         1
        ],
        "0y": [
-        4100000000,
+        4094000000,
         10
        ],
        "+1y": [
-        4199000000,
+        4194000000,
         10
        ]
       },
@@ -122825,7 +122959,7 @@
        "titre": "Résultats annuels 2023",
        "avant_pct": 7.71,
        "z_avant": 0.97,
-       "perf_12m_pct": 7.13,
+       "perf_12m_pct": 7.12,
        "rendement_pct": 0.21,
        "ecart_pct": -0.08,
        "z": -0.05,
@@ -123260,7 +123394,7 @@
        "jour": "2017-01-04",
        "periode": "chiffre_affaires",
        "titre": "Chiffre d'affaires du 1er trimestre 2016/2017",
-       "avant_pct": -0.61,
+       "avant_pct": -0.62,
        "z_avant": -0.07,
        "perf_12m_pct": 12.92,
        "rendement_pct": 4.32,
@@ -124757,7 +124891,7 @@
     "nom": "Valeo",
     "indice": "SBF 120",
     "secteur": "Équipement automobile",
-    "n_communiques": 173,
+    "n_communiques": 174,
     "n_evenements": 150,
     "categories": [
      {
@@ -125742,7 +125876,7 @@
       "au": "2026-09-29"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -126707,11 +126841,11 @@
      "courtes": {
       "pct": 2.76,
       "n": 4,
-      "variation_30j": 0.8,
+      "variation_30j": 0.2,
       "au": "2026-09-30"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "+1q": "2026-12-31",
@@ -128998,7 +129132,7 @@
       "au": "2025-06-04"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
@@ -131226,7 +131360,7 @@
        "titre": "Virbac: chiffre d'affaires du 3ème trimestre 2017",
        "perspectives": "confirmees",
        "avant_pct": -7.1,
-       "z_avant": -0.8,
+       "z_avant": -0.79,
        "perf_12m_pct": -35.62,
        "rendement_pct": -1.33,
        "ecart_pct": -1.21,
@@ -131446,18 +131580,18 @@
       "au": "2019-10-08"
      },
      "consensus": {
-      "au": "2026-10-21",
+      "au": "2026-10-22",
       "fin": {
        "0y": "2026-12-31",
        "+1y": "2027-12-31"
       },
       "bpa": {
        "0y": [
-        20.96,
-        4
+        20.77,
+        5
        ],
        "+1y": [
-        23.14,
+        22.97,
         5
        ]
       },
@@ -132028,7 +132162,7 @@
      "courtes": {
       "pct": 8.9,
       "n": 9,
-      "variation_30j": 0.98,
+      "variation_30j": 0.82,
       "au": "2026-09-30"
      },
      "consensus": {
@@ -133057,7 +133191,7 @@
        "jour": "2018-11-16",
        "periode": "chiffre_affaires",
        "titre": "Bonne progression du chiffre d’affaires au 3ème trimestre 2018, en hausse de 5,6 %1",
-       "avant_pct": -3.2,
+       "avant_pct": -3.21,
        "z_avant": -0.56,
        "perf_12m_pct": 1.98,
        "rendement_pct": 3.09,
@@ -133259,7 +133393,7 @@
       "au": "2026-09-08"
      },
      "consensus": {
-      "au": "2026-10-01",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-03-31",
        "0y": "2026-12-31",
@@ -133267,7 +133401,7 @@
       },
       "bpa": {
        "0y": [
-        0.06088,
+        0.05893,
         5
        ],
        "+1y": [
@@ -133281,15 +133415,15 @@
         1
        ],
        "0y": [
-        320300000,
+        320500000,
         5
        ],
        "+1y": [
-        329600000,
+        329800000,
         5
        ]
       },
-      "revision_30j_pct": -20.7,
+      "revision_30j_pct": null,
       "revisions": {
        "0y": [
         0,
@@ -134360,11 +134494,11 @@
      "courtes": {
       "pct": 3.91,
       "n": 6,
-      "variation_30j": -0.08,
+      "variation_30j": 0.43,
       "au": "2026-09-24"
      },
      "consensus": {
-      "au": "2026-10-20",
+      "au": "2026-10-22",
       "fin": {
        "0q": "2026-09-30",
        "0y": "2026-12-31",
@@ -134372,11 +134506,11 @@
       },
       "bpa": {
        "0y": [
-        9.158,
+        9.195,
         6
        ],
        "+1y": [
-        11.02,
+        11.05,
         6
        ]
       },
@@ -134386,11 +134520,11 @@
         1
        ],
        "0y": [
-        1657000000,
+        1647000000,
         7
        ],
        "+1y": [
-        1817000000,
+        1818000000,
         7
        ]
       },
@@ -134429,7 +134563,7 @@
     "nom": "Wendel",
     "indice": "SBF 120",
     "secteur": "Investissement",
-    "n_communiques": 273,
+    "n_communiques": 274,
     "n_evenements": 232,
     "categories": [
      {
@@ -136486,116 +136620,6 @@
   ],
   "prochaines": [
    {
-    "ticker": "BVI.PA",
-    "nom": "Bureau Veritas",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.659,
-    "p_hausse": 0.659,
-    "z_avant": 1.11,
-    "avant_pct": 6.66
-   },
-   {
-    "ticker": "COV.PA",
-    "nom": "Covivio",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "baisse",
-    "p_probable": 0.55,
-    "p_hausse": 0.45,
-    "z_avant": -0.56,
-    "avant_pct": -2.9
-   },
-   {
-    "ticker": "IDL.PA",
-    "nom": "ID Logistics",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.643,
-    "p_hausse": 0.643,
-    "z_avant": 1.31,
-    "avant_pct": 8.62
-   },
-   {
-    "ticker": "IPS.PA",
-    "nom": "Ipsos SA",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.628,
-    "p_hausse": 0.628,
-    "z_avant": 0.56,
-    "avant_pct": 5.91
-   },
-   {
-    "ticker": "KER.PA",
-    "nom": "Kering",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.545,
-    "p_hausse": 0.545,
-    "z_avant": 0.0,
-    "avant_pct": 0.04
-   },
-   {
-    "ticker": "LI.PA",
-    "nom": "Klépierre",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.571,
-    "p_hausse": 0.571,
-    "z_avant": -0.74,
-    "avant_pct": -3.21
-   },
-   {
-    "ticker": "NEX.PA",
-    "nom": "Nexans",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.558,
-    "p_hausse": 0.558,
-    "z_avant": -1.27,
-    "avant_pct": -12.09
-   },
-   {
-    "ticker": "RNO.PA",
-    "nom": "Renault",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.511,
-    "p_hausse": 0.511,
-    "z_avant": 0.62,
-    "avant_pct": 4.95
-   },
-   {
-    "ticker": "DIM.PA",
-    "nom": "Sartorius Stedim Biotech",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "hausse",
-    "p_probable": 0.571,
-    "p_hausse": 0.571,
-    "z_avant": 0.66,
-    "avant_pct": 7.08
-   },
-   {
-    "ticker": "HO.PA",
-    "nom": "Thales",
-    "date": "2026-10-22",
-    "estimee": true,
-    "probable": "baisse",
-    "p_probable": 0.512,
-    "p_hausse": 0.488,
-    "z_avant": -0.13,
-    "avant_pct": -1.09
-   },
-   {
     "ticker": "AC.PA",
     "nom": "Accor",
     "date": "2026-10-23",
@@ -137358,6 +137382,1217 @@
   },
   "publications_recentes": [
    {
+    "id": "119441_20261022",
+    "ticker": "URW.PA",
+    "nom": "Unibail-Rodamco-Westfield",
+    "publie_le": "2026-10-22T16:04:05+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW119441_20261022.pdf",
+    "titre": "UNIBAIL-RODAMCO-WESTFIELD Q3-2026 TRADING UPDATE - CONTINUED OPERATING MOMENTUM SUPPORTS 2026 OUTLOOK",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 6.36,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      9.272,
+      14
+     ],
+     "ca": [
+      2769.0,
+      8
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "objectifs": {
+     "periode": "2026",
+     "bpa": [
+      9.15,
+      9.3
+     ],
+     "texte": "AREPS 9,15-9,30 €",
+     "consensus_bpa": 9.272,
+     "vs_consensus": "conformes"
+    },
+    "juge": true,
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 13 publications passées",
+       "p": 0.467,
+       "n": 13
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.457,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.457,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue",
+      "Objectifs conformes au consensus : historique encore trop court (2 cas)"
+     ]
+    }
+   },
+   {
+    "id": "139440_20261022",
+    "ticker": "FR.PA",
+    "nom": "Valeo",
+    "publie_le": "2026-10-22T16:02:38+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139440_20261022.pdf",
+    "titre": "Valeo - Chiffre d'affaires du 3ème trimestre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 16.17,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "bpa": [
+      0.3832,
+      1
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "objectifs": {
+     "periode": "2026",
+     "ca": [
+      20000,
+      21000
+     ],
+     "texte": "marge opérationnelle 4,7-5,3 %, cash flow libre > 400 M€"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 4881
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 32 publications passées",
+       "p": 0.382,
+       "n": 32
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.373,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.373,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139422_20261022",
+    "ticker": "NXI.PA",
+    "nom": "Nexity",
+    "publie_le": "2026-10-22T16:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139422_20261022.pdf",
+    "titre": "Communiqué de presse - Activité au 30 septembre 2026",
+    "type_periode": "autres",
+    "perf_12m_pct": -44.39,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      -0.4254,
+      4
+     ],
+     "ca": [
+      2536.0,
+      4
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 1600
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.651,
+       "n": 41
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.642,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.642,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139433_20261022",
+    "ticker": "OR.PA",
+    "nom": "L'Oréal",
+    "publie_le": "2026-10-22T16:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139433_20261022.pdf",
+    "titre": "Chiffre d’affaires au 30 septembre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 15.26,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      11220.0,
+      4
+     ]
+    },
+    "periode": "9M 2026",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 35330
+    },
+    "ecarts": {
+     "ca_pct": 214.88
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.628,
+       "n": 41
+      }
+     ],
+     "p_hausse": 0.628,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "083533_20261022",
+    "ticker": "ADP.PA",
+    "nom": "Aéroports de Paris (Groupe ADP)",
+    "publie_le": "2026-10-22T15:48:53+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083533_20261022.pdf",
+    "titre": "Aéroports de Paris SA - Chiffre d'affaires des 9 premiers mois 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -3.12,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      1951.0,
+      3
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "abaissees",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "EBITDA courant dans le bas de la fourchette 2 300-2 350 M€"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 5106
+    },
+    "ecarts": {
+     "ca_pct": 161.71
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 39 publications passées",
+       "p": 0.439,
+       "n": 39
+      },
+      {
+       "libelle": "Perspectives abaissées",
+       "p": 0.234,
+       "n": 127
+      }
+     ],
+     "p_hausse": 0.234,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "083529_20261022",
+    "ticker": "AC.PA",
+    "nom": "Accor",
+    "publie_le": "2026-10-22T15:45:59+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083529_20261022.pdf",
+    "titre": "Chiffre d’affaires du 3ème trimestre 2026 : Accor revoit à la hausse son objectif de résultat",
+    "type_periode": "trimestriels",
+    "perf_12m_pct": 9.86,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      2.166,
+      15
+     ],
+     "ca": [
+      5799.0,
+      13
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "relevees",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "EBE courant 1 270-1 285 M€"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 1503
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.535,
+       "n": 41
+      },
+      {
+       "libelle": "Perspectives relevées",
+       "p": 0.691,
+       "n": 405
+      }
+     ],
+     "p_hausse": 0.691,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139395_20261022",
+    "ticker": "DG.PA",
+    "nom": "Vinci",
+    "publie_le": "2026-10-22T15:45:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139395_20261022.pdf",
+    "titre": "VINCI - 9M 2026 - NOUVELLES HAUSSES DU CHIFFRE D’AFFAIRES ET DES PRISES DE COMMANDES",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -1.59,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      19930.0,
+      2
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 55957
+    },
+    "ecarts": {
+     "ca_pct": 180.77
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 43 publications passées",
+       "p": 0.644,
+       "n": 43
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.635,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.635,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139421_20261022",
+    "ticker": "RXL.PA",
+    "nom": "Rexel",
+    "publie_le": "2026-10-22T15:45:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139421_20261022.pdf",
+    "titre": "REXEL : Ventes du T3 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 18.65,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      5186.0,
+      2
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "relevees",
+    "consensus": "superieur",
+    "consensus_raison": "Ventes T3 5 453 M€ pour 5 186 M€ attendus (+5,1 %), objectifs 2026 relevés pour la 2e fois.",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "ventes à jours constants ~+7 %, marge d'EBITA ajustée ≥ 6,4 %"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 5453
+    },
+    "ecarts": {
+     "ca_pct": 5.15
+    },
+    "position_source": "claude",
+    "surprise": "positive",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.558,
+       "n": 41
+      },
+      {
+       "libelle": "Au-dessus du consensus (secteur Industrie)",
+       "p": 0.65,
+       "n": 82
+      },
+      {
+       "libelle": "Perspectives relevées",
+       "p": 0.745,
+       "n": 52
+      }
+     ],
+     "p_hausse": 0.745
+    }
+   },
+   {
+    "id": "169918_20261022",
+    "ticker": "SK.PA",
+    "nom": "SEB",
+    "publie_le": "2026-10-22T15:41:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169918_20261022.pdf",
+    "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 27.54,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      1981.0,
+      1
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "consensus": "conforme",
+    "consensus_raison": "Ventes T3 1 964 M€ pour 1 981 M€ attendus (-0,9 %), ROPA +9 % : en ligne.",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "croissance du ROPA entre 5 % et 10 %"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 1964
+    },
+    "ecarts": {
+     "ca_pct": -0.86
+    },
+    "position_source": "claude",
+    "surprise": "conforme",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 48 publications passées",
+       "p": 0.62,
+       "n": 48
+      },
+      {
+       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 11 cas)",
+       "p": 0.571,
+       "n": 277
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.544,
+       "n": 63
+      },
+      {
+       "libelle": "Conforme au consensus après forte hausse sur 12 mois (+28 % face à l'indice)",
+       "p": 0.558,
+       "n": 50
+      }
+     ],
+     "p_hausse": 0.558
+    }
+   },
+   {
+    "id": "139427_20261022",
+    "ticker": "KER.PA",
+    "nom": "Kering",
+    "publie_le": "2026-10-22T15:40:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139427_20261022.pdf",
+    "titre": "Kering : Chiffre d'affaires du troisième trimestre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -29.45,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      3350.0,
+      5
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "consensus": "conforme",
+    "consensus_raison": "Chiffre d'affaires 3 345 M€ pour 3 350 M€ attendus (-0,1 %) ; Gucci -6 % en comparable : en ligne.",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 3345
+    },
+    "ecarts": {
+     "ca_pct": -0.15
+    },
+    "position_source": "claude",
+    "surprise": "conforme",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 42 publications passées",
+       "p": 0.545,
+       "n": 42
+      },
+      {
+       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 11 cas)",
+       "p": 0.494,
+       "n": 277
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.467,
+       "n": 63
+      }
+     ],
+     "p_hausse": 0.467
+    }
+   },
+   {
+    "id": "169916_20261022",
+    "ticker": "CARM.PA",
+    "nom": "Carmila",
+    "publie_le": "2026-10-22T15:40:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169916_20261022.pdf",
+    "titre": "Informations privilégiées / Communiqué sur comptes, résultats",
+    "type_periode": "autres",
+    "perf_12m_pct": -3.99,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      1.872,
+      7
+     ],
+     "ca": [
+      442.5,
+      5
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "objectifs": {
+     "periode": "2026",
+     "bpa": 1.87,
+     "texte": "résultat net récurrent par action 1,87 € confirmé",
+     "consensus_bpa": 1.872,
+     "vs_consensus": "conformes"
+    },
+    "juge": true,
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 28 publications passées",
+       "p": 0.667,
+       "n": 28
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.658,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.658,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue",
+      "Objectifs conformes au consensus : historique encore trop court (2 cas)"
+     ]
+    }
+   },
+   {
+    "id": "169908_20261022",
+    "ticker": "MAU.PA",
+    "nom": "Maurel & Prom",
+    "publie_le": "2026-10-22T06:40:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169908_20261022.pdf",
+    "titre": "Activité 9 mois 2026",
+    "type_periode": "trimestriels",
+    "perf_12m_pct": 90.86,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      197.8,
+      1
+     ]
+    },
+    "periode": "9M 2026",
+    "juge": true,
+    "chiffres": {
+     "devise": "USD",
+     "ca": 574
+    },
+    "ecarts": {
+     "ca_pct": 190.19
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 53 publications passées",
+       "p": 0.509,
+       "n": 53
+      }
+     ],
+     "p_hausse": 0.509,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139207_20261022",
+    "ticker": "RMS.PA",
+    "nom": "Hermès",
+    "publie_le": "2026-10-22T06:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139207_20261022.pdf",
+    "titre": "Hermès International : Chiffre d'affaires du 3ème trimestre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -34.16,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      4115.0,
+      5
+     ]
+    },
+    "periode": "T3 2026",
+    "consensus": "conforme",
+    "consensus_raison": "Ventes T3 d'environ 4,1 Md€ pour 4,115 Md€ attendus : en ligne.",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 4100
+    },
+    "ecarts": {
+     "ca_pct": -0.36
+    },
+    "position_source": "claude",
+    "surprise": "conforme",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 42 publications passées",
+       "p": 0.614,
+       "n": 42
+      },
+      {
+       "libelle": "Conforme au consensus (tout le marché ; secteur Consommation discrétionnaire : 11 cas)",
+       "p": 0.565,
+       "n": 277
+      }
+     ],
+     "p_hausse": 0.565
+    }
+   },
+   {
+    "id": "169900_20261022",
+    "ticker": "GET.PA",
+    "nom": "Getlink",
+    "publie_le": "2026-10-22T05:30:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169900_20261022.pdf",
+    "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 34.88,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      510.0,
+      2
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "consensus": "superieur",
+    "consensus_raison": "Chiffre d'affaires T3 521 M€ pour 510 M€ attendus (+2,2 %).",
+    "objectifs": {
+     "periode": "2026",
+     "texte": "EBITDA 835-870 M€"
+    },
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 521
+    },
+    "ecarts": {
+     "ca_pct": 2.16
+    },
+    "position_source": "claude",
+    "surprise": "positive",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 51 publications passées",
+       "p": 0.547,
+       "n": 51
+      },
+      {
+       "libelle": "Au-dessus du consensus (secteur Industrie)",
+       "p": 0.64,
+       "n": 82
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.633,
+       "n": 91
+      }
+     ],
+     "p_hausse": 0.633
+    }
+   },
+   {
+    "id": "651356_20261022",
+    "ticker": "DIM.PA",
+    "nom": "Sartorius Stedim Biotech",
+    "publie_le": "2026-10-22T05:15:01+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/101/2026/10/FC101651356_20261022.pdf",
+    "titre": "Sartorius Stedim Biotech enregistre une forte  croissance opérationnelle et une rentabilité robuste",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 7.02,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      758.9,
+      4
+     ],
+     "bpa": [
+      1.184,
+      4
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 2289,
+     "resultat": 277
+    },
+    "ecarts": {
+     "ca_pct": 201.62
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 19 publications passées",
+       "p": 0.571,
+       "n": 19
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.561,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.561,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139203_20261022",
+    "ticker": "NEX.PA",
+    "nom": "Nexans",
+    "publie_le": "2026-10-22T05:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139203_20261022.pdf",
+    "titre": "Nexans 9M 2026: Dynamique exceptionnelle de PWR-Grid et PWR-Connect, poursuite de la normalisation de la croissance de PWR-Transmission, perspectives 2026 confirmées",
+    "type_periode": "annuels",
+    "perf_12m_pct": 6.69,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      1619.0,
+      2
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 4946.7
+    },
+    "ecarts": {
+     "ca_pct": 205.54
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.558,
+       "n": 41
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.548,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.548,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "139204_20261022",
+    "ticker": "IPN.PA",
+    "nom": "Ipsen",
+    "publie_le": "2026-10-22T05:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139204_20261022.pdf",
+    "titre": "Ipsen réalise une croissance remarquable des ventes au cours des neuf premiers mois de 2026 et relève à nouveau ses prévisions pour l’exercice en cours",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 32.31,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      1120.0,
+      2
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "relevees",
+    "consensus": "superieur",
+    "consensus_raison": "Chiffre d'affaires T3 1 174 M€ pour 1 120 M€ attendus (+4,8 %), prévisions 2026 relevées.",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 1173.9
+    },
+    "ecarts": {
+     "ca_pct": 4.81
+    },
+    "position_source": "claude",
+    "surprise": "positive",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 39 publications passées",
+       "p": 0.512,
+       "n": 39
+      },
+      {
+       "libelle": "Au-dessus du consensus (secteur Santé)",
+       "p": 0.606,
+       "n": 38
+      },
+      {
+       "libelle": "Perspectives relevées",
+       "p": 0.708,
+       "n": 52
+      }
+     ],
+     "p_hausse": 0.708
+    }
+   },
+   {
+    "id": "139260_20261022",
+    "ticker": "MF.PA",
+    "nom": "Wendel",
+    "publie_le": "2026-10-22T05:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW139260_20261022.pdf",
+    "titre": "WENDEL : Activité du 3e trimestre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 9.21,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      4.85,
+      2
+     ],
+     "ca": [
+      7743.0,
+      4
+     ]
+    },
+    "periode": "T3 2026",
+    "juge": true,
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 34 publications passées",
+       "p": 0.472,
+       "n": 34
+      }
+     ],
+     "p_hausse": 0.472,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "083519_20261022",
+    "ticker": "HO.PA",
+    "nom": "Thales",
+    "publie_le": "2026-10-22T04:59:47+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083519_20261022.pdf",
+    "titre": "Thales publie ses prises de commandes et son chiffre d'affaires au 30 septembre 2026 - Communiqué de presse - 22 octobre 2026",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -3.75,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      5360.0,
+      3
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "relevees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 16422
+    },
+    "ecarts": {
+     "ca_pct": 206.38
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.488,
+       "n": 41
+      },
+      {
+       "libelle": "Perspectives relevées",
+       "p": 0.65,
+       "n": 405
+      }
+     ],
+     "p_hausse": 0.65,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "169894_20261021",
+    "ticker": "IDL.PA",
+    "nom": "ID Logistics",
+    "publie_le": "2026-10-21T15:45:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169894_20261021.pdf",
+    "titre": "Information financière trimestrielle / Information financière du troisième trimestre",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -10.95,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      1094.0,
+      1
+     ]
+    },
+    "periode": "T3 2026",
+    "consensus": "superieur",
+    "consensus_raison": "Chiffre d'affaires T3 1 178 M€ pour 1 094 M€ attendus (+7,7 %).",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 1177.9
+    },
+    "ecarts": {
+     "ca_pct": 7.67
+    },
+    "position_source": "claude",
+    "surprise": "positive",
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 54 publications passées",
+       "p": 0.643,
+       "n": 54
+      },
+      {
+       "libelle": "Au-dessus du consensus (secteur Industrie)",
+       "p": 0.726,
+       "n": 82
+      }
+     ],
+     "p_hausse": 0.726
+    }
+   },
+   {
+    "id": "083513_20261021",
+    "ticker": "COV.PA",
+    "nom": "Covivio",
+    "publie_le": "2026-10-21T15:44:49+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083513_20261021.pdf",
+    "titre": "Covivio - Activité du T3 2026 : Accélération de la croissance des revenus à périmètre constant,  soutenue par une solide performance opérationnelle",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": -13.82,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      4.944,
+      7
+     ],
+     "ca": [
+      704.5,
+      2
+     ]
+    },
+    "periode": "9M 2026",
+    "juge": true,
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 38 publications passées",
+       "p": 0.45,
+       "n": 38
+      }
+     ],
+     "p_hausse": 0.45,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    }
+   },
+   {
+    "id": "138957_20261021",
+    "ticker": "BVI.PA",
+    "nom": "Bureau Veritas",
+    "publie_le": "2026-10-21T05:30:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138957_20261021.pdf",
+    "titre": "BUREAU VERITAS - Croissance totale du chiffre d’affaires à deux chiffres au troisième trimestre 2026 ;  Amélioration séquentielle de la croissance organique du chiffre d’affaires ; Perspectives 2026 confirmées",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 4.78,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      1.537,
+      13
+     ],
+     "ca": [
+      6723.0,
+      12
+     ]
+    },
+    "periode": "T3 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 1569.7
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 42 publications passées",
+       "p": 0.659,
+       "n": 42
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.65,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.65,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    },
+    "jour": "2026-10-21",
+    "rendement_pct": 3.64,
+    "indice_pct": 1.06,
+    "ecart_pct": 2.92,
+    "z": 2.14
+   },
+   {
+    "id": "169891_20261021",
+    "ticker": "ERF.PA",
+    "nom": "Eurofins Scientific",
+    "publie_le": "2026-10-21T05:15:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/BWR/2026/10/FCBWR169891_20261021.pdf",
+    "titre": "Inside Information / News release on accounts, results",
+    "type_periode": "trimestriels",
+    "perf_12m_pct": 34.67,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      4.106,
+      12
+     ],
+     "ca": [
+      7535.0,
+      13
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "chiffres": {
+     "devise": "EUR",
+     "ca": 5614
+    },
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 21 publications passées",
+       "p": 0.261,
+       "n": 21
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.253,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.253,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    },
+    "jour": "2026-10-21",
+    "rendement_pct": 2.41,
+    "indice_pct": 1.06,
+    "ecart_pct": 1.56,
+    "z": 0.96
+   },
+   {
+    "id": "083505_20261021",
+    "ticker": "EDEN.PA",
+    "nom": "Edenred",
+    "publie_le": "2026-10-21T05:01:44+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/ECO/2026/10/FCECO083505_20261021.pdf",
+    "titre": "Edenred affiche une croissance solide sur les neuf premiers mois de 2026 et confirme ses objectifs pour l’année",
+    "type_periode": "chiffre_affaires",
+    "perf_12m_pct": 27.34,
+    "estimes": {
+     "fin": "2026-09-30",
+     "periode": "trimestre",
+     "ca": [
+      728.0,
+      1
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "confirmees",
+    "juge": true,
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 41 publications passées",
+       "p": 0.605,
+       "n": 41
+      },
+      {
+       "libelle": "Perspectives confirmées",
+       "p": 0.595,
+       "n": 1217
+      }
+     ],
+     "p_hausse": 0.595,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue"
+     ]
+    },
+    "jour": "2026-10-21",
+    "rendement_pct": -9.45,
+    "indice_pct": 1.06,
+    "ecart_pct": -10.3,
+    "z": -3.54
+   },
+   {
+    "id": "138979_20261021",
+    "ticker": "LI.PA",
+    "nom": "Klépierre",
+    "publie_le": "2026-10-21T05:00:00+00:00",
+    "url": "https://fr.ftp.opendatasoft.com/datadila/INFOFI/MKW/2026/10/FCMKW138979_20261021.pdf",
+    "titre": "DYNAMIQUE D’ACTIVITÉ SOUTENUE ET RÉVISION DES OBJECTIFS À LA HAUSSE",
+    "type_periode": "annuels",
+    "perf_12m_pct": 16.13,
+    "exercice": {
+     "fin": "2026-12-31",
+     "bpa": [
+      2.807,
+      10
+     ],
+     "ca": [
+      1338.0,
+      10
+     ]
+    },
+    "periode": "9M 2026",
+    "perspectives": "relevees",
+    "objectifs": {
+     "periode": "2026",
+     "bpa": 2.83,
+     "texte": "EBE ≥ 1 165 M€, cash-flow net courant par action 2,83 €",
+     "consensus_bpa": 2.807,
+     "vs_consensus": "conformes"
+    },
+    "juge": true,
+    "probabilites": {
+     "etapes": [
+      {
+       "libelle": "Ses 40 publications passées",
+       "p": 0.571,
+       "n": 40
+      },
+      {
+       "libelle": "Perspectives relevées",
+       "p": 0.721,
+       "n": 405
+      }
+     ],
+     "p_hausse": 0.721,
+     "non_comptes": [
+      "Pas de consensus comparable : position face aux attentes inconnue",
+      "Objectifs conformes au consensus : historique encore trop court (2 cas)"
+     ]
+    },
+    "jour": "2026-10-21",
+    "rendement_pct": 1.03,
+    "indice_pct": 1.06,
+    "ecart_pct": 0.54,
+    "z": 0.54
+   },
+   {
     "id": "169886_20261020",
     "ticker": "VIV.PA",
     "nom": "Vivendi",
@@ -137496,7 +138731,7 @@
       {
        "libelle": "Perspectives confirmées",
        "p": 0.363,
-       "n": 1214
+       "n": 1217
       }
      ],
      "p_hausse": 0.363,
@@ -137547,7 +138782,7 @@
       {
        "libelle": "Perspectives confirmées",
        "p": 0.516,
-       "n": 1214
+       "n": 1217
       }
      ],
      "p_hausse": 0.516,
@@ -137787,7 +139022,7 @@
      ],
      "p_hausse": 0.389,
      "non_comptes": [
-      "Objectifs conformes au consensus : historique encore trop court (1 cas)"
+      "Objectifs conformes au consensus : historique encore trop court (2 cas)"
      ]
     },
     "jour": "2026-10-15",
