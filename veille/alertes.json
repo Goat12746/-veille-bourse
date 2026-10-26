@@ -1,21 +1,20 @@
 {
  "version": 1,
- "genere_le": "2026-10-23T11:24:32+00:00",
+ "genere_le": "2026-10-26T07:28:33+00:00",
  "sources": {
   "amf": {
-   "ok": true,
-   "trouves": 28,
-   "nouveaux": 28
+   "ok": false,
+   "erreur": "<urlopen error [Errno 104] Connection reset by peer>"
   },
   "presse": {
    "ok": true,
-   "trouves": 215,
-   "nouveaux": 142
+   "trouves": 243,
+   "nouveaux": 211
   },
   "assemblee": {
    "ok": true,
    "trouves": 121,
-   "nouveaux": 0
+   "nouveaux": 115
   },
   "agenda": {
    "ok": true,
@@ -23,7 +22,7 @@
   },
   "calendrier": {
    "ok": true,
-   "trouves": 96
+   "trouves": 80
   }
  },
  "alertes": [
@@ -6005,186 +6004,6 @@
  ],
  "calendrier": [
   {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Sodexo : publication de résultats (date Yahoo, à confirmer)",
-   "tickers": [
-    "SW.PA"
-   ],
-   "tickers_mots_cles": [
-    "SW.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/SW.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Accor : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "AC.PA"
-   ],
-   "tickers_mots_cles": [
-    "AC.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/AC.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Safran : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "SAF.PA"
-   ],
-   "tickers_mots_cles": [
-    "SAF.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/SAF.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Unibail-Rodamco-Westfield : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "URW.PA"
-   ],
-   "tickers_mots_cles": [
-    "URW.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/URW.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Aéroports de Paris (Groupe ADP) : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "ADP.PA"
-   ],
-   "tickers_mots_cles": [
-    "ADP.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/ADP.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Carmila : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "CARM.PA"
-   ],
-   "tickers_mots_cles": [
-    "CARM.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/CARM.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Mersen : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "MRN.PA"
-   ],
-   "tickers_mots_cles": [
-    "MRN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/MRN.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Nexity : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "NXI.PA"
-   ],
-   "tickers_mots_cles": [
-    "NXI.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/NXI.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Valeo : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "FR.PA"
-   ],
-   "tickers_mots_cles": [
-    "FR.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/FR.PA",
-   "fiable": false
-  },
-  {
-   "date": "2026-10-23",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Wendel : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "MF.PA"
-   ],
-   "tickers_mots_cles": [
-    "MF.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/MF.PA",
-   "fiable": false
-  },
-  {
    "date": "2026-10-27",
    "heure": "",
    "type": "resultats",
@@ -7456,10 +7275,10 @@
    "fiable": false
   },
   {
-   "date": "2026-12-04",
+   "date": "2026-12-03",
    "heure": "",
    "type": "resultats",
-   "titre": "Derichebourg : publication de résultats (date estimée d'après l'an dernier)",
+   "titre": "Derichebourg : publication de résultats (date Yahoo, à confirmer)",
    "tickers": [
     "DBG.PA"
    ],
@@ -7469,7 +7288,7 @@
    "themes": [],
    "texte": "",
    "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
+   "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/DBG.PA",
    "fiable": false
   },
@@ -7492,10 +7311,10 @@
    "fiable": false
   },
   {
-   "date": "2026-12-09",
+   "date": "2026-12-08",
    "heure": "",
    "type": "resultats",
-   "titre": "MedinCell : publication de résultats (date estimée d'après l'an dernier)",
+   "titre": "MedinCell : publication de résultats (date Yahoo, à confirmer)",
    "tickers": [
     "MEDCL.PA"
    ],
@@ -7505,7 +7324,7 @@
    "themes": [],
    "texte": "",
    "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
+   "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/MEDCL.PA",
    "fiable": false
   },
@@ -7525,6 +7344,24 @@
    "mesures": [],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/STMPA.PA",
+   "fiable": false
+  },
+  {
+   "date": "2026-12-18",
+   "heure": "",
+   "type": "dividende",
+   "titre": "Sodexo : détachement du dividende",
+   "tickers": [
+    "SW.PA"
+   ],
+   "tickers_mots_cles": [
+    "SW.PA"
+   ],
+   "themes": [],
+   "texte": "",
+   "mesures": [],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SW.PA",
    "fiable": false
   },
   {
@@ -7549,72 +7386,18 @@
    "date": "2027-01-21",
    "heure": "",
    "type": "resultats",
-   "titre": "Getlink : publication de résultats (date estimée d'après l'an dernier)",
+   "titre": "Argan SA : publication de résultats (date Yahoo, à confirmer)",
    "tickers": [
-    "GET.PA"
+    "ARG.PA"
    ],
    "tickers_mots_cles": [
-    "GET.PA"
+    "ARG.PA"
    ],
    "themes": [],
    "texte": "",
    "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/GET.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-01-26",
-   "heure": "",
-   "type": "resultats",
-   "titre": "ID Logistics : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "IDL.PA"
-   ],
-   "tickers_mots_cles": [
-    "IDL.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/IDL.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-01-28",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Maurel & Prom : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "MAU.PA"
-   ],
-   "tickers_mots_cles": [
-    "MAU.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/MAU.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-02",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Sartorius Stedim Biotech : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "DIM.PA"
-   ],
-   "tickers_mots_cles": [
-    "DIM.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/DIM.PA",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ARG.PA",
    "fiable": false
   },
   {
@@ -7651,42 +7434,6 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/KER.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-11",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Hermès : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "RMS.PA"
-   ],
-   "tickers_mots_cles": [
-    "RMS.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/RMS.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-11",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Ipsen : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "IPN.PA"
-   ],
-   "tickers_mots_cles": [
-    "IPN.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/IPN.PA",
    "fiable": false
   },
   {
@@ -7795,42 +7542,6 @@
    "mesures": [],
    "source": "Estimation (même période l'an dernier)",
    "url": "https://finance.yahoo.com/quote/FDJU.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-18",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Nexans : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "NEX.PA"
-   ],
-   "tickers_mots_cles": [
-    "NEX.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/NEX.PA",
-   "fiable": false
-  },
-  {
-   "date": "2027-02-18",
-   "heure": "",
-   "type": "resultats",
-   "titre": "Covivio : publication de résultats (date estimée d'après l'an dernier)",
-   "tickers": [
-    "COV.PA"
-   ],
-   "tickers_mots_cles": [
-    "COV.PA"
-   ],
-   "themes": [],
-   "texte": "",
-   "mesures": [],
-   "source": "Estimation (même période l'an dernier)",
-   "url": "https://finance.yahoo.com/quote/COV.PA",
    "fiable": false
   }
  ]
